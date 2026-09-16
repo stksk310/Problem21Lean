@@ -1,8 +1,6 @@
-Proof-debt source scan
-Scope: all project and verification .lean sources; excludes third-party packages.
-Method: raw word-boundary scan, including comments and strings.
-Tokens: sorry, admit, axiom, sorryAx, unsafe, opaque
-Matches: 0
-Project-specific axiom declarations: 0
-Axiom dependency verification is separately recorded in AXIOM_REPORT.txt.
-Future target P21MainStatement is a Prop definition; no theorem proves it.
+Project-owned Lean files scanned: 36
+Method: lexical code scan; nested comments and ordinary/raw strings masked.
+Ambiguous character/quotation/interpolation syntax fails closed.
+Forbidden tokens: admit, axiom, opaque, sorry, sorryAx, unsafe
+Forbidden code tokens: 0
+

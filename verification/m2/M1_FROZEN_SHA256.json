@@ -1,0 +1,18 @@
+{
+  "commit": "9464b9cd3b6b070f9fa6d1c212f27065d1eb84b3",
+  "files": {
+    "P21.lean": "df54bffd0bd63f095eb9750c022daea3dd44ad9ba4183409a3c42028c515d162",
+    "P21/Factorization.lean": "827412f636a31df805e836dc07242fbfd731dbc39822e166c20135d50c9f2309",
+    "P21/NumericalSemigroup.lean": "997e3dcb6ff170b788ec5a24ec105df3585bed0f0e6bcea81cf6f141bae420a5",
+    "P21/Basic.lean": "5624df7fa23e1d1e32df6287a256b5013e802e213f12c23f2a06b01911e99263",
+    "P21/PseudoFrobenius.lean": "3d6f594ed3052f77237dd7cd5e6ecc31bec652005ceb1c9860f14c492da1baca",
+    "P21/Apery.lean": "2d0b92a7796ec41f35b5cf11e4e60367ecabfa393b5db16c697f7e051ebf66ac",
+    "P21/CanonicalReduction.lean": "150f599c25321c2812d6ab31d15a4e37a41b2538786a0f798bf0afa7296d0aa1",
+    "P21/Tail.lean": "5f65d6adbbbb57bef5ca783e0ab6b0d4582156e39092058ac6e894619b7812f1",
+    "P21/Selection.lean": "a05c3f87cef51c40020c848230c4b2042d13ce14aea53fe962cc3c6fda6290b5",
+    "P21/Semantics.lean": "707e774481d9921be142ad392cce75c737f80b76049e4145efaf0222b32c06c9",
+    "lean-toolchain": "a3997b5ad01979b25dae3b76f397dcb7c2392c3c838eb4bca83d4456a89b38aa",
+    "lake-manifest.json": "83d414bcd44a4b829d202f63db8b5cfc4b8fb7b282ebbf73cfddc1da8bd6c084",
+    "lakefile.toml": "610a630c6667a08c521fa740f40f3a2bf46e9706c044d63883d4b9ed59556d10"
+  }
+}

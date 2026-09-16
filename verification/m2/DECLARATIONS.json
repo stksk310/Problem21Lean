@@ -1,0 +1,1412 @@
+[
+  {
+    "name": "P21.Symmetric.BranchIData",
+    "kind": "structure",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.w",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.L",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.ρ",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.c",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.j",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.τ",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.Ux",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.Uy",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.Zx",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.Zy",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 43
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.Stable",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.FourHits",
+    "kind": "structure",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.j_eq_emod",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 53
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.j_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.step",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 62
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.return_previous",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 79
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.return_next",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 86
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.c_zero",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 95
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.c_one",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 99
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.first_return",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 102
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.later_return_lower",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 110
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.not_both_late",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 131
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.ux_carry",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 155
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.x_only",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 172
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.swap",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 215
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.stable_swap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 258
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.y_only",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 262
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.xy_upper_x",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 272
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.xy",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 301
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.four_hits_impossible",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 332
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.rectangle_translation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 350
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.ux_translation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 373
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.zx_translation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 386
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.uy_translation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 391
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.zy_translation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 397
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.firstReturnExample",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 410
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.first_return_exception",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 435
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.firstReturnExample_periodic",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 450
+  },
+  {
+    "name": "P21.Symmetric.BranchIData.firstReturnExample_stable",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchI.lean",
+    "line": 455
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization",
+    "kind": "structure",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.normal_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.represented_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.x_eq",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.y_eq",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.z_eq",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.walk_identity",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.stable_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.stable",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 49
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.ux_hit",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.uy_hit",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.zx_hit",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 102
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.zy_hit",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 140
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.four_hits",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 179
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.impossible",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIActual.lean",
+    "line": 187
+  },
+  {
+    "name": "P21.Symmetric.BranchII.k1_aux_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.BranchII.k1_reduces_to_branchI",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.Symmetric.BranchII.k0_e0_impossible",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Symmetric.BranchII.k0_theta_coefficients",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Symmetric.BranchII.div_eq_of_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 72
+  },
+  {
+    "name": "P21.Symmetric.BranchII.carry",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 85
+  },
+  {
+    "name": "P21.Symmetric.BranchII.ceiling",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 86
+  },
+  {
+    "name": "P21.Symmetric.BranchII.epsilon",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 87
+  },
+  {
+    "name": "P21.Symmetric.BranchII.tau",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 88
+  },
+  {
+    "name": "P21.Symmetric.BranchII.complement",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 89
+  },
+  {
+    "name": "P21.Symmetric.BranchII.complement_add_tau",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 92
+  },
+  {
+    "name": "P21.Symmetric.BranchII.carry_of_residue",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 99
+  },
+  {
+    "name": "P21.Symmetric.BranchII.ceiling_of_residue",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 108
+  },
+  {
+    "name": "P21.Symmetric.BranchII.epsilon_zero_or_one",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 117
+  },
+  {
+    "name": "P21.Symmetric.BranchII.epsilon_one_residue",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 127
+  },
+  {
+    "name": "P21.Symmetric.BranchII.epsilon_one_predecessor",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 139
+  },
+  {
+    "name": "P21.Symmetric.BranchII.crosscore_phase",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 163
+  },
+  {
+    "name": "P21.Symmetric.BranchII.shift_gap_has_axis",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Symmetric.BranchII.crosscore_shift_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 217
+  },
+  {
+    "name": "P21.Symmetric.BranchII.layer",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 253
+  },
+  {
+    "name": "P21.Symmetric.BranchII.complementLayer",
+    "kind": "def",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 254
+  },
+  {
+    "name": "P21.Symmetric.BranchII.layer_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 256
+  },
+  {
+    "name": "P21.Symmetric.BranchII.complementLayer_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 265
+  },
+  {
+    "name": "P21.Symmetric.BranchII.stable_coordinate_identity",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 277
+  },
+  {
+    "name": "P21.Symmetric.BranchII.complement_coordinate_identity",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchII.lean",
+    "line": 283
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.row_x",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.row_y",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.row_px",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.row_py",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.rho_uv",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.rho_primed_uv",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.m_lt_w",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.actual_fs",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.actual_complement_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.x_minus_y_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.k1_excluded",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Symmetric.BranchIIActual.k0_excluded",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 105
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.branchII_excluded",
+    "kind": "theorem",
+    "file": "P21/Symmetric/BranchIIActual.lean",
+    "line": 177
+  },
+  {
+    "name": "P21.Symmetric.symmetric_tail_from_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Closure.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.nonnegative_mul_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/CrossLayer.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.cross_layer_drop",
+    "kind": "theorem",
+    "file": "P21/Symmetric/CrossLayer.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Symmetric.cross_layer_identity",
+    "kind": "theorem",
+    "file": "P21/Symmetric/CrossLayer.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Symmetric.complete_split",
+    "kind": "theorem",
+    "file": "P21/Symmetric/CrossLayer.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData",
+    "kind": "structure",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.d_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.bezout",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.normal_form_exists",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.normal_form_unique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.represented",
+    "kind": "def",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.d_mul_mem_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.w_mem_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 75
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.represented_eq_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.mem_tail_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 101
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.normal_form_mem_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 107
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.frobenius",
+    "kind": "def",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 130
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.symmetry",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 133
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.isGreatest_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 145
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.w_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 149
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.normal_form_existsUnique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 154
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.tailSemigroup",
+    "kind": "def",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 163
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.isFrobenius",
+    "kind": "theorem",
+    "file": "P21/Symmetric/GlueNormalForm.lean",
+    "line": 171
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data",
+    "kind": "structure",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.intersection_low",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.intersection_high",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 54
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.raw_min_layers",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 64
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.rawCandidates",
+    "kind": "def",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 103
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.raw_min_subset",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 108
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.rawCandidates_ncard_le",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 124
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 138
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.raw_min_zero_subset",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 146
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 160
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.surviving_eq_candidates",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 166
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.four_set_pair_distinct",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 184
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.exists_raw4",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4.lean",
+    "line": 205
+  },
+  {
+    "name": "P21.Symmetric.BranchIRealization.difference_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.row_x",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.row_y",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.row_px",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.row_py",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.A_lt",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.B_lt",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.Ap_lt",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.Bp_lt",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.rho_formula",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.rhop_formula",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.rho_y",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.rhop_y",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 44
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.Ap_lt_A",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.Bp_lt_B",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 52
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.w_formula",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.split",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 61
+  },
+  {
+    "name": "P21.Symmetric.Raw4Data.branchI_excluded",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Raw4Consequences.lean",
+    "line": 70
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow",
+    "kind": "def",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.pf",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.core",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.all_ap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.sub_multiple_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.backward_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.pf_add_m_mem_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.pf_add_tail_generator",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.predecessor_not_stable",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Symmetric.ActualRawRow.positive_hit_required",
+    "kind": "theorem",
+    "file": "P21/Symmetric/RawRows.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.layer_mem_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.multiplicity_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.multiplicity_coordinate_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.carry_binary",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.carry_one_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.qm_x_coordinate",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Symmetric.SymmetricGlueData.qm_y_coordinate",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Reduction.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Symmetric.SymmetricAt",
+    "kind": "def",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.stableCore",
+    "kind": "def",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Symmetric.shiftedCore",
+    "kind": "def",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Symmetric.idealMin",
+    "kind": "def",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Symmetric.mem_gamma_iff_tail_add",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Symmetric.stableCore_subset_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Symmetric.gap_iff_stableCore",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Symmetric.stableCore_add_gamma",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.stableCore_isLeast",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 64
+  },
+  {
+    "name": "P21.Symmetric.m_not_mem_tail",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 74
+  },
+  {
+    "name": "P21.Symmetric.stableCore_zero_not_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Symmetric.stableCore_mem_gt_m",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 84
+  },
+  {
+    "name": "P21.Symmetric.stableCore_min_gt_m",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 94
+  },
+  {
+    "name": "P21.Symmetric.stable_shift_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 98
+  },
+  {
+    "name": "P21.Symmetric.stable_walk",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 105
+  },
+  {
+    "name": "P21.Symmetric.pf_iff_min_stableCore",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 114
+  },
+  {
+    "name": "P21.Symmetric.shiftedCore_subset_gamma",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 142
+  },
+  {
+    "name": "P21.Symmetric.shiftedCore_isLeast",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 155
+  },
+  {
+    "name": "P21.Symmetric.frobenius_eq_sub_core_min",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 168
+  },
+  {
+    "name": "P21.Symmetric.symmetricAt_f_not_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 177
+  },
+  {
+    "name": "P21.Symmetric.symmetricAt_gap_le",
+    "kind": "theorem",
+    "file": "P21/Symmetric/StableCore.lean",
+    "line": 181
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData",
+    "kind": "structure",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.T",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.mem_T",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.T_eq_generated",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.u_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.v_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.nonneg",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 43
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.bezout",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.representation_difference",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.normal_form_exists",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.normal_form_unique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.normal_form_mem_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 81
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.frobenius",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 94
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.frobenius_symmetry",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 96
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.subcritical_nonneg",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 104
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.interior_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 118
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.subcritical_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 131
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.two_generator_intersection_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 139
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.translate",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 177
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.two_generator_intersection",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 180
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.mem_of_gt_frobenius",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 187
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.semigroup",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.isFrobenius",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 198
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.normal_form_existsUnique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGenerator.lean",
+    "line": 207
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.intersectionIdeal",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.intersectionIdeal_add",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.firstThreshold",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.secondThreshold",
+    "kind": "def",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.firstThreshold_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.secondThreshold_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.minimal_mem_pair",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 66
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.minimal_finite",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 73
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.minima_incomparable",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 89
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.two_minima_forces_bounds",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 95
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.minimal_pair_eq",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 144
+  },
+  {
+    "name": "P21.Symmetric.TwoGeneratorData.two_minima_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TwoGeneratorIdeal.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Symmetric.tailIntersection",
+    "kind": "def",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Symmetric.minimal_bridge",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Symmetric.distinguished_not_raw_apery",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Symmetric.idealMin_shift",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Symmetric.min_shiftedCore_iff_pf",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 69
+  },
+  {
+    "name": "P21.Symmetric.tailIntersection_iff_shiftedCore",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 77
+  },
+  {
+    "name": "P21.Symmetric.exact_bridge",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 93
+  },
+  {
+    "name": "P21.Symmetric.min_shiftedCore_set",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 102
+  },
+  {
+    "name": "P21.Symmetric.type_bridge",
+    "kind": "theorem",
+    "file": "P21/Symmetric/TypeBridge.lean",
+    "line": 114
+  },
+  {
+    "name": "P21.Symmetric.SymmetricTail",
+    "kind": "def",
+    "file": "P21/External/SymmetricThreeGenerator.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.SymmetricThreeGeneratorGluingStatement",
+    "kind": "def",
+    "file": "P21/External/SymmetricThreeGenerator.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Symmetric.glue_data_symmetric_tail",
+    "kind": "theorem",
+    "file": "P21/External/SymmetricThreeGenerator.lean",
+    "line": 14
+  }
+]

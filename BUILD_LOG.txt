@@ -1,1 +1,34 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m2-fresh-check-20260917\verification\lake.ps1 build
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (9.0s)
+✔ [1590/1598] Built P21.Basic (9.7s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.9s)
+✔ [1592/1598] Built P21.Apery (11s)
+✔ [1593/1598] Built P21.CanonicalReduction (10s)
+✔ [1594/1598] Built P21.Tail (10s)
+✔ [1595/1598] Built P21.Selection (14s)
+✔ [1596/1598] Built P21.Semantics (9.8s)
+✔ [1597/1598] Built P21 (9.2s)
 Build completed successfully (1598 jobs).
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m2-fresh-check-20260917\verification\lake.ps1 build P21.Symmetric.BranchI P21.Symmetric.BranchIActual P21.Symmetric.BranchII P21.Symmetric.BranchIIActual P21.Symmetric.Closure P21.Symmetric.CrossLayer P21.Symmetric.GlueNormalForm P21.Symmetric.Raw4 P21.Symmetric.Raw4Consequences P21.Symmetric.RawRows P21.Symmetric.Reduction P21.Symmetric.StableCore P21.Symmetric.TwoGenerator P21.Symmetric.TwoGeneratorIdeal P21.Symmetric.TypeBridge P21.External.SymmetricThreeGenerator
+✔ [1601/1616] Built P21.Symmetric.StableCore (13s)
+✔ [1602/1616] Built P21.Symmetric.TwoGenerator (13s)
+✔ [1603/1616] Built P21.Symmetric.TypeBridge (10s)
+✔ [1604/1616] Built P21.Symmetric.RawRows (10s)
+✔ [1605/1616] Built P21.Symmetric.GlueNormalForm (24s)
+✔ [1606/1616] Built P21.Symmetric.TwoGeneratorIdeal (24s)
+✔ [1607/1616] Built P21.Symmetric.BranchI (24s)
+✔ [1608/1616] Built P21.External.SymmetricThreeGenerator (11s)
+✔ [1609/1616] Built P21.Symmetric.BranchIActual (12s)
+✔ [1610/1616] Built P21.Symmetric.CrossLayer (14s)
+✔ [1611/1616] Built P21.Symmetric.Raw4 (14s)
+✔ [1612/1616] Built P21.Symmetric.BranchII (16s)
+✔ [1613/1616] Built P21.Symmetric.Reduction (11s)
+✔ [1614/1616] Built P21.Symmetric.Raw4Consequences (11s)
+✔ [1615/1616] Built P21.Symmetric.BranchIIActual (12s)
+✔ [1616/1616] Built P21.Symmetric.Closure (9.7s)
+Build completed successfully (1616 jobs).
+
+EXIT_CODE=0

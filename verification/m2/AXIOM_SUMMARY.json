@@ -1,0 +1,1042 @@
+{
+  "checked_declarations": 229,
+  "project_specific_axioms": 0,
+  "standard_axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": {
+    "P21.Symmetric.BranchIData.w": [],
+    "P21.Symmetric.BranchIData.L": [],
+    "P21.Symmetric.BranchIData.\u03c1": [],
+    "P21.Symmetric.BranchIData.c": [],
+    "P21.Symmetric.BranchIData.j": [],
+    "P21.Symmetric.BranchIData.\u03c4": [],
+    "P21.Symmetric.BranchIData.Ux": [],
+    "P21.Symmetric.BranchIData.Uy": [],
+    "P21.Symmetric.BranchIData.Zx": [],
+    "P21.Symmetric.BranchIData.Zy": [],
+    "P21.Symmetric.BranchIData.Stable": [
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.j_eq_emod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.j_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.return_previous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.return_next": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.c_zero": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.c_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.first_return": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.later_return_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.not_both_late": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.ux_carry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.x_only": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.swap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.stable_swap": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.y_only": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.xy_upper_x": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.xy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.four_hits_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.rectangle_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.ux_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.zx_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.uy_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.zy_translation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.firstReturnExample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.first_return_exception": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.firstReturnExample_periodic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIData.firstReturnExample_stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.normal_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.represented_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.x_eq": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.y_eq": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.z_eq": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.walk_identity": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.stable_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.ux_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.uy_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.zx_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.zy_hit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.four_hits": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.k1_aux_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.k1_reduces_to_branchI": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.k0_e0_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.k0_theta_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.div_eq_of_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.carry": [],
+    "P21.Symmetric.BranchII.ceiling": [],
+    "P21.Symmetric.BranchII.epsilon": [],
+    "P21.Symmetric.BranchII.tau": [],
+    "P21.Symmetric.BranchII.complement": [],
+    "P21.Symmetric.BranchII.complement_add_tau": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.carry_of_residue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.ceiling_of_residue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.epsilon_zero_or_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.epsilon_one_residue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.epsilon_one_predecessor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.crosscore_phase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.shift_gap_has_axis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.crosscore_shift_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.layer": [],
+    "P21.Symmetric.BranchII.complementLayer": [],
+    "P21.Symmetric.BranchII.layer_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.complementLayer_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.stable_coordinate_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchII.complement_coordinate_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.row_x": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.row_y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.row_px": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.row_py": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.rho_uv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.rho_primed_uv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.m_lt_w": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.actual_fs": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.actual_complement_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.x_minus_y_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.k1_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIIActual.k0_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.branchII_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.symmetric_tail_from_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.nonnegative_mul_mem": [
+      "propext"
+    ],
+    "P21.Symmetric.cross_layer_drop": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.cross_layer_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.complete_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.d_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.bezout": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.normal_form_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.normal_form_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.represented": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.d_mul_mem_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.w_mem_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.represented_eq_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.mem_tail_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.normal_form_mem_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.frobenius": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.symmetry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.isGreatest_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.w_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.normal_form_existsUnique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.tailSemigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.isFrobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.intersection_low": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.intersection_high": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.raw_min_layers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.rawCandidates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.raw_min_subset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.rawCandidates_ncard_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.raw_min_zero_subset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.surviving_eq_candidates": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.four_set_pair_distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.exists_raw4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.BranchIRealization.difference_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.row_x": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.row_y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.row_px": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.row_py": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.A_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.B_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.Ap_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.Bp_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.rho_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.rhop_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.rho_y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.rhop_y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.Ap_lt_A": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.Bp_lt_B": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.w_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Raw4Data.branchI_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.pf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.core": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.all_ap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.sub_multiple_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.backward_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.pf_add_m_mem_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.pf_add_tail_generator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.predecessor_not_stable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.ActualRawRow.positive_hit_required": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.layer_mem_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.multiplicity_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.multiplicity_coordinate_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.carry_binary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.carry_one_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.qm_x_coordinate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricGlueData.qm_y_coordinate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricAt": [
+      "propext"
+    ],
+    "P21.Symmetric.stableCore": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.shiftedCore": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.idealMin": [
+      "propext"
+    ],
+    "P21.Symmetric.mem_gamma_iff_tail_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_subset_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.gap_iff_stableCore": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_add_gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_isLeast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.m_not_mem_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_zero_not_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_mem_gt_m": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stableCore_min_gt_m": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stable_shift_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.stable_walk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.pf_iff_min_stableCore": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.shiftedCore_subset_gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.shiftedCore_isLeast": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.frobenius_eq_sub_core_min": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.symmetricAt_f_not_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.symmetricAt_gap_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.T": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.mem_T": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.T_eq_generated": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.u_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.v_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.bezout": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.representation_difference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.normal_form_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.normal_form_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.normal_form_mem_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.frobenius": [],
+    "P21.Symmetric.TwoGeneratorData.frobenius_symmetry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.subcritical_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.interior_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.subcritical_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.two_generator_intersection_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.translate": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.two_generator_intersection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.mem_of_gt_frobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.semigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.isFrobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.normal_form_existsUnique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.intersectionIdeal": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.intersectionIdeal_add": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.firstThreshold": [],
+    "P21.Symmetric.TwoGeneratorData.secondThreshold": [],
+    "P21.Symmetric.TwoGeneratorData.firstThreshold_mem": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.secondThreshold_mem": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.minimal_mem_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.minimal_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.minima_incomparable": [
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.two_minima_forces_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.minimal_pair_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.TwoGeneratorData.two_minima_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.tailIntersection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.minimal_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.distinguished_not_raw_apery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.idealMin_shift": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.min_shiftedCore_iff_pf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.tailIntersection_iff_shiftedCore": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.exact_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.min_shiftedCore_set": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.type_bridge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricTail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.SymmetricThreeGeneratorGluingStatement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.glue_data_symmetric_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

@@ -1,39 +1,66 @@
-# Codex self-check
+# M2A self-check record
 
-**Status: M1 CANDIDATE FOR TRUE AUDIT**
+STATUS: M2A INTERNAL SYMMETRIC CLOSURE CANDIDATE FOR TRUE AUDIT
+STD_SYM_GLUE OPEN
+FULL S3 OPEN
 
-This file describes development self-checks. It does not claim an independent audit.
+## Mathematical result
 
-| Check | Result / evidence |
-|---|---|
-| Foundation and C2.1–C2.5 | All implemented as proved Lean declarations; root imports all modules |
-| Main theorem | `P21MainStatement : Prop` only; intentionally unproved |
-| Build | `BUILD_LOG.txt` records the final `lake build` and successful exit |
-| Fresh project compilation | Copied distribution sources rebuilt with no project build cache; all modules succeeded, exit 0; `verification/FRESH_PROJECT_BUILD_LOG.txt` |
-| Forbidden source tokens | 0 matches; `PROOF_DEBT_REPORT.txt` |
-| Project-specific axioms | 0, both declaration scan and transitive axiom inspection |
-| Axiom inspection | 107 theorem/definition/abbreviation declarations, including all 73 theorems; `AXIOM_REPORT.txt` and `verification/AXIOM_SUMMARY.json` |
-| Allowed axioms observed | `propext`, `Classical.choice`, `Quot.sound` only |
-| Actuality firewall | Natural coefficient witnesses; signed representations separate; no signed-to-semigroup shortcut |
-| Source containment | `replaceWithinActualFactorization` requires coefficientwise containment in its explicit `a` argument |
-| Same-element removal | `removeOne` consumes its named witness; KEY uses it for the same `q + n_i` |
-| Criticality interface | Only a three-coordinate `SignedRelation3`; no criticality theorem or m-bearing criticality helper |
-| Tail gcd | Actual inputs give a signed group expression; never an actual m-factorization |
-| Four rows | Injective `Fin 4 → ℤ`; facts first proved for every member of the full Q |
-| Source consistency | Main statement and C2 normalized PDF text agree; editorial differences explicitly recorded |
-| Artifact integrity | Original input hashes; all ZIP entry hashes checked against `MANIFEST_SHA256.json` |
+The complete internal theorem `P21.Symmetric.symmetric_tail_from_glue_data`
+compiles. Its hypotheses are the unchanged M1 Setting, a Frobenius element,
+CAN, and explicit SymmetricGlueData. No branch, hit, raw-minimum cardinality,
+auxiliary positivity, or actual PF property is assumed in that public theorem.
 
-No unproved project fact was introduced as a theorem or an extra setup assumption.
-Some foundational helpers have fewer hypotheses than the full publication setting;
-the required statements retain the specified mathematical scope. Natural subtraction
-occurs only in the final cardinality expression `type - 1`, not in factorization algebra.
+The standard classification producing gluing data from symmetric tail semantics
+is the sole missing input for full S3. It is an explicitly documented target Prop,
+not a project axiom or a supplied proof. No later certificate was used.
 
-Both the initial build and the fresh project compilation reused the locally installed, pinned mathlib compiled cache.
-The supplied portable build commands enable a fresh dependency acquisition and
-recheck. No claim is made that this run rebuilt every third-party dependency from
-source or independently verified all of mathlib. Standard Lean kernel checking
-of the project and transitive axiom reporting are the checks performed here.
+## Verification actually executed
 
-Review priorities: publication-to-Setting equivalence, integer PF semantics, the
-max/min Γ-order predicates, containment in the named actual witness, and preservation
-of the full Q while selecting four rows. See `NEXT_RESTART.md`.
+- Fresh separate project copy, initially without any project .olean files.
+- `lake build`: exit 0, all frozen M1 modules compiled.
+- Explicit build of all 16 new M2 modules: exit 0; includes Closure.
+- 190 theorems, 39 definitions and 6 structures inventoried.
+- Every one of the 229 theorem/definition roots checked by `#print axioms`.
+  Observed only propext, Classical.choice and Quot.sound; zero project-specific axioms.
+- 36 project-owned Lean files scanned lexically: zero forbidden code tokens.
+- Full statement inspection and all six compile-time regression/check files: exit 0.
+- Thirteen adversarial lexical-scanner unit tests: passed.
+- All 13 protected M1 files match both the initial SHA256 baseline and Git blobs
+  at 9464b9cd3b6b070f9fa6d1c212f27065d1eb84b3.
+- All nine dependency checkouts match the unchanged manifest and have no tracked changes.
+- Every Lean file in the fresh verification copy was byte-compared to the delivery source.
+
+Only pinned third-party package artifacts were reused. M1 and M2 project artifacts
+were compiled anew. No independent Linux/GitHub M2 execution is claimed; this fresh
+build was performed on Windows with the pinned Lean toolchain.
+
+## Regression boundaries
+
+2GI and TYPE-BRIDGE retain their exact set/cardinality statements. A concrete
+example permits both SPLIT conditions simultaneously. The signed witness for 1
+in the (2,3) group is paired with a proof that no actual nonnegative factorization
+exists. Branch I has an explicit stable first-return example where the later-return
+LOWER condition fails at N=1. Branch II protects its own predecessor exception.
+The finite examples test interfaces; the general closures are symbolic proofs.
+
+## Internal review
+
+Separate agent reviews checked the stable/gluing/Branch II arithmetic modules,
+the exact bridge and actuality interfaces, and the final integration. No material
+correctness or source-faithfulness issues were found. Review identified the missing
+explicit statement E=w-L>0; it was added and compiled as
+`BranchIRealization.difference_pos`. These reviews are implementation checks, not
+an independent TRUE AUDIT ruling.
+
+## Evidence
+
+BUILD_LOG.txt, AXIOM_REPORT.txt, PROOF_DEBT_REPORT.txt,
+M1_FROZEN_INTEGRITY_REPORT.txt, verification/m2/AXIOM_SUMMARY.json,
+verification/m2/DECLARATIONS.json, verification/m2/STATEMENTS.txt,
+verification/m2/REGRESSION_LOG.txt, verification/m2/FRESH_CHECK_RUN.txt,
+verification/m2/FRESH_VERIFICATION_REPORT.json, verification/m2/DEPENDENCY_STATE.json.
+
+The packaging script requires a successful fresh-verification report and verifies
+all protected/source hashes, ZIP CRC and every ZIP entry before reporting success.
+The ZIP manifest covers every file except the manifest itself.
