@@ -10,6 +10,13 @@ permissions:
 
 jobs:
   audit:
+    # This job checks the exact M1 distribution. The M2A job checks M1 integrity
+    # and builds the M1 root on M2 audit branches, which intentionally add Lean files.
+    if: >-
+      github.ref_name != 'm2-symmetric-tail' &&
+      github.ref_name != 'm2a-symmetric-tail-audit' &&
+      github.head_ref != 'm2-symmetric-tail' &&
+      github.head_ref != 'm2a-symmetric-tail-audit'
     name: Exact M1 candidate / fresh Lean build
     runs-on: ubuntu-latest
     timeout-minutes: 90

@@ -80,3 +80,12 @@ TYPE II; CHAIN; other external structure theorems; Euclidean descent;
 
 This is a candidate for independent review. `M2_STATEMENT_MAP.md` maps all new
 declarations to the publication. `M2_DEPENDENCY_DAG.md` records proof dependencies.
+
+## External CI reproducibility gate (M2A)
+
+The GitHub branch now includes `.github/workflows/m2a-audit.yml` and the exact
+authoritative candidate ZIP. See `ci/M2A_CI.md` for the immutable-source gates,
+explicit M2 build, original verifier execution and downloadable evidence.
+The source audit was reported clean by the user; external CI evidence is pending
+until a successful run is bound to its commit and artifact in the handoff receipt.
+STD_SYM_GLUE OPEN. FULL S3 OPEN. No audit ruling or main merge is made here.
