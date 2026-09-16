@@ -1,0 +1,93 @@
+name: P21 Lean M1 Audit
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Exact M1 candidate / fresh Lean build
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - name: Checkout exact audit commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Initialize evidence
+        run: python3 ci/audit.py init
+
+      - name: Verify original ZIP and source bytes
+        run: python3 ci/audit.py integrity
+
+      - name: Install clean pinned elan and exact Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          export ELAN_HOME="$RUNNER_TEMP/p21-elan"
+          test ! -e "$ELAN_HOME"
+          mkdir -p "$RUNNER_TEMP/p21-elan-installer"
+          curl --fail --location --retry 3 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$RUNNER_TEMP/p21-elan-installer/elan.tar.gz"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $RUNNER_TEMP/p21-elan-installer/elan.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/p21-elan-installer/elan.tar.gz" -C "$RUNNER_TEMP/p21-elan-installer"
+          "$RUNNER_TEMP/p21-elan-installer/elan-init" -y --no-modify-path --default-toolchain none
+          echo "ELAN_HOME=$ELAN_HOME" >> "$GITHUB_ENV"
+          echo "$ELAN_HOME/bin" >> "$GITHUB_PATH"
+          toolchain="$(tr -d '\r\n' < lean-toolchain)"
+          "$ELAN_HOME/bin/elan" toolchain install "$toolchain"
+
+      - name: Record environment
+        run: python3 ci/audit.py environment
+
+      - name: Optional pinned third-party cache (no project cache)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if lake exe cache get \
+            Mathlib.NumberTheory.FrobeniusNumber Mathlib.Data.Set.Card \
+            Mathlib.Order.SuccPred.Archimedean Mathlib.Algebra.BigOperators.Fin \
+            Mathlib.Tactic.Ring Mathlib.Tactic.FinCases Mathlib.Tactic.NormNum \
+            Mathlib.Data.Int.Interval Mathlib.Data.Int.SuccPred \
+            2>&1 | tee audit-evidence/DEPENDENCY_CACHE_LOG.txt; then
+            echo 'Pinned third-party cache available; project proofs will be compiled fresh.' >> audit-evidence/DEPENDENCY_CACHE_LOG.txt
+          else
+            echo 'Cache unavailable; lake build must compile the missing dependencies from pinned source.' >> audit-evidence/DEPENDENCY_CACHE_LOG.txt
+          fi
+
+      - name: Fresh lake build
+        run: python3 ci/audit.py build
+
+      - name: Check pinned dependency state
+        run: python3 ci/audit.py dependencies
+
+      - name: Proof debt scan (lexical)
+        run: python3 ci/audit.py debt
+
+      - name: Original M1 axiom checker
+        run: python3 ci/audit.py axioms
+
+      - name: Original verification suite and distribution copy
+        run: python3 ci/audit.py suite
+
+      - name: Final source integrity
+        if: always()
+        run: python3 ci/audit.py integrity
+
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: P21_M1_TRUE_AUDIT_EVIDENCE
+          path: audit-evidence/
+          if-no-files-found: error
+          retention-days: 90

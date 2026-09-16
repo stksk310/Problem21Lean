@@ -63,3 +63,59 @@ toolchain. Ordinary reproduction should use `lake` as above.
 See `SOURCE_OF_TRUTH.md` for the source comparison and `CODEX_SELF_CHECK.md` for
 the self-check scope. Independent mathematical/statement review remains necessary
 before any subsequent promotion by the user's control process.
+
+
+## GitHub reproducibility gate
+
+STATUS: M1 CANDIDATE FOR TRUE AUDIT
+
+M1 scope: FOUNDATION + C2 only.
+
+OPEN: symmetric tail; nonsymmetric classification; PATH; TYPE II; CHAIN;
+external structure theorems; Euclidean descent; 715-term certificate;
+3234-term certificate; main theorem proof.
+
+The workflow **P21 Lean M1 Audit** runs on pushes, pull requests, and manual
+requests in a clean `ubuntu-latest` GitHub-hosted job. It installs elan v4.2.4
+from its SHA-256-checked official release and selects exactly the unchanged
+`lean-toolchain`. Every dependency must match `lake-manifest.json`.
+There is no Actions cache restore and no committed compiled Lean artifact.
+The job may download mathlib's pinned third-party cache; cache retrieval failure
+falls back to compiling missing dependencies from source. The M1 project itself
+always starts without compiled artifacts and runs `lake build`.
+
+The authoritative implementation input is preserved at
+`ci/candidate/P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_20260916.zip`.
+Its SHA-256 is
+`37f7a4163b70effbb294e65c39fa5a36e5ec8d9950769df9568047583335d0db`.
+`SOURCE_SHA256_BEFORE_GITHUB.txt` is derived from that ZIP and covers all original
+Lean sources, toolchain/lock/config files, and verification scripts (20 files).
+CI verifies their bytes both in Git and in the working tree, and checks all other
+original files too; only an appended root README section is allowed. The original
+`MANIFEST_SHA256.json` remains a manifest of the unmodified candidate, not a claim
+that its old README digest covers this appended section.
+
+CI runs a tested lexical proof-debt scanner in addition to the original raw scan.
+Nested comments and ordinary/raw strings are distinguished from code; malformed
+constructs, interpolated strings, and character/quotation literals require manual
+inspection and fail closed.
+The original axiom checker accepts only `propext`, `Classical.choice`, and
+`Quot.sound`. All original portable verification scripts run unchanged in a
+separate temporary copy, because `prepare_reports.py` regenerates inspection
+sources. `lake.ps1` is an original Windows path adapter, so Linux uses `lake`
+directly. A second pristine copy exercises both modes of the original packaging
+script and verifies distribution implementation bytes against the input ZIP.
+No supplied manuscript certificate-verifier scripts are extracted or executed.
+
+Each run uploads **P21_M1_TRUE_AUDIT_EVIDENCE**, including environment and
+versions, build exit code, source hashes, proof-debt and axiom results,
+verification-suite output, dependency revisions, and the exact checked commit.
+Artifacts are retained for 90 days; download them for longer-term preservation.
+A successful workflow establishes CI reproducibility evidence only. It does not
+promote the mathematical audit status.
+
+CI implementation details and the user's execution scope are recorded in
+`ci/PLAN.md` and `ci/REQUEST.md`. Official installation/cache/action references:
+[elan](https://github.com/leanprover/elan),
+[mathlib cache at the pinned revision](https://github.com/leanprover-community/mathlib4/blob/de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11/Cache/README.md),
+[artifact uploads](https://github.com/actions/upload-artifact).

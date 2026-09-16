@@ -1,0 +1,2 @@
+# Preserve the candidate's exact bytes, including original line endings.
+* -text
