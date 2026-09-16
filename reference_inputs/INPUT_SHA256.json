@@ -1,0 +1,26 @@
+[
+  {
+    "authority_level": 1,
+    "file": "P21_Journal_of_Algebra_Submission_Manuscript_FINAL_20260916.pdf",
+    "bytes": 465082,
+    "sha256": "40f128453206c54800a5e3df1ec18a945a5a0836469df1de2fac9fb307354346"
+  },
+  {
+    "authority_level": 2,
+    "file": "P21_MANUSCRIPT_EN_FINAL_20260908_v1.zip",
+    "bytes": 2539140,
+    "sha256": "86f2dfa2cfee7db44d354163e9b352258b23f1d25b9031b16d85ef50eb599c95"
+  },
+  {
+    "authority_level": 3,
+    "file": "P21_FINAL_FROZEN_VERIFICATION_EDITION_20260907.zip",
+    "bytes": 829768,
+    "sha256": "f98436c59bf735444e75cc0a133a8ac128ba7c69c049e97da9593a3aeab64bc8"
+  },
+  {
+    "authority_level": 4,
+    "file": "P21_supplement_v1.zip",
+    "bytes": 63802,
+    "sha256": "24a02d34651c35aa3d07f707fd38b7ca29d0f8bbfa86190d956657308b498c5e"
+  }
+]

@@ -1,0 +1,1121 @@
+--- 20260908 PDF extracted text
++++ 20260916 submission PDF extracted text
+@@ -1,21 +1,23 @@
+ The type of four-generated
+ numerical semigroups
+ with canonical reduction
+-Author name and affiliation: [to be inserted]
+-English manuscript final freeze 8 September 2026
+-P21-MANUSCRIPT-EN-FINAL-20260908-v1
++Keisuke Sato
++Independent Researcher, Japan
++Corresponding author: stksk310@gmail.com ORCID: 0009-0005-4230-0268
+ Abstract
+ Let Γ = ⟨𝑚, 𝑛1, 𝑛2, 𝑛3⟩ be a numerical semigroup with four minimal generators, where 𝑚is its least
+-positive element and 𝐹 its Frobenius number. Under the canonical-reduction condition 𝐹 + 𝑚 − 𝜑 ∈
+-Γ for every pseudo-Frobenius number𝜑, we prove that the type ofΓ is at most 4. The proof combines
+-a two-layer decomposition of the Apéry set, factorization geometry in the three-generated tail, and
+-a Euclidean descent on two packet relations. We prove that the coefficients required for the final
+-exchanges occur within factorizations of the same element, and we provide static full-coefficient
+-certificates for the positivity arguments.
+-Keywords: numerical semigroup; pseudo-Frobenius number; Cohen–Macaulay type; canonical re-
+-duction; Apéry set; factorization.
+-11 sections; Appendices A–D; required full-coefficient proof data
+-Canonical reduction and type English manuscript final freeze
++positive element and𝐹 its Frobenius number. Assume the canonical-reduction condition𝐹 +𝑚−𝜑 ∈
++Γ for every pseudo-Frobenius number 𝜑. We prove that the type satisfies 𝑡(Γ) ≤ 4. This gives an
++affirmative answer to Problem 21 of Moscariello and Sammartano, originally posed as Question 4.4
++by Moscariello and Strazzanti; the bound is sharp. The proof combines a two-layer decomposition
++of the Apéry set, factorization geometry in the three-generated tail, and a Euclidean descent on two
++packet relations. The large polynomial positivity expansions used at the final exchange steps are
++accompanied by complete static coefficient certificates and reproducible symbolic checks; the proof
++itself does not rely on a finite search of numerical semigroups.
++Keywords: numerical semigroup; pseudo-Frobenius number; type; embedding dimension four;
++canonical reduction; Apéry set.
++MSC 2020: 20M14 (primary); 20M25, 13H10 (secondary).
++Canonical reduction and type T ype bound under canonical reduction
+ Contents
+ 1 Introduction 2
+ 2 Preliminaries and canonical reduction 3
+@@ -33,20 +35,26 @@
+ C Positivity expansions for the root analysis 92
+ D Specification and reproducibility of the static polynomial certificates 93
+ 1
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 1 Introduction
+ The type of a numerical semigroup is the number of its pseudo-Frobenius numbers, and it agrees with the
+-Cohen–Macaulay type of the corresponding semigroup ring [7]. In this paper we control this number through
++Cohen–Macaulay type of the corresponding semigroup ring [10]. In this paper we control this number through
+ the minimal generators and their nonnegative representations. Standard structure theorems are available for
+ three-generated semigroups in both the symmetric and nonsymmetric cases, whereas in embedding dimension
+ four one must relate the three-generated subsemigroup obtained by removing the smallest generator to the gap
+ conditions in the original semigroup.
+ The condition studied here is canonical reduction. Let 𝑚 denote the least positive generator and 𝐹 the
+ Frobenius number. We require 𝐹 + 𝑚 − 𝜑 ∈ Γ for every pseudo-Frobenius number 𝜑. This semigroup-
+-theoretic formulation appears in §4 of Moscariello–Strazzanti [ 7]. The corresponding condition for all non-
++theoretic formulation appears in §4 of Moscariello–Strazzanti [ 10]. The corresponding condition for all non-
+ negative gaps has also been studied under the name positioned [1]. We use canonical reduction as our primary
+ terminology and prove directly in Section 2 the passage from pseudo-Frobenius numbers to all gaps. For the
+-ring-theoretic background, see Rahimi [ 9].
++ring-theoretic background, see Rahimi [ 12].
++The unrestricted embedding-dimension-four setting admits numerical semigroups of arbitrarily large type,
++so a type bound of this form cannot hold without additional structure [ 3, 9]. By contrast, stronger bounds
++are known in narrower Gorenstein-type classes: in embedding dimension four, the almost symmetric and
++nearly Gorenstein settings lead to type at most three [ 7, 10]. Canonical reduction is broader than the nearly
++Gorenstein condition [ 10]. Problem 21 of Moscariello–Sammartano asks whether this broader canonical-
++reduction hypothesis nevertheless forces the sharp bound four [ 8, 9].
+ Our main result is the following.
+ 1.1 T ype bound for canonical four-generated numerical semigroups
+ A numerical semigroup is a cofinite subset of the nonnegative integers that contains 0 and is closed under
+@@ -60,9 +68,10 @@
+ one has
+ 𝑡(Γ) ≤ 4
+ The proof is assembled in § 11.2.
+-This statement has the same hypotheses and conclusion as Question 4.4 of Moscariello–Strazzanti and
+-Problem 21 of Moscariello–Sammartano [ 6, 7]. Throughout the paper, the canonical condition displayed
+-above is used at every stage of the proof.
++This gives an affirmative answer to Problem 21 of Moscariello–Sammartano, originally posed as Ques-
++tion 4.4 by Moscariello–Strazzanti [ 8–10]. The bound is sharp: the canonical numerical semigroup
++⟨16, 17, 19, 39⟩has type four [ 10]. Throughout the paper, the canonical condition displayed above is used at
++every stage of the proof.
+ The proof begins with a two-layer decomposition of the Apéry set. Set𝑄(Γ) = 𝑃 𝐹 (Γ)∖{𝐹 }, and associate
+ to each 𝑞 ∈ 𝑄(Γ)the elements 𝑞 + 𝑚 and 𝑐𝑞 = 𝐹 + 𝑚 − 𝑞 . Their nonnegative representations imply that
+ 𝐻 = ⟨𝑛 1, 𝑛2, 𝑛3⟩ is a genuine minimally three-generated numerical semigroup. When 𝐻 is symmetric, we
+@@ -73,6 +82,8 @@
+ using an empty relative-lattice tetrahedron and a finite path inside a box. Combining these constraints with
+ incomparability of the complements reduces four elements selected from a putative counterexample to one
+ of three configurations: a path configuration, a configuration with one singleton, or a chain configuration.
++2
++Canonical reduction and type T ype bound under canonical reduction
+ The first two configurations are eliminated by comparing two returns. In the chain configuration, we
+ maximize one coordinate over the finite factorization set of the same element 𝑞𝐴 + 𝑚, thereby constructing a
+ unit-root relation. After treating the boundary and the range in which the relevant packets are available, two
+@@ -80,8 +91,6 @@
+ preserves the same semigroup and the same 𝑊 = 𝐹 + 𝑚 while decreasing the positive integer 𝐸 + 𝜒. At
+ termination, all coefficients required for the exchange are shown to occur in representations of that same 𝑊,
+ and removing one copy of 𝑚 yields the contradiction 𝐹 ∈ Γ .
+-2
+-Canonical reduction and type English manuscript final freeze
+ Sections 2–4 establish the structural reductions and the classification into the three terminal configura-
+ tions. Sections 5–6 eliminate the configurations involving singletons. Sections 7–10 treat the chain config-
+ uration, and Section 11 assembles the main theorem. Appendix A contains the complete case analysis for
+@@ -116,21 +125,21 @@
+ 2.2.1 Representation of symmetric three-generated semigroups
+ After permuting the generators, every minimally three-generated symmetric numerical semigroup can be
+ written as 𝐻 = ⟨𝑑𝑢, 𝑑𝑣, 𝑤⟩, with 𝑑, 𝑢, 𝑣 ≥ 2, gcd(𝑢, 𝑣) =gcd(𝑑, 𝑤) = 1, and 𝑤 ∈ ⟨𝑢, 𝑣⟩. This is the form
++3
++Canonical reduction and type T ype bound under canonical reduction
+ corresponding to the three-generated complete-intersection theory of Herzog and Delorme; the direction used
+-here is stated explicitly in García-Sánchez–Martín Cruz, §3.2, Theorem 6 [ 2–4].
++here is stated explicitly in García-Sánchez–Martín Cruz, §3.2, Theorem 6 [ 2, 4, 5].
+ 2.2.2 Standard form for nonsymmetric three-generated semigroups
+ For every minimally three-generated nonsymmetric numerical semigroup there exist positive integers 𝑎𝑟, 𝑏𝑟,
+ with 𝜌𝑟 = 𝑎𝑟 + 𝑏𝑟, such that the critical relations, the two pseudo-Frobenius numbers, and the formulas for
+-3
+-Canonical reduction and type English manuscript final freeze
+ the primitive tail generators given below hold. The precise forms used here follow Nari–Numata–Watanabe,
+-§1, equation (1.1), and §2, equation (2.1.1) and Propositions 2.1–2.2 [ 4, 8]. Pairwise coprimality of the three
+-generators is not assumed.
++§1, equation (1.1), and §2, equation (2.1.1) and Propositions 2.1–2.2 [ 5, 11]. Pairwise coprimality of the
++three generators is not assumed.
+ 2.2.3 Empty lattice tetrahedra
+ A lattice tetrahedron containing no lattice points other than its vertices has lattice width one. Equivalently,
+ there is a nonconstant primitive integer-valued affine functional that places all four vertices on two consecutive
+-integer levels. We use White’s theorem in this form [ 10]. Khan–Rogers, §1, Theorems 3–4, gives the normal
+-form required here [ 5]. The application to the relative lattice, the partition of the vertices into two pairs, and
++integer levels. We use White’s theorem in this form [ 13]. Khan–Rogers, §1, Theorems 3–4, gives the normal
++form required here [ 6]. The application to the relative lattice, the partition of the vertices into two pairs, and
+ the subsequent coefficient comparisons are all proved in this paper.
+ We fix the convention for 𝑆𝑇 𝐷𝐻𝐸𝑅𝑍𝑂𝐺 in a cyclic order (𝑖, 𝑗, 𝑘):
+ 𝜌𝑖𝑛𝑖 = 𝑏𝑗𝑛𝑗 + 𝑎𝑘𝑛𝑘, 𝜌 𝑗𝑛𝑗 = 𝑎𝑖𝑛𝑖 + 𝑏𝑘𝑛𝑘, 𝜌 𝑘𝑛𝑘 = 𝑏𝑖𝑛𝑖 + 𝑎𝑗𝑛𝑗. (HCR)
+@@ -156,15 +165,14 @@
+ 2.5 Scope of notation
+ For traceability to the source notation, we do not globally rename the principal symbols. The following
+ symbols have local scopes and should not be identified across the different rows of the table.
++4
++Canonical reduction and type T ype bound under canonical reduction
+ Symbol Principal scope and meaning
+ 𝑄 In Section 2, 𝑄(Γ) = 𝑃 𝐹 (Γ) ∖ {𝐹 }is a set. In Section 8,
+ 𝑄 = 𝑈 𝑗 + 1; in the latter part of D in Section 9, 𝑄 = 𝜏 0 is a
+ local integer.
+ 𝐻 Throughout, the three-generated tail 𝐻 = ⟨𝑛 1 , 𝑛2 , 𝑛3 ⟩. In
+ Section 10, 𝐻𝑝 = 𝑇 + 𝑤 is a local packet coefficient.
+-4
+-Canonical reduction and type English manuscript final freeze
+-Symbol Principal scope and meaning
+ 𝐶 In Sections 7–9, the 𝑛𝑘 -coefficient of the CORE-ROOT. In
+ Appendix B, a 3 × 3 matrix 𝐶.
+ 𝑇 In CHAIN/CENTRAL, 𝑇 = 𝑏 𝑘 + 𝛼. In Section 3 and
+@@ -203,11 +211,11 @@
+ 𝑠 ∈ Γ, maximality gives 𝜑 + 𝑠 ∈ Γ. Thus 𝜑 ∈ 𝑃 𝐹 (Γ), and 𝜑 − 𝑥 ∈ Γ.
+ 𝑊 − 𝑥 = (𝑊 − 𝜑) + (𝜑 − 𝑥) ∈ Γ.
+ This direction is therefore obtained directly, without invoking an external positioned-semigroup criterion.
++5
++Canonical reduction and type T ype bound under canonical reduction
+ 2.9 Exact two-layer decomposition
+ For 𝑤 ∈ 𝒜 , set 𝑏 = 𝑊 − 𝑤 ≥ 0 . If 𝑤 = 0, then 𝑏 = 𝑊 ∈ 𝒜 . If 𝑤 > 0, then 𝑥 = 𝑤 − 𝑚 is a nonnegative
+ gap, so the preceding subsection gives 𝑏 + 𝑚 = 𝑊 − 𝑥 ∈ Γ.
+-5
+-Canonical reduction and type English manuscript final freeze
+ • If 𝑏 ∈ Γ, then 𝑏 − 𝑚 ∈ Γ would imply 𝑤 + (𝑏 − 𝑚) = 𝐹 ∈ Γ, so 𝑏 ∈ 𝒜. In this case 𝑏 + 𝑚 ∉ 𝒜.
+ • If 𝑏 ∉ Γ, then 𝑏 + 𝑚 ∈ Γ and (𝑏 + 𝑚) − 𝑚 = 𝑏 ∉ Γ, so 𝑏 + 𝑚 ∈ 𝒜.
+ Thus exactly one of the following holds: 𝑊 − 𝑤 ∈ 𝒜 or 𝑊 + 𝑚 − 𝑤 ∈ 𝒜.
+@@ -242,10 +250,10 @@
+ Furthermore, 𝑐 − 𝑚 = 𝐹 − 𝑞 is positive and does not lie in Γ, so 𝑐 ∈ 𝒜 . Also 𝑥 = 𝑐 − 𝑛 𝑖 ∈ 𝒜 , since
+ 𝑥 − 𝑚 ∈ Γ would imply 𝑐 − 𝑚 ∈ Γ. With 𝑦 = 𝑞 + 𝑛𝑖 and ℎ = 𝑞 + 𝑚,
+ ℎ, 𝑐, 𝑥, 𝑦 ∈ 𝐻 ∩ 𝒜, ℎ + 𝑐 = 𝑊 + 𝑚, 𝑥 + 𝑦 = 𝑊 .
++6
++Canonical reduction and type T ype bound under canonical reduction
+ This conclusion is obtained separately for each supported direction. The classification of rows is carried
+ out in G4.
+-6
+-Canonical reduction and type English manuscript final freeze
+ 2.11 Tail gcd firewall
+ Assume 𝑄 ≠ ∅, and choose 𝑞 ∈ 𝑄. Then 𝑞 + 𝑚, 𝑊 , 𝑐 = 𝑊 − 𝑞all lie in 𝒜 ⊆ 𝐻 . Hence
+ 𝑚 = (𝑞 + 𝑚) + (𝑊 − 𝑞) − 𝑊 ∈ ℤ𝐻.
+@@ -277,11 +285,11 @@
+ 𝑡 ∉ Γ ⟺ 𝑓 − 𝑡 ∈ 𝐾. (GAP-K)
+ Hence 𝐹 = 𝑓 − ℎ . Since 0 ∉ 𝐾 (because 𝑚 ∉ 𝐻), we have ℎ ≥ min(𝐻 ∖ {0}) > 𝑚. Put
+ 𝑟 = ℎ − 𝑚 = 𝑓 − 𝐹 − 𝑚 > 0, 𝑟 + 𝑛𝑚 ∈ 𝐻 (𝑛 ≥ 1). (FS)
++7
++Canonical reduction and type T ype bound under canonical reduction
+ The set 𝐾 is a Γ-ideal, and GAP-K shows that 𝑞 ↦ 𝑓 − 𝑞 is a bijection from 𝑃 𝐹 (Γ)onto MinΓ 𝐾. Applying
+ CAN to these minimal generators gives
+ 𝐽 ∶= 𝐾 − 𝑟 ⊆ Γ, min 𝐽 = 𝑚, 𝑚 ∈ 𝐽 .
+-7
+-Canonical reduction and type English manuscript final freeze
+ Set
+ 𝐼𝑟 = {𝑐 ∈ 𝐻 ∶ 𝑐 + 𝑟 ∈ 𝐻}
+ By FS, 𝑐 ∈ 𝐼 𝑟 ⇒ 𝑐 + 𝑟 ∈ 𝐾 , and therefore 𝐽 ∩ 𝐻 = 𝐼 𝑟.
+@@ -324,7 +332,7 @@
+ where in every case 𝑎 = 𝑐 + 𝑟, 𝐴 + 𝐷 = 𝐴′ + 𝐷′ = 𝑣, and 𝐵 + 𝐶 = 𝐵′ + 𝐶′ = 𝑢. Moreover
+ 𝜌 = 𝑢𝑣 − 𝐴𝑢 − 𝐵𝑣 = −𝐴𝑢 + 𝐶𝑣 = −𝐵𝑣 + 𝐷𝑢.
+ 8
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 3.4 Cross-layer rigidity and actual pseudo-Frobenius input
+ If 𝐴′ ≥ 𝐴 , then 𝑐′
+ 𝑥 − 𝑐𝑥 = (𝑑 − 𝑠)𝑤 + (𝐴′ − 𝐴)𝑥 ∈ 𝐻 , contradicting raw incomparability. Hence
+@@ -374,7 +382,7 @@
+ in the XY case the second stable point is a gap. The key point in this branch is not to apply to the first return
+ a predecessor constraint that is valid only for later returns.
+ 9
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ For Branch II with 𝑘0 = 1, we first establish positivity of the auxiliary quantity and then move backward
+ along the two D-rows. Since both backward points are gaps, symmetry of the two-generated semigroup and
+ the intersection formula imply the Branch I condition. When 𝑘0 = 0, the case 𝑒 = 0 is excluded directly. For
+@@ -413,7 +421,7 @@
+ Frobenius antichain property. There is at most one lower corner with triple support. A higher corner would
+ give 𝐹 (𝐻) ≥ 𝐹 (Γ)while its corresponding 𝑞 must satisfy 𝑞 < 𝐹 (Γ), a contradiction.
+ 10
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.1.1 Short proof of the six-arm atlas
+ Assume 𝑞 ∉ 𝐻 , 𝑞 + 𝑛 𝑗, 𝑞 + 𝑛𝑘 ∈ 𝐻 , and 𝑞 + 𝑛 𝑖 ∉ 𝐻 . Choose the largest integer ℓ ≥ 0 such that
+ 𝑞 + ℓ𝑛 𝑖 ∉ 𝐻 . It exists because 𝐻 is a numerical semigroup, and ℓ ≥ 1 because 𝑞 + 𝑛 𝑖 ∉ 𝐻 . Then
+@@ -453,7 +461,7 @@
+ between 𝑛𝑗 and 𝑛𝑘, and any nonzero such relation would place a critical multiplier below 𝜌𝑗 or 𝜌𝑘 on one
+ side.
+ 11
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.3 Critical-box uniqueness and an integer kernel basis
+ Critical-box uniqueness. There do not exist two distinct nonnegative factorizations for which every co-
+ ordinate satisfies 𝑋𝑟 < 𝜌 𝑟. Their difference would be a nonzero kernel vector. With three coordinates,
+@@ -491,7 +499,7 @@
+ If 𝑢 ≥ 1, 𝑣 0 ≤ 0 , then the 𝑗-coordinate is at most −𝜌𝑗, impossible. If 𝑢 ≤ −1, 𝑣 0 ≥ 1 , then the 𝑗-
+ coordinate is at least 𝜌𝑗 + 𝑎𝑗, impossible. If 𝑢 ≥ 0, 𝑣0 ≥ 1, then the 𝑖-coordinate is at least 𝑏𝑖, impossible. If
+ 12
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑢 ≤ −1, 𝑣0 ≤ 0, then the 𝑖-coordinate is at most −𝑎𝑖, impossible. The remaining case 𝑢 = 0, 𝑣0 ≤ −1 gives
+ 𝑘 ≥ 𝜌𝑘, also impossible. Thus 𝑢 = 𝑣0 = 0.
+ Therefore
+@@ -530,7 +538,7 @@
+ would put 𝑞𝐴 or 𝑞𝐵 in Γ.
+ Moreover, neither 𝐸𝐴 nor 𝐸𝐵 lies in 𝐻. We give the short pure-H proofs separately.
+ 13
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.7.1 𝐸𝐴 ∉ 𝐻
+ Suppose 𝐸𝐴 = 𝑋𝑛𝑗 + 𝑌 𝑛𝑘, with 𝑋, 𝑌 ≥ 0 . The canonical formula gives
+ 𝑃 𝑛𝑖 = (𝑋 − 𝑎𝑗 + 1)𝑛𝑗 + (𝑌 + 1)𝑛𝑘.
+@@ -564,7 +572,7 @@
+ copy of 𝑛𝑖 from the same final representation would give 𝐹 ∈ Γ ; the condition 𝑎𝑖 ≥ 1 supplies that copy.
+ The other three cases are analogous, using 𝑅𝑗 or 𝑅𝑘. Hence
+ 14
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑈𝑗 + 𝑔 ≤ 𝜌𝑗 − 1, 𝑈 𝑘 + 𝑇 ≤ 𝜌 𝑘 − 1,
+ 𝑉𝑗 + 𝑅 ≤ 𝜌𝑗 − 1, 𝑉 𝑘 + 𝛼 ≤ 𝜌𝑘 − 1. (CAP)
+ 4.9 Uniform exclusion of unequal levels
+@@ -592,7 +600,7 @@
+ Every coefficient in this final expression is nonnegative, a contradiction. In particular, when 𝛼 = 0 , the
+ inequality 𝐶 ≥ 1 gives 𝛼 + 𝐶 − 1 ≥ 0. No stronger bound such as 𝜎 ≥ 3 or 𝜎 ≥ 5 is needed.
+ 15
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.9.2 𝐿𝐵 > 𝐿𝐴 is impossible
+ Let 𝜎 = 𝐿 𝐵 − 𝐿𝐴 ≥ 1. If 𝑡 ≥ 0, then
+ 𝐸𝐵 = 𝐿𝐴𝑚 + 𝑡𝑛𝑗 + 𝐾𝑛𝑘
+@@ -624,7 +632,7 @@
+ 𝑞𝐵 + 𝑛𝑖 = 𝐿𝑚 + 𝑡𝑛𝑗 + (𝑢 + 𝑏𝑘)𝑛𝑘, 𝐿 ≥ 1, 𝑡, 𝑢 ≥ 0 (EA/EB)
+ No unit-root hypothesis is used in this synchronization.
+ 16
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Therefore the genuine factorization 𝑓𝐴 = (𝑞𝐴 + 𝑛𝑖) + (𝜆 − 1)𝑛𝑖 has 𝑗-coordinate at least 𝑎𝑗. If an actual
+ 𝐴𝑗(𝜇), with 𝜇 ≤ 𝑎𝑗 − 1, were present, then removing 𝜇𝑛𝑗 from this same factorization would put 𝐴𝑗 in Γ, a
+ contradiction. Similarly, the 𝑘-coordinate of 𝑓𝐵 is at least 𝑏𝑘, so 𝐵𝑘 cannot coexist.
+@@ -666,7 +674,7 @@
+ Since 𝜅𝑗 ≤ 𝜌𝑗 − 1, the element 𝑞𝑆𝑗
+ = 𝑊 − 𝜅𝑗𝑛𝑗 itself belongs to 𝐻, a contradiction.
+ 17
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.11.2 T wo simultaneous singletons 𝑆𝑖, 𝑆𝑘 are also impossible
+ Case A: if 𝑦 = 0 , then 𝑐𝑖 lies on the pure 𝑘-ray and is comparable with 𝑐𝑆𝑘
+ . Thus 𝑦 ≥ 1 . By antichain
+@@ -717,7 +725,7 @@
+ = 𝑦𝑛𝑗 + 𝑇 𝑛𝑘, 𝑐 𝐵𝑘
+ = 𝑃 𝑛𝑖 + 𝑦′𝑛𝑗,
+ 18
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑊 = (𝑃 − 1)𝑛𝑖 + (𝑎𝑗 + 𝑦 − 1)𝑛𝑗 + (𝑇 − 1)𝑛𝑘. (AB-reverse)
+ Assume 𝑆𝑖 exists. If 𝑦′ = 0 , then there is pure-ray comparability, so 𝑦′ ≥ 1 . Since 𝑎𝑗 + 𝑦 − 1 =
+ 𝑏𝑗 + 𝑦′ − 1 ≥ 𝑏𝑗 and 𝑇 − 1 ≥ 𝑎 𝑘, we may replace 𝑏𝑗𝑛𝑗 + 𝑎𝑘𝑛𝑘 by 𝜌𝑖𝑛𝑖:
+@@ -760,7 +768,7 @@
+ contradicting 𝑛𝑖 > 𝑚. All six inequalities, weights, and coordinate sums for the two colors are recorded in
+ §B.5–§B.8. Therefore 𝑘 = 1.
+ 19
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Orient the argument to color A. By § B.9, 𝑥 = 𝑝, 𝑦 = 𝑎 − 𝑝, and 𝑧 = 𝑦 + 𝑏 are positive and satisfy
+ 𝐶 = ⎛⎜⎜
+ ⎝
+@@ -813,7 +821,7 @@
+ The configuration is exactly
+ 𝑆𝑖, 𝐵 𝑖(𝜆), 𝐴𝑘(𝜈), 𝑆𝑘
+ 20
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ which we call PATH.
+ 𝑠 = 1, 𝑎 = 3. If the three arms have the same color, they occupy all three directions. Applying § 4.11.1 to
+ the two arms outside the singleton direction gives a contradiction. Thus the color distribution is 2 + 1.
+@@ -857,7 +865,7 @@
+ Comparison with the unique 𝑗/𝑘-representation of the matched complement gives
+ 𝑔 = 𝑏𝑗 − 𝜇 ≥ 1, 𝑅 = 𝜌 𝑗 − 𝜇.
+ 21
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Similarly, from 𝐵𝑖(𝜆), 𝐴𝑘(𝜈),
+ 𝛼 = 𝑎𝑘 − 𝜈 ≥ 1, 𝑇 = 𝜌 𝑘 − 𝜈,
+ 𝑐𝐴𝑘
+@@ -914,7 +922,7 @@
+ This actual PATH ladder is passed to P5. Here 𝑞𝐴/𝑞𝐵 are only ladder labels and do not refer to the Herzog
+ colors.
+ 22
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4.17 How to read the input to the three terminal configurations
+ Configuration Four pseudo-Frobenius elements Additional conditions used later Eliminated in
+ Path 𝑆𝑖 , 𝐵𝑖 (𝜆), 𝐴𝑘 (𝜈), 𝑆𝑘 The two endpoint complements are 𝑃 𝑛𝑖 , 𝑇 𝑛𝑘 ,
+@@ -955,7 +963,7 @@
+ 𝑞𝐴 + 𝑚 = 𝑋𝑛𝑖 + 𝐻0𝑛𝑗 + 𝐾𝑛𝑘, 0 ≤ 𝑋 < 𝜌 𝑖, 0 ≤ 𝐻 0 < 𝜌𝑗, 0 ≤ 𝐾 < 𝛼,
+ 𝑞𝐵 + 𝑚 = 𝑌 𝑛𝑖 + 𝐽0𝑛𝑗 + 𝐿𝑛𝑘, 0 ≤ 𝑌 < 𝛽, 0 ≤ 𝐽 0 < 𝜌𝑗, 0 ≤ 𝐿 < 𝜌 𝑘
+ 23
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ For the first element, every removal of a 𝑗-packet decreases 𝐻0 by 𝜌𝑗. If 𝑖 ≥ 𝜌 𝑖, an 𝑅𝑖-replacement gives
+ 𝑘 ≥ 𝑎 𝑘 > 𝛼 and hence a PAIR. For the second element, remove 𝑗-packets; if 𝑘 ≥ 𝜌 𝑘, an 𝑅𝑘-replacement
+ gives 𝑖 ≥ 𝑏 𝑖 > 𝛽 and hence a PAIR. Thus, in the no-PAIR case, the process terminates within the displayed
+@@ -1007,7 +1015,7 @@
+ The right-hand side is greater than 𝑚, so 1 ≤ 𝑡0 < 𝜌𝑗. For the same 𝑞𝐴, 𝑞𝐵,
+ 𝑞𝐴 = 𝑚 + (𝑎𝑖 − 𝑋 − 2)𝑛𝑖 + (𝑡0 − 1)𝑛𝑗 + (𝑇 − 𝑍 − 2)𝑛𝑘,
+ 24
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑞𝐵 = 𝑚 + (𝑃 − 𝑋 − 2)𝑛𝑖 + (𝑡0 − 1)𝑛𝑗 + (𝑏𝑘 − 𝑍 − 2)𝑛𝑘.
+ If all final coefficients were nonnegative, the relevant gap would lie in Γ. Hence
+ 𝑋 ≥ 𝑎 𝑖 − 1 ∨ 𝑍 ≥ 𝑇 − 1, 𝑋 ≥ 𝑃 − 1 ∨ 𝑍 ≥ 𝑏 𝑘 − 1.
+@@ -1043,7 +1051,7 @@
+ The conclusion of this subsection applies to every ROOT satisfying only the WEAK-ROOT hypotheses.
+ Its original derivation from the paired-port coefficients 𝑋, 𝐻, 𝑍is no longer needed.
+ 25
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 5.5.3 Finite ROOT normalization: 𝑏𝑘 ≤ 𝐾 < 𝜌 𝑘
+ By the preceding subsection, 𝐾 = 𝑒 − 𝛼 ≥ 𝑏 𝑘. If 𝐾 ≥ 𝜌 𝑘, use the HCR relation 𝜌𝑘𝑛𝑘 = 𝑏 𝑖𝑛𝑖 + 𝑎𝑗𝑛𝑗 to
+ rewrite the same equality as
+@@ -1082,7 +1090,7 @@
+ pure-H identity
+ (𝐶 + 𝐾 − 𝑏𝑘 + 1)𝑛𝑘 = (𝑑 − 𝐴 − 1)𝑛𝑖 + (𝑅 − 𝑆)𝑛𝑗 (PURE-K)
+ 26
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ The coefficients on the right satisfy
+ 𝑑 − 𝐴 − 1 ≥ 0, 𝑅 − 𝑆 ≥ 1.
+ The positive integer 𝑉 ∶= 𝐶 + 𝐾 − 𝑏 𝑘 + 1 on the left satisfies
+@@ -1115,7 +1123,7 @@
+ put 𝑞𝑅 in Γ. If the m-level were zero, the definition of the missing direction would be violated. Thus both
+ actuality and positivity of the levels are explicit.
+ 27
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 5.6.2 𝑟 ≥ 2 or 𝑠 ≥ 2 gives a one-step absorption of F
+ Insert one copy of M+ into RIGHT-J and return to 𝑞𝑅 + 𝑇 𝑛𝑘 = 𝑊:
+ 𝐹 = (𝑟 − 2)𝑚 + (𝑋 + 𝐴0)𝑛𝑖 + 𝐻0𝑛𝑗 + (𝑇 + 𝑍 − 𝐶0)𝑛𝑘. (J-FABS)
+@@ -1148,7 +1156,7 @@
+ All cases are eliminated. Therefore
+ PFREE𝑖 ∩ {𝐹0 ≤ 0} = ∅.
+ 28
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 5.7 T wo-return absorption in PFREE and the level-one normal form
+ From now on 𝐹0 ≥ 1 has been proved. Take a return of the same left singleton,
+ 𝑞𝐿 + 𝑛𝑗 = ℓ𝑚 + 𝐴𝑛𝑖 + 𝐶𝑛𝑘, ℓ ≥ 1, 𝐴, 𝐶 ≥ 0
+@@ -1184,7 +1192,7 @@
+ The input consists of § 5.1, P5-M, P5-FIX-J, and P5-DOUBLE-UNIT. Below, FIX-J and UNIT-K refer to the
+ two returns above.
+ 29
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 5.8.1 The C-cap and the upper bound for A
+ We have already proved in §5.7 that 0 ≤ 𝐶 ≤ 𝑏 𝑘 − 1. Also 𝐴 = 𝑃 − 𝑌 − 2 < 𝑃 < 𝜌 𝑖.
+ 5.8.2 The two unit returns are pinned to one point
+@@ -1219,7 +1227,7 @@
+ These are exact identities for the same 𝑚 and the same generators. The signed rows are not called actual
+ factorizations.
+ 30
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 5.8.4 A missing-j return of the opposite singleton
+ Since 𝑞𝑅 ∈ 𝑃 𝐹 (Γ)and 𝑗 ∉ 𝑆𝐻(𝑞𝑅), take a genuine return
+ 𝑞𝑅 + 𝑛𝑗 = 𝑟𝑚 + 𝑋𝑛𝑖 + 𝑍𝑛𝑘, 𝑟 ≥ 1, 𝑋, 𝑍 ≥ 0 (RIGHT-J)
+@@ -1256,7 +1264,7 @@
+ oriented case is covered by exactly the same proof under the full parameter transformation § 5.3. Therefore
+ the PATH configuration supplied by G4 does not exist.
+ 31
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 6 Exclusion of the one-singleton configuration (T ype II)
+ Independently of the preceding section, we now treat the configuration with one singleton from Section 4.
+ The input range includes 𝜆 ≤ 𝑏𝑖. The two missing-direction returns of the singleton give common coefficient
+@@ -1291,7 +1299,7 @@
+ Therefore we may write
+ 𝑞𝑆 + 𝑛𝑗 = ℓ𝑚 + 𝐴𝑛𝑖 + 𝐶𝑛𝑘, 𝑞 𝑆 + 𝑛𝑘 = ℎ𝑚 + 𝐷𝑛𝑖 + 𝐵𝑛𝑗 (SJ/SK)
+ 32
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ with 𝐴, 𝐵, 𝐶, 𝐷 ≥ 0 and ℓ, ℎ ≥ 1 . Positivity of the two 𝑚-levels follows from the missing-direction
+ assumptions: if one m-coefficient were zero, the corresponding successor would lie in 𝐻.
+ Comparison with the canonical singleton gives
+@@ -1321,7 +1329,7 @@
+ 𝑓𝐵 = (𝜌𝑖 − 1)𝑛𝑖 − 𝑛𝑗 + (𝑏𝑘 − 1)𝑛𝑘, 𝑓 𝐵 − 𝑞𝑆 = 𝜃𝑛𝑗 + 𝜈𝑛𝑘. (ANCH-B)
+ No gap status for 𝑓𝐵 is assumed or used; ANCH-B is used only as an identity of values.
+ 33
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 6.5.1 𝜂 ≥ 1
+ Lifting SJ and SK to the same 𝑓𝐴 gives
+ 𝑓𝐴 = ℓ𝑚 + 𝐴𝑛𝑖 + (𝜇 − 1)𝑛𝑗 + (𝐶 + 𝜂)𝑛𝑘,
+@@ -1360,7 +1368,7 @@
+ These integer sign cases are exhaustive. Therefore
+ 0 ≤ 𝐴, 𝐷 ≤ 𝑏𝑖 − 1. (UNIFORM-I-CAP)
+ 34
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 6.6 Exhaustion of the return levels
+ 6.6.1 ℓ = ℎ
+ Subtracting KR from JR gives
+@@ -1390,7 +1398,7 @@
+ the same element ℎ𝐴 = 𝑞𝐴 + 𝑚. This yields a unit-root relation, after which we derive the returns, caps, and
+ slope inequalities needed for the boundary analysis. In this section 𝑞𝐴, 𝑞𝐵 denote 𝐴𝑖, 𝐵𝑖, respectively.
+ 35
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 7.1 Existence of a unit root
+ For the strict CHAIN configuration of §4.16.2, keeping the same Γ, 𝐹 , 𝑚, 𝑊and the same four actual pseudo-
+ Frobenius rows, and after a full color reversal if necessary, we obtain
+@@ -1425,7 +1433,7 @@
+ Because all generators are positive, this factorization set is finite and nonempty, so the maximum exists
+ explicitly.
+ 36
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 7.3.1 𝑋 ≤ 𝑃 − 1
+ By PFIBER,
+ 𝑃 𝑛𝑖 − 𝑚 = (𝐿 − 1)𝑚 + (𝑡 + 1)𝑛𝑗 + (𝑢 + 1)𝑛𝑘 ∈ Γ.
+@@ -1456,7 +1464,7 @@
+ 𝑇 − 1 ≥ 0 . Hence 𝐹 ∈ Γ , a contradiction.
+ Thus 𝑆 ≥ 𝑔 ≥ 1 .
+ 37
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 7.4.2 𝐶 ≥ 𝛼
+ Similarly, rewriting 𝑊 with 𝑅𝑗 gives
+ 𝐹 = (𝛽 + 𝑑 − 1)𝑛𝑖 + (𝜌𝑗 + 𝑅 − 𝑆 − 1)𝑛𝑗 + (𝛼 − 𝐶 − 1)𝑛𝑘. (F-C)
+@@ -1489,7 +1497,7 @@
+ If 𝑆 ≥ 𝑔+1, we are already in the desired orientation of CORE-ROOT. It remains to treat𝑆 = 𝑔, 𝐶 ≥ 𝛼+1,
+ where we apply the full color reversal below.
+ 38
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 7.6 Full preservation under color reversal
+ Define new notation by
+ 𝑖′ = 𝑖, 𝑗 ′ = 𝑘, 𝑘 ′ = 𝑗,
+@@ -1533,7 +1541,7 @@
+ 3. One and the same actual element
+ 𝑊 = 𝐹 + 𝑚 = (𝑃 − 1)𝑛𝑖 + (𝑅 − 1)𝑛𝑗 + (𝑇 − 1)𝑛𝑘.
+ 39
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 4. Four pseudo-Frobenius gaps in the same configuration:
+ 𝑞𝐴𝑖
+ = (𝑃 − 1)𝑛𝑖 + (𝑎𝑗 − 1)𝑛𝑗 − 𝑛𝑘,
+@@ -1581,7 +1589,7 @@
+ Add the corresponding complement to EA or EB and remove one actually present copy of 𝑚. This gives
+ 𝐹 + 𝑛𝑖 = (𝐿𝑖 − 1)𝑚 + (𝑈𝑗 + 𝑔)𝑛𝑗 + (𝑈𝑘 + 𝑇 )𝑛𝑘,
+ 40
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝐹 + 𝑛𝑖 = (𝐿𝑏 − 1)𝑚 + (𝑉𝑗 + 𝑅)𝑛𝑗 + (𝑉𝑘 + 𝛼)𝑛𝑘.
+ If the 𝑗- or 𝑘-coefficient reached the corresponding 𝜌, replace one canonical packet to create a positive copy
+ of 𝑛𝑖; removing that copy would give 𝐹 ∈ Γ . Hence
+@@ -1624,7 +1632,7 @@
+ = (𝐿𝑏 − 1)𝑚 + (𝑏𝑖 − 𝑑 − 1)𝑛𝑖 + (𝑉𝑗 + 𝑆 + 𝑎𝑗)𝑛𝑗 + (𝑉𝑘 + 𝐶 − 𝜌𝑘)𝑛𝑘.
+ Before removing one copy of 𝑛𝑖, the relevant coefficient is 𝑎𝑖 − 𝑑 > 0 or 𝑏𝑖 − 𝑑 > 0.
+ 41
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Comparison of ROOT with ℛ𝑗 gives
+ 𝜌𝑗𝑚 = (𝑆𝑎𝑖 − 𝑑𝜌𝑗)𝑛𝑖 + (𝑆𝑏𝑘 + 𝐶𝜌𝑗)𝑛𝑘.
+ If 𝑑𝜌𝑗 − 𝑆𝑎𝑖 ≤ 0, then 𝑚 > 𝑛𝑘, contradicting multiplicity. Similarly,
+@@ -1665,7 +1673,7 @@
+ , while Γ, 𝐹 , 𝑚, 𝑊 , 𝜆, 𝑑remain
+ unchanged.
+ 42
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Before reversal, ℎ𝐶 < 𝜌𝑘 and 𝐾0 < 0 imply
+ 1 ≤ −𝐾0 ≤ 𝐶 − 𝛼,
+ so 𝐶 ≥ 𝛼 + 1. After reversal, 𝑆′ ≥ 𝑔′ + 1 still holds and 𝐶′ = 𝑆 ≥ 𝛼 ′. Hence the whole CORE package is
+@@ -1707,7 +1715,7 @@
+ 𝐿𝑗 = 𝑞0 ⟹ (Δ0, 𝐴𝑗, 𝐶𝑗) = (1, 𝐴0, 𝐶0).
+ The subcritical bound on 𝐶𝑗 used here is exactly FJ-KCAP from § 7.10.
+ 43
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 7.12.3 Ak in the strict region 𝐶 > 𝛼
+ Assume 𝐿𝑘 ≤ ℎ. Eliminating m gives
+ (𝑎𝑖 − 1 − 𝐴𝑘 + 𝐿𝑘𝑑)𝑛𝑖 + (𝑇 − 𝐿𝑘𝐶)𝑛𝑘 = (𝐵𝑘 + 𝐿𝑘𝑆 + 1)𝑛𝑗.
+@@ -1747,7 +1755,7 @@
+ show that the final residual range is exhausted by 𝒰 and 𝒟. For ease of reference, the positivity expansions
+ are also collected in Appendix C.
+ 44
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 8.1 First point, boundary, and strict packet window
+ We use CORE, RET, the caps, and the slopes from § 7.7. In what follows, the local symbols 𝐿, 𝑀denote
+ 𝐿𝑖, 𝐿𝑗, respectively; 𝑥, 𝑧are pure-𝐻 kernel coefficients, 𝑄 = 𝑈𝑗 + 1, and 𝑎 = 𝐴𝑗 + 1.
+@@ -1783,7 +1791,7 @@
+ ̂Ω = 𝐹 + Ξ𝑛𝑘 = (𝑁 − 1)𝑚 + 𝐼𝑛𝑖 + 𝐽 𝑛𝑗
+ is a genuine ZERO-𝑘 face of the named actual upper element.
+ 45
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 8.3 SAME-element packet and the FI/FJ level wall
+ 8.3.1 Re-deriving CENTRAL FK
+ From 𝑊, ROOT, and 𝑅𝑗, exactly
+@@ -1816,7 +1824,7 @@
+ If 𝑁 ≤ 𝐿𝑗, apply it inside the SAME FJ representation:
+ 𝐹 = (𝐿𝑗 − 𝑁 )𝑚 + (𝐴𝑗 + 𝛿 + 𝐷𝐹 )𝑛𝑖 + (𝐸𝐹 − 1)𝑛𝑗 + (𝐶𝑗 + 𝑇 − 𝜒)𝑛𝑘 ∈ Γ. (FJ-CERT)
+ 46
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ When 𝜒 > 0, the 𝑇 copies of 𝑛𝑘 in FI/FJ supply the required source. When 𝜒 ≤ 0, no 𝑛𝑘 is consumed and
+ copies are instead produced. Every coefficient in the final displayed representations is nonnegative.
+ Consequently,
+@@ -1851,7 +1859,7 @@
+ 𝐼 = 𝐴 𝑗 + 𝛿 + (𝑣 − 1)𝑏𝑖 ≥ 0, 𝐽 = (𝑣 − 1)𝑎𝑗 − 1 ≥ 0.
+ Thus 𝑁 ≤ 𝑀 , contradicting WINDOW-W ALL. Hence
+ 47
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑀 𝑑 = 𝑧𝑎𝑖 + 𝑎, 𝑀 𝑆 = 𝑧𝜌 𝑗 + 𝑔, 𝜌 𝑘 = 𝑀 𝐶 + 𝐶𝑗 + 1 + 𝑧𝑏𝑘. (QJ-ONE)
+ 8.5 An empty integer triangle, determinant one, and the level exception
+ Consider the triangle in the (𝜁, 𝑛)-plane with vertices
+@@ -1886,7 +1894,7 @@
+ If 𝜀 ≤ 𝐶𝑗 + 𝑇, the left packet lies inside the SAME FJ representation, creating a positive 𝑗-coefficient and
+ making 𝐹 actual. Therefore
+ 48
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝐻0 ∶= 𝐿𝐶 + (𝑥 − 1)𝑏𝑘 − 𝛼 − 𝐶𝑗 − 1 ≥ 0. (H0)
+ Together with QJ-ONE, this yields
+ 𝜌𝑘 = (𝑀 + 𝐿)𝐶 + (𝑧 + 𝑥 − 1)𝑏𝑘 − 𝛼 − 𝐻0. (K-CEILING)
+@@ -1915,7 +1923,7 @@
+ 𝐻0 = −𝐶𝑗 − 1 < 0. Hence
+ 𝐿 ≥ 𝑥 + 1 ≥ 2, 𝑀 > 𝑧 ≥ 1.
+ 49
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 8.8 Multiplicity contradiction throughout 𝐶 = 𝛼
+ Set the canonical cross products
+ ℐ = 𝜌 𝑗𝜌𝑘 − 𝑎𝑗𝑏𝑘, 𝒥 = 𝑎 𝑖𝜌𝑘 + 𝑏𝑖𝑏𝑘, 𝒦 = 𝑏 𝑖𝜌𝑗 + 𝑎𝑖𝑎𝑗
+@@ -1952,7 +1960,7 @@
+ Put 𝛾 = 𝐶 − 𝛼 ≥ 1 . From the general K-CEILING identity,
+ ̂ 𝑚 − 𝒥 = 𝐻0𝑃0 + 𝛼𝐶𝐴 + 𝛾(𝐶𝐴 − 𝑃0) + 𝑏𝑘𝐶𝐵. (STRICT-J)
+ 50
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 8.9.2 The regular range 𝑄 ≥ 2
+ The inequalities 𝐶𝐴, 𝐶𝐵 > 0 from §8.8 remain valid.
+ The coefficient of 𝑎 in 𝐶𝐴 − 𝑃0 is
+@@ -1987,7 +1995,7 @@
+ + [2(𝑀 + 𝐿) + 𝑧 + 𝑥 − 2]𝑔} + 𝛽(𝜌𝑗 + 𝑆),
+ 𝐸 = (𝐿 − 2)𝑀 + (𝐿 − 1)𝑧 − 2𝐿 − 𝑥 + 2.
+ 51
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ For 𝑄 = 1,
+ 𝐸 − (𝐿 − 𝑥 − 3) = (𝐿 − 2)(𝑀 − 2) + (𝐿 − 1)(𝑧 − 1) ≥ 0,
+ so the coefficient of 𝑎 is at least (𝐿 + 𝑥)(𝐿 + 1) − 2, and is therefore positive. The other coefficients are
+@@ -2021,7 +2029,7 @@
+ (UNIT-PARAM)
+ Also 𝐻0 equals 𝐶 − 𝛼 − 𝜂 ≥ 0.
+ 52
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 8.11.1 The first point can be computed exactly
+ For 1 ≤ 𝜁 ≤ 𝑧 + 1 ,
+ 𝑛𝜁 = 𝜁 + ⌈ (𝜁 − 1)𝛿 + 1
+@@ -2054,7 +2062,7 @@
+ 𝐷𝑢 > 0. (UNIT-REMAIN)
+ Since 𝜂 ≤ 𝐶 − 𝛼 < 𝐶 + 𝑏 𝑘, in particular
+ 53
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑄 > 𝑅 = 𝑎𝑗 + 𝑔.
+ Thus the entire unit-boundary range 𝑄 ≤ 𝑅 is excluded as well.
+ Moreover, 𝑈𝑗 = 𝑄 − 1 ≥ 𝑎 𝑗, so actual transport through the canonical EA/EB difference constructs, in
+@@ -2092,7 +2100,7 @@
+ (U-PARAM)
+ 1 ≤ 𝜂 ≤ min(𝐶 − 𝛼, 𝑇 ), 𝐷 𝑢 ∶= 𝑄𝜂 − 𝑅(𝐶 + 𝑏𝑘) > 0. (U-SIGNS)
+ 54
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Here 𝜂 = 𝐶 𝑗 + 1 and 𝐿𝑗 = 𝑧 + 1. By § 8.11,
+ ̂𝜁 = 𝑧 + 1, 𝑁 = 𝑧 + 2, 𝐼 = 𝑎 − 1, 𝐽 = 𝑄 − 1,
+ Ξ = 𝐶 − 𝛼 − 𝜂 + 1, 𝜒 = 𝜂
+@@ -2123,7 +2131,7 @@
+ We make no additional assumption that 𝜎 = 1 , nor any additional gcd assumption. From ROOT,
+ 𝑚 = 𝜎̂ 𝑚, ̂ 𝑚 = −𝑑ℐ + 𝑆𝒥 + 𝐶𝒦.
+ 55
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Set
+ Φ(𝑎) ∶= ̂ 𝑚 − 𝒥
+ Under U-PARAM, Φ is linear in 𝑎, and exactly
+@@ -2158,7 +2166,7 @@
+ 𝑏0𝑛𝑖 + 𝑅𝑛𝑗 = (𝑧 + 1)𝑚 + 𝜂𝑛𝑘. (U-PACKET)
+ Both sides have nonnegative coefficients.
+ 56
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ For the same 𝑞𝐴𝑘
+ , the following identity holds:
+ 𝑞𝐴𝑘
+@@ -2198,7 +2206,7 @@
+ 0 < 𝑚 < min(𝑛𝑖, 𝑛𝑗, 𝑛𝑘), 𝐹 ∉ Γ.
+ The pure-𝐻 relations are
+ 57
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝜌𝑗𝑛𝑗 = 𝑎𝑖𝑛𝑖 + 𝑏𝑘𝑛𝑘, 𝜌 𝑘𝑛𝑘 = 𝑏𝑖𝑛𝑖 + 𝑎𝑗𝑛𝑗, 𝜌 𝑖𝑛𝑖 = 𝑏𝑗𝑛𝑗 + 𝑎𝑘𝑛𝑘.
+ The integer kernel is used below only after the 𝑚-coordinate has been eliminated completely.
+ Set
+@@ -2230,7 +2238,7 @@
+ 𝑏𝐷 = ⌊ 𝐶 − 𝛼
+ 𝜒 ⌋ + 1 ≥ 2.
+ 58
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ That number fits inside the source if and only if
+ 𝑏𝐷𝐷𝐹 ≤ 𝑑 + 𝛽 − 1, 𝑏 𝐷𝐸𝐹 ≤ 𝑅 + 𝜌𝑗 − 𝑆 − 1.
+ We handle these fitting conditions symbolically below.
+@@ -2261,7 +2269,7 @@
+ There is a common positive scale 𝜎 > 0 such that
+ (𝑛𝑖, 𝑛𝑗, 𝑛𝑘) = 𝜎(ℐ, 𝒥, 𝒦), 𝑚 = 𝜎̂ 𝑚,
+ 59
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ ̂ 𝑚 = −𝑑ℐ + 𝑆𝒥 + 𝐶𝒦.
+ We do not assume 𝜎 = 1 .
+ Define
+@@ -2295,7 +2303,7 @@
+ 𝐻𝜏 = 3𝛽 − (ℎ + 3)𝑑 + 4𝛿 + 3𝑟,
+ 𝐻𝑐 = 𝑎𝑗[(3ℎ + 1)𝑑 + 3(𝛿 + 𝑟)] + 𝑔[(4ℎ + 1)𝑑 + 4(𝛿 + 𝑟)] > 0.
+ 60
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ The sum of the first two coefficients is
+ 𝐻𝑆 + 𝐻𝜏 = (ℎ − 2)(3ℎ + 2)𝑑 + (3ℎ + 4)𝛽 + (8ℎ + 4)𝛿 + (7ℎ + 3)𝑟 > 0.
+ Thus
+@@ -2328,7 +2336,7 @@
+ 𝐵 ≥ 𝐵1 ∶= (𝜅𝑏 + 𝛽)𝑆 + 𝑑𝑅 > 0.
+ The coefficient of 𝑆 in 𝐴1 is positive, and the sum of its 𝑆- and 𝜏-coefficients is
+ 61
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ (𝜅 + 1)𝑏 + 2𝛽 − 𝑟′ ≥ 𝜅𝑏 + 𝛿 + 2𝛽 > 0.
+ Since 𝑆 > 𝜏 , this gives 𝐴1 > 0.
+ For the final bracket,
+@@ -2362,7 +2370,7 @@
+ 𝐵𝑛𝑖 + 𝐸𝑛𝑗 = (𝑘 + 1)𝑚 + 𝜒𝑛𝑘, (D-LINEAR)
+ 𝑚 + 𝑄𝑛𝑗 = 𝑏𝑛𝑖 + (𝐶 + 𝑏𝑘)𝑛𝑘. (INTRINSIC-LINEAR)
+ 62
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 9.11.1 Positivity of the packet determinant
+ Define
+ 𝒟 ∶= 𝑄𝜒 − 𝐸(𝐶 + 𝑏𝑘).
+@@ -2394,7 +2402,7 @@
+ 𝑄 = 𝑓(𝑎𝑗 + 𝑔 + 𝜐) + 𝜃, 𝐶 = 𝛼 + 𝑓𝜒 + 𝑤, 𝜒 = 𝑏 𝑘 + 𝛼 + 1 + 𝜖, 𝜖 ≥ 0,
+ 𝑏 = 𝑟 + 𝛿, 𝑐 = 𝑟 + 𝛽, 𝐺 = 𝑔 + 𝜐.
+ 63
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ The value Φ(𝑎∗)admits a nonnegative-coefficient certificate in the nonnegative variables
+ y = (𝑓 − 1, 𝑟, 𝛿 − 1, 𝛽 − 1, 𝑔 − 1, 𝜐, 𝛼 − 1, 𝑤, 𝜃 − 1, 𝜖, 𝑘 − 1, 𝑎𝑗 − 1, 𝑏𝑘 − 1).
+ Precisely,
+@@ -2431,7 +2439,7 @@
+ 𝐿⋄ = 1 + 𝑓(𝑘 + 1), 𝐵 ⋄ = 𝑏 + 𝑓𝐵.
+ Every coefficient on both sides is nonnegative, so this is a genuine packet equality.
+ 64
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ We pass D-LINEAR from § 9.11 and COMPLEMENTARY from the present subsection to § 10.1 as two
+ genuine packets in the same Γ, 𝐹 , 𝑚, 𝑊.
+ 9.15 Embedding the initial residual configuration
+@@ -2466,7 +2474,7 @@
+ particular, the first-point data and 𝑞0-specific conditions used in 𝒟 are not inherited after entry into the
+ abstract Euclidean theorem.
+ 65
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Quantity /
+ assumption Output from CHAIN / R7
+ Use in CORE /
+@@ -2610,7 +2618,7 @@
+ Thus no CHAIN-derived information is carried past a descent step without justification; the Euclidean part
+ closes using only the abstract package listed in § 10.1.
+ 66
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 10 Euclidean descent and source containment
+ This section uses only the abstract inputs listed below. The minimality of the first point constructed in the
+ preceding section is not required in the descent that follows. At a terminal state we show that the required
+@@ -2644,7 +2652,7 @@
+ Consequently, no package of this form can occur when 𝐹 is a gap.
+ We prove the theorem by strong induction on the positive integer
+ 67
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ ℳ ∶= 𝐸 + 𝜒
+ The quantity ℳ is the descent measure used only in the present argument; it is not a depth parameter
+ inherited from an earlier branch.
+@@ -2676,7 +2684,7 @@
+ Indeed, if 𝑝 ≤ 𝑠 , positivity of the determinant forces 𝑞 < 𝑡 , hence 𝐿 < 𝑀 . Thus 𝑝 > 𝑠 . If next 𝑞 < 𝑡 ,
+ write 𝑝 = 𝑠 + 𝑎, 𝑡 = 𝑞 + 𝑏 with 𝑎, 𝑏 ≥ 1. Then
+ 68
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑝𝑡 − 𝑞𝑠 = 𝑠𝑏 + 𝑎𝑞 + 𝑎𝑏 ≥ 𝑠 + 𝑞 + 1 > 1,
+ which is impossible.
+ 10.7 Cross products and the correct scale
+@@ -2707,7 +2715,7 @@
+ 𝐻𝑝 = 𝑇 + 𝑤, 𝜒 = 𝜈(𝑇 + 𝑤) − 𝑇 + 1 + 𝑥. (TERMINAL-SUB)
+ Define the polynomial
+ 69
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝒫 ∶= Φ(𝐵 + 𝜈𝐴), (POS-POL Y)
+ where Φ is the fully explicit expression obtained from (M-HAT) and
+ 𝒦 = (𝑃 − 𝛿)𝜌𝑗 + (𝑃 − 𝛽)𝑎𝑗
+@@ -2741,7 +2749,7 @@
+ All four coefficients in (FINAL-F) are now nonnegative. In particular, the final terminal representation is
+ 𝐹 = (𝑀 + 𝜈𝐿 − 1)𝑚 + (𝑃 − 1 − 𝐵 − 𝜈𝐴)𝑛𝑖 + (ℎ − 1)𝑛𝑗 + 𝑥𝑛𝑘. (FINAL-EXACT)
+ 70
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 10.10 The exact Euclidean transformation outside the terminal case
+ The negation of the terminal condition is, by integrality,
+ 𝜈𝐻𝑝 − 𝜒 ≥ 𝑇 . (FAIL)
+@@ -2784,7 +2792,7 @@
+ All entries of the new matrix are positive, and
+ (𝑡 + 𝑒𝑞)𝑝 − (𝑠 + 𝑒𝑝)𝑞 = 𝑝𝑡 − 𝑞𝑠 = 1.
+ 71
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝐿′ = 𝑀 + 𝑒𝐿 > 𝑀′ = 𝐿.
+ Since the color exchange interchanges 𝑟 + 𝛿 and 𝑟 + 𝛽,
+ 𝐴′ = 𝐵 + 𝑒𝐴, 𝐵 ′ = 𝐴.
+@@ -2835,7 +2843,7 @@
+ The positive integer measure therefore decreases by at least one at every step, so failure cannot continue
+ indefinitely. Strong induction shows that every abstract state reaches a terminal state after finitely many
+ 72
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ failure transformations. In that terminal state, (FINAL-EXACT) is obtained within the SAME 𝑊. Since
+ color exchange only renames generators, this is the assertion 𝐹 ∈ Γ in the original Γ.
+ This proves the theorem § 10.1.
+@@ -2877,7 +2885,7 @@
+ Hence gcd(𝑛1, 𝑛2, 𝑛3)also divides 𝑚. Since gcd (𝑚, 𝑛1, 𝑛2, 𝑛3) = 1, the tail gcd is one. Moreover, mini-
+ mality of Γimplies that the three generators of the tail are themselves minimal. Thus𝐻 is a genuine minimally
+ 73
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ three-generated numerical semigroup, and is either symmetric or nonsymmetric. The signed identity above
+ need not be called a nonnegative factorization.
+ If 𝐻 is symmetric, § 3.1 eliminates the contradiction hypothesis. If 𝐻 is nonsymmetric, then G4, § 4.6,
+@@ -2898,7 +2906,7 @@
+ 𝑡(Γ) = |𝑄(Γ)| + 1 ≤ 4.
+ This proves Theorem §1.1 from Sections 1–2.
+ 74
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ A Auxiliary calculations and complete branching for the symmetric tail
+ A.1 Elementary two-generator facts
+ Let 𝑇 = ⟨𝑢, 𝑣⟩, with gcd (𝑢, 𝑣) = 1and 𝑢, 𝑣 ≥ 2. Every integer has a unique representation
+@@ -2936,7 +2944,7 @@
+ Likewise, for 𝑎𝑥 − 𝑤 + 𝑛𝑚, every nonreturn index automatically gives an element of 𝐻. At a return, the
+ 𝑇-coordinate becomes 𝜏𝑛 + 𝐴′𝑢 − 𝛽𝑣. This is a gap of 𝑇 precisely when the same 𝜏𝑛 lies in
+ 75
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑍𝑥 = {𝑝𝑢 + 𝑞𝑣 ∶ 0 ≤ 𝑝 < 𝐷′, 0 ≤ 𝑞 < 𝛽}
+ Since 𝑎𝑥 − 𝑤 ∈ 𝐻 and 𝑞𝑥 + 𝑤 ∈ Γ, such a return hit is necessary. Dually, at a return one also needs a hit
+ in
+@@ -2972,7 +2980,7 @@
+ If a later hit is 𝑗𝑢with 𝑗 < 𝐷, then its carry predecessor is
+ 𝑗𝑢 + 𝐸 = 𝑢𝑣 − (𝑎 + 𝑝 − 𝑗)𝑢 − (𝑏 + 𝑞)𝑣.
+ 76
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ The interior-gap criterion from §A.1 gives 𝑗 ≥ 𝑎+𝑝. Together with 𝑝 ≤ 𝛼−1, this again yields 2𝑝+𝑎 < 𝑣.
+ Dually, the 𝑈𝑦-hit forces 2𝑞 + 𝑏 < 𝑢. Therefore the final gap criterion in § A.1 gives 𝜏2 ∉ 𝑇 , contradicting
+ FS.
+@@ -3009,7 +3017,7 @@
+ Put 𝐿0 = 𝑢 + 𝑣 + 𝑡 0. Then 𝜏1 = 2𝜃 + 𝑤 − 𝐿0 ≥ 0. With ℎ0 = −𝜃 > 0 , this gives 2ℎ0 ≤ 𝑤 − 𝐿0 < 𝑤.
+ Together with 𝑚 < 𝑤,
+ 77
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ (𝑒 − 1)𝑤 < 𝑑ℎ0 < 𝑑𝑤/2, 2𝑒 ≤ 𝑑 + 1. (PHASE)
+ Let 𝜆𝑛 = ⌈𝑛𝑒/𝑑⌉and 𝜀𝑛 = 𝜆𝑛 − 𝑐𝑛 ∈ {0, 1}. If 𝑌𝑛 denotes the 𝑇-coordinate in the 𝐻-normal form of
+ 𝑐𝑦 − 𝑛𝑚, direct calculation gives
+@@ -3045,7 +3053,7 @@
+ Let 𝑃 𝐹 (𝐻) = {𝑓𝐴, 𝑓𝐵}, 𝑁 = 𝑛1 + 𝑛2 + 𝑛3, and 𝑠𝜀 = 𝑓𝜀 + 𝑁. With rows equal to socle factorizations,
+ the correct matrices are
+ 78
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑈𝐴 = ⎛⎜⎜
+ ⎝
+ 0 𝜌 2 𝑎3
+@@ -3099,7 +3107,7 @@
+ contradiction.
+ Thus the only lattice points are the four vertices. The relative lattice volume is det 𝐶/[ℤ3 ∶ 𝐿𝑚] = 𝑘.
+ 79
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ B.4 White classes: the only additional standard external theorem
+ The only result of White used here is the standard theorem that an empty lattice tetrahedron has lattice width
+ one: G. K. White, Lattice Tetrahedra*, Canad. J. Math. 16 (1964), 389–396. An exposition of the proof
+@@ -3146,7 +3154,7 @@
+ The arm bounds give 𝑋 > 0, 𝑋 < 𝑝 1 + 𝜌1, 𝑋 < 𝑝1 + 𝑏1, −𝑎2 < 𝑌 < 𝑏 2, and 0 < 𝑍 < 𝜌 3. Apply failure
+ of the six vectors in COMP in the following order.
+ 80
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 1. Failure of 𝑅2 − 𝑧 = (𝑎1 + 𝑋, −𝑌 , 𝜌3 − 𝑍)gives 𝑌 ≥ 0 .
+ 2. Failure of 𝑅1 − 𝑧 = (𝑋, 𝜌2 − 𝑌 , 𝑎3 − 𝑍)gives 𝑍 ≥ 𝑎3.
+ 3. From 𝑝 + 𝑅3 − 𝑅2 + 𝑧 = (𝑝1 + 𝑏1 − 𝑋, 𝑝2 + 𝑎2 + 𝑌 , 𝑝3 − 𝜌3 + 𝑍), obtain 𝑍 ≤ 𝜌3 − 𝑝3.
+@@ -3182,7 +3190,7 @@
+ 𝑤𝑖 − 𝑘𝐷 ≥ (𝑠 + 1)(𝑟𝑠 + 1 − 𝑘) = 𝑘(𝑠 + 1)(𝑟 − ℓ − 1) ≥ 0.
+ But 𝑛𝑖 > 𝑚, so 𝑤 ⋅ 𝑛 > 𝑚 ∑𝑖 𝑤𝑖 ≥ 𝑘𝐷𝑚, a contradiction.
+ 81
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ B.7 Color B failure inequalities and multiplicity contradiction
+ For the correct natural ordering of 𝑈𝐵,
+ 𝑧 = (𝑋, −𝑌 , 𝑍), 𝑋 = (𝑟𝑎1 − 𝑝1)/𝑘, 𝑌 = [𝑟𝜌 2 − 𝑏2 + 𝑝2]/𝑘, 𝑍 = [𝑎 3 + (𝑟 + 1)𝑏3 − 𝑝3]/𝑘.
+@@ -3218,7 +3226,7 @@
+ 𝑤𝑖 − 𝑘𝐷 ≥ (𝑞 + 1)(𝑞𝑡 + 1 − 𝑘) = 𝑘(𝑞 + 1)(𝑞 − ℓ − 1) ≥ 0.
+ Again this contradicts 𝑛𝑖 > 𝑚.
+ 82
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ B.8 White row ordering and conclusion
+ The row ordering selected by White may be arbitrary. Apply a simultaneous generator permutation that
+ returns the unique zero coordinate of each row to the corresponding index. An even permutation preserves
+@@ -3271,7 +3279,7 @@
+ Neither det 𝐶 = 𝑚 nor adj 𝐶1 = 𝑛 is an additional requirement for this dynamics theorem. INPUT is
+ already sufficient.
+ 83
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ B.11 The finite unique in-box path
+ The three source regions for in-box firings are
+ 𝐹1 ∶ 𝑢 1 ≤ 𝑦1 − 1, 𝑢2 ≥ 𝑧2 + 1, 𝑢3 ≥ 𝑦3 + 1,
+@@ -3308,7 +3316,7 @@
+ 𝑐 = 𝐵 − 𝑦 𝑟 𝑏2 0
+ In either case 𝐴 > 𝑥, 𝑣 > 𝐵, and 𝐴/𝑥 < 𝑣/𝐵. Write the row counts as (𝑁 − 1, 𝑞 − 1), and define
+ 84
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑋 = 𝑞𝐴 − 𝑁 𝑥, 𝐷 = 𝑁 𝐵 − 𝑞𝑣.
+ The used coordinates are 𝑢1 = 𝐴 − 𝑋, 𝑢𝑟 = 𝐵 − 𝐷. For row 1 to fire in-box one needs 𝑋 ≥ 𝑏 + 1; for row
+ 𝑟 to fire in-box one needs 𝐷 ≥ 𝑐 + 1. These conditions are sufficient once the remaining unused-coordinate
+@@ -3344,7 +3352,7 @@
+ provided the relevant terminal residues lie in their stated positive ranges. At every use of ELR below,
+ 𝐸 ≥ 1, 𝑈 ≥ 1, and 𝐸 ≤ 𝑥 − 𝑏 − 1 are verified explicitly.
+ 85
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ B.14 Reciprocal-rank lemma, including preservation of the omitted prefix
+ Consider a state reached by ℓ ≥ 1 additional row-1 firings after the last successful crossing 𝑞 ≥ 1. Put
+ 𝑄 = 𝑞 + 1, 𝑁 = 𝑁 𝑞 + ℓ, 𝑑 = 𝐴 − 𝑥 > 0, 𝑎 = 𝑣 − 𝐵 > 0, 𝐻 = 𝑁 − 𝑄.
+@@ -3382,7 +3390,7 @@
+ 𝑁𝑠 > 1 and 𝑁𝑠 < 𝑁1 give the same correspondence directly, without assuming a nonexistent crossing.
+ Hence 𝑋𝑠 ≥ 𝑏 + 1, so
+ 86
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑉 ∗
+ 𝑠 ≤ 𝑑 − 𝑏 − 1 (𝑠 < 𝐻).
+ Thus the assertion that the dual residues avoid the same early-exit strip is established by explicit correspon-
+@@ -3417,7 +3425,7 @@
+ B.17 Excluding all terminal states of a {1, 2}two-color path
+ Let 𝑁 = 𝑟 + 1, 𝑄 = 𝑠 + 1, and set 𝑋 = 𝑄𝑦1 − 𝑁 𝑥1, 𝑌 = 𝑁 𝑧 2 − 𝑄𝑥2 − 𝑏2, 𝑢1 = 𝑦1 − 𝑋, 𝑢2 = 𝑦2 − 𝑌 .
+ 87
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ There have been 𝑞 = 𝑄 − 1 successful crossings, so 𝑄 ≤ 𝑥 1, 𝑄 ≤ 𝑦 2. From the box condition and
+ 𝑞 ≤ 𝑥1 − 1, we also have 𝑁 ≤ 𝑦 1. For if 𝑁 ≥ 𝑦 1 + 1, then 𝑢1 = 𝑁 𝑥1 − 𝑞𝑦1 ≥ 𝑥1 + 𝑦1, contrary to the box
+ condition.
+@@ -3455,7 +3463,7 @@
+ 𝑁 = ⌈𝑄𝑦1/𝑥1⌉ < 𝑄𝑥2/𝑧2 + 1, so the second term is also nonnegative.
+ If 𝐷 < 0, put 𝑊 = −𝐷 > 0 . If some prior 𝑈𝑗 ≤ 𝑊, then with ℎ = 𝑄 − 𝑗, 𝑘 = 𝑁 − 𝑁𝑗 + 1,
+ 88
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑘𝑥1 − ℎ𝑦1 = 𝐸 − 𝐸𝑗 + 𝑥1 > 0, ℎ𝑥 2 − 𝑘𝑧2 = 𝑊 − 𝑈𝑗 ≥ 0,
+ which is a PREFIX separator. Hence all prior 𝑈𝑗 > 𝑊, and injectivity gives 𝑄 + 𝑊 ≤ 𝑦2.
+ Also 𝑁 − 𝑄 ≤ 𝑥2 − 𝑧2 because 𝑄 < 𝑧2 and 𝑦1/𝑥1 < 𝑥2/𝑧2. Therefore
+@@ -3490,7 +3498,7 @@
+ For 𝜆 = (𝑁 , 1, 𝑅 − 1),
+ 𝜆𝐶 = (𝑋 − 𝑏1, 𝑧2 − 𝑢2, 𝑥3 + 𝑧3 + 𝑌 ).
+ 89
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ The first two coordinates are nonnegative by the A-conditions. For the third, using the residue 𝑈𝑞 at the
+ last success 𝑞 = 𝑅 − 1and 𝑁 = 𝑁𝑞 + ℓ, ℓ ≥ 1, 𝑥3 + 𝑧3 + 𝑌 = 𝑧 3 + (ℓ + 1)𝑦3 − 𝑈𝑞 > 0. Thus all coefficients
+ are nonnegative, and the exact margin is
+@@ -3528,7 +3536,7 @@
+ §B.17.3 shows that all prior 𝑈𝑗 > −𝐷, hence 𝑄 − 𝐷 ≤ 𝑦2.
+ For 𝜆 = (𝑁 , 𝑄, 1),
+ 90
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝜆𝐶 = (𝑧1 − 𝐸, 𝑦2 + 𝐷, 𝑦3 + 𝑧3 − 𝑢3) ≥ (𝑁 + 𝑏1, 𝑄, 𝑧3 + 1) ≥ 𝜆.
+ This is a contradiction.
+ B.19.2 {1, 3} → 2
+@@ -3565,7 +3573,7 @@
+ First consider color A, so 𝛼𝑖 = 𝑎𝑖 and 𝑝 = 𝑥.
+ After a total of 𝑡 firings, write the state as 𝑢 = 𝑝 − 𝑟𝐶, with |𝑟|1 = 𝑡. Since 𝐶𝑛 = 𝑚1,
+ 91
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ 𝑓𝐴 = (𝑡 + 1)𝑚 + ∑
+ 𝑖
+ (𝑢𝑖 − 1)𝑛𝑖. (SAME-F)
+@@ -3611,7 +3619,7 @@
+ copy-C8.2.8 Section 8 § 8.8
+ copy-C8.2.9.1 Section 8 § 8.9.2
+ 92
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ Former duplicated node Current authoritative location
+ copy-C8.2.9.2 Section 8 § 8.9.3
+ copy-C8.2.11.2 Section 8 § 8.11.2
+@@ -3646,7 +3654,7 @@
+ The polynomial identities used in the main text are stored as finite complete coefficient tables. These are not
+ outputs of a finite scan of numerical semigroups.
+ 93
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ D.1 The 𝑖-fit for linear 𝒟
+ For Φ(𝑎) = ̂ 𝑚 − 𝒥and 𝑎∗ = 𝑓𝐵 + 𝑟 defined in § 9.11–§9.12,
+ Φ(𝑎∗) = 35 + ∑
+@@ -3680,13 +3688,13 @@
+ respective defining expressions and compare every coefficient with the static tables. In ordinary use they
+ read the existing tables and do not regenerate them. The following commands are run from the root of the
+ manuscript package:
+-python3 supplement/APPENDICES/LINEAR/verify_D_linear.py
+-python3 supplement/APPENDICES/EUCLIDEAN/verify_euclidean_closure.py
++python3 ../supplement/verification_scripts/LINEAR/verify_D_linear.py
++python3 ../supplement/verification_scripts/EUCLIDEAN/verify_euclidean_closure.py
+ Python 3 and SymPy are required. Successful verification is an auxiliary consistency check. The actu-
+ ality statements, scope conditions, choice of the first point, parameter signs, and proof of termination are
+ established in the manuscript itself.
+ 94
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ D.4 The two defining expressions and evaluation procedures
+ For the first table, use the notation of § 9.11–§9.12:
+ 𝐵 = 𝑘(𝑟 + 𝛿) + (𝑟 + 𝛽), 𝑎∗ = 𝑓𝐵 + 𝑟, 𝑑 = 𝑎 + 𝑘(𝑟 + 𝛿), 𝑆 = 𝑘𝑄 + 𝑔 + 𝜐
+@@ -3724,7 +3732,7 @@
+ b_k 𝑏𝑘 − 1
+ D.6 The 16 variables in the second certificate
+ 95
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
+ JSON key Corresponding nonnegative variable
+ p0 𝑝 − 𝑠 − 1
+ q0 𝑞 − 𝑡
+@@ -3747,47 +3755,94 @@
+ not the original variables themselves. Each terms entry specifies one monomial through its coefficient
+ and exponents fields.
+ D.7 Required proof data and ordinary verification
+-The complete coefficient tables and verifiers are included with the manuscript under supple-
+-ment/APPENDICES/LINEAR/ and supplement/APPENDICES/EUCLIDEAN/. Their original bytes are
+-retained. In ordinary verification, each table is read and compared coefficient-by-coefficient with an
+-independently expanded defining expression. The certificate-writing option is not used. Since the verifiers
+-regenerate result JSON files in the same supplementary directories, preservation of a distribution master
++The complete coefficient tables and verifiers are included in the reader-facing publication supplement. Ex-
++act manuscript-to-certificate mappings are recorded in MANUSCRIPT_CERTIFICATE_MAP.md. Their original
++bytes are retained. In ordinary verification, each table is read and compared coefficient-by-coefficient with
++an independently expanded defining expression. The certificate-writing option is not used. Since the veri-
++fiers regenerate result JSON files in the same supplementary directories, preservation of a distribution master
+ should be checked on a working copy of the package. From that working-copy root, run
+-python3 supplement/APPENDICES/LINEAR/verify_D_linear.py
+-python3 supplement/APPENDICES/EUCLIDEAN/verify_euclidean_closure.py
+-The Python and SymPy versions, the results of the present run, and SHA-256 hashes of the checked files
+-are recorded in ENGLISH_REGRESSION_REPORT.md. Logically, the proof uses the finite identities and their
+-complete coefficient tables specified here; a program’s success message is not taken as an axiom. Computer
+-assistance is used for the practical coefficientwise verification of the large expansions. The scope conditions,
+-nonnegative representations, existence of the first point, and termination of the descent are proved in the
+-manuscript. No unverified attribution concerning the discovery process is made.
++python3 ../supplement/verification_scripts/LINEAR/verify_D_linear.py
++python3 ../supplement/verification_scripts/EUCLIDEAN/verify_euclidean_closure.py
++The Python and SymPy versions, expected outputs, and SHA-256 hashes of the checked files are recorded
++in the publication supplement. Logically, the proof uses the finite identities and their complete coefficient
++tables specified here; a program’s success message is not taken as an axiom. Computer assistance is used
++for the practical coefficientwise verification of the large expansions. The scope conditions, nonnegative
++representations, existence of the first point, and termination of the descent are proved in the manuscript. No
++unverified attribution concerning the discovery process is made.
+ 96
+-Canonical reduction and type English manuscript final freeze
++Canonical reduction and type T ype bound under canonical reduction
++Supplementary symbolic-verification files
++A reader-facing reproducibility supplement accompanies this manuscript. It contains the complete static co-
++efficient tables for the two large polynomial positivity identities, the unchanged symbolic verification scripts,
++expected outputs, environment notes, SHA-256 checksums, and a map from the relevant manuscript locations
++to the certificate files. The mathematical proof is self-contained in the article; these files provide practical
++coefficientwise checks and are not a finite numerical search or a proof-assistant formalization. The reader-
++facing verification supplement is supplied with this submission.
++Funding
++This research received no external funding.
++Declaration of competing interest
++The author declares no competing interests.
++Data and code availability
++No empirical dataset was used in this work. Symbolic verification scripts and complete static coefficient
++certificates supporting the two large polynomial expansions are supplied with the publication supplement.
++These files verify finite symbolic identities coefficient by coefficient; the mathematical argument is not based
++on a finite numerical search of numerical semigroups and is not claimed to be formally verified in a proof
++assistant. The reader-facing verification supplement is supplied with this submission.
++Use of AI tools in the research process
++During exploratory research, the author used ChatGPT (OpenAI) and Claude (Anthropic) as non-authoritative
++assistants for brainstorming proof routes, adversarial proof checking, organizing literature searches, and sup-
++port around symbolic-verification workflows. AI output was not treated as mathematical authority: mathe-
++matical statements, proofs, bibliographic claims, and symbolic certificates remain subject to author verifica-
++tion and approval. Specific model/version details can be supplied from the retained project records if required
++by the journal.
++Declaration of generative AI and AI-assisted technologies in the manuscript
++preparation process
++During the preparation of this work, the author used ChatGPT (OpenAI) and Claude (Anthropic) to assist
++with literature-search organization, translation and language editing, document organization, and submission-
++package preparation. After using these tools/services, the author reviewed and edited the content as needed
++and takes full responsibility for the content of the published article.
++Author contributions
++Keisuke Sato: Conceptualization, Formal analysis, Investigation, Methodology, Validation, Writing – original
++draft, Writing – review & editing.
++97
++Canonical reduction and type T ype bound under canonical reduction
++Acknowledgments
++None.
+ References
+-[1] M. B. Branco, M. C. Faria, and J. C. Rosales. Positioned numerical semigroups. Quaestiones
+-Mathematicae, 44(5):679–691, 2021. URL https://www.nisc.com/products/abstracts/32832/
+-journals/positioned-numerical-semigroups.
++[1] M. B. Branco, M. C. Faria, and J. C. Rosales. Positioned numerical semigroups. Quaestiones Mathe-
++maticae, 44(5):679–691, 2021. doi: 10.2989/16073606.2020.1742245. URL https://doi.org/10.
++2989/16073606.2020.1742245.
+ [2] C. Delorme. Sous-monoïdes d’intersection complète de N. Annales scientifiques de l’École Nor-
+-male Supérieure, 9(2):145–154, 1976. doi: 10.24033/asens.1307. URL https://www.numdam.org/
++male Supérieure, 9(1):145–154, 1976. doi: 10.24033/asens.1307. URL https://www.numdam.org/
+ articles/10.24033/asens.1307/.
+-[3] P . A. García-Sánchez and H. Martín Cruz. Numerical semigroups with embedding dimension three and
+-minimal catenary degree. Integers, 20:A81, 2020. URL https://math.colgate.edu/~integers/
+-u81/u81.pdf. Section 3.2, Theorem 6.
+-[4] J. Herzog. Generators and relations of abelian semigroups and semigroup rings.Manuscripta Mathemat-
++[3] Ralf Fröberg, Christian Gottlieb, and Roland Häggkvist. On numerical semigroups. Semigroup Forum,
++35(1):63–83, 1987. doi: 10.1007/BF02573091. URL https://doi.org/10.1007/BF02573091.
++[4] P . A. García-Sánchez and H. Martín Cruz. Numerical semigroups with embedding dimension three
++and minimal catenary degree. Integers, 20:A81, 2020. doi: 10.5281/zenodo.10792612. URL https:
++//math.colgate.edu/~integers/u81/u81.pdf. Section 3.2, Theorem 6.
++[5] J. Herzog. Generators and relations of abelian semigroups and semigroup rings.Manuscripta Mathemat-
+ ica, 3:175–193, 1970. doi: 10.1007/BF01273309. URL https://doi.org/10.1007/BF01273309.
+-[5] M. R. Khan and K. M. Rogers. An exposition of White’s characterization of empty lattice tetrahedra,
+-2016. URL https://arxiv.org/abs/1610.01981v1. arXiv:1610.01981v1, Section 1, Theorems
+-3–4.
+-[6] Alessio Moscariello and Alessio Sammartano. Open problems on relations of numerical semigroups,
+-2026. URL https://arxiv.org/html/2406.00790v2. arXiv:2406.00790v2, Problem 21.
+-[7] Alessio Moscariello and Francesco Strazzanti. Nearly Gorenstein vs almost Gorenstein affine monomial
++[6] M. R. Khan and K. M. Rogers. An exposition of White’s characterization of empty lattice tetrahedra,
++2016. URL https://arxiv.org/abs/1610.01981. arXiv:1610.01981v1, Section 1, Theorems 3–4.
++[7] Alessio Moscariello. On the type of an almost Gorenstein monomial curve. Journal of Algebra ,
++456:266–277, 2016. doi: 10.1016/j.jalgebra.2016.02.019. URL https://doi.org/10.1016/j.
++jalgebra.2016.02.019.
++[8] Alessio Moscariello and Alessio Sammartano. Open problems on relations of numerical semigroups. In
++Recent Progress in Ring and Factorization Theory, volume 477 of Springer Proceedings in Mathematics
++& Statistics , pages 365–380. Springer, 2025. doi: 10.1007/978-3-031-75326-8_16. URL https:
++//doi.org/10.1007/978-3-031-75326-8_16 .
++[9] Alessio Moscariello and Alessio Sammartano. Open problems on relations of numerical semigroups,
++2026. URL https://arxiv.org/abs/2406.00790. arXiv:2406.00790v2, revised 26 May 2026;
++Problem 21 status update.
++[10] Alessio Moscariello and Francesco Strazzanti. Nearly Gorenstein vs almost Gorenstein affine monomial
+ curves. Mediterranean Journal of Mathematics , 18:127, 2021. doi: 10.1007/s00009-021-01761-1.
+-URL https://arxiv.org/pdf/2003.05391. Preprint: arXiv:2003.05391v1, Question 4.4.
+-[8] H. Nari, T. Numata, and K.-i. Watanabe. Genus of numerical semigroups generated by three elements,
+-2011. URL https://arxiv.org/abs/1104.3600v1. arXiv:1104.3600v1, Sections 1–2, Propositions
+-2.1–2.2.
+-[9] M. Rahimi. Rings with canonical reductions. Bulletin of the Iranian Mathematical Society , 46:1801–
+-1825, 2020. URL https://arxiv.org/abs/1712.00755v3. Preprint: arXiv:1712.00755v3.
+-[10] G. K. White. Lattice tetrahedra. Canadian Journal of Mathematics , 16:389–396, 1964. doi: 10.4153/
++URL https://doi.org/10.1007/s00009-021-01761-1 . Question 4.4; preprint arXiv:2003.05391.
++[11] Hirokatsu Nari, Takahiro Numata, and Kei-ichi Watanabe. Genus of numerical semigroups generated
++by three elements. Journal of Algebra , 358:67–73, 2012. doi: 10.1016/j.jalgebra.2012.02.010. URL
++https://doi.org/10.1016/j.jalgebra.2012.02.010. Preprint arXiv:1104.3600.
++[12] Mehran Rahimi. Rings with canonical reductions. Bulletin of the Iranian Mathematical Society ,
++46(6):1801–1825, 2020. doi: 10.1007/s41980-020-00360-2. URL https://doi.org/10.1007/
++s41980-020-00360-2 . Preprint arXiv:1712.00755.
++[13] G. K. White. Lattice tetrahedra. Canadian Journal of Mathematics , 16:389–396, 1964. doi: 10.4153/
+ CJM-1964-040-2. URL https://doi.org/10.4153/CJM-1964-040-2 .
+-97
++98

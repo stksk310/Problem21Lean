@@ -1,0 +1,303 @@
+PDF PAGE 1
+The type of four-generated
+numerical semigroups
+with canonical reduction
+Keisuke Sato
+Independent Researcher, Japan
+Corresponding author: stksk310@gmail.com ORCID: 0009-0005-4230-0268
+Abstract
+Let Γ = ⟨𝑚, 𝑛1, 𝑛2, 𝑛3⟩ be a numerical semigroup with four minimal generators, where 𝑚is its least
+positive element and𝐹 its Frobenius number. Assume the canonical-reduction condition𝐹 +𝑚−𝜑 ∈
+Γ for every pseudo-Frobenius number 𝜑. We prove that the type satisfies 𝑡(Γ) ≤ 4. This gives an
+affirmative answer to Problem 21 of Moscariello and Sammartano, originally posed as Question 4.4
+by Moscariello and Strazzanti; the bound is sharp. The proof combines a two-layer decomposition
+of the Apéry set, factorization geometry in the three-generated tail, and a Euclidean descent on two
+packet relations. The large polynomial positivity expansions used at the final exchange steps are
+accompanied by complete static coefficient certificates and reproducible symbolic checks; the proof
+itself does not rely on a finite search of numerical semigroups.
+Keywords: numerical semigroup; pseudo-Frobenius number; type; embedding dimension four;
+canonical reduction; Apéry set.
+MSC 2020: 20M14 (primary); 20M25, 13H10 (secondary).
+
+PDF PAGE 2
+Canonical reduction and type T ype bound under canonical reduction
+Contents
+1 Introduction 2
+2 Preliminaries and canonical reduction 3
+3 The symmetric three-generated tail 7
+4 Nonsymmetric factorization geometry and classification into three terminal configurations 10
+5 Exclusion of the path configuration 23
+6 Exclusion of the one-singleton configuration (T ype II) 32
+7 A unit root for the chain configuration 35
+8 Boundary elimination and the packet window 44
+9 From the residual cases to two packet relations 54
+10 Euclidean descent and source containment 67
+11 Proof of the main theorem 73
+A Auxiliary calculations and complete branching for the symmetric tail 75
+B The relative lattice of three arms and the in-box path argument 78
+C Positivity expansions for the root analysis 92
+D Specification and reproducibility of the static polynomial certificates 93
+1
+
+PDF PAGE 3
+Canonical reduction and type T ype bound under canonical reduction
+1 Introduction
+The type of a numerical semigroup is the number of its pseudo-Frobenius numbers, and it agrees with the
+Cohen–Macaulay type of the corresponding semigroup ring [10]. In this paper we control this number through
+the minimal generators and their nonnegative representations. Standard structure theorems are available for
+three-generated semigroups in both the symmetric and nonsymmetric cases, whereas in embedding dimension
+four one must relate the three-generated subsemigroup obtained by removing the smallest generator to the gap
+conditions in the original semigroup.
+The condition studied here is canonical reduction. Let 𝑚 denote the least positive generator and 𝐹 the
+Frobenius number. We require 𝐹 + 𝑚 − 𝜑 ∈ Γ for every pseudo-Frobenius number 𝜑. This semigroup-
+theoretic formulation appears in §4 of Moscariello–Strazzanti [ 10]. The corresponding condition for all non-
+negative gaps has also been studied under the name positioned [1]. We use canonical reduction as our primary
+terminology and prove directly in Section 2 the passage from pseudo-Frobenius numbers to all gaps. For the
+ring-theoretic background, see Rahimi [ 12].
+The unrestricted embedding-dimension-four setting admits numerical semigroups of arbitrarily large type,
+so a type bound of this form cannot hold without additional structure [ 3, 9]. By contrast, stronger bounds
+are known in narrower Gorenstein-type classes: in embedding dimension four, the almost symmetric and
+nearly Gorenstein settings lead to type at most three [ 7, 10]. Canonical reduction is broader than the nearly
+Gorenstein condition [ 10]. Problem 21 of Moscariello–Sammartano asks whether this broader canonical-
+reduction hypothesis nevertheless forces the sharp bound four [ 8, 9].
+Our main result is the following.
+1.1 T ype bound for canonical four-generated numerical semigroups
+A numerical semigroup is a cofinite subset of the nonnegative integers that contains 0 and is closed under
+addition. Let
+Γ = ⟨𝑚, 𝑛1, 𝑛2, 𝑛3⟩, edim(Γ) = 4, 𝑚 = min(Γ ∖ {0})
+with all four generators minimal; in particular, 0 < 𝑚 < 𝑛𝑟. Let 𝐹 = 𝐹 (Γ) =max(ℤ ∖ Γ)be the Frobenius
+number, and define
+𝑃 𝐹 (Γ) = {𝑞 ∈ ℤ ∖ Γ ∶ 𝑞 + 𝑠 ∈ Γfor every 𝑠 ∈ Γ ∖ {0}}, 𝑡(Γ) = |𝑃 𝐹 (Γ)|
+Under the canonical condition
+𝐹 + 𝑚 − 𝜑 ∈ Γ (∀𝜑 ∈ 𝑃 𝐹 (Γ)) (CANONICAL)
+one has
+𝑡(Γ) ≤ 4
+The proof is assembled in § 11.2.
+This gives an affirmative answer to Problem 21 of Moscariello–Sammartano, originally posed as Ques-
+tion 4.4 by Moscariello–Strazzanti [ 8–10]. The bound is sharp: the canonical numerical semigroup
+⟨16, 17, 19, 39⟩has type four [ 10]. Throughout the paper, the canonical condition displayed above is used at
+every stage of the proof.
+The proof begins with a two-layer decomposition of the Apéry set. Set𝑄(Γ) = 𝑃 𝐹 (Γ)∖{𝐹 }, and associate
+to each 𝑞 ∈ 𝑄(Γ)the elements 𝑞 + 𝑚 and 𝑐𝑞 = 𝐹 + 𝑚 − 𝑞 . Their nonnegative representations imply that
+𝐻 = ⟨𝑛 1, 𝑛2, 𝑛3⟩ is a genuine minimally three-generated numerical semigroup. When 𝐻 is symmetric, we
+use a stable ideal and the correspondence between its minimal generators and the Apéry set to obtain the
+bound.
+When 𝐻 is nonsymmetric, its two pseudo-Frobenius numbers give rise to six arms. The two colors of
+arms in the same direction have synchronized return levels, while three arms of the same color are excluded
+using an empty relative-lattice tetrahedron and a finite path inside a box. Combining these constraints with
+incomparability of the complements reduces four elements selected from a putative counterexample to one
+of three configurations: a path configuration, a configuration with one singleton, or a chain configuration.
+2
+
+PDF PAGE 4
+Canonical reduction and type T ype bound under canonical reduction
+The first two configurations are eliminated by comparing two returns. In the chain configuration, we
+maximize one coordinate over the finite factorization set of the same element 𝑞𝐴 + 𝑚, thereby constructing a
+unit-root relation. After treating the boundary and the range in which the relevant packets are available, two
+exchange relations between nonnegative representations remain. We then perform a Euclidean descent that
+preserves the same semigroup and the same 𝑊 = 𝐹 + 𝑚 while decreasing the positive integer 𝐸 + 𝜒. At
+termination, all coefficients required for the exchange are shown to occur in representations of that same 𝑊,
+and removing one copy of 𝑚 yields the contradiction 𝐹 ∈ Γ .
+Sections 2–4 establish the structural reductions and the classification into the three terminal configura-
+tions. Sections 5–6 eliminate the configurations involving singletons. Sections 7–10 treat the chain config-
+uration, and Section 11 assembles the main theorem. Appendix A contains the complete case analysis for
+the symmetric tail, Appendix B gives the relative-lattice and box-path arguments, Appendix C records the
+positivity expansions, and Appendix D specifies the static full-coefficient certificates. The complete coef-
+ficient tables for the two large identities are required supplementary proof data, and their coefficient checks
+are computer-assisted. The argument does not rely on a finite-range scan of numerical semigroups or on a
+complete formalization in a proof assistant.
+2 Preliminaries and canonical reduction
+We fix the hypotheses of the main theorem. In this section, the canonical condition is converted into an
+involution on the Apéry set and into nonnegative representations in the supported directions. Under the
+assumption of a counterexample, we also prove coprimality and minimality for the three-generated tail. The
+objects passed to the later classification are the same semigroup, the same 𝐹 , 𝑚, 𝑊, and actual pseudo-
+Frobenius numbers.
+2.1 Common notation and scope of the contradiction argument
+𝑄(Γ) = 𝑃 𝐹 (Γ) ∖ {𝐹 }, 𝑊 = 𝐹 + 𝑚, 𝐻 = ⟨𝑛 1, 𝑛2, 𝑛3⟩,
+𝒜 = Ap(Γ, 𝑚) = {𝑤 ∈ Γ ∶ 𝑤 − 𝑚 ∉ Γ}.
+Since 𝐹 ∈ 𝑃 𝐹 (Γ), we have 𝑡 = |𝑄(Γ)| + 1. From now on the contradiction hypothesis is |𝑄(Γ)| ≥ 4.
+Selecting four rows does not mean that the total number of elements of 𝑄 is fixed to be four. We write
+𝑥 ≤Γ 𝑦 when 𝑦 − 𝑥 ∈ Γ. For each 𝑞 ∈ 𝑄(Γ), define its complement by 𝑐𝑞 = 𝑊 − 𝑞.
+In the nonsymmetric part we use
+𝑆𝐻(𝑞) = {𝑟 ∶ 𝑞 + 𝑛𝑟 ∈ 𝐻}, 𝐷(𝑐) = {𝑟 ∶ 𝑐 − 𝑛 𝑟 ∈ 𝐻}.
+The set 𝑄(Γ)and a local integer denoted by 𝑄 are distinguished by type and by the point at which they are
+defined. Likewise, the two-generated semigroup 𝑇 in the symmetric case and the matrix 𝐶 in an appendix
+are local notation and should not be confused with the canonical CHAIN coefficient 𝑇 = 𝑏 𝑘 + 𝛼 or the root
+coefficient 𝐶.
+2.2 Standard external results used in the proof
+The proof uses the following three standard results as external input, in exactly the forms stated here.
+These results are not proved in this paper. We retain the bibliographic information for the original sources,
+and we have checked the precise locations in the supporting references used here. We do not assert unverified
+theorem numbers in the historical originals.
+2.2.1 Representation of symmetric three-generated semigroups
+After permuting the generators, every minimally three-generated symmetric numerical semigroup can be
+written as 𝐻 = ⟨𝑑𝑢, 𝑑𝑣, 𝑤⟩, with 𝑑, 𝑢, 𝑣 ≥ 2, gcd(𝑢, 𝑣) =gcd(𝑑, 𝑤) = 1, and 𝑤 ∈ ⟨𝑢, 𝑣⟩. This is the form
+3
+
+PDF PAGE 5
+Canonical reduction and type T ype bound under canonical reduction
+corresponding to the three-generated complete-intersection theory of Herzog and Delorme; the direction used
+here is stated explicitly in García-Sánchez–Martín Cruz, §3.2, Theorem 6 [ 2, 4, 5].
+2.2.2 Standard form for nonsymmetric three-generated semigroups
+For every minimally three-generated nonsymmetric numerical semigroup there exist positive integers 𝑎𝑟, 𝑏𝑟,
+with 𝜌𝑟 = 𝑎𝑟 + 𝑏𝑟, such that the critical relations, the two pseudo-Frobenius numbers, and the formulas for
+the primitive tail generators given below hold. The precise forms used here follow Nari–Numata–Watanabe,
+§1, equation (1.1), and §2, equation (2.1.1) and Propositions 2.1–2.2 [ 5, 11]. Pairwise coprimality of the
+three generators is not assumed.
+2.2.3 Empty lattice tetrahedra
+A lattice tetrahedron containing no lattice points other than its vertices has lattice width one. Equivalently,
+there is a nonconstant primitive integer-valued affine functional that places all four vertices on two consecutive
+integer levels. We use White’s theorem in this form [ 13]. Khan–Rogers, §1, Theorems 3–4, gives the normal
+form required here [ 6]. The application to the relative lattice, the partition of the vertices into two pairs, and
+the subsequent coefficient comparisons are all proved in this paper.
+We fix the convention for 𝑆𝑇 𝐷𝐻𝐸𝑅𝑍𝑂𝐺 in a cyclic order (𝑖, 𝑗, 𝑘):
+𝜌𝑖𝑛𝑖 = 𝑏𝑗𝑛𝑗 + 𝑎𝑘𝑛𝑘, 𝜌 𝑗𝑛𝑗 = 𝑎𝑖𝑛𝑖 + 𝑏𝑘𝑛𝑘, 𝜌 𝑘𝑛𝑘 = 𝑏𝑖𝑛𝑖 + 𝑎𝑗𝑛𝑗. (HCR)
+Each 𝜌𝑟 is the least positive multiple of 𝑛𝑟 admitting a nonnegative representation by the other two generators.
+𝑓𝐴 = (𝜌𝑖 − 1)𝑛𝑖 + (𝑎𝑗 − 1)𝑛𝑗 − 𝑛𝑘, 𝑓 𝐵 = (𝜌𝑖 − 1)𝑛𝑖 − 𝑛𝑗 + (𝑏𝑘 − 1)𝑛𝑘, 𝑃 𝐹 (𝐻) = {𝑓𝐴, 𝑓𝐵}.
+We also use the cyclic versions of these formulas. For a primitive tail,
+𝑛1 = 𝑎2𝑎3 + 𝑎3𝑏2 + 𝑏2𝑏3, 𝑛 2 = 𝑎1𝑎3 + 𝑎1𝑏3 + 𝑏1𝑏3, 𝑛 3 = 𝑎1𝑎2 + 𝑎2𝑏1 + 𝑏1𝑏2.
+The later cross-product comparisons retain any positive common scale.
+2.3 Symmetry operations
+A cyclic permutation acts simultaneously on all indices. Color reversal is the combination of an odd per-
+mutation and the interchange of all 𝑎- and 𝑏-parameters. The operation reversing the pivot in PATH and the
+operation interchanging 𝑗 and 𝑘 in CHAIN are given with their full parameter transformations in P5, § 7.1,
+and §10.1, respectively. These operations leave Γ, 𝐹 , 𝑚, 𝑊and the set of actual pseudo-Frobenius elements
+unchanged.
+2.4 Discipline for representations and proof steps
+An actual factorization is a representation by the generators with all coefficients nonnegative integers. A
+signed equality or a completed zero identity is not, by itself, an actual factorization. Whenever the final
+contradiction uses a coefficient vector, its nonnegativity is stated explicitly. Herzog criticality is applied
+only after the coefficient of 𝑚 has been completely eliminated, so that the relation lies entirely in 𝐻. A
+support replacement is performed only when the source occurs coefficientwise within an explicitly identified
+factorization of the same actual element. Every extremal choice used below is accompanied by the underlying
+finite set or well-ordering argument.
+2.5 Scope of notation
+For traceability to the source notation, we do not globally rename the principal symbols. The following
+symbols have local scopes and should not be identified across the different rows of the table.
+4
+
+PDF PAGE 6
+Canonical reduction and type T ype bound under canonical reduction
+Symbol Principal scope and meaning
+𝑄 In Section 2, 𝑄(Γ) = 𝑃 𝐹 (Γ) ∖ {𝐹 }is a set. In Section 8,
+𝑄 = 𝑈 𝑗 + 1; in the latter part of D in Section 9, 𝑄 = 𝜏 0 is a
+local integer.
+𝐻 Throughout, the three-generated tail 𝐻 = ⟨𝑛 1 , 𝑛2 , 𝑛3 ⟩. In
+Section 10, 𝐻𝑝 = 𝑇 + 𝑤 is a local packet coefficient.
+𝐶 In Sections 7–9, the 𝑛𝑘 -coefficient of the CORE-ROOT. In
+Appendix B, a 3 × 3 matrix 𝐶.
+𝑇 In CHAIN/CENTRAL, 𝑇 = 𝑏 𝑘 + 𝛼. In Section 3 and
+Appendix A, 𝑇 = ⟨𝑢, 𝑣⟩ is the two-generated semigroup in the
+symmetric tail.
+𝐴, 𝐵 In Sections 4–7, labels for the two colors and arm families. In
+Sections 9–10, capital 𝐴, 𝐵 are local Euclidean-source
+coefficients.
+𝐸 A packet coefficient in Sections 9–10: in the initial embedding
+𝐸 = 𝑅 + 𝜐 , and in the abstract theorem 𝐸 = 𝑅 + 𝑢 . It is
+distinct from the return labels 𝐸𝐴, 𝐸𝐵.
+𝐿, 𝑀 In Sections 4 and 8, local return levels. In Section 10, the row
+sums 𝐿 = 𝑝 + 𝑞, 𝑀 = 𝑠 + 𝑡 of the source matrix.
+Δ Not a single global variable. Examples are Δ𝑗 , Δ𝑘 in G4 and
+Δ0 in CENTRAL; each indexed local difference is read from
+its point of definition.
+𝜃 Appears in the initial packet of Section 9 as 𝜃 = 𝑄 − 𝑓𝐸 and is
+then carried unchanged into the Euclidean package in Section
+10.
+𝜒 A coefficient from the strict-packet/D analysis in Sections 8–9,
+embedded as a packet coefficient in Section 10. After a
+nonterminal transformation, 𝜒′ = 𝜃.
+Reuse of local notation is delimited by the definitions and anchors in the relevant sections. Equation tags,
+verifier keys, and JSON keys are retained unchanged for traceability.
+2.6 The two Apéry layers and supported returns
+C2. Under the canonical condition of Sections 1–2, the following statements hold.
+2.7 Common setting
+Let Γ = ⟨𝑚, 𝑛1, 𝑛2, 𝑛3⟩ be a numerical semigroup, with 𝑚 its multiplicity, 𝐹 its Frobenius number, 𝐻 =
+⟨𝑛1, 𝑛2, 𝑛3⟩, 𝑊 = 𝐹 + 𝑚 , and 𝒜 = Ap(Γ, 𝑚). Let 𝑄(Γ) =PF(Γ) ∖ {𝐹 }.
+The canonical condition is
+𝑊 − 𝜑 ∈ Γ (𝜑 ∈ 𝑃 𝐹 (Γ)).
+Every factorization of an element of 𝒜 contains no copy of 𝑚, so 𝒜 ⊆ 𝐻 . Moreover 𝑊 ∈ 𝒜 , and for
+every 𝑤 ∈ 𝒜 one has 𝑤 − 𝑚 ≤ 𝐹, hence 𝑤 ≤ 𝑊.
+2.8 From the PF condition to the condition for every gap
+Let x be a nonnegative gap. Choose the largest integer 𝜑 in the finite set (𝑥 + Γ) ∖ Γ. For every positive
+𝑠 ∈ Γ, maximality gives 𝜑 + 𝑠 ∈ Γ. Thus 𝜑 ∈ 𝑃 𝐹 (Γ), and 𝜑 − 𝑥 ∈ Γ.
+𝑊 − 𝑥 = (𝑊 − 𝜑) + (𝜑 − 𝑥) ∈ Γ.
+This direction is therefore obtained directly, without invoking an external positioned-semigroup criterion.
+5
+
+PDF PAGE 7
+Canonical reduction and type T ype bound under canonical reduction
+2.9 Exact two-layer decomposition
+For 𝑤 ∈ 𝒜 , set 𝑏 = 𝑊 − 𝑤 ≥ 0 . If 𝑤 = 0, then 𝑏 = 𝑊 ∈ 𝒜 . If 𝑤 > 0, then 𝑥 = 𝑤 − 𝑚 is a nonnegative
+gap, so the preceding subsection gives 𝑏 + 𝑚 = 𝑊 − 𝑥 ∈ Γ.
+• If 𝑏 ∈ Γ, then 𝑏 − 𝑚 ∈ Γ would imply 𝑤 + (𝑏 − 𝑚) = 𝐹 ∈ Γ, so 𝑏 ∈ 𝒜. In this case 𝑏 + 𝑚 ∉ 𝒜.
+• If 𝑏 ∉ Γ, then 𝑏 + 𝑚 ∈ Γ and (𝑏 + 𝑚) − 𝑚 = 𝑏 ∉ Γ, so 𝑏 + 𝑚 ∈ 𝒜.
+Thus exactly one of the following holds: 𝑊 − 𝑤 ∈ 𝒜 or 𝑊 + 𝑚 − 𝑤 ∈ 𝒜.
+𝒜0 = {𝑤 ∈ 𝒜 ∶ 𝑊 − 𝑤 ∈ 𝒜}, 𝒜 1 = 𝒜 ∖ 𝒜 0.
+If 𝑥 ≤Γ 𝑦 and 𝑦 ∈ 𝒜 0, then 𝑊 − 𝑥 = (𝑊 − 𝑦) + (𝑦 − 𝑥) ∈ Γ. Since its sum with the Apéry element 𝑥
+is 𝑊, one has 𝑊 − 𝑥 ∈ 𝒜 . Hence 𝒜0 is a lower ideal and 𝒜1 an upper filter.
+On 𝒜1, the map 𝜄(𝑤) = 𝑊 + 𝑚 − 𝑤again takes values in 𝒜1; moreover 𝜄2 = id and 𝜄(𝑥) − 𝜄(𝑦) = 𝑦 − 𝑥.
+Thus 𝜄 is an order-reversing involution.
+The maximal elements of the Apéry set are 𝑃 𝐹 + 𝑚. Indeed, if 𝑞 ∈ 𝑃 𝐹 , then 𝑞 + 𝑚 ∈ 𝒜 ; if a larger
+Apéry element differed from it by 𝑠 > 0 in Γ, then 𝑞 + 𝑠 ∈ Γ , a contradiction. Conversely, if 𝑤 ∈ 𝒜 is
+maximal, then 𝑞 = 𝑤 − 𝑚is a gap, and if 𝑞 + 𝑠were a gap for some positive 𝑠 ∈ Γ, then 𝑤 + 𝑠 ∈ 𝒜, contrary
+to maximality.
+If 𝑞 ∈ 𝑄 , then 𝑞 < 𝐹 . The inclusion 𝑞 + 𝑚 ∈ 𝒜 0 would give 𝑊 − (𝑞 + 𝑚) = 𝐹 − 𝑞 ∈ Γ ∖ {0},
+contradicting maximality. Together with the fact that 𝒜1 is an upper filter, this yields
+Max 𝒜1 = (𝑃 𝐹 ∖ {𝐹 }) + 𝑚,
+Min 𝒜1 = {𝑊 − 𝑞 ∶ 𝑞 ∈ 𝑄}, | Min 𝒜1| = |𝑄| = 𝑡 − 1.
+Moreover, 𝒜0 = {ℎ ∈ 𝐻 ∶ 𝑊 − ℎ ∈ 𝐻} . For an element ℎ on the right, if ℎ − 𝑚 ∈ Γ then 𝐹 =
+(ℎ − 𝑚) + (𝑊 − ℎ) ∈ Γ, so ℎ ∈ 𝒜.
+2.10 KEY : direct proof of the support-zero return
+Let 𝑞 ∈ 𝑄 and 𝑐 = 𝑊 − 𝑞 ∈ Γ , and choose a direction 𝑖 for which 𝑐 − 𝑛𝑖 ∈ 𝐻 . The pseudo-Frobenius
+property gives 𝑞 + 𝑛𝑖 ∈ Γ.
+If 𝑞 + 𝑛𝑖 − 𝑚 ∈ Γ, then
+𝐹 = (𝑐 − 𝑛𝑖) + (𝑞 + 𝑛𝑖 − 𝑚) ∈ Γ,
+a contradiction. Therefore
+𝑞 + 𝑛𝑖 ∈ 𝒜 ⊂ 𝐻.
+If a genuine 𝐻-factorization of this element had positive 𝑛𝑖-coefficient, removing one copy of 𝑛𝑖 from that
+same factorization would put 𝑞 in Γ. Hence
+𝑐 − 𝑛𝑖 ∈ 𝐻 ⟹ 𝑞 + 𝑛 𝑖 ∈ ⟨𝑛𝑗, 𝑛𝑘⟩.
+Since 𝑐 = 𝑊 − 𝑞 > 0 lies in 𝐻, the set 𝐷(𝑐)is nonempty. Thus, with the conventions 𝐷(𝑐) = {𝑖 ∶
+𝑐 − 𝑛𝑖 ∈ 𝐻} and 𝑆𝐻(𝑞) = {𝑖 ∶ 𝑞 + 𝑛𝑖 ∈ 𝐻}, one has ∅ ≠ 𝐷(𝑐) ⊆ 𝑆𝐻(𝑞). Equality is not asserted. No
+Hall-type existence theorem, factorization uniqueness, or generic connectivity is needed.
+Furthermore, 𝑐 − 𝑚 = 𝐹 − 𝑞 is positive and does not lie in Γ, so 𝑐 ∈ 𝒜 . Also 𝑥 = 𝑐 − 𝑛 𝑖 ∈ 𝒜 , since
+𝑥 − 𝑚 ∈ Γ would imply 𝑐 − 𝑚 ∈ Γ. With 𝑦 = 𝑞 + 𝑛𝑖 and ℎ = 𝑞 + 𝑚,
+ℎ, 𝑐, 𝑥, 𝑦 ∈ 𝐻 ∩ 𝒜, ℎ + 𝑐 = 𝑊 + 𝑚, 𝑥 + 𝑦 = 𝑊 .
+6
+
+PDF PAGE 8
+Canonical reduction and type T ype bound under canonical reduction
+This conclusion is obtained separately for each supported direction. The classification of rows is carried
+out in G4.
+2.11 Tail gcd firewall
+Assume 𝑄 ≠ ∅, and choose 𝑞 ∈ 𝑄. Then 𝑞 + 𝑚, 𝑊 , 𝑐 = 𝑊 − 𝑞all lie in 𝒜 ⊆ 𝐻 . Hence
+𝑚 = (𝑞 + 𝑚) + (𝑊 − 𝑞) − 𝑊 ∈ ℤ𝐻.
+Let 𝑑 = gcd(𝑛1, 𝑛2, 𝑛3). Then 𝑑 also divides 𝑚. Since Γ is a numerical semigroup, gcd (𝑚, 𝑛1, 𝑛2, 𝑛3) =
+1, and therefore 𝑑 = 1.
+The signed equality above is used only in the group ℤ𝐻; it is not called a nonnegative factorization.
+2.12 Selection of four rows and minimality of the tail
+Under the contradiction hypothesis, we may choose four distinct elements 𝑞1, 𝑞2, 𝑞3, 𝑞4 ∈ 𝑄(Γ). The Apéry
+and KEY statements above hold for all of 𝑄, hence simultaneously for these four selected rows. If one tail
+generator were a nonnegative combination of the other two, that generator would also be redundant in Γ,
+contradicting edim Γ = 4 . Thus the tail is minimally generated. By § 2.11, its gcd is one. Hence 𝐻 is a
+genuine minimally three-generated numerical semigroup, and it is either symmetric or nonsymmetric.
+3 The symmetric three-generated tail
+We treat the case in which the minimally three-generated tail obtained in the previous section is symmet-
+ric. The main text establishes the correspondence between a stable ideal and the Apéry set, and Appendix
+A excludes the possibility that all four candidates survive by a complete case analysis. The two-generated
+semigroup 𝑇 = ⟨𝑢, 𝑣⟩ and the coefficient notation in this section are local to this section and Appendix A.
+3.1 Exclusion of the symmetric tail
+Let Γ = ⟨𝑚, 𝑥, 𝑦, 𝑧⟩be a minimally four-generated numerical semigroup, with multiplicity 𝑚. Assume that
+𝐻 = ⟨𝑥, 𝑦, 𝑧⟩is symmetric and that
+𝑚 + 𝐹 (Γ) − 𝑞 ∈ Γ (𝑞 ∈ 𝑃 𝐹 (Γ)) (CAN)
+Then 𝑡(Γ) ≤ 4.
+From now on write 𝐹 = 𝐹 (Γ), 𝑓 = 𝐹 (𝐻), and 𝑄 = 𝑃 𝐹 (Γ) ∖ {𝐹 }. A minimal generator of an ideal of a
+semigroup means an element from which no positive semigroup element can be subtracted while remaining
+in the ideal.
+3.2 Stable core and the exact bridge
+𝐾 = {𝑎 ∈ 𝐻 ∶ 𝑎 + 𝑛𝑚 ∈ 𝐻 (𝑛 ≥ 0)}, ℎ = min 𝐾.
+By symmetry and Γ = 𝐻 + ℕ𝑚, for every integer 𝑡,
+𝑡 ∉ Γ ⟺ 𝑓 − 𝑡 ∈ 𝐾. (GAP-K)
+Hence 𝐹 = 𝑓 − ℎ . Since 0 ∉ 𝐾 (because 𝑚 ∉ 𝐻), we have ℎ ≥ min(𝐻 ∖ {0}) > 𝑚. Put
+𝑟 = ℎ − 𝑚 = 𝑓 − 𝐹 − 𝑚 > 0, 𝑟 + 𝑛𝑚 ∈ 𝐻 (𝑛 ≥ 1). (FS)
+7

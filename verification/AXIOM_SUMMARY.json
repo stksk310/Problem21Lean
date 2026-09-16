@@ -1,0 +1,484 @@
+{
+  "checked_declarations": 107,
+  "project_specific_axioms": 0,
+  "standard_axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": {
+    "P21.NumericalSemigroup.apery_le": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.apery_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.zero_mem_apery": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.W_mem_apery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.pf_add_m_mem_apery": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.apery_lower": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.pf_iff_maximal_apery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.A0": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.A1": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.iota": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.complement_mem_apery": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.exact_two_layers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.a0_lower": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.a1_upper": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.iota_involutive": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.iota_order_reverse": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.iota_mem_a1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.pf_add_m_mem_a1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.complement_of_q_mem_apery": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.maximal_a1_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.minimal_iff_iota_maximal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.minimal_a1_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.maximal_a1_set": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.minimal_a1_set": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.minimal_a1_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.all": [
+      "propext"
+    ],
+    "P21.Generators.Gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.H": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.ActualFactorization4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.ActualFactorization3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Minimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.TailMinimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.OffDirection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.D": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.SH": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.tailGcd": [
+      "propext"
+    ],
+    "P21.Generators.value_cons": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.h_subset_gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.m_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.n_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.tail_minimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.semigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.minimal_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.minimal_four_distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.P21MainStatement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.apery_m_coordinate_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.apery_in_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.a0_tail_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.key_return_apery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.return_coordinate_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.key_support_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.support_nonempty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.key_support_inclusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.supported_rectangle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.value": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.generated": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.actual_iff_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.generator_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.generated_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.replaceWithinActualFactorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.removeOne": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Gap": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.IsFrobenius": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.PF": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.type": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Apery": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Le": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Canonical": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Q": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Maximal": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.Minimal": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.le_refl": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.le_trans": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.le_antisymm": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.exists_frobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.frobenius_mem_pf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.mem_of_gt_frobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.pf_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.q_lt_frobenius": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.type_eq_q_card_add_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.translated_gaps_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.gap_below_pf": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.canonical_all_nonnegative_gaps": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.offDirection_iff_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.key_pair_return": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.RowFacts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.all_q_row_facts": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.select_four_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tail_minimal_and_cofinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.W": [],
+    "P21.complement": [],
+    "P21.cofinite_iff_finite_nonnegative_gaps": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.all_pf_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.q_finite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.NumericalSemigroup.a0_lower_in_semigroup": [
+      "propext"
+    ],
+    "P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.divisor_of_generated": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.generated_eq_closure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.signed_mem_group": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tail_signed_m": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.m_mem_tail_group": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.common_divisor_dvd_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tail_common_divisor_dvd_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tail_gcd_eq_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.natural_closure_to_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tail_cofinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Generators.Setting.tailSemigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

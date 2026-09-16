@@ -1,0 +1,12 @@
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (9.9s)
+✔ [1590/1598] Built P21.Basic (8.9s)
+✔ [1591/1598] Built P21.PseudoFrobenius (8.0s)
+✔ [1592/1598] Built P21.Apery (7.7s)
+✔ [1593/1598] Built P21.CanonicalReduction (9.6s)
+✔ [1594/1598] Built P21.Tail (8.9s)
+✔ [1595/1598] Built P21.Selection (12s)
+✔ [1596/1598] Built P21.Semantics (9.2s)
+✔ [1597/1598] Built P21 (9.0s)
+Build completed successfully (1598 jobs).
+Exit code: 0

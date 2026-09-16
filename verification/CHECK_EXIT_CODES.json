@@ -1,0 +1,7 @@
+{
+  "lake build": 0,
+  "C:\\Users\\stksk\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe verification/prepare_reports.py": 0,
+  "lake env lean verification/AxiomCheck.lean": 0,
+  "C:\\Users\\stksk\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe verification/check_axiom_report.py": 0,
+  "lake env lean verification/StatementCheck.lean": 0
+}

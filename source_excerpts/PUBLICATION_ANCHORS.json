@@ -1,0 +1,1017 @@
+{
+  "T1": {
+    "file": "sections/01.md",
+    "anchor": "fr-T1",
+    "title": "canonical四生成半群のtype上界"
+  },
+  "C2.1": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2.1",
+    "title": "PF条件から全gapの条件へ"
+  },
+  "C2.2": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2.2",
+    "title": "正確な二層分割"
+  },
+  "C2.3": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2.3",
+    "title": "KEY：support-zero return の直接証明"
+  },
+  "C2.4": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2.4",
+    "title": "Tail gcd firewall"
+  },
+  "C2.5": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2.5",
+    "title": "四行の選択とtailの極小性"
+  },
+  "S3": {
+    "file": "sections/03.md",
+    "anchor": "fr-S3",
+    "title": "対称tailの排除"
+  },
+  "S3.2": {
+    "file": "sections/03.md",
+    "anchor": "fr-S3.2",
+    "title": "stable coreとexact bridge"
+  },
+  "S3.3": {
+    "file": "sections/03.md",
+    "anchor": "fr-S3.3",
+    "title": "RAW4の厳密分類"
+  },
+  "S3.4": {
+    "file": "sections/03.md",
+    "anchor": "fr-S3.4",
+    "title": "cross-layer rigidityとactual PF入力"
+  },
+  "S3.5": {
+    "file": "sections/03.md",
+    "anchor": "fr-S3.5",
+    "title": "Branch I／IIの全域分割"
+  },
+  "G4.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.1",
+    "title": "共通設定"
+  },
+  "G4.1.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.1.1",
+    "title": "Six-arm atlas の短い証明"
+  },
+  "G4.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.2",
+    "title": "基本的な actual antichain と係数制約"
+  },
+  "G4.3": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.3",
+    "title": "Critical-box uniqueness と integer-kernel basis"
+  },
+  "G4.4": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.4",
+    "title": "Corner と singleton は共存しない"
+  },
+  "G4.5": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.5",
+    "title": "Matched A_i/B_i synchronization"
+  },
+  "G4.5.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.5.1",
+    "title": "Matched pair と singleton"
+  },
+  "M4": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4",
+    "title": "root-free matched-pair level rigidity"
+  },
+  "M4.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.2",
+    "title": "actual positive-m returns は独立に選択できる"
+  },
+  "M4.3": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.3",
+    "title": "四つの coordinate caps"
+  },
+  "M4.4": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.4",
+    "title": "Unequal levels を一括排除"
+  },
+  "M4.4.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.4.1",
+    "title": "L_A>L_B は不可能"
+  },
+  "M4.4.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.4.2",
+    "title": "L_B>L_A は不可能"
+  },
+  "M4.5": {
+    "file": "sections/04.md",
+    "anchor": "fr-M4.5",
+    "title": "Equal-level matching と PRE 排除"
+  },
+  "G4.5.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.5.2",
+    "title": "Matched pair と extra arms"
+  },
+  "G4.5.3": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.5.3",
+    "title": "Matched pair と S_i も不可能（追加の短い閉鎖）"
+  },
+  "G4.6": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.6",
+    "title": "同色二 arm の正確な complement geometry"
+  },
+  "G4.6.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.6.1",
+    "title": "残りの方向の singleton S_j は不可能"
+  },
+  "G4.6.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.6.2",
+    "title": "同時に二 singleton S_i,S_k を伴うことも不可能"
+  },
+  "G4.7": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.7",
+    "title": "異色・異方向二 arm：二つの向きを区別する"
+  },
+  "G4.7.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.7.1",
+    "title": "B_i(λ),A_k(ν) の向き"
+  },
+  "G4.7.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.7.2",
+    "title": "A_i(λ),B_k(ν) の反対向き"
+  },
+  "G4.8": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.8",
+    "title": "三 singleton があれば |Q|=3"
+  },
+  "G4.9": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.9",
+    "title": "四行の exhaustive classification"
+  },
+  "G4.11": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.11",
+    "title": "末端証明に必要な scalar input の抽出"
+  },
+  "G4.11.1": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.11.1",
+    "title": "一般 singleton saturation lemma"
+  },
+  "G4.11.2": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.11.2",
+    "title": "CHAIN の全 canonical positive box"
+  },
+  "G4.11.3": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.11.3",
+    "title": "TYPE II の全 input"
+  },
+  "G4.11.4": {
+    "file": "sections/04.md",
+    "anchor": "fr-G4.11.4",
+    "title": "PATH の canonical endpoint rays"
+  },
+  "P5.0": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.0",
+    "title": "exact入力とラベル"
+  },
+  "P5.1": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.1",
+    "title": "central match-or-seamの必要部分"
+  },
+  "P5-dual": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5-dual",
+    "title": "全parameterの左右反転"
+  },
+  "P5.2": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.2",
+    "title": "PAIRからstrong portへ"
+  },
+  "P5.3": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3",
+    "title": "weak rootの正規化とPAIR排除"
+  },
+  "P5.3.2": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3.2",
+    "title": "actual missing-direction returns"
+  },
+  "P5.3.3": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3.3",
+    "title": "弱い ROOT は `S<R` と `e≥T` を強制する"
+  },
+  "P5.3.4": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3.4",
+    "title": "有限の ROOT 正規化 — `b_k≤K<ρ_k`"
+  },
+  "P5.3.5": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3.5",
+    "title": "endpoint missing-`j` level は必ず 2 以上"
+  },
+  "P5.3.6": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.3.6",
+    "title": "一回の Frobenius absorption"
+  },
+  "P5.4": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.4",
+    "title": "PFREEの符号を先に確定する"
+  },
+  "P5.4.2": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.4.2",
+    "title": "同じ右 singleton の二つの genuine returns"
+  },
+  "P5.4.3": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.4.3",
+    "title": "r≥2 または s≥2 は一回の F 吸収"
+  },
+  "P5.4.4": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.4.4",
+    "title": "二つの endpoint caps"
+  },
+  "P5.4.5": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.4.5",
+    "title": "等しい unit levels は pure-H criticality に反する"
+  },
+  "P5.5": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.5",
+    "title": "PFREEの二return吸収とlevel-one固定形"
+  },
+  "P5.6": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6",
+    "title": "double-unit排除"
+  },
+  "P5.6.2": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.2",
+    "title": "C-capとAの上限"
+  },
+  "P5.6.3": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.3",
+    "title": "二つの unit returns は一点に pin される"
+  },
+  "P5.6.4": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.4",
+    "title": "二つの新たな exact roots"
+  },
+  "P5.6.5": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.5",
+    "title": "反対側 singleton の missing-j return を取る"
+  },
+  "P5.6.5.1": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.5.1",
+    "title": "r≥2 は F の直接 factorization"
+  },
+  "P5.6.5.2": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.6.5.2",
+    "title": "r=1 は subcritical pure k/i relation"
+  },
+  "P5.7": {
+    "file": "sections/05.md",
+    "anchor": "fr-P5.7",
+    "title": "PATH閉鎖"
+  },
+  "T6.1": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.1",
+    "title": "正確な入力定理"
+  },
+  "T6.2": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.2",
+    "title": "2本の actual singleton returns"
+  },
+  "T6.3": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.3",
+    "title": "Endpoint caps"
+  },
+  "T6.4": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.4",
+    "title": "新しい統一 cap：\\(A,D\\le b_i-1\\)"
+  },
+  "T6.4.1": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.4.1",
+    "title": "\\(\\eta\\ge1\\)"
+  },
+  "T6.4.2": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.4.2",
+    "title": "\\(\\theta\\ge1\\)"
+  },
+  "T6.4.3": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.4.3",
+    "title": "\\(\\eta=\\theta=0\\)"
+  },
+  "T6.4.4": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.4.4",
+    "title": "残る符号領域は singleton status に反する"
+  },
+  "T6.5": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.5",
+    "title": "Return levelsの全分岐"
+  },
+  "T6.5.1": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.5.1",
+    "title": "\\(\\ell=h\\)"
+  },
+  "T6.5.2": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.5.2",
+    "title": "\\(\\ell>h\\)"
+  },
+  "T6.5.3": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6.5.3",
+    "title": "\\(h>\\ell\\)"
+  },
+  "R7": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7",
+    "title": "unit rootの存在"
+  },
+  "R7.1": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.1",
+    "title": "正確な仮定"
+  },
+  "R7.2": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.2",
+    "title": "名前を固定した actual h_A 上での選択"
+  },
+  "R7.2.1": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.2.1",
+    "title": "X≤P−1"
+  },
+  "R7.2.2": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.2.2",
+    "title": "Y≤ρ_j−1、Z≤ρ_k−1"
+  },
+  "R7.3": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.3",
+    "title": "初期 root と上下界"
+  },
+  "R7.3.1": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.3.1",
+    "title": "S≥g"
+  },
+  "R7.3.2": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.3.2",
+    "title": "C≥α"
+  },
+  "R7.3.3": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.3.3",
+    "title": "d≥1"
+  },
+  "R7.3.4": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.3.4",
+    "title": "d≤λ"
+  },
+  "R7.4": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.4",
+    "title": "少なくとも一方は strict"
+  },
+  "R7.5": {
+    "file": "sections/07.md",
+    "anchor": "fr-R7.5",
+    "title": "Color reversal の全保存"
+  },
+  "C8.1": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1",
+    "title": "COREから後期閉鎖への入力"
+  },
+  "C8.1.0": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.0",
+    "title": "最小の十分な入力 CORE"
+  },
+  "C8.1.1": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.1",
+    "title": "missing-coordinate returns と正の m-level は CORE から得られる"
+  },
+  "C8.1.2": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.2",
+    "title": "追加の caps と slopes"
+  },
+  "C8.1.3": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.3",
+    "title": "intrinsic 二候補と安全な色反転"
+  },
+  "C8.1.4": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.4",
+    "title": "必要な return-level 下界を明示する"
+  },
+  "C8.1.5": {
+    "file": "sections/07.md",
+    "anchor": "fr-C8.1.5",
+    "title": "intrinsic packetとFKのcap"
+  },
+  "C8.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2",
+    "title": "第一点、boundary、strict packet-window"
+  },
+  "C8.2.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.2",
+    "title": "CENTRAL 自身の最初の ROOT / Rj 補填点"
+  },
+  "C8.2.3": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.3",
+    "title": "SAME-element packet と FI/FJ level wall"
+  },
+  "C8.2.3.1": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.3.1",
+    "title": "CENTRAL の FK を導き直す"
+  },
+  "C8.2.3.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.3.2",
+    "title": "\\(C=\\alpha\\) の強い壁"
+  },
+  "C8.2.3.3": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.3.3",
+    "title": "一般の \\(\\chi\\le T\\) の壁"
+  },
+  "C8.2.4": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.4",
+    "title": "pure-H integer basis と二つの係数 1"
+  },
+  "C8.2.4.1": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.4.1",
+    "title": "Kernel basis"
+  },
+  "C8.2.4.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.4.2",
+    "title": "EA"
+  },
+  "C8.2.4.3": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.4.3",
+    "title": "SAME Qj"
+  },
+  "C8.2.5": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.5",
+    "title": "空の整数三角形、determinant 1、level の例外"
+  },
+  "C8.2.6": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.6",
+    "title": "FJ absorption が与える正確な k-ceiling"
+  },
+  "C8.2.7": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.7",
+    "title": "C=alpha: actual EA/EB synchronization"
+  },
+  "C8.2.8": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.8",
+    "title": "C=alpha 全域の multiplicity contradiction"
+  },
+  "C8.2.9": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.9",
+    "title": "Strict packet-window theorem"
+  },
+  "C8.2.9.1": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.9.1",
+    "title": "Q>=2 の regular 範囲"
+  },
+  "C8.2.9.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.9.2",
+    "title": "Q=1 と三つの例外"
+  },
+  "C8.2.10": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.10",
+    "title": "閉じた strict 無限領域と exact source shortage"
+  },
+  "C8.2.11": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.11",
+    "title": "WINDOW 内の残る level-one 境界"
+  },
+  "C8.2.11.1": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.11.1",
+    "title": "第一点は exact に計算できる"
+  },
+  "C8.2.11.2": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.11.2",
+    "title": "Unit boundary の新しい multiplicity 排除"
+  },
+  "C8.2.12": {
+    "file": "sections/08.md",
+    "anchor": "fr-C8.2.12",
+    "title": "網羅的な受渡し"
+  },
+  "C8.3": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3",
+    "title": "U全域の排除"
+  },
+  "C8.3.1": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.1",
+    "title": "U の exact parameterization"
+  },
+  "C8.3.2": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.2",
+    "title": "必要な packet 回数と j-capacity"
+  },
+  "C8.3.3": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.3",
+    "title": "Multiplicity が必要な i-capacity を強制する"
+  },
+  "C8.3.3.1": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.3.1",
+    "title": "Cross-product の使用範囲"
+  },
+  "C8.3.3.2": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.3.2",
+    "title": "閾値での正値性"
+  },
+  "C8.3.4": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.3.4",
+    "title": "SAME actual upper の中で t 回置換し、PF gap を actualize する"
+  },
+  "C8.4": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4",
+    "title": "Dのhigh-q、nonlinear first、linear firstの処理"
+  },
+  "C8.4.0.1": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.0.1",
+    "title": "Dの入力記号"
+  },
+  "C8.4.0.2": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.0.2",
+    "title": "第一点とpacket"
+  },
+  "C8.4.1": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.1",
+    "title": "最後のcrossingはh-stepである"
+  },
+  "C8.4.2": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.2",
+    "title": "共通のmultiplicity certificate"
+  },
+  "C8.4.3": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.3",
+    "title": "q₀≥3のDを排除する"
+  },
+  "C8.4.4": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.4",
+    "title": "q₀=2では第一点がN=z+1を満たす"
+  },
+  "C8.4.5": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.5",
+    "title": "残る第一点の正確なparameter表示"
+  },
+  "C8.4.5.1": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.5.1",
+    "title": "正のpacket determinant"
+  },
+  "C8.4.6": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.6",
+    "title": "最小回数のpacketのi-sourceは必ず入る"
+  },
+  "C8.4.7": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.7",
+    "title": "最小packet試験で残るj不足"
+  },
+  "C8.4.8": {
+    "file": "sections/09.md",
+    "anchor": "fr-C8.4.8",
+    "title": "相補的なgenuine packet"
+  },
+  "E8.2.3": {
+    "file": "sections/09.md",
+    "anchor": "fr-E8.2.3",
+    "title": "初期残党の埋め込み"
+  },
+  "E8": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8",
+    "title": "Euclidean two-packet閉鎖定理"
+  },
+  "E8.2.1": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.2.1",
+    "title": "定義"
+  },
+  "E8.2.2": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.2.2",
+    "title": "定理"
+  },
+  "E8.3": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.3",
+    "title": "終端候補 — SAME W 内で除去すべき packet"
+  },
+  "E8.4": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.4",
+    "title": "終端の i-source-fit — multiplicity による全域証明"
+  },
+  "E8.4.1": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.4.1",
+    "title": "行列の正値順序"
+  },
+  "E8.4.2": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.4.2",
+    "title": "Cross products と正しい scale"
+  },
+  "E8.4.3": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.4.3",
+    "title": "完全に指定された静的正値多項式"
+  },
+  "E8.4.4": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.4.4",
+    "title": "i-fit の帰結"
+  },
+  "E8.5": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.5",
+    "title": "終端に入らない場合の厳密な Euclidean transformation"
+  },
+  "E8.6": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.6",
+    "title": "全仮定の保存と well-foundedness"
+  },
+  "E8.6.1": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.6.1",
+    "title": "行列・source・level"
+  },
+  "E8.6.2": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.6.2",
+    "title": "二つの genuine packets"
+  },
+  "E8.6.3": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.6.3",
+    "title": "正値性・multipliers・canonical relations"
+  },
+  "E8.6.4": {
+    "file": "sections/10.md",
+    "anchor": "fr-E8.6.4",
+    "title": "厳密な下降"
+  },
+  "C8.5": {
+    "file": "sections/11.md",
+    "anchor": "fr-C8.5",
+    "title": "CHAINの閉鎖への結合"
+  },
+  "I9": {
+    "file": "sections/11.md",
+    "anchor": "fr-I9",
+    "title": "主定理T1の証明"
+  },
+  "S3.1": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.1",
+    "title": "elementary two-generator facts"
+  },
+  "S3.6": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.6",
+    "title": "Branch I：walkとfour-hit necessity"
+  },
+  "S3.7": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.7",
+    "title": "Branch I：四つのhitは両立しない"
+  },
+  "S3.8": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.8",
+    "title": "Branch II、k0=1：D-row dropまたはBranch I"
+  },
+  "S3.9": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.9",
+    "title": "Branch II、k0=0,e=0"
+  },
+  "S3.10": {
+    "file": "appendices/A.md",
+    "anchor": "fr-S3.10",
+    "title": "Branch II、k0=0,e>0：cross-core exclusion"
+  },
+  "A1.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.1",
+    "title": "入力と socle matrix"
+  },
+  "A1.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.2",
+    "title": "三本の actual arms が与える minimal factorization"
+  },
+  "A1.3": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.3",
+    "title": "Empty tetrahedron と cyclic quotient"
+  },
+  "A1.4": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.4",
+    "title": "White classes（唯一の追加標準外部定理）"
+  },
+  "A1.5": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.5",
+    "title": "Color A の exact failure inequalities"
+  },
+  "A1.6": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.6",
+    "title": "Color A multiplicity contradiction（全 k≥2）"
+  },
+  "A1.7": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.7",
+    "title": "Color B の failure inequalities と multiplicity contradiction"
+  },
+  "A1.8": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.8",
+    "title": "White row ordering と結論"
+  },
+  "A1.9": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.9",
+    "title": "k=1 dynamics への正確な interface"
+  },
+  "A2.0": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.0",
+    "title": "MINBOX 側から受け取る正確な入力"
+  },
+  "A2.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.1",
+    "title": "有限の一意な in-box path"
+  },
+  "A2.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.2",
+    "title": "二色計算に必要な正の minors"
+  },
+  "A2.3": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.3",
+    "title": "二色 prefix の共通 arithmetic lemma"
+  },
+  "A2.3.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.3.1",
+    "title": "Successful crossings"
+  },
+  "A2.3.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.3.2",
+    "title": "Injectivity、anti-chain、last-rank"
+  },
+  "A2.4": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.4",
+    "title": "Reciprocal-rank lemma（省略されていた prefix 保存も明示）"
+  },
+  "A2.4.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.4.1",
+    "title": "Dual PREFIX の完全証明"
+  },
+  "A2.4.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.4.2",
+    "title": "Shifted gap の保存を証明"
+  },
+  "A2.4.3": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.4.3",
+    "title": "Dual rank"
+  },
+  "A2.5": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.5",
+    "title": "Weighted certificate の使用規則"
+  },
+  "A2.6": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.6",
+    "title": "一色 path は sink で終われない"
+  },
+  "A2.7": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.7",
+    "title": "{1,2} 二色 path の全終端を排除"
+  },
+  "A2.7.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.7.1",
+    "title": "最後が row 2"
+  },
+  "A2.7.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.7.2",
+    "title": "最後が row 1、sink B、X≥0：pre-cross終端"
+  },
+  "A2.7.3": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.7.3",
+    "title": "最後が row 1、sink B、X<0"
+  },
+  "A2.7.4": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.7.4",
+    "title": "最後が row 1、sink C"
+  },
+  "A2.8": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.8",
+    "title": "{1,3} 二色 path の全終端を排除"
+  },
+  "A2.8.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.8.1",
+    "title": "最後が row 3"
+  },
+  "A2.8.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.8.2",
+    "title": "最後が row 1、sink A"
+  },
+  "A2.8.3": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.8.3",
+    "title": "最後が row 1、sink C"
+  },
+  "A2.9": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.9",
+    "title": "Third color の初出を排除"
+  },
+  "A2.9.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.9.1",
+    "title": "{1,2}→3"
+  },
+  "A2.9.2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.9.2",
+    "title": "{1,3}→2"
+  },
+  "A2.10": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.10",
+    "title": "Exhaustion と upstream への接続"
+  },
+  "A2.10.1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.10.1",
+    "title": "同じ actual f_ε への最終接続"
+  },
+  "A4.1": {
+    "file": "appendices/D.md",
+    "anchor": "fr-A4.1",
+    "title": "linear Dのi-fit"
+  },
+  "A4.2": {
+    "file": "appendices/D.md",
+    "anchor": "fr-A4.2",
+    "title": "Euclidean終端のi-fit"
+  },
+  "A4.3": {
+    "file": "appendices/D.md",
+    "anchor": "fr-A4.3",
+    "title": "元記号と編集記号"
+  },
+  "C2": {
+    "file": "sections/02.md",
+    "anchor": "fr-C2",
+    "title": "canonical Apéry reduction"
+  },
+  "T6": {
+    "file": "sections/06.md",
+    "anchor": "fr-T6",
+    "title": "一つのsingletonを持つ配置の排除"
+  },
+  "A1": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A1.1",
+    "title": "最小positive-m levelが1"
+  },
+  "A2": {
+    "file": "appendices/B.md",
+    "anchor": "fr-A2.0",
+    "title": "箱内経路のpositive exit"
+  },
+  "A3": {
+    "file": "appendices/C.md",
+    "anchor": "fr-A3",
+    "title": "六つの係数多項式"
+  }
+}

@@ -1,0 +1,680 @@
+[
+  {
+    "name": "P21.NumericalSemigroup.apery_le",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.NumericalSemigroup.apery_finite",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.NumericalSemigroup.zero_mem_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.NumericalSemigroup.W_mem_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.NumericalSemigroup.pf_add_m_mem_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.NumericalSemigroup.apery_lower",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.NumericalSemigroup.pf_iff_maximal_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.NumericalSemigroup.A0",
+    "kind": "def",
+    "file": "P21/Apery.lean",
+    "line": 54
+  },
+  {
+    "name": "P21.NumericalSemigroup.A1",
+    "kind": "def",
+    "file": "P21/Apery.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.NumericalSemigroup.iota",
+    "kind": "def",
+    "file": "P21/Apery.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.NumericalSemigroup.complement_mem_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.NumericalSemigroup.exact_two_layers",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.NumericalSemigroup.a0_lower",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 88
+  },
+  {
+    "name": "P21.NumericalSemigroup.a1_upper",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 93
+  },
+  {
+    "name": "P21.NumericalSemigroup.iota_involutive",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 97
+  },
+  {
+    "name": "P21.NumericalSemigroup.iota_order_reverse",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 100
+  },
+  {
+    "name": "P21.NumericalSemigroup.iota_mem_a1",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 106
+  },
+  {
+    "name": "P21.NumericalSemigroup.pf_add_m_mem_a1",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 116
+  },
+  {
+    "name": "P21.NumericalSemigroup.complement_of_q_mem_apery",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 126
+  },
+  {
+    "name": "P21.NumericalSemigroup.maximal_a1_iff",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 136
+  },
+  {
+    "name": "P21.NumericalSemigroup.minimal_iff_iota_maximal",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 161
+  },
+  {
+    "name": "P21.NumericalSemigroup.minimal_a1_iff",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 185
+  },
+  {
+    "name": "P21.NumericalSemigroup.maximal_a1_set",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.NumericalSemigroup.minimal_a1_set",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 202
+  },
+  {
+    "name": "P21.NumericalSemigroup.minimal_a1_card",
+    "kind": "theorem",
+    "file": "P21/Apery.lean",
+    "line": 212
+  },
+  {
+    "name": "P21.Generators",
+    "kind": "structure",
+    "file": "P21/Basic.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Generators.all",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Generators.Gamma",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Generators.H",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Generators.ActualFactorization4",
+    "kind": "abbrev",
+    "file": "P21/Basic.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Generators.ActualFactorization3",
+    "kind": "abbrev",
+    "file": "P21/Basic.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Generators.Minimal",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Generators.TailMinimal",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Generators.OffDirection",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Generators.D",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Generators.SH",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Generators.tailGcd",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Generators.value_cons",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Generators.h_subset_gamma",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Generators.m_mem",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Generators.n_mem",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Generators.tail_minimal",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Generators.Setting",
+    "kind": "structure",
+    "file": "P21/Basic.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Generators.Setting.semigroup",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 53
+  },
+  {
+    "name": "P21.Generators.minimal_injective",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 61
+  },
+  {
+    "name": "P21.Generators.minimal_four_distinct",
+    "kind": "theorem",
+    "file": "P21/Basic.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.P21MainStatement",
+    "kind": "def",
+    "file": "P21/Basic.lean",
+    "line": 75
+  },
+  {
+    "name": "P21.Generators.Setting.apery_m_coordinate_zero",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Generators.Setting.apery_in_tail",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Generators.Setting.a0_tail_iff",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Generators.Setting.key_return_apery",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Generators.Setting.return_coordinate_zero",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Generators.Setting.key_support_zero",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Generators.Setting.support_nonempty",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 61
+  },
+  {
+    "name": "P21.Generators.Setting.key_support_inclusion",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 72
+  },
+  {
+    "name": "P21.Generators.Setting.supported_rectangle",
+    "kind": "theorem",
+    "file": "P21/CanonicalReduction.lean",
+    "line": 82
+  },
+  {
+    "name": "P21.value",
+    "kind": "def",
+    "file": "P21/Factorization.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.ActualFactorization",
+    "kind": "structure",
+    "file": "P21/Factorization.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.generated",
+    "kind": "def",
+    "file": "P21/Factorization.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.actual_iff_mem",
+    "kind": "theorem",
+    "file": "P21/Factorization.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.generator_mem",
+    "kind": "theorem",
+    "file": "P21/Factorization.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.generated_nonneg",
+    "kind": "theorem",
+    "file": "P21/Factorization.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.replaceWithinActualFactorization",
+    "kind": "def",
+    "file": "P21/Factorization.lean",
+    "line": 43
+  },
+  {
+    "name": "P21.removeOne",
+    "kind": "def",
+    "file": "P21/Factorization.lean",
+    "line": 59
+  },
+  {
+    "name": "P21.SignedRepresentation",
+    "kind": "structure",
+    "file": "P21/Factorization.lean",
+    "line": 72
+  },
+  {
+    "name": "P21.SignedRelation3",
+    "kind": "structure",
+    "file": "P21/Factorization.lean",
+    "line": 77
+  },
+  {
+    "name": "P21.NumericalSemigroup",
+    "kind": "structure",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.NumericalSemigroup.Gap",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.NumericalSemigroup.IsFrobenius",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.NumericalSemigroup.PF",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.NumericalSemigroup.type",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.NumericalSemigroup.Apery",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.NumericalSemigroup.Le",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.NumericalSemigroup.Canonical",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.NumericalSemigroup.Q",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.NumericalSemigroup.Maximal",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.NumericalSemigroup.Minimal",
+    "kind": "def",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.NumericalSemigroup.le_refl",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.NumericalSemigroup.le_trans",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.NumericalSemigroup.le_antisymm",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.NumericalSemigroup.exists_frobenius",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.NumericalSemigroup.frobenius_mem_pf",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 43
+  },
+  {
+    "name": "P21.NumericalSemigroup.mem_of_gt_frobenius",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.NumericalSemigroup.pf_finite",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.NumericalSemigroup.q_lt_frobenius",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 62
+  },
+  {
+    "name": "P21.NumericalSemigroup.type_eq_q_card_add_one",
+    "kind": "theorem",
+    "file": "P21/NumericalSemigroup.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.NumericalSemigroup.translated_gaps_finite",
+    "kind": "theorem",
+    "file": "P21/PseudoFrobenius.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.NumericalSemigroup.gap_below_pf",
+    "kind": "theorem",
+    "file": "P21/PseudoFrobenius.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.NumericalSemigroup.canonical_all_nonnegative_gaps",
+    "kind": "theorem",
+    "file": "P21/PseudoFrobenius.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Generators.offDirection_iff_pair",
+    "kind": "theorem",
+    "file": "P21/Selection.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Generators.Setting.key_pair_return",
+    "kind": "theorem",
+    "file": "P21/Selection.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Generators.Setting.RowFacts",
+    "kind": "def",
+    "file": "P21/Selection.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Generators.Setting.all_q_row_facts",
+    "kind": "theorem",
+    "file": "P21/Selection.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Generators.Setting.select_four_rows",
+    "kind": "theorem",
+    "file": "P21/Selection.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Generators.Setting.tail_minimal_and_cofinite",
+    "kind": "theorem",
+    "file": "P21/Selection.lean",
+    "line": 65
+  },
+  {
+    "name": "P21.W",
+    "kind": "def",
+    "file": "P21/Semantics.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.complement",
+    "kind": "def",
+    "file": "P21/Semantics.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.cofinite_iff_finite_nonnegative_gaps",
+    "kind": "theorem",
+    "file": "P21/Semantics.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.NumericalSemigroup.all_pf_finite",
+    "kind": "theorem",
+    "file": "P21/Semantics.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.NumericalSemigroup.q_finite",
+    "kind": "theorem",
+    "file": "P21/Semantics.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.NumericalSemigroup.a0_lower_in_semigroup",
+    "kind": "theorem",
+    "file": "P21/Semantics.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one",
+    "kind": "theorem",
+    "file": "P21/Semantics.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.divisor_of_generated",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.generated_eq_closure",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.signed_mem_group",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.Generators.Setting.tail_signed_m",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Generators.Setting.m_mem_tail_group",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 48
+  },
+  {
+    "name": "P21.Generators.Setting.common_divisor_dvd_one",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Generators.Setting.tail_common_divisor_dvd_one",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 65
+  },
+  {
+    "name": "P21.Generators.Setting.tail_gcd_eq_one",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 74
+  },
+  {
+    "name": "P21.Generators.Setting.natural_closure_to_tail",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 87
+  },
+  {
+    "name": "P21.Generators.Setting.tail_cofinite",
+    "kind": "theorem",
+    "file": "P21/Tail.lean",
+    "line": 98
+  },
+  {
+    "name": "P21.Generators.Setting.tailSemigroup",
+    "kind": "def",
+    "file": "P21/Tail.lean",
+    "line": 118
+  }
+]

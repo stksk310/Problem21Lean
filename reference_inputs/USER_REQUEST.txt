@@ -1,0 +1,621 @@
+# P21 LEAN — FOUNDATION / C2 CANONICAL REDUCTION FIRST MILESTONE
+
+Numerical Semigroup Problem 21 の Lean 4 formalization project を開始する。
+
+これは全文を一気にformalizeするmissionではない。
+
+今回の唯一の証明milestoneは
+
+```text
+M1 = FOUNDATION + C2
+```
+
+すなわち
+
+```text
+definitions / semantic firewall
++
+canonical reduction
++
+two-layer Apéry structure
++
+KEY support-zero return
++
+tail gcd firewall
++
+selection of four rows / tail minimality
+```
+
+までとする。
+
+PATH / TYPE II / CHAIN / symmetric-tail / Herzog classification / White theorem / polynomial certificates にはまだ進まない。
+
+---
+
+# 0. INPUT
+
+添付するのは次の4ファイルだけ。
+
+1. `P21_Journal_of_Algebra_Submission_Manuscript_FINAL_20260916.pdf`
+2. `P21_MANUSCRIPT_EN_FINAL_20260908_v1.zip`
+3. `P21_FINAL_FROZEN_VERIFICATION_EDITION_20260907.zip`
+4. `P21_supplement_v1.zip`
+
+---
+
+# 1. SOURCE-OF-TRUTH ORDER
+
+authority hierarchy は厳密に次とする。
+
+## Level 1 — publication statement
+
+`P21_Journal_of_Algebra_Submission_Manuscript_FINAL_20260916.pdf`
+
+これを
+
+* theorem statement
+* hypotheses
+* conclusion
+* final publication wording
+
+の最高位source of truthとする。
+
+特にmain theoremはpublication版と数学的に同値な形でなければならない。
+
+## Level 2 — source navigation
+
+`P21_MANUSCRIPT_EN_FINAL_20260908_v1.zip`
+
+TeX / Markdown source、publication anchors、section navigationに使用する。
+
+2026-09-08版から2026-09-16 Journal submission版への差は、
+supplement DOI placeholder除去のみのzero-math修正として扱う。
+
+数学的statementでPDFと衝突した場合はPDFを優先し、
+勝手にreconcileせず報告すること。
+
+## Level 3 — proof provenance
+
+`P21_FINAL_FROZEN_VERIFICATION_EDITION_20260907.zip`
+
+publication paperが圧縮していてLean proof obligationが不明瞭な場合、
+
+* maintained proof
+* detailed derivation
+* dependency ledger
+* actuality discipline
+* provenance
+
+をここから復元する。
+
+## Level 4 — static certificates
+
+`P21_supplement_v1.zip`
+
+715-term / 3234-term positivity certificates用。
+
+今回はcertificate theorem自体はformalizeしないが、
+後続architectureを壊さないよう配置だけ理解する。
+
+---
+
+# 2. ABSOLUTE FORMALIZATION RULES
+
+以下を必ず守る。
+
+## 2.1 No proof debt
+
+禁止:
+
+```text
+sorry
+admit
+axiom
+opaque <unproved project fact>
+unsafe
+sorryAx
+```
+
+standard Lean / mathlib axioms
+(`propext`, `Classical.choice`, `Quot.sound`等)
+とproject-specific axiomを明確に区別する。
+
+project-specific axiomは0でなければならない。
+
+未完成statementを置く必要がある場合は theorem stub にせず、
+
+```lean
+def SomeFutureStatement : Prop := ...
+```
+
+のような「まだ証明されていないtargetの定義」として明示する。
+
+---
+
+# 3. ACTUALITY FIREWALL
+
+このprojectではactual factorizationとsigned equalityを型レベルで分離する。
+
+推奨設計は
+
+```text
+ambient semigroup element : ℤ
+actual coefficients       : ℕ
+signed relation coeffs    : ℤ
+```
+
+とする。
+
+例えばconceptually
+
+```lean
+ActualFactorization4 x
+ActualFactorization3 x
+SignedRelation3
+```
+
+を別の型または明確に別のpredicateとして持たせる。
+
+actual factorizationは必ず非負係数のwitnessを保持すること。
+
+signed equalityから自動的にmembershipを得られるAPIを作ってはならない。
+
+核心的な代数で `Nat.sub` のtruncationに依存してはならない。
+
+---
+
+# 4. SAME-ELEMENT PROVENANCE FIREWALL
+
+source replacementを行うlemmaは、
+
+```text
+source coefficient vector
+≤
+the explicitly named actual factorization
+```
+
+を要求するよう設計する。
+
+単に
+
+```text
+x ∈ Γ
+```
+
+だけからfactorizationを選び直して、
+別のfactorizationに存在したsourceを利用する証明は禁止。
+
+可能ならgeneric lemmaとして
+
+```text
+replaceWithinActualFactorization
+```
+
+のようなprimitiveを作り、
+
+* same element
+* coefficientwise containment
+* replacement equality
+* resulting coefficients nonnegative
+
+を型・hypothesisとして要求すること。
+
+---
+
+# 5. CRITICALITY FIREWALL
+
+Herzog criticalityは後続milestoneで使うが、
+今の段階からinterfaceを汚さないこと。
+
+critical multiplier theoremを将来適用するときは
+
+```text
+m-coordinate = 0
+```
+
+のpure-H relationだけを入力可能にする設計を優先する。
+
+signed relationに `m` が残っている状態からcriticalityを呼べる便利lemmaは作らない。
+
+---
+
+# 6. FOUNDATION DESIGN
+
+まず現行mathlibを調査する。
+
+少なくとも
+
+```text
+Mathlib/NumberTheory/FrobeniusNumber.lean
+AddSubmonoid
+Finset
+Set.Finite
+IsGreatest
+```
+
+周辺を確認すること。
+
+既存定義を再利用できる部分は再利用してよい。
+
+ただしpublication semanticsを弱めるような無理なreuseは禁止。
+
+最低限formalizeする概念:
+
+```text
+four generated Γ
+tail H = <n_i,n_j,n_k>
+actual Γ-factorization
+actual H-factorization
+membership
+gap
+Frobenius number
+pseudo-Frobenius element
+PF set
+type
+Apéry set Ap(Γ,m)
+canonical condition
+W = F + m
+Q = PF \\ {F}
+complement c_q = W - q
+Γ-order x ≤Γ y
+```
+
+publicationではPFをinteger gapとして扱っているため、
+Nat-only interfaceを採用するなら
+publicationのinteger definitionとのequivalence bridgeを証明すること。
+
+silent restrictionは不可。
+
+---
+
+# 7. PUBLICATION MAIN TARGET
+
+今回はmain theoremを証明しない。
+
+ただしpublication theoremをLeanで正確に表す
+
+```text
+P21MainStatement
+```
+
+または同等の `Prop` definition を置くこと。
+
+内容は数学的に
+
+```math
+Γ = ⟨m,n₁,n₂,n₃⟩,
+edim Γ = 4,
+m = min(Γ\\{0}),
+all four generators minimal,
+F = Frobenius number,
+∀ φ ∈ PF(Γ), F + m - φ ∈ Γ
+    ⇒
+|PF(Γ)| ≤ 4
+```
+
+と一致させる。
+
+まだproof theoremにして `sorry` を置いてはならない。
+
+---
+
+# 8. M1 PROOF TARGET — C2
+
+authoritative source:
+
+```text
+Journal paper Section 2
+frozen verification edition:
+02_CANONICAL_REDUCTION.md
+dependency node C2
+```
+
+C2を可能ならpublication anchor単位に分割する。
+
+## C2.1 PF condition → every nonnegative gap
+
+canonical conditionから、
+全nonnegative gap xに対して
+
+```math
+W-x ∈ Γ
+```
+
+を示す。
+
+publicationのmaximal element argumentを忠実にformalizeする。
+
+## C2.2 Exact two-layer decomposition
+
+Apéry setについて
+
+```text
+A0
+A1
+```
+
+を定義し、
+
+各 `w ∈ Ap(Γ,m)` についてexactly one of the two layersが成立すること、
+
+A0がlower ideal、
+A1がupper filter、
+A1上のinvolution
+
+```math
+ι(w)=W+m-w
+```
+
+がorder-reversing involutionであることをformalizeする。
+
+また
+
+```math
+Max A1 = (PF \\ {F}) + m
+Min A1 = {W-q | q∈Q}
+```
+
+に必要なbridgeをformalizeする。
+
+statementをpublicationより強くも弱くも変えないこと。
+
+## C2.3 KEY — support-zero return
+
+actual `q ∈ Q`,
+`c = W-q`,
+direction `i`,
+および
+
+```math
+c-n_i ∈ H
+```
+
+から
+
+```math
+q+n_i ∈ ⟨n_j,n_k⟩
+```
+
+を示す。
+
+特に証明では、
+
+```math
+if q+n_i-m ∈ Γ
+then
+F = (c-n_i) + (q+n_i-m) ∈ Γ
+```
+
+というsame-element contradictionを保持すること。
+
+さらに、あるactual H-factorizationにpositive `n_i` coefficientがあれば
+その「同じfactorization」から1 copyを除いて `q∈Γ` となる、
+というprovenanceをLeanで明示する。
+
+結論は
+
+```math
+∅ ≠ D(c) ⊆ S_H(q)
+```
+
+であり、
+
+```math
+D(c)=S_H(q)
+```
+
+を誤って証明・仮定してはならない。
+
+## C2.4 Tail gcd firewall
+
+`Q ≠ ∅` のもとで
+
+```math
+m = (q+m) + (W-q) - W
+```
+
+を使って
+
+```math
+m ∈ ℤH
+```
+
+を示し、
+tail gcdが1であることを導く。
+
+この表示はsigned group equalityであり、
+actual nonnegative factorizationとして扱ってはならない。
+
+## C2.5 Four-row selection / tail minimality
+
+contradiction hypothesis
+
+```math
+|Q| ≥ 4
+```
+
+から4つのdistinct actual rowsを選ぶ。
+
+KEYやcomplement factsが
+「Q全体について成立しているため、選んだ4行でも同時に成立する」
+というscopeを保持する。
+
+またfour-generated minimalityからtail generatorsのminimalityを得る。
+
+---
+
+# 9. DO NOT DO IN THIS MISSION
+
+以下へ進んではならない。
+
+```text
+S3 symmetric closure
+STD_SYM_GLUE proof
+STD_HERZOG proof
+STD_WHITE proof
+six-arm classification
+COLOR-CAP
+PATH
+TYPE II
+CHAIN
+CORE-ROOT
+CENTRAL
+Euclidean descent
+715-term positivity
+3234-term positivity
+main theorem T1 proof
+```
+
+ただし将来のmodule layout / dependency commentを作るのは可。
+
+standard external resultを `axiom` として仮置きするのは禁止。
+
+---
+
+# 10. SUGGESTED MODULE LAYOUT
+
+必要に応じて改善してよいが、概ね
+
+```text
+P21/
+  Basic.lean
+  Factorization.lean
+  NumericalSemigroup.lean
+  PseudoFrobenius.lean
+  Apery.lean
+  SourceMap.lean
+  CanonicalReduction.lean
+
+  Certificates/
+    README.md
+
+  Future/
+    README.md
+```
+
+のように分離する。
+
+`SourceMap` またはMarkdown台帳には
+
+```text
+Lean declaration
+publication section / anchor
+frozen node ID
+source theorem wording
+```
+
+を対応付ける。
+
+---
+
+# 11. BUILD / DEBT CHECKS
+
+作業完了時に必ず実行する。
+
+```bash
+lake build
+```
+
+さらにproject source全体について少なくとも
+
+```text
+sorry
+admit
+axiom
+sorryAx
+unsafe
+explicit opaque escape hatches
+```
+
+を検索する。
+
+各M1 theoremについて
+
+```lean
+#print axioms theoremName
+```
+
+相当を記録する。
+
+standard axioms以外の依存があれば完成扱いしない。
+
+---
+
+# 12. REQUIRED OUTPUT
+
+成功・部分成功を問わず、最終成果物は
+
+```text
+P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_YYYYMMDD.zip
+```
+
+という単一ZIP 1個にまとめる。
+
+ZIPには最低限:
+
+```text
+complete Lean project
+lean-toolchain
+lakefile.toml / manifest as appropriate
+all .lean sources
+README.md
+SOURCE_OF_TRUTH.md
+LEAN_DEPENDENCY_DAG.md
+STATEMENT_MAP.md or json
+CODEX_SELF_CHECK.md
+BUILD_LOG.txt
+AXIOM_REPORT.txt
+PROOF_DEBT_REPORT.txt
+NEXT_RESTART.md
+```
+
+を含める。
+
+---
+
+# 13. STATUS LANGUAGE
+
+Codex自身は
+
+```text
+TRUE AUDIT PASS
+FROZEN
+AUDITED
+```
+
+を宣言してはならない。
+
+全self-checkが成功した場合でも最終statusは
+
+```text
+M1 CANDIDATE FOR TRUE AUDIT
+```
+
+とする。
+
+Commander / TRUE AUDIT control threadによる独立auditを通過して初めて
+M1をFROZENへ昇格できる。
+
+---
+
+# 14. FINAL REPORT
+
+ユーザー可視の最終報告は日本語。
+
+最低限、
+
+```text
+1. 何をformalizeしたか
+2. C2.1–C2.5各status
+3. lake build result
+4. sorry/admit/axiom debt
+5. #print axioms summary
+6. source wordingとの既知の差
+7. intentionally OPENに残したもの
+8. TRUE AUDITへ渡すZIP
+```
+
+を簡潔に報告すること。
+
+数学的意味を変えてbuildを通すより、
+scope-preserving partial completionを優先すること。

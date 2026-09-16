@@ -1,0 +1,12 @@
+{
+  "T1": {
+    "normalized_extracted_text_equal": true,
+    "normalization": "remove running headers and standalone page numbers; remove whitespace",
+    "source_span": "1.1 T ype bound to The proof is assembled in"
+  },
+  "C2": {
+    "normalized_extracted_text_equal": true,
+    "normalization": "remove running headers and standalone page numbers; remove whitespace",
+    "source_span": "2.6 The two Ap\u00e9ry layers to 3 The symmetric three-generated tail"
+  }
+}
