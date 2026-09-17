@@ -194,4 +194,192 @@ theorem terminal13_sinkC_certificate (D : BoxInput) (N R : ℤ)
     rw [hu1]
     linear_combination -(N - 1) * D.row0 - D.row1 - R * D.row2
 
+set_option maxHeartbeats 2000000 in
+/-- B.18.2 reciprocal rank.  The strict shifted bound is read from the
+original chronological path, including the `K = 1` initial-run case. -/
+theorem terminal13_reciprocal_rank (D : BoxInput)
+    {l : List (Fin 3)} {u : Point} (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hno1 : l.count 1 = 0)
+    (q R H N : ℕ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2)
+      (D.x 2) (D.b 0) 0 q)
+    (hactual : ∀ h : ℕ, 1 ≤ h → h ≤ q → CrossingWitness l 2 h (P.N h))
+    (hR : R = q + 1) (hN : N = H + R) (hH : 1 ≤ H)
+    (hstart : D.x 0 < D.y 0)
+    (hcount2 : l.count 2 = R - 1) (hcount0 : l.count 0 = N - 1)
+    (hX : D.b 0 ≤ X13 D N R)
+    (hE0 : 1 ≤ -Y13 D N R)
+    (hEa : -Y13 D N R ≤ D.x 2 - D.y 2 - 1)
+    (hV0 : 1 ≤ (D.y 0 + D.b 0 - D.x 0) - X13 D N R) :
+    (H : ℤ) + (-Y13 D N R) +
+      ((D.y 0 + D.b 0 - D.x 0) - X13 D N R) ≤
+      (D.x 2 - D.y 2) + (D.y 0 + D.b 0 - D.x 0) - D.b 0 := by
+  let a := D.x 2 - D.y 2
+  let d := D.y 0 + D.b 0 - D.x 0
+  have hd : 0 < d := by
+    dsimp [d]
+    have hb := D.b_pos 0
+    omega
+  have ha : 0 < a := by
+    dsimp [a]
+    have hx := D.x_pos 0
+    have hB := P.B_pos
+    nlinarith [P.corridor]
+  have hNcast : (N : ℤ) = (H : ℤ) + (R : ℤ) := by exact_mod_cast hN
+  have hbracket : (H : ℤ) * D.x 0 ≤ (R : ℤ) * d := by
+    have hXN : (N : ℤ) * D.x 0 ≤ (R : ℤ) * (D.y 0 + D.b 0) := by
+      have hb := D.b_pos 0
+      simp only [X13] at hX
+      omega
+    dsimp [d]
+    calc
+      (H : ℤ) * D.x 0 = (N : ℤ) * D.x 0 - (R : ℤ) * D.x 0 := by
+        rw [hNcast]; ring
+      _ ≤ (R : ℤ) * (D.y 0 + D.b 0) - (R : ℤ) * D.x 0 :=
+        sub_le_sub_right hXN _
+      _ = (R : ℤ) * (D.y 0 + D.b 0 - D.x 0) := by ring
+  have hcolors : ∀ i ∈ l, i = 0 ∨ i = 2 := by
+    intro i hi
+    fin_cases i
+    · exact Or.inl rfl
+    · have : (1 : Fin 3) ∈ l := hi
+      rw [List.count_eq_zero] at hno1
+      exact (hno1 this).elim
+    · exact Or.inr rfl
+  have hstrict : ∀ s : ℕ, 1 ≤ s → s ≤ H - 1 →
+      let K := ((s : ℤ) * D.y 2) / a + 1
+      (s : ℤ) * D.x 0 - (K - 1) * d ≤ d - D.b 0 - 1 := by
+    intro s hs hsH
+    dsimp
+    let qz : ℤ := ((s : ℤ) * D.y 2) / a
+    have hsB : 0 < (s : ℤ) * D.y 2 := mul_pos (by exact_mod_cast hs) P.B_pos
+    have ha0 : a ≠ 0 := ne_of_gt ha
+    have hdecomp := Int.ediv_mul_add_emod ((s : ℤ) * D.y 2) a
+    have hrem0 := Int.emod_nonneg ((s : ℤ) * D.y 2) ha0
+    have hrema := Int.emod_lt_of_pos ((s : ℤ) * D.y 2) ha
+    have hq0 : 0 ≤ qz := Int.ediv_nonneg hsB.le ha.le
+    let K : ℕ := (qz + 1).toNat
+    have hKcast : (K : ℤ) = qz + 1 := by
+      simp [K, Int.toNat_of_nonneg (by omega : 0 ≤ qz + 1)]
+    have hKz : (1 : ℤ) ≤ (K : ℤ) := by rw [hKcast]; omega
+    have hK : 1 ≤ K := by exact_mod_cast hKz
+    have hfirst : (s : ℤ) * D.y 2 ≤ (K : ℤ) * a := by
+      rw [hKcast]
+      dsimp [qz]
+      nlinarith
+    have hKR : K ≤ R := by
+      by_contra hn
+      push Not at hn
+      have hfloor : (K : ℤ) * a - a ≤ (s : ℤ) * D.y 2 := by
+        rw [hKcast]
+        dsimp [qz]
+        nlinarith
+      have hRa : (R : ℤ) * a ≤ (s : ℤ) * D.y 2 := by
+        have hcast : (R : ℤ) ≤ (K : ℤ) - 1 := by exact_mod_cast (show R ≤ K - 1 by omega)
+        nlinarith
+      have hcorr := P.corridor
+      have hslt : (s : ℤ) * D.x 0 < (H : ℤ) * D.x 0 := by
+        have hx := P.x_pos
+        have : (s : ℤ) < (H : ℤ) := by exact_mod_cast (show s < H by omega)
+        nlinarith
+      have hsZ : (0 : ℤ) < (s : ℤ) := by exact_mod_cast hs
+      have hscaled := mul_lt_mul_of_pos_left P.corridor hsZ
+      nlinarith
+    have hVweak : (s : ℤ) * D.x 0 - ((K : ℤ) - 1) * d ≤ d - 1 := by
+      by_contra hn
+      push Not at hn
+      have hsecond : (K : ℤ) * d ≤ (s : ℤ) * D.x 0 := by nlinarith
+      exact (P.reciprocal_separator ha hd hR hbracket s K hs (by omega) hK)
+        ⟨hfirst, hsecond⟩
+    let V : ℤ := (s : ℤ) * D.x 0 - ((K : ℤ) - 1) * d
+    have hV0' : 1 ≤ V := by
+      dsimp [V, d]
+      have hfloor : (K : ℤ) * a - a ≤ (s : ℤ) * D.y 2 := by
+        rw [hKcast]
+        dsimp [qz]
+        nlinarith
+      have hcorr := P.corridor
+      have hsZ : (0 : ℤ) < (s : ℤ) := by exact_mod_cast hs
+      have hscaled := mul_lt_mul_of_pos_left P.corridor hsZ
+      nlinarith
+    obtain ⟨p, state, hstate, hpref, hp0, hp2, plast, hplast⟩ :=
+      reciprocal_residue_actual P ht 2 (by decide) hactual hR hN hcount2 hcount0
+        s K hs (by omega) hK hKR V rfl hV0' (by simpa [V] using hVweak)
+    have hstate0 : execute D.rows p D.x 0 = D.x 0 + V := by
+      have heq := hstate.endpoint_eq_sub_sum 0
+      have hp1 : p.count 1 = 0 := by
+        rw [List.count_eq_zero]
+        intro hm
+        have := hpref.sublist.mem hm
+        rw [List.count_eq_zero] at hno1
+        exact hno1 this
+      rw [hstate.execute_eq, heq]
+      simp [Fin.sum_univ_succ, BoxInput.rows, hp1, hp0, hp2]
+      dsimp [V, d]
+      rw [Nat.cast_sub (by omega : 1 ≤ s + K), Nat.cast_sub hK]
+      rw [Nat.cast_add]
+      ring
+    have hnext : p ++ [0] <+: l := by
+      by_cases hKlt : K < R
+      · have hKq : K ≤ q := by omega
+        obtain ⟨source, tail, hsplit, hsource2, hsource0⟩ := hactual K hK hKq
+        have hsource : source <+: l := ⟨2 :: tail, by simpa using hsplit.symm⟩
+        have hpSource : p <+: source := by
+          rcases List.prefix_or_prefix_of_prefix hpref hsource with h | h
+          · exact h
+          · have hc := h.count_le 0
+            have hE := (P.residues K hK hKq).1
+            have hx := P.x_pos
+            have hsx : ((s + K : ℕ) : ℤ) * D.x 0 < (K : ℤ) * (D.y 0 + D.b 0) := by
+              push_cast
+              dsimp [V, d] at hVweak
+              nlinarith
+            have : ((s + K : ℕ) : ℤ) < P.N K :=
+              (Int.mul_lt_mul_right hx).mp (by nlinarith)
+            have hltNat : s + K < source.count 0 + 1 := by
+              exact_mod_cast (show ((s + K : ℕ) : ℤ) <
+                (source.count 0 : ℤ) + 1 by rw [← hsource0]; exact this)
+            omega
+        apply prefix_continues_zero hpSource hsource hcolors (by decide)
+        · omega
+        · have hE := (P.residues K hK hKq).1
+          have hx := P.x_pos
+          have hsx : ((s + K : ℕ) : ℤ) * D.x 0 <
+              (K : ℤ) * (D.y 0 + D.b 0) := by
+            push_cast
+            dsimp [V, d] at hVweak
+            nlinarith
+          have hlt : ((s + K : ℕ) : ℤ) < P.N K :=
+            (Int.mul_lt_mul_right hx).mp (by nlinarith)
+          have hltNat : s + K < source.count 0 + 1 := by
+            exact_mod_cast (show ((s + K : ℕ) : ℤ) <
+              (source.count 0 : ℤ) + 1 by rw [← hsource0]; exact hlt)
+          omega
+      · have hKR' : K = R := by omega
+        apply prefix_continues_zero hpref (List.prefix_refl l) hcolors (by decide)
+        · omega
+        · omega
+    have hv := continued_zero_shift_bound D ht hnext V hstate0
+    have hKm : (K : ℤ) - 1 = qz := by omega
+    dsimp [V, d] at hv ⊢
+    rw [hKm] at hv
+    convert hv using 1 <;> simp [qz] <;> ring
+  let DP := P.dual_prefix_of_actuality ha hd hR hbracket (by
+    simpa [a, d] using hstrict)
+  have hEnext : -Y13 D N R = (R : ℤ) * a - (H : ℤ) * D.y 2 := by
+    simp [Y13, a]
+    rw [hNcast]
+    ring
+  have hVnext : (D.y 0 + D.b 0 - D.x 0) - X13 D N R =
+      (H : ℤ) * D.x 0 - ((R : ℤ) - 1) * d := by
+    simp [X13, d]
+    rw [hNcast]
+    ring
+  have hVd : (D.y 0 + D.b 0 - D.x 0) - X13 D N R ≤ d - D.b 0 := by
+    dsimp [d]
+    omega
+  simpa [a, d] using
+    DP.dual_next_residue_rank hH hEnext hVnext hE0 (by simpa [a] using hEa)
+      hV0 (by simpa [d] using hVd)
+
 end P21.Nonsymmetric.ColorCap
