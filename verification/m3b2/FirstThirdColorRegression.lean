@@ -2,5 +2,8 @@ import P21.Nonsymmetric.ColorCap.DPE.FirstThirdColor
 
 open P21.Nonsymmetric.ColorCap
 
+#check first_nonzero_occurrence_actual
+#check first_row2_after_01_actual
+#check first_row1_after_02_actual
 #check first_third_12_to_3_certificate
 #check first_third_13_to_2_certificate

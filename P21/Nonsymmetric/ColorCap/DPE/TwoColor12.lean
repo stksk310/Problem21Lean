@@ -223,4 +223,128 @@ theorem terminal12_sinkC_certificate (D : BoxInput) (N Q : ℤ)
     rw [hu2]
     linear_combination -(N - 1) * D.row0 - Q * D.row1 - D.row2
 
+/-- B.17.4: PREFIX gives the chronological ELR cover against the current
+pre-crossing terminal residue. -/
+theorem terminal12_sinkC_ELR_bound (D : BoxInput) (q Q : ℕ) (N E U : ℤ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hQ : Q = q + 1)
+    (hE : E = N * D.x 0 - (Q : ℤ) * D.y 0)
+    (hU : U = (Q : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1))
+    (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1)
+    (hU0 : 1 ≤ U) (hUy : U ≤ D.y 1 - 1) :
+    (Q : ℤ) ≤ D.x 0 - E + (D.y 1 - U) := by
+  have hcover : ∀ i : ℕ, 1 ≤ i → i ≤ q → E < P.E i ∨ U < P.U i := by
+    intro i hi hiq
+    by_contra hn
+    push Not at hn
+    have hiQ : i < Q := by omega
+    have hsub : ((Q - i : ℕ) : ℤ) = (Q : ℤ) - (i : ℤ) := by
+      rw [Nat.cast_sub (by omega)]
+    apply P.separator (Q - i) (by omega) (by omega)
+    refine ⟨N - P.N i, ?_, ?_⟩
+    · have hEdef : P.E i = P.N i * D.x 0 - (i : ℤ) * D.y 0 := rfl
+      rw [hEdef] at hn
+      rw [hsub]
+      nlinarith [hE]
+    · have hUdef : P.U i = (i : ℤ) * D.x 1 -
+          (P.N i - 1) * (D.y 1 + D.b 1) := rfl
+      rw [hUdef] at hn
+      rw [hsub]
+      nlinarith [hU]
+  have hrank := P.terminal_rank hE0 (by simpa using hEx) hU0 (by simpa using hUy) hcover
+  omega
+
+/-- B.17.3, `D<0`: every prior `U` residue lies above `W=-D`; PREFIX
+then yields the predecessor estimate used by the weighted certificate. -/
+theorem terminal12_negativeD_predecessor_bound (D : BoxInput)
+    (q Q : ℕ) (N E W : ℤ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hq : 1 ≤ q) (hQ : Q = q + 1) (hstart : D.x 0 < D.y 0)
+    (hE : E = N * D.x 0 - (Q : ℤ) * D.y 0)
+    (hW : W = (Q : ℤ) * D.x 1 - N * (D.y 1 + D.b 1))
+    (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hW0 : 1 ≤ W) :
+    0 ≤ D.x 1 - N - W := by
+  have hprior : ∀ i : ℕ, 1 ≤ i → i ≤ q → W < P.U i := by
+    intro i hi hiq
+    by_contra hn
+    push Not at hn
+    have hiQ : i < Q := by omega
+    have hsub : ((Q - i : ℕ) : ℤ) = (Q : ℤ) - (i : ℤ) := by
+      rw [Nat.cast_sub (by omega)]
+    apply P.separator (Q - i) (by omega) (by omega)
+    refine ⟨N - P.N i + 1, ?_, ?_⟩
+    · have hEi := (P.residues i hi hiq).2.1
+      rw [hsub]
+      nlinarith [hE]
+    · have hUdef : P.U i = (i : ℤ) * D.x 1 -
+          (P.N i - 1) * (D.y 1 + D.b 1) := rfl
+      rw [hsub]
+      rw [hUdef] at hn
+      nlinarith [hW]
+  have hWupper : W ≤ D.y 1 - 1 := by
+    have hp1 := hprior 1 (by omega) hq
+    have hu1 := (P.residues 1 (by omega) hq).2.2.2
+    have hUdef : P.U 1 = D.x 1 - (P.N 1 - 1) * (D.y 1 + D.b 1) := by
+      simp [SuccessfulPrefix.U]
+    rw [hUdef] at hp1
+    omega
+  have hcover : ∀ i : ℕ, 1 ≤ i → i ≤ q →
+      D.x 0 - 1 < P.E i ∨ W < P.U i := by
+    intro i hi hiq
+    exact Or.inr (hprior i hi hiq)
+  have hx2 : 2 ≤ D.x 0 := by omega
+  have hrank := P.terminal_rank (E := D.x 0 - 1) (U := W)
+    (by omega) (by omega) hW0 (by simpa using hWupper) hcover
+  have hQW : (Q : ℤ) + W ≤ D.y 1 := by omega
+  have hNQ : N - (Q : ℤ) ≤ D.x 1 - (D.y 1 + D.b 1) := by
+    have hx := D.x_pos 0
+    have hB := P.B_pos
+    have hQltB : (Q : ℤ) < D.y 1 + D.b 1 := by
+      have hb := D.b_pos 1
+      omega
+    have hscaled : (Q : ℤ) * (D.y 0 - D.x 0) <
+        (D.y 1 + D.b 1) * (D.y 0 - D.x 0) := by nlinarith
+    have hcorr : (D.y 1 + D.b 1) * (D.y 0 - D.x 0) <
+        D.x 0 * (D.x 1 - (D.y 1 + D.b 1)) := by
+      nlinarith [P.corridor]
+    nlinarith [hE]
+  have hb := D.b_pos 1
+  omega
+
+/-- B.17.3, `D≥0`: the corridor and the current `E` residue give
+`N≤x₂`, so `x₂-N+D` is nonnegative. -/
+theorem terminal12_nonnegativeD_count_bound (D : BoxInput)
+    {q : ℕ} (Q : ℕ) (N E : ℤ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hQ : 1 ≤ Q) (hQy : (Q : ℤ) ≤ D.y 1)
+    (hE : E = N * D.x 0 - (Q : ℤ) * D.y 0)
+    (hEx : E ≤ D.x 0 - 1) : N ≤ D.x 1 := by
+  have hx := D.x_pos 0
+  have hB := P.B_pos
+  have hQB : (Q : ℤ) < D.y 1 + D.b 1 := by
+    have hb := D.b_pos 1
+    omega
+  have hleft : (N - 1) * D.x 0 < (Q : ℤ) * D.y 0 := by
+    nlinarith [hE]
+  have hleftB : (N - 1) * D.x 0 * (D.y 1 + D.b 1) <
+      (Q : ℤ) * D.y 0 * (D.y 1 + D.b 1) := by
+    nlinarith
+  have hcorrQ : (Q : ℤ) * D.y 0 * (D.y 1 + D.b 1) <
+      (Q : ℤ) * D.x 0 * D.x 1 := by
+    have hQz : 0 < (Q : ℤ) := by exact_mod_cast hQ
+    nlinarith [P.corridor]
+  have hQv : (Q : ℤ) * D.x 1 < (D.y 1 + D.b 1) * D.x 1 := by
+    have hv := D.x_pos 1
+    nlinarith
+  have hQvX : (Q : ℤ) * D.x 0 * D.x 1 <
+      D.x 0 * (D.y 1 + D.b 1) * D.x 1 := by nlinarith
+  have hchain : (N - 1) * D.x 0 * (D.y 1 + D.b 1) <
+      D.x 0 * (D.y 1 + D.b 1) * D.x 1 :=
+    lt_trans hleftB (lt_trans hcorrQ hQvX)
+  have hpos := mul_pos hx hB
+  nlinarith
+
 end P21.Nonsymmetric.ColorCap

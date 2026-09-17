@@ -2,6 +2,58 @@ import P21.Nonsymmetric.ColorCap.DPE.TwoColor13
 
 namespace P21.Nonsymmetric.ColorCap
 
+/-- The first occurrence of a nonzero color is cut from the original trace.
+Its source is an actual prefix ending in row zero; no firing order is added. -/
+theorem first_nonzero_occurrence_actual (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (k : Fin 3) (hk : k ≠ 0)
+    (hoccurs : 1 ≤ l.count k) :
+    ∃ p tail source current,
+      l = (p ++ [0]) ++ k :: tail ∧
+      (p ++ [0]).count k = 0 ∧
+      FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+      FiringTrace D.upper D.rows D.x ((p ++ [0]) ++ [k]) current ∧
+      current = fire D.rows k source := by
+  obtain ⟨p, tail, hsplit, hcount⟩ :=
+    occurrence_source_ends_zero l k hp hk (h := 1) (by omega) hoccurs
+  have hsourcePrefix : p ++ [0] <+: l := by
+    refine ⟨k :: tail, ?_⟩
+    simpa [List.append_assoc] using hsplit.symm
+  have hcurrentPrefix : (p ++ [0]) ++ [k] <+: l := by
+    refine ⟨tail, ?_⟩
+    simpa [List.append_assoc] using hsplit.symm
+  obtain ⟨source, hs⟩ := ht.prefix_trace hsourcePrefix
+  obtain ⟨current, hc⟩ := ht.prefix_trace hcurrentPrefix
+  have hfire : current = fire D.rows k source := by
+    rw [← hs.execute_eq, ← hc.execute_eq]
+    simp [execute_append]
+  exact ⟨p, tail, source, current, hsplit, by simpa using hcount, hs, hc, hfire⟩
+
+theorem first_row2_after_01_actual (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hoccurs : 1 ≤ l.count 2) :
+    ∃ p tail source current,
+      l = (p ++ [0]) ++ (2 : Fin 3) :: tail ∧
+      (p ++ [0]).count 2 = 0 ∧
+      FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+      FiringTrace D.upper D.rows D.x ((p ++ [0]) ++ [2]) current ∧
+      current = fire D.rows 2 source := by
+  exact first_nonzero_occurrence_actual D ht hp 2 (by decide) hoccurs
+
+theorem first_row1_after_02_actual (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hoccurs : 1 ≤ l.count 1) :
+    ∃ p tail source current,
+      l = (p ++ [0]) ++ (1 : Fin 3) :: tail ∧
+      (p ++ [0]).count 1 = 0 ∧
+      FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+      FiringTrace D.upper D.rows D.x ((p ++ [0]) ++ [1]) current ∧
+      current = fire D.rows 1 source := by
+  exact first_nonzero_occurrence_actual D ht hp 1 (by decide) hoccurs
+
 /-- B.19.1 certificate at the actual source of the first row-3 firing. -/
 theorem first_third_12_to_3_certificate (D : BoxInput) (N Q E Delta : ℤ)
     (hN : 1 ≤ N) (hQ : 1 ≤ Q)

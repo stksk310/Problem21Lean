@@ -9,3 +9,6 @@ open P21.Nonsymmetric.ColorCap
 #check terminal12_sinkB_nonnegativeX_impossible
 #check terminal12_sinkB_negativeX_certificate
 #check terminal12_sinkC_certificate
+#check terminal12_sinkC_ELR_bound
+#check terminal12_negativeD_predecessor_bound
+#check terminal12_nonnegativeD_count_bound
