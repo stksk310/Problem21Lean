@@ -283,6 +283,56 @@ theorem terminal12_sinkC_ELR_bound (D : BoxInput) (q Q : ℕ) (N E U : ℤ)
   have hrank := P.terminal_rank hE0 (by simpa using hEx) hU0 (by simpa using hUy) hcover
   omega
 
+/-- The full ELR split used in B.17.4, including `U>y₂-1`. -/
+theorem terminal12_sinkC_ELR_extended (D : BoxInput) (q Q : ℕ) (N E U Y : ℤ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hQ : Q = q + 1)
+    (hE : E = N * D.x 0 - (Q : ℤ) * D.y 0)
+    (hU : U = (Q : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1))
+    (hUY : U = D.y 1 - Y) (hY : 0 ≤ Y)
+    (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hU0 : 1 ≤ U) :
+    (Q : ℤ) ≤ D.x 0 - E + Y := by
+  by_cases hUr : U ≤ D.y 1 - 1
+  · have h := terminal12_sinkC_ELR_bound D q Q N E U P hQ hE hU
+      hE0 hEx hU0 hUr
+    omega
+  · have hcover0 : ∀ i : ℕ, 1 ≤ i → i ≤ q → E < P.E i := by
+      intro i hi hiq
+      have hcover : E < P.E i ∨ U < P.U i := by
+        by_contra hn
+        push Not at hn
+        have hiQ : i < Q := by omega
+        have hsub : ((Q - i : ℕ) : ℤ) = (Q : ℤ) - (i : ℤ) := by
+          rw [Nat.cast_sub (by omega)]
+        apply P.separator (Q - i) (by omega) (by omega)
+        refine ⟨N - P.N i, ?_, ?_⟩
+        · have hEdef : P.E i = P.N i * D.x 0 - (i : ℤ) * D.y 0 := rfl
+          rw [hEdef] at hn
+          rw [hsub]
+          nlinarith [hE]
+        · have hUdef : P.U i = (i : ℤ) * D.x 1 -
+              (P.N i - 1) * (D.y 1 + D.b 1) := rfl
+          rw [hUdef] at hn
+          rw [hsub]
+          nlinarith [hU]
+      rcases hcover with he | hu
+      · exact he
+      · have hui := (P.residues i hi hiq).2.2.2
+        have hUidef : P.U i = (i : ℤ) * D.x 1 -
+            (P.N i - 1) * (D.y 1 + D.b 1) := rfl
+        rw [hUidef] at hu
+        omega
+    by_cases hy1 : D.y 1 = 1
+    · have hqy := P.U_slot_count (by have := D.y_pos 1; omega)
+      omega
+    have hy2 : 2 ≤ D.y 1 := by have := D.y_pos 1; omega
+    have hrank := P.terminal_rank hE0 (by simpa using hEx)
+      (show 1 ≤ D.y 1 - 1 by omega) (by omega) (by
+        intro i hi hiq
+        exact Or.inl (hcover0 i hi hiq))
+    omega
+
 /-- B.17.3, `D<0`: every prior `U` residue lies above `W=-D`; PREFIX
 then yields the predecessor estimate used by the weighted certificate. -/
 theorem terminal12_negativeD_predecessor_bound (D : BoxInput)
@@ -457,5 +507,200 @@ theorem terminal12_reciprocal_rank (D : BoxInput)
   simpa [a, d] using
     DP.dual_next_residue_rank hH hEnext hVnext hE0 (by simpa [a] using hEa)
       hV0 (by simpa [d] using hVd)
+
+/-- Appendix B.17 assembled on the actual chronological two-color trace. -/
+theorem two_color12_trace_sink_impossible (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hno2 : l.count 2 = 0)
+    (hcount1 : 1 ≤ l.count 1) (hstart : D.x 0 < D.y 0)
+    (hsink : ¬ ∃ i, ∀ j, 1 ≤ fire D.rows i u j) : False := by
+  let Nn : ℕ := l.count 0 + 1
+  let Qn : ℕ := l.count 1 + 1
+  let N : ℤ := Nn
+  let Q : ℤ := Qn
+  have hN : 1 ≤ N := by simp [N, Nn]
+  have hQ : 1 ≤ Q := by simp [Q, Qn]
+  have hbounds := terminal12_count_bounds D ht hp hno2 hstart
+  have hNy : N ≤ D.y 0 := by simpa [N, Nn] using hbounds.1
+  have hQx : Q ≤ D.x 0 := by simpa [Q, Qn] using hbounds.2.1
+  have hQy : Q ≤ D.y 1 := by simpa [Q, Qn] using hbounds.2.2
+  have hut := trace_terminal12 D ht hno2
+  have hcoords := terminal12Point_coordinates D Nn Qn
+  have hu0 : u 0 = D.y 0 - X12 D N Q := by
+    rw [hut]
+    simpa [N, Q, Nn, Qn, X12] using hcoords.1
+  have hu1 : u 1 = D.y 1 - Y12 D N Q := by
+    rw [hut]
+    simpa [N, Q, Nn, Qn, Y12] using hcoords.2.1
+  have hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 -
+      (Q - 1) * (D.y 2 + D.b 2) := by
+    rw [hut]
+    simpa [N, Q] using hcoords.2.2
+  have huPos : ∀ j, 1 ≤ u j := fun j => (ht.endpoint_inBox j).1
+  have hBC_impossible :
+      ((u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) ∨
+       (u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2)) → False := by
+    intro hBC
+    have hne : l ≠ [] := by
+      intro he
+      subst l
+      simp at hcount1
+    generalize hlastEq : l.getLast hne = last
+    have hlastSome := List.getLast?_eq_getLast hne
+    rw [hlastEq] at hlastSome
+    rw [List.getLast?_eq_some_iff] at hlastSome
+    obtain ⟨a, hlast⟩ := hlastSome
+    change l = a ++ [last] at hlast
+    let q : ℕ := l.count 1
+    let P := trace_successfulPrefix12 D ht hp hno2 (q := q) (by simp [q])
+    have hq : 1 ≤ q := by simpa [q] using hcount1
+    have hactual := trace_successfulPrefix12_actual D ht hp hno2
+      (q := q) (by simp [q])
+    fin_cases last
+    · obtain ⟨v, hv⟩ := ht.prefix_trace (show a <+: l by
+          refine ⟨[0], ?_⟩
+          simpa using hlast.symm)
+      have hfire : u = fire D.rows 0 v := by
+        rw [← ht.execute_eq, ← hv.execute_eq, hlast]
+        simp [execute_append]
+      have hf0 := congrFun hfire 0
+      have hf1 := congrFun hfire 1
+      simp [fire, BoxInput.rows] at hf0 hf1
+      have hv0 := hv.endpoint_inBox 0
+      have hv1 := hv.endpoint_inBox 1
+      dsimp [BoxInput.upper] at hv0 hv1
+      rcases hBC with hB | hC
+      ·
+        have hcoef0 : 0 ≤ D.b 0 + X12 D N Q := by omega
+        by_cases hX : 0 ≤ X12 D N Q
+        · have hYlt : Y12 D N Q < -D.b 1 := by
+            by_contra hn
+            push Not at hn
+            exact terminal12_not_sinkA D N Q (by omega) ⟨hX, hn⟩
+          have hE0 : 1 ≤ -(Y12 D N Q + D.b 1) := by omega
+          have hEa : -(Y12 D N Q + D.b 1) ≤
+              D.x 1 - (D.y 1 + D.b 1) - 1 := by
+            have hb := D.b_pos 1
+            omega
+          have hV0 : 1 ≤ (D.y 0 - D.x 0) - X12 D N Q := by omega
+          have hlt := hp.count_lt_zero_of_last_zero (by simpa using hlast) 1 (by decide)
+          let H : ℕ := Nn - Qn
+          have hHN : Nn = H + Qn := by dsimp [H, Nn, Qn]; omega
+          have hH : 1 ≤ H := by dsimp [H, Nn, Qn]; omega
+          have hrank := terminal12_reciprocal_rank D q Qn H Nn P
+            (by simp [q, Qn]) hHN hH hstart (by simpa [N, Q] using hX)
+            (by simpa [N, Q] using hE0) (by simpa [N, Q] using hEa)
+            (by simpa [N, Q] using hV0)
+          have hQN : Qn ≤ Nn := by omega
+          rw [Nat.cast_sub hQN] at hrank
+          have hYbox : 1 ≤ D.x 1 + Y12 D N Q := by
+            have huUpper := (ht.endpoint_inBox 1).2
+            dsimp [BoxInput.upper] at huUpper
+            omega
+          exact terminal12_sinkB_nonnegativeX_impossible D N Q hN hQ hQy u hu2 hB
+            hX hYbox (by simpa [N, Q, H] using hrank)
+        · push Not at hX
+          have hE0 : 1 ≤ -X12 D N Q := by omega
+          have hEx : -X12 D N Q ≤ D.x 0 - 1 := by
+            have huUpper := (ht.endpoint_inBox 0).2
+            dsimp [BoxInput.upper] at huUpper
+            omega
+          by_cases hDelta : 0 ≤ Y12 D N Q + D.b 1
+          · have hNle := terminal12_nonnegativeD_count_bound D Qn N (-X12 D N Q) P
+              (by simp [Qn]) (by simpa [Q, Qn] using hQy)
+              (by simp [X12, N, Q, Nn, Qn]) (by simpa [N, Q] using hEx)
+            exact terminal12_sinkB_negativeX_certificate D N Q hN hQ hQy u hu2 hB
+              hcoef0 (by omega)
+          · push Not at hDelta
+            have hpred := terminal12_negativeD_predecessor_bound D q Qn N
+              (-X12 D N Q) (-(Y12 D N Q + D.b 1)) P hq
+              (by simp [q, Qn]) hstart
+              (by simp [X12, N, Q, Nn, Qn])
+              (by simp [Y12, N, Q, Nn, Qn])
+              (by simpa [N, Q] using hE0) (by simpa [N, Q] using hEx) (by omega)
+            exact terminal12_sinkB_negativeX_certificate D N Q hN hQ hQy u hu2 hB
+              hcoef0 (by omega)
+      ·
+        have hY : 0 ≤ Y12 D N Q := by omega
+        have hX : X12 D N Q < 0 := by
+          by_contra hn
+          push Not at hn
+          exact terminal12_not_sinkA D N Q (by omega) ⟨hn, by
+            have := D.b_pos 1
+            omega⟩
+        have hE0 : 1 ≤ -X12 D N Q := by omega
+        have hEx : -X12 D N Q ≤ D.x 0 - 1 := by
+          have huUpper := (ht.endpoint_inBox 0).2
+          dsimp [BoxInput.upper] at huUpper
+          omega
+        have hU0 : 1 ≤ u 1 := (ht.endpoint_inBox 1).1
+        have hELR := terminal12_sinkC_ELR_extended D q Qn N
+          (-X12 D N Q) (u 1) (Y12 D N Q) P (by simp [q, Qn])
+          (by simp [X12, N, Q, Nn, Qn])
+          (by rw [hu1]; simp [Y12, N, Q, Nn, Qn]; ring)
+          hu1 hY hE0 hEx hU0
+        have hcoef0 : 0 ≤ D.x 0 + D.y 0 + D.b 0 + X12 D N Q := by
+          have huUpper := (ht.endpoint_inBox 0).2
+          dsimp [BoxInput.upper] at huUpper
+          have hb := D.b_pos 0
+          omega
+        exact terminal12_sinkC_certificate D N Q hN hQ hNy u hu1 hu2 hC hcoef0
+          (by simpa [N, Q] using hELR)
+    · rcases hBC with hB | hC
+      ·
+        have hw := hactual q hq le_rfl
+        have hPN := hw.at_last (by decide) (by simpa using hlast)
+        have hu0E : u 0 = P.E q := by
+          rw [hu0]
+          simp [X12, SuccessfulPrefix.E, P, q, N, Q, Nn, Qn]
+          rw [hPN]
+          push_cast
+          ring
+        have hu1U : u 1 = D.x 1 + P.U q := by
+          rw [hu1]
+          simp [Y12, SuccessfulPrefix.U, P, q, N, Q, Nn, Qn]
+          rw [hPN]
+          push_cast
+          ring
+        exact terminal12_last_row1_of_prefix D q P hq hstart N hPN.symm u hu0E hu1U
+          (by simpa [Q, Qn, q] using hu2) hB
+      ·
+        have hw := hactual q hq le_rfl
+        have hPN := hw.at_last (by decide) (by simpa using hlast)
+        have hu0E : u 0 = P.E q := by
+          rw [hu0]
+          simp [X12, SuccessfulPrefix.E, P, q, N, Q, Nn, Qn]
+          rw [hPN]
+          push_cast
+          ring
+        have hu1U : u 1 = D.x 1 + P.U q := by
+          rw [hu1]
+          simp [Y12, SuccessfulPrefix.U, P, q, N, Q, Nn, Qn]
+          rw [hPN]
+          push_cast
+          ring
+        have hUpos := (P.residues q hq le_rfl).2.2.1
+        have hUdef : P.U q = (q : ℤ) * D.x 1 -
+            (P.N q - 1) * (D.y 1 + D.b 1) := rfl
+        rw [hUdef] at hu1U
+        have hx1B : D.y 1 + D.b 1 < D.x 1 := by
+          have hx := D.x_pos 0
+          have hBpos := P.B_pos
+          nlinarith [P.corridor]
+        have hb := D.b_pos 1
+        omega
+    · have hm : (2 : Fin 3) ∈ l := by rw [hlast]; simp
+      have hc := List.count_pos_iff.mpr hm
+      omega
+  rcases D.sink_cover u huPos hsink with hA | hB | hC | hD
+  · apply terminal12_not_sinkA D N Q (by omega)
+    constructor <;> omega
+  · exact hBC_impossible (Or.inl hB)
+  · exact hBC_impossible (Or.inr hC)
+  · have huvec : u = ![D.y 0 - X12 D N Q, D.y 1 - Y12 D N Q, u 2] := by
+      funext j
+      fin_cases j <;> simp [hu0, hu1]
+    exact terminal12_sinkD_impossible D N Q hN hQ hNy hQy u huvec hu2 hD
 
 end P21.Nonsymmetric.ColorCap

@@ -14,3 +14,5 @@ open P21.Nonsymmetric.ColorCap
 #check terminal12_negativeD_predecessor_bound
 #check terminal12_nonnegativeD_count_bound
 #check terminal12_reciprocal_rank
+#check terminal12_sinkC_ELR_extended
+#check two_color12_trace_sink_impossible
