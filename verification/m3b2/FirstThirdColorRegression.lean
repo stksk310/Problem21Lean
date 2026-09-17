@@ -6,4 +6,10 @@ open P21.Nonsymmetric.ColorCap
 #check first_row2_after_01_actual
 #check first_row1_after_02_actual
 #check first_third_12_to_3_certificate
+#check first_third_12_rank
+#check first_third_12_to_3_actual_impossible
 #check first_third_13_to_2_certificate
+#check first_third_13_rank
+#check first_third_13_to_2_actual_impossible
+#check first_nonzero_color_order
+#check first_third_color_actual_impossible
