@@ -1,0 +1,668 @@
+[
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.head_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Canonical.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.one_color_trace_sink_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Canonical.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.prefix",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_le_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_lt_zero_of_last_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.CrossingWitness",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 59
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.CrossingWitness.at_last",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 65
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.nth_occurrence_split",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 96
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.occurrence_source_ends_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 122
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.count_eq_zero_of_members",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 130
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.prefix_at_zero_count",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 138
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.shifted_prefix_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 154
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.prefix_continues_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+    "line": 181
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.canonical_trace_sink_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Exhaustion.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.box_positive_exit_proved",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Exhaustion.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_nonzero_occurrence_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_row2_after_01_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_row1_after_02_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_12_to_3_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_13_to_2_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 92
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_12_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 128
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_12_to_3_actual_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 228
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_13_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 296
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_13_to_2_actual_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 465
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_nonzero_color_order",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 528
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.first_third_color_actual_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+    "line": 577
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_inBox",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/PathShape.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.nonzero_followed_by_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/PathShape.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.properNonzeroPredecessors",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/PathShape.lean",
+    "line": 79
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.continued_zero_shift_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.actual_shifted_before_crossing",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.actual_shifted_terminal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.reciprocal_residue_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 128
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_prefix_of_actuality",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 210
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.reciprocal_separator",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 299
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 324
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_next_residue_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+    "line": 355
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.permutePoint",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.rotate",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.rotate_rows",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 49
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.start_of_row0",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.permutePoint_fire",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 66
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.inBox_permute_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 75
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.rotateGeneral",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 86
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.rotate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+    "line": 99
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.separator",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinate_injective",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinateU_injective",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E_slot_count",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U_slot_count",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 96
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.cover_by_next_residue",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 129
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.last_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 152
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.terminal_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12Point",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13Point",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_terminal12",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_terminal13",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12Point_coordinates",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13Point_coordinates",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.execute",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.execute_append",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace",
+    "kind": "inductive",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.exists_trace",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.execute_eq",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.toBoxPath",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.prefix_trace",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.prefix_path",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 81
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_eq_sub_sum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+    "line": 89
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_successfulPrefix12",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_successfulPrefix12_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean",
+    "line": 85
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_successfulPrefix13",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean",
+    "line": 157
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.trace_successfulPrefix13_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean",
+    "line": 185
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.X12",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.Y12",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_count_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_not_sinkA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkD_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_last_row1_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 79
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_last_row1_of_prefix",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 142
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkB_nonnegativeX_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 158
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkB_negativeX_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 199
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkC_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 226
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 256
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_extended",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 287
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_negativeD_predecessor_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 338
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_nonnegativeD_count_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 396
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal12_reciprocal_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 429
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.two_color12_trace_sink_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+    "line": 512
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.X13",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.Y13",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_count_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_not_sinkB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_sinkD_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_last_row2_of_prefix",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 85
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_sinkA_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 147
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_sinkC_certificate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 174
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_sinkC_ELR_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 199
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.terminal13_reciprocal_rank",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 286
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.two_color13_trace_sink_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+    "line": 473
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.three_arms_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_three_A_excluded_residual_free",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_three_B_excluded_residual_free",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_labels_compatible_residual_free",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_labels_terminal_residual_free",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_four_terminal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 59
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_selected_four",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 68
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_Q_ge_four",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+    "line": 77
+  }
+]

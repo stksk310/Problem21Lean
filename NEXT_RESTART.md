@@ -1,3 +1,24 @@
+# M3B2 restart point
+
+Branch: `m3b2-dpe-box-positive-exit`. Immutable base:
+`9c9a1b6f76f78a2927b12bf8a0663dfdc29ea7a1`.
+
+The exact frozen `BoxPositiveExitStatement` is proved by
+`P21.Nonsymmetric.ColorCap.box_positive_exit_proved`. Frozen MINBOX is reused,
+and `FullColorCap.lean` provides residual-free THREE-ARM, COLOR-CAP, and
+selected-four terminal extraction wrappers. Do not restart Appendix B.16--B.20,
+MINBOX, or White.
+
+The next mathematical frontier is the later terminal branch exclusion needed
+to turn the selected-four terminal input into FULL G4. FULL G4, PATH, TYPE II,
+CHAIN, and the final Problem 21 theorem remain open. Read `README_M3B2.md`,
+`M3B2_STATEMENT_MAP.md`, `M3B2_PROOF_ROUTE.md`, and
+`M3B2_DEPENDENCY_DAG.md` before continuing.
+
+---
+
+## Previous M3B1 restart record (historical)
+
 # M3B1 restart point
 
 Branch: `m3b1-minbox-white`. Immutable base:

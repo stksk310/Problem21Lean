@@ -1,0 +1,17 @@
+{
+  "candidate": "P21_LEAN_M3B2_DPE_BOX_POSITIVE_EXIT_CANDIDATE_20260917.zip",
+  "base_commit": "9c9a1b6f76f78a2927b12bf8a0663dfdc29ea7a1",
+  "primary_theorem": "P21.Nonsymmetric.ColorCap.box_positive_exit_proved",
+  "required_theorems": [
+    "P21.Nonsymmetric.ColorCap.box_positive_exit_proved",
+    "P21.Nonsymmetric.ColorCap.three_arms_impossible",
+    "P21.Nonsymmetric.actual_three_A_excluded_residual_free",
+    "P21.Nonsymmetric.actual_three_B_excluded_residual_free",
+    "P21.Nonsymmetric.actual_labels_compatible_residual_free",
+    "P21.Nonsymmetric.actual_labels_terminal_residual_free",
+    "P21.Nonsymmetric.selected_four_terminal",
+    "P21.Nonsymmetric.nonsymmetric_selected_four",
+    "P21.Nonsymmetric.nonsymmetric_Q_ge_four"
+  ],
+  "statement_regression": "verification/m3b2/StatementRegression.lean"
+}
