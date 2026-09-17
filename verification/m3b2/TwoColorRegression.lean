@@ -4,3 +4,7 @@ open P21.Nonsymmetric.ColorCap
 
 #check terminal12_not_sinkA
 #check terminal12_sinkD_impossible
+#check terminal12_last_row1_impossible
+#check terminal12_sinkB_nonnegativeX_impossible
+#check terminal12_sinkB_negativeX_certificate
+#check terminal12_sinkC_certificate
