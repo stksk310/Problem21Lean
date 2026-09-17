@@ -1,0 +1,338 @@
+[
+  {
+    "name": "P21.Symmetric.symmetric_three_generator_gluing",
+    "kind": "theorem",
+    "file": "P21/External/SymmetricThreeGeneratorProof.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_lower",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_le_of_emod",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_emod_le",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_emod_injective",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_emod_surjective",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 44
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_card",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 82
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_reduce",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 98
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_rectangle_card",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/AperyCardinality.lean",
+    "line": 113
+  },
+  {
+    "name": "P21.Symmetric.Classification.CriticalRelation",
+    "kind": "structure",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.Classification.criticalRelation_exists",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.Symmetric.Classification.CriticalRelation.ge_two",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Symmetric.Classification.CriticalRelation.coeff_unique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Symmetric.Classification.CriticalRelation.not_offDirection",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 52
+  },
+  {
+    "name": "P21.Symmetric.Classification.CriticalRelation.below_unique",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/CriticalRelations.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_not_two",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GcdDecomposition.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Symmetric.Classification.decomposition_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GcdDecomposition.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Symmetric.Classification.special_pair_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GcdDecomposition.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Symmetric.Classification.primitive_pair_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GcdDecomposition.lean",
+    "line": 100
+  },
+  {
+    "name": "P21.Symmetric.Classification.rectangle_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GcdDecomposition.lean",
+    "line": 142
+  },
+  {
+    "name": "P21.Symmetric.Classification.glue_exists_of_symmetric",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/GlueExistence.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.Classification.nonneg_mul_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.Classification.primitive_mem_of_lcm_gap",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Symmetric.Classification.boundary_determinant_dvd",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Symmetric.Classification.rectangular_boundary_zero",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 48
+  },
+  {
+    "name": "P21.Symmetric.Classification.rectangular_zero_boundary_decomposition",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Symmetric.Classification.unique_top_apery_rectangle",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 88
+  },
+  {
+    "name": "P21.Symmetric.Classification.unique_top_rectangle_injective",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 116
+  },
+  {
+    "name": "P21.Symmetric.Classification.rectangular_boundary_relation",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+    "line": 128
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_generator_pos",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_nonneg",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_minimal",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_cofinite",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Symmetric.Classification.tailSemigroup",
+    "kind": "def",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_common_divisor_dvd_one",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_gcd_eq_one",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Symmetric.Classification.value_permuted_three",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_bezout",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Symmetric.Classification.symmetric_frobenius",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 70
+  },
+  {
+    "name": "P21.Symmetric.Classification.TailApery",
+    "kind": "def",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Symmetric.Classification.symmetry_apery_top",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 83
+  },
+  {
+    "name": "P21.Symmetric.Classification.symmetry_apery_complement",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 93
+  },
+  {
+    "name": "P21.Symmetric.Classification.symmetry_apery_complement_iff",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 103
+  },
+  {
+    "name": "P21.Symmetric.Classification.symmetry_apery_le_top",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 111
+  },
+  {
+    "name": "P21.Symmetric.Classification.apery_actual_zero",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+    "line": 118
+  },
+  {
+    "name": "P21.Symmetric.Classification.apery_gap_of_sub_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TopFactorization.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Symmetric.Classification.two_representations_sub_lcm_mem",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TopFactorization.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Symmetric.Classification.two_representations_lcm_apery",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TopFactorization.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Symmetric.Classification.primitive_mem_of_two_representations",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TopFactorization.lean",
+    "line": 60
+  },
+  {
+    "name": "P21.Symmetric.Classification.two_top_representations_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/TopFactorization.lean",
+    "line": 72
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_pair_rep",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/UniqueTop.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Symmetric.Classification.tail_apery_reduction",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/UniqueTop.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Symmetric.Classification.unique_top_rectangle",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/UniqueTop.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Symmetric.Classification.unique_top_boundary_relations",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/UniqueTop.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Symmetric.Classification.unique_top_glue_data",
+    "kind": "theorem",
+    "file": "P21/Symmetric/Classification/UniqueTop.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Symmetric.symmetric_tail_type_le_four",
+    "kind": "theorem",
+    "file": "P21/Symmetric/FullClosure.lean",
+    "line": 8
+  }
+]

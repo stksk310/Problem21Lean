@@ -1,18 +1,25 @@
-# Next restart
+# Next restart: M2B
 
-STATUS: M2A INTERNAL SYMMETRIC CLOSURE CANDIDATE FOR TRUE AUDIT
-STD_SYM_GLUE OPEN
-FULL S3 OPEN
+Status: **M2B STD_SYM_GLUE + FULL S3 CANDIDATE FOR TRUE AUDIT**.
 
-1. Independently inspect this exact ZIP, the final theorem hypotheses, source map,
-   build/debt/axiom evidence, and all thirteen M1 protected hashes.
-2. The internal theorem is `P21.Symmetric.symmetric_tail_from_glue_data`.
-   Do not re-prove M1 and do not change its toolchain, lockfile, or sources.
-3. To progress from M2A to full S3, prove the exact external direction documented
-   in `STD_SYM_GLUE_OPEN.md`. Use the existing explicit data to invoke Closure.
-4. Do not mark full S3 closed before that bridge and its independent audit.
-   All nonsymmetric branches and both long certificates remain outside this scope.
+1. Independently inspect the immutable M2B candidate ZIP and the GitHub evidence
+   bound by the separate `HANDOFF_RECEIPT_M2B.json`. Validate the candidate SHA,
+   exact audit commit, run attempt, artifact digest and internal evidence hashes.
+2. Read `README_M2B.md`, `SOURCE_OF_TRUTH_M2B.md`, `M2B_PROOF_ROUTE.md`,
+   `M2B_STATEMENT_MAP.md` and `M2B_DEPENDENCY_DAG.md`. Preserved older M2A
+   documents describing STD_SYM_GLUE/FULL S3 as OPEN are milestone history.
+3. Check the exact new theorem `P21.Symmetric.symmetric_three_generator_gluing`
+   against the unchanged `SymmetricThreeGeneratorGluingStatement`, then inspect
+   `P21.Symmetric.symmetric_tail_type_le_four` in the separate FullClosure module.
+4. Check every construction field, nonnegative membership witness and the
+   exhaustive unique/nonunique Apéry-top proof; verify no reverse closure edge.
+5. All pre-M2B Lean files and verification/m2 remain frozen at
+   `a0ec51cf93326b6f8dbf22647cfeecf81a931bd8`. Do not alter them or dependency pins.
+   Keep branch `m2b-std-sym-glue`; this mission does not merge main.
+6. Reproduce with `python3 verification/m2b/verify.py --fresh` in an unbuilt
+   extracted source copy and `python3 ci/m2b_audit.py suite` for the untouched
+   original M2 suite. See README for Windows and archive-comparison details.
 
-Reproduction: `python3 verification/m2/verify.py` with the exact pinned Lean on PATH
-(on Windows see the preserved path adapter and README). Default lake build is M1;
-explicit M2 module builds in the verifier are mandatory.
+STD_SYM_GLUE and FULL S3 have Lean proofs; independent TRUE AUDIT review remains
+external. Nonsymmetric branches, PATH/TYPE II/CHAIN, other external inputs,
+Euclidean descent and both long certificates remain outside this milestone.

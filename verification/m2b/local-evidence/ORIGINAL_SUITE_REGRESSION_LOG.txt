@@ -1,0 +1,77 @@
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/m2/BranchIIRegression.lean
+'P21.Symmetric.BranchII.k1_aux_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k1_reduces_to_branchI' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k0_e0_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.complement_add_tau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.epsilon_one_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_shift_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_fs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_complement_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k0_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k1_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.branchII_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/m2/GlueRegression.lean
+'P21.Symmetric.SymmetricGlueData.represented_eq_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/m2/StableCoreRegression.lean
+'P21.Symmetric.gap_iff_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_mem_gt_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stable_walk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_add_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.pf_iff_min_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_subset_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/m2/TwoGeneratorRegression.lean
+'P21.Symmetric.TwoGeneratorData.T_eq_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.representation_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_existsUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.frobenius_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.interior_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_generator_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_pair_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_minima_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.surviving_eq_candidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.exists_raw4' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/m2/TypeBridgeRegression.lean
+'P21.Symmetric.type_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.exact_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf_add_m_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.complete_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricThreeGeneratorGluingStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\Users\stksk\AppData\Local\Temp\p21-m2b-original-suite-4bbyx7b6\verification\lake.ps1 env lean verification/M2BranchICheck.lean
+'P21.Symmetric.BranchIData.four_hits_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.later_return_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.first_return_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.firstReturnExample_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.ux_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zx_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.uy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.four_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

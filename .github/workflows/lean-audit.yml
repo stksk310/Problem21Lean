@@ -15,8 +15,10 @@ jobs:
     if: >-
       github.ref_name != 'm2-symmetric-tail' &&
       github.ref_name != 'm2a-symmetric-tail-audit' &&
+      github.ref_name != 'm2b-std-sym-glue' &&
       github.head_ref != 'm2-symmetric-tail' &&
-      github.head_ref != 'm2a-symmetric-tail-audit'
+      github.head_ref != 'm2a-symmetric-tail-audit' &&
+      github.head_ref != 'm2b-std-sym-glue'
     name: Exact M1 candidate / fresh Lean build
     runs-on: ubuntu-latest
     timeout-minutes: 90

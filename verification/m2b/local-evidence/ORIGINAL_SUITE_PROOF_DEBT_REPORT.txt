@@ -1,0 +1,6 @@
+Project-owned Lean files scanned: 36
+Method: lexical code scan; nested comments and ordinary/raw strings masked.
+Ambiguous character/quotation/interpolation syntax fails closed.
+Forbidden tokens: admit, axiom, opaque, sorry, sorryAx, unsafe
+Forbidden code tokens: 0
+

@@ -1,0 +1,38 @@
+Glue root module: P21.External.SymmetricThreeGeneratorProof
+Transitive imports:
+Mathlib.Algebra.BigOperators.Fin
+Mathlib.Data.Int.Interval
+Mathlib.Data.Int.SuccPred
+Mathlib.Data.Set.Card
+Mathlib.NumberTheory.FrobeniusNumber
+Mathlib.Order.SuccPred.Archimedean
+Mathlib.Tactic.FinCases
+Mathlib.Tactic.LinearCombination
+Mathlib.Tactic.NormNum
+Mathlib.Tactic.Ring
+P21
+P21.Apery
+P21.Basic
+P21.CanonicalReduction
+P21.External.SymmetricThreeGenerator
+P21.External.SymmetricThreeGeneratorProof
+P21.Factorization
+P21.NumericalSemigroup
+P21.PseudoFrobenius
+P21.Selection
+P21.Semantics
+P21.Symmetric.Classification.AperyCardinality
+P21.Symmetric.Classification.GcdDecomposition
+P21.Symmetric.Classification.GlueExistence
+P21.Symmetric.Classification.SymmetricRigidity
+P21.Symmetric.Classification.TailNumericalSemigroup
+P21.Symmetric.Classification.TopFactorization
+P21.Symmetric.Classification.UniqueTop
+P21.Symmetric.GlueNormalForm
+P21.Symmetric.StableCore
+P21.Symmetric.TwoGenerator
+P21.Tail
+Forbidden reverse dependencies: []
+Conservative source/import check: no Closure/FullClosure import; every new source in
+the glue import closure excludes the three forbidden downstream/reverse theorem names.
+Frozen external module defines the reverse theorem, but no new proof references it.

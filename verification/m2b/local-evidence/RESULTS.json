@@ -1,0 +1,13 @@
+{
+  "frozen_integrity": "57/57",
+  "full_success_theorems_present": true,
+  "proof_debt_tokens": 0,
+  "scanner_tests_exit_code": 0,
+  "circularity_check": "PASS",
+  "original_m2_verification_exit_code": 0,
+  "fresh_root_build": true,
+  "project_specific_axioms": 0,
+  "std_sym_glue": "PROVED",
+  "full_s3": "PROVED",
+  "m2b_verification_exit_code": 0
+}

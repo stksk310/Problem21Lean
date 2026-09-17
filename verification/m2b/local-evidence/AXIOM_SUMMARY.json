@@ -1,0 +1,282 @@
+{
+  "checked_declarations": 56,
+  "project_specific_axioms": 0,
+  "declarations": {
+    "P21.Symmetric.symmetric_three_generator_gluing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_le_of_emod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_emod_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_emod_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_emod_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_reduce": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_rectangle_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.CriticalRelation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.criticalRelation_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.CriticalRelation.ge_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.CriticalRelation.coeff_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.CriticalRelation.not_offDirection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.CriticalRelation.below_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_not_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.decomposition_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.special_pair_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.primitive_pair_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.rectangle_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.glue_exists_of_symmetric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.nonneg_mul_mem": [
+      "propext"
+    ],
+    "P21.Symmetric.Classification.primitive_mem_of_lcm_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.boundary_determinant_dvd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.rectangular_boundary_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.rectangular_zero_boundary_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.unique_top_apery_rectangle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.unique_top_rectangle_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.rectangular_boundary_relation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_generator_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_minimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_cofinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tailSemigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_common_divisor_dvd_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_gcd_eq_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.value_permuted_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_bezout": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.symmetric_frobenius": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.TailApery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.symmetry_apery_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.symmetry_apery_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.symmetry_apery_complement_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.symmetry_apery_le_top": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.apery_actual_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.apery_gap_of_sub_mem": [
+      "propext"
+    ],
+    "P21.Symmetric.Classification.two_representations_sub_lcm_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.two_representations_lcm_apery": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.primitive_mem_of_two_representations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.two_top_representations_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_pair_rep": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.tail_apery_reduction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.unique_top_rectangle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.unique_top_boundary_relations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.Classification.unique_top_glue_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Symmetric.symmetric_tail_type_le_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

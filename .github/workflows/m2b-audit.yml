@@ -1,0 +1,83 @@
+name: P21 Lean M2B Audit
+
+on:
+  push:
+    branches: [m2b-std-sym-glue]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Exact M2B candidate / fresh Linux verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - name: Checkout exact commit and frozen history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Initialize evidence
+        run: python3 ci/m2b_audit.py init
+      - name: Exact ZIP and immutable 57-file Git baseline
+        run: python3 ci/m2b_audit.py integrity
+      - name: Install pinned elan and candidate Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          export ELAN_HOME="$RUNNER_TEMP/p21-m2b-elan"
+          test ! -e "$ELAN_HOME"
+          mkdir -p "$RUNNER_TEMP/p21-m2b-installer"
+          curl --fail --location --retry 3 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$RUNNER_TEMP/p21-m2b-installer/elan.tar.gz"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $RUNNER_TEMP/p21-m2b-installer/elan.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/p21-m2b-installer/elan.tar.gz" -C "$RUNNER_TEMP/p21-m2b-installer"
+          "$RUNNER_TEMP/p21-m2b-installer/elan-init" -y --no-modify-path --default-toolchain none
+          echo "ELAN_HOME=$ELAN_HOME" >> "$GITHUB_ENV"
+          echo "$ELAN_HOME/bin" >> "$GITHUB_PATH"
+          toolchain="$(tr -d '\r\n' < lean-toolchain)"
+          "$ELAN_HOME/bin/elan" toolchain install "$toolchain"
+
+      - name: Record environment
+        run: python3 ci/m2b_audit.py environment
+      - name: Pinned third-party binary cache only
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 ci/m2b_audit.py cache-modules > audit-evidence/m2b/DEPENDENCY_CACHE_MODULES.txt
+          mapfile -t modules < audit-evidence/m2b/DEPENDENCY_CACHE_MODULES.txt
+          if lake exe cache get "${modules[@]}" 2>&1 | tee audit-evidence/m2b/DEPENDENCY_CACHE_LOG.txt; then
+            echo 'Third-party cache obtained; no project cache restored.' >> audit-evidence/m2b/DEPENDENCY_CACHE_LOG.txt
+          else
+            echo 'Optional dependency cache unavailable; mandatory builds compile missing dependencies.' >> audit-evidence/m2b/DEPENDENCY_CACHE_LOG.txt
+          fi
+      - name: Verify pinned dependencies
+        run: python3 ci/m2b_audit.py dependencies
+      - name: Fresh root, all M2A/M2B modules, kernel statements, axioms and regressions
+        run: python3 ci/m2b_audit.py verify
+      - name: Unmodified original M2 suite in isolated frozen M2A source copy
+        run: python3 ci/m2b_audit.py suite
+      - name: Final frozen and candidate integrity
+        if: always()
+        run: python3 ci/m2b_audit.py integrity
+      - name: Final dependency integrity
+        if: always()
+        run: python3 ci/m2b_audit.py dependencies
+      - name: Require complete successful evidence
+        run: python3 ci/m2b_audit.py complete
+      - name: Upload independently inspectable evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P21_M2B_TRUE_AUDIT_EVIDENCE
+          path: audit-evidence/m2b/
+          if-no-files-found: error
+          retention-days: 90

@@ -1,0 +1,20 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m2b-fresh-check-20260917\verification\lake.ps1 build P21.External.SymmetricThreeGenerator P21.Symmetric.BranchI P21.Symmetric.BranchIActual P21.Symmetric.BranchII P21.Symmetric.BranchIIActual P21.Symmetric.Closure P21.Symmetric.CrossLayer P21.Symmetric.GlueNormalForm P21.Symmetric.Raw4 P21.Symmetric.Raw4Consequences P21.Symmetric.RawRows P21.Symmetric.Reduction P21.Symmetric.StableCore P21.Symmetric.TwoGenerator P21.Symmetric.TwoGeneratorIdeal P21.Symmetric.TypeBridge
+✔ [1601/1616] Built P21.Symmetric.StableCore (13s)
+✔ [1602/1616] Built P21.Symmetric.TwoGenerator (13s)
+✔ [1603/1616] Built P21.Symmetric.TypeBridge (11s)
+✔ [1604/1616] Built P21.Symmetric.TwoGeneratorIdeal (13s)
+✔ [1605/1616] Built P21.Symmetric.GlueNormalForm (13s)
+✔ [1606/1616] Built P21.Symmetric.RawRows (10s)
+✔ [1607/1616] Built P21.Symmetric.BranchI (22s)
+✔ [1608/1616] Built P21.External.SymmetricThreeGenerator (10s)
+✔ [1609/1616] Built P21.Symmetric.Raw4 (14s)
+✔ [1610/1616] Built P21.Symmetric.BranchII (15s)
+✔ [1611/1616] Built P21.Symmetric.CrossLayer (12s)
+✔ [1612/1616] Built P21.Symmetric.BranchIActual (12s)
+✔ [1613/1616] Built P21.Symmetric.Reduction (11s)
+✔ [1614/1616] Built P21.Symmetric.Raw4Consequences (9.4s)
+✔ [1615/1616] Built P21.Symmetric.BranchIIActual (11s)
+✔ [1616/1616] Built P21.Symmetric.Closure (10s)
+Build completed successfully (1616 jobs).
+
+EXIT_CODE=0

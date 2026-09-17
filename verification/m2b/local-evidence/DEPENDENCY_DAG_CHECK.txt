@@ -1,0 +1,138 @@
+{
+  "P21": [
+    "P21.Semantics"
+  ],
+  "P21.Apery": [
+    "P21.PseudoFrobenius"
+  ],
+  "P21.Basic": [
+    "P21.NumericalSemigroup"
+  ],
+  "P21.CanonicalReduction": [
+    "P21.Apery"
+  ],
+  "P21.External.SymmetricThreeGenerator": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.External.SymmetricThreeGeneratorProof": [
+    "P21.Symmetric.Classification.GlueExistence"
+  ],
+  "P21.Factorization": [
+    "Mathlib.NumberTheory.FrobeniusNumber",
+    "Mathlib.Data.Set.Card",
+    "Mathlib.Order.SuccPred.Archimedean",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "P21.NumericalSemigroup": [
+    "P21.Factorization",
+    "Mathlib.Data.Int.Interval",
+    "Mathlib.Data.Int.SuccPred"
+  ],
+  "P21.PseudoFrobenius": [
+    "P21.Basic"
+  ],
+  "P21.Selection": [
+    "P21.Tail"
+  ],
+  "P21.Semantics": [
+    "P21.Selection"
+  ],
+  "P21.Symmetric.BranchI": [
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.BranchIActual": [
+    "P21.Symmetric.BranchI",
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.BranchII": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.BranchIIActual": [
+    "P21.Symmetric.BranchII",
+    "P21.Symmetric.Raw4",
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.Raw4Consequences"
+  ],
+  "P21.Symmetric.Classification.AperyCardinality": [
+    "P21.Symmetric.Classification.TailNumericalSemigroup"
+  ],
+  "P21.Symmetric.Classification.CriticalRelations": [
+    "P21.Basic"
+  ],
+  "P21.Symmetric.Classification.GcdDecomposition": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.Classification.GlueExistence": [
+    "P21.Symmetric.Classification.TopFactorization",
+    "P21.Symmetric.Classification.UniqueTop"
+  ],
+  "P21.Symmetric.Classification.SymmetricRigidity": [
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.Classification.TailNumericalSemigroup": [
+    "P21.External.SymmetricThreeGenerator"
+  ],
+  "P21.Symmetric.Classification.TopFactorization": [
+    "P21.Symmetric.Classification.SymmetricRigidity",
+    "P21.Symmetric.Classification.GcdDecomposition"
+  ],
+  "P21.Symmetric.Classification.UniqueTop": [
+    "P21.Symmetric.Classification.SymmetricRigidity",
+    "P21.Symmetric.Classification.AperyCardinality",
+    "P21.Symmetric.Classification.GcdDecomposition"
+  ],
+  "P21.Symmetric.Closure": [
+    "P21.Symmetric.BranchIIActual",
+    "P21.External.SymmetricThreeGenerator"
+  ],
+  "P21.Symmetric.CrossLayer": [
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.FullClosure": [
+    "P21.External.SymmetricThreeGeneratorProof",
+    "P21.Symmetric.Closure"
+  ],
+  "P21.Symmetric.GlueNormalForm": [
+    "P21.Symmetric.StableCore",
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.Raw4": [
+    "P21.Symmetric.TwoGeneratorIdeal",
+    "P21.Symmetric.GlueNormalForm",
+    "P21.Symmetric.TypeBridge"
+  ],
+  "P21.Symmetric.Raw4Consequences": [
+    "P21.Symmetric.Raw4",
+    "P21.Symmetric.Reduction",
+    "P21.Symmetric.BranchIActual"
+  ],
+  "P21.Symmetric.RawRows": [
+    "P21.Symmetric.TypeBridge"
+  ],
+  "P21.Symmetric.Reduction": [
+    "P21.Symmetric.CrossLayer"
+  ],
+  "P21.Symmetric.StableCore": [
+    "P21"
+  ],
+  "P21.Symmetric.TwoGenerator": [
+    "P21.NumericalSemigroup",
+    "Mathlib.Tactic.LinearCombination"
+  ],
+  "P21.Symmetric.TwoGeneratorIdeal": [
+    "P21.Symmetric.TwoGenerator",
+    "P21.Symmetric.StableCore"
+  ],
+  "P21.Symmetric.TypeBridge": [
+    "P21.Symmetric.StableCore"
+  ],
+  "P21.Tail": [
+    "P21.CanonicalReduction"
+  ]
+}
+IMPORT DAG: ACYCLIC
