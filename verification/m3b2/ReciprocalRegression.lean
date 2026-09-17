@@ -18,3 +18,11 @@ example {a B d x b E V : ℤ} {q H : ℕ}
     (hcover : ∀ i : ℕ, 1 ≤ i → i ≤ q → E < P.E i ∨ V < P.U i) :
     (H : ℤ) + E + V ≤ a + d - b :=
   P.dual_rank hH hE0 hEa hV0 hVd hcover
+
+-- K=1 is the actual initial row-zero run; no fictitious crossing zero occurs.
+example (l upper : List (Fin 3)) (r : Fin 3) (target : ℕ)
+    (hu : upper <+: l) (hur : upper.count r = 0)
+    (ht : 1 ≤ target) (htu : target ≤ upper.count 0) :
+    ∃ p, p <+: l ∧ p.count 0 = target ∧ p.count r = 0 ∧
+      ∃ a, p = a ++ [0] := by
+  simpa using shifted_prefix_actual l r 1 target (by omega) upper hu hur ht htu (Or.inl rfl)

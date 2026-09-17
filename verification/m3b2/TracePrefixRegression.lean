@@ -19,3 +19,11 @@ example (D : BoxInput) (l : List (Fin 3)) (u : Point) (q : ℕ)
     SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2)
       (D.x 2) (D.b 0) 0 q :=
   trace_successfulPrefix13 D ht hp hno1 hq
+
+example (D : BoxInput) (l : List (Fin 3)) (u : Point) (q h : ℕ)
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l)
+    (hno1 : l.count 1 = 0) (hq : q ≤ l.count 2)
+    (hh : 1 ≤ h) (hhq : h ≤ q) :
+    CrossingWitness l 2 h ((trace_successfulPrefix13 D ht hp hno1 hq).N h) :=
+  trace_successfulPrefix13_actual D ht hp hno1 hq h hh hhq

@@ -8,7 +8,7 @@ private theorem crossing12_residue (D : BoxInput)
     (ht : FiringTrace D.upper D.rows D.x l u)
     (hp : ProperNonzeroPredecessors l) (hno2 : l.count 2 = 0)
     (h : ℕ) (hh : 1 ≤ h) (hc : h ≤ l.count 1) :
-    ∃ N : ℤ,
+    ∃ N : ℤ, CrossingWitness l 1 h N ∧
       0 < N * D.x 0 - (h : ℤ) * D.y 0 ∧
       N * D.x 0 - (h : ℤ) * D.y 0 ≤ D.x 0 - 1 ∧
       0 < (h : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1) ∧
@@ -41,7 +41,8 @@ private theorem crossing12_residue (D : BoxInput)
   have hw1eq := congrFun hw_eq 1
   simp [BoxInput.rows, Fin.sum_univ_succ, hcount1a, hcount2a] at hs0eq hs1eq
   simp [fire, BoxInput.rows] at hw0eq hw1eq
-  refine ⟨(a.count 0 : ℤ) + 1, ?_⟩
+  refine ⟨(a.count 0 : ℤ) + 1, ⟨a, b, ?_, hcount1a, rfl⟩, ?_⟩
+  · simpa [a, List.append_assoc] using hl
   dsimp [BoxInput.upper] at hs0 hs1 hw0 hw1
   have hx0 := D.x_pos 0
   have hy0 := D.y_pos 0
@@ -61,7 +62,7 @@ noncomputable def trace_successfulPrefix12 (D : BoxInput)
     SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
       (D.x 1) 0 (D.b 1) q := by
   classical
-  have hex : ∀ h : ℕ, 1 ≤ h → h ≤ q → ∃ N : ℤ,
+  have hex : ∀ h : ℕ, 1 ≤ h → h ≤ q → ∃ N : ℤ, CrossingWitness l 1 h N ∧
       0 < N * D.x 0 - (h : ℤ) * D.y 0 ∧
       N * D.x 0 - (h : ℤ) * D.y 0 ≤ D.x 0 - 1 ∧
       0 < (h : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1) ∧
@@ -78,15 +79,36 @@ noncomputable def trace_successfulPrefix12 (D : BoxInput)
     corridor := by have hm := D.minor01_pos; nlinarith
     residues := ?_ }
   intro h hh hhq
-  have hchosen := Classical.choose_spec (hex h hh hhq)
+  have hchosen := (Classical.choose_spec (hex h hh hhq)).2
   simpa [N, hh, hhq] using hchosen
+
+theorem trace_successfulPrefix12_actual (D : BoxInput)
+    {l : List (Fin 3)} {u : Point} {q : ℕ}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l)
+    (hno2 : l.count 2 = 0) (hq : q ≤ l.count 1) :
+    ∀ h : ℕ, 1 ≤ h → h ≤ q →
+      CrossingWitness l 1 h ((trace_successfulPrefix12 D ht hp hno2 hq).N h) := by
+  classical
+  intro h hh hhq
+  simp only [trace_successfulPrefix12]
+  split
+  · rename_i hbound
+    exact (Classical.choose_spec (show ∃ N : ℤ, CrossingWitness l 1 h N ∧
+        0 < N * D.x 0 - (h : ℤ) * D.y 0 ∧
+        N * D.x 0 - (h : ℤ) * D.y 0 ≤ D.x 0 - 1 ∧
+        0 < (h : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1) ∧
+        (h : ℤ) * D.x 1 - (N - 1) * (D.y 1 + D.b 1) ≤ D.y 1 - 1 from
+          crossing12_residue D ht hp hno2 h hh (le_trans hhq hq))).1
+  · rename_i hn
+    exact (hn ⟨hh, hhq⟩).elim
 
 private theorem crossing13_residue (D : BoxInput)
     {l : List (Fin 3)} {u : Point}
     (ht : FiringTrace D.upper D.rows D.x l u)
     (hp : ProperNonzeroPredecessors l) (hno1 : l.count 1 = 0)
     (h : ℕ) (hh : 1 ≤ h) (hc : h ≤ l.count 2) :
-    ∃ N : ℤ,
+    ∃ N : ℤ, CrossingWitness l 2 h N ∧
       0 < N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ∧
       N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ≤ D.x 0 - D.b 0 - 1 ∧
       0 < (h : ℤ) * D.x 2 - (N - 1) * D.y 2 ∧
@@ -119,7 +141,8 @@ private theorem crossing13_residue (D : BoxInput)
   have hw2eq := congrFun hw_eq 2
   simp [BoxInput.rows, Fin.sum_univ_succ, hcount1a, hcount2a] at hs0eq hs2eq
   simp [fire, BoxInput.rows] at hw0eq hw2eq
-  refine ⟨(a.count 0 : ℤ) + 1, ?_⟩
+  refine ⟨(a.count 0 : ℤ) + 1, ⟨a, b, ?_, hcount2a, rfl⟩, ?_⟩
+  · simpa [a, List.append_assoc] using hl
   dsimp [BoxInput.upper] at hs0 hs2 hw0 hw2
   have hx0 := D.x_pos 0
   have hy0 := D.y_pos 0
@@ -139,7 +162,7 @@ noncomputable def trace_successfulPrefix13 (D : BoxInput)
     SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2)
       (D.x 2) (D.b 0) 0 q := by
   classical
-  have hex : ∀ h : ℕ, 1 ≤ h → h ≤ q → ∃ N : ℤ,
+  have hex : ∀ h : ℕ, 1 ≤ h → h ≤ q → ∃ N : ℤ, CrossingWitness l 2 h N ∧
       0 < N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ∧
       N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ≤ D.x 0 - D.b 0 - 1 ∧
       0 < (h : ℤ) * D.x 2 - (N - 1) * D.y 2 ∧
@@ -156,7 +179,28 @@ noncomputable def trace_successfulPrefix13 (D : BoxInput)
     corridor := by have hm := D.minor02_pos; nlinarith
     residues := ?_ }
   intro h hh hhq
-  have hchosen := Classical.choose_spec (hex h hh hhq)
+  have hchosen := (Classical.choose_spec (hex h hh hhq)).2
   simpa [N, hh, hhq] using hchosen
+
+theorem trace_successfulPrefix13_actual (D : BoxInput)
+    {l : List (Fin 3)} {u : Point} {q : ℕ}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l)
+    (hno1 : l.count 1 = 0) (hq : q ≤ l.count 2) :
+    ∀ h : ℕ, 1 ≤ h → h ≤ q →
+      CrossingWitness l 2 h ((trace_successfulPrefix13 D ht hp hno1 hq).N h) := by
+  classical
+  intro h hh hhq
+  simp only [trace_successfulPrefix13]
+  split
+  · rename_i hbound
+    exact (Classical.choose_spec (show ∃ N : ℤ, CrossingWitness l 2 h N ∧
+        0 < N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ∧
+        N * D.x 0 - (h : ℤ) * (D.y 0 + D.b 0) ≤ D.x 0 - D.b 0 - 1 ∧
+        0 < (h : ℤ) * D.x 2 - (N - 1) * D.y 2 ∧
+        (h : ℤ) * D.x 2 - (N - 1) * D.y 2 ≤ D.y 2 - 1 from
+          crossing13_residue D ht hp hno1 h hh (le_trans hhq hq))).1
+  · rename_i hn
+    exact (hn ⟨hh, hhq⟩).elim
 
 end P21.Nonsymmetric.ColorCap

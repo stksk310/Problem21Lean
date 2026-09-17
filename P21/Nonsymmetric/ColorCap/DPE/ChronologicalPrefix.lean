@@ -6,6 +6,15 @@ namespace P21.Nonsymmetric.ColorCap
 def ProperNonzeroPredecessors (l : List (Fin 3)) : Prop :=
   ∀ a i b, l = a ++ i :: b → i ≠ 0 → ∃ p, a = p ++ [0]
 
+/-- Provenance for the arithmetic count attached to the `h`-th actual
+nonzero firing.  `source` is the genuine chronological state immediately
+before that firing; `N` is its row-zero count plus one. -/
+def CrossingWitness (l : List (Fin 3)) (r : Fin 3) (h : ℕ) (N : ℤ) : Prop :=
+  ∃ source tail : List (Fin 3),
+    l = source ++ r :: tail ∧
+    source.count r = h - 1 ∧
+    N = (source.count 0 : ℤ) + 1
+
 /-- The `h`-th occurrence is split from the original list, preserving its exact prefix. -/
 theorem nth_occurrence_split {α : Type*} [DecidableEq α] (r : α) :
     ∀ (l : List α) (h : ℕ), 1 ≤ h → h ≤ l.count r →
@@ -47,5 +56,80 @@ theorem count_eq_zero_of_members {l : List (Fin 3)} {a b c : Fin 3}
   rw [List.count_eq_zero]
   intro hm
   rcases hmem c hm with h | h <;> contradiction
+
+/-- Select the prefix ending at the `k`-th actual row-zero firing. -/
+theorem prefix_at_zero_count (l : List (Fin 3)) (k : ℕ)
+    (hk : 1 ≤ k) (hkl : k ≤ l.count 0) :
+    ∃ p, p <+: l ∧ p.count 0 = k ∧ ∃ a, p = a ++ [0] := by
+  obtain ⟨a, b, hab, hcount⟩ := nth_occurrence_split 0 l k hk hkl
+  refine ⟨a ++ [0], ?_, ?_, a, rfl⟩
+  · refine ⟨b, ?_⟩
+    simpa [List.append_assoc] using hab.symm
+  · simp [hcount]
+    omega
+
+/-- The finite-list actuality lemma behind Appendix B.2.4.2.
+
+The upper prefix is either the source of the `K`-th successful crossing
+(`K < Q`) or the current terminal row-zero run (`K = Q`).  For `K = 1`
+no predecessor crossing is requested: the selected state lies directly on
+the initial row-zero run. -/
+theorem shifted_prefix_actual (l : List (Fin 3)) (r : Fin 3)
+    (K target : ℕ) (hK : 1 ≤ K)
+    (upper : List (Fin 3)) (hupper : upper <+: l)
+    (hupperR : upper.count r = K - 1)
+    (htarget0 : 1 ≤ target) (htargetUpper : target ≤ upper.count 0)
+    (hlower : K = 1 ∨ ∃ lower, lower <+: l ∧
+      lower.count r = K - 1 ∧ lower.count 0 < target) :
+    ∃ p, p <+: l ∧ p.count 0 = target ∧ p.count r = K - 1 ∧
+      ∃ a, p = a ++ [0] := by
+  obtain ⟨p, hpUpper, hp0, a, ha⟩ := prefix_at_zero_count upper target htarget0 htargetUpper
+  have hpL : p <+: l := hpUpper.trans hupper
+  have hpRle : p.count r ≤ K - 1 := by
+    rw [← hupperR]
+    exact hpUpper.count_le r
+  have hpRge : K - 1 ≤ p.count r := by
+    rcases hlower with hK1 | ⟨lower, hlowerL, hlowerR, hlower0⟩
+    · omega
+    · rcases List.prefix_or_prefix_of_prefix hlowerL hpL with hlu | hpl
+      · rw [← hlowerR]
+        exact hlu.count_le r
+      · have := hpl.count_le 0
+        omega
+  exact ⟨p, hpL, hp0, by omega, a, ha⟩
+
+/-- If two comparable prefixes have the same nonzero-row count but the later
+one has another row-zero firing, the actual next label after the earlier
+prefix is row zero. -/
+theorem prefix_continues_zero {l p upper : List (Fin 3)} {r : Fin 3}
+    (hp : p <+: upper) (hupper : upper <+: l)
+    (hcolors : ∀ i ∈ l, i = 0 ∨ i = r)
+    (hr : r ≠ 0) (hcountR : p.count r = upper.count r)
+    (hcount0 : p.count 0 < upper.count 0) :
+    p ++ [0] <+: l := by
+  obtain ⟨tail, htail⟩ := hp
+  have htailne : tail ≠ [] := by
+    intro he
+    subst tail
+    simp at htail
+    subst upper
+    omega
+  cases tail with
+  | nil => contradiction
+  | cons i rest =>
+      have hi : i = 0 ∨ i = r := by
+        apply hcolors i
+        apply hupper.sublist.mem
+        rw [← htail]
+        simp
+      have hi0 : i = 0 := by
+        rcases hi with h | h
+        · exact h
+        · subst i
+          rw [← htail] at hcountR
+          simp at hcountR
+      subst i
+      refine (show p ++ [0] <+: upper from ⟨rest, ?_⟩).trans hupper
+      simpa [List.append_assoc] using htail
 
 end P21.Nonsymmetric.ColorCap
