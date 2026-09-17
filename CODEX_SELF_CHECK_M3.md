@@ -32,6 +32,13 @@ primitive-formula caveats are superseded by explicit completion addenda; its
 two unproved Appendix B inputs remain applicable. Final build and axiom evidence
 remain authoritative over earlier per-file development logs.
 
+`verification/m3/REVIEW_CORRECTION_MINBOX.md` retracts the initial review's
+MINBOX scope assessment: the residual now explicitly requires tail cofiniteness,
+as needed for the primitive lattice in Appendix B.3. The actual canonical
+classification derives this premise from the frozen `tail_cofinite` theorem;
+the final classification acquires no additional assumption. The correction
+report and corrected fresh build supersede the earlier candidate and CI run.
+
 Inspect `verification/m3/LOCAL_VERIFICATION.json` for the final source hashes and
 local results. Inspect the separate `HANDOFF_RECEIPT_M3.json` for the exact commit,
 run attempt, artifact digest and candidate ZIP digest after CI verification.

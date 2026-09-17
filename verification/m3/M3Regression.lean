@@ -26,8 +26,10 @@ example (t : Finset RowLabel) (hc : RowLabel.Compatible t) : RowLabel.Terminal t
 
 -- Conditional means both remaining obligations are explicit arguments.
 example (hm : ColorCap.MinimumOneStatement) (hd : ColorCap.BoxPositiveExitStatement)
-    (g : Generators) (s : g.Setting) (D : HerzogCriticalData g) (colorA : Bool)
+    (g : Generators) (s : g.Setting)
+    (hcof : ∃ B : ℤ, ∀ x : ℤ, B ≤ x → x ∈ g.H)
+    (D : HerzogCriticalData g) (colorA : Bool)
     (depth : ColorCap.Point) (hdepth : ∀ i, 1 ≤ depth i)
     (hcap : ∀ i, depth i < (if colorA then (D.a i : ℤ) else (D.b i : ℤ)))
     (harms : ∀ i, (if colorA then D.fA else D.fB)-depth i*g.n i ∈ s.semigroup.PF) : False :=
-  ColorCap.three_arms_impossible_of_residuals hm hd g s D colorA depth hdepth hcap harms
+  ColorCap.three_arms_impossible_of_residuals hm hd g s hcof D colorA depth hdepth hcap harms

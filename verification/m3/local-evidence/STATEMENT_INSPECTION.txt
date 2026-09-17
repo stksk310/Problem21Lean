@@ -80,11 +80,11 @@ P21.Nonsymmetric.selected_four_Q_card {g : P21.Generators} {s : g.Setting} {F : 
   (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) : 4 ≤ (s.semigroup.Q F).ncard
 P21.Nonsymmetric.actual_three_A_excluded (hminimum : P21.Nonsymmetric.ColorCap.MinimumOneStatement)
   (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement) {g : P21.Generators} (s : g.Setting) {F : ℤ}
-  (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
   (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmA D.toHerzogCriticalData q i) : False
 P21.Nonsymmetric.actual_three_B_excluded (hminimum : P21.Nonsymmetric.ColorCap.MinimumOneStatement)
   (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement) {g : P21.Generators} (s : g.Setting) {F : ℤ}
-  (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
   (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmB D.toHerzogCriticalData q i) : False
 P21.Nonsymmetric.actual_labels_compatible (hminimum : P21.Nonsymmetric.ColorCap.MinimumOneStatement)
   (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement) {g : P21.Generators} (s : g.Setting) {F : ℤ}
@@ -382,8 +382,9 @@ P21.Nonsymmetric.ColorCap.six_companion_failures (g : P21.Generators) (f s : ℤ
 P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop
 P21.Nonsymmetric.ColorCap.three_arms_impossible_of_residuals (hminimum : P21.Nonsymmetric.ColorCap.MinimumOneStatement)
   (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement) (g : P21.Generators) (s : g.Setting)
-  (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (depth : P21.Nonsymmetric.ColorCap.Point)
-  (hdepth : ∀ (i : Fin 3), 1 ≤ depth i) (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool)
+  (depth : P21.Nonsymmetric.ColorCap.Point) (hdepth : ∀ (i : Fin 3), 1 ≤ depth i)
+  (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
   (harms : ∀ (i : Fin 3), (if colorA = true then D.fA else D.fB) - depth i * g.n i ∈ s.semigroup.PF) : False
 P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm (g : P21.Generators) (s : g.Setting) (f depth : ℤ) (i : Fin 3)
   (hd : 1 ≤ depth) (hq : f - depth * g.n i ∈ s.semigroup.PF) : f ∈ g.Gamma
@@ -1197,13 +1198,14 @@ P21.Nonsymmetric.three_singletons_force_Q_three {g : P21.Generators} (s : g.Sett
 def P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop :=
 ∀ (g : P21.Generators),
   g.Setting →
-    ∀ (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point),
-      0 < k →
-        (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
-          (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
-            (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
-                (if colorA = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k') →
-              k = 1
+    (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) →
+      ∀ (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point),
+        0 < k →
+          (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
+            (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
+              (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
+                  (if colorA = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k') →
+                k = 1
 def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
 ∀ (D : P21.Nonsymmetric.ColorCap.BoxInput) (t : ℕ) (u : P21.Nonsymmetric.ColorCap.Point),
   P21.Nonsymmetric.ColorCap.BoxPath D.upper D.rows t D.x u →

@@ -34,7 +34,7 @@ test_private_fails_closed (test_verify.InventoryTests.test_private_fails_closed)
 test_scope_mismatch (test_verify.InventoryTests.test_scope_mismatch) ... ok
 
 ----------------------------------------------------------------------
-Ran 12 tests in 0.043s
+Ran 12 tests in 0.065s
 
 OK
 

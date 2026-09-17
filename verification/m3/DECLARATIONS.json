@@ -87,19 +87,19 @@
     "name": "P21.Nonsymmetric.actual_three_B_excluded",
     "kind": "theorem",
     "file": "P21/Nonsymmetric/ActualClassification.lean",
-    "line": 290
+    "line": 291
   },
   {
     "name": "P21.Nonsymmetric.actual_labels_compatible",
     "kind": "theorem",
     "file": "P21/Nonsymmetric/ActualClassification.lean",
-    "line": 305
+    "line": 307
   },
   {
     "name": "P21.Nonsymmetric.actual_labels_terminal",
     "kind": "theorem",
     "file": "P21/Nonsymmetric/ActualClassification.lean",
-    "line": 410
+    "line": 413
   },
   {
     "name": "P21.Nonsymmetric.Realizes",
@@ -567,13 +567,13 @@
     "name": "P21.Nonsymmetric.ColorCap.MinimumOneStatement",
     "kind": "def",
     "file": "P21/Nonsymmetric/ColorCap/Residuals.lean",
-    "line": 12
+    "line": 13
   },
   {
     "name": "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_residuals",
     "kind": "theorem",
     "file": "P21/Nonsymmetric/ColorCap/Residuals.lean",
-    "line": 24
+    "line": 27
   },
   {
     "name": "P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm",

@@ -277,6 +277,7 @@ theorem selected_four_Q_card {g : Generators} {s : g.Setting} {F : ℤ}
 theorem actual_three_A_excluded
     (hminimum : ColorCap.MinimumOneStatement) (hdpe : ColorCap.BoxPositiveExitStatement)
     {g : Generators} (s : g.Setting) {F : ℤ} (D : NonsymmetricHerzogData g)
+    (hcof : ∃ B : ℤ, ∀ x : ℤ, B ≤ x → x ∈ g.H)
     (ha : ∀ i, ∃ q, q ∈ s.semigroup.Q F ∧ IsArmA D.toHerzogCriticalData q i) : False := by
   classical
   have hex : ∀ i, ∃ l : ℤ, 1 ≤ l ∧ l < D.a i ∧ D.fA-l*g.n i ∈ s.semigroup.PF := by
@@ -284,12 +285,13 @@ theorem actual_three_A_excluded
     obtain ⟨q,hq,l,hl,hu,he⟩ := ha i
     exact ⟨l,hl,by omega,he ▸ hq.1⟩
   choose depth hlo hhi hq using hex
-  exact ColorCap.three_arms_impossible_of_residuals hminimum hdpe g s D.toHerzogCriticalData true
+  exact ColorCap.three_arms_impossible_of_residuals hminimum hdpe g s hcof D.toHerzogCriticalData true
     depth hlo hhi hq
 
 theorem actual_three_B_excluded
     (hminimum : ColorCap.MinimumOneStatement) (hdpe : ColorCap.BoxPositiveExitStatement)
     {g : Generators} (s : g.Setting) {F : ℤ} (D : NonsymmetricHerzogData g)
+    (hcof : ∃ B : ℤ, ∀ x : ℤ, B ≤ x → x ∈ g.H)
     (ha : ∀ i, ∃ q, q ∈ s.semigroup.Q F ∧ IsArmB D.toHerzogCriticalData q i) : False := by
   classical
   have hex : ∀ i, ∃ l : ℤ, 1 ≤ l ∧ l < D.b i ∧ D.fB-l*g.n i ∈ s.semigroup.PF := by
@@ -297,7 +299,7 @@ theorem actual_three_B_excluded
     obtain ⟨q,hq,l,hl,hu,he⟩ := ha i
     exact ⟨l,hl,by omega,he ▸ hq.1⟩
   choose depth hlo hhi hq using hex
-  exact ColorCap.three_arms_impossible_of_residuals hminimum hdpe g s D.toHerzogCriticalData false
+  exact ColorCap.three_arms_impossible_of_residuals hminimum hdpe g s hcof D.toHerzogCriticalData false
     depth hlo hhi hq
 
 /-- Actual local geometry supplies every finite compatibility constraint.
@@ -308,6 +310,7 @@ theorem actual_labels_compatible
     (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m)
     (D : NonsymmetricHerzogData g) (rows : FourDistinctActualQRows s F)
     (L : ActualLabeling D.toHerzogCriticalData rows) : RowLabel.Compatible L.labels := by
+  have hcof := s.tail_cofinite hF hc ⟨(rows.row 0).q,(rows.row 0).mem⟩
   have hrow {l : RowLabel} (hl : l ∈ L.labels) :
       ∃ q, q ∈ s.semigroup.Q F ∧ Realizes D.toHerzogCriticalData q l := by
     obtain ⟨i,_,hi⟩ := L.mem_labels hl
@@ -342,10 +345,10 @@ theorem actual_labels_compatible
       · exact hthree.2.1
       · exact hthree.2.2
     cases c
-    · apply actual_three_A_excluded hminimum hdpe s D
+    · apply actual_three_A_excluded hminimum hdpe s D hcof
       intro i
       exact hrow (hall i)
-    · apply actual_three_B_excluded hminimum hdpe s D
+    · apply actual_three_B_excluded hminimum hdpe s D hcof
       intro i
       exact hrow (hall i)
   · rintro ⟨hs0,hs1,hs2⟩

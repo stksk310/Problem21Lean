@@ -16,11 +16,16 @@ and a unimodular completion. Pairwise coprimality is never assumed.
 
 The chosen narrow remaining proposition is `ColorCap.MinimumOneStatement`
 in `P21/Nonsymmetric/ColorCap/Residuals.lean`. It universally quantifies the
-actual generators and setting, positive critical data, either socle color,
+actual generators and setting, tail cofiniteness (hence primitive tail lattice),
+positive critical data, either socle color,
 an attained positive m-level k, a point in that color's open coefficient box,
 the actual socle representation and its minimum property; the conclusion is
 k = 1. The representation and minimum hypotheses are already derived from
 three actual PF arms by `colorA_actual_minimum` / `colorB_actual_minimum`.
+The actual classification derives tail cofiniteness from canonical reduction
+and an actual selected Q row. It is not an extra premise in the final theorem.
+The earlier pre-CI version omitted this required primitive-tail condition;
+that version is superseded. See `verification/m3/REVIEW_CORRECTION_MINBOX.md`.
 
 What is still needed for the publication route: rank-three relative-lattice
 saturation and tetrahedron volume;

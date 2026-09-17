@@ -1,60 +1,58 @@
 ## ROOT_BUILD_LOG.txt
 $ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 build
-✔ [1588/1598] Built P21.Factorization (7.3s)
-✔ [1589/1598] Built P21.NumericalSemigroup (8.6s)
-✔ [1590/1598] Built P21.Basic (8.5s)
-✔ [1591/1598] Built P21.PseudoFrobenius (9.3s)
-✔ [1592/1598] Built P21.Apery (9.2s)
-✔ [1593/1598] Built P21.CanonicalReduction (7.8s)
-✔ [1594/1598] Built P21.Tail (8.4s)
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (10s)
+✔ [1590/1598] Built P21.Basic (9.8s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.4s)
+✔ [1592/1598] Built P21.Apery (9.4s)
+✔ [1593/1598] Built P21.CanonicalReduction (10s)
+✔ [1594/1598] Built P21.Tail (8.8s)
 ✔ [1595/1598] Built P21.Selection (12s)
-✔ [1596/1598] Built P21.Semantics (7.0s)
-✔ [1597/1598] Built P21 (7.7s)
+✔ [1596/1598] Built P21.Semantics (8.6s)
+✔ [1597/1598] Built P21 (8.8s)
 Build completed successfully (1598 jobs).
 
 EXIT_CODE=0
 
 ## FROZEN_BUILD_LOG.txt
 $ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 build P21.Apery P21.Basic P21.CanonicalReduction P21.External.SymmetricThreeGenerator P21.External.SymmetricThreeGeneratorProof P21.Factorization P21.NumericalSemigroup P21.PseudoFrobenius P21.Selection P21.Semantics P21.Symmetric.BranchI P21.Symmetric.BranchIActual P21.Symmetric.BranchII P21.Symmetric.BranchIIActual P21.Symmetric.Classification.AperyCardinality P21.Symmetric.Classification.CriticalRelations P21.Symmetric.Classification.GcdDecomposition P21.Symmetric.Classification.GlueExistence P21.Symmetric.Classification.SymmetricRigidity P21.Symmetric.Classification.TailNumericalSemigroup P21.Symmetric.Classification.TopFactorization P21.Symmetric.Classification.UniqueTop P21.Symmetric.Closure P21.Symmetric.CrossLayer P21.Symmetric.FullClosure P21.Symmetric.GlueNormalForm P21.Symmetric.Raw4 P21.Symmetric.Raw4Consequences P21.Symmetric.RawRows P21.Symmetric.Reduction P21.Symmetric.StableCore P21.Symmetric.TwoGenerator P21.Symmetric.TwoGeneratorIdeal P21.Symmetric.TypeBridge P21.Tail
-✔ [1601/1626] Built P21.Symmetric.Classification.CriticalRelations (9.0s)
-✔ [1602/1626] Built P21.Symmetric.StableCore (9.4s)
-✔ [1603/1626] Built P21.Symmetric.TwoGenerator (9.6s)
-✔ [1604/1626] Built P21.Symmetric.TwoGeneratorIdeal (9.0s)
-✔ [1605/1626] Built P21.Symmetric.TypeBridge (10s)
-✔ [1606/1626] Built P21.Symmetric.GlueNormalForm (11s)
-✔ [1607/1626] Built P21.Symmetric.Classification.SymmetricRigidity (11s)
-✔ [1608/1626] Built P21.Symmetric.BranchI (17s)
-✔ [1609/1626] Built P21.Symmetric.RawRows (10s)
-✔ [1610/1626] Built P21.External.SymmetricThreeGenerator (9.7s)
-✔ [1611/1626] Built P21.Symmetric.Classification.GcdDecomposition (11s)
-✔ [1612/1626] Built P21.Symmetric.Raw4 (11s)
-✔ [1613/1626] Built P21.Symmetric.BranchII (12s)
-✔ [1614/1626] Built P21.Symmetric.CrossLayer (10s)
-✔ [1615/1626] Built P21.Symmetric.BranchIActual (10s)
-✔ [1616/1626] Built P21.Symmetric.Classification.TailNumericalSemigroup (9.8s)
-✔ [1617/1626] Built P21.Symmetric.Classification.TopFactorization (9.0s)
-✔ [1618/1626] Built P21.Symmetric.Reduction (10s)
-✔ [1619/1626] Built P21.Symmetric.Classification.AperyCardinality (10s)
-✔ [1620/1626] Built P21.Symmetric.Raw4Consequences (8.8s)
-✔ [1621/1626] Built P21.Symmetric.Classification.UniqueTop (9.6s)
-✔ [1622/1626] Built P21.Symmetric.Classification.GlueExistence (8.5s)
-✔ [1623/1626] Built P21.Symmetric.BranchIIActual (9.6s)
-✔ [1624/1626] Built P21.External.SymmetricThreeGeneratorProof (10s)
-✔ [1625/1626] Built P21.Symmetric.Closure (9.9s)
-✔ [1626/1626] Built P21.Symmetric.FullClosure (8.8s)
+✔ [1601/1626] Built P21.Symmetric.StableCore (12s)
+✔ [1602/1626] Built P21.Symmetric.Classification.CriticalRelations (12s)
+✔ [1603/1626] Built P21.Symmetric.TwoGenerator (12s)
+✔ [1604/1626] Built P21.Symmetric.TypeBridge (9.7s)
+✔ [1605/1626] Built P21.Symmetric.RawRows (8.8s)
+✔ [1606/1626] Built P21.Symmetric.GlueNormalForm (18s)
+✔ [1607/1626] Built P21.Symmetric.Classification.SymmetricRigidity (18s)
+✔ [1608/1626] Built P21.Symmetric.TwoGeneratorIdeal (18s)
+✔ [1609/1626] Built P21.Symmetric.BranchI (18s)
+✔ [1610/1626] Built P21.Symmetric.BranchIActual (12s)
+✔ [1611/1626] Built P21.Symmetric.Classification.GcdDecomposition (14s)
+✔ [1612/1626] Built P21.Symmetric.CrossLayer (14s)
+✔ [1613/1626] Built P21.Symmetric.Raw4 (14s)
+✔ [1614/1626] Built P21.External.SymmetricThreeGenerator (15s)
+✔ [1615/1626] Built P21.Symmetric.BranchII (15s)
+✔ [1616/1626] Built P21.Symmetric.Classification.TailNumericalSemigroup (8.8s)
+✔ [1617/1626] Built P21.Symmetric.Reduction (10s)
+✔ [1618/1626] Built P21.Symmetric.Classification.TopFactorization (10s)
+✔ [1619/1626] Built P21.Symmetric.Raw4Consequences (9.7s)
+✔ [1620/1626] Built P21.Symmetric.Classification.AperyCardinality (10s)
+✔ [1621/1626] Built P21.Symmetric.BranchIIActual (12s)
+✔ [1622/1626] Built P21.Symmetric.Classification.UniqueTop (11s)
+✔ [1623/1626] Built P21.Symmetric.Closure (9.5s)
+✔ [1624/1626] Built P21.Symmetric.Classification.GlueExistence (9.7s)
+✔ [1625/1626] Built P21.External.SymmetricThreeGeneratorProof (9.2s)
+✔ [1626/1626] Built P21.Symmetric.FullClosure (9.5s)
 Build completed successfully (1626 jobs).
 
 EXIT_CODE=0
 
 ## M3_BUILD_LOG.txt
 $ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 build P21.Nonsymmetric.ActualClassification P21.Nonsymmetric.ActualLabels P21.Nonsymmetric.ActualMixed P21.Nonsymmetric.Arms P21.Nonsymmetric.ColorCap.ActualMinimum P21.Nonsymmetric.ColorCap.BoxInput P21.Nonsymmetric.ColorCap.BoxPaths P21.Nonsymmetric.ColorCap.CompanionBounds P21.Nonsymmetric.ColorCap.DPEOneColor P21.Nonsymmetric.ColorCap.PositiveMinors P21.Nonsymmetric.ColorCap.PrefixArithmetic P21.Nonsymmetric.ColorCap.RelativeLattice P21.Nonsymmetric.ColorCap.Residuals P21.Nonsymmetric.ColorCap.ThreeArms P21.Nonsymmetric.ColorCap.WhiteCertificates P21.Nonsymmetric.ComplementGeometry P21.Nonsymmetric.Corners P21.Nonsymmetric.CriticalBox P21.Nonsymmetric.Extraction P21.Nonsymmetric.FourRowCombinatorics P21.Nonsymmetric.Herzog.PseudoFrobenius P21.Nonsymmetric.HerzogClassification P21.Nonsymmetric.HerzogCoordinates P21.Nonsymmetric.HerzogData P21.Nonsymmetric.Kernel P21.Nonsymmetric.MatchedPair P21.Nonsymmetric.MixedColor P21.Nonsymmetric.PrimitiveGenerators P21.Nonsymmetric.Relabel P21.Nonsymmetric.ReturnLevels P21.Nonsymmetric.RowAtlas P21.Nonsymmetric.Rows P21.Nonsymmetric.SameColor P21.Nonsymmetric.Saturation P21.Nonsymmetric.SelectedExtraction P21.Nonsymmetric.Singletons
-✔ [1692/1727] Built P21.Nonsymmetric.ColorCap.ActualMinimum (11s)
-✔ [1693/1727] Built P21.Nonsymmetric.HerzogData (11s)
-✔ [1694/1727] Built P21.Nonsymmetric.Rows (11s)
-✔ [1695/1727] Built P21.Nonsymmetric.ColorCap.BoxPaths (12s)
-✔ [1696/1727] Built P21.Nonsymmetric.HerzogCoordinates (21s)
-✔ [1697/1727] Built P21.Nonsymmetric.HerzogClassification (21s)
-⚠ [1698/1727] Built P21.Nonsymmetric.CriticalBox (33s)
+✔ [1692/1727] Built P21.Nonsymmetric.ColorCap.ActualMinimum (12s)
+✔ [1693/1727] Built P21.Nonsymmetric.Rows (12s)
+✔ [1694/1727] Built P21.Nonsymmetric.ColorCap.BoxPaths (10s)
+✔ [1695/1727] Built P21.Nonsymmetric.HerzogData (35s)
+⚠ [1696/1727] Built P21.Nonsymmetric.CriticalBox (35s)
 warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
 
 Note: This linter can be disabled with `set_option linter.unusedTactic false`
@@ -73,16 +71,19 @@ Note: This linter can be disabled with `set_option linter.unreachableTactic fals
 warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
-✔ [1699/1727] Built P21.Nonsymmetric.ColorCap.RelativeLattice (14s)
-✔ [1700/1727] Built P21.Nonsymmetric.ColorCap.PrefixArithmetic (14s)
-✔ [1701/1727] Built P21.Nonsymmetric.ColorCap.BoxInput (15s)
-✔ [1702/1727] Built P21.Nonsymmetric.Herzog.PseudoFrobenius (15s)
-✔ [1703/1727] Built P21.Nonsymmetric.ComplementGeometry (19s)
-✔ [1704/1727] Built P21.Nonsymmetric.Singletons (19s)
-✔ [1705/1727] Built P21.Nonsymmetric.Kernel (19s)
-✔ [1706/1727] Built P21.Nonsymmetric.ColorCap.PositiveMinors (16s)
-✔ [1707/1727] Built P21.Nonsymmetric.ColorCap.ThreeArms (9.8s)
-ℹ [1708/1727] Built P21.Nonsymmetric.Arms (26s)
+✔ [1697/1727] Built P21.Nonsymmetric.ColorCap.RelativeLattice (14s)
+✔ [1698/1727] Built P21.Nonsymmetric.ColorCap.PrefixArithmetic (14s)
+✔ [1699/1727] Built P21.Nonsymmetric.ColorCap.BoxInput (14s)
+✔ [1700/1727] Built P21.Nonsymmetric.Singletons (17s)
+✔ [1701/1727] Built P21.Nonsymmetric.Kernel (17s)
+✔ [1702/1727] Built P21.Nonsymmetric.HerzogCoordinates (24s)
+✔ [1703/1727] Built P21.Nonsymmetric.ColorCap.DPEOneColor (23s)
+✔ [1704/1727] Built P21.Nonsymmetric.HerzogClassification (24s)
+✔ [1705/1727] Built P21.Nonsymmetric.ColorCap.PositiveMinors (24s)
+✔ [1706/1727] Built P21.Nonsymmetric.ColorCap.WhiteCertificates (25s)
+✔ [1707/1727] Built P21.Nonsymmetric.Herzog.PseudoFrobenius (13s)
+✔ [1708/1727] Built P21.Nonsymmetric.ComplementGeometry (23s)
+ℹ [1709/1727] Built P21.Nonsymmetric.Arms (23s)
 info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
   [apply] ring_nf
   
@@ -101,33 +102,32 @@ info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
   The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
     
   Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
-✔ [1709/1727] Built P21.Nonsymmetric.ColorCap.DPEOneColor (20s)
-✔ [1710/1727] Built P21.Nonsymmetric.FourRowCombinatorics (26s)
-✔ [1711/1727] Built P21.Nonsymmetric.ColorCap.WhiteCertificates (23s)
-✔ [1712/1727] Built P21.Nonsymmetric.RowAtlas (12s)
-✔ [1713/1727] Built P21.Nonsymmetric.PrimitiveGenerators (19s)
-✔ [1714/1727] Built P21.Nonsymmetric.ActualLabels (10s)
-✔ [1715/1727] Built P21.Nonsymmetric.Corners (10s)
-✔ [1716/1727] Built P21.Nonsymmetric.ColorCap.CompanionBounds (23s)
-⚠ [1717/1727] Built P21.Nonsymmetric.Relabel (23s)
-warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
-
-Note: This linter can be disabled with `set_option linter.defProp false`
-warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
-
-Note: This linter can be disabled with `set_option linter.unusedTactic false`
-✔ [1718/1727] Built P21.Nonsymmetric.ColorCap.Residuals (10s)
-✔ [1719/1727] Built P21.Nonsymmetric.SameColor (66s)
-⚠ [1720/1727] Built P21.Nonsymmetric.MatchedPair (66s)
+✔ [1710/1727] Built P21.Nonsymmetric.FourRowCombinatorics (23s)
+✔ [1711/1727] Built P21.Nonsymmetric.ColorCap.CompanionBounds (21s)
+✔ [1712/1727] Built P21.Nonsymmetric.ColorCap.ThreeArms (15s)
+✔ [1713/1727] Built P21.Nonsymmetric.PrimitiveGenerators (15s)
+✔ [1714/1727] Built P21.Nonsymmetric.ColorCap.Residuals (7.0s)
+✔ [1715/1727] Built P21.Nonsymmetric.RowAtlas (22s)
+✔ [1716/1727] Built P21.Nonsymmetric.SameColor (22s)
+⚠ [1717/1727] Built P21.Nonsymmetric.MatchedPair (56s)
 warning: P21/Nonsymmetric/MatchedPair.lean:65:26: Variable name `hz'` is not explicitly referenced.
 
 Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
   [apply] _hz'
 
 Note: This linter can be disabled with `set_option linter.unusedVariables false`
-✔ [1721/1727] Built P21.Nonsymmetric.Saturation (66s)
-✔ [1722/1727] Built P21.Nonsymmetric.MixedColor (15s)
-⚠ [1723/1727] Built P21.Nonsymmetric.ReturnLevels (18s)
+✔ [1718/1727] Built P21.Nonsymmetric.Saturation (56s)
+✔ [1719/1727] Built P21.Nonsymmetric.ActualLabels (7.9s)
+✔ [1720/1727] Built P21.Nonsymmetric.Corners (8.1s)
+⚠ [1721/1727] Built P21.Nonsymmetric.Relabel (12s)
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1722/1727] Built P21.Nonsymmetric.MixedColor (14s)
+⚠ [1723/1727] Built P21.Nonsymmetric.ReturnLevels (15s)
 warning: P21/Nonsymmetric/ReturnLevels.lean:15:10: This simp argument is unused:
   nsmul_eq_mul
 
@@ -138,10 +138,10 @@ Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
 warning: P21/Nonsymmetric/ReturnLevels.lean:14:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
 
 Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
-✔ [1724/1727] Built P21.Nonsymmetric.ActualMixed (7.8s)
-✔ [1725/1727] Built P21.Nonsymmetric.Extraction (7.0s)
-✔ [1726/1727] Built P21.Nonsymmetric.ActualClassification (6.4s)
-✔ [1727/1727] Built P21.Nonsymmetric.SelectedExtraction (7.3s)
+✔ [1724/1727] Built P21.Nonsymmetric.ActualMixed (7.3s)
+✔ [1725/1727] Built P21.Nonsymmetric.Extraction (7.5s)
+✔ [1726/1727] Built P21.Nonsymmetric.ActualClassification (6.1s)
+✔ [1727/1727] Built P21.Nonsymmetric.SelectedExtraction (6.4s)
 Build completed successfully (1727 jobs).
 
 EXIT_CODE=0

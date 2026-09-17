@@ -14,8 +14,13 @@ V.integrity()
 snapshot=V.HERE/'local-evidence'
 snapshot.mkdir(exist_ok=True)
 for p in V.EVIDENCE.iterdir():
+    if p.name == 'CANDIDATE_SOURCE_INTEGRITY.txt':
+        continue  # This gate binds the later immutable ZIP to its exact commit.
     if p.is_file() and p.suffix in {'.txt','.json'} and not p.read_text(encoding='utf-8').startswith('NOT RUN'):
         shutil.copyfile(p,snapshot/p.name)
+local_results = dict(result)
+local_results.pop('candidate_source_integrity', None)
+(snapshot/'RESULTS.json').write_text(json.dumps(local_results,indent=2)+'\n',encoding='utf-8',newline='\n')
 for src,dst in [('FROZEN_SOURCE_INTEGRITY.txt','FROZEN_SOURCE_INTEGRITY_REPORT.txt'),
                 ('AXIOM_REPORT.txt','AXIOM_REPORT_M3.txt'),('PROOF_DEBT_REPORT.txt','PROOF_DEBT_REPORT_M3.txt')]:
     shutil.copyfile(V.EVIDENCE/src,V.ROOT/dst)
