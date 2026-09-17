@@ -110,6 +110,21 @@ theorem terminal12_last_row1_impossible (D : BoxInput) (q : ℕ)
     rw [hu2]
     linear_combination -(P.N q) * D.row0 - (q : ℤ) * D.row1 - D.row2
 
+/-- B.17.1 with both slot bounds discharged from the successful prefix. -/
+theorem terminal12_last_row1_of_prefix (D : BoxInput) (q : ℕ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hq : 1 ≤ q) (hstart : D.x 0 < D.y 0) (N : ℤ) (hN : N = P.N q)
+    (u : Point)
+    (hu0 : u 0 = P.E q) (hu1 : u 1 = D.x 1 + P.U q)
+    (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 -
+      (q : ℤ) * (D.y 2 + D.b 2))
+    (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) : False := by
+  have hqx := P.E_slot_count (by have := D.x_pos 0; omega)
+  have hqy := P.U_slot_count (by have := D.y_pos 1; omega)
+  exact terminal12_last_row1_impossible D q P hq (by omega) (by omega)
+    hstart N hN u hu0 hu1 hu2 hB
+
 /-- B.17.2 arithmetic certificate after reciprocal rank.  The closed
 hypothesis `0 ≤ X` deliberately includes the boundary `X = 0`. -/
 theorem terminal12_sinkB_nonnegativeX_impossible (D : BoxInput) (N Q : ℤ)
