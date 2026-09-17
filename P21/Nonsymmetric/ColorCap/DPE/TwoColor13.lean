@@ -194,6 +194,92 @@ theorem terminal13_sinkC_certificate (D : BoxInput) (N R : ℤ)
     rw [hu1]
     linear_combination -(N - 1) * D.row0 - D.row1 - R * D.row2
 
+/-- B.18.3: the late successful residues occupy the two exact ELR strips.
+The first `b₁` indices are discarded exactly as in the publication. -/
+theorem terminal13_sinkC_ELR_bound (D : BoxInput) (q R : ℕ) (N : ℤ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2)
+      (D.x 2) (D.b 0) 0 q)
+    (hR : R = q + 1)
+    (hX : X13 D N R = (R : ℤ) * (D.y 0 + D.b 0) - N * D.x 0)
+    (hY : Y13 D N R = N * D.y 2 - (R : ℤ) * D.x 2)
+    (hpred : D.b 0 + 1 ≤ D.x 0 + X13 D N R)
+    (hYlower : -D.b 2 ≤ Y13 D N R) :
+    0 ≤ D.x 0 + X13 D N R + D.b 2 + Y13 D N R - (R : ℤ) := by
+  by_cases hsmall : q ≤ D.b 0
+  · have hb2 := D.b_pos 2
+    omega
+  let s := Finset.Icc (D.b 0).toNat.succ q
+  let E : ℤ := -X13 D N R
+  let U : ℤ := D.y 2 - D.b 2 - Y13 D N R - 1
+  have hb0z : 0 ≤ D.b 0 := by have := D.b_pos 0; omega
+  have hb0cast : (((D.b 0).toNat : ℕ) : ℤ) = D.b 0 := by
+    simp [Int.toNat_of_nonneg hb0z]
+  have hcover : ∀ i ∈ s, E < P.E i ∨ U < P.U i := by
+    intro i hi
+    have hir := Finset.mem_Icc.mp hi
+    have hi1 : 1 ≤ i := by
+      have hb := D.b_pos 0
+      omega
+    have hiq : i ≤ q := hir.2
+    by_contra hn
+    push Not at hn
+    have hiR : i < R := by omega
+    have hsub : ((R - i : ℕ) : ℤ) = (R : ℤ) - (i : ℤ) := by
+      rw [Nat.cast_sub (by omega)]
+    apply P.separator (R - i) (by omega) (by omega)
+    refine ⟨N - P.N i, ?_, ?_⟩
+    · have hEdef : P.E i = P.N i * D.x 0 -
+          (i : ℤ) * (D.y 0 + D.b 0) := rfl
+      rw [hEdef] at hn
+      rw [hsub]
+      dsimp [E] at hn
+      nlinarith [hX]
+    · have hUdef : P.U i = (i : ℤ) * D.x 2 -
+          (P.N i - 1) * D.y 2 := rfl
+      rw [hUdef] at hn
+      rw [hsub]
+      dsimp [U] at hn
+      have hb2 := D.b_pos 2
+      nlinarith [hY]
+  have hEupper : ∀ i ∈ s, P.E i ≤ D.x 0 - D.b 0 - 1 := by
+    intro i hi
+    exact (P.residues i (by
+      have hir := Finset.mem_Icc.mp hi
+      have hb := D.b_pos 0
+      omega) (Finset.mem_Icc.mp hi).2).2.1
+  have hUupper : ∀ i ∈ s, P.U i ≤ D.y 2 - 1 := by
+    intro i hi
+    have hu := (P.residues i (by
+      have hir := Finset.mem_Icc.mp hi
+      have hb := D.b_pos 0
+      omega) (Finset.mem_Icc.mp hi).2).2.2.2
+    change (i : ℤ) * D.x 2 - (P.N i - 1) * D.y 2 ≤ D.y 2 - 1
+    omega
+  have hEinj : Set.InjOn P.E (s : Set ℕ) := by
+    intro i hi j hj he
+    exact P.coordinate_injective (by
+      have hir := Finset.mem_Icc.mp hi; have hb := D.b_pos 0; omega)
+      (Finset.mem_Icc.mp hi).2 (by
+        have hjr := Finset.mem_Icc.mp hj; have hb := D.b_pos 0; omega)
+      (Finset.mem_Icc.mp hj).2 he
+  have hUinj : Set.InjOn P.U (s : Set ℕ) := by
+    intro i hi j hj he
+    exact P.coordinateU_injective (by
+      have hir := Finset.mem_Icc.mp hi; have hb := D.b_pos 0; omega)
+      (Finset.mem_Icc.mp hi).2 (by
+        have hjr := Finset.mem_Icc.mp hj; have hb := D.b_pos 0; omega)
+      (Finset.mem_Icc.mp hj).2 he
+  have hc := residue_slot_bound s P.E P.U E U
+    (D.x 0 - D.b 0 - 1) (D.y 2 - 1) hEupper hUupper hEinj hUinj hcover
+  have hdE : 0 ≤ D.x 0 - D.b 0 - 1 - E := by dsimp [E]; omega
+  have hdU : 0 ≤ D.y 2 - 1 - U := by dsimp [U]; omega
+  have hcZ : (s.card : ℤ) ≤
+      ((D.x 0 - D.b 0 - 1 - E).toNat : ℤ) +
+      ((D.y 2 - 1 - U).toNat : ℤ) := by exact_mod_cast hc
+  simp [s, E, U, Int.toNat_of_nonneg hdE, Int.toNat_of_nonneg hdU,
+    hb0cast] at hcZ
+  omega
+
 set_option maxHeartbeats 2000000 in
 /-- B.18.2 reciprocal rank.  The strict shifted bound is read from the
 original chronological path, including the `K = 1` initial-run case. -/
