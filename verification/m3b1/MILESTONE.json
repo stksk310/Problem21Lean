@@ -1,0 +1,13 @@
+{
+  "candidate": "P21_LEAN_M3B1_MINBOX_WHITE_CANDIDATE_20260917.zip",
+  "status": "M3B1 MINBOX / WHITE CANDIDATE FOR TRUE AUDIT",
+  "minimum_one_proved": true,
+  "std_white": "PROVED",
+  "minimum_one_theorem": "P21.Nonsymmetric.ColorCap.minimum_one_proved",
+  "required_theorems": [
+    "P21.Nonsymmetric.ColorCap.minimum_one_proved",
+    "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe",
+    "P21.Nonsymmetric.White.cyclic_white_proved"
+  ],
+  "statement_regression": "verification/m3b1/StatementRegression.lean"
+}

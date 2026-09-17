@@ -1,0 +1,351 @@
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/verify.py
+✔ [1588/1598] Built P21.Factorization (8.3s)
+✔ [1589/1598] Built P21.NumericalSemigroup (8.8s)
+✔ [1590/1598] Built P21.Basic (10s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.1s)
+✔ [1592/1598] Built P21.Apery (10s)
+✔ [1593/1598] Built P21.CanonicalReduction (11s)
+✔ [1594/1598] Built P21.Tail (8.8s)
+✔ [1595/1598] Built P21.Selection (13s)
+✔ [1596/1598] Built P21.Semantics (8.0s)
+✔ [1597/1598] Built P21 (9.6s)
+Build completed successfully (1598 jobs).
+
+113 declarations; 73 theorems; 107 axiom inspection commands; 12 source files; no debt matches.
+
+'P21.NumericalSemigroup.apery_le' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.apery_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.zero_mem_apery' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.W_mem_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_add_m_mem_apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.apery_lower' depends on axioms: [propext]
+'P21.NumericalSemigroup.pf_iff_maximal_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.A0' depends on axioms: [propext]
+'P21.NumericalSemigroup.A1' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota' depends on axioms: [propext]
+'P21.NumericalSemigroup.complement_mem_apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.exact_two_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.a0_lower' depends on axioms: [propext]
+'P21.NumericalSemigroup.a1_upper' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_involutive' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_order_reverse' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_mem_a1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_add_m_mem_a1' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.complement_of_q_mem_apery' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.maximal_a1_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_iff_iota_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.maximal_a1_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.all' depends on axioms: [propext]
+'P21.Generators.Gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.ActualFactorization4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.ActualFactorization3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.TailMinimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.OffDirection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.SH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.tailGcd' depends on axioms: [propext]
+'P21.Generators.value_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.h_subset_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.m_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.n_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.tail_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.semigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.minimal_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.minimal_four_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.P21MainStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.apery_m_coordinate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.apery_in_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.a0_tail_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_return_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.return_coordinate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_support_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.support_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_support_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.supported_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.actual_iff_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generator_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.replaceWithinActualFactorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.removeOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.Gap' depends on axioms: [propext]
+'P21.NumericalSemigroup.IsFrobenius' depends on axioms: [propext]
+'P21.NumericalSemigroup.PF' depends on axioms: [propext]
+'P21.NumericalSemigroup.type' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.Apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.Le' depends on axioms: [propext]
+'P21.NumericalSemigroup.Canonical' depends on axioms: [propext]
+'P21.NumericalSemigroup.Q' depends on axioms: [propext]
+'P21.NumericalSemigroup.Maximal' depends on axioms: [propext]
+'P21.NumericalSemigroup.Minimal' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_refl' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_trans' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_antisymm' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.exists_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.frobenius_mem_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.mem_of_gt_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.q_lt_frobenius' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.type_eq_q_card_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.translated_gaps_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.gap_below_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.canonical_all_nonnegative_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.offDirection_iff_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_pair_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.RowFacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.all_q_row_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.select_four_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_minimal_and_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.W' does not depend on any axioms
+'P21.complement' does not depend on any axioms
+'P21.cofinite_iff_finite_nonnegative_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.all_pf_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.q_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.a0_lower_in_semigroup' depends on axioms: [propext]
+'P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.divisor_of_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated_eq_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.signed_mem_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_signed_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.m_mem_tail_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_gcd_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.natural_closure_to_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tailSemigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+107 declarations checked; only standard axioms; project-specific dependencies: 0.
+
+P21.NumericalSemigroup.apery_le (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hw : w ∈ S.Apery m) :
+  w ≤ F + m
+P21.NumericalSemigroup.apery_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) : (S.Apery m).Finite
+P21.NumericalSemigroup.zero_mem_apery (S : P21.NumericalSemigroup) {m : ℤ} (hm : 0 < m) : 0 ∈ S.Apery m
+P21.NumericalSemigroup.W_mem_apery (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m) :
+  F + m ∈ S.Apery m
+P21.NumericalSemigroup.pf_add_m_mem_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0)
+  (hq : q ∈ S.PF) : q + m ∈ S.Apery m
+P21.NumericalSemigroup.apery_lower (S : P21.NumericalSemigroup) {m x y : ℤ} (hx : x ∈ S.carrier) (hy : y ∈ S.Apery m)
+  (hxy : S.Le x y) : x ∈ S.Apery m
+P21.NumericalSemigroup.pf_iff_maximal_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0) :
+  q ∈ S.PF ↔ S.Maximal (S.Apery m) (q + m)
+P21.NumericalSemigroup.A0 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.A1 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.iota (_S : P21.NumericalSemigroup) (F m w : ℤ) : ℤ
+P21.NumericalSemigroup.complement_mem_apery (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hw : w ∈ S.Apery m) (hb : F + m - w ∈ S.carrier) : F + m - w ∈ S.Apery m
+P21.NumericalSemigroup.exact_two_layers (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.Apery m) :
+  F + m - w ∈ S.Apery m ∧ S.iota F m w ∉ S.Apery m ∨ F + m - w ∉ S.Apery m ∧ S.iota F m w ∈ S.Apery m
+P21.NumericalSemigroup.a0_lower (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.Apery m)
+  (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.a1_upper (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.A1 F m)
+  (hy : y ∈ S.Apery m) (hxy : S.Le x y) : y ∈ S.A1 F m
+P21.NumericalSemigroup.iota_involutive (S : P21.NumericalSemigroup) (F m w : ℤ) : S.iota F m (S.iota F m w) = w
+P21.NumericalSemigroup.iota_order_reverse (S : P21.NumericalSemigroup) (F m x y : ℤ) :
+  S.Le (S.iota F m y) (S.iota F m x) ↔ S.Le x y
+P21.NumericalSemigroup.iota_mem_a1 (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.A1 F m) : S.iota F m w ∈ S.A1 F m
+P21.NumericalSemigroup.pf_add_m_mem_a1 (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) (hq : q ∈ S.Q F) : q + m ∈ S.A1 F m
+P21.NumericalSemigroup.complement_of_q_mem_apery (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (hq : q ∈ S.Q F) : F + m - q ∈ S.Apery m
+P21.NumericalSemigroup.maximal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) : S.Maximal (S.A1 F m) w ↔ w - m ∈ S.Q F
+P21.NumericalSemigroup.minimal_iff_iota_maximal (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ S.Maximal (S.A1 F m) (S.iota F m w)
+P21.NumericalSemigroup.minimal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ F + m - w ∈ S.Q F
+P21.NumericalSemigroup.maximal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) : {w | S.Maximal (S.A1 F m) w} = (fun q => q + m) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w} = (fun q => F + m - q) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_card (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = (S.Q F).ncard ∧ (S.Q F).ncard + 1 = S.type
+P21.Generators : Type
+P21.Generators.all (g : P21.Generators) : Fin 4 → ℤ
+P21.Generators.Gamma (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.H (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.ActualFactorization4 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.ActualFactorization3 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.Minimal (g : P21.Generators) : Prop
+P21.Generators.TailMinimal (g : P21.Generators) : Prop
+P21.Generators.OffDirection (g : P21.Generators) (i : Fin 3) (x : ℤ) : Prop
+P21.Generators.D (g : P21.Generators) (c : ℤ) : Set (Fin 3)
+P21.Generators.SH (g : P21.Generators) (q : ℤ) : Set (Fin 3)
+P21.Generators.tailGcd (g : P21.Generators) : ℕ
+P21.Generators.value_cons (g : P21.Generators) (a : ℕ) (b : Fin 3 → ℕ) :
+  P21.value g.all (Fin.cons a b) = ↑a * g.m + P21.value g.n b
+P21.Generators.h_subset_gamma (g : P21.Generators) : g.H ≤ g.Gamma
+P21.Generators.m_mem (g : P21.Generators) : g.m ∈ g.Gamma
+P21.Generators.n_mem (g : P21.Generators) (i : Fin 3) : g.n i ∈ g.Gamma
+P21.Generators.tail_minimal (g : P21.Generators) (hg : g.Minimal) : g.TailMinimal
+P21.Generators.Setting (g : P21.Generators) : Prop
+P21.Generators.Setting.semigroup {g : P21.Generators} (s : g.Setting) : P21.NumericalSemigroup
+P21.Generators.minimal_injective (g : P21.Generators) (hg : g.Minimal) : Function.Injective g.all
+P21.Generators.minimal_four_distinct (g : P21.Generators) (hg : g.Minimal) : (Set.range g.all).ncard = 4
+P21.P21MainStatement : Prop
+P21.Generators.Setting.apery_m_coordinate_zero {g : P21.Generators} (s : g.Setting) {x : ℤ}
+  (hx : x ∈ s.semigroup.Apery g.m) (a : g.ActualFactorization4 x) : a.coeff 0 = 0
+P21.Generators.Setting.apery_in_tail {g : P21.Generators} (s : g.Setting) {x : ℤ} (hx : x ∈ s.semigroup.Apery g.m) :
+  x ∈ g.H
+P21.Generators.Setting.a0_tail_iff {g : P21.Generators} (s : g.Setting) {F w : ℤ} (hF : s.semigroup.IsFrobenius F) :
+  w ∈ s.semigroup.A0 F g.m ↔ w ∈ g.H ∧ F + g.m - w ∈ g.H
+P21.Generators.Setting.key_return_apery {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : q + g.n i ∈ s.semigroup.Apery g.m
+P21.Generators.Setting.return_coordinate_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hq : q ∈ s.semigroup.Q F)
+  (i : Fin 3) (a : g.ActualFactorization3 (q + g.n i)) : a.coeff i = 0
+P21.Generators.Setting.key_support_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : g.OffDirection i (q + g.n i)
+P21.Generators.Setting.support_nonempty {g : P21.Generators} {c : ℤ} (hc : c ∈ g.H) (hcpos : 0 < c) : (g.D c).Nonempty
+P21.Generators.Setting.key_support_inclusion {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) :
+  (g.D (F + g.m - q)).Nonempty ∧ g.D (F + g.m - q) ⊆ g.SH q
+P21.Generators.Setting.supported_rectangle {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) (i : Fin 3)
+  (hi : i ∈ g.D (F + g.m - q)) :
+  (q + g.m ∈ s.semigroup.Apery g.m ∧ q + g.m ∈ g.H) ∧
+    (F + g.m - q ∈ s.semigroup.Apery g.m ∧ F + g.m - q ∈ g.H) ∧
+      (F + g.m - q - g.n i ∈ s.semigroup.Apery g.m ∧ F + g.m - q - g.n i ∈ g.H) ∧
+        (q + g.n i ∈ s.semigroup.Apery g.m ∧ q + g.n i ∈ g.H) ∧
+          q + g.m + (F + g.m - q) = F + g.m + g.m ∧ F + g.m - q - g.n i + (q + g.n i) = F + g.m
+P21.value {k : ℕ} (g : Fin k → ℤ) (a : Fin k → ℕ) : ℤ
+P21.ActualFactorization {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.generated {k : ℕ} (g : Fin k → ℤ) : AddSubmonoid ℤ
+P21.actual_iff_mem {k : ℕ} {g : Fin k → ℤ} {x : ℤ} : Nonempty (P21.ActualFactorization g x) ↔ x ∈ P21.generated g
+P21.generator_mem {k : ℕ} (g : Fin k → ℤ) (i : Fin k) : g i ∈ P21.generated g
+P21.generated_nonneg {k : ℕ} {g : Fin k → ℤ} (hg : ∀ (i : Fin k), 0 ≤ g i) {x : ℤ} (hx : x ∈ P21.generated g) : 0 ≤ x
+P21.replaceWithinActualFactorization {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x)
+  (source target : Fin k → ℕ) (contained : ∀ (i : Fin k), source i ≤ a.coeff i)
+  (replacement : P21.value g source = P21.value g target) : P21.ActualFactorization g x
+P21.removeOne {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x) (i : Fin k) (hi : 0 < a.coeff i) :
+  P21.ActualFactorization g (x - g i)
+P21.SignedRepresentation {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.SignedRelation3 (n : Fin 3 → ℤ) : Type
+P21.NumericalSemigroup : Type
+P21.NumericalSemigroup.Gap (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.IsFrobenius (S : P21.NumericalSemigroup) (F : ℤ) : Prop
+P21.NumericalSemigroup.PF (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.type (S : P21.NumericalSemigroup) : ℕ
+P21.NumericalSemigroup.Apery (S : P21.NumericalSemigroup) (m : ℤ) : Set ℤ
+P21.NumericalSemigroup.Le (S : P21.NumericalSemigroup) (x y : ℤ) : Prop
+P21.NumericalSemigroup.Canonical (S : P21.NumericalSemigroup) (F m : ℤ) : Prop
+P21.NumericalSemigroup.Q (S : P21.NumericalSemigroup) (F : ℤ) : Set ℤ
+P21.NumericalSemigroup.Maximal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.Minimal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.le_refl (S : P21.NumericalSemigroup) (x : ℤ) : S.Le x x
+P21.NumericalSemigroup.le_trans (S : P21.NumericalSemigroup) {x y z : ℤ} (hxy : S.Le x y) (hyz : S.Le y z) : S.Le x z
+P21.NumericalSemigroup.le_antisymm (S : P21.NumericalSemigroup) {x y : ℤ} (hxy : S.Le x y) (hyx : S.Le y x) : x = y
+P21.NumericalSemigroup.exists_frobenius (S : P21.NumericalSemigroup) : ∃ F, S.IsFrobenius F
+P21.NumericalSemigroup.frobenius_mem_pf (S : P21.NumericalSemigroup) {F : ℤ} (hF : S.IsFrobenius F) : F ∈ S.PF
+P21.NumericalSemigroup.mem_of_gt_frobenius (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : F < x) :
+  x ∈ S.carrier
+P21.NumericalSemigroup.pf_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hm0 : m ≠ 0) : S.PF.Finite
+P21.NumericalSemigroup.q_lt_frobenius (S : P21.NumericalSemigroup) {F q : ℤ} (hF : S.IsFrobenius F) (hq : q ∈ S.Q F) :
+  q < F
+P21.NumericalSemigroup.type_eq_q_card_add_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) : S.type = (S.Q F).ncard + 1
+P21.NumericalSemigroup.translated_gaps_finite (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) :
+  {q | q ∉ S.carrier ∧ q - x ∈ S.carrier}.Finite
+P21.NumericalSemigroup.gap_below_pf (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : x ∉ S.carrier) :
+  ∃ q ∈ S.PF, q - x ∈ S.carrier
+P21.NumericalSemigroup.canonical_all_nonnegative_gaps (S : P21.NumericalSemigroup) {F m x : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (_hx0 : 0 ≤ x) (hx : x ∉ S.carrier) : F + m - x ∈ S.carrier
+P21.Generators.offDirection_iff_pair {g : P21.Generators} {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k)
+  (x : ℤ) : g.OffDirection i x ↔ ∃ a b, x = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.key_pair_return {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k) (hi : i ∈ g.D (F + g.m - q)) :
+  ∃ a b, q + g.n i = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.RowFacts {g : P21.Generators} (s : g.Setting) (F q : ℤ) : Prop
+P21.Generators.Setting.all_q_row_facts {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (q : ℤ) : q ∈ s.semigroup.Q F → s.RowFacts F q
+P21.Generators.Setting.select_four_rows {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ rows, Function.Injective rows ∧ ∀ (r : Fin 4), s.RowFacts F (rows r)
+P21.Generators.Setting.tail_minimal_and_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) :
+  g.TailMinimal ∧ g.tailGcd = 1 ∧ ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.W (F m : ℤ) : ℤ
+P21.complement (F m q : ℤ) : ℤ
+P21.cofinite_iff_finite_nonnegative_gaps (G : AddSubmonoid ℤ) :
+  (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ G) ↔ {x | 0 ≤ x ∧ x ∉ G}.Finite
+P21.NumericalSemigroup.all_pf_finite (S : P21.NumericalSemigroup) : S.PF.Finite
+P21.NumericalSemigroup.q_finite (S : P21.NumericalSemigroup) (F : ℤ) : (S.Q F).Finite
+P21.NumericalSemigroup.a0_lower_in_semigroup (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F)
+  (hx : x ∈ S.carrier) (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = S.type - 1
+P21.divisor_of_generated {k : ℕ} {n : Fin k → ℤ} {d x : ℤ} (hd : ∀ (i : Fin k), d ∣ n i) (hx : x ∈ P21.generated n) :
+  d ∣ x
+P21.generated_eq_closure {k : ℕ} (n : Fin k → ℤ) : P21.generated n = AddSubmonoid.closure (Set.range n)
+P21.signed_mem_group {k : ℕ} {n : Fin k → ℤ} {x : ℤ} (a : P21.SignedRepresentation n x) :
+  x ∈ AddSubgroup.closure (Set.range n)
+P21.Generators.Setting.tail_signed_m {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : Nonempty (P21.SignedRepresentation g.n g.m)
+P21.Generators.Setting.m_mem_tail_group {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.m ∈ AddSubgroup.closure (Set.range g.n)
+P21.Generators.Setting.common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {d : ℤ} (hm : d ∣ g.m)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {F d : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_gcd_eq_one {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.tailGcd = 1
+P21.Generators.Setting.natural_closure_to_tail {g : P21.Generators} (s : g.Setting) {x : ℕ}
+  (hx : x ∈ AddSubmonoid.closure (Set.range fun i => (g.n i).toNat)) : ↑x ∈ g.H
+P21.Generators.Setting.tail_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.Generators.Setting.tailSemigroup {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : P21.NumericalSemigroup
+def P21.P21MainStatement : Prop :=
+∀ (g : P21.Generators) (s : g.Setting) (F : ℤ),
+  s.semigroup.IsFrobenius F → s.semigroup.Canonical F g.m → s.semigroup.type ≤ 4
+structure P21.Generators.Setting (g : P21.Generators) : Prop
+number of parameters: 1
+fields:
+  P21.Generators.Setting.m_pos : 0 < g.m
+  P21.Generators.Setting.n_gt : ∀ (i : Fin 3), g.m < g.n i
+  P21.Generators.Setting.minimal : g.Minimal
+  P21.Generators.Setting.multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x
+  P21.Generators.Setting.cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma
+constructor:
+  P21.Generators.Setting.mk {g : P21.Generators} (m_pos : 0 < g.m) (n_gt : ∀ (i : Fin 3), g.m < g.n i)
+    (minimal : g.Minimal) (multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x)
+    (cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma) : g.Setting
+def P21.Generators.Minimal : P21.Generators → Prop :=
+fun g => ∀ (i : Fin 4) (a : Fin 4 → ℕ), a i = 0 → P21.value g.all a ≠ g.all i
+def P21.NumericalSemigroup.PF : P21.NumericalSemigroup → Set ℤ :=
+fun S => {q | q ∉ S.carrier ∧ ∀ s ∈ S.carrier, s ≠ 0 → q + s ∈ S.carrier}
+def P21.NumericalSemigroup.IsFrobenius : P21.NumericalSemigroup → ℤ → Prop :=
+fun S F => IsGreatest S.Gap F
+
+Self-checks completed. Status remains M1 CANDIDATE FOR TRUE AUDIT.
+
+EXIT_CODE=0
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/package_candidate.py --stage
+C:\LeanProjects\Problem21Lean\m3b1-minbox-white\audit-evidence\m3b1\isolated-M1-exh0jm_m\delivery\P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_20260916
+
+EXIT_CODE=0
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/package_candidate.py
+{
+  "zip": "C:\\LeanProjects\\Problem21Lean\\m3b1-minbox-white\\audit-evidence\\m3b1\\isolated-M1-exh0jm_m\\delivery\\P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_20260916.zip",
+  "files": 53,
+  "bytes": 3882572,
+  "sha256": "f9f7799678b9aeb2475903b6c9da4dbdd0f5d93424437ea7762e8cf6bc70ed49",
+  "zip_crc": "ok",
+  "all_entry_sha256": "ok"
+}
+
+EXIT_CODE=0

@@ -1,0 +1,530 @@
+[
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.rowsB",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_identity",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.class_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorA.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorA.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorA.lean",
+    "line": 77
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorB.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorB.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorB.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorB.lean",
+    "line": 79
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/CyclicInput.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/CyclicInput.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/CyclicReduction.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.barycentric_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+    "line": 69
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socle_simplex_empty",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+    "line": 116
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA_eq_socleRows",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.rowsB_eq_socleRows",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_rotate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+    "line": 49
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.rotated_integral_class_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socle",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_diagonal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_off_diagonal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_nonneg",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socle_minimum_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 52
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 59
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det_level",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+    "line": 68
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelJ",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/SocleSimplex.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelK",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/SocleSimplex.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/SocleSimplex.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOne/SocleSimplex.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.minimum_one_proved",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOneProof.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/MinimumOneProof.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/ClassData.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.White.exists_positive_inverse",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/ClassData.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.White.integral_class_of_unit_coordinate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/ClassReconstruction.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.White.combination",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.White.weight_combination",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.White.weight_scale",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classResidues",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classRepresentative",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classRepresentative_equation",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classResidues_sum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Nonsymmetric.White.small_mass_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 49
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classResidues_sum_mod",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 85
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classResidues_lower",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 91
+  },
+  {
+    "name": "P21.Nonsymmetric.White.classResidues_complement",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 122
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclic_age_of_minimum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/CyclicClasses.lean",
+    "line": 139
+  },
+  {
+    "name": "P21.Nonsymmetric.White.weight_surjective",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_coset_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_residue_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Nonsymmetric.White.residue_realized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_level_residue_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 43
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_level_residue_realized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 53
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_level_coset_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 62
+  },
+  {
+    "name": "P21.Nonsymmetric.White.relative_cyclic_representatives",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/RelativeIndex.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Nonsymmetric.White.CyclicAge",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.White.CyclicWhiteStatement",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.White.complementary_remainder",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclicAge_nonzero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclicAge_sum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Nonsymmetric.White.floorJump",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 62
+  },
+  {
+    "name": "P21.Nonsymmetric.White.floorJump_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 65
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclicAge_jump_sum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_adjacent_gap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 102
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_gap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 117
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_interleaving_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 126
+  },
+  {
+    "name": "P21.Nonsymmetric.White.floorJump_support",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 139
+  },
+  {
+    "name": "P21.Nonsymmetric.White.floorJump_of_support",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOne.lean",
+    "line": 162
+  },
+  {
+    "name": "P21.Nonsymmetric.White.NonzeroClasses",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.White.nonzeroClasses_complement",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.White.floorJump_complement",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_div_antitone",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_index_lt",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_last",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 54
+  },
+  {
+    "name": "P21.Nonsymmetric.White.beatty_partition_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 73
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 169
+  },
+  {
+    "name": "P21.Nonsymmetric.White.cyclic_white_proved",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+    "line": 221
+  }
+]

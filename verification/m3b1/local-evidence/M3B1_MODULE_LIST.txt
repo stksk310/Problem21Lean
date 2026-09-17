@@ -1,0 +1,16 @@
+P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic
+P21.Nonsymmetric.ColorCap.MinimumOne.ColorA
+P21.Nonsymmetric.ColorCap.MinimumOne.ColorB
+P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput
+P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction
+P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron
+P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure
+P21.Nonsymmetric.ColorCap.MinimumOne.Setup
+P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex
+P21.Nonsymmetric.ColorCap.MinimumOneProof
+P21.Nonsymmetric.White.ClassData
+P21.Nonsymmetric.White.ClassReconstruction
+P21.Nonsymmetric.White.CyclicClasses
+P21.Nonsymmetric.White.RelativeIndex
+P21.Nonsymmetric.White.WidthOne
+P21.Nonsymmetric.White.WidthOneBeatty

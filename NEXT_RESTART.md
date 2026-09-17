@@ -1,3 +1,28 @@
+# M3B1 restart point
+
+Branch: `m3b1-minbox-white`. Immutable base:
+`258d74ac941796c62bb45cc177f22a7396319413`.
+
+MINBOX is proved as the exact unchanged `MinimumOneStatement` by
+`P21.Nonsymmetric.ColorCap.minimum_one_proved`. The necessary specialized
+arithmetic White theorem is proved internally. Read README_M3B1,
+M3B1_STATEMENT_MAP, M3B1_PROOF_ROUTE, M3B1_ALTERNATIVE_PROOF_NOTE and the separate
+post-run HANDOFF_RECEIPT_M3B1.json. Do not restart completed MINBOX work.
+
+The M3 residual frontier is `BoxPositiveExitStatement` only. The new
+`three_arms_impossible_of_dpe` wrapper already supplies MINBOX to the existing
+three-arm reduction. DPE remains unproved and is the next separate milestone.
+Unconditional COLOR-CAP and FULL G4 are still open; later terminal branch
+exclusions and final Problem 21 closure remain outside this milestone.
+
+Preserve every old Lean source and the pinned toolchain/dependencies. Use the
+receipt's exact commit/ZIP/artifact hashes for independent external review.
+Do not merge main as part of this handoff.
+
+---
+
+## Previous M3A restart record (historical)
+
 # M3A restart point
 
 Current branch: `m3-nonsym-g4`. Frozen starting point:

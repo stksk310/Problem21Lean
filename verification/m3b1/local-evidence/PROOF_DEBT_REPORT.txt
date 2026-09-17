@@ -1,0 +1,5 @@
+Project-owned Lean files: 117
+Original frozen M2 lexer; comments/strings masked; ambiguous syntax fails closed.
+Forbidden: admit, axiom, native_decide, opaque, run_tac, sorry, sorryAx, unsafe
+FORBIDDEN CODE TOKENS: 0
+

@@ -1,0 +1,82 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 build P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic P21.Nonsymmetric.ColorCap.MinimumOne.ColorA P21.Nonsymmetric.ColorCap.MinimumOne.ColorB P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure P21.Nonsymmetric.ColorCap.MinimumOne.Setup P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex P21.Nonsymmetric.ColorCap.MinimumOneProof P21.Nonsymmetric.White.ClassData P21.Nonsymmetric.White.ClassReconstruction P21.Nonsymmetric.White.CyclicClasses P21.Nonsymmetric.White.RelativeIndex P21.Nonsymmetric.White.WidthOne P21.Nonsymmetric.White.WidthOneBeatty
+⚠ [1674/1727] Replayed P21.Nonsymmetric.CriticalBox
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [1707/1727] Replayed P21.Nonsymmetric.Arms
+info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:155:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [1709/1727] Replayed P21.Nonsymmetric.Relabel
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1712/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic (13s)
+✔ [1713/1727] Built P21.Nonsymmetric.White.ClassData (13s)
+⚠ [1714/1727] Built P21.Nonsymmetric.White.CyclicClasses (13s)
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:49:48: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:89:22: This simp argument is unused:
+  Int.mul_emod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.sub_emod, Int.emod_eq_of_lt hj hjk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:162:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:175:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:176:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:177:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [1715/1727] Built P21.Nonsymmetric.White.RelativeIndex (12s)
+✔ [1716/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.Setup (13s)
+✔ [1717/1727] Built P21.Nonsymmetric.White.WidthOne (13s)
+✔ [1718/1727] Built P21.Nonsymmetric.White.ClassReconstruction (10s)
+✔ [1719/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex (10s)
+✔ [1720/1727] Built P21.Nonsymmetric.White.WidthOneBeatty (13s)
+✔ [1721/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorB (16s)
+✔ [1722/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput (8.8s)
+✔ [1723/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron (11s)
+✔ [1724/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorA (28s)
+✔ [1725/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure (10s)
+✔ [1726/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction (8.8s)
+✔ [1727/1727] Built P21.Nonsymmetric.ColorCap.MinimumOneProof (7.3s)
+Build completed successfully (1727 jobs).
+
+EXIT_CODE=0

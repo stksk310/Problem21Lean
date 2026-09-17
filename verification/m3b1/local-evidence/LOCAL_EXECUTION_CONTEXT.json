@@ -1,0 +1,7 @@
+{
+  "baseline": "258d74ac941796c62bb45cc177f22a7396319413",
+  "fresh_evidence_root": "C:\\LeanProjects\\Problem21Lean\\m3b1-minbox-white\\audit-evidence\\m3b1-local-fresh",
+  "historical_evidence_root": "C:\\LeanProjects\\Problem21Lean\\m3b1-minbox-white\\audit-evidence\\m3b1",
+  "independent_project_build_directories": true,
+  "result_maps_combined_only_after_success": true
+}

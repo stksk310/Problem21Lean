@@ -1,0 +1,1534 @@
+{
+  "frozen_declarations": 1327,
+  "checked_declarations": 342,
+  "project_specific_axioms": 0,
+  "declarations": {
+    "P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.barycentric_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_17": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_17": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.class_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rotated_integral_class_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsA_eq_socleRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsB": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsB.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.rowsB_eq_socleRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socle.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelJ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelK": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice._simp_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level._simp_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_diagonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_off_diagonal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_rotate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socle_minimum_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.MinimumOne.socle_simplex_empty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimum_one_proved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.CyclicAge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.CyclicWhiteStatement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.NonzeroClasses": [],
+    "P21.Nonsymmetric.White.beatty_adjacent_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_adjacent_gap._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_adjacent_gap._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_div_antitone": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_div_antitone._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_div_antitone._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_gap._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_gap._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_index_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_index_lt._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_index_lt._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_interleaving_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_interleaving_impossible._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_last": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_last._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_last._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_last._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_18": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_19": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_20": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_21": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_22": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_23": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_24": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_25": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_26": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_27": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_28": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_29": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_30": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_31": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_32": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_33": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_34": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_35": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classRepresentative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classRepresentative.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classRepresentative_equation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues": [],
+    "P21.Nonsymmetric.White.classResidues.eq_1": [],
+    "P21.Nonsymmetric.White.classResidues_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_complement._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_complement._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_complement._simp_1_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_lower": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_lower._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_lower._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_lower._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_lower._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.classResidues_sum_mod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.combination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.combination.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.complementary_remainder": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.complementary_remainder._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_jump_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicAge_sum._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_17": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_18": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_19": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_20": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_21": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_22": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_23": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_white_proved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.cyclic_white_proved._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.exists_positive_inverse._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump": [],
+    "P21.Nonsymmetric.White.floorJump.eq_1": [],
+    "P21.Nonsymmetric.White.floorJump_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_bounds._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_bounds._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_complement._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_complement._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_complement._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_complement._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_of_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_of_support._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_of_support._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_of_support._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_support._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.floorJump_support._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.integral_class_of_unit_coordinate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.nonzeroClasses_complement": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_coset_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_cyclic_representatives": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_cyclic_representatives._simp_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_level_coset_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_level_residue_realized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_level_residue_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.relative_residue_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.residue_realized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.small_mass_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.small_mass_impossible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.small_mass_impossible._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.small_mass_impossible._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.weight_combination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.weight_scale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.weight_surjective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.White.weight_surjective._simp_1_1": [
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

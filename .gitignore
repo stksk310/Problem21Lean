@@ -4,3 +4,4 @@ __pycache__/
 audit-evidence/
 delivery/
 verification/m3/*-progress.log
+verification/m3b1/*-progress.log

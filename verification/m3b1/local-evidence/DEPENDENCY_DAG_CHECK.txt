@@ -1,0 +1,361 @@
+{
+  "P21": [
+    "P21.Semantics"
+  ],
+  "P21.Apery": [
+    "P21.PseudoFrobenius"
+  ],
+  "P21.Basic": [
+    "P21.NumericalSemigroup"
+  ],
+  "P21.CanonicalReduction": [
+    "P21.Apery"
+  ],
+  "P21.External.SymmetricThreeGenerator": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.External.SymmetricThreeGeneratorProof": [
+    "P21.Symmetric.Classification.GlueExistence"
+  ],
+  "P21.Factorization": [
+    "Mathlib.NumberTheory.FrobeniusNumber",
+    "Mathlib.Data.Set.Card",
+    "Mathlib.Order.SuccPred.Archimedean",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.NormNum"
+  ],
+  "P21.Nonsymmetric.ActualClassification": [
+    "P21.Nonsymmetric.ActualMixed",
+    "P21.Nonsymmetric.ActualLabels",
+    "P21.Nonsymmetric.Relabel",
+    "P21.Nonsymmetric.Corners",
+    "P21.Nonsymmetric.ReturnLevels",
+    "P21.Nonsymmetric.SameColor",
+    "P21.Nonsymmetric.MixedColor",
+    "P21.Nonsymmetric.ColorCap.Residuals"
+  ],
+  "P21.Nonsymmetric.ActualLabels": [
+    "P21.Nonsymmetric.FourRowCombinatorics",
+    "P21.Nonsymmetric.RowAtlas",
+    "P21.Nonsymmetric.Singletons"
+  ],
+  "P21.Nonsymmetric.ActualMixed": [
+    "P21.Nonsymmetric.MixedColor",
+    "P21.Nonsymmetric.Relabel",
+    "P21.Nonsymmetric.RowAtlas"
+  ],
+  "P21.Nonsymmetric.Arms": [
+    "P21.Nonsymmetric.HerzogCoordinates",
+    "P21.Nonsymmetric.Rows"
+  ],
+  "P21.Nonsymmetric.ColorCap.ActualMinimum": [
+    "P21.Basic",
+    "Mathlib.Tactic.LinearCombination"
+  ],
+  "P21.Nonsymmetric.ColorCap.BoxInput": [
+    "P21.Nonsymmetric.ColorCap.BoxPaths"
+  ],
+  "P21.Nonsymmetric.ColorCap.BoxPaths": [
+    "P21.Nonsymmetric.ColorCap.ActualMinimum"
+  ],
+  "P21.Nonsymmetric.ColorCap.CompanionBounds": [
+    "P21.Nonsymmetric.ColorCap.WhiteCertificates"
+  ],
+  "P21.Nonsymmetric.ColorCap.DPEOneColor": [
+    "P21.Nonsymmetric.ColorCap.BoxInput"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic": [
+    "P21.Nonsymmetric.ColorCap.CompanionBounds",
+    "P21.Nonsymmetric.ColorCap.RelativeLattice"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.ColorA": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.ColorB": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput": [
+    "P21.Nonsymmetric.White.CyclicClasses",
+    "P21.Nonsymmetric.White.WidthOne",
+    "P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput",
+    "P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure",
+    "P21.Nonsymmetric.White.ClassReconstruction",
+    "P21.Nonsymmetric.White.ClassData"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.Setup",
+    "P21.Nonsymmetric.ColorCap.MinimumOne.ColorA",
+    "P21.Nonsymmetric.ColorCap.MinimumOne.ColorB",
+    "P21.Nonsymmetric.Relabel"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.Setup": [
+    "P21.Nonsymmetric.ColorCap.Residuals",
+    "P21.Nonsymmetric.PrimitiveGenerators",
+    "P21.Nonsymmetric.HerzogCoordinates"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.Setup",
+    "P21.Nonsymmetric.White.RelativeIndex"
+  ],
+  "P21.Nonsymmetric.ColorCap.MinimumOneProof": [
+    "P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction",
+    "P21.Nonsymmetric.White.WidthOneBeatty"
+  ],
+  "P21.Nonsymmetric.ColorCap.PositiveMinors": [
+    "P21.Nonsymmetric.ColorCap.BoxInput"
+  ],
+  "P21.Nonsymmetric.ColorCap.PrefixArithmetic": [
+    "P21.Nonsymmetric.ColorCap.BoxPaths"
+  ],
+  "P21.Nonsymmetric.ColorCap.RelativeLattice": [
+    "P21.Nonsymmetric.ColorCap.BoxPaths"
+  ],
+  "P21.Nonsymmetric.ColorCap.Residuals": [
+    "P21.Nonsymmetric.ColorCap.ThreeArms",
+    "P21.Nonsymmetric.ColorCap.RelativeLattice",
+    "P21.Nonsymmetric.ColorCap.CompanionBounds",
+    "P21.Nonsymmetric.ColorCap.DPEOneColor",
+    "P21.Nonsymmetric.ColorCap.PositiveMinors",
+    "P21.Nonsymmetric.ColorCap.PrefixArithmetic"
+  ],
+  "P21.Nonsymmetric.ColorCap.ThreeArms": [
+    "P21.Nonsymmetric.ColorCap.BoxInput",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.ColorCap.WhiteCertificates": [
+    "P21.Nonsymmetric.ColorCap.BoxInput"
+  ],
+  "P21.Nonsymmetric.ComplementGeometry": [
+    "P21.Nonsymmetric.Rows",
+    "P21.Nonsymmetric.HerzogCoordinates",
+    "P21.Nonsymmetric.CriticalBox"
+  ],
+  "P21.Nonsymmetric.Corners": [
+    "P21.Nonsymmetric.RowAtlas",
+    "P21.Nonsymmetric.Singletons"
+  ],
+  "P21.Nonsymmetric.CriticalBox": [
+    "P21.Symmetric.Classification.CriticalRelations"
+  ],
+  "P21.Nonsymmetric.Extraction": [
+    "P21.Nonsymmetric.MixedColor",
+    "P21.Nonsymmetric.Saturation",
+    "P21.Nonsymmetric.MatchedPair",
+    "P21.Nonsymmetric.Relabel"
+  ],
+  "P21.Nonsymmetric.FourRowCombinatorics": [
+    "P21.Nonsymmetric.HerzogCoordinates",
+    "Mathlib.Tactic.DeriveFintype"
+  ],
+  "P21.Nonsymmetric.Herzog.PseudoFrobenius": [
+    "P21.Nonsymmetric.HerzogClassification"
+  ],
+  "P21.Nonsymmetric.HerzogClassification": [
+    "P21.Nonsymmetric.HerzogData",
+    "P21.Symmetric.Classification.GcdDecomposition"
+  ],
+  "P21.Nonsymmetric.HerzogCoordinates": [
+    "P21.Nonsymmetric.HerzogData"
+  ],
+  "P21.Nonsymmetric.HerzogData": [
+    "P21.Symmetric.Classification.CriticalRelations",
+    "P21.External.SymmetricThreeGenerator"
+  ],
+  "P21.Nonsymmetric.Kernel": [
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.LinearCombination",
+    "Mathlib.Data.Rat.Floor",
+    "P21.Nonsymmetric.CriticalBox",
+    "P21.Nonsymmetric.HerzogData"
+  ],
+  "P21.Nonsymmetric.MatchedPair": [
+    "P21.Nonsymmetric.Kernel",
+    "P21.Nonsymmetric.Rows"
+  ],
+  "P21.Nonsymmetric.MixedColor": [
+    "P21.Nonsymmetric.SameColor",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.PrimitiveGenerators": [
+    "P21.Nonsymmetric.Kernel",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius",
+    "Mathlib.LinearAlgebra.Matrix.Determinant.Basic"
+  ],
+  "P21.Nonsymmetric.Relabel": [
+    "P21.Nonsymmetric.RowAtlas",
+    "P21.Nonsymmetric.Arms",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.ReturnLevels": [
+    "P21.Nonsymmetric.Singletons",
+    "P21.Nonsymmetric.MatchedPair",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.RowAtlas": [
+    "P21.Nonsymmetric.Arms",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.Rows": [
+    "P21.Semantics",
+    "P21.External.SymmetricThreeGenerator",
+    "P21.Symmetric.Classification.CriticalRelations"
+  ],
+  "P21.Nonsymmetric.SameColor": [
+    "P21.Nonsymmetric.Kernel",
+    "P21.Nonsymmetric.ComplementGeometry",
+    "P21.Nonsymmetric.Singletons",
+    "P21.Nonsymmetric.Herzog.PseudoFrobenius"
+  ],
+  "P21.Nonsymmetric.Saturation": [
+    "P21.Nonsymmetric.Singletons",
+    "P21.Nonsymmetric.Kernel"
+  ],
+  "P21.Nonsymmetric.SelectedExtraction": [
+    "P21.Nonsymmetric.ActualClassification",
+    "P21.Nonsymmetric.Extraction"
+  ],
+  "P21.Nonsymmetric.Singletons": [
+    "P21.Nonsymmetric.Rows",
+    "P21.Nonsymmetric.CriticalBox"
+  ],
+  "P21.Nonsymmetric.White.ClassData": [
+    "P21.Nonsymmetric.ColorCap.RelativeLattice",
+    "Mathlib.Data.Int.GCD"
+  ],
+  "P21.Nonsymmetric.White.ClassReconstruction": [
+    "P21.Nonsymmetric.White.CyclicClasses",
+    "P21.Nonsymmetric.HerzogCoordinates"
+  ],
+  "P21.Nonsymmetric.White.CyclicClasses": [
+    "P21.Nonsymmetric.ColorCap.RelativeLattice"
+  ],
+  "P21.Nonsymmetric.White.RelativeIndex": [
+    "P21.Nonsymmetric.ColorCap.RelativeLattice",
+    "P21.Nonsymmetric.PrimitiveGenerators",
+    "Mathlib.Data.Int.ModEq"
+  ],
+  "P21.Nonsymmetric.White.WidthOne": [
+    "P21.Nonsymmetric.ColorCap.RelativeLattice"
+  ],
+  "P21.Nonsymmetric.White.WidthOneBeatty": [
+    "P21.Nonsymmetric.White.WidthOne",
+    "Mathlib.Data.Int.LeastGreatest"
+  ],
+  "P21.NumericalSemigroup": [
+    "P21.Factorization",
+    "Mathlib.Data.Int.Interval",
+    "Mathlib.Data.Int.SuccPred"
+  ],
+  "P21.PseudoFrobenius": [
+    "P21.Basic"
+  ],
+  "P21.Selection": [
+    "P21.Tail"
+  ],
+  "P21.Semantics": [
+    "P21.Selection"
+  ],
+  "P21.Symmetric.BranchI": [
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.BranchIActual": [
+    "P21.Symmetric.BranchI",
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.BranchII": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.BranchIIActual": [
+    "P21.Symmetric.BranchII",
+    "P21.Symmetric.Raw4",
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.Raw4Consequences"
+  ],
+  "P21.Symmetric.Classification.AperyCardinality": [
+    "P21.Symmetric.Classification.TailNumericalSemigroup"
+  ],
+  "P21.Symmetric.Classification.CriticalRelations": [
+    "P21.Basic"
+  ],
+  "P21.Symmetric.Classification.GcdDecomposition": [
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.Classification.GlueExistence": [
+    "P21.Symmetric.Classification.TopFactorization",
+    "P21.Symmetric.Classification.UniqueTop"
+  ],
+  "P21.Symmetric.Classification.SymmetricRigidity": [
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.Classification.TailNumericalSemigroup": [
+    "P21.External.SymmetricThreeGenerator"
+  ],
+  "P21.Symmetric.Classification.TopFactorization": [
+    "P21.Symmetric.Classification.SymmetricRigidity",
+    "P21.Symmetric.Classification.GcdDecomposition"
+  ],
+  "P21.Symmetric.Classification.UniqueTop": [
+    "P21.Symmetric.Classification.SymmetricRigidity",
+    "P21.Symmetric.Classification.AperyCardinality",
+    "P21.Symmetric.Classification.GcdDecomposition"
+  ],
+  "P21.Symmetric.Closure": [
+    "P21.Symmetric.BranchIIActual",
+    "P21.External.SymmetricThreeGenerator"
+  ],
+  "P21.Symmetric.CrossLayer": [
+    "P21.Symmetric.RawRows",
+    "P21.Symmetric.GlueNormalForm"
+  ],
+  "P21.Symmetric.FullClosure": [
+    "P21.External.SymmetricThreeGeneratorProof",
+    "P21.Symmetric.Closure"
+  ],
+  "P21.Symmetric.GlueNormalForm": [
+    "P21.Symmetric.StableCore",
+    "P21.Symmetric.TwoGenerator"
+  ],
+  "P21.Symmetric.Raw4": [
+    "P21.Symmetric.TwoGeneratorIdeal",
+    "P21.Symmetric.GlueNormalForm",
+    "P21.Symmetric.TypeBridge"
+  ],
+  "P21.Symmetric.Raw4Consequences": [
+    "P21.Symmetric.Raw4",
+    "P21.Symmetric.Reduction",
+    "P21.Symmetric.BranchIActual"
+  ],
+  "P21.Symmetric.RawRows": [
+    "P21.Symmetric.TypeBridge"
+  ],
+  "P21.Symmetric.Reduction": [
+    "P21.Symmetric.CrossLayer"
+  ],
+  "P21.Symmetric.StableCore": [
+    "P21"
+  ],
+  "P21.Symmetric.TwoGenerator": [
+    "P21.NumericalSemigroup",
+    "Mathlib.Tactic.LinearCombination"
+  ],
+  "P21.Symmetric.TwoGeneratorIdeal": [
+    "P21.Symmetric.TwoGenerator",
+    "P21.Symmetric.StableCore"
+  ],
+  "P21.Symmetric.TypeBridge": [
+    "P21.Symmetric.StableCore"
+  ],
+  "P21.Tail": [
+    "P21.CanonicalReduction"
+  ]
+}
+ACYCLIC

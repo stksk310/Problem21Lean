@@ -1,0 +1,248 @@
+## ROOT_BUILD_LOG.txt
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 build
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (9.3s)
+✔ [1590/1598] Built P21.Basic (9.7s)
+✔ [1591/1598] Built P21.PseudoFrobenius (8.2s)
+✔ [1592/1598] Built P21.Apery (9.4s)
+✔ [1593/1598] Built P21.CanonicalReduction (9.3s)
+✔ [1594/1598] Built P21.Tail (9.6s)
+✔ [1595/1598] Built P21.Selection (10s)
+✔ [1596/1598] Built P21.Semantics (9.6s)
+✔ [1597/1598] Built P21 (9.5s)
+Build completed successfully (1598 jobs).
+
+EXIT_CODE=0
+
+## FROZEN_BUILD_LOG.txt
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 build P21.Apery P21.Basic P21.CanonicalReduction P21.External.SymmetricThreeGenerator P21.External.SymmetricThreeGeneratorProof P21.Factorization P21.Nonsymmetric.ActualClassification P21.Nonsymmetric.ActualLabels P21.Nonsymmetric.ActualMixed P21.Nonsymmetric.Arms P21.Nonsymmetric.ColorCap.ActualMinimum P21.Nonsymmetric.ColorCap.BoxInput P21.Nonsymmetric.ColorCap.BoxPaths P21.Nonsymmetric.ColorCap.CompanionBounds P21.Nonsymmetric.ColorCap.DPEOneColor P21.Nonsymmetric.ColorCap.PositiveMinors P21.Nonsymmetric.ColorCap.PrefixArithmetic P21.Nonsymmetric.ColorCap.RelativeLattice P21.Nonsymmetric.ColorCap.Residuals P21.Nonsymmetric.ColorCap.ThreeArms P21.Nonsymmetric.ColorCap.WhiteCertificates P21.Nonsymmetric.ComplementGeometry P21.Nonsymmetric.Corners P21.Nonsymmetric.CriticalBox P21.Nonsymmetric.Extraction P21.Nonsymmetric.FourRowCombinatorics P21.Nonsymmetric.Herzog.PseudoFrobenius P21.Nonsymmetric.HerzogClassification P21.Nonsymmetric.HerzogCoordinates P21.Nonsymmetric.HerzogData P21.Nonsymmetric.Kernel P21.Nonsymmetric.MatchedPair P21.Nonsymmetric.MixedColor P21.Nonsymmetric.PrimitiveGenerators P21.Nonsymmetric.Relabel P21.Nonsymmetric.ReturnLevels P21.Nonsymmetric.RowAtlas P21.Nonsymmetric.Rows P21.Nonsymmetric.SameColor P21.Nonsymmetric.Saturation P21.Nonsymmetric.SelectedExtraction P21.Nonsymmetric.Singletons P21.NumericalSemigroup P21.PseudoFrobenius P21.Selection P21.Semantics P21.Symmetric.BranchI P21.Symmetric.BranchIActual P21.Symmetric.BranchII P21.Symmetric.BranchIIActual P21.Symmetric.Classification.AperyCardinality P21.Symmetric.Classification.CriticalRelations P21.Symmetric.Classification.GcdDecomposition P21.Symmetric.Classification.GlueExistence P21.Symmetric.Classification.SymmetricRigidity P21.Symmetric.Classification.TailNumericalSemigroup P21.Symmetric.Classification.TopFactorization P21.Symmetric.Classification.UniqueTop P21.Symmetric.Closure P21.Symmetric.CrossLayer P21.Symmetric.FullClosure P21.Symmetric.GlueNormalForm P21.Symmetric.Raw4 P21.Symmetric.Raw4Consequences P21.Symmetric.RawRows P21.Symmetric.Reduction P21.Symmetric.StableCore P21.Symmetric.TwoGenerator P21.Symmetric.TwoGeneratorIdeal P21.Symmetric.TypeBridge P21.Tail
+✔ [1686/1747] Built P21.Symmetric.Classification.CriticalRelations (17s)
+✔ [1687/1747] Built P21.Nonsymmetric.ColorCap.ActualMinimum (18s)
+✔ [1688/1747] Built P21.Symmetric.StableCore (18s)
+✔ [1689/1747] Built P21.Symmetric.TwoGenerator (19s)
+✔ [1690/1747] Built P21.Symmetric.TypeBridge (78s)
+✔ [1691/1747] Built P21.Nonsymmetric.ColorCap.BoxPaths (81s)
+✔ [1692/1747] Built P21.Symmetric.TwoGeneratorIdeal (81s)
+✔ [1693/1747] Built P21.Symmetric.GlueNormalForm (82s)
+✔ [1694/1747] Built P21.Symmetric.Classification.SymmetricRigidity (82s)
+✔ [1695/1747] Built P21.Symmetric.RawRows (11s)
+✔ [1696/1747] Built P21.External.SymmetricThreeGenerator (10s)
+✔ [1697/1747] Built P21.Nonsymmetric.ColorCap.RelativeLattice (12s)
+✔ [1698/1747] Built P21.Nonsymmetric.ColorCap.PrefixArithmetic (13s)
+✔ [1699/1747] Built P21.Symmetric.BranchI (93s)
+✔ [1700/1747] Built P21.Symmetric.Classification.GcdDecomposition (12s)
+✔ [1701/1747] Built P21.Symmetric.Raw4 (16s)
+✔ [1702/1747] Built P21.Nonsymmetric.ColorCap.BoxInput (20s)
+✔ [1703/1747] Built P21.Symmetric.BranchII (18s)
+✔ [1704/1747] Built P21.Nonsymmetric.HerzogData (10s)
+✔ [1705/1747] Built P21.Symmetric.CrossLayer (14s)
+✔ [1706/1747] Built P21.Symmetric.BranchIActual (10s)
+✔ [1707/1747] Built P21.Symmetric.Classification.TopFactorization (10s)
+✔ [1708/1747] Built P21.Symmetric.Classification.TailNumericalSemigroup (14s)
+✔ [1709/1747] Built P21.Nonsymmetric.Rows (15s)
+✔ [1710/1747] Built P21.Symmetric.Reduction (10s)
+⚠ [1711/1747] Built P21.Nonsymmetric.CriticalBox (117s)
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [1712/1747] Built P21.Nonsymmetric.HerzogCoordinates (13s)
+✔ [1713/1747] Built P21.Symmetric.Classification.AperyCardinality (11s)
+✔ [1714/1747] Built P21.Nonsymmetric.ColorCap.DPEOneColor (22s)
+✔ [1715/1747] Built P21.Nonsymmetric.ColorCap.PositiveMinors (23s)
+✔ [1716/1747] Built P21.Nonsymmetric.ColorCap.WhiteCertificates (23s)
+✔ [1717/1747] Built P21.Nonsymmetric.HerzogClassification (21s)
+✔ [1718/1747] Built P21.Nonsymmetric.Singletons (14s)
+✔ [1719/1747] Built P21.Symmetric.Raw4Consequences (15s)
+ℹ [1720/1747] Built P21.Nonsymmetric.Arms (14s)
+info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:155:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [1721/1747] Built P21.Symmetric.Classification.UniqueTop (14s)
+✔ [1722/1747] Built P21.Nonsymmetric.Kernel (19s)
+✔ [1723/1747] Built P21.Nonsymmetric.Herzog.PseudoFrobenius (11s)
+✔ [1724/1747] Built P21.Symmetric.BranchIIActual (8.0s)
+✔ [1725/1747] Built P21.Nonsymmetric.ComplementGeometry (23s)
+✔ [1726/1747] Built P21.Nonsymmetric.FourRowCombinatorics (23s)
+✔ [1727/1747] Built P21.Symmetric.Classification.GlueExistence (8.9s)
+✔ [1728/1747] Built P21.Nonsymmetric.ColorCap.CompanionBounds (19s)
+✔ [1729/1747] Built P21.Nonsymmetric.RowAtlas (10s)
+✔ [1730/1747] Built P21.Symmetric.Closure (9.9s)
+✔ [1731/1747] Built P21.Nonsymmetric.ColorCap.ThreeArms (13s)
+✔ [1732/1747] Built P21.External.SymmetricThreeGeneratorProof (8.3s)
+✔ [1733/1747] Built P21.Nonsymmetric.PrimitiveGenerators (16s)
+✔ [1734/1747] Built P21.Nonsymmetric.ActualLabels (9.5s)
+✔ [1735/1747] Built P21.Nonsymmetric.ColorCap.Residuals (9.0s)
+✔ [1736/1747] Built P21.Symmetric.FullClosure (9.2s)
+✔ [1737/1747] Built P21.Nonsymmetric.SameColor (20s)
+✔ [1738/1747] Built P21.Nonsymmetric.Corners (20s)
+⚠ [1739/1747] Built P21.Nonsymmetric.Relabel (20s)
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1740/1747] Built P21.Nonsymmetric.MixedColor (25s)
+⚠ [1741/1747] Built P21.Nonsymmetric.MatchedPair (56s)
+warning: P21/Nonsymmetric/MatchedPair.lean:65:26: Variable name `hz'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [1742/1747] Built P21.Nonsymmetric.Saturation (57s)
+✔ [1743/1747] Built P21.Nonsymmetric.ActualMixed (7.9s)
+✔ [1744/1747] Built P21.Nonsymmetric.Extraction (11s)
+⚠ [1745/1747] Built P21.Nonsymmetric.ReturnLevels (29s)
+warning: P21/Nonsymmetric/ReturnLevels.lean:15:10: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.toNat_of_nonneg hl, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ReturnLevels.lean:14:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [1746/1747] Built P21.Nonsymmetric.ActualClassification (10s)
+✔ [1747/1747] Built P21.Nonsymmetric.SelectedExtraction (10s)
+Build completed successfully (1747 jobs).
+
+EXIT_CODE=0
+
+## BUILD_LOG_M3B1.txt
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 build P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic P21.Nonsymmetric.ColorCap.MinimumOne.ColorA P21.Nonsymmetric.ColorCap.MinimumOne.ColorB P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure P21.Nonsymmetric.ColorCap.MinimumOne.Setup P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex P21.Nonsymmetric.ColorCap.MinimumOneProof P21.Nonsymmetric.White.ClassData P21.Nonsymmetric.White.ClassReconstruction P21.Nonsymmetric.White.CyclicClasses P21.Nonsymmetric.White.RelativeIndex P21.Nonsymmetric.White.WidthOne P21.Nonsymmetric.White.WidthOneBeatty
+⚠ [1674/1727] Replayed P21.Nonsymmetric.CriticalBox
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+ℹ [1707/1727] Replayed P21.Nonsymmetric.Arms
+info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:155:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+⚠ [1709/1727] Replayed P21.Nonsymmetric.Relabel
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1712/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic (13s)
+✔ [1713/1727] Built P21.Nonsymmetric.White.ClassData (13s)
+⚠ [1714/1727] Built P21.Nonsymmetric.White.CyclicClasses (13s)
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:49:48: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:89:22: This simp argument is unused:
+  Int.mul_emod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.sub_emod, Int.emod_eq_of_lt hj hjk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:162:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:175:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:176:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:177:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [1715/1727] Built P21.Nonsymmetric.White.RelativeIndex (12s)
+✔ [1716/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.Setup (13s)
+✔ [1717/1727] Built P21.Nonsymmetric.White.WidthOne (13s)
+✔ [1718/1727] Built P21.Nonsymmetric.White.ClassReconstruction (10s)
+✔ [1719/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex (10s)
+✔ [1720/1727] Built P21.Nonsymmetric.White.WidthOneBeatty (13s)
+✔ [1721/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorB (16s)
+✔ [1722/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput (8.8s)
+✔ [1723/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.EmptyTetrahedron (11s)
+✔ [1724/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorA (28s)
+✔ [1725/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure (10s)
+✔ [1726/1727] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction (8.8s)
+✔ [1727/1727] Built P21.Nonsymmetric.ColorCap.MinimumOneProof (7.3s)
+Build completed successfully (1727 jobs).
+
+EXIT_CODE=0
+
+## REGRESSION_REPORT_M3B1.txt
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 env lean verification\m3b1\StatementRegression.lean
+'P21.Nonsymmetric.ColorCap.minimum_one_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_white_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+def P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop :=
+∀ (g : Generators),
+  g.Setting →
+    (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) →
+      ∀ (D : HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : Point),
+        0 < k →
+          (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
+            (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
+              (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
+                  (if colorA = true then D.fA else D.fB) = ↑k' * g.m + value g.n x' → k ≤ k') →
+                k = 1
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+
+EXIT_CODE=0

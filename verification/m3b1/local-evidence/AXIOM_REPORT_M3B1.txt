@@ -1,0 +1,501 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 env lean verification/m3b1/GeneratedAxiomCheck.lean
+'P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.barycentric_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_11' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_12' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_13' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_14' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_15' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_16' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_17' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_18' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_19' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_10' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_11' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_12' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB._proof_1_9' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_10' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_8' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction._proof_1_9' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_10' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_11' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_12' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_13' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_14' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_15' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_16' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_17' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA._proof_1_9' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_10' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_11' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_12' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB._proof_1_9' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_4' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_5' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_6' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white._proof_1_7' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rotated_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA._proof_1' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA.eq_1' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA_eq_socleRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsB' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsB.eq_1' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsB_eq_socleRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socle.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelK' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice._simp_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level._simp_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows._proof_1' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_off_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_rotate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socle_minimum_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socle_simplex_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.minimum_one_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.CyclicAge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.CyclicWhiteStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.NonzeroClasses' does not depend on any axioms
+'P21.Nonsymmetric.White.beatty_adjacent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_adjacent_gap._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_adjacent_gap._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_div_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_div_antitone._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_div_antitone._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_gap._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_gap._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_index_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_index_lt._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_index_lt._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_interleaving_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_interleaving_impossible._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_last._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_last._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_last._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_10' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_11' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_12' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_13' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_14' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_15' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_16' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_17' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_18' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_19' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_20' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_21' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_22' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_23' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_24' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_25' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_26' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_27' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_28' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_29' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_30' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_31' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_32' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_33' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_34' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_35' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.beatty_partition_impossible._proof_1_9' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.classRepresentative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classRepresentative.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classRepresentative_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues' does not depend on any axioms
+'P21.Nonsymmetric.White.classResidues.eq_1' does not depend on any axioms
+'P21.Nonsymmetric.White.classResidues_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_complement._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_complement._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_complement._simp_1_1' depends on axioms: [propext]
+'P21.Nonsymmetric.White.classResidues_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_lower._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_lower._proof_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_lower._proof_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_lower._proof_1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.classResidues_sum_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.combination.eq_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.complementary_remainder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.complementary_remainder._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_jump_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_jump_sum._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_nonzero._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicAge_sum._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_10' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_11' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_12' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_13' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_14' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_15' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_16' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_17' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_18' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_19' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_20' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_21' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_22' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_23' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_3' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_6' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_7' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_8' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclicWhite_sorted_impossible._proof_1_9' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_10' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_age_of_minimum._proof_1_9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_white_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_white_proved._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.exists_positive_inverse._proof_1_5' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump' does not depend on any axioms
+'P21.Nonsymmetric.White.floorJump.eq_1' does not depend on any axioms
+'P21.Nonsymmetric.White.floorJump_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_bounds._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_bounds._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_complement._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_complement._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_complement._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_complement._proof_1_4' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_of_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_of_support._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_of_support._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_of_support._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_support._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.floorJump_support._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.integral_class_of_unit_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_2' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.integral_class_of_unit_coordinate._proof_1_3' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.nonzeroClasses_complement' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.relative_coset_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.relative_cyclic_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.relative_cyclic_representatives._simp_1_1' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.White.relative_level_coset_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.relative_level_residue_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.relative_level_residue_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.relative_residue_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.residue_realized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.small_mass_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.small_mass_impossible._proof_1_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.small_mass_impossible._proof_1_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.small_mass_impossible._proof_1_3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.weight_combination' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.weight_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.weight_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.weight_surjective._simp_1_1' depends on axioms: [propext, Quot.sound]
+
+EXIT_CODE=0

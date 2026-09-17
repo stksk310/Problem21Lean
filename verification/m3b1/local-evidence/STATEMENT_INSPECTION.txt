@@ -1,0 +1,412 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 env lean verification/m3b1/GeneratedStatementCheck.lean
+P21.Nonsymmetric.ColorCap.MinimumOne.rowsA (a b : P21.Nonsymmetric.ColorCap.Point) :
+  Fin 3 → P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.MinimumOne.rowsB (a b : P21.Nonsymmetric.ColorCap.Point) :
+  Fin 3 → P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point)
+  (z : P21.Nonsymmetric.ColorCap.Point) (q ell : ℤ) : P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_identity (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point)
+  (p z : P21.Nonsymmetric.ColorCap.Point) (k r q ell : ℤ) (hinv : r * q = 1 + ell * k)
+  (hz : ∀ (i : Fin 3), k * z i = R 0 i + r * (R 1 i - R 2 i) - p i) (i : Fin 3) :
+  k * P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass R z q ell i = q * R 0 i + (R 1 i - R 2 i) - q * p i
+P21.Nonsymmetric.ColorCap.MinimumOne.class_weight (n p z : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (s m k r : ℤ) (hk : k ≠ 0)
+  (hp : P21.Nonsymmetric.ColorCap.weight n p = s - k * m)
+  (hR : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight n (R i) = s)
+  (hz : ∀ (i : Fin 3), k * z i = R 0 i + r * (R 1 i - R 2 i) - p i) : P21.Nonsymmetric.ColorCap.weight n z = m
+P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_weight (n z : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (s m q ell : ℤ)
+  (hR : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight n (R i) = s) (hz : P21.Nonsymmetric.ColorCap.weight n z = m) :
+  P21.Nonsymmetric.ColorCap.weight n (P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass R z q ell) = q * m
+P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual (g : P21.Generators) (f s : ℤ) (k : ℕ)
+  (a b p z : P21.Nonsymmetric.ColorCap.Point) (j : ℤ) (hs : f + ∑ i, g.n i = s)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x' → k ≤ k') (hj : 0 < j) (hjk : j < ↑k)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.rowsA a b i) = s)
+  (hzw : P21.Nonsymmetric.ColorCap.weight g.n z = j * g.m) (hp : ∀ (i : Fin 3), 1 ≤ p i)
+  (hpa : ∀ (i : Fin 3), p i < a i) (hb : ∀ (i : Fin 3), 1 ≤ b i)
+  (hc : 0 < -z 0 ∧ -z 0 < p 0 + b 0 ∧ -a 1 < z 1 ∧ z 1 < b 1 ∧ 0 < z 2 ∧ z 2 < a 2 + b 2) :
+  p 0 ≤ -z 0 ∧ -z 0 ≤ b 0 ∧ 0 ≤ z 1 ∧ z 1 ≤ b 1 - p 1 ∧ a 2 ≤ z 2 ∧ z 2 ≤ a 2 + b 2 - p 2
+P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA (a b p : P21.Nonsymmetric.ColorCap.Point) (k r q ell X Y Z : ℤ)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hpa : ∀ (i : Fin 3), p i < a i) (hb : ∀ (i : Fin 3), 1 ≤ b i) (hk : 2 ≤ k) (hr : 1 ≤ r)
+  (_hrk : r < k) (hq : 1 ≤ q) (hqk : q < k) (hinv : r * q = 1 + ell * k) (hfirst : (r - 1) * a 1 ≤ b 1 - p 1)
+  (heX : k * X = b 0 + q * p 0) (heY : k * Y = q * (b 1 - p 1) + (q - 1) * a 1)
+  (heZ : k * Z = (q + 1) * a 2 + b 2 - q * p 2) : 0 < X ∧ X < p 0 + b 0 ∧ -a 1 < Y ∧ Y < b 1 ∧ 0 < Z ∧ Z < a 2 + b 2
+P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction (g : P21.Generators) (f s : ℤ) (k : ℕ)
+  (a b p z : P21.Nonsymmetric.ColorCap.Point) (r q ell : ℤ) (hm : 0 < g.m) (hn : ∀ (i : Fin 3), g.m < g.n i)
+  (hs : f + ∑ i, g.n i = s) (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x' → k ≤ k')
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hpa : ∀ (i : Fin 3), p i < a i) (hb : ∀ (i : Fin 3), 1 ≤ b i) (hk : 2 ≤ ↑k)
+  (hr : 1 ≤ r) (hrk : r < ↑k) (hq : 1 ≤ q) (hqk : q < ↑k) (hinv : r * q = 1 + ell * ↑k)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.rowsA a b i) = s)
+  (hz :
+    ∀ (i : Fin 3),
+      ↑k * z i =
+        P21.Nonsymmetric.ColorCap.MinimumOne.rowsA a b 0 i +
+            r *
+              (P21.Nonsymmetric.ColorCap.MinimumOne.rowsA a b 1 i -
+                P21.Nonsymmetric.ColorCap.MinimumOne.rowsA a b 2 i) -
+          p i) :
+  False
+P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual (g : P21.Generators) (f s : ℤ) (k : ℕ)
+  (a b p z : P21.Nonsymmetric.ColorCap.Point) (j : ℤ) (hs : f + ∑ i, g.n i = s)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x' → k ≤ k') (hj : 0 < j) (hjk : j < ↑k)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.rowsB a b i) = s)
+  (hzw : P21.Nonsymmetric.ColorCap.weight g.n z = j * g.m) (hp : ∀ (i : Fin 3), 1 ≤ p i)
+  (hpb : ∀ (i : Fin 3), p i < b i) (ha : ∀ (i : Fin 3), 1 ≤ a i)
+  (hc : -p 0 < z 0 ∧ z 0 < a 0 ∧ 0 < -z 1 ∧ -z 1 < a 1 + b 1 ∧ 0 < z 2 ∧ z 2 < a 2 + b 2) :
+  0 ≤ z 0 ∧ z 0 ≤ a 0 - p 0 ∧ p 1 ≤ -z 1 ∧ -z 1 ≤ a 1 ∧ b 2 ≤ z 2 ∧ z 2 ≤ a 2 + b 2 - p 2
+P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB (a b p : P21.Nonsymmetric.ColorCap.Point) (k r X Y Z : ℤ)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hpb : ∀ (i : Fin 3), p i < b i) (ha : ∀ (i : Fin 3), 1 ≤ a i) (hk : 2 ≤ k) (hr : 1 ≤ r)
+  (hrk : r < k) (heX : k * X = r * a 0 - p 0) (heY : k * Y = r * (a 1 + b 1) - b 1 + p 1)
+  (heZ : k * Z = a 2 + (r + 1) * b 2 - p 2) : -p 0 < X ∧ X < a 0 ∧ 0 < Y ∧ Y < a 1 + b 1 ∧ 0 < Z ∧ Z < a 2 + b 2
+P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB (a b p : P21.Nonsymmetric.ColorCap.Point) (k q X Y Z : ℤ)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hpb : ∀ (i : Fin 3), p i < b i) (ha : ∀ (i : Fin 3), 1 ≤ a i) (hk : 2 ≤ k) (hq : 1 ≤ q)
+  (hqk : q < k) (heX : k * X = a 0 - q * p 0) (heY : k * Y = a 1 - (q - 1) * b 1 + q * p 1)
+  (heZ : k * Z = q * a 2 + (q + 1) * b 2 - q * p 2) : -p 0 < X ∧ X < a 0 ∧ Y < a 1 + b 1 ∧ 0 < Z ∧ Z < a 2 + b 2
+P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction (g : P21.Generators) (f s : ℤ) (k : ℕ)
+  (a b p z : P21.Nonsymmetric.ColorCap.Point) (r q ell : ℤ) (hm : 0 < g.m) (hn : ∀ (i : Fin 3), g.m < g.n i)
+  (hs : f + ∑ i, g.n i = s) (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x' → k ≤ k')
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hpb : ∀ (i : Fin 3), p i < b i) (ha : ∀ (i : Fin 3), 1 ≤ a i) (hk : 2 ≤ ↑k)
+  (hr : 1 ≤ r) (hrk : r < ↑k) (hq : 1 ≤ q) (hqk : q < ↑k) (hinv : r * q = 1 + ell * ↑k)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.rowsB a b i) = s)
+  (hz :
+    ∀ (i : Fin 3),
+      ↑k * z i =
+        P21.Nonsymmetric.ColorCap.MinimumOne.rowsB a b 0 i +
+            r *
+              (P21.Nonsymmetric.ColorCap.MinimumOne.rowsB a b 1 i -
+                P21.Nonsymmetric.ColorCap.MinimumOne.rowsB a b 2 i) -
+          p i) :
+  False
+P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_input (g : P21.Generators) (s : g.Setting)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (k : ℕ)
+  (p : P21.Nonsymmetric.ColorCap.Point) (hk : 2 ≤ k) (hp : ∀ (i : Fin 3), 1 ≤ p i)
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i)
+  (hmin : ∀ (k' : ℕ) (x : Fin 3 → ℕ), (if c = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x → k ≤ k') :
+  ∃ z t,
+    ∑ i, t i = 1 ∧
+      (∀ (l : Fin 3), ↑k * z l = ∑ i, t i * (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i l - p l)) ∧
+        ∀ (j : ℤ),
+          0 < j →
+            j < ↑k →
+              (∀ (i : Fin 3), 0 < P21.Nonsymmetric.White.classResidues (↑k) t j i) ∧
+                ∑ i, P21.Nonsymmetric.White.classResidues (↑k) t j i = ↑k + j
+P21.Nonsymmetric.ColorCap.MinimumOne.exists_cyclic_age (g : P21.Generators) (s : g.Setting)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (k : ℕ)
+  (p : P21.Nonsymmetric.ColorCap.Point) (hk : 2 ≤ k) (hp : ∀ (i : Fin 3), 1 ≤ p i)
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i)
+  (hmin : ∀ (k' : ℕ) (x : Fin 3 → ℕ), (if c = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x → k ≤ k') :
+  ∃ v a,
+    (∀ (i : Fin 3), 0 < a i ∧ a i < ↑k) ∧
+      P21.Nonsymmetric.White.CyclicAge (↑k) a ∧
+        ∀ (l : Fin 3), ↑k * v l = ∑ i, a i * (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i l - p l)
+P21.Nonsymmetric.ColorCap.MinimumOne.minimum_one_of_cyclic_white
+  (hwhite : P21.Nonsymmetric.White.CyclicWhiteStatement) : P21.Nonsymmetric.ColorCap.MinimumOneStatement
+P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex (p : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (u : P21.Nonsymmetric.ColorCap.Point) : Prop
+P21.Nonsymmetric.ColorCap.MinimumOne.simplex_positive_or_row (p : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (u : P21.Nonsymmetric.ColorCap.Point) (hp : ∀ (j : Fin 3), 1 ≤ p j)
+  (hdiag : ∀ (j : Fin 3), R j j = 0) (hpos : ∀ (i j : Fin 3), i ≠ j → 0 < R i j)
+  (hu : P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex p R u) : (∀ (j : Fin 3), 1 ≤ u j) ∨ ∃ i, u = R i
+P21.Nonsymmetric.ColorCap.MinimumOne.barycentric_weight (n p : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (u : P21.Nonsymmetric.ColorCap.Point) (t : Fin 3 → ℚ) (s : ℤ)
+  (hR : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight n (R i) = s)
+  (he : ∀ (j : Fin 3), ↑(u j) = (1 - ∑ i, t i) * ↑(p j) + ∑ i, t i * ↑(R i j)) :
+  ↑s - ↑(P21.Nonsymmetric.ColorCap.weight n u) = (1 - ∑ i, t i) * (↑s - ↑(P21.Nonsymmetric.ColorCap.weight n p))
+P21.Nonsymmetric.ColorCap.MinimumOne.minimum_simplex_empty (g : P21.Generators) (s : g.Setting) (f : ℤ) (k : ℕ)
+  (p : P21.Nonsymmetric.ColorCap.Point) (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (hk : 0 < k)
+  (hp : ∀ (j : Fin 3), 1 ≤ p j) (hf : f ∉ g.H)
+  (hR : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (R i) = f + ∑ j, g.n j) (hdiag : ∀ (j : Fin 3), R j j = 0)
+  (hpos : ∀ (i j : Fin 3), i ≠ j → 0 < R i j)
+  (hlevel : f + ∑ j, g.n j - P21.Nonsymmetric.ColorCap.weight g.n p = ↑k * g.m)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x' → k ≤ k') (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu : P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex p R u)
+  (hlattice : u - p ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n g.m) : u = p ∨ ∃ i, u = R i
+P21.Nonsymmetric.ColorCap.MinimumOne.socle_simplex_empty {g : P21.Generators} (s : g.Setting)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point) (hk : 0 < k)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), (if c = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k')
+  (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu : P21.Nonsymmetric.ColorCap.MinimumOne.InSocleSimplex p (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c) u)
+  (hlattice : u - p ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n g.m) :
+  u = p ∨ ∃ i, u = P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i
+P21.Nonsymmetric.ColorCap.MinimumOne.rowsA_eq_socleRows {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) :
+  (P21.Nonsymmetric.ColorCap.MinimumOne.rowsA (fun i => ↑(D.a i)) fun i => ↑(D.b i)) =
+    P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D true
+P21.Nonsymmetric.ColorCap.MinimumOne.rowsB_eq_socleRows {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) :
+  (P21.Nonsymmetric.ColorCap.MinimumOne.rowsB (fun i => ↑(D.a i)) fun i => ↑(D.b i)) =
+    P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D false
+P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction (g : P21.Generators) (s : g.Setting)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point) (r q ell : ℤ)
+  (z : P21.Nonsymmetric.ColorCap.Point) (hp : ∀ (i : Fin 3), 1 ≤ p i ∧ p i < if c = true then ↑(D.a i) else ↑(D.b i))
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), (if c = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k')
+  (hk : 2 ≤ ↑k) (hr : 1 ≤ r) (hrk : r < ↑k) (hq : 1 ≤ q) (hqk : q < ↑k) (hinv : r * q = 1 + ell * ↑k)
+  (hz :
+    ∀ (l : Fin 3),
+      ↑k * z l =
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c 0 l +
+            r *
+              (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c 1 l -
+                P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c 2 l) -
+          p l) :
+  False
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_rotate {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (i j l : Fin 3) :
+  P21.Nonsymmetric.ColorCap.MinimumOne.socleRows (P21.Nonsymmetric.rotateHerzog D i) c j l =
+    P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c ((P21.Nonsymmetric.rotatePerm i) j)
+      ((P21.Nonsymmetric.rotatePerm i) l)
+P21.Nonsymmetric.ColorCap.MinimumOne.rotated_integral_class_contradiction (g : P21.Generators) (s : g.Setting)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point) (i : Fin 3)
+  (r q ell : ℤ) (z : P21.Nonsymmetric.ColorCap.Point)
+  (hp : ∀ (l : Fin 3), 1 ≤ p l ∧ p l < if c = true then ↑(D.a l) else ↑(D.b l))
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ l, (p l - 1) * g.n l)
+  (hmin : ∀ (k' : ℕ) (x' : Fin 3 → ℕ), (if c = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k')
+  (hk : 2 ≤ ↑k) (hr : 1 ≤ r) (hrk : r < ↑k) (hq : 1 ≤ q) (hqk : q < ↑k) (hinv : r * q = 1 + ell * ↑k)
+  (hz :
+    ∀ (l : Fin 3),
+      ↑k * z l =
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i l +
+            r *
+              (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c (P21.Nonsymmetric.next i) l -
+                P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c (P21.Nonsymmetric.prev i) l) -
+          p l) :
+  False
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (colorA : Bool) : Matrix (Fin 3) (Fin 3) ℤ
+P21.Nonsymmetric.ColorCap.MinimumOne.socle {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (colorA : Bool) : ℤ
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (colorA : Bool) (p : P21.Nonsymmetric.ColorCap.Point) : Matrix (Fin 3) (Fin 3) ℤ
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_diagonal {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (i : Fin 3) : P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i i = 0
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_off_diagonal {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (i j : Fin 3) (h : i ≠ j) :
+  0 < P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i j
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_nonneg {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (i j : Fin 3) : 0 ≤ P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i j
+P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_weight {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (i : Fin 3) :
+  P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.socleRows D c i) =
+    P21.Nonsymmetric.ColorCap.MinimumOne.socle D c
+P21.Nonsymmetric.ColorCap.MinimumOne.socle_minimum_weight {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (k : ℕ)
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i) :
+  P21.Nonsymmetric.ColorCap.MinimumOne.socle D c - P21.Nonsymmetric.ColorCap.weight g.n p = ↑k * g.m
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_weight {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (k : ℕ)
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i) (i : Fin 3) :
+  P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p i) = ↑k * g.m
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det {g : P21.Generators} (D : P21.Nonsymmetric.HerzogCriticalData g)
+  (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (hp : ∀ (i : Fin 3), 0 < g.n i)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) :
+  (P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p).det =
+    P21.Nonsymmetric.ColorCap.MinimumOne.socle D c - P21.Nonsymmetric.ColorCap.weight g.n p
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_det_level {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (k : ℕ)
+  (hp : ∀ (i : Fin 3), 0 < g.n i) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (he : (if c = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i) :
+  (P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p).det = ↑k * g.m
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelJ {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (j : Fin 3) :
+  P21.Nonsymmetric.kernelRowJ D j =
+    if c = true then
+      P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 1 j -
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 0 j
+    else
+      P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 1 j -
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 2 j
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_kernelK {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point) (j : Fin 3) :
+  P21.Nonsymmetric.kernelRowK D j =
+    if c = true then
+      P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 2 j -
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 1 j
+    else
+      P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 2 j -
+        P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p 0 j
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_span_level {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point)
+  (hp : ∀ (i : Fin 3), 0 < g.n i) (d : ℤ)
+  (hrows :
+    ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p i) = d)
+  (z : P21.Nonsymmetric.ColorCap.Point) (l : ℤ) (hz : P21.Nonsymmetric.ColorCap.weight g.n z = l * d) :
+  ∃ a, (∀ (j : Fin 3), z j = ∑ i, a i * P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p i j) ∧ ∑ i, a i = l
+P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix_row_lattice {g : P21.Generators}
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (c : Bool) (p : P21.Nonsymmetric.ColorCap.Point)
+  (hp : ∀ (i : Fin 3), 0 < g.n i) (d : ℤ)
+  (hrows :
+    ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p i) = d)
+  (z : P21.Nonsymmetric.ColorCap.Point) :
+  z ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n d ↔
+    ∃ a, ∀ (j : Fin 3), z j = ∑ i, a i * P21.Nonsymmetric.ColorCap.MinimumOne.socleMatrix D c p i j
+P21.Nonsymmetric.ColorCap.minimum_one_proved : P21.Nonsymmetric.ColorCap.MinimumOneStatement
+P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement)
+  (g : P21.Generators) (s : g.Setting) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (depth : P21.Nonsymmetric.ColorCap.Point)
+  (hdepth : ∀ (i : Fin 3), 1 ≤ depth i) (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
+  (harms : ∀ (i : Fin 3), (if colorA = true then D.fA else D.fB) - depth i * g.n i ∈ s.semigroup.PF) : False
+P21.Nonsymmetric.White.gcd_eq_one_of_nonzero_classes (k r : ℤ) (hk : 1 < k)
+  (hclasses : ∀ (j : ℤ), 0 < j → j < k → j * r % k ≠ 0) : r.gcd k = 1
+P21.Nonsymmetric.White.exists_positive_inverse (k r : ℤ) (hk : 1 < k) (hr : 0 < r) (hcop : r.gcd k = 1) :
+  ∃ q ell, 1 ≤ q ∧ q < k ∧ 0 ≤ ell ∧ r * q = 1 + ell * k
+P21.Nonsymmetric.White.integral_class_of_unit_coordinate (k : ℤ) (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point)
+  (p v a : P21.Nonsymmetric.ColorCap.Point) (hsum : ∑ i, a i = k + 1)
+  (he : ∀ (l : Fin 3), k * v l = ∑ i, a i * (R i l - p l)) (i : Fin 3) (hi : a i = 1) :
+  ∃ z,
+    ∀ (l : Fin 3),
+      k * z l =
+        R i l + a (P21.Nonsymmetric.next i) * (R (P21.Nonsymmetric.next i) l - R (P21.Nonsymmetric.prev i) l) - p l
+P21.Nonsymmetric.White.combination (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (t : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.White.weight_combination (n : P21.Nonsymmetric.ColorCap.Point)
+  (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (t : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.weight n (P21.Nonsymmetric.White.combination R t) =
+    ∑ i, t i * P21.Nonsymmetric.ColorCap.weight n (R i)
+P21.Nonsymmetric.White.weight_scale (n v : P21.Nonsymmetric.ColorCap.Point) (k : ℤ) :
+  (P21.Nonsymmetric.ColorCap.weight n fun i => k * v i) = k * P21.Nonsymmetric.ColorCap.weight n v
+P21.Nonsymmetric.White.classResidues (k : ℤ) (t : P21.Nonsymmetric.ColorCap.Point) (j : ℤ) :
+  P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.White.classRepresentative (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point)
+  (p z t : P21.Nonsymmetric.ColorCap.Point) (k j : ℤ) : P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.White.classRepresentative_equation (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point)
+  (p z t : P21.Nonsymmetric.ColorCap.Point) (k j : ℤ) (he : ∀ (l : Fin 3), k * z l = ∑ i, t i * (R i l - p l))
+  (l : Fin 3) :
+  k * P21.Nonsymmetric.White.classRepresentative R p z t k j l =
+    ∑ i, P21.Nonsymmetric.White.classResidues k t j i * (R i l - p l)
+P21.Nonsymmetric.White.classResidues_sum (k j : ℤ) (t : P21.Nonsymmetric.ColorCap.Point) (ht : ∑ i, t i = 1) :
+  ∑ i, P21.Nonsymmetric.White.classResidues k t j i = j - k * ∑ i, j * t i / k
+P21.Nonsymmetric.White.small_mass_impossible (g : P21.Generators) (hm : 0 < g.m) (f s : ℤ) (k : ℕ) (hk : 0 < k)
+  (p v a : P21.Nonsymmetric.ColorCap.Point) (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (hs : f + ∑ i, g.n i = s)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hR : ∀ (i l : Fin 3), 0 ≤ R i l)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (R i) = s) (ha : ∀ (i : Fin 3), 0 ≤ a i)
+  (he : ∀ (l : Fin 3), ↑k * v l = ∑ i, a i * (R i l - p l))
+  (hmin : ∀ (k' : ℕ) (x : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x → k ≤ k') (hlo : 0 < ∑ i, a i)
+  (hhi : ∑ i, a i < ↑k) : False
+P21.Nonsymmetric.White.classResidues_sum_mod (k j : ℤ) (t : P21.Nonsymmetric.ColorCap.Point) (ht : ∑ i, t i = 1)
+  (hj : 0 ≤ j) (hjk : j < k) : (∑ i, P21.Nonsymmetric.White.classResidues k t j i) % k = j
+P21.Nonsymmetric.White.classResidues_lower (g : P21.Generators) (hm : 0 < g.m) (f s : ℤ) (k : ℕ) (hk : 0 < k)
+  (p z t : P21.Nonsymmetric.ColorCap.Point) (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (hs : f + ∑ i, g.n i = s)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hR : ∀ (i l : Fin 3), 0 ≤ R i l)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (R i) = s) (ht : ∑ i, t i = 1)
+  (he : ∀ (l : Fin 3), ↑k * z l = ∑ i, t i * (R i l - p l))
+  (hmin : ∀ (k' : ℕ) (x : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x → k ≤ k') (j : ℤ) (hj : 0 < j) (hjk : j < ↑k) :
+  ↑k < ∑ i, P21.Nonsymmetric.White.classResidues (↑k) t j i
+P21.Nonsymmetric.White.classResidues_complement (k j : ℤ) (t : P21.Nonsymmetric.ColorCap.Point) (hk : 0 < k)
+  (i : Fin 3) :
+  P21.Nonsymmetric.White.classResidues k t j i + P21.Nonsymmetric.White.classResidues k t (k - j) i =
+    if P21.Nonsymmetric.White.classResidues k t j i = 0 then 0 else k
+P21.Nonsymmetric.White.cyclic_age_of_minimum (g : P21.Generators) (hm : 0 < g.m) (f s : ℤ) (k : ℕ) (hk : 0 < k)
+  (p z t : P21.Nonsymmetric.ColorCap.Point) (R : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (hs : f + ∑ i, g.n i = s)
+  (hp : ∀ (i : Fin 3), 1 ≤ p i) (hR : ∀ (i l : Fin 3), 0 ≤ R i l)
+  (hpw : P21.Nonsymmetric.ColorCap.weight g.n p = s - ↑k * g.m)
+  (hRw : ∀ (i : Fin 3), P21.Nonsymmetric.ColorCap.weight g.n (R i) = s) (ht : ∑ i, t i = 1)
+  (he : ∀ (l : Fin 3), ↑k * z l = ∑ i, t i * (R i l - p l))
+  (hmin : ∀ (k' : ℕ) (x : Fin 3 → ℕ), f = ↑k' * g.m + P21.value g.n x → k ≤ k') (j : ℤ) (hj : 0 < j) (hjk : j < ↑k) :
+  (∀ (i : Fin 3), 0 < P21.Nonsymmetric.White.classResidues (↑k) t j i) ∧
+    ∑ i, P21.Nonsymmetric.White.classResidues (↑k) t j i = ↑k + j
+P21.Nonsymmetric.White.weight_surjective {g : P21.Generators} (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) :
+  Function.Surjective (P21.Nonsymmetric.ColorCap.weight g.n)
+P21.Nonsymmetric.White.relative_coset_iff (n : P21.Nonsymmetric.ColorCap.Point) (d : ℤ)
+  (u v : P21.Nonsymmetric.ColorCap.Point) :
+  u - v ∈ P21.Nonsymmetric.ColorCap.relativeLattice n d ↔
+    P21.Nonsymmetric.ColorCap.weight n u % d = P21.Nonsymmetric.ColorCap.weight n v % d
+P21.Nonsymmetric.White.relative_residue_unique (n : P21.Nonsymmetric.ColorCap.Point) (d : ℤ) (hd : 0 < d)
+  (u : P21.Nonsymmetric.ColorCap.Point) : ∃! r, 0 ≤ r ∧ r < d ∧ P21.Nonsymmetric.ColorCap.weight n u % d = r
+P21.Nonsymmetric.White.residue_realized {g : P21.Generators} (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (d r : ℤ)
+  (hr : 0 ≤ r) (hrd : r < d) : ∃ u, P21.Nonsymmetric.ColorCap.weight g.n u % d = r
+P21.Nonsymmetric.White.relative_level_residue_unique (n : P21.Nonsymmetric.ColorCap.Point) (m k : ℤ) (hm : 0 < m)
+  (hk : 0 < k) (u : P21.Nonsymmetric.ColorCap.Point) (hu : u ∈ P21.Nonsymmetric.ColorCap.relativeLattice n m) :
+  ∃! r, 0 ≤ r ∧ r < k ∧ ∃ t, P21.Nonsymmetric.ColorCap.weight n u = (r + k * t) * m
+P21.Nonsymmetric.White.relative_level_residue_realized {g : P21.Generators} (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (m r : ℤ) : ∃ u ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n m, P21.Nonsymmetric.ColorCap.weight g.n u = r * m
+P21.Nonsymmetric.White.relative_level_coset_iff (n : P21.Nonsymmetric.ColorCap.Point) (m k : ℤ) (hm : m ≠ 0)
+  (u v : P21.Nonsymmetric.ColorCap.Point) (l r : ℤ) (hu : P21.Nonsymmetric.ColorCap.weight n u = l * m)
+  (hv : P21.Nonsymmetric.ColorCap.weight n v = r * m) :
+  u - v ∈ P21.Nonsymmetric.ColorCap.relativeLattice n (k * m) ↔ l % k = r % k
+P21.Nonsymmetric.White.relative_cyclic_representatives {g : P21.Generators} (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (m k : ℤ) (hm : 0 < m) (hk : 0 < k) :
+  ∃ v,
+    P21.Nonsymmetric.ColorCap.weight g.n v = m ∧
+      ∀ u ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n m,
+        ∃! r, 0 ≤ r ∧ r < k ∧ (u - fun i => r * v i) ∈ P21.Nonsymmetric.ColorCap.relativeLattice g.n (k * m)
+P21.Nonsymmetric.White.CyclicAge (k : ℤ) (a : Fin 3 → ℤ) : Prop
+P21.Nonsymmetric.White.CyclicWhiteStatement : Prop
+P21.Nonsymmetric.White.complementary_remainder (k x : ℤ) (hk : 0 < k) : x % k + -x % k = if k ∣ x then 0 else k
+P21.Nonsymmetric.White.cyclicAge_nonzero (k : ℤ) (a : Fin 3 → ℤ) (hk : 1 < k)
+  (hage : P21.Nonsymmetric.White.CyclicAge k a) (j : ℤ) (hj : 0 < j) (hjk : j < k) (i : Fin 3) : j * a i % k ≠ 0
+P21.Nonsymmetric.White.cyclicAge_sum (k : ℤ) (a : Fin 3 → ℤ) (hk : 1 < k) (ha : ∀ (i : Fin 3), 0 < a i ∧ a i < k)
+  (hage : P21.Nonsymmetric.White.CyclicAge k a) : ∑ i, a i = k + 1
+P21.Nonsymmetric.White.floorJump (k n j : ℤ) : ℤ
+P21.Nonsymmetric.White.floorJump_bounds (k n j : ℤ) (hk : 0 < k) (hn : 0 < n) (hnk : n < k) :
+  0 ≤ P21.Nonsymmetric.White.floorJump k n j ∧ P21.Nonsymmetric.White.floorJump k n j ≤ 1
+P21.Nonsymmetric.White.cyclicAge_jump_sum (k : ℤ) (a : Fin 3 → ℤ) (hk : 1 < k) (ha : ∀ (i : Fin 3), 0 < a i ∧ a i < k)
+  (hage : P21.Nonsymmetric.White.CyclicAge k a) (j : ℤ) (hj : 0 < j) (hjk : j + 1 < k) :
+  ∑ i, P21.Nonsymmetric.White.floorJump k (a i) j = 1
+P21.Nonsymmetric.White.beatty_adjacent_gap (k n t : ℤ) (hn : 0 < n) :
+  k / n ≤ (t + 1) * k / n - t * k / n ∧ (t + 1) * k / n - t * k / n ≤ k / n + 1
+P21.Nonsymmetric.White.beatty_gap (k n s t : ℤ) (hk : 0 ≤ k) (hn : 0 < n) (hst : s < t) : k / n ≤ t * k / n - s * k / n
+P21.Nonsymmetric.White.beatty_interleaving_impossible (k b e s i j l : ℤ) (hk : 0 ≤ k) (hb : 0 < b) (he : 0 < e)
+  (hfirst : k / b = k / e) (hlarge : 2 ≤ k / e) (hij : i < j) (hjl : j < l) (hleft : s * k / b = i * k / e)
+  (hright : (s + 1) * k / b = l * k / e) : False
+P21.Nonsymmetric.White.floorJump_support (k n j : ℤ) (hk : 0 < k) (hn : 0 < n) (hj : 0 < j) (hjk : j + 1 < k)
+  (hnonzero : (j + 1) * n % k ≠ 0) (hjump : P21.Nonsymmetric.White.floorJump k n j = 1) :
+  ∃ t, 0 < t ∧ t < n ∧ j = t * k / n
+P21.Nonsymmetric.White.floorJump_of_support (k n t : ℤ) (hk : 0 < k) (hn : 0 < n) (hnk : n < k) (ht : 0 < t)
+  (htn : t < n) (hnonzero : ∀ (j : ℤ), 0 < j → j < k → j * n % k ≠ 0) :
+  0 < t * k / n ∧ t * k / n + 1 < k ∧ P21.Nonsymmetric.White.floorJump k n (t * k / n) = 1
+P21.Nonsymmetric.White.NonzeroClasses (k n : ℤ) : Prop
+P21.Nonsymmetric.White.nonzeroClasses_complement (k n : ℤ) (h : P21.Nonsymmetric.White.NonzeroClasses k n) :
+  P21.Nonsymmetric.White.NonzeroClasses k (k - n)
+P21.Nonsymmetric.White.floorJump_complement (k n j : ℤ) (hk : 0 < k) (h0 : j * n % k ≠ 0) (h1 : (j + 1) * n % k ≠ 0) :
+  P21.Nonsymmetric.White.floorJump k (k - n) j = 1 - P21.Nonsymmetric.White.floorJump k n j
+P21.Nonsymmetric.White.beatty_div_antitone (k b e : ℤ) (hk : 0 ≤ k) (hb : 0 < b) (hbe : b ≤ e) : k / e ≤ k / b
+P21.Nonsymmetric.White.beatty_index_lt (k n i j : ℤ) (hk : 0 ≤ k) (hn : 0 < n) (h : i * k / n < j * k / n) : i < j
+P21.Nonsymmetric.White.beatty_last (k n : ℤ) (_hk : 0 < k) (hn : 1 < n) (hnk : n < k)
+  (hclasses : P21.Nonsymmetric.White.NonzeroClasses k n) : (n - 1) * k / n = k - 1 - k / n
+P21.Nonsymmetric.White.beatty_partition_impossible (k b d e : ℤ) (hk : 0 < k) (hd : 1 < d) (hdb : d ≤ b) (hbe : b < e)
+  (hek : 2 * e < k) (hbclasses : P21.Nonsymmetric.White.NonzeroClasses k b)
+  (hdclasses : P21.Nonsymmetric.White.NonzeroClasses k d) (heclasses : P21.Nonsymmetric.White.NonzeroClasses k e)
+  (hpartition :
+    ∀ (j : ℤ),
+      0 < j →
+        j + 1 < k →
+          P21.Nonsymmetric.White.floorJump k b j + P21.Nonsymmetric.White.floorJump k d j =
+            P21.Nonsymmetric.White.floorJump k e j) :
+  False
+P21.Nonsymmetric.White.cyclicWhite_sorted_impossible (k a b d : ℤ) (hk : 1 < k) (ha : 1 < a) (hb : 1 < b) (hd : 1 < d)
+  (hak : a < k) (hbk : b < k) (hdk : d < k) (hba : b ≤ a) (hdb : d ≤ b)
+  (hage : P21.Nonsymmetric.White.CyclicAge k ![a, b, d]) : False
+P21.Nonsymmetric.White.cyclic_white_proved : P21.Nonsymmetric.White.CyclicWhiteStatement
+P21.Nonsymmetric.ColorCap.minimum_one_proved : P21.Nonsymmetric.ColorCap.MinimumOneStatement
+P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe (hdpe : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement)
+  (g : P21.Generators) (s : g.Setting) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (depth : P21.Nonsymmetric.ColorCap.Point)
+  (hdepth : ∀ (i : Fin 3), 1 ≤ depth i) (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
+  (harms : ∀ (i : Fin 3), (if colorA = true then D.fA else D.fB) - depth i * g.n i ∈ s.semigroup.PF) : False
+P21.Nonsymmetric.White.cyclic_white_proved : P21.Nonsymmetric.White.CyclicWhiteStatement
+def P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop :=
+∀ (g : P21.Generators),
+  g.Setting →
+    (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) →
+      ∀ (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : P21.Nonsymmetric.ColorCap.Point),
+        0 < k →
+          (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
+            (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
+              (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
+                  (if colorA = true then D.fA else D.fB) = ↑k' * g.m + P21.value g.n x' → k ≤ k') →
+                k = 1
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : P21.Nonsymmetric.ColorCap.BoxInput) (t : ℕ) (u : P21.Nonsymmetric.ColorCap.Point),
+  P21.Nonsymmetric.ColorCap.BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬P21.Nonsymmetric.ColorCap.InBox D.upper (P21.Nonsymmetric.ColorCap.fire D.rows i u)) →
+      ∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j
+
+EXIT_CODE=0

@@ -1,0 +1,21 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b1-minbox-white\verification\lake.ps1 env lean verification\m3b1\StatementRegression.lean
+'P21.Nonsymmetric.ColorCap.minimum_one_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_white_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+def P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop :=
+∀ (g : Generators),
+  g.Setting →
+    (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) →
+      ∀ (D : HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : Point),
+        0 < k →
+          (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
+            (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
+              (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
+                  (if colorA = true then D.fA else D.fB) = ↑k' * g.m + value g.n x' → k ≤ k') →
+                k = 1
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+
+EXIT_CODE=0

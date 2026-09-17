@@ -1,0 +1,26 @@
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsB' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverseClass_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsA_of_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorA_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.boundsB_of_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.class_boundsB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.inverse_boundsB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.colorB_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsA_eq_socleRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rowsB_eq_socleRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.socleRows_rotate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.MinimumOne.rotated_integral_class_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

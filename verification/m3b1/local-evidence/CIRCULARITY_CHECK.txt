@@ -1,0 +1,1 @@
+Full project import graph acyclic; exact frozen byte gate prevents backwards dependency edits.
