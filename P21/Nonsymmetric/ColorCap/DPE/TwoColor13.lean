@@ -5,6 +5,40 @@ namespace P21.Nonsymmetric.ColorCap
 def X13 (D : BoxInput) (N R : ℤ) : ℤ := R * (D.y 0 + D.b 0) - N * D.x 0
 def Y13 (D : BoxInput) (N R : ℤ) : ℤ := N * D.y 2 - R * D.x 2
 
+theorem terminal13_count_bounds (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hno1 : l.count 1 = 0)
+    (hcount2 : 1 ≤ l.count 2) (hstart : D.x 0 < D.y 0) :
+    ((l.count 0 + 1 : ℕ) : ℤ) ≤ D.y 0 ∧
+      ((l.count 2 + 1 : ℕ) : ℤ) ≤ D.x 0 - D.b 0 ∧
+      ((l.count 2 + 1 : ℕ) : ℤ) ≤ D.y 2 := by
+  let q := l.count 2
+  let P := trace_successfulPrefix13 D ht hp hno1 (q := q) le_rfl
+  have h1q : 1 ≤ q := by simpa [q] using hcount2
+  have hqx := P.E_slot_count (by
+    have he := P.residues 1 (by omega) h1q
+    omega)
+  have hqy := P.U_slot_count (by have := D.y_pos 2; omega)
+  have hu0 := ht.endpoint_eq_sub_sum 0
+  have hu0box := ht.endpoint_inBox 0
+  simp [BoxInput.rows, Fin.sum_univ_succ, hno1] at hu0
+  dsimp [BoxInput.upper] at hu0box
+  have hNy : ((l.count 0 + 1 : ℕ) : ℤ) ≤ D.y 0 := by
+    by_contra hn
+    push Not at hn
+    push_cast at hn
+    have hqX : (l.count 2 : ℤ) ≤ D.x 0 - D.b 0 - 1 := by
+      simpa [q, P] using hqx
+    have huUpper := hu0box.2
+    have hb := D.b_pos 0
+    have hfactor : 0 < D.b 0 + D.y 0 - D.x 0 + 1 := by omega
+    have hprod := mul_pos hb hfactor
+    nlinarith
+  refine ⟨hNy, ?_, ?_⟩
+  · simpa [q, P] using (show (q : ℤ) + 1 ≤ D.x 0 - D.b 0 by omega)
+  · simpa [q, P] using (show (q : ℤ) + 1 ≤ D.y 2 by omega)
+
 theorem terminal13_not_sinkB (D : BoxInput) (N R : ℤ) (hN : 0 < N)
     (hB : 0 ≤ X13 D N R ∧ 0 ≤ Y13 D N R) : False := by
   exact D.two_color13_not_sinkB N R hN (by simpa [X13, Y13] using hB)
