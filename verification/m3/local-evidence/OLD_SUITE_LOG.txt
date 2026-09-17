@@ -1,0 +1,1592 @@
+## M1 unchanged original suite
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/verify.py
+✔ [1588/1598] Built P21.Factorization (6.2s)
+✔ [1589/1598] Built P21.NumericalSemigroup (5.7s)
+✔ [1590/1598] Built P21.Basic (8.6s)
+✔ [1591/1598] Built P21.PseudoFrobenius (8.5s)
+✔ [1592/1598] Built P21.Apery (9.0s)
+✔ [1593/1598] Built P21.CanonicalReduction (9.0s)
+✔ [1594/1598] Built P21.Tail (9.2s)
+✔ [1595/1598] Built P21.Selection (12s)
+✔ [1596/1598] Built P21.Semantics (9.1s)
+✔ [1597/1598] Built P21 (7.9s)
+Build completed successfully (1598 jobs).
+
+113 declarations; 73 theorems; 107 axiom inspection commands; 12 source files; no debt matches.
+
+'P21.NumericalSemigroup.apery_le' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.apery_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.zero_mem_apery' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.W_mem_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_add_m_mem_apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.apery_lower' depends on axioms: [propext]
+'P21.NumericalSemigroup.pf_iff_maximal_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.A0' depends on axioms: [propext]
+'P21.NumericalSemigroup.A1' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota' depends on axioms: [propext]
+'P21.NumericalSemigroup.complement_mem_apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.exact_two_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.a0_lower' depends on axioms: [propext]
+'P21.NumericalSemigroup.a1_upper' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_involutive' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_order_reverse' depends on axioms: [propext]
+'P21.NumericalSemigroup.iota_mem_a1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_add_m_mem_a1' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.complement_of_q_mem_apery' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.maximal_a1_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_iff_iota_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.maximal_a1_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.minimal_a1_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.all' depends on axioms: [propext]
+'P21.Generators.Gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.H' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.ActualFactorization4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.ActualFactorization3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.TailMinimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.OffDirection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.D' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.SH' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.tailGcd' depends on axioms: [propext]
+'P21.Generators.value_cons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.h_subset_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.m_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.n_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.tail_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.semigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.minimal_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.minimal_four_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.P21MainStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.apery_m_coordinate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.apery_in_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.a0_tail_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_return_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.return_coordinate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_support_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.support_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_support_inclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.supported_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.actual_iff_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generator_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.replaceWithinActualFactorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.removeOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.Gap' depends on axioms: [propext]
+'P21.NumericalSemigroup.IsFrobenius' depends on axioms: [propext]
+'P21.NumericalSemigroup.PF' depends on axioms: [propext]
+'P21.NumericalSemigroup.type' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.Apery' depends on axioms: [propext]
+'P21.NumericalSemigroup.Le' depends on axioms: [propext]
+'P21.NumericalSemigroup.Canonical' depends on axioms: [propext]
+'P21.NumericalSemigroup.Q' depends on axioms: [propext]
+'P21.NumericalSemigroup.Maximal' depends on axioms: [propext]
+'P21.NumericalSemigroup.Minimal' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_refl' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_trans' depends on axioms: [propext]
+'P21.NumericalSemigroup.le_antisymm' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.exists_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.frobenius_mem_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.mem_of_gt_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.pf_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.q_lt_frobenius' depends on axioms: [propext, Quot.sound]
+'P21.NumericalSemigroup.type_eq_q_card_add_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.translated_gaps_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.gap_below_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.canonical_all_nonnegative_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.offDirection_iff_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.key_pair_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.RowFacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.all_q_row_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.select_four_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_minimal_and_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.W' does not depend on any axioms
+'P21.complement' does not depend on any axioms
+'P21.cofinite_iff_finite_nonnegative_gaps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.all_pf_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.q_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.NumericalSemigroup.a0_lower_in_semigroup' depends on axioms: [propext]
+'P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.divisor_of_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.generated_eq_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.signed_mem_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_signed_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.m_mem_tail_group' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_gcd_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.natural_closure_to_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tail_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Generators.Setting.tailSemigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+107 declarations checked; only standard axioms; project-specific dependencies: 0.
+
+P21.NumericalSemigroup.apery_le (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hw : w ∈ S.Apery m) :
+  w ≤ F + m
+P21.NumericalSemigroup.apery_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) : (S.Apery m).Finite
+P21.NumericalSemigroup.zero_mem_apery (S : P21.NumericalSemigroup) {m : ℤ} (hm : 0 < m) : 0 ∈ S.Apery m
+P21.NumericalSemigroup.W_mem_apery (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m) :
+  F + m ∈ S.Apery m
+P21.NumericalSemigroup.pf_add_m_mem_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0)
+  (hq : q ∈ S.PF) : q + m ∈ S.Apery m
+P21.NumericalSemigroup.apery_lower (S : P21.NumericalSemigroup) {m x y : ℤ} (hx : x ∈ S.carrier) (hy : y ∈ S.Apery m)
+  (hxy : S.Le x y) : x ∈ S.Apery m
+P21.NumericalSemigroup.pf_iff_maximal_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0) :
+  q ∈ S.PF ↔ S.Maximal (S.Apery m) (q + m)
+P21.NumericalSemigroup.A0 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.A1 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.iota (_S : P21.NumericalSemigroup) (F m w : ℤ) : ℤ
+P21.NumericalSemigroup.complement_mem_apery (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hw : w ∈ S.Apery m) (hb : F + m - w ∈ S.carrier) : F + m - w ∈ S.Apery m
+P21.NumericalSemigroup.exact_two_layers (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.Apery m) :
+  F + m - w ∈ S.Apery m ∧ S.iota F m w ∉ S.Apery m ∨ F + m - w ∉ S.Apery m ∧ S.iota F m w ∈ S.Apery m
+P21.NumericalSemigroup.a0_lower (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.Apery m)
+  (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.a1_upper (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.A1 F m)
+  (hy : y ∈ S.Apery m) (hxy : S.Le x y) : y ∈ S.A1 F m
+P21.NumericalSemigroup.iota_involutive (S : P21.NumericalSemigroup) (F m w : ℤ) : S.iota F m (S.iota F m w) = w
+P21.NumericalSemigroup.iota_order_reverse (S : P21.NumericalSemigroup) (F m x y : ℤ) :
+  S.Le (S.iota F m y) (S.iota F m x) ↔ S.Le x y
+P21.NumericalSemigroup.iota_mem_a1 (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.A1 F m) : S.iota F m w ∈ S.A1 F m
+P21.NumericalSemigroup.pf_add_m_mem_a1 (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) (hq : q ∈ S.Q F) : q + m ∈ S.A1 F m
+P21.NumericalSemigroup.complement_of_q_mem_apery (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (hq : q ∈ S.Q F) : F + m - q ∈ S.Apery m
+P21.NumericalSemigroup.maximal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) : S.Maximal (S.A1 F m) w ↔ w - m ∈ S.Q F
+P21.NumericalSemigroup.minimal_iff_iota_maximal (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ S.Maximal (S.A1 F m) (S.iota F m w)
+P21.NumericalSemigroup.minimal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ F + m - w ∈ S.Q F
+P21.NumericalSemigroup.maximal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) : {w | S.Maximal (S.A1 F m) w} = (fun q => q + m) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w} = (fun q => F + m - q) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_card (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = (S.Q F).ncard ∧ (S.Q F).ncard + 1 = S.type
+P21.Generators : Type
+P21.Generators.all (g : P21.Generators) : Fin 4 → ℤ
+P21.Generators.Gamma (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.H (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.ActualFactorization4 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.ActualFactorization3 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.Minimal (g : P21.Generators) : Prop
+P21.Generators.TailMinimal (g : P21.Generators) : Prop
+P21.Generators.OffDirection (g : P21.Generators) (i : Fin 3) (x : ℤ) : Prop
+P21.Generators.D (g : P21.Generators) (c : ℤ) : Set (Fin 3)
+P21.Generators.SH (g : P21.Generators) (q : ℤ) : Set (Fin 3)
+P21.Generators.tailGcd (g : P21.Generators) : ℕ
+P21.Generators.value_cons (g : P21.Generators) (a : ℕ) (b : Fin 3 → ℕ) :
+  P21.value g.all (Fin.cons a b) = ↑a * g.m + P21.value g.n b
+P21.Generators.h_subset_gamma (g : P21.Generators) : g.H ≤ g.Gamma
+P21.Generators.m_mem (g : P21.Generators) : g.m ∈ g.Gamma
+P21.Generators.n_mem (g : P21.Generators) (i : Fin 3) : g.n i ∈ g.Gamma
+P21.Generators.tail_minimal (g : P21.Generators) (hg : g.Minimal) : g.TailMinimal
+P21.Generators.Setting (g : P21.Generators) : Prop
+P21.Generators.Setting.semigroup {g : P21.Generators} (s : g.Setting) : P21.NumericalSemigroup
+P21.Generators.minimal_injective (g : P21.Generators) (hg : g.Minimal) : Function.Injective g.all
+P21.Generators.minimal_four_distinct (g : P21.Generators) (hg : g.Minimal) : (Set.range g.all).ncard = 4
+P21.P21MainStatement : Prop
+P21.Generators.Setting.apery_m_coordinate_zero {g : P21.Generators} (s : g.Setting) {x : ℤ}
+  (hx : x ∈ s.semigroup.Apery g.m) (a : g.ActualFactorization4 x) : a.coeff 0 = 0
+P21.Generators.Setting.apery_in_tail {g : P21.Generators} (s : g.Setting) {x : ℤ} (hx : x ∈ s.semigroup.Apery g.m) :
+  x ∈ g.H
+P21.Generators.Setting.a0_tail_iff {g : P21.Generators} (s : g.Setting) {F w : ℤ} (hF : s.semigroup.IsFrobenius F) :
+  w ∈ s.semigroup.A0 F g.m ↔ w ∈ g.H ∧ F + g.m - w ∈ g.H
+P21.Generators.Setting.key_return_apery {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : q + g.n i ∈ s.semigroup.Apery g.m
+P21.Generators.Setting.return_coordinate_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hq : q ∈ s.semigroup.Q F)
+  (i : Fin 3) (a : g.ActualFactorization3 (q + g.n i)) : a.coeff i = 0
+P21.Generators.Setting.key_support_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : g.OffDirection i (q + g.n i)
+P21.Generators.Setting.support_nonempty {g : P21.Generators} {c : ℤ} (hc : c ∈ g.H) (hcpos : 0 < c) : (g.D c).Nonempty
+P21.Generators.Setting.key_support_inclusion {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) :
+  (g.D (F + g.m - q)).Nonempty ∧ g.D (F + g.m - q) ⊆ g.SH q
+P21.Generators.Setting.supported_rectangle {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) (i : Fin 3)
+  (hi : i ∈ g.D (F + g.m - q)) :
+  (q + g.m ∈ s.semigroup.Apery g.m ∧ q + g.m ∈ g.H) ∧
+    (F + g.m - q ∈ s.semigroup.Apery g.m ∧ F + g.m - q ∈ g.H) ∧
+      (F + g.m - q - g.n i ∈ s.semigroup.Apery g.m ∧ F + g.m - q - g.n i ∈ g.H) ∧
+        (q + g.n i ∈ s.semigroup.Apery g.m ∧ q + g.n i ∈ g.H) ∧
+          q + g.m + (F + g.m - q) = F + g.m + g.m ∧ F + g.m - q - g.n i + (q + g.n i) = F + g.m
+P21.value {k : ℕ} (g : Fin k → ℤ) (a : Fin k → ℕ) : ℤ
+P21.ActualFactorization {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.generated {k : ℕ} (g : Fin k → ℤ) : AddSubmonoid ℤ
+P21.actual_iff_mem {k : ℕ} {g : Fin k → ℤ} {x : ℤ} : Nonempty (P21.ActualFactorization g x) ↔ x ∈ P21.generated g
+P21.generator_mem {k : ℕ} (g : Fin k → ℤ) (i : Fin k) : g i ∈ P21.generated g
+P21.generated_nonneg {k : ℕ} {g : Fin k → ℤ} (hg : ∀ (i : Fin k), 0 ≤ g i) {x : ℤ} (hx : x ∈ P21.generated g) : 0 ≤ x
+P21.replaceWithinActualFactorization {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x)
+  (source target : Fin k → ℕ) (contained : ∀ (i : Fin k), source i ≤ a.coeff i)
+  (replacement : P21.value g source = P21.value g target) : P21.ActualFactorization g x
+P21.removeOne {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x) (i : Fin k) (hi : 0 < a.coeff i) :
+  P21.ActualFactorization g (x - g i)
+P21.SignedRepresentation {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.SignedRelation3 (n : Fin 3 → ℤ) : Type
+P21.NumericalSemigroup : Type
+P21.NumericalSemigroup.Gap (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.IsFrobenius (S : P21.NumericalSemigroup) (F : ℤ) : Prop
+P21.NumericalSemigroup.PF (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.type (S : P21.NumericalSemigroup) : ℕ
+P21.NumericalSemigroup.Apery (S : P21.NumericalSemigroup) (m : ℤ) : Set ℤ
+P21.NumericalSemigroup.Le (S : P21.NumericalSemigroup) (x y : ℤ) : Prop
+P21.NumericalSemigroup.Canonical (S : P21.NumericalSemigroup) (F m : ℤ) : Prop
+P21.NumericalSemigroup.Q (S : P21.NumericalSemigroup) (F : ℤ) : Set ℤ
+P21.NumericalSemigroup.Maximal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.Minimal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.le_refl (S : P21.NumericalSemigroup) (x : ℤ) : S.Le x x
+P21.NumericalSemigroup.le_trans (S : P21.NumericalSemigroup) {x y z : ℤ} (hxy : S.Le x y) (hyz : S.Le y z) : S.Le x z
+P21.NumericalSemigroup.le_antisymm (S : P21.NumericalSemigroup) {x y : ℤ} (hxy : S.Le x y) (hyx : S.Le y x) : x = y
+P21.NumericalSemigroup.exists_frobenius (S : P21.NumericalSemigroup) : ∃ F, S.IsFrobenius F
+P21.NumericalSemigroup.frobenius_mem_pf (S : P21.NumericalSemigroup) {F : ℤ} (hF : S.IsFrobenius F) : F ∈ S.PF
+P21.NumericalSemigroup.mem_of_gt_frobenius (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : F < x) :
+  x ∈ S.carrier
+P21.NumericalSemigroup.pf_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hm0 : m ≠ 0) : S.PF.Finite
+P21.NumericalSemigroup.q_lt_frobenius (S : P21.NumericalSemigroup) {F q : ℤ} (hF : S.IsFrobenius F) (hq : q ∈ S.Q F) :
+  q < F
+P21.NumericalSemigroup.type_eq_q_card_add_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) : S.type = (S.Q F).ncard + 1
+P21.NumericalSemigroup.translated_gaps_finite (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) :
+  {q | q ∉ S.carrier ∧ q - x ∈ S.carrier}.Finite
+P21.NumericalSemigroup.gap_below_pf (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : x ∉ S.carrier) :
+  ∃ q ∈ S.PF, q - x ∈ S.carrier
+P21.NumericalSemigroup.canonical_all_nonnegative_gaps (S : P21.NumericalSemigroup) {F m x : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (_hx0 : 0 ≤ x) (hx : x ∉ S.carrier) : F + m - x ∈ S.carrier
+P21.Generators.offDirection_iff_pair {g : P21.Generators} {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k)
+  (x : ℤ) : g.OffDirection i x ↔ ∃ a b, x = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.key_pair_return {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k) (hi : i ∈ g.D (F + g.m - q)) :
+  ∃ a b, q + g.n i = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.RowFacts {g : P21.Generators} (s : g.Setting) (F q : ℤ) : Prop
+P21.Generators.Setting.all_q_row_facts {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (q : ℤ) : q ∈ s.semigroup.Q F → s.RowFacts F q
+P21.Generators.Setting.select_four_rows {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ rows, Function.Injective rows ∧ ∀ (r : Fin 4), s.RowFacts F (rows r)
+P21.Generators.Setting.tail_minimal_and_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) :
+  g.TailMinimal ∧ g.tailGcd = 1 ∧ ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.W (F m : ℤ) : ℤ
+P21.complement (F m q : ℤ) : ℤ
+P21.cofinite_iff_finite_nonnegative_gaps (G : AddSubmonoid ℤ) :
+  (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ G) ↔ {x | 0 ≤ x ∧ x ∉ G}.Finite
+P21.NumericalSemigroup.all_pf_finite (S : P21.NumericalSemigroup) : S.PF.Finite
+P21.NumericalSemigroup.q_finite (S : P21.NumericalSemigroup) (F : ℤ) : (S.Q F).Finite
+P21.NumericalSemigroup.a0_lower_in_semigroup (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F)
+  (hx : x ∈ S.carrier) (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = S.type - 1
+P21.divisor_of_generated {k : ℕ} {n : Fin k → ℤ} {d x : ℤ} (hd : ∀ (i : Fin k), d ∣ n i) (hx : x ∈ P21.generated n) :
+  d ∣ x
+P21.generated_eq_closure {k : ℕ} (n : Fin k → ℤ) : P21.generated n = AddSubmonoid.closure (Set.range n)
+P21.signed_mem_group {k : ℕ} {n : Fin k → ℤ} {x : ℤ} (a : P21.SignedRepresentation n x) :
+  x ∈ AddSubgroup.closure (Set.range n)
+P21.Generators.Setting.tail_signed_m {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : Nonempty (P21.SignedRepresentation g.n g.m)
+P21.Generators.Setting.m_mem_tail_group {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.m ∈ AddSubgroup.closure (Set.range g.n)
+P21.Generators.Setting.common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {d : ℤ} (hm : d ∣ g.m)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {F d : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_gcd_eq_one {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.tailGcd = 1
+P21.Generators.Setting.natural_closure_to_tail {g : P21.Generators} (s : g.Setting) {x : ℕ}
+  (hx : x ∈ AddSubmonoid.closure (Set.range fun i => (g.n i).toNat)) : ↑x ∈ g.H
+P21.Generators.Setting.tail_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.Generators.Setting.tailSemigroup {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : P21.NumericalSemigroup
+def P21.P21MainStatement : Prop :=
+∀ (g : P21.Generators) (s : g.Setting) (F : ℤ),
+  s.semigroup.IsFrobenius F → s.semigroup.Canonical F g.m → s.semigroup.type ≤ 4
+structure P21.Generators.Setting (g : P21.Generators) : Prop
+number of parameters: 1
+fields:
+  P21.Generators.Setting.m_pos : 0 < g.m
+  P21.Generators.Setting.n_gt : ∀ (i : Fin 3), g.m < g.n i
+  P21.Generators.Setting.minimal : g.Minimal
+  P21.Generators.Setting.multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x
+  P21.Generators.Setting.cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma
+constructor:
+  P21.Generators.Setting.mk {g : P21.Generators} (m_pos : 0 < g.m) (n_gt : ∀ (i : Fin 3), g.m < g.n i)
+    (minimal : g.Minimal) (multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x)
+    (cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma) : g.Setting
+def P21.Generators.Minimal : P21.Generators → Prop :=
+fun g => ∀ (i : Fin 4) (a : Fin 4 → ℕ), a i = 0 → P21.value g.all a ≠ g.all i
+def P21.NumericalSemigroup.PF : P21.NumericalSemigroup → Set ℤ :=
+fun S => {q | q ∉ S.carrier ∧ ∀ s ∈ S.carrier, s ≠ 0 → q + s ∈ S.carrier}
+def P21.NumericalSemigroup.IsFrobenius : P21.NumericalSemigroup → ℤ → Prop :=
+fun S F => IsGreatest S.Gap F
+
+Self-checks completed. Status remains M1 CANDIDATE FOR TRUE AUDIT.
+
+EXIT_CODE=0
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/package_candidate.py --stage
+C:\LeanProjects\Problem21Lean\m3-nonsym-g4\audit-evidence\m3\isolated-M1-8a822bq1\delivery\P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_20260916
+
+EXIT_CODE=0
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/package_candidate.py
+{
+  "zip": "C:\\LeanProjects\\Problem21Lean\\m3-nonsym-g4\\audit-evidence\\m3\\isolated-M1-8a822bq1\\delivery\\P21_LEAN_M1_FOUNDATION_C2_CANDIDATE_20260916.zip",
+  "files": 53,
+  "bytes": 3882577,
+  "sha256": "681ed9b706f8bf6fe308304c2f6feb5ea880ad061092ddfaa03a9bb85ad6f3c4",
+  "zip_crc": "ok",
+  "all_entry_sha256": "ok"
+}
+
+EXIT_CODE=0
+
+## M2A unchanged original suite
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/m2/verify.py
+✔ [1588/1598] Built P21.Factorization (7.4s)
+✔ [1589/1598] Built P21.NumericalSemigroup (10s)
+✔ [1590/1598] Built P21.Basic (10s)
+✔ [1591/1598] Built P21.PseudoFrobenius (8.9s)
+✔ [1592/1598] Built P21.Apery (8.2s)
+✔ [1593/1598] Built P21.CanonicalReduction (8.0s)
+✔ [1594/1598] Built P21.Tail (7.8s)
+✔ [1595/1598] Built P21.Selection (10s)
+✔ [1596/1598] Built P21.Semantics (8.2s)
+✔ [1597/1598] Built P21 (8.2s)
+Build completed successfully (1598 jobs).
+✔ [1601/1616] Built P21.Symmetric.StableCore (9.2s)
+✔ [1602/1616] Built P21.Symmetric.TwoGenerator (10s)
+✔ [1603/1616] Built P21.Symmetric.TypeBridge (10s)
+✔ [1604/1616] Built P21.Symmetric.TwoGeneratorIdeal (11s)
+✔ [1605/1616] Built P21.Symmetric.GlueNormalForm (12s)
+✔ [1606/1616] Built P21.Symmetric.RawRows (6.0s)
+✔ [1607/1616] Built P21.Symmetric.BranchI (16s)
+✔ [1608/1616] Built P21.Symmetric.Raw4 (7.5s)
+✔ [1609/1616] Built P21.External.SymmetricThreeGenerator (7.9s)
+✔ [1610/1616] Built P21.Symmetric.BranchII (7.0s)
+✔ [1611/1616] Built P21.Symmetric.CrossLayer (6.7s)
+✔ [1612/1616] Built P21.Symmetric.BranchIActual (7.1s)
+✔ [1613/1616] Built P21.Symmetric.Reduction (7.0s)
+✔ [1614/1616] Built P21.Symmetric.Raw4Consequences (8.8s)
+✔ [1615/1616] Built P21.Symmetric.BranchIIActual (13s)
+✔ [1616/1616] Built P21.Symmetric.Closure (8.9s)
+Build completed successfully (1616 jobs).
+P21.Symmetric.BranchIData : Type
+P21.Symmetric.BranchIData.w (B : P21.Symmetric.BranchIData) : ℤ
+P21.Symmetric.BranchIData.L (B : P21.Symmetric.BranchIData) : ℤ
+P21.Symmetric.BranchIData.ρ (B : P21.Symmetric.BranchIData) : ℤ
+P21.Symmetric.BranchIData.c (B : P21.Symmetric.BranchIData) (n : ℤ) : ℤ
+P21.Symmetric.BranchIData.j (B : P21.Symmetric.BranchIData) (n : ℤ) : ℤ
+P21.Symmetric.BranchIData.τ (B : P21.Symmetric.BranchIData) (n : ℤ) : ℤ
+P21.Symmetric.BranchIData.Ux (B : P21.Symmetric.BranchIData) (t : ℤ) : Prop
+P21.Symmetric.BranchIData.Uy (B : P21.Symmetric.BranchIData) (t : ℤ) : Prop
+P21.Symmetric.BranchIData.Zx (B : P21.Symmetric.BranchIData) (t : ℤ) : Prop
+P21.Symmetric.BranchIData.Zy (B : P21.Symmetric.BranchIData) (t : ℤ) : Prop
+P21.Symmetric.BranchIData.Stable (B : P21.Symmetric.BranchIData) : Prop
+P21.Symmetric.BranchIData.FourHits (B : P21.Symmetric.BranchIData) : Prop
+P21.Symmetric.BranchIData.j_eq_emod (B : P21.Symmetric.BranchIData) (n : ℤ) : B.j n = (B.s - n * B.κ) % B.d
+P21.Symmetric.BranchIData.j_bounds (B : P21.Symmetric.BranchIData) (n : ℤ) : 0 ≤ B.j n ∧ B.j n < B.d
+P21.Symmetric.BranchIData.step (B : P21.Symmetric.BranchIData) (n : ℤ) : B.c n = B.c (n - 1) ∨ B.c n = B.c (n - 1) + 1
+P21.Symmetric.BranchIData.return_previous (B : P21.Symmetric.BranchIData) (n : ℤ) (hr : B.j n = 0) : B.c (n - 1) = B.c n
+P21.Symmetric.BranchIData.return_next (B : P21.Symmetric.BranchIData) (n : ℤ) (hr : B.j n = 0) : B.c (n + 1) = B.c n + 1
+P21.Symmetric.BranchIData.c_zero (B : P21.Symmetric.BranchIData) : B.c 0 = 0
+P21.Symmetric.BranchIData.c_one (B : P21.Symmetric.BranchIData) : B.c 1 = 0 ∨ B.c 1 = 1
+P21.Symmetric.BranchIData.first_return (B : P21.Symmetric.BranchIData) (hr : B.j 1 = 0) : B.κ = B.s ∧ B.c 1 = 0
+P21.Symmetric.BranchIData.later_return_lower (B : P21.Symmetric.BranchIData) (hs : B.Stable) {n p q : ℤ} (hn : 1 < n)
+  (hr : B.j n = 0) (hp : p < B.base.v) (hq : q < B.base.u) (he : B.τ n = p * B.base.u + q * B.base.v) :
+  B.p₀ + 1 ≤ p ∧ B.q₀ + 1 ≤ q
+P21.Symmetric.BranchIData.not_both_late (B : P21.Symmetric.BranchIData) (hs : B.Stable)
+  (hx : ∃ n, 1 < n ∧ B.j n = 0 ∧ B.Zx (B.τ n)) (hy : ∃ n, 1 < n ∧ B.j n = 0 ∧ B.Zy (B.τ n)) : False
+P21.Symmetric.BranchIData.ux_carry (B : P21.Symmetric.BranchIData) (hs : B.Stable) {n p : ℤ} (hn : 1 < n)
+  (hp : p < B.base.v - B.a - B.α) (he : B.τ n = p * B.base.u) : B.c n = B.c (n - 1) + 1
+P21.Symmetric.BranchIData.x_only (B : P21.Symmetric.BranchIData) (hs : B.Stable) (hr : B.j 1 = 0)
+  (hy : ∃ n, 1 < n ∧ B.j n = 0 ∧ B.Zy (B.τ n)) (hx : ∃ n, 1 ≤ n ∧ B.Ux (B.τ n)) : False
+P21.Symmetric.BranchIData.swap (B : P21.Symmetric.BranchIData) : P21.Symmetric.BranchIData
+P21.Symmetric.BranchIData.stable_swap (B : P21.Symmetric.BranchIData) (hs : B.Stable) : B.swap.Stable
+P21.Symmetric.BranchIData.y_only (B : P21.Symmetric.BranchIData) (hs : B.Stable) (hr : B.j 1 = 0)
+  (hx : ∃ n, 1 < n ∧ B.j n = 0 ∧ B.Zx (B.τ n)) (hy : ∃ n, 1 ≤ n ∧ B.Uy (B.τ n)) : False
+P21.Symmetric.BranchIData.xy_upper_x (B : P21.Symmetric.BranchIData) (hs : B.Stable) (hr : B.j 1 = 0) {p q : ℤ}
+  (_hp : 0 ≤ p) (hpα : p < B.α) (hq : 0 ≤ q) (hqβ : q < B.β) (he : B.τ 1 = p * B.base.u + q * B.base.v)
+  (hx : ∃ n, 1 ≤ n ∧ B.Ux (B.τ n)) : 2 * p + B.a < B.base.v
+P21.Symmetric.BranchIData.xy (B : P21.Symmetric.BranchIData) (hs : B.Stable) (hr : B.j 1 = 0) (hzx : B.Zx (B.τ 1))
+  (hzy : B.Zy (B.τ 1)) (hx : ∃ n, 1 ≤ n ∧ B.Ux (B.τ n)) (hy : ∃ n, 1 ≤ n ∧ B.Uy (B.τ n)) : False
+P21.Symmetric.BranchIData.four_hits_impossible (B : P21.Symmetric.BranchIData) (hs : B.Stable) (hh : B.FourHits) : False
+P21.Symmetric.BranchIData.rectangle_translation (D : P21.Symmetric.TwoGeneratorData) {A Q t : ℤ} (hA : 0 < A)
+  (_hAv : A < D.v) (_hQ : 0 < Q) (hQu : Q < D.u) (ht : t ∈ D.T) :
+  t + A * D.u - Q * D.v ∉ D.T ↔ ∃ p q, 0 ≤ p ∧ p < D.v - A ∧ 0 ≤ q ∧ q < Q ∧ t = p * D.u + q * D.v
+P21.Symmetric.BranchIData.ux_translation (B : P21.Symmetric.BranchIData) {t : ℤ} (ht : t ∈ B.base.T) :
+  t + (B.a + B.α) * B.base.u - B.base.v ∉ B.base.T ↔ B.Ux t
+P21.Symmetric.BranchIData.zx_translation (B : P21.Symmetric.BranchIData) {t : ℤ} (ht : t ∈ B.base.T) :
+  t + B.a * B.base.u - B.β * B.base.v ∉ B.base.T ↔ B.Zx t
+P21.Symmetric.BranchIData.uy_translation (B : P21.Symmetric.BranchIData) {t : ℤ} (ht : t ∈ B.base.T) :
+  t + (B.b + B.β) * B.base.v - B.base.u ∉ B.base.T ↔ B.Uy t
+P21.Symmetric.BranchIData.zy_translation (B : P21.Symmetric.BranchIData) {t : ℤ} (ht : t ∈ B.base.T) :
+  t + B.b * B.base.v - B.α * B.base.u ∉ B.base.T ↔ B.Zy t
+P21.Symmetric.BranchIData.firstReturnExample : P21.Symmetric.BranchIData
+P21.Symmetric.BranchIData.first_return_exception :
+  P21.Symmetric.BranchIData.firstReturnExample.j 1 = 0 ∧
+    P21.Symmetric.BranchIData.firstReturnExample.τ 1 = 2 * 7 + 0 * 5 ∧
+      P21.Symmetric.BranchIData.firstReturnExample.Zx (P21.Symmetric.BranchIData.firstReturnExample.τ 1) ∧
+        ¬P21.Symmetric.BranchIData.firstReturnExample.q₀ + 1 ≤ 0 ∧
+          P21.Symmetric.BranchIData.firstReturnExample.τ 0 ∉ P21.Symmetric.BranchIData.firstReturnExample.base.T
+P21.Symmetric.BranchIData.firstReturnExample_periodic (n : ℤ) :
+  P21.Symmetric.BranchIData.firstReturnExample.τ (n + 3) = P21.Symmetric.BranchIData.firstReturnExample.τ n + 25
+P21.Symmetric.BranchIData.firstReturnExample_stable : P21.Symmetric.BranchIData.firstReturnExample.Stable
+P21.Symmetric.BranchIRealization {g : P21.Generators} (B : P21.Symmetric.BranchIData)
+  (G : P21.Symmetric.SymmetricGlueData g) (F f : ℤ) : Prop
+P21.Symmetric.BranchIRealization.normal_mem {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) {j t : ℤ}
+  (hj : 0 ≤ j) (hjd : j < B.d) : j * B.w + B.d * t ∈ g.H ↔ t ∈ B.base.T
+P21.Symmetric.BranchIRealization.represented_mem {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) {j t : ℤ}
+  (hj : 0 ≤ j) (ht : t ∈ B.base.T) : j * B.w + B.d * t ∈ g.H
+P21.Symmetric.BranchIRealization.x_eq {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) :
+  g.n (G.perm 0) = B.d * B.base.u
+P21.Symmetric.BranchIRealization.y_eq {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) :
+  g.n (G.perm 1) = B.d * B.base.v
+P21.Symmetric.BranchIRealization.z_eq {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) :
+  g.n (G.perm 2) = B.w
+P21.Symmetric.BranchIRealization.walk_identity {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (n : ℤ) :
+  f - F - g.m + n * g.m = B.j n * B.w + B.d * B.τ n
+P21.Symmetric.BranchIRealization.stable_iff {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) :
+  B.Stable ↔ ∀ (n : ℤ), 1 ≤ n → f - F - g.m + n * g.m ∈ g.H
+P21.Symmetric.BranchIRealization.stable {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hsym : P21.Symmetric.SymmetricAt g.H f) : B.Stable
+P21.Symmetric.BranchIRealization.ux_hit {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hx : P21.Symmetric.ActualRawRow s F f ((B.a + B.α) * B.d * B.base.u)) : ∃ n, 1 ≤ n ∧ B.Ux (B.τ n)
+P21.Symmetric.BranchIRealization.uy_hit {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hy : P21.Symmetric.ActualRawRow s F f ((B.b + B.β) * B.d * B.base.v)) : ∃ n, 1 ≤ n ∧ B.Uy (B.τ n)
+P21.Symmetric.BranchIRealization.zx_hit {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hx : P21.Symmetric.ActualRawRow s F f ((B.a + B.α) * B.d * B.base.u)) : ∃ n, 1 ≤ n ∧ B.j n = 0 ∧ B.Zx (B.τ n)
+P21.Symmetric.BranchIRealization.zy_hit {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hy : P21.Symmetric.ActualRawRow s F f ((B.b + B.β) * B.d * B.base.v)) : ∃ n, 1 ≤ n ∧ B.j n = 0 ∧ B.Zy (B.τ n)
+P21.Symmetric.BranchIRealization.four_hits {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hx : P21.Symmetric.ActualRawRow s F f ((B.a + B.α) * B.d * B.base.u))
+  (hy : P21.Symmetric.ActualRawRow s F f ((B.b + B.β) * B.d * B.base.v)) : B.FourHits
+P21.Symmetric.BranchIRealization.impossible {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f) (s : g.Setting)
+  (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hx : P21.Symmetric.ActualRawRow s F f ((B.a + B.α) * B.d * B.base.u))
+  (hy : P21.Symmetric.ActualRawRow s F f ((B.b + B.β) * B.d * B.base.v)) : False
+P21.Symmetric.BranchII.k1_aux_pos {d w s kappa rho theta : ℤ} (hd : 0 < d) (hw : 0 < w) (hks : kappa + s + 1 ≤ d)
+  (hr : 0 < s * w + d * rho) (hmw : d * theta - kappa * w < w) : 0 < w - theta + rho
+P21.Symmetric.BranchII.k1_reduces_to_branchI (T : P21.Symmetric.TwoGeneratorData) {a b w rho theta t₀ : ℤ} (ha : 0 < a)
+  (hav : a < T.v) (hb : 0 < b) (hbu : b < T.u) (hrho : rho = T.u * T.v - w - a * T.u - b * T.v)
+  (htheta : theta = rho + T.u + T.v + t₀) (hg : 0 < w - T.u - T.v - t₀) (hgapx : a * T.u + (w - T.u - T.v - t₀) ∉ T.T)
+  (hgapy : b * T.v + (w - T.u - T.v - t₀) ∉ T.T) : theta - T.u - T.v ∈ T.T
+P21.Symmetric.BranchII.k0_e0_impossible (T : P21.Symmetric.TwoGeneratorData) {rho theta t₀ : ℤ}
+  (htheta : theta = rho + T.u + T.v + t₀) (ht₀ : t₀ ∈ T.T) (hu : theta < T.u) (hv : theta < T.v)
+  (hfs : rho + theta ∈ T.T) : False
+P21.Symmetric.BranchII.k0_theta_coefficients (T : P21.Symmetric.TwoGeneratorData) {A B p q rho theta : ℤ} (hp : 0 ≤ p)
+  (hq : 0 ≤ q) (hrho : rho = T.u * T.v - A * T.u - B * T.v) (htheta : theta = rho + T.u + T.v + (p * T.u + q * T.v))
+  (hgap : theta ∉ T.T) (hAv : A < T.v) (hBu : B < T.u) :
+  p ≤ A - 2 ∧
+    q ≤ B - 2 ∧
+      theta = -(A - 1 - p) * T.u + (T.u - (B - 1 - q)) * T.v ∧ theta = (T.v - (A - 1 - p)) * T.u - (B - 1 - q) * T.v
+P21.Symmetric.BranchII.div_eq_of_bounds {a d q : ℤ} (hd : 0 < d) (hl : q * d ≤ a) (hu : a < (q + 1) * d) : a / d = q
+P21.Symmetric.BranchII.carry (d s e n : ℤ) : ℤ
+P21.Symmetric.BranchII.ceiling (d e n : ℤ) : ℤ
+P21.Symmetric.BranchII.epsilon (d s e n : ℤ) : ℤ
+P21.Symmetric.BranchII.tau (d s e w rho theta n : ℤ) : ℤ
+P21.Symmetric.BranchII.complement (d e w B v theta n : ℤ) : ℤ
+P21.Symmetric.BranchII.complement_add_tau {d s e w rho theta A B D u v n : ℤ} (hrho : rho = u * v - A * u - B * v)
+  (hAD : A + D = v) :
+  P21.Symmetric.BranchII.complement d e w B v theta n + P21.Symmetric.BranchII.tau d s e w rho theta n =
+    D * u - P21.Symmetric.BranchII.epsilon d s e n * w
+P21.Symmetric.BranchII.carry_of_residue {d s e n q r : ℤ} (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d) (hr : 0 ≤ r)
+  (hrd : r < d) (he : n * e = q * d + r) : P21.Symmetric.BranchII.carry d s e n = q + if s + r < d then 0 else 1
+P21.Symmetric.BranchII.ceiling_of_residue {d e n q r : ℤ} (hd : 0 < d) (hr : 0 ≤ r) (hrd : r < d)
+  (he : n * e = q * d + r) : P21.Symmetric.BranchII.ceiling d e n = q + if r = 0 then 0 else 1
+P21.Symmetric.BranchII.epsilon_zero_or_one {d s e n : ℤ} (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d) :
+  P21.Symmetric.BranchII.epsilon d s e n = 0 ∨ P21.Symmetric.BranchII.epsilon d s e n = 1
+P21.Symmetric.BranchII.epsilon_one_residue {d s e n : ℤ} (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d)
+  (heps : P21.Symmetric.BranchII.epsilon d s e n = 1) : 0 < n * e % d ∧ s + n * e % d < d
+P21.Symmetric.BranchII.epsilon_one_predecessor {d s e n : ℤ} (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d) (he : 0 < e)
+  (hed : e < d) (hek : d - s ≤ e) (hphase : 2 * e ≤ d + 1) (hn : 1 ≤ n)
+  (heps : P21.Symmetric.BranchII.epsilon d s e n = 1) :
+  2 ≤ n ∧ P21.Symmetric.BranchII.carry d s e (n - 1) = P21.Symmetric.BranchII.carry d s e n
+P21.Symmetric.BranchII.crosscore_phase {d s e w rho theta L₀ : ℤ} (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d) (he : 0 < e)
+  (hed : e < d) (hw : 0 < w) (hL : 0 < L₀) (htheta : theta = rho + L₀) (hmw : e * w + d * theta < w)
+  (hfs : 0 ≤ P21.Symmetric.BranchII.tau d s e w rho theta 1) :
+  theta < 0 ∧ d - s ≤ e ∧ (e - 1) * w < d * -theta ∧ 2 * d * -theta < d * w ∧ 2 * e ≤ d + 1
+P21.Symmetric.BranchII.shift_gap_has_axis (T : P21.Symmetric.TwoGeneratorData) {A D t : ℤ} (hA : 0 ≤ A)
+  (hAD : A + D = T.v) (ht : t ∈ T.T) (hgap : t + A * T.u - T.v ∉ T.T) : ∃ j, 0 ≤ j ∧ j < D ∧ t = j * T.u
+P21.Symmetric.BranchII.crosscore_shift_mem (T : P21.Symmetric.TwoGeneratorData) {d s e w rho theta A B D P Q : ℤ}
+  (hd : 0 < d) (hs : 0 ≤ s) (hsd : s < d) (he : 0 < e) (hed : e < d) (hek : d - s ≤ e) (hphase : 2 * e ≤ d + 1)
+  (hA : 0 ≤ A) (hAD : A + D = T.v) (hP : P ≤ A - 1) (hQ : 0 < Q) (hQu : Q < T.u) (htheta : theta = -P * T.u + Q * T.v)
+  (hrho : rho = T.u * T.v - A * T.u - B * T.v)
+  (hfs : ∀ (n : ℤ), 1 ≤ n → P21.Symmetric.BranchII.tau d s e w rho theta n ∈ T.T)
+  (hY : ∀ (n : ℤ), 1 ≤ n → P21.Symmetric.BranchII.complement d e w B T.v theta n ∉ T.T) (n : ℤ) (hn : 1 ≤ n) :
+  P21.Symmetric.BranchII.tau d s e w rho theta n + A * T.u - T.v ∈ T.T
+P21.Symmetric.BranchII.layer (d s e n : ℤ) : ℤ
+P21.Symmetric.BranchII.complementLayer (d e n : ℤ) : ℤ
+P21.Symmetric.BranchII.layer_bounds {d s e n : ℤ} (hd : 0 < d) :
+  0 ≤ P21.Symmetric.BranchII.layer d s e n ∧ P21.Symmetric.BranchII.layer d s e n < d
+P21.Symmetric.BranchII.complementLayer_bounds {d e n : ℤ} (hd : 0 < d) :
+  0 ≤ P21.Symmetric.BranchII.complementLayer d e n ∧ P21.Symmetric.BranchII.complementLayer d e n < d
+P21.Symmetric.BranchII.stable_coordinate_identity {d s e n w rho theta r m : ℤ} (hr : r = s * w + d * rho)
+  (hm : m = e * w + d * theta) :
+  r + n * m = P21.Symmetric.BranchII.layer d s e n * w + d * P21.Symmetric.BranchII.tau d s e w rho theta n
+P21.Symmetric.BranchII.complement_coordinate_identity {d e n w B v theta m : ℤ} (hm : m = e * w + d * theta) :
+  B * (d * v) - n * m =
+    P21.Symmetric.BranchII.complementLayer d e n * w + d * P21.Symmetric.BranchII.complement d e w B v theta n
+P21.Symmetric.BranchIIActual.row_x {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius (R.A * (G.d * G.two.u))
+P21.Symmetric.BranchIIActual.row_y {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius (R.B * (G.d * G.two.v))
+P21.Symmetric.BranchIIActual.row_px {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius ((G.d - R.s) * G.w + R.Ap * (G.d * G.two.u))
+P21.Symmetric.BranchIIActual.row_py {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius ((G.d - R.s) * G.w + R.Bp * (G.d * G.two.v))
+P21.Symmetric.BranchIIActual.rho_uv {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : R.rho = G.two.u * G.two.v - R.A * G.two.u - R.B * G.two.v
+P21.Symmetric.BranchIIActual.rho_primed_uv {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  R.rho = G.two.u * G.two.v - G.w - R.Ap * G.two.u - R.Bp * G.two.v
+P21.Symmetric.BranchIIActual.m_lt_w {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} :
+  g.m < G.w
+P21.Symmetric.BranchIIActual.actual_fs {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  {e theta : ℤ} (hm : g.m = e * G.w + G.d * theta) (n : ℤ) (hn : 1 ≤ n) :
+  P21.Symmetric.BranchII.tau G.d R.s e G.w R.rho theta n ∈ G.two.T
+P21.Symmetric.BranchIIActual.actual_complement_gap {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) {e theta : ℤ}
+  (hm : g.m = e * G.w + G.d * theta) (n : ℤ) (hn : 1 ≤ n) :
+  P21.Symmetric.BranchII.complement G.d e G.w R.B G.two.v theta n ∉ G.two.T
+P21.Symmetric.BranchIIActual.x_minus_y_mem {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) :
+  R.A * (G.d * G.two.u) + (G.frobenius - F - g.m) - g.n (G.perm 1) ∈ g.H
+P21.Symmetric.BranchIIActual.k1_excluded {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) {e mu theta t₀ : ℤ} (_he0 : 0 ≤ e) (hed : e < G.d)
+  (hem : g.m = e * G.w + G.d * mu) (htheta : theta = mu + G.w) (hse : R.s + 1 ≤ e)
+  (hbranch : theta = R.rho + G.two.u + G.two.v + t₀) (hnotI : theta - G.two.u - G.two.v ∉ G.two.T) : False
+P21.Symmetric.BranchIIActual.k0_excluded {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) {e theta t₀ : ℤ} (he0 : 0 ≤ e) (hed : e < G.d)
+  (hm : g.m = e * G.w + G.d * theta) (hbranch : theta = R.rho + G.two.u + G.two.v + t₀) (ht₀ : t₀ ∈ G.two.T) : False
+P21.Symmetric.Raw4Data.branchII_excluded {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) {e μ : ℤ} (he : 0 ≤ e) (hed : e < G.d) (hm : g.m = e * G.w + G.d * μ) :
+  μ + (G.d - 1 - R.s + e) / G.d * G.w - R.rho - G.two.u - G.two.v ∉ G.two.T
+P21.Symmetric.symmetric_tail_from_glue_data (g : P21.Generators) (setting : g.Setting) (F : ℤ)
+  (hF : setting.semigroup.IsFrobenius F) (hcan : setting.semigroup.Canonical F g.m)
+  (G : P21.Symmetric.SymmetricGlueData g) : setting.semigroup.type ≤ 4
+P21.Symmetric.nonnegative_mul_mem (H : AddSubmonoid ℤ) {a n : ℤ} (ha : a ∈ H) (hn : 0 ≤ n) : n * a ∈ H
+P21.Symmetric.cross_layer_drop (H : AddSubmonoid ℤ) (I : Set ℤ) {w x k A A' : ℤ} (hw : w ∈ H) (hx : x ∈ H)
+  (hwpos : 0 < w) (hxpos : 0 < x) (hk : 0 < k) (hA : A * x ∈ I) (hmin : P21.Symmetric.idealMin H I (k * w + A' * x)) :
+  A' < A
+P21.Symmetric.cross_layer_identity (T : P21.Symmetric.TwoGeneratorData) {ρ w A B A' B' : ℤ}
+  (hρ : ρ = T.u * T.v - A * T.u - B * T.v) (hρw : ρ + w = T.u * T.v - A' * T.u - B' * T.v) :
+  w = (A - A') * T.u + (B - B') * T.v
+P21.Symmetric.complete_split (T : P21.Symmetric.TwoGeneratorData) {A B ρ θ : ℤ} (hA : 0 < A) (hAv : A < T.v)
+  (hB : 0 < B) (hBu : B < T.u) (hρ : ρ = T.u * T.v - A * T.u - B * T.v) (hx : θ + (B - 1) * T.v - T.u ∈ T.T)
+  (hy : θ + (A - 1) * T.u - T.v ∈ T.T) : θ - T.u - T.v ∈ T.T ∨ θ - ρ - T.u - T.v ∈ T.T
+P21.Symmetric.SymmetricGlueData (g : P21.Generators) : Type
+P21.Symmetric.SymmetricGlueData.d_pos {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) : 0 < D.d
+P21.Symmetric.SymmetricGlueData.bezout {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) :
+  D.d * D.d.gcdA D.w + D.w * D.d.gcdB D.w = 1
+P21.Symmetric.SymmetricGlueData.normal_form_exists {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (a : ℤ) : ∃ j t, 0 ≤ j ∧ j < D.d ∧ a = j * D.w + D.d * t
+P21.Symmetric.SymmetricGlueData.normal_form_unique {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  {j t j' t' : ℤ} (hj : 0 ≤ j) (hjd : j < D.d) (hj' : 0 ≤ j') (hj'd : j' < D.d)
+  (he : j * D.w + D.d * t = j' * D.w + D.d * t') : j = j' ∧ t = t'
+P21.Symmetric.SymmetricGlueData.represented {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) :
+  AddSubmonoid ℤ
+P21.Symmetric.SymmetricGlueData.d_mul_mem_tail {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) {t : ℤ}
+  (ht : t ∈ D.two.T) : D.d * t ∈ g.H
+P21.Symmetric.SymmetricGlueData.w_mem_tail {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) : D.w ∈ g.H
+P21.Symmetric.SymmetricGlueData.represented_eq_tail {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) :
+  D.represented = g.H
+P21.Symmetric.SymmetricGlueData.mem_tail_iff {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) {a : ℤ} :
+  a ∈ g.H ↔ ∃ n, ∃ t ∈ D.two.T, a = ↑n * D.w + D.d * t
+P21.Symmetric.SymmetricGlueData.normal_form_mem_iff {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  {j t : ℤ} (hj : 0 ≤ j) (hjd : j < D.d) : j * D.w + D.d * t ∈ g.H ↔ t ∈ D.two.T
+P21.Symmetric.SymmetricGlueData.frobenius {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) : ℤ
+P21.Symmetric.SymmetricGlueData.symmetry {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) :
+  P21.Symmetric.SymmetricAt g.H D.frobenius
+P21.Symmetric.SymmetricGlueData.isGreatest_gap {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (s : g.Setting) : IsGreatest {a | a ∉ g.H} D.frobenius
+P21.Symmetric.SymmetricGlueData.w_pos {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) (s : g.Setting) :
+  0 < D.w
+P21.Symmetric.SymmetricGlueData.normal_form_existsUnique {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (a : ℤ) : ∃! jt, 0 ≤ jt.1 ∧ jt.1 < D.d ∧ a = jt.1 * D.w + D.d * jt.2
+P21.Symmetric.SymmetricGlueData.tailSemigroup {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (s : g.Setting) : P21.NumericalSemigroup
+P21.Symmetric.SymmetricGlueData.isFrobenius {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (s : g.Setting) : (D.tailSemigroup s).IsFrobenius D.frobenius
+P21.Symmetric.Raw4Data {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g) (setting : g.Setting) (F : ℤ) : Type
+P21.Symmetric.SymmetricGlueData.intersection_low {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  {s rho j t : ℤ} (hj : 0 ≤ j) (hjd : j < D.d) (hsj : 0 ≤ j + s) (hsjd : j + s < D.d) :
+  j * D.w + D.d * t ∈ P21.Symmetric.tailIntersection g (s * D.w + D.d * rho) ↔ t ∈ D.two.intersectionIdeal rho
+P21.Symmetric.SymmetricGlueData.intersection_high {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  {s rho j t : ℤ} (hj : 0 ≤ j) (hjd : j < D.d) (hsj : 0 ≤ j + s - D.d) (hsjd : j + s - D.d < D.d) :
+  j * D.w + D.d * t ∈ P21.Symmetric.tailIntersection g (s * D.w + D.d * rho) ↔ t ∈ D.two.intersectionIdeal (rho + D.w)
+P21.Symmetric.SymmetricGlueData.raw_min_layers {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) {s rho j t : ℤ} (hs : 0 ≤ s) (hsd : s < D.d) (hj : 0 ≤ j) (hjd : j < D.d)
+  (hc : P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (s * D.w + D.d * rho)) (j * D.w + D.d * t)) :
+  j = 0 ∧ P21.Symmetric.idealMin D.two.T (D.two.intersectionIdeal rho) t ∨
+    0 < s ∧ j = D.d - s ∧ P21.Symmetric.idealMin D.two.T (D.two.intersectionIdeal (rho + D.w)) t
+P21.Symmetric.SymmetricGlueData.rawCandidates {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (s p q pp qq : ℤ) : Set ℤ
+P21.Symmetric.SymmetricGlueData.raw_min_subset {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) {s rho p q pp qq : ℤ} (hs : 0 ≤ s) (hsd : s < D.d) (hq : 0 ≤ q) (hqu : q < D.two.u)
+  (hqq : 0 ≤ qq) (hqqu : qq < D.two.u) (he : rho = p * D.two.u + q * D.two.v)
+  (he' : rho + D.w = pp * D.two.u + qq * D.two.v) :
+  {c | P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (s * D.w + D.d * rho)) c} ⊆
+    D.rawCandidates s p q pp qq
+P21.Symmetric.SymmetricGlueData.rawCandidates_ncard_le {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (s p q pp qq : ℤ) : (D.rawCandidates s p q pp qq).ncard ≤ 4
+P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) (r : ℤ) : {c | P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g r) c}.ncard ≤ 4
+P21.Symmetric.SymmetricGlueData.raw_min_zero_subset {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) {rho p q : ℤ} (hq : 0 ≤ q) (hqu : q < D.two.u) (he : rho = p * D.two.u + q * D.two.v) :
+  {c | P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (D.d * rho)) c} ⊆
+    {D.d * D.two.firstThreshold p, D.d * D.two.secondThreshold p q}
+P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) (rho : ℤ) :
+  {c | P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (D.d * rho)) c}.ncard ≤ 2
+P21.Symmetric.SymmetricGlueData.surviving_eq_candidates {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) {F f s rho p q pp qq : ℤ} (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (htype : 5 ≤ setting.semigroup.type) (hs : 0 ≤ s) (hsd : s < D.d) (hr : f - F - g.m = s * D.w + D.d * rho)
+  (hq : 0 ≤ q) (hqu : q < D.two.u) (hqq : 0 ≤ qq) (hqqu : qq < D.two.u) (he : rho = p * D.two.u + q * D.two.v)
+  (he' : rho + D.w = pp * D.two.u + qq * D.two.v) :
+  {c |
+      P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (f - F - g.m)) c ∧ c ∈ setting.semigroup.Apery g.m} =
+    D.rawCandidates s p q pp qq
+P21.Symmetric.SymmetricGlueData.four_set_pair_distinct {a b c d : ℤ} (h : 4 ≤ {a, b, c, d}.ncard) : a ≠ b ∧ c ≠ d
+P21.Symmetric.SymmetricGlueData.exists_raw4 {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g)
+  (setting : g.Setting) {F : ℤ} (hF : setting.semigroup.IsFrobenius F) (hcan : setting.semigroup.Canonical F g.m)
+  (htype : 5 ≤ setting.semigroup.type) : Nonempty (P21.Symmetric.Raw4Data D setting F)
+P21.Symmetric.BranchIRealization.difference_pos {g : P21.Generators} {B : P21.Symmetric.BranchIData}
+  {G : P21.Symmetric.SymmetricGlueData g} {F f : ℤ} (R : P21.Symmetric.BranchIRealization B G F f)
+  (setting : g.Setting) : 0 < B.w - B.L
+P21.Symmetric.Raw4Data.row_x {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : P21.Symmetric.ActualRawRow setting F G.frobenius (R.A * (G.d * G.two.u))
+P21.Symmetric.Raw4Data.row_y {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : P21.Symmetric.ActualRawRow setting F G.frobenius (R.B * (G.d * G.two.v))
+P21.Symmetric.Raw4Data.row_px {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius ((G.d - R.s) * G.w + R.Ap * (G.d * G.two.u))
+P21.Symmetric.Raw4Data.row_py {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) :
+  P21.Symmetric.ActualRawRow setting F G.frobenius ((G.d - R.s) * G.w + R.Bp * (G.d * G.two.v))
+P21.Symmetric.Raw4Data.A_lt {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.A < G.two.v
+P21.Symmetric.Raw4Data.B_lt {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.B < G.two.u
+P21.Symmetric.Raw4Data.Ap_lt {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.Ap < G.two.v
+P21.Symmetric.Raw4Data.Bp_lt {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.Bp < G.two.u
+P21.Symmetric.Raw4Data.rho_formula {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : R.rho = G.two.u * G.two.v - R.A * G.two.u - R.B * G.two.v
+P21.Symmetric.Raw4Data.rhop_formula {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : R.rho + G.w = G.two.u * G.two.v - R.Ap * G.two.u - R.Bp * G.two.v
+P21.Symmetric.Raw4Data.rho_y {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.rho = -R.B * G.two.v + R.D * G.two.u
+P21.Symmetric.Raw4Data.rhop_y {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) : R.rho + G.w = -R.Bp * G.two.v + R.Dp * G.two.u
+P21.Symmetric.Raw4Data.Ap_lt_A {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : R.Ap < R.A
+P21.Symmetric.Raw4Data.Bp_lt_B {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : R.Bp < R.B
+P21.Symmetric.Raw4Data.w_formula {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting}
+  {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) : G.w = (R.A - R.Ap) * G.two.u + (R.B - R.Bp) * G.two.v
+P21.Symmetric.Raw4Data.split {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g} {setting : g.Setting} {F : ℤ}
+  (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) {e μ : ℤ} (hm : g.m = e * G.w + G.d * μ) :
+  μ + (G.d - 1 - R.s + e) / G.d * G.w - G.two.u - G.two.v ∈ G.two.T ∨
+    μ + (G.d - 1 - R.s + e) / G.d * G.w - R.rho - G.two.u - G.two.v ∈ G.two.T
+P21.Symmetric.Raw4Data.branchI_excluded {g : P21.Generators} {G : P21.Symmetric.SymmetricGlueData g}
+  {setting : g.Setting} {F : ℤ} (R : P21.Symmetric.Raw4Data G setting F) (hF : setting.semigroup.IsFrobenius F)
+  (hcan : setting.semigroup.Canonical F g.m) {e μ : ℤ} (he : 0 ≤ e) (hed : e < G.d) (hm : g.m = e * G.w + G.d * μ) :
+  μ + (G.d - 1 - R.s + e) / G.d * G.w - G.two.u - G.two.v ∉ G.two.T
+P21.Symmetric.ActualRawRow {g : P21.Generators} (s : g.Setting) (F f c : ℤ) : Prop
+P21.Symmetric.ActualRawRow.pf {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : F + g.m - c ∈ s.semigroup.PF
+P21.Symmetric.ActualRawRow.core {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : c + (f - F - g.m) ∈ P21.Symmetric.stableCore g
+P21.Symmetric.ActualRawRow.all_ap {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) : c - g.m ∉ g.Gamma
+P21.Symmetric.ActualRawRow.sub_multiple_gap {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (n : ℕ) (hn : 1 ≤ n) : c - ↑n * g.m ∉ g.H
+P21.Symmetric.ActualRawRow.backward_gap {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : c + (f - F - g.m) - g.m ∉ g.H
+P21.Symmetric.ActualRawRow.pf_add_m_mem_tail {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : F + g.m - c + g.m ∈ g.H
+P21.Symmetric.ActualRawRow.pf_add_tail_generator {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) : F + g.m - c + g.n i ∈ g.Gamma
+P21.Symmetric.ActualRawRow.predecessor_not_stable {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) : c + (f - F - g.m) - g.n i ∉ P21.Symmetric.stableCore g
+P21.Symmetric.ActualRawRow.positive_hit_required {g : P21.Generators} {s : g.Setting} {F f c : ℤ}
+  (hrow : P21.Symmetric.ActualRawRow s F f c) (hF : s.semigroup.IsFrobenius F) (hcan : s.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) (hbase : c + (f - F - g.m) - g.n i ∈ g.H) :
+  ∃ n, 1 ≤ n ∧ c + (f - F - g.m) - g.n i + ↑n * g.m ∉ g.H
+P21.Symmetric.SymmetricGlueData.layer_mem_iff {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g) (j t : ℤ) :
+  j * G.w + G.d * t ∈ g.H ↔ t + j / G.d * G.w ∈ G.two.T
+P21.Symmetric.SymmetricGlueData.multiplicity_bounds {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g)
+  (s : g.Setting) : 0 < g.m ∧ g.m < G.d * G.two.u ∧ g.m < G.d * G.two.v ∧ g.m < G.w
+P21.Symmetric.SymmetricGlueData.multiplicity_coordinate_gap {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g)
+  (s : g.Setting) {e μ : ℤ} (he : 0 ≤ e) (hed : e < G.d) (hm : g.m = e * G.w + G.d * μ) : μ ∉ G.two.T
+P21.Symmetric.SymmetricGlueData.carry_binary {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g) {s e : ℤ}
+  (hs : 0 < s) (hsd : s < G.d) (he : 0 ≤ e) (hed : e < G.d) : (G.d - 1 - s + e) / G.d = 0 ∨ (G.d - 1 - s + e) / G.d = 1
+P21.Symmetric.SymmetricGlueData.carry_one_iff {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g) {s e : ℤ}
+  (hs : 0 < s) (hsd : s < G.d) (he : 0 ≤ e) (hed : e < G.d) : (G.d - 1 - s + e) / G.d = 1 ↔ s + 1 ≤ e
+P21.Symmetric.SymmetricGlueData.qm_x_coordinate {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g)
+  (s₀ : g.Setting) {F s ρ A B e μ : ℤ} (hF : s₀.semigroup.IsFrobenius F) (hcan : s₀.semigroup.Canonical F g.m)
+  (hrow : P21.Symmetric.ActualRawRow s₀ F G.frobenius (A * (G.d * G.two.u)))
+  (hr : G.frobenius - F - g.m = s * G.w + G.d * ρ) (hρ : ρ = G.two.u * G.two.v - A * G.two.u - B * G.two.v)
+  (hm : g.m = e * G.w + G.d * μ) : μ + (G.d - 1 - s + e) / G.d * G.w + (B - 1) * G.two.v - G.two.u ∈ G.two.T
+P21.Symmetric.SymmetricGlueData.qm_y_coordinate {g : P21.Generators} (G : P21.Symmetric.SymmetricGlueData g)
+  (s₀ : g.Setting) {F s ρ A B e μ : ℤ} (hF : s₀.semigroup.IsFrobenius F) (hcan : s₀.semigroup.Canonical F g.m)
+  (hrow : P21.Symmetric.ActualRawRow s₀ F G.frobenius (B * (G.d * G.two.v)))
+  (hr : G.frobenius - F - g.m = s * G.w + G.d * ρ) (hρ : ρ = G.two.u * G.two.v - A * G.two.u - B * G.two.v)
+  (hm : g.m = e * G.w + G.d * μ) : μ + (G.d - 1 - s + e) / G.d * G.w + (A - 1) * G.two.u - G.two.v ∈ G.two.T
+P21.Symmetric.SymmetricAt (H : AddSubmonoid ℤ) (f : ℤ) : Prop
+P21.Symmetric.stableCore (g : P21.Generators) : Set ℤ
+P21.Symmetric.shiftedCore (g : P21.Generators) (r : ℤ) : Set ℤ
+P21.Symmetric.idealMin (S : AddSubmonoid ℤ) (I : Set ℤ) (a : ℤ) : Prop
+P21.Symmetric.mem_gamma_iff_tail_add {g : P21.Generators} (t : ℤ) : t ∈ g.Gamma ↔ ∃ a ∈ g.H, ∃ n, t = a + ↑n * g.m
+P21.Symmetric.stableCore_subset_tail {g : P21.Generators} : P21.Symmetric.stableCore g ⊆ ↑g.H
+P21.Symmetric.gap_iff_stableCore {g : P21.Generators} {f t : ℤ} (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  t ∉ g.Gamma ↔ f - t ∈ P21.Symmetric.stableCore g
+P21.Symmetric.stableCore_add_gamma {g : P21.Generators} {a b : ℤ} (ha : a ∈ P21.Symmetric.stableCore g)
+  (hb : b ∈ g.Gamma) : a + b ∈ P21.Symmetric.stableCore g
+P21.Symmetric.stableCore_isLeast {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : IsLeast (P21.Symmetric.stableCore g) (f - F)
+P21.Symmetric.m_not_mem_tail {g : P21.Generators} (s : g.Setting) : g.m ∉ g.H
+P21.Symmetric.stableCore_zero_not_mem {g : P21.Generators} (s : g.Setting) : 0 ∉ P21.Symmetric.stableCore g
+P21.Symmetric.stableCore_mem_gt_m {g : P21.Generators} (s : g.Setting) {a : ℤ} (ha : a ∈ P21.Symmetric.stableCore g) :
+  g.m < a
+P21.Symmetric.stableCore_min_gt_m {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : g.m < f - F
+P21.Symmetric.stable_shift_pos {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : 0 < f - F - g.m
+P21.Symmetric.stable_walk {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) (n : ℕ) (hn : 1 ≤ n) : f - F - g.m + ↑n * g.m ∈ g.H
+P21.Symmetric.pf_iff_min_stableCore {g : P21.Generators} (s : g.Setting) {f q : ℤ}
+  (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  q ∈ s.semigroup.PF ↔ P21.Symmetric.idealMin g.Gamma (P21.Symmetric.stableCore g) (f - q)
+P21.Symmetric.shiftedCore_subset_gamma {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  P21.Symmetric.shiftedCore g (f - F - g.m) ⊆ ↑g.Gamma
+P21.Symmetric.shiftedCore_isLeast {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hsym : P21.Symmetric.SymmetricAt g.H f) : IsLeast (P21.Symmetric.shiftedCore g (f - F - g.m)) g.m
+P21.Symmetric.frobenius_eq_sub_core_min {g : P21.Generators} (s : g.Setting) {F f h : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (hh : IsLeast (P21.Symmetric.stableCore g) h) : F = f - h
+P21.Symmetric.symmetricAt_f_not_mem {g : P21.Generators} {f : ℤ} (hsym : P21.Symmetric.SymmetricAt g.H f) : f ∉ g.H
+P21.Symmetric.symmetricAt_gap_le {g : P21.Generators} (s : g.Setting) {f t : ℤ} (hsym : P21.Symmetric.SymmetricAt g.H f)
+  (ht : t ∉ g.H) : t ≤ f
+P21.Symmetric.TwoGeneratorData : Type
+P21.Symmetric.TwoGeneratorData.T (D : P21.Symmetric.TwoGeneratorData) : AddSubmonoid ℤ
+P21.Symmetric.TwoGeneratorData.mem_T (D : P21.Symmetric.TwoGeneratorData) {t : ℤ} :
+  t ∈ D.T ↔ ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ t = a * D.u + b * D.v
+P21.Symmetric.TwoGeneratorData.T_eq_generated (D : P21.Symmetric.TwoGeneratorData) : D.T = P21.generated ![D.u, D.v]
+P21.Symmetric.TwoGeneratorData.u_pos (D : P21.Symmetric.TwoGeneratorData) : 0 < D.u
+P21.Symmetric.TwoGeneratorData.v_pos (D : P21.Symmetric.TwoGeneratorData) : 0 < D.v
+P21.Symmetric.TwoGeneratorData.nonneg (D : P21.Symmetric.TwoGeneratorData) {t : ℤ} (ht : t ∈ D.T) : 0 ≤ t
+P21.Symmetric.TwoGeneratorData.bezout (D : P21.Symmetric.TwoGeneratorData) : D.u * D.u.gcdA D.v + D.v * D.u.gcdB D.v = 1
+P21.Symmetric.TwoGeneratorData.representation_difference (D : P21.Symmetric.TwoGeneratorData) {a b c d : ℤ}
+  (h : a * D.u + b * D.v = c * D.u + d * D.v) : ∃ k, a - c = k * D.v ∧ b - d = -k * D.u
+P21.Symmetric.TwoGeneratorData.normal_form_exists (D : P21.Symmetric.TwoGeneratorData) (t : ℤ) :
+  ∃ a b, 0 ≤ b ∧ b < D.u ∧ t = a * D.u + b * D.v
+P21.Symmetric.TwoGeneratorData.normal_form_unique (D : P21.Symmetric.TwoGeneratorData) {a b c d : ℤ} (hb : 0 ≤ b)
+  (hbu : b < D.u) (hd : 0 ≤ d) (hdu : d < D.u) (h : a * D.u + b * D.v = c * D.u + d * D.v) : a = c ∧ b = d
+P21.Symmetric.TwoGeneratorData.normal_form_mem_iff (D : P21.Symmetric.TwoGeneratorData) {a b : ℤ} (hb : 0 ≤ b)
+  (hbu : b < D.u) : a * D.u + b * D.v ∈ D.T ↔ 0 ≤ a
+P21.Symmetric.TwoGeneratorData.frobenius (D : P21.Symmetric.TwoGeneratorData) : ℤ
+P21.Symmetric.TwoGeneratorData.frobenius_symmetry (D : P21.Symmetric.TwoGeneratorData) (t : ℤ) :
+  t ∉ D.T ↔ D.frobenius - t ∈ D.T
+P21.Symmetric.TwoGeneratorData.subcritical_nonneg (D : P21.Symmetric.TwoGeneratorData) {P Q : ℤ} (hP : P < D.v)
+  (hQ : Q < D.u) (ht : P * D.u + Q * D.v ∈ D.T) : 0 ≤ P ∧ 0 ≤ Q
+P21.Symmetric.TwoGeneratorData.interior_gap (D : P21.Symmetric.TwoGeneratorData) {P Q : ℤ} (hP : 0 < P) (hQ : 0 < Q) :
+  D.u * D.v - P * D.u - Q * D.v ∉ D.T
+P21.Symmetric.TwoGeneratorData.subcritical_gap (D : P21.Symmetric.TwoGeneratorData) {P Q : ℤ} (_hP : 0 ≤ P)
+  (hPv : P < D.v) (hQ : 0 ≤ Q) (hQu : Q < D.u) : P * D.u + Q * D.v - D.u * D.v ∉ D.T
+P21.Symmetric.TwoGeneratorData.two_generator_intersection_iff (D : P21.Symmetric.TwoGeneratorData) {A B t : ℤ}
+  (hA : 0 < A) (hAv : A < D.v) (hB : 0 < B) (hBu : B < D.u) :
+  t - A * D.u ∈ D.T ∧ t - B * D.v ∈ D.T ↔ t - (A * D.u + B * D.v) ∈ D.T ∨ t - D.u * D.v ∈ D.T
+P21.Symmetric.TwoGeneratorData.translate (D : P21.Symmetric.TwoGeneratorData) (a : ℤ) : Set ℤ
+P21.Symmetric.TwoGeneratorData.two_generator_intersection (D : P21.Symmetric.TwoGeneratorData) {A B : ℤ} (hA : 0 < A)
+  (hAv : A < D.v) (hB : 0 < B) (hBu : B < D.u) :
+  D.translate (A * D.u) ∩ D.translate (B * D.v) = D.translate (A * D.u + B * D.v) ∪ D.translate (D.u * D.v)
+P21.Symmetric.TwoGeneratorData.mem_of_gt_frobenius (D : P21.Symmetric.TwoGeneratorData) {t : ℤ} (ht : D.frobenius < t) :
+  t ∈ D.T
+P21.Symmetric.TwoGeneratorData.semigroup (D : P21.Symmetric.TwoGeneratorData) : P21.NumericalSemigroup
+P21.Symmetric.TwoGeneratorData.isFrobenius (D : P21.Symmetric.TwoGeneratorData) : D.semigroup.IsFrobenius D.frobenius
+P21.Symmetric.TwoGeneratorData.normal_form_existsUnique (D : P21.Symmetric.TwoGeneratorData) (t : ℤ) :
+  ∃! ab, 0 ≤ ab.2 ∧ ab.2 < D.u ∧ t = ab.1 * D.u + ab.2 * D.v
+P21.Symmetric.TwoGeneratorData.intersectionIdeal (D : P21.Symmetric.TwoGeneratorData) (eta : ℤ) : Set ℤ
+P21.Symmetric.TwoGeneratorData.intersectionIdeal_add (D : P21.Symmetric.TwoGeneratorData) {eta t z : ℤ}
+  (ht : t ∈ D.intersectionIdeal eta) (hz : z ∈ D.T) : t + z ∈ D.intersectionIdeal eta
+P21.Symmetric.TwoGeneratorData.firstThreshold (D : P21.Symmetric.TwoGeneratorData) (p : ℤ) : ℤ
+P21.Symmetric.TwoGeneratorData.secondThreshold (D : P21.Symmetric.TwoGeneratorData) (p q : ℤ) : ℤ
+P21.Symmetric.TwoGeneratorData.firstThreshold_mem (D : P21.Symmetric.TwoGeneratorData) (p q : ℤ) (hq : 0 ≤ q) :
+  D.firstThreshold p ∈ D.intersectionIdeal (p * D.u + q * D.v)
+P21.Symmetric.TwoGeneratorData.secondThreshold_mem (D : P21.Symmetric.TwoGeneratorData) (p q : ℤ) (hqu : q < D.u) :
+  D.secondThreshold p q ∈ D.intersectionIdeal (p * D.u + q * D.v)
+P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators (D : P21.Symmetric.TwoGeneratorData) {p q t : ℤ}
+  (hq : 0 ≤ q) (hqu : q < D.u) :
+  t ∈ D.intersectionIdeal (p * D.u + q * D.v) ↔ t - D.firstThreshold p ∈ D.T ∨ t - D.secondThreshold p q ∈ D.T
+P21.Symmetric.TwoGeneratorData.minimal_mem_pair (D : P21.Symmetric.TwoGeneratorData) {p q t : ℤ} (hq : 0 ≤ q)
+  (hqu : q < D.u) (ht : P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) t) :
+  t = D.firstThreshold p ∨ t = D.secondThreshold p q
+P21.Symmetric.TwoGeneratorData.minimal_finite (D : P21.Symmetric.TwoGeneratorData) (eta : ℤ) :
+  {t | P21.Symmetric.idealMin D.T (D.intersectionIdeal eta) t}.Finite
+P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two (D : P21.Symmetric.TwoGeneratorData) (eta : ℤ) :
+  {t | P21.Symmetric.idealMin D.T (D.intersectionIdeal eta) t}.ncard ≤ 2
+P21.Symmetric.TwoGeneratorData.minima_incomparable (D : P21.Symmetric.TwoGeneratorData) {eta a b : ℤ}
+  (ha : P21.Symmetric.idealMin D.T (D.intersectionIdeal eta) a)
+  (hb : P21.Symmetric.idealMin D.T (D.intersectionIdeal eta) b) (hab : a ≠ b) : a - b ∉ D.T ∧ b - a ∉ D.T
+P21.Symmetric.TwoGeneratorData.two_minima_forces_bounds (D : P21.Symmetric.TwoGeneratorData) {p q a b : ℤ} (hq : 0 ≤ q)
+  (hqu : q < D.u) (ha : P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) a)
+  (hb : P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) b) (hab : a ≠ b) : 0 < q ∧ -D.v < p ∧ p < 0
+P21.Symmetric.TwoGeneratorData.minimal_pair_eq (D : P21.Symmetric.TwoGeneratorData) {p q : ℤ} (hq : 0 < q)
+  (hqu : q < D.u) (hpv : -D.v < p) (hp : p < 0) :
+  {t | P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) t} = {-p * D.u, (D.u - q) * D.v}
+P21.Symmetric.TwoGeneratorData.two_minima_iff (D : P21.Symmetric.TwoGeneratorData) {p q : ℤ} (hq : 0 ≤ q)
+  (hqu : q < D.u) :
+  (∃ a b,
+      P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) a ∧
+        P21.Symmetric.idealMin D.T (D.intersectionIdeal (p * D.u + q * D.v)) b ∧ a ≠ b) ↔
+    0 < q ∧ -D.v < p ∧ p < 0
+P21.Symmetric.tailIntersection (g : P21.Generators) (r : ℤ) : Set ℤ
+P21.Symmetric.minimal_bridge {g : P21.Generators} (s : g.Setting) (J I : Set ℤ) (hsub : J ⊆ ↑g.Gamma)
+  (hmin : IsLeast J g.m) (hIH : ∀ (c : ℤ), c ∈ I ↔ c ∈ J ∧ c ∈ g.H) :
+  {c | P21.Symmetric.idealMin g.Gamma J c} = insert g.m {c | P21.Symmetric.idealMin g.H I c ∧ c ∈ s.semigroup.Apery g.m}
+P21.Symmetric.distinguished_not_raw_apery {g : P21.Generators} (s : g.Setting) (I : Set ℤ) :
+  g.m ∉ {c | P21.Symmetric.idealMin g.H I c ∧ c ∈ s.semigroup.Apery g.m}
+P21.Symmetric.idealMin_shift {g : P21.Generators} {r c : ℤ} :
+  P21.Symmetric.idealMin g.Gamma (P21.Symmetric.shiftedCore g r) c ↔
+    P21.Symmetric.idealMin g.Gamma (P21.Symmetric.stableCore g) (c + r)
+P21.Symmetric.min_shiftedCore_iff_pf {g : P21.Generators} (s : g.Setting) {F f c : ℤ}
+  (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  P21.Symmetric.idealMin g.Gamma (P21.Symmetric.shiftedCore g (f - F - g.m)) c ↔ F + g.m - c ∈ s.semigroup.PF
+P21.Symmetric.tailIntersection_iff_shiftedCore {g : P21.Generators} (s : g.Setting) {F f c : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  c ∈ P21.Symmetric.tailIntersection g (f - F - g.m) ↔ c ∈ P21.Symmetric.shiftedCore g (f - F - g.m) ∧ c ∈ g.H
+P21.Symmetric.exact_bridge {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  {c | P21.Symmetric.idealMin g.Gamma (P21.Symmetric.shiftedCore g (f - F - g.m)) c} =
+    insert g.m
+      {c | P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (f - F - g.m)) c ∧ c ∈ s.semigroup.Apery g.m}
+P21.Symmetric.min_shiftedCore_set {g : P21.Generators} (s : g.Setting) {F f : ℤ}
+  (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  {c | P21.Symmetric.idealMin g.Gamma (P21.Symmetric.shiftedCore g (f - F - g.m)) c} =
+    (fun q => F + g.m - q) '' s.semigroup.PF
+P21.Symmetric.type_bridge {g : P21.Generators} (s : g.Setting) {F f : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hcan : s.semigroup.Canonical F g.m) (hsym : P21.Symmetric.SymmetricAt g.H f) :
+  s.semigroup.type =
+    1 +
+      {c |
+          P21.Symmetric.idealMin g.H (P21.Symmetric.tailIntersection g (f - F - g.m)) c ∧
+            c ∈ s.semigroup.Apery g.m}.ncard
+P21.Symmetric.SymmetricTail (g : P21.Generators) : Prop
+P21.Symmetric.SymmetricThreeGeneratorGluingStatement : Prop
+P21.Symmetric.glue_data_symmetric_tail {g : P21.Generators} (D : P21.Symmetric.SymmetricGlueData g) :
+  P21.Symmetric.SymmetricTail g
+structure P21.Symmetric.SymmetricGlueData (g : P21.Generators) : Type
+number of parameters: 1
+fields:
+  P21.Symmetric.SymmetricGlueData.perm : Equiv.Perm (Fin 3)
+  P21.Symmetric.SymmetricGlueData.two : P21.Symmetric.TwoGeneratorData
+  P21.Symmetric.SymmetricGlueData.d : ℤ
+  P21.Symmetric.SymmetricGlueData.w : ℤ
+  P21.Symmetric.SymmetricGlueData.d_ge_two : 2 ≤ self.d
+  P21.Symmetric.SymmetricGlueData.coprime : self.d.gcd self.w = 1
+  P21.Symmetric.SymmetricGlueData.w_mem : self.w ∈ self.two.T
+  P21.Symmetric.SymmetricGlueData.x_eq : g.n (self.perm 0) = self.d * self.two.u
+  P21.Symmetric.SymmetricGlueData.y_eq : g.n (self.perm 1) = self.d * self.two.v
+  P21.Symmetric.SymmetricGlueData.z_eq : g.n (self.perm 2) = self.w
+constructor:
+  P21.Symmetric.SymmetricGlueData.mk {g : P21.Generators} (perm : Equiv.Perm (Fin 3))
+    (two : P21.Symmetric.TwoGeneratorData) (d w : ℤ) (d_ge_two : 2 ≤ d) (coprime : d.gcd w = 1) (w_mem : w ∈ two.T)
+    (x_eq : g.n (perm 0) = d * two.u) (y_eq : g.n (perm 1) = d * two.v) (z_eq : g.n (perm 2) = w) :
+    P21.Symmetric.SymmetricGlueData g
+def P21.Symmetric.SymmetricTail : P21.Generators → Prop :=
+fun g => ∃ f, P21.Symmetric.SymmetricAt g.H f
+def P21.Symmetric.SymmetricThreeGeneratorGluingStatement : Prop :=
+∀ (g : P21.Generators), g.Setting → P21.Symmetric.SymmetricTail g → Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.symmetric_tail_from_glue_data (g : P21.Generators) (setting : g.Setting) (F : ℤ)
+  (hF : setting.semigroup.IsFrobenius F) (hcan : setting.semigroup.Canonical F g.m)
+  (G : P21.Symmetric.SymmetricGlueData g) : setting.semigroup.type ≤ 4
+'P21.Symmetric.BranchIData.w' does not depend on any axioms
+'P21.Symmetric.BranchIData.L' does not depend on any axioms
+'P21.Symmetric.BranchIData.ρ' does not depend on any axioms
+'P21.Symmetric.BranchIData.c' does not depend on any axioms
+'P21.Symmetric.BranchIData.j' does not depend on any axioms
+'P21.Symmetric.BranchIData.τ' does not depend on any axioms
+'P21.Symmetric.BranchIData.Ux' does not depend on any axioms
+'P21.Symmetric.BranchIData.Uy' does not depend on any axioms
+'P21.Symmetric.BranchIData.Zx' does not depend on any axioms
+'P21.Symmetric.BranchIData.Zy' does not depend on any axioms
+'P21.Symmetric.BranchIData.Stable' depends on axioms: [propext]
+'P21.Symmetric.BranchIData.j_eq_emod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.j_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.return_previous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.return_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.c_zero' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIData.c_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.first_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.later_return_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.not_both_late' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.ux_carry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.x_only' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.swap' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIData.stable_swap' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIData.y_only' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.xy_upper_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.xy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.four_hits_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.rectangle_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.ux_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zx_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.uy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.firstReturnExample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.first_return_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.firstReturnExample_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.firstReturnExample_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.normal_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.represented_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.x_eq' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIRealization.y_eq' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIRealization.z_eq' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIRealization.walk_identity' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.BranchIRealization.stable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.ux_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.uy_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.zx_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.zy_hit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.four_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k1_aux_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k1_reduces_to_branchI' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k0_e0_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k0_theta_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.div_eq_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.carry' does not depend on any axioms
+'P21.Symmetric.BranchII.ceiling' does not depend on any axioms
+'P21.Symmetric.BranchII.epsilon' does not depend on any axioms
+'P21.Symmetric.BranchII.tau' does not depend on any axioms
+'P21.Symmetric.BranchII.complement' does not depend on any axioms
+'P21.Symmetric.BranchII.complement_add_tau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.carry_of_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.ceiling_of_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.epsilon_zero_or_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.epsilon_one_residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.epsilon_one_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.shift_gap_has_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_shift_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.layer' does not depend on any axioms
+'P21.Symmetric.BranchII.complementLayer' does not depend on any axioms
+'P21.Symmetric.BranchII.layer_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.complementLayer_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.stable_coordinate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.complement_coordinate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.row_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.row_y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.row_px' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.row_py' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.rho_uv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.rho_primed_uv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.m_lt_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_fs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_complement_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.x_minus_y_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k1_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k0_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.branchII_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.symmetric_tail_from_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.nonnegative_mul_mem' depends on axioms: [propext]
+'P21.Symmetric.cross_layer_drop' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.cross_layer_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.complete_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.d_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.bezout' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.represented' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.d_mul_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.w_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.represented_eq_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.mem_tail_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.frobenius' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.isGreatest_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.w_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_existsUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.tailSemigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.intersection_low' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.intersection_high' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.rawCandidates' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.rawCandidates_ncard_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_zero_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.surviving_eq_candidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.four_set_pair_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.exists_raw4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.difference_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.row_x' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.row_y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.row_px' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.row_py' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.A_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.B_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.Ap_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.Bp_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.rho_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.rhop_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.rho_y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.rhop_y' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.Ap_lt_A' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.Bp_lt_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.w_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.branchI_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.all_ap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.sub_multiple_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.backward_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf_add_m_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf_add_tail_generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.predecessor_not_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.positive_hit_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.layer_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.multiplicity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.multiplicity_coordinate_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.carry_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.carry_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.qm_x_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.qm_y_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricAt' depends on axioms: [propext]
+'P21.Symmetric.stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.idealMin' depends on axioms: [propext]
+'P21.Symmetric.mem_gamma_iff_tail_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_subset_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.gap_iff_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_add_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.m_not_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_zero_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_mem_gt_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_min_gt_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stable_shift_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stable_walk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.pf_iff_min_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_subset_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.frobenius_eq_sub_core_min' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.symmetricAt_f_not_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.symmetricAt_gap_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.T' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.mem_T' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.T_eq_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.u_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.v_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.bezout' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.representation_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.frobenius' does not depend on any axioms
+'P21.Symmetric.TwoGeneratorData.frobenius_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.interior_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_generator_intersection_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.TwoGeneratorData.translate' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.two_generator_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.mem_of_gt_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.semigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_existsUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.intersectionIdeal' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.intersectionIdeal_add' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.firstThreshold' does not depend on any axioms
+'P21.Symmetric.TwoGeneratorData.secondThreshold' does not depend on any axioms
+'P21.Symmetric.TwoGeneratorData.firstThreshold_mem' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.secondThreshold_mem' depends on axioms: [propext, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_mem_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minima_incomparable' depends on axioms: [propext]
+'P21.Symmetric.TwoGeneratorData.two_minima_forces_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_pair_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_minima_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.tailIntersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.minimal_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.distinguished_not_raw_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.idealMin_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.min_shiftedCore_iff_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.tailIntersection_iff_shiftedCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.exact_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.min_shiftedCore_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.type_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricTail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricThreeGeneratorGluingStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.glue_data_symmetric_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k1_aux_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k1_reduces_to_branchI' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.k0_e0_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.complement_add_tau' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.epsilon_one_predecessor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchII.crosscore_shift_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_fs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.actual_complement_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k0_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIIActual.k1_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Raw4Data.branchII_excluded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.represented_eq_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.gap_iff_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_mem_gt_m' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stable_walk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.stableCore_add_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.pf_iff_min_stableCore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_subset_gamma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.shiftedCore_isLeast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.T_eq_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.representation_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_existsUnique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.frobenius_symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.interior_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.subcritical_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_generator_intersection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.intersectionIdeal_generators' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.minimal_pair_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.TwoGeneratorData.two_minima_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_layers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_ncard_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.raw_min_zero_ncard_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.surviving_eq_candidates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.exists_raw4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.type_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.exact_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.ActualRawRow.pf_add_m_mem_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.complete_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricThreeGeneratorGluingStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.four_hits_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.later_return_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.first_return_exception' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.firstReturnExample_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.ux_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zx_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.uy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIData.zy_translation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.four_hits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.BranchIRealization.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+M2 checks completed; this is not an independent audit ruling.
+
+EXIT_CODE=0
+
+## M2B unchanged original suite
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/m2b/verify.py
+test_actual_debt_is_not_hidden_by_nearby_comment (test_debt_scan.DebtScannerTest.test_actual_debt_is_not_hidden_by_nearby_comment) ... ok
+test_character_literals_cannot_hide_debt (test_debt_scan.DebtScannerTest.test_character_literals_cannot_hide_debt) ... ok
+test_character_literals_fail_closed (test_debt_scan.DebtScannerTest.test_character_literals_fail_closed) ... ok
+test_every_forbidden_token (test_debt_scan.DebtScannerTest.test_every_forbidden_token) ... ok
+test_interpolated_strings_fail_closed (test_debt_scan.DebtScannerTest.test_interpolated_strings_fail_closed) ... ok
+test_line_comment_and_documentation (test_debt_scan.DebtScannerTest.test_line_comment_and_documentation) ... ok
+test_line_numbers_preserved (test_debt_scan.DebtScannerTest.test_line_numbers_preserved) ... ok
+test_longer_identifiers (test_debt_scan.DebtScannerTest.test_longer_identifiers) ... ok
+test_nested_comments_are_not_declarations (test_debt_scan.DebtScannerTest.test_nested_comments_are_not_declarations) ... ok
+test_raw_string (test_debt_scan.DebtScannerTest.test_raw_string) ... ok
+test_set_image_notation_remains_code (test_debt_scan.DebtScannerTest.test_set_image_notation_remains_code) ... ok
+test_strings_with_comment_markers_and_escaped_quotes (test_debt_scan.DebtScannerTest.test_strings_with_comment_markers_and_escaped_quotes) ... ok
+test_unterminated_comment_and_string_fail_closed (test_debt_scan.DebtScannerTest.test_unterminated_comment_and_string_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
+test_hash_rejected (test_verify.ArchiveTests.test_hash_rejected) ... ok
+test_manifest_coverage_rejected (test_verify.ArchiveTests.test_manifest_coverage_rejected) ... ok
+test_traversal_rejected (test_verify.ArchiveTests.test_traversal_rejected) ... ok
+test_additional_shortcuts_banned (test_verify.InventoryTests.test_additional_shortcuts_banned) ... ok
+test_axiom_coverage (test_verify.InventoryTests.test_axiom_coverage) ... ok
+test_axiom_debt_and_duplicate (test_verify.InventoryTests.test_axiom_debt_and_duplicate) ... ok
+test_comment_not_a_declaration (test_verify.InventoryTests.test_comment_not_a_declaration) ... ok
+test_frozen_file_count (test_verify.InventoryTests.test_frozen_file_count) ... ok
+test_nested_namespace_and_section (test_verify.InventoryTests.test_nested_namespace_and_section) ... ok
+test_primed_name (test_verify.InventoryTests.test_primed_name) ... ok
+test_private_fails_closed (test_verify.InventoryTests.test_private_fails_closed) ... ok
+test_scope_mismatch (test_verify.InventoryTests.test_scope_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.040s
+
+OK
+✔ [1588/1598] Built P21.Factorization (11s)
+✔ [1589/1598] Built P21.NumericalSemigroup (10s)
+✔ [1590/1598] Built P21.Basic (9.6s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.8s)
+✔ [1592/1598] Built P21.Apery (10s)
+✔ [1593/1598] Built P21.CanonicalReduction (10s)
+✔ [1594/1598] Built P21.Tail (9.7s)
+✔ [1595/1598] Built P21.Selection (12s)
+✔ [1596/1598] Built P21.Semantics (9.6s)
+✔ [1597/1598] Built P21 (9.3s)
+Build completed successfully (1598 jobs).
+✔ [1601/1616] Built P21.Symmetric.StableCore (9.1s)
+✔ [1602/1616] Built P21.Symmetric.TwoGenerator (9.2s)
+✔ [1603/1616] Built P21.Symmetric.TypeBridge (7.9s)
+✔ [1604/1616] Built P21.Symmetric.TwoGeneratorIdeal (8.0s)
+✔ [1605/1616] Built P21.Symmetric.GlueNormalForm (9.1s)
+✔ [1606/1616] Built P21.Symmetric.BranchI (14s)
+✔ [1607/1616] Built P21.Symmetric.RawRows (8.0s)
+✔ [1608/1616] Built P21.External.SymmetricThreeGenerator (7.4s)
+✔ [1609/1616] Built P21.Symmetric.Raw4 (10s)
+✔ [1610/1616] Built P21.Symmetric.BranchII (10s)
+✔ [1611/1616] Built P21.Symmetric.CrossLayer (6.8s)
+✔ [1612/1616] Built P21.Symmetric.BranchIActual (6.0s)
+✔ [1613/1616] Built P21.Symmetric.Reduction (6.5s)
+✔ [1614/1616] Built P21.Symmetric.Raw4Consequences (8.8s)
+✔ [1615/1616] Built P21.Symmetric.BranchIIActual (8.2s)
+✔ [1616/1616] Built P21.Symmetric.Closure (9.0s)
+Build completed successfully (1616 jobs).
+✔ [1617/1626] Built P21.Symmetric.Classification.GcdDecomposition (9.2s)
+✔ [1618/1626] Built P21.Symmetric.Classification.CriticalRelations (9.3s)
+✔ [1619/1626] Built P21.Symmetric.Classification.TailNumericalSemigroup (9.5s)
+✔ [1620/1626] Built P21.Symmetric.Classification.SymmetricRigidity (9.7s)
+✔ [1621/1626] Built P21.Symmetric.Classification.AperyCardinality (10s)
+✔ [1622/1626] Built P21.Symmetric.Classification.TopFactorization (11s)
+✔ [1623/1626] Built P21.Symmetric.Classification.UniqueTop (10s)
+✔ [1624/1626] Built P21.Symmetric.Classification.GlueExistence (8.8s)
+✔ [1625/1626] Built P21.External.SymmetricThreeGeneratorProof (9.4s)
+✔ [1626/1626] Built P21.Symmetric.FullClosure (9.6s)
+Build completed successfully (1626 jobs).
+'P21.Symmetric.symmetric_three_generator_gluing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_le_of_emod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_rectangle_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.criticalRelation_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.ge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.coeff_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.not_offDirection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.below_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_not_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.decomposition_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.special_pair_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.primitive_pair_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangle_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.glue_exists_of_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.nonneg_mul_mem' depends on axioms: [propext]
+'P21.Symmetric.Classification.primitive_mem_of_lcm_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.boundary_determinant_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_boundary_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_zero_boundary_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.unique_top_apery_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_rectangle_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_boundary_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_generator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tailSemigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_gcd_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.value_permuted_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_bezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetric_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.TailApery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_complement_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_le_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.apery_actual_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.apery_gap_of_sub_mem' depends on axioms: [propext]
+'P21.Symmetric.Classification.two_representations_sub_lcm_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.two_representations_lcm_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.primitive_mem_of_two_representations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.two_top_representations_glue_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.tail_apery_pair_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_boundary_relations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.symmetric_tail_type_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+P21.Symmetric.symmetric_three_generator_gluing : P21.Symmetric.SymmetricThreeGeneratorGluingStatement
+P21.Symmetric.Classification.tail_apery_lower {g : P21.Generators} {i : Fin 3} {a b : ℤ} (ha : a ∈ g.H)
+  (hb : P21.Symmetric.Classification.TailApery g i b) (hd : b - a ∈ g.H) : P21.Symmetric.Classification.TailApery g i a
+P21.Symmetric.Classification.tail_apery_le_of_emod {g : P21.Generators} (s : g.Setting) {i : Fin 3} {a b : ℤ}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (hb : b ∈ g.H) (he : a % g.n i = b % g.n i) : a ≤ b
+P21.Symmetric.Classification.tail_apery_emod_le {g : P21.Generators} (s : g.Setting) {i : Fin 3} {a b : ℤ}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (hb : P21.Symmetric.Classification.TailApery g i b)
+  (he : a % g.n i = b % g.n i) : a ≤ b
+P21.Symmetric.Classification.tail_apery_emod_injective {g : P21.Generators} (s : g.Setting) {i : Fin 3} :
+  Set.InjOn (fun a => a % g.n i) {a | P21.Symmetric.Classification.TailApery g i a}
+P21.Symmetric.Classification.tail_apery_emod_surjective {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {r : ℤ} (hr0 : 0 ≤ r) (hr : r < g.n i) :
+  ∃ a, P21.Symmetric.Classification.TailApery g i a ∧ a % g.n i = r
+P21.Symmetric.Classification.tail_apery_card {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g)
+  (i : Fin 3) : {a | P21.Symmetric.Classification.TailApery g i a}.ncard = (g.n i).toNat
+P21.Symmetric.Classification.tail_apery_reduce {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {w : ℤ} (hw : w ∈ g.H) :
+  ∃ q a, 0 ≤ q ∧ P21.Symmetric.Classification.TailApery g i a ∧ w = q * g.n i + a
+P21.Symmetric.Classification.tail_apery_rectangle_card {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) (y z A B : ℤ) (hA : 0 ≤ A) (hB : 0 ≤ B)
+  (hrep : ∀ (w : ℤ), P21.Symmetric.Classification.TailApery g i w → ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * y + b * z)
+  (hrectangle :
+    ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → (P21.Symmetric.Classification.TailApery g i (a * y + b * z) ↔ a ≤ A ∧ b ≤ B))
+  (hinj :
+    ∀ (a b c d : ℤ),
+      0 ≤ a → a ≤ A → 0 ≤ b → b ≤ B → 0 ≤ c → c ≤ A → 0 ≤ d → d ≤ B → a * y + b * z = c * y + d * z → a = c ∧ b = d) :
+  g.n i = (A + 1) * (B + 1)
+P21.Symmetric.Classification.CriticalRelation (g : P21.Generators) (i : Fin 3) : Type
+P21.Symmetric.Classification.criticalRelation_exists (g : P21.Generators) (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (i : Fin 3) : Nonempty (P21.Symmetric.Classification.CriticalRelation g i)
+P21.Symmetric.Classification.CriticalRelation.ge_two {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) (hmin : g.TailMinimal) : 2 ≤ r.coeff
+P21.Symmetric.Classification.CriticalRelation.coeff_unique {g : P21.Generators} {i : Fin 3}
+  (r s : P21.Symmetric.Classification.CriticalRelation g i) : r.coeff = s.coeff
+P21.Symmetric.Classification.CriticalRelation.not_offDirection {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) {c : ℕ} (hc : 0 < c) (hlt : c < r.coeff) :
+  ¬g.OffDirection i (↑c * g.n i)
+P21.Symmetric.Classification.CriticalRelation.below_unique {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) (hpos : ∀ (j : Fin 3), 0 < g.n j) {c : ℕ} (hlt : c < r.coeff)
+  (a : Fin 3 → ℕ) (he : P21.value g.n a = ↑c * g.n i) : a i = c
+P21.Symmetric.Classification.tail_not_two (g : P21.Generators) (s : g.Setting) (i j k : Fin 3) (hij : i ≠ j)
+  (hik : i ≠ k) (a b : ℤ) (ha : 0 ≤ a) (hb : 0 ≤ b) : g.n i ≠ a * g.n j + b * g.n k
+P21.Symmetric.Classification.decomposition_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) (d u v : ℤ) (hd : 0 < d)
+  (hx : g.n (p 0) = d * u) (hy : g.n (p 1) = d * v) (huv : u.gcd v = 1)
+  (hmem : ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ g.n (p 2) = a * u + b * v) : Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.special_pair_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3))
+  (hmem :
+    ∃ a b,
+      0 ≤ a ∧
+        0 ≤ b ∧
+          g.n (p 2) =
+            a * (g.n (p 0) / ↑((g.n (p 0)).gcd (g.n (p 1)))) + b * (g.n (p 1) / ↑((g.n (p 0)).gcd (g.n (p 1))))) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.primitive_pair_data (g : P21.Generators) (s : g.Setting) (p : Equiv.Perm (Fin 3)) :
+  ∃ D,
+    D.u = g.n (p 0) / ↑((g.n (p 0)).gcd (g.n (p 1))) ∧
+      D.v = g.n (p 1) / ↑((g.n (p 0)).gcd (g.n (p 1))) ∧
+        g.n (p 0) = ↑((g.n (p 0)).gcd (g.n (p 1))) * D.u ∧ g.n (p 1) = ↑((g.n (p 0)).gcd (g.n (p 1))) * D.v
+P21.Symmetric.Classification.rectangle_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) (L M r q b : ℤ) (hL : 0 < L)
+  (hq : 0 ≤ q) (hb : 0 ≤ b) (hx : g.n (p 0) = L * M) (hz : g.n (p 2) = L * r) (hy : g.n (p 1) = q * M + b * r) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.glue_exists_of_symmetric (g : P21.Generators) (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) : Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.nonneg_mul_mem (H : AddSubmonoid ℤ) {a x : ℤ} (ha : 0 ≤ a) (hx : x ∈ H) : a * x ∈ H
+P21.Symmetric.Classification.primitive_mem_of_lcm_gap (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d x : ℤ} (hd : 1 ≤ d) (hx : x ∈ H) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (hgap : d * D.u * D.v - x ∉ H) : x ∈ D.T
+P21.Symmetric.Classification.boundary_determinant_dvd {x y z L M a b q r : ℤ}
+  (hbezout : ∃ α β γ, α * x + β * y + γ * z = 1) (hy : L * y = q * x + b * z) (hz : M * z = r * x + a * y) :
+  x ∣ L * M - a * b
+P21.Symmetric.Classification.rectangular_boundary_zero {x y z L M a b q r : ℤ} (hL : 0 < L) (hM : 0 < M) (ha : 0 ≤ a)
+  (haL : a < L) (hb : 0 ≤ b) (hbM : b < M) (hcard : x = L * M) (hbezout : ∃ α β γ, α * x + β * y + γ * z = 1)
+  (hy : L * y = q * x + b * z) (hz : M * z = r * x + a * y) : a = 0 ∨ b = 0
+P21.Symmetric.Classification.rectangular_zero_boundary_decomposition {x y z L M b q r : ℤ} (hL : 0 < L) (hM : 0 < M)
+  (hcard : x = L * M) (hy : L * y = q * x + b * z) (hz : M * z = r * x) : z = L * r ∧ y = q * M + b * r
+P21.Symmetric.Classification.unique_top_apery_rectangle (H : AddSubmonoid ℤ) {x y z t A B : ℤ} (hy : y ∈ H) (hz : z ∈ H)
+  (_hA : 0 ≤ A) (_hB : 0 ≤ B) (ht : t = A * y + B * z) (htgap : t - x ∉ H)
+  (hrep : ∀ w ∈ H, w - x ∉ H → ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * y + b * z)
+  (hcomp : ∀ w ∈ H, w - x ∉ H → t - w ∈ H ∧ t - w - x ∉ H)
+  (hunique : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → t = a * y + b * z → a = A ∧ b = B) {a b : ℤ} (ha : 0 ≤ a) (hb : 0 ≤ b) :
+  a * y + b * z ∈ H ∧ a * y + b * z - x ∉ H ↔ a ≤ A ∧ b ≤ B
+P21.Symmetric.Classification.unique_top_rectangle_injective {y z t A B : ℤ} (ht : t = A * y + B * z)
+  (hunique : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → t = a * y + b * z → a = A ∧ b = B) {a b c d : ℤ} (ha : 0 ≤ a) (hb : 0 ≤ b)
+  (_hc : 0 ≤ c) (hcA : c ≤ A) (_hd : 0 ≤ d) (hdB : d ≤ B) (he : a * y + b * z = c * y + d * z) : a = c ∧ b = d
+P21.Symmetric.Classification.rectangular_boundary_relation (H : AddSubmonoid ℤ) {x y z A B : ℤ} (hx : x ∈ H)
+  (hy : y ∈ H) (hz : z ∈ H) (hA : 0 ≤ A) (hB : 0 ≤ B)
+  (hrectangle : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → (a * y + b * z ∈ H ∧ a * y + b * z - x ∉ H ↔ a ≤ A ∧ b ≤ B))
+  (hreduce : ∀ w ∈ H, ∃ q a b, 0 ≤ q ∧ 0 ≤ a ∧ a ≤ A ∧ 0 ≤ b ∧ b ≤ B ∧ w = q * x + a * y + b * z) :
+  ∃ q b, 0 < q ∧ 0 ≤ b ∧ b ≤ B ∧ (A + 1) * y = q * x + b * z
+P21.Symmetric.Classification.tail_generator_pos {g : P21.Generators} (s : g.Setting) (i : Fin 3) : 0 < g.n i
+P21.Symmetric.Classification.tail_nonneg {g : P21.Generators} (s : g.Setting) {x : ℤ} (hx : x ∈ g.H) : 0 ≤ x
+P21.Symmetric.Classification.tail_minimal {g : P21.Generators} (s : g.Setting) : g.TailMinimal
+P21.Symmetric.Classification.tail_cofinite {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g) :
+  ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.Symmetric.Classification.tailSemigroup {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g) :
+  P21.NumericalSemigroup
+P21.Symmetric.Classification.tail_common_divisor_dvd_one {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) {d : ℤ} (hd : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Symmetric.Classification.tail_gcd_eq_one {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) : g.tailGcd = 1
+P21.Symmetric.Classification.value_permuted_three {g : P21.Generators} (p : Equiv.Perm (Fin 3)) (a : Fin 3 → ℕ) :
+  P21.value g.n a = ↑(a (p 0)) * g.n (p 0) + ↑(a (p 1)) * g.n (p 1) + ↑(a (p 2)) * g.n (p 2)
+P21.Symmetric.Classification.tail_bezout {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g)
+  (p : Equiv.Perm (Fin 3)) : ∃ α β γ, α * g.n (p 0) + β * g.n (p 1) + γ * g.n (p 2) = 1
+P21.Symmetric.Classification.symmetric_frobenius {g : P21.Generators} (s : g.Setting) {f : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) : (P21.Symmetric.Classification.tailSemigroup s ⋯).IsFrobenius f
+P21.Symmetric.Classification.TailApery (g : P21.Generators) (i : Fin 3) (a : ℤ) : Prop
+P21.Symmetric.Classification.symmetry_apery_top {g : P21.Generators} (s : g.Setting) {f : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) : P21.Symmetric.Classification.TailApery g i (f + g.n i)
+P21.Symmetric.Classification.symmetry_apery_complement {g : P21.Generators} {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) (ha : P21.Symmetric.Classification.TailApery g i a) :
+  P21.Symmetric.Classification.TailApery g i (f + g.n i - a)
+P21.Symmetric.Classification.symmetry_apery_complement_iff {g : P21.Generators} {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) :
+  P21.Symmetric.Classification.TailApery g i a ↔ P21.Symmetric.Classification.TailApery g i (f + g.n i - a)
+P21.Symmetric.Classification.symmetry_apery_le_top {g : P21.Generators} (s : g.Setting) {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) {i : Fin 3} (ha : P21.Symmetric.Classification.TailApery g i a) : a ≤ f + g.n i
+P21.Symmetric.Classification.apery_actual_zero {g : P21.Generators} {a : ℤ} {i : Fin 3}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (A : g.ActualFactorization3 a) : A.coeff i = 0
+P21.Symmetric.Classification.apery_gap_of_sub_mem (H : AddSubmonoid ℤ) {top x t : ℤ} (hgap : top - x ∉ H)
+  (hsub : top - t ∈ H) : t - x ∉ H
+P21.Symmetric.Classification.two_representations_sub_lcm_mem (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d top a b c e : ℤ} (hd : 0 < d) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+  (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v)) (hce : top = c * (d * D.u) + e * (d * D.v))
+  (hne : a ≠ c ∨ b ≠ e) : top - d * D.u * D.v ∈ H
+P21.Symmetric.Classification.two_representations_lcm_apery (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d top x a b c e : ℤ} (hd : 0 < d) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+  (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v)) (hce : top = c * (d * D.u) + e * (d * D.v))
+  (hne : a ≠ c ∨ b ≠ e) (hgap : top - x ∉ H) : d * D.u * D.v ∈ H ∧ d * D.u * D.v - x ∉ H
+P21.Symmetric.Classification.primitive_mem_of_two_representations (H : AddSubmonoid ℤ)
+  (D : P21.Symmetric.TwoGeneratorData) {d top x a b c e : ℤ} (hd : 0 < d) (hx : x ∈ H) (hu : d * D.u ∈ H)
+  (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v))
+  (hce : top = c * (d * D.u) + e * (d * D.v)) (hne : a ≠ c ∨ b ≠ e) (hgap : top - x ∉ H) : x ∈ D.T
+P21.Symmetric.Classification.two_top_representations_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) {f a b c e : ℤ} (hf : f ∉ g.H)
+  (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (he : 0 ≤ e) (hab : f + g.n (p 2) = a * g.n (p 0) + b * g.n (p 1))
+  (hce : f + g.n (p 2) = c * g.n (p 0) + e * g.n (p 1)) (hne : a ≠ c ∨ b ≠ e) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.tail_apery_pair_rep {g : P21.Generators} {w : ℤ}
+  (hw : P21.Symmetric.Classification.TailApery g 0 w) : ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * g.n 1 + b * g.n 2
+P21.Symmetric.Classification.tail_apery_reduction {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {w : ℤ} (hw : w ∈ g.H) :
+  ∃ q a, 0 ≤ q ∧ P21.Symmetric.Classification.TailApery g i a ∧ w = q * g.n i + a
+P21.Symmetric.Classification.unique_top_rectangle {g : P21.Generators} (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) {a b : ℤ} (ha : 0 ≤ a)
+  (hb : 0 ≤ b) : P21.Symmetric.Classification.TailApery g 0 (a * g.n 1 + b * g.n 2) ↔ a ≤ A ∧ b ≤ B
+P21.Symmetric.Classification.unique_top_boundary_relations {g : P21.Generators} (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) :
+  ∃ q r a b,
+    0 < q ∧
+      0 < r ∧
+        0 ≤ a ∧
+          a ≤ A ∧ 0 ≤ b ∧ b ≤ B ∧ (A + 1) * g.n 1 = q * g.n 0 + b * g.n 2 ∧ (B + 1) * g.n 2 = r * g.n 0 + a * g.n 1
+P21.Symmetric.Classification.unique_top_glue_data (g : P21.Generators) (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.symmetric_tail_type_le_four (g : P21.Generators) (setting : g.Setting) (F : ℤ)
+  (hF : setting.semigroup.IsFrobenius F) (hcan : setting.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricTail g) : setting.semigroup.type ≤ 4
+def P21.Symmetric.SymmetricTail : P21.Generators → Prop :=
+fun g => ∃ f, P21.Symmetric.SymmetricAt g.H f
+structure P21.Symmetric.SymmetricGlueData (g : P21.Generators) : Type
+number of parameters: 1
+fields:
+  P21.Symmetric.SymmetricGlueData.perm : Equiv.Perm (Fin 3)
+  P21.Symmetric.SymmetricGlueData.two : P21.Symmetric.TwoGeneratorData
+  P21.Symmetric.SymmetricGlueData.d : ℤ
+  P21.Symmetric.SymmetricGlueData.w : ℤ
+  P21.Symmetric.SymmetricGlueData.d_ge_two : 2 ≤ self.d
+  P21.Symmetric.SymmetricGlueData.coprime : self.d.gcd self.w = 1
+  P21.Symmetric.SymmetricGlueData.w_mem : self.w ∈ self.two.T
+  P21.Symmetric.SymmetricGlueData.x_eq : g.n (self.perm 0) = self.d * self.two.u
+  P21.Symmetric.SymmetricGlueData.y_eq : g.n (self.perm 1) = self.d * self.two.v
+  P21.Symmetric.SymmetricGlueData.z_eq : g.n (self.perm 2) = self.w
+constructor:
+  P21.Symmetric.SymmetricGlueData.mk {g : P21.Generators} (perm : Equiv.Perm (Fin 3))
+    (two : P21.Symmetric.TwoGeneratorData) (d w : ℤ) (d_ge_two : 2 ≤ d) (coprime : d.gcd w = 1) (w_mem : w ∈ two.T)
+    (x_eq : g.n (perm 0) = d * two.u) (y_eq : g.n (perm 1) = d * two.v) (z_eq : g.n (perm 2) = w) :
+    P21.Symmetric.SymmetricGlueData g
+def P21.Symmetric.SymmetricThreeGeneratorGluingStatement : Prop :=
+∀ (g : P21.Generators), g.Setting → P21.Symmetric.SymmetricTail g → Nonempty (P21.Symmetric.SymmetricGlueData g)
+theorem P21.Symmetric.symmetric_tail_from_glue_data : ∀ (g : P21.Generators) (setting : g.Setting) (F : ℤ),
+  setting.semigroup.IsFrobenius F →
+    setting.semigroup.Canonical F g.m → ∀ (G : P21.Symmetric.SymmetricGlueData g), setting.semigroup.type ≤ 4 :=
+fun g setting F hF hcan G =>
+  Decidable.byContradiction fun htype =>
+    Nonempty.casesOn
+      (P21.Symmetric.SymmetricGlueData.exists_raw4 G setting hF hcan
+        (Decidable.byContradiction fun a => P21.Symmetric.symmetric_tail_from_glue_data._proof_1_1 g setting htype a))
+      fun R =>
+      Exists.casesOn (P21.Symmetric.SymmetricGlueData.normal_form_exists G g.m) fun e h =>
+        Exists.casesOn h fun μ h =>
+          And.casesOn h fun he right =>
+            And.casesOn right fun hed hm =>
+              Or.casesOn (P21.Symmetric.Raw4Data.split R hF hcan hm)
+                (fun hI => P21.Symmetric.Raw4Data.branchI_excluded R hF hcan he hed hm hI) fun hII =>
+                P21.Symmetric.Raw4Data.branchII_excluded R hF hcan he hed hm hII
+M2B local proof gates passed; independent TRUE AUDIT ruling remains external.
+
+EXIT_CODE=0

@@ -16,9 +16,11 @@ jobs:
       github.ref_name != 'm2-symmetric-tail' &&
       github.ref_name != 'm2a-symmetric-tail-audit' &&
       github.ref_name != 'm2b-std-sym-glue' &&
+      github.ref_name != 'm3-nonsym-g4' &&
       github.head_ref != 'm2-symmetric-tail' &&
       github.head_ref != 'm2a-symmetric-tail-audit' &&
-      github.head_ref != 'm2b-std-sym-glue'
+      github.head_ref != 'm2b-std-sym-glue' &&
+      github.head_ref != 'm3-nonsym-g4'
     name: Exact M1 candidate / fresh Lean build
     runs-on: ubuntu-latest
     timeout-minutes: 90

@@ -1,3 +1,35 @@
+# M3A restart point
+
+Current branch: `m3-nonsym-g4`. Frozen starting point:
+`9a9e01c401a934cfca2da15026986b0ecf83ff4f`. No main merge is authorized by this
+handoff. Read README_M3, M3_STATEMENT_MAP, M3_EXTERNAL_INPUT_REPORT and the
+post-run HANDOFF_RECEIPT_M3.json first.
+
+Proved: full positive-critical/exact-PF/primitive-formula Herzog package;
+actual nonsymmetric local geometry and return synchronization; exact normalized
+terminal inputs; and the full selected-four composition **conditional on two
+explicit Appendix B statements**. Do not repeat the completed geometry or
+weaken its exact actual-factorization interfaces.
+
+Remaining mathematical work:
+
+1. Prove `P21.Nonsymmetric.ColorCap.MinimumOneStatement`. Complete the exact
+   relative empty-tetrahedron/White-class route or a proved narrower substitute.
+   Primitive generator formulas are now available in PrimitiveGenerators.lean.
+2. Prove `P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement`. Complete the
+   successful-path prefix and reciprocal-rank bridge, mixed terminal cases
+   B.17–B.18 and first-third-color cases B.19.
+3. Apply those proofs to
+   `nonsymmetric_selected_four_of_colorcap_residuals`; no additional geometric
+   residual is hidden in that theorem. Run the exact axiom/debt/frozen-source
+   and source-to-CI gates again for the resulting new candidate.
+
+No full G4, terminal branch exclusion, Problem 21 final theorem, or independent
+TRUE AUDIT success may be inferred from this partial candidate.
+
+---
+
+## Previous M2B restart record (historical)
 # Next restart: M2B
 
 Status: **M2B STD_SYM_GLUE + FULL S3 CANDIDATE FOR TRUE AUDIT**.

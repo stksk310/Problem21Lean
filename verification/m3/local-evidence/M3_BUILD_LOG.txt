@@ -1,0 +1,98 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 build P21.Nonsymmetric.ActualClassification P21.Nonsymmetric.ActualLabels P21.Nonsymmetric.ActualMixed P21.Nonsymmetric.Arms P21.Nonsymmetric.ColorCap.ActualMinimum P21.Nonsymmetric.ColorCap.BoxInput P21.Nonsymmetric.ColorCap.BoxPaths P21.Nonsymmetric.ColorCap.CompanionBounds P21.Nonsymmetric.ColorCap.DPEOneColor P21.Nonsymmetric.ColorCap.PositiveMinors P21.Nonsymmetric.ColorCap.PrefixArithmetic P21.Nonsymmetric.ColorCap.RelativeLattice P21.Nonsymmetric.ColorCap.Residuals P21.Nonsymmetric.ColorCap.ThreeArms P21.Nonsymmetric.ColorCap.WhiteCertificates P21.Nonsymmetric.ComplementGeometry P21.Nonsymmetric.Corners P21.Nonsymmetric.CriticalBox P21.Nonsymmetric.Extraction P21.Nonsymmetric.FourRowCombinatorics P21.Nonsymmetric.Herzog.PseudoFrobenius P21.Nonsymmetric.HerzogClassification P21.Nonsymmetric.HerzogCoordinates P21.Nonsymmetric.HerzogData P21.Nonsymmetric.Kernel P21.Nonsymmetric.MatchedPair P21.Nonsymmetric.MixedColor P21.Nonsymmetric.PrimitiveGenerators P21.Nonsymmetric.Relabel P21.Nonsymmetric.ReturnLevels P21.Nonsymmetric.RowAtlas P21.Nonsymmetric.Rows P21.Nonsymmetric.SameColor P21.Nonsymmetric.Saturation P21.Nonsymmetric.SelectedExtraction P21.Nonsymmetric.Singletons
+✔ [1692/1727] Built P21.Nonsymmetric.ColorCap.ActualMinimum (11s)
+✔ [1693/1727] Built P21.Nonsymmetric.HerzogData (11s)
+✔ [1694/1727] Built P21.Nonsymmetric.Rows (11s)
+✔ [1695/1727] Built P21.Nonsymmetric.ColorCap.BoxPaths (12s)
+✔ [1696/1727] Built P21.Nonsymmetric.HerzogCoordinates (21s)
+✔ [1697/1727] Built P21.Nonsymmetric.HerzogClassification (21s)
+⚠ [1698/1727] Built P21.Nonsymmetric.CriticalBox (33s)
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [1699/1727] Built P21.Nonsymmetric.ColorCap.RelativeLattice (14s)
+✔ [1700/1727] Built P21.Nonsymmetric.ColorCap.PrefixArithmetic (14s)
+✔ [1701/1727] Built P21.Nonsymmetric.ColorCap.BoxInput (15s)
+✔ [1702/1727] Built P21.Nonsymmetric.Herzog.PseudoFrobenius (15s)
+✔ [1703/1727] Built P21.Nonsymmetric.ComplementGeometry (19s)
+✔ [1704/1727] Built P21.Nonsymmetric.Singletons (19s)
+✔ [1705/1727] Built P21.Nonsymmetric.Kernel (19s)
+✔ [1706/1727] Built P21.Nonsymmetric.ColorCap.PositiveMinors (16s)
+✔ [1707/1727] Built P21.Nonsymmetric.ColorCap.ThreeArms (9.8s)
+ℹ [1708/1727] Built P21.Nonsymmetric.Arms (26s)
+info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:155:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [1709/1727] Built P21.Nonsymmetric.ColorCap.DPEOneColor (20s)
+✔ [1710/1727] Built P21.Nonsymmetric.FourRowCombinatorics (26s)
+✔ [1711/1727] Built P21.Nonsymmetric.ColorCap.WhiteCertificates (23s)
+✔ [1712/1727] Built P21.Nonsymmetric.RowAtlas (12s)
+✔ [1713/1727] Built P21.Nonsymmetric.PrimitiveGenerators (19s)
+✔ [1714/1727] Built P21.Nonsymmetric.ActualLabels (10s)
+✔ [1715/1727] Built P21.Nonsymmetric.Corners (10s)
+✔ [1716/1727] Built P21.Nonsymmetric.ColorCap.CompanionBounds (23s)
+⚠ [1717/1727] Built P21.Nonsymmetric.Relabel (23s)
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1718/1727] Built P21.Nonsymmetric.ColorCap.Residuals (10s)
+✔ [1719/1727] Built P21.Nonsymmetric.SameColor (66s)
+⚠ [1720/1727] Built P21.Nonsymmetric.MatchedPair (66s)
+warning: P21/Nonsymmetric/MatchedPair.lean:65:26: Variable name `hz'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [1721/1727] Built P21.Nonsymmetric.Saturation (66s)
+✔ [1722/1727] Built P21.Nonsymmetric.MixedColor (15s)
+⚠ [1723/1727] Built P21.Nonsymmetric.ReturnLevels (18s)
+warning: P21/Nonsymmetric/ReturnLevels.lean:15:10: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.toNat_of_nonneg hl, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ReturnLevels.lean:14:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [1724/1727] Built P21.Nonsymmetric.ActualMixed (7.8s)
+✔ [1725/1727] Built P21.Nonsymmetric.Extraction (7.0s)
+✔ [1726/1727] Built P21.Nonsymmetric.ActualClassification (6.4s)
+✔ [1727/1727] Built P21.Nonsymmetric.SelectedExtraction (7.3s)
+Build completed successfully (1727 jobs).
+
+EXIT_CODE=0

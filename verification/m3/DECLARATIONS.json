@@ -1,0 +1,2144 @@
+[
+  {
+    "name": "P21.Nonsymmetric.armA_not_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Nonsymmetric.armB_not_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_A_box",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_B_box",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_matched_data",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_AA_exclusions",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 84
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_matched_exclusions",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 115
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_AA_cyclic",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 152
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_BB_cyclic",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 182
+  },
+  {
+    "name": "P21.Nonsymmetric.no_two_singletons_of_three_directions",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 217
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_AA_no_two_singletons",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 229
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_BB_no_two_singletons",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 247
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_four_Q_card",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 266
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_three_A_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 277
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_three_B_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 290
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_labels_compatible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 305
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_labels_terminal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualClassification.lean",
+    "line": 410
+  },
+  {
+    "name": "P21.Nonsymmetric.Realizes",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_label_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.equal_label_equal_row",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 26
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_labeling_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 44
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.labels",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.label_injective",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.labels_card",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 66
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.mem_labels",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualLabels.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_isArmA_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_isArmB_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 13
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_A_not_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_B_not_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_BA_excludes_middle_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_AB_excludes_endpoints_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 60
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_BA_excludes_middle",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 94
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_AB_excludes_endpoints",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ActualMixed.lean",
+    "line": 117
+  },
+  {
+    "name": "P21.Nonsymmetric.tail_pf_of_generator_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.maximal_gap_along_direction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 23
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_pair_lower_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Nonsymmetric.arm_depth_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 68
+  },
+  {
+    "name": "P21.Nonsymmetric.fA_return_formula",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 90
+  },
+  {
+    "name": "P21.Nonsymmetric.fB_return_formula",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 98
+  },
+  {
+    "name": "P21.Nonsymmetric.six_arm_atlas",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 106
+  },
+  {
+    "name": "P21.Nonsymmetric.pair_nonnegative_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 133
+  },
+  {
+    "name": "P21.Nonsymmetric.gap_sub_multiple",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 139
+  },
+  {
+    "name": "P21.Nonsymmetric.armA_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 146
+  },
+  {
+    "name": "P21.Nonsymmetric.armB_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Arms.lean",
+    "line": 174
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.actual_of_nonnegative",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.arm_coordinate_cap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.same_element_positive_exit",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.minimal_positive_level",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.minimal_positive_arm_box",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+    "line": 69
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.weighted_certificate_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.rows",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 48
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.upper",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 53
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.rows_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.initial_in_box",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 61
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.maximal_path",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 79
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+    "line": 121
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.Point",
+    "kind": "abbrev",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.weight",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.InBox",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.fire",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath",
+    "kind": "inductive",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.endpoint",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.fire_weight",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.weight_eq",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPath.same_element",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.maximal_box_path",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 52
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.path_exit_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+    "line": 75
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_companion_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_companion_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_parameters",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_parameters",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+    "line": 61
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_class_bounds",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+    "line": 81
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.one_color_sink_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/DPEOneColor.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.minor01_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.minor02_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.two_color12_not_sinkA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.two_color13_not_sinkB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+    "line": 74
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.crossing_separator",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.successful_prefix_separator",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.prefix_residue_antichain",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.residue_slot_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+    "line": 52
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.prefix_residue_distinct",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+    "line": 83
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.relativeLattice",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.relative_lattice_level",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.lower_companion_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.top_face_positive_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 41
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.weight_add",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.weight_sub",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 60
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.positive_companion_failure",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 64
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.six_companion_failures",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.MinimumOneStatement",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/Residuals.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_residuals",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/Residuals.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.actual_three_arm_minimum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_actual_minimum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 33
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_actual_minimum",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 45
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_boxInput",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 88
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_three_arm_contradiction_of_minbox",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 93
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_boxInput",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 115
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_three_arm_contradiction_of_minbox",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+    "line": 155
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.failure_cone_mass",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/WhiteCertificates.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorA_parameter_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/WhiteCertificates.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.ColorCap.colorB_parameter_contradiction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ColorCap/WhiteCertificates.lean",
+    "line": 64
+  },
+  {
+    "name": "P21.Nonsymmetric.missing_complement_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ComplementGeometry.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.missing_complement_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ComplementGeometry.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Nonsymmetric.arm_complement_box",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ComplementGeometry.lean",
+    "line": 46
+  },
+  {
+    "name": "P21.Nonsymmetric.arm_complement_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ComplementGeometry.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.arm_complement_pair",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ComplementGeometry.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Nonsymmetric.corner_A_singleton_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Corners.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.corner_B_singleton_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Corners.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.frobenius_le_higher_corner",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Corners.lean",
+    "line": 48
+  },
+  {
+    "name": "P21.Nonsymmetric.higher_corner_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Corners.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Nonsymmetric.both_corners_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Corners.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Nonsymmetric.integerValue",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/CriticalBox.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_le_of_single_positive",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/CriticalBox.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_kernel_box_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/CriticalBox.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_box_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/CriticalBox.lean",
+    "line": 91
+  },
+  {
+    "name": "P21.Nonsymmetric.PathInput",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.TypeIIInput",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 67
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_arm_missing",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 96
+  },
+  {
+    "name": "P21.Nonsymmetric.path_pair_data",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 108
+  },
+  {
+    "name": "P21.Nonsymmetric.typeII_exact_input",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 153
+  },
+  {
+    "name": "P21.Nonsymmetric.chain_exact_input",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 238
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_saturation_last",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 320
+  },
+  {
+    "name": "P21.Nonsymmetric.path_exact_input",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 342
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.delta",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 411
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.beta",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 412
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.gapJ",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 413
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.alpha",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 414
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.all_slacks_positive",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 416
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.P_exact",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 423
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_matched_depths_equal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 437
+  },
+  {
+    "name": "P21.Nonsymmetric.chain_exact_input_independent",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Extraction.lean",
+    "line": 463
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel",
+    "kind": "inductive",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.S",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.A",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.B",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 20
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.revDir",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.reverse",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.path",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.typeII",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.chain",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.Compatible",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 34
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.Terminal",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 49
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.four_labels_classification",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+    "line": 63
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_three_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_critical_le_int",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 16
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_packet_le",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_L_gap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 68
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_apery_L",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 115
+  },
+  {
+    "name": "P21.Nonsymmetric.tailPF_of_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 157
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_apery_formula",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 181
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB_apery_formula",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 187
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_gap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB_gap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 204
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 224
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB_returns",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 246
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_mem_tailPF",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 270
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB_mem_tailPF",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 273
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.tailPF_subset_pair",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 277
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.tailPF_eq_pair",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 303
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_ne_fB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 324
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fullData",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 340
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_herzog_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 349
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_classification",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+    "line": 355
+  },
+  {
+    "name": "P21.Nonsymmetric.cofinite_common_divisor",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.pure_critical_glue",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.perm_last_two",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_other_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 83
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_pair_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 108
+  },
+  {
+    "name": "P21.Nonsymmetric.critical_le_of_two",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 145
+  },
+  {
+    "name": "P21.Nonsymmetric.herzog_critical_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogClassification.lean",
+    "line": 157
+  },
+  {
+    "name": "P21.Nonsymmetric.next",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 5
+  },
+  {
+    "name": "P21.Nonsymmetric.prev",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.cyclic_distinct",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.value_cyclic",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.relationCoeff",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_self",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_value",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 28
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA_cyclic",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB_cyclic",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogCoordinates.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fA",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 24
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.fB",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.rho_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 27
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogCriticalData.critical_minimal",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Nonsymmetric.TailPF",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Nonsymmetric.NonsymmetricHerzogData",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 42
+  },
+  {
+    "name": "P21.Nonsymmetric.HerzogClassificationStatement",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/HerzogData.lean",
+    "line": 47
+  },
+  {
+    "name": "P21.Nonsymmetric.kernelRowJ",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.kernelRowK",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 14
+  },
+  {
+    "name": "P21.Nonsymmetric.kernelRowJ_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Nonsymmetric.kernelRowK_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.kernel_minor_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 29
+  },
+  {
+    "name": "P21.Nonsymmetric.kernel_rows_independent",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Nonsymmetric.kernel_span_rat",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 60
+  },
+  {
+    "name": "P21.Nonsymmetric.integer_kernel_span",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 92
+  },
+  {
+    "name": "P21.Nonsymmetric.integer_kernel_basis",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Kernel.lean",
+    "line": 154
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_kernel_box_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_pair_sync",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 87
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.P_gt_a",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 115
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.P_gt_b",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 121
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.P_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 127
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.R_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 129
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.T_pos",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 131
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_pair_data",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MatchedPair.lean",
+    "line": 136
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_kernel_coefficients",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 8
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_left_kernel_coefficients",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 50
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_complement_geometry",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 89
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_left_complement_geometry",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 118
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_completed_W",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 153
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_no_middle_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 167
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_left_no_first_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 193
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_left_no_last_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 228
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_next_kernel_coefficients",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 267
+  },
+  {
+    "name": "P21.Nonsymmetric.mixed_right_next_complement_geometry",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/MixedColor.lean",
+    "line": 315
+  },
+  {
+    "name": "P21.Nonsymmetric.tail_bezout_vector",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/PrimitiveGenerators.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.primitive_generator_minors",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/PrimitiveGenerators.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.primitive_generator_formulas",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/PrimitiveGenerators.lean",
+    "line": 78
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_herzog_primitive_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/PrimitiveGenerators.lean",
+    "line": 102
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.value_perm",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.value_relabel",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 17
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_H",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 21
+  },
+  {
+    "name": "P21.Nonsymmetric.value_relabel_all",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_Gamma",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 38
+  },
+  {
+    "name": "P21.Nonsymmetric.relabelSetting",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 53
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_semigroup",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 71
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_SH",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 77
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_TailPF",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 83
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_singleton_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 86
+  },
+  {
+    "name": "P21.Nonsymmetric.relabelCritical",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 99
+  },
+  {
+    "name": "P21.Nonsymmetric.cyclePerm",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 113
+  },
+  {
+    "name": "P21.Nonsymmetric.rotatePerm",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 119
+  },
+  {
+    "name": "P21.Nonsymmetric.rotatePerm_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 122
+  },
+  {
+    "name": "P21.Nonsymmetric.rotatePerm_one",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 125
+  },
+  {
+    "name": "P21.Nonsymmetric.rotatePerm_two",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 128
+  },
+  {
+    "name": "P21.Nonsymmetric.rotateHerzog",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 135
+  },
+  {
+    "name": "P21.Nonsymmetric.rotateHerzog_fA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 155
+  },
+  {
+    "name": "P21.Nonsymmetric.rotateHerzog_fB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 159
+  },
+  {
+    "name": "P21.Nonsymmetric.rotateFullHerzog",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 163
+  },
+  {
+    "name": "P21.Nonsymmetric.reversePerm",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 170
+  },
+  {
+    "name": "P21.Nonsymmetric.reverseHerzog",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 176
+  },
+  {
+    "name": "P21.Nonsymmetric.reverseHerzog_fA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 194
+  },
+  {
+    "name": "P21.Nonsymmetric.reverseHerzog_fB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 199
+  },
+  {
+    "name": "P21.Nonsymmetric.reverseFullHerzog",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 204
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_complement",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 210
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_W",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 213
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_Q",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 217
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_A_arm_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 221
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_B_arm_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 228
+  },
+  {
+    "name": "P21.Nonsymmetric.reverse_A_arm_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 235
+  },
+  {
+    "name": "P21.Nonsymmetric.reverse_B_arm_iff",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 242
+  },
+  {
+    "name": "P21.Nonsymmetric.relabelFactorization",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 255
+  },
+  {
+    "name": "P21.Nonsymmetric.unlabelFactorization",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 261
+  },
+  {
+    "name": "P21.Nonsymmetric.relabelActualRow",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 266
+  },
+  {
+    "name": "P21.Nonsymmetric.relabelFourRows",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 274
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_D",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 279
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_id",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 285
+  },
+  {
+    "name": "P21.Nonsymmetric.relabel_comp",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 289
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_isArmA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 295
+  },
+  {
+    "name": "P21.Nonsymmetric.rotate_isArmB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 301
+  },
+  {
+    "name": "P21.Nonsymmetric.reverse_isArmA",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 307
+  },
+  {
+    "name": "P21.Nonsymmetric.reverse_isArmB",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 313
+  },
+  {
+    "name": "P21.Nonsymmetric.reversePerm_self",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 319
+  },
+  {
+    "name": "P21.Nonsymmetric.reversePerm_next",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 320
+  },
+  {
+    "name": "P21.Nonsymmetric.reversePerm_prev",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Relabel.lean",
+    "line": 321
+  },
+  {
+    "name": "P21.Nonsymmetric.four_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.MinimalReturn",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 18
+  },
+  {
+    "name": "P21.Nonsymmetric.full_return_coordinate_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 30
+  },
+  {
+    "name": "P21.Nonsymmetric.minimal_return_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.returnA_not_tail",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 82
+  },
+  {
+    "name": "P21.Nonsymmetric.MatchedPairData.returnB_not_tail",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 92
+  },
+  {
+    "name": "P21.Nonsymmetric.frobenius_return_caps",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 106
+  },
+  {
+    "name": "P21.Nonsymmetric.four_return_caps",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 132
+  },
+  {
+    "name": "P21.Nonsymmetric.unequal_levels_impossible",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 160
+  },
+  {
+    "name": "P21.Nonsymmetric.equal_level_matching",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 233
+  },
+  {
+    "name": "P21.Nonsymmetric.root_free_level_rigidity",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 279
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_pair_excludes_A_one",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 306
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_pair_excludes_B_two",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 321
+  },
+  {
+    "name": "P21.Nonsymmetric.matched_pair_no_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/ReturnLevels.lean",
+    "line": 336
+  },
+  {
+    "name": "P21.Nonsymmetric.support_trichotomy",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 6
+  },
+  {
+    "name": "P21.Nonsymmetric.IsArmA",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.IsArmB",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 22
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_row_atlas",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.pf_ray_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 48
+  },
+  {
+    "name": "P21.Nonsymmetric.same_A_arm_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 62
+  },
+  {
+    "name": "P21.Nonsymmetric.same_B_arm_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 69
+  },
+  {
+    "name": "P21.Nonsymmetric.corner_A_same_arm_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 76
+  },
+  {
+    "name": "P21.Nonsymmetric.corner_B_same_arm_excluded",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/RowAtlas.lean",
+    "line": 85
+  },
+  {
+    "name": "P21.Nonsymmetric.NonsymmetricTail",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualQRow",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.FourDistinctActualQRows",
+    "kind": "structure",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.select_four_actual_rows",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.pf_antichain",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 25
+  },
+  {
+    "name": "P21.Nonsymmetric.complement_antichain",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 31
+  },
+  {
+    "name": "P21.Nonsymmetric.value_sub_mem",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 39
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_sub_copies",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 44
+  },
+  {
+    "name": "P21.Nonsymmetric.IsSingleton",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 55
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_coeff_zero",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 57
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_pure_complement",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 69
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_complement_cap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 91
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_W_cap",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 100
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_W_cap_attained",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Rows.lean",
+    "line": 111
+  },
+  {
+    "name": "P21.Nonsymmetric.same_color_kernel_coefficients",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SameColor.lean",
+    "line": 11
+  },
+  {
+    "name": "P21.Nonsymmetric.same_color_complement_cases",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SameColor.lean",
+    "line": 56
+  },
+  {
+    "name": "P21.Nonsymmetric.same_color_no_middle_singleton",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SameColor.lean",
+    "line": 96
+  },
+  {
+    "name": "P21.Nonsymmetric.distinct_complements_not_one_ray",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SameColor.lean",
+    "line": 141
+  },
+  {
+    "name": "P21.Nonsymmetric.same_color_no_two_endpoint_singletons",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SameColor.lean",
+    "line": 162
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_saturation",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Saturation.lean",
+    "line": 10
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.pick",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 9
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.pick_label",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 12
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.pick_realizes",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 15
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.pick_permutation",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 19
+  },
+  {
+    "name": "P21.Nonsymmetric.selectedValues",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 32
+  },
+  {
+    "name": "P21.Nonsymmetric.PathInput.values",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 35
+  },
+  {
+    "name": "P21.Nonsymmetric.TypeIIInput.values",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 37
+  },
+  {
+    "name": "P21.Nonsymmetric.ChainInput.values",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 40
+  },
+  {
+    "name": "P21.Nonsymmetric.SelectedTerminal",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 44
+  },
+  {
+    "name": "P21.Nonsymmetric.realized_values_eq",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 51
+  },
+  {
+    "name": "P21.Nonsymmetric.ordered_realization",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 70
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_path_normalized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 80
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_typeII_normalized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 104
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_chain_normalized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 128
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.rotateBack",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 154
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.reverse_reverse",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 159
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.rotate_path",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 165
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.rotate_typeII",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 166
+  },
+  {
+    "name": "P21.Nonsymmetric.RowLabel.rotate_chain",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 167
+  },
+  {
+    "name": "P21.Nonsymmetric.realizes_rotate",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 170
+  },
+  {
+    "name": "P21.Nonsymmetric.realizes_reverse",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 186
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.rotate",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 204
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.reverse",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 208
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.rotate_labels",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 213
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.reverse_labels",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 218
+  },
+  {
+    "name": "P21.Nonsymmetric.ActualLabeling.reverse_image_labels",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 223
+  },
+  {
+    "name": "P21.Nonsymmetric.TerminalInputExists",
+    "kind": "def",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 231
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_normalized",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 239
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_rotated",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 250
+  },
+  {
+    "name": "P21.Nonsymmetric.actual_terminal_input_exists",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 268
+  },
+  {
+    "name": "P21.Nonsymmetric.selectedValues_relabel",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 285
+  },
+  {
+    "name": "P21.Nonsymmetric.selected_four_terminal_of_colorcap_residuals",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 292
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_selected_four_of_colorcap_residuals",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 304
+  },
+  {
+    "name": "P21.Nonsymmetric.nonsymmetric_Q_ge_four_of_colorcap_residuals",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/SelectedExtraction.lean",
+    "line": 316
+  },
+  {
+    "name": "P21.Nonsymmetric.singleton_critical_bound",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Singletons.lean",
+    "line": 7
+  },
+  {
+    "name": "P21.Nonsymmetric.singletons_same_direction",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Singletons.lean",
+    "line": 36
+  },
+  {
+    "name": "P21.Nonsymmetric.three_singletons_W_unique",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Singletons.lean",
+    "line": 58
+  },
+  {
+    "name": "P21.Nonsymmetric.three_singletons_Q_eq_range",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Singletons.lean",
+    "line": 74
+  },
+  {
+    "name": "P21.Nonsymmetric.three_singletons_force_Q_three",
+    "kind": "theorem",
+    "file": "P21/Nonsymmetric/Singletons.lean",
+    "line": 104
+  }
+]

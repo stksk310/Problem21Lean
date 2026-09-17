@@ -1,0 +1,5 @@
+New-module import graph: ACYCLIC
+No Section 5/6/7-10 terminal exclusion, Euclidean closure or final theorem imported.
+Frozen old modules cannot reference new modules: 103-file integrity gate is separate.
+Primitive and Herzog roots precede selected-four composition.
+Both ColorCap residuals remain explicit theorem arguments, not axioms.

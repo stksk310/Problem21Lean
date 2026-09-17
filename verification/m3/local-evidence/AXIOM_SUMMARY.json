@@ -1,0 +1,6096 @@
+{
+  "checked_declarations": 1327,
+  "project_specific_axioms": 0,
+  "declarations": {
+    "P21.Nonsymmetric.ActualLabeling": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.label_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.labels.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.labels_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mem_labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk.congr_simp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.pick": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.pick_label": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.pick_permutation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.pick_realizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.realizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.reverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.reverse._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.reverse.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.reverse_image_labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.reverse_labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rotate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rotate._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rotate._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rotate.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualLabeling.rotate_labels": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.q": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ActualQRow.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.Ai_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.Ak_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.Bi_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.Bj_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.P_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.P_exact._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.all_slacks_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.all_slacks_positive._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.alpha": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.alpha.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.beta": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.beta.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.boxW": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.cAi": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.cAk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.cBi": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.cBj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.delta": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.delta._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.delta.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.gapJ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.gapJ.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.lambda": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.lambda_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mu": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.mu_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.nu": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.nu_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ChainInput.values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput._sizeOf_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput._sizeOf_inst": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.b": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.b_pos": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.casesOn": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.ctorIdx": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.in_box_fire_unique._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_in_box": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_in_box._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_13": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_14": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_15": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_16": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.initial_positive_firing._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.m": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.m_pos": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.maximal_path": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.minor01_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.minor02_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk._flat_ctor": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk.congr_simp": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk.inj": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk.injEq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk.noConfusion": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.mk.sizeOf_spec": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.n": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.n_gt": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.noConfusion": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.noConfusionType": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rec": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.recOn": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.row0": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.row1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.row2": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rows": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rows._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rows.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rows_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.sink_cover._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color12_not_sinkA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color12_not_sinkA._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color12_not_sinkA._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color12_not_sinkA._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color13_not_sinkB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color13_not_sinkB._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.two_color13_not_sinkB._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.upper": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.upper.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.x": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.x_pos": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.y": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.y_pos": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxPath": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.below": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.below.casesOn": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.below.nil": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.below.rec": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.below.snoc": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.brecOn": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.casesOn": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.endpoint": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.nil": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.rec": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.recOn": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.same_element": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxPath.snoc": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.weight_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.InBox": [],
+    "P21.Nonsymmetric.ColorCap.MinimumOneStatement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.Point": [],
+    "P21.Nonsymmetric.ColorCap.actual_of_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.actual_three_arm_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.arm_coordinate_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.arm_coordinate_cap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.arm_coordinate_cap._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.arm_coordinate_cap._simp_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_actual_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_6": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_boxInput._proof_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_10": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_11": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_12": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_7": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_8": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_class_bounds._proof_1_9": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_companion_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_companion_bounds._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_parameter_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_parameter_contradiction._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_parameters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_parameters._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_parameters._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_three_arm_contradiction_of_minbox": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorA_three_arm_contradiction_of_minbox._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_actual_minimum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput._proof_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_boxInput.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_companion_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_companion_bounds._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_parameter_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_parameter_contradiction._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_parameters": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_parameters._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_parameters._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_three_arm_contradiction_of_minbox": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_three_arm_contradiction_of_minbox._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.colorB_three_arm_contradiction_of_minbox._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.crossing_separator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.crossing_separator._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.failure_cone_mass": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.failure_cone_mass._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.failure_cone_mass._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.failure_cone_mass._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.failure_cone_mass._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.fire": [],
+    "P21.Nonsymmetric.ColorCap.fire.eq_1": [],
+    "P21.Nonsymmetric.ColorCap.fire_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.lower_companion_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.lower_companion_impossible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.lower_companion_impossible._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.maximal_box_path": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.maximal_box_path._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.maximal_box_path._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimal_positive_arm_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimal_positive_arm_box._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimal_positive_arm_box._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimal_positive_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.minimal_positive_level._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.one_color_sink_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.one_color_sink_impossible._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.one_color_sink_impossible._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.one_color_sink_impossible._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.path_exit_contradiction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.path_exit_contradiction._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.positive_companion_failure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.positive_companion_failure._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_antichain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_antichain._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_antichain._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_antichain._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_5": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_residue_distinct._proof_1_6": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.relativeLattice": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.relativeLattice._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.relativeLattice._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.relativeLattice._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.relative_lattice_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.residue_slot_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.residue_slot_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.same_element_positive_exit": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.same_element_positive_exit._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.same_element_positive_exit._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.six_companion_failures": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.six_companion_failures._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.six_companion_failures._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.socle_mem_of_actual_arm._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.successful_prefix_separator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.three_arms_impossible_of_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.top_face_positive_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.top_face_positive_impossible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.top_face_positive_impossible._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weight.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weight_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weight_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weighted_certificate_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.weighted_certificate_impossible._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.FourDistinctActualQRows.row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogClassificationStatement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.a": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.a_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.b": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.b_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.coeff_rho": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.critical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.critical_minimal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_apery_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_gap._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_mem_tailPF": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_ne_fB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_ne_fB._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_ne_fB._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fA_returns._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_apery_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_gap._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_mem_tailPF": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fB_returns._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.fullData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk.congr_simp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relationCoeff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relationCoeff.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relationCoeff_value": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relation_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relation_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.relation_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.rho": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.rho_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.rho_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_eq_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_eq_pair._simp_1_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_eq_pair._simp_1_2": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_subset_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_subset_pair._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_subset_pair._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.HerzogCriticalData.tailPF_subset_pair._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsArmA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsArmA.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsArmB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsArmB.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsSingleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.IsSingleton.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_gt_a": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_gt_a._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_gt_b": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_gt_b._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.P_pos._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.R": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.R_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.R_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.R_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.R_pos._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.T": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.T_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.T_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.T_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.T_pos._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.W_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.compA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.compB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.depth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.depth_a": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.depth_b": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.depth_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.gapJ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.gapJ_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.gapK": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.gapK_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.qA_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.qB_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.returnA_not_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.returnA_not_tail._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.returnB_not_tail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MatchedPairData.returnB_not_tail._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.L": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.L_pos": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.U": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.U_nonneg": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.V": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.V_nonneg": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn._sizeOf_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn._sizeOf_inst": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.casesOn": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.ctorIdx": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.equation": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.minimal": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk._flat_ctor": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk.inj": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk.injEq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk.noConfusion": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.mk.sizeOf_spec": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.noConfusion": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.noConfusionType": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.rec": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.MinimalReturn.recOn": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk.congr_simp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.pf_exact": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricHerzogData.toHerzogCriticalData": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.NonsymmetricTail": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.A_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.A_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.B_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.B_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.R": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.R_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.boxW": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.cA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.cB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.cL": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.cR": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.ladder_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.ladder_middle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.ladder_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.lambda": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.lambda_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.left_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.nu": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.nu_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.qA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.qB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.qL": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.qR": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.right_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.PathInput.values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.eq_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.eq_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.eq_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.Realizes.match_1": [],
+    "P21.Nonsymmetric.RowLabel": [],
+    "P21.Nonsymmetric.RowLabel.A": [],
+    "P21.Nonsymmetric.RowLabel.B": [],
+    "P21.Nonsymmetric.RowLabel.Compatible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.S": [],
+    "P21.Nonsymmetric.RowLabel.Terminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel._sizeOf_1": [],
+    "P21.Nonsymmetric.RowLabel._sizeOf_inst": [],
+    "P21.Nonsymmetric.RowLabel.arm": [],
+    "P21.Nonsymmetric.RowLabel.arm.elim": [],
+    "P21.Nonsymmetric.RowLabel.arm.inj": [],
+    "P21.Nonsymmetric.RowLabel.arm.injEq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.arm.noConfusion": [],
+    "P21.Nonsymmetric.RowLabel.arm.sizeOf_spec": [],
+    "P21.Nonsymmetric.RowLabel.casesOn": [],
+    "P21.Nonsymmetric.RowLabel.chain": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.chain.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.corner": [],
+    "P21.Nonsymmetric.RowLabel.corner.elim": [],
+    "P21.Nonsymmetric.RowLabel.corner.inj": [],
+    "P21.Nonsymmetric.RowLabel.corner.injEq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.corner.noConfusion": [],
+    "P21.Nonsymmetric.RowLabel.corner.sizeOf_spec": [],
+    "P21.Nonsymmetric.RowLabel.ctorElim": [],
+    "P21.Nonsymmetric.RowLabel.ctorElimType": [],
+    "P21.Nonsymmetric.RowLabel.ctorIdx": [],
+    "P21.Nonsymmetric.RowLabel.four_labels_classification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.instDecidableCompatible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.instDecidableTerminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.noConfusion": [],
+    "P21.Nonsymmetric.RowLabel.noConfusionType": [],
+    "P21.Nonsymmetric.RowLabel.path": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.path.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.proxyType": [],
+    "P21.Nonsymmetric.RowLabel.proxyTypeEquiv": [],
+    "P21.Nonsymmetric.RowLabel.rec": [],
+    "P21.Nonsymmetric.RowLabel.recOn": [],
+    "P21.Nonsymmetric.RowLabel.revDir": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.revDir._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.reverse": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.reverse.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.reverse.eq_2": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.reverse.eq_3": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.reverse_reverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotateBack": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotateBack.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotateBack.eq_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotateBack.eq_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotateBack.match_1": [],
+    "P21.Nonsymmetric.RowLabel.rotate_chain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotate_path": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.rotate_typeII": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.singleton": [],
+    "P21.Nonsymmetric.RowLabel.singleton.elim": [],
+    "P21.Nonsymmetric.RowLabel.singleton.inj": [],
+    "P21.Nonsymmetric.RowLabel.singleton.injEq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.singleton.noConfusion": [],
+    "P21.Nonsymmetric.RowLabel.singleton.sizeOf_spec": [],
+    "P21.Nonsymmetric.RowLabel.typeII": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.RowLabel.typeII.eq_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.SelectedTerminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TailPF": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TailPF.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TerminalInputExists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TerminalInputExists._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.Ai_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.Ak_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.Bj_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput._sizeOf_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput._sizeOf_inst": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.boxW": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.cAi": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.cAk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.cBj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.cS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.casesOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.ctorIdx": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.lambda": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.lambda_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk._flat_ctor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk.inj": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk.injEq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mk.sizeOf_spec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mu": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.mu_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.noConfusion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.noConfusionType": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.nu": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.nu_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.qS": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.rec": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.recOn": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.singleton_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.values": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.TypeIIInput.values._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AA_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AA_exclusions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AA_exclusions._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AA_exclusions._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AA_no_two_singletons": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AB_excludes_endpoints": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AB_excludes_endpoints._simp_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AB_excludes_endpoints_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AB_excludes_endpoints_zero._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_AB_excludes_endpoints_zero._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_A_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle_zero._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle_zero._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle_zero._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BA_excludes_middle_zero._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BB_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_BB_no_two_singletons": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_B_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_label_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labeling_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labels_compatible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labels_compatible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labels_terminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_data._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_depths_equal._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_exclusions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_exclusions._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_matched_exclusions._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_row_atlas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_sub_copies": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_terminal_input_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_A_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_A_excluded._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_B_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_B_excluded._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_not_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armA_returns._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_not_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.armB_returns._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_complement_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_complement_pair": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_complement_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_depth_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_depth_bound._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.arm_depth_bound._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.both_corners_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input.match_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input.match_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input.match_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.chain_exact_input_independent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cofinite_common_divisor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cofinite_common_divisor._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.complement_antichain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_A_same_arm_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_A_singleton_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_A_singleton_excluded._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_A_singleton_excluded._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_B_same_arm_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_B_singleton_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_B_singleton_excluded._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.corner_B_singleton_excluded._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_box_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_box_unique._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_box_unique._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_box_unique._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_kernel_box_zero._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_le_of_single_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_le_of_single_positive._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_le_of_single_positive._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_le_of_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_other_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_other_pos._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_bound._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_bound._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_bound._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_bound._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.critical_pair_lower_bound._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cyclePerm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cyclePerm._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cyclePerm._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cyclePerm.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.cyclic_distinct": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.distinct_complements_not_one_ray": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_label_equal_row": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.equal_level_matching._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.fA_return_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.fB_return_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.four_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.four_return_caps": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.four_return_caps._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.four_return_caps._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_le_higher_corner": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_le_higher_corner._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.frobenius_return_caps._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.full_return_coordinate_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.gap_sub_multiple": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_L_gap._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_apery_L._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_arm_missing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_arm_missing._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_classification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_exists._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_le_int": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_critical_le_int._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_packet_le._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.herzog_three_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.higher_corner_excluded": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.higher_corner_excluded._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.instDecidableEqRowLabel": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_1": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_10": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_11": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_12": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_13": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_2": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_3": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_4": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_5": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_6": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_7": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_8": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq._proof_9": [],
+    "P21.Nonsymmetric.instDecidableEqRowLabel.decEq.match_1": [],
+    "P21.Nonsymmetric.instFintypeRowLabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.instFintypeRowLabel.match_3": [],
+    "P21.Nonsymmetric.instFintypeRowLabel.match_5": [],
+    "P21.Nonsymmetric.integerValue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integerValue.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_basis": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_basis._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_basis._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_span": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_span._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.integer_kernel_span._simp_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowJ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowJ._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowJ.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowJ_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowK": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowK.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernelRowK_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernel_minor_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernel_rows_independent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.kernel_span_rat": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_kernel_box_zero._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_data._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_data._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_A_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_A_one._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_A_one._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_B_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_B_two._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_excludes_B_two._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_no_singleton._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.matched_pair_sync._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.maximal_gap_along_direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.maximal_gap_along_direction._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.maximal_gap_along_direction._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.maximal_gap_along_direction._proof_1_3": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.maximal_gap_along_direction._proof_1_4": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.minimal_return_exists._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.missing_complement_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.missing_complement_bound._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.missing_complement_bound._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.missing_complement_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_A_not_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_B_not_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_complement_geometry._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_kernel_coefficients._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_first_singleton.match_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_left_no_last_singleton.match_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_complement_geometry._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_completed_W": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_completed_W._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_completed_W._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_completed_W._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_kernel_coefficients._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_complement_geometry._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_next_kernel_coefficients._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_no_middle_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_no_middle_singleton._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_no_middle_singleton._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.mixed_right_no_middle_singleton._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.next": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.next._proof_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.next.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.no_two_singletons_of_three_directions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.no_two_singletons_of_three_directions._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_Q_ge_four_of_colorcap_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_herzog_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_herzog_primitive_exists": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_selected_four_of_colorcap_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ordered_realization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pair_nonnegative_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_exact_input._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_pair_data": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_pair_data._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.path_pair_data._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.perm_last_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pf_antichain": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pf_antichain._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pf_ray_unique": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.prev": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.prev.eq_1": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_formulas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_minors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_minors._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_minors._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_minors._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.primitive_generator_minors._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pure_critical_glue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pure_critical_glue._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pure_critical_glue._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.pure_critical_glue._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.realized_values_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.realizes_reverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.realizes_rotate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabel.eq_1": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabelActualRow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelActualRow._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelCritical": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelCritical._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelCritical._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelCritical._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelCritical._proof_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelFactorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelFactorization._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelFourRows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabelSetting": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_D": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_Gamma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_H": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_Q": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_SH": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_TailPF": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_W": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabel_comp": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabel_complement": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabel_id": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.relabel_semigroup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_singleton_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.relabel_singleton_iff._simp_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseFullHerzog": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseFullHerzog._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseFullHerzog._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseFullHerzog.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog._proof_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog_fA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverseHerzog_fB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm_next": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm_prev": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reversePerm_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_A_arm_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_B_arm_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_isArmA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_isArmA._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_isArmB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.reverse_isArmB._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.root_free_level_rigidity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateFullHerzog": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateFullHerzog._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateFullHerzog._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateFullHerzog.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_4": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog._proof_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog_fA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotateHerzog_fB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotatePerm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotatePerm.eq_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotatePerm_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotatePerm_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotatePerm_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_A_arm_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_B_arm_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmA._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmA_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmB._simp_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.rotate_isArmB_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_A_arm_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_B_arm_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_complement_cases._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_kernel_coefficients._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_middle_singleton._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.same_color_no_two_endpoint_singletons._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.select_four_actual_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selectedValues": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selectedValues_relabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_chain_normalized._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_four_Q_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_four_terminal_of_colorcap_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_normalized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_path_normalized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_path_normalized._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_path_normalized._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_path_normalized._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_path_normalized._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_rotated": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_typeII_normalized._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_W_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_W_cap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_W_cap_attained": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_W_cap_attained._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_coeff_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_complement_cap": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_complement_cap._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_critical_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_critical_bound._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_pure_complement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_pure_complement._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_pure_complement._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singleton_saturation_last": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.singletons_same_direction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.six_arm_atlas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.six_arm_atlas._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.six_arm_atlas._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.support_trichotomy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tailPF_of_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tailPF_of_returns._proof_1_1": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tailPF_of_returns._proof_1_2": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tail_bezout_vector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tail_bezout_vector._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tail_pf_of_generator_returns": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.tail_pf_of_generator_returns._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.three_singletons_Q_eq_range": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.three_singletons_Q_eq_range._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.three_singletons_W_unique": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.three_singletons_force_Q_three": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.typeII_exact_input.match_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_10": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_11": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_14": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_15": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_16": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_17": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_18": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_19": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_20": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_5": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_6": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_7": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_8": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unequal_levels_impossible._proof_1_9": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unlabelFactorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.unlabelFactorization._proof_1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.value_cyclic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.value_perm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.value_relabel": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.value_relabel_all": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.value_sub_mem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

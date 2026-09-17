@@ -1,0 +1,55 @@
+P21.Nonsymmetric.matched_pair_sync {g : P21.Generators} (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (d : P21.Nonsymmetric.HerzogCriticalData g) {F qA qB : ℤ} {lam mu y z y' z' : ℕ} (hl : 0 < lam) (hlA : lam < d.a 0)
+  (hm : 0 < mu) (hmB : mu < d.b 0) (hqA : qA = d.fA - ↑lam * g.n 0) (hqB : qB = d.fB - ↑mu * g.n 0)
+  (hcA : P21.complement F g.m qA = ↑y * g.n 1 + ↑z * g.n 2) (hcB : P21.complement F g.m qB = ↑y' * g.n 1 + ↑z' * g.n 2)
+  (hy : y < d.rho 1) (hz : z < d.rho 2) (hy' : y' < d.rho 1) (hz' : z' < d.rho 2) :
+  lam = mu ∧ y' = y + d.a 1 ∧ z = z' + d.b 2
+P21.Nonsymmetric.MatchedPairData (g : P21.Generators) (F : ℤ) (d : P21.Nonsymmetric.HerzogCriticalData g) (qA qB : ℤ) :
+  Type
+P21.Nonsymmetric.matched_pair_data {g : P21.Generators} (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (d : P21.Nonsymmetric.HerzogCriticalData g) {F qA qB : ℤ} {lam mu y z y' z' : ℕ} (hl : 0 < lam) (hlA : lam < d.a 0)
+  (hm : 0 < mu) (hmB : mu < d.b 0) (hqA : qA = d.fA - ↑lam * g.n 0) (hqB : qB = d.fB - ↑mu * g.n 0)
+  (hcA : P21.complement F g.m qA = ↑y * g.n 1 + ↑z * g.n 2) (hcB : P21.complement F g.m qB = ↑y' * g.n 1 + ↑z' * g.n 2)
+  (hy : y < d.rho 1) (hz : z < d.rho 2) (hy' : y' < d.rho 1) (hz' : z' < d.rho 2) :
+  Nonempty (P21.Nonsymmetric.MatchedPairData g F d qA qB)
+P21.Nonsymmetric.root_free_level_rigidity {g : P21.Generators} (s : g.Setting) {F qA qB : ℤ}
+  (hF : s.semigroup.IsFrobenius F) {d : P21.Nonsymmetric.HerzogCriticalData g}
+  (M : P21.Nonsymmetric.MatchedPairData g F d qA qB) (hqA : qA ∈ s.semigroup.Q F) (hqB : qB ∈ s.semigroup.Q F) :
+  ∃ L t u,
+    0 < L ∧
+      0 ≤ t ∧
+        0 ≤ u ∧
+          qA + g.n 0 = L * g.m + (↑(d.a 1) + t) * g.n 1 + u * g.n 2 ∧
+            qB + g.n 0 = L * g.m + t * g.n 1 + (u + ↑(d.b 2)) * g.n 2 ∧
+              M.P * g.n 0 = L * g.m + (t + 1) * g.n 1 + (u + 1) * g.n 2
+P21.Nonsymmetric.unequal_levels_impossible {g : P21.Generators} (s : g.Setting) {F qA qB : ℤ}
+  (hF : s.semigroup.IsFrobenius F) {d : P21.Nonsymmetric.HerzogCriticalData g}
+  (M : P21.Nonsymmetric.MatchedPairData g F d qA qB) (A : P21.Nonsymmetric.MinimalReturn g (qA + g.n 0))
+  (B : P21.Nonsymmetric.MinimalReturn g (qB + g.n 0)) : A.L = B.L
+P21.Nonsymmetric.matched_pair_no_singleton {g : P21.Generators} (s : g.Setting) {F qA qB q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) {d : P21.Nonsymmetric.HerzogCriticalData g}
+  (M : P21.Nonsymmetric.MatchedPairData g F d qA qB) (hqA : qA ∈ s.semigroup.Q F) (hqB : qB ∈ s.semigroup.Q F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : P21.Nonsymmetric.IsSingleton g q i) : False
+'P21.Nonsymmetric.matched_kernel_box_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.matched_pair_sync' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.P_gt_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.P_gt_b' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.P_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.R_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.T_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.matched_pair_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.four_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MinimalReturn' depends on axioms: [propext]
+'P21.Nonsymmetric.full_return_coordinate_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.minimal_return_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.returnA_not_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.MatchedPairData.returnB_not_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.frobenius_return_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.four_return_caps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.unequal_levels_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.equal_level_matching' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.root_free_level_rigidity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.matched_pair_excludes_A_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.matched_pair_excludes_B_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.matched_pair_no_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]

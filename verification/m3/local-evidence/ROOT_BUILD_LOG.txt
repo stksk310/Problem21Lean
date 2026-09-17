@@ -1,0 +1,14 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 build
+✔ [1588/1598] Built P21.Factorization (7.3s)
+✔ [1589/1598] Built P21.NumericalSemigroup (8.6s)
+✔ [1590/1598] Built P21.Basic (8.5s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.3s)
+✔ [1592/1598] Built P21.Apery (9.2s)
+✔ [1593/1598] Built P21.CanonicalReduction (7.8s)
+✔ [1594/1598] Built P21.Tail (8.4s)
+✔ [1595/1598] Built P21.Selection (12s)
+✔ [1596/1598] Built P21.Semantics (7.0s)
+✔ [1597/1598] Built P21 (7.7s)
+Build completed successfully (1598 jobs).
+
+EXIT_CODE=0

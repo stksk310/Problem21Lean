@@ -1,0 +1,77 @@
+name: P21 Lean M3 Audit
+on:
+  push:
+    branches: [m3-nonsym-g4]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    name: Exact M3A candidate / fresh Linux verification
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - name: Checkout exact source and frozen history
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Initialize evidence
+        run: python3 ci/m3_audit.py init
+      - name: Exact ZIP and all immutable pre-M3 sources
+        run: python3 ci/m3_audit.py integrity
+      - name: Install pinned elan and Lean
+        shell: bash
+        run: |
+          set -euo pipefail
+          export ELAN_HOME="$RUNNER_TEMP/p21-m3-elan"
+          test ! -e "$ELAN_HOME"
+          mkdir -p "$RUNNER_TEMP/p21-m3-installer"
+          curl --fail --location --retry 3 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$RUNNER_TEMP/p21-m3-installer/elan.tar.gz"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $RUNNER_TEMP/p21-m3-installer/elan.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/p21-m3-installer/elan.tar.gz" -C "$RUNNER_TEMP/p21-m3-installer"
+          "$RUNNER_TEMP/p21-m3-installer/elan-init" -y --no-modify-path --default-toolchain none
+          echo "ELAN_HOME=$ELAN_HOME" >> "$GITHUB_ENV"
+          echo "$ELAN_HOME/bin" >> "$GITHUB_PATH"
+          toolchain="$(tr -d '\r\n' < lean-toolchain)"
+          "$ELAN_HOME/bin/elan" toolchain install "$toolchain"
+      - name: Record environment
+        run: python3 ci/m3_audit.py environment
+      - name: Pinned third-party cache only
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 ci/m3_audit.py cache-modules > audit-evidence/m3/DEPENDENCY_CACHE_MODULES.txt
+          mapfile -t modules < audit-evidence/m3/DEPENDENCY_CACHE_MODULES.txt
+          if lake exe cache get "${modules[@]}" 2>&1 | tee audit-evidence/m3/DEPENDENCY_CACHE_LOG.txt; then
+            echo 'Third-party cache obtained; no project cache restored.' >> audit-evidence/m3/DEPENDENCY_CACHE_LOG.txt
+          else
+            echo 'Optional dependency cache unavailable; mandatory build compiles missing dependencies.' >> audit-evidence/m3/DEPENDENCY_CACHE_LOG.txt
+          fi
+      - name: Check pinned dependencies
+        run: python3 ci/m3_audit.py dependencies
+      - name: Fresh root, every frozen module, all M3 proofs and axioms
+        run: python3 ci/m3_audit.py verify
+      - name: Original M1, M2A and M2B suites in separate frozen source copies
+        run: python3 ci/m3_audit.py suite
+      - name: Final source integrity
+        if: always()
+        run: python3 ci/m3_audit.py integrity
+      - name: Final dependency integrity
+        if: always()
+        run: python3 ci/m3_audit.py dependencies
+      - name: Require all evidence gates
+        run: python3 ci/m3_audit.py complete
+      - name: Upload inspectable evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P21_M3_TRUE_AUDIT_EVIDENCE
+          path: audit-evidence/m3/
+          if-no-files-found: error
+          retention-days: 90

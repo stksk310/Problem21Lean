@@ -1,0 +1,37 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 env lean verification\m3\BoundaryRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 env lean verification\m3\ClassificationRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 env lean verification\m3\ExtractionRegression.lean
+'P21.Nonsymmetric.path_exact_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.typeII_exact_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.chain_exact_input' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.singleton_saturation_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ChainInput.all_slacks_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.same_color_no_two_endpoint_singletons' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.mixed_left_no_first_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.mixed_left_no_last_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.chain_exact_input_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_matched_depths_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 env lean verification\m3\M3Regression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3-nonsym-g4\verification\lake.ps1 env lean verification\m3\HerzogCheck.lean
+'P21.Nonsymmetric.herzog_critical_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_herzog_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.herzog_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.HerzogCriticalData.tailPF_eq_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.HerzogCriticalData.fA_ne_fB' depends on axioms: [propext, Classical.choice, Quot.sound]
+P21.Nonsymmetric.nonsymmetric_herzog_exists (g : P21.Generators) (s : g.Setting)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (hns : ¬P21.Symmetric.SymmetricTail g) :
+  Nonempty (P21.Nonsymmetric.NonsymmetricHerzogData g)
+'P21.Nonsymmetric.tail_bezout_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.primitive_generator_minors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.primitive_generator_formulas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_herzog_primitive_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

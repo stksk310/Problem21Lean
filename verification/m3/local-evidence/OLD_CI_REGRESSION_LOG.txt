@@ -1,0 +1,31 @@
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe -m unittest discover -s ci -p test_*.py -v
+test_actual_debt_is_not_hidden_by_nearby_comment (test_debt_scan.DebtScannerTest.test_actual_debt_is_not_hidden_by_nearby_comment) ... ok
+test_character_literals_cannot_hide_debt (test_debt_scan.DebtScannerTest.test_character_literals_cannot_hide_debt) ... ok
+test_character_literals_fail_closed (test_debt_scan.DebtScannerTest.test_character_literals_fail_closed) ... ok
+test_every_forbidden_token (test_debt_scan.DebtScannerTest.test_every_forbidden_token) ... ok
+test_interpolated_strings_fail_closed (test_debt_scan.DebtScannerTest.test_interpolated_strings_fail_closed) ... ok
+test_line_comment_and_documentation (test_debt_scan.DebtScannerTest.test_line_comment_and_documentation) ... ok
+test_line_numbers_preserved (test_debt_scan.DebtScannerTest.test_line_numbers_preserved) ... ok
+test_longer_identifiers (test_debt_scan.DebtScannerTest.test_longer_identifiers) ... ok
+test_nested_comments_are_not_declarations (test_debt_scan.DebtScannerTest.test_nested_comments_are_not_declarations) ... ok
+test_raw_string (test_debt_scan.DebtScannerTest.test_raw_string) ... ok
+test_set_image_notation_remains_code (test_debt_scan.DebtScannerTest.test_set_image_notation_remains_code) ... ok
+test_strings_with_comment_markers_and_escaped_quotes (test_debt_scan.DebtScannerTest.test_strings_with_comment_markers_and_escaped_quotes) ... ok
+test_unterminated_comment_and_string_fail_closed (test_debt_scan.DebtScannerTest.test_unterminated_comment_and_string_fail_closed) ... ok
+test_allowed_and_empty (test_m2a_audit.AxiomTests.test_allowed_and_empty) ... ok
+test_missing_root_fails (test_m2a_audit.AxiomTests.test_missing_root_fails) ... ok
+test_project_axiom_fails (test_m2a_audit.AxiomTests.test_project_axiom_fails) ... ok
+test_warning_fails (test_m2a_audit.AxiomTests.test_warning_fails) ... ok
+test_added_lean_fails (test_m2a_audit.IntegrityTests.test_added_lean_fails) ... ok
+test_missing_metadata_fails (test_m2a_audit.IntegrityTests.test_missing_metadata_fails) ... ok
+test_nested_and_other_new_modules_enumerated (test_m2a_audit.IntegrityTests.test_nested_and_other_new_modules_enumerated) ... ok
+test_one_changed_lean_byte_fails (test_m2a_audit.IntegrityTests.test_one_changed_lean_byte_fails) ... ok
+test_readme_append_only (test_m2a_audit.IntegrityTests.test_readme_append_only) ... ok
+test_unchanged_candidate (test_m2a_audit.IntegrityTests.test_unchanged_candidate) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.058s
+
+OK
+
+EXIT_CODE=0

@@ -1,0 +1,20 @@
+P21.Nonsymmetric.critical_box_unique {g : P21.Generators} (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (critical : (i : Fin 3) → P21.Symmetric.Classification.CriticalRelation g i) {x y : Fin 3 → ℕ}
+  (hx : ∀ (i : Fin 3), x i < (critical i).coeff) (hy : ∀ (i : Fin 3), y i < (critical i).coeff)
+  (he : P21.value g.n x = P21.value g.n y) : x = y
+P21.Nonsymmetric.integer_kernel_basis {g : P21.Generators} (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (d : P21.Nonsymmetric.HerzogCriticalData g) (v : Fin 3 → ℤ) (hv : P21.Nonsymmetric.integerValue g v = 0) :
+  ∃! st, ∀ (i : Fin 3), v i = st.1 * P21.Nonsymmetric.kernelRowJ d i + st.2 * P21.Nonsymmetric.kernelRowK d i
+'P21.Nonsymmetric.integerValue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.critical_le_of_single_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.critical_kernel_box_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.critical_box_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernelRowJ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernelRowK' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernelRowJ_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernelRowK_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernel_minor_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernel_rows_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.kernel_span_rat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.integer_kernel_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.integer_kernel_basis' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,16 @@
+P21/Nonsymmetric/ColorCap/ActualMinimum.lean:87: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/BoxInput.lean:160: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/BoxPaths.lean:97: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/DPEOneColor.lean:60: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean:117: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/Residuals.lean:47: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/ThreeArms.lean:194: new blank line at EOF.
+P21/Nonsymmetric/ColorCap/WhiteCertificates.lean:97: new blank line at EOF.
+P21/Nonsymmetric/CriticalBox.lean:107: new blank line at EOF.
+P21/Nonsymmetric/Herzog/PseudoFrobenius.lean:359: new blank line at EOF.
+P21/Nonsymmetric/HerzogData.lean:52: new blank line at EOF.
+P21/Nonsymmetric/Kernel.lean:172: new blank line at EOF.
+P21/Nonsymmetric/MatchedPair.lean:165: new blank line at EOF.
+P21/Nonsymmetric/MixedColor.lean:353: new blank line at EOF.
+P21/Nonsymmetric/ReturnLevels.lean:397: new blank line at EOF.
+P21/Nonsymmetric/SameColor.lean:219: new blank line at EOF.

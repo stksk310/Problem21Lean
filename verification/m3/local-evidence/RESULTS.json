@@ -1,0 +1,17 @@
+{
+  "original_m1_suite": 0,
+  "original_m2a_suite": 0,
+  "m3_module_count": 36,
+  "original_m2b_suite": 0,
+  "project_specific_axioms": 0,
+  "axiom_roots": 1327,
+  "frozen_integrity": "103/103",
+  "proof_debt_tokens": 0,
+  "fresh_root_build": true,
+  "dependency_dag": "PASS",
+  "std_herzog": "PROVED",
+  "std_white": "OPEN",
+  "full_g4": "OPEN",
+  "m3_verification_exit_code": 0,
+  "pinned_dependencies": 9
+}
