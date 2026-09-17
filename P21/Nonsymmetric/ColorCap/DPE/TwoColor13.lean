@@ -468,4 +468,157 @@ theorem terminal13_reciprocal_rank (D : BoxInput)
     DP.dual_next_residue_rank hH hEnext hVnext hE0 (by simpa [a] using hEa)
       hV0 (by simpa [d] using hVd)
 
+/-- Appendix B.18 assembled independently on the actual chronological
+`{1,3}` trace. -/
+theorem two_color13_trace_sink_impossible (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hno1 : l.count 1 = 0)
+    (hcount2 : 1 ≤ l.count 2) (hstart : D.x 0 < D.y 0)
+    (hsink : ¬ ∃ i, ∀ j, 1 ≤ fire D.rows i u j) : False := by
+  let Nn : ℕ := l.count 0 + 1
+  let Rn : ℕ := l.count 2 + 1
+  let N : ℤ := Nn
+  let R : ℤ := Rn
+  have hN : 1 ≤ N := by simp [N, Nn]
+  have hR : 1 ≤ R := by simp [R, Rn]
+  have hbounds := terminal13_count_bounds D ht hp hno1 hcount2 hstart
+  have hNy : N ≤ D.y 0 := by simpa [N, Nn] using hbounds.1
+  have hRx : R ≤ D.x 0 - D.b 0 := by simpa [R, Rn] using hbounds.2.1
+  have hRy : R ≤ D.y 2 := by simpa [R, Rn] using hbounds.2.2
+  have hut := trace_terminal13 D ht hno1
+  have hcoords := terminal13Point_coordinates D Nn Rn
+  have hu0 : u 0 = D.y 0 + D.b 0 - X13 D N R := by
+    rw [hut]
+    simpa [N, R, Nn, Rn, X13] using hcoords.1
+  have hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) -
+      (R - 1) * D.y 1 := by
+    rw [hut]
+    simpa [N, R] using hcoords.2.1
+  have hu2 : u 2 = D.y 2 - Y13 D N R := by
+    rw [hut]
+    simpa [N, R, Nn, Rn, Y13] using hcoords.2.2
+  have huPos : ∀ j, 1 ≤ u j := fun j => (ht.endpoint_inBox j).1
+  have hAC_impossible :
+      ((u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1) ∨
+       (u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2)) → False := by
+    intro hsinkRegion
+    have hne : l ≠ [] := by
+      intro he
+      subst l
+      simp at hcount2
+    generalize hlastEq : l.getLast hne = last
+    have hlastSome := List.getLast?_eq_getLast hne
+    rw [hlastEq] at hlastSome
+    rw [List.getLast?_eq_some_iff] at hlastSome
+    obtain ⟨pre, hlast⟩ := hlastSome
+    change l = pre ++ [last] at hlast
+    let q : ℕ := l.count 2
+    let P := trace_successfulPrefix13 D ht hp hno1 (q := q) (by simp [q])
+    have hq : 1 ≤ q := by simpa [q] using hcount2
+    have hactual := trace_successfulPrefix13_actual D ht hp hno1
+      (q := q) (by simp [q])
+    fin_cases last
+    · obtain ⟨v, hv⟩ := ht.prefix_trace (show pre <+: l by
+          refine ⟨[0], ?_⟩
+          simpa using hlast.symm)
+      have hfire : u = fire D.rows 0 v := by
+        rw [← ht.execute_eq, ← hv.execute_eq, hlast]
+        simp [execute_append]
+      have hf0 := congrFun hfire 0
+      have hf2 := congrFun hfire 2
+      simp [fire, BoxInput.rows] at hf0 hf2
+      have hv0 := hv.endpoint_inBox 0
+      have hv2 := hv.endpoint_inBox 2
+      dsimp [BoxInput.upper] at hv0 hv2
+      rcases hsinkRegion with hA | hC
+      · have hX : D.b 0 ≤ X13 D N R := by omega
+        have hYneg : Y13 D N R < 0 := by
+          by_contra hn
+          push Not at hn
+          exact terminal13_not_sinkB D N R (by omega) ⟨by
+            have := D.b_pos 0
+            omega, hn⟩
+        have hE0 : 1 ≤ -Y13 D N R := by omega
+        have hEa : -Y13 D N R ≤ D.x 2 - D.y 2 - 1 := by omega
+        have hV0 : 1 ≤ (D.y 0 + D.b 0 - D.x 0) - X13 D N R := by omega
+        have hlt := hp.count_lt_zero_of_last_zero (by simpa using hlast) 2 (by decide)
+        let H : ℕ := Nn - Rn
+        have hHN : Nn = H + Rn := by dsimp [H, Nn, Rn]; omega
+        have hH : 1 ≤ H := by dsimp [H, Nn, Rn]; omega
+        have hrank := terminal13_reciprocal_rank D ht hp hno1 q Rn H Nn P
+          hactual (by simp [q, Rn]) hHN hH hstart
+          (by simp [Rn]) (by simp [Nn]) (by simpa [N, R] using hX)
+          (by simpa [N, R] using hE0) (by simpa [N, R] using hEa)
+          (by simpa [N, R] using hV0)
+        have hRN : Rn ≤ Nn := by omega
+        rw [Nat.cast_sub hRN] at hrank
+        have hcoef2 : 0 ≤ D.x 2 + D.y 2 + D.b 2 + Y13 D N R := by
+          have huUpper := (ht.endpoint_inBox 2).2
+          dsimp [BoxInput.upper] at huUpper
+          have hb := D.b_pos 2
+          omega
+        exact terminal13_sinkA_certificate D N R hN hR hRy u hu1 hA hX hcoef2
+          (by simpa [N, R, H] using hrank)
+      · have hY : -D.b 2 ≤ Y13 D N R := by omega
+        have hpred : D.b 0 + 1 ≤ D.x 0 + X13 D N R := by
+          have huUpper := (ht.endpoint_inBox 0).2
+          dsimp [BoxInput.upper] at huUpper
+          omega
+        have hELR := terminal13_sinkC_ELR_bound D q Rn N P (by simp [q, Rn])
+          (by simp [X13, N, R, Nn, Rn]) (by simp [Y13, N, R, Nn, Rn])
+          (by simpa [N, R] using hpred) (by simpa [N, R] using hY)
+        have hcoef0 : 0 ≤ D.x 0 + D.y 0 + X13 D N R := by
+          have hx := D.x_pos 0
+          have hy := D.y_pos 0
+          have hb := D.b_pos 0
+          nlinarith [hpred]
+        exact terminal13_sinkC_certificate D N R hN hR hNy u hu1 hC hcoef0 hY
+          (by simpa [N, R] using hELR)
+    · have hm : (1 : Fin 3) ∈ l := by rw [hlast]; simp
+      rw [List.count_eq_zero] at hno1
+      exact (hno1 hm).elim
+    · have hw := hactual q hq le_rfl
+      have hPN := hw.at_last (by decide) (by simpa using hlast)
+      have hu0E : u 0 = P.E q := by
+        rw [hu0]
+        simp [X13, SuccessfulPrefix.E, P, q, N, R, Nn, Rn]
+        rw [hPN]
+        push_cast
+        ring
+      have hu2U : u 2 = D.x 2 + P.U q := by
+        rw [hu2]
+        simp [Y13, SuccessfulPrefix.U, P, q, N, R, Nn, Rn]
+        rw [hPN]
+        push_cast
+        ring
+      have hNPN : N = P.N q := by simpa [N, Nn] using hPN.symm
+      have hstartA : D.x 0 < D.y 0 + D.b 0 := by
+        have hb := D.b_pos 0
+        omega
+      have hu1q : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) -
+          (q : ℤ) * D.y 1 := by
+        simpa [R, Rn, q] using hu1
+      rcases hsinkRegion with hA | hC
+      · exact terminal13_last_row2_of_prefix D q P hq hstartA N hNPN u
+          hu0E hu2U hu1q hA
+      · have hA' : u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1 := by
+          constructor
+          · have hEupper := (P.residues q hq le_rfl).2.1
+            have hb := D.b_pos 0
+            calc
+              u 0 = P.E q := hu0E
+              _ ≤ D.x 0 - D.b 0 - 1 := hEupper
+              _ ≤ D.y 0 := by omega
+          · have hb := D.b_pos 1
+            omega
+        exact terminal13_last_row2_of_prefix D q P hq hstartA N hNPN u
+          hu0E hu2U hu1q hA'
+  rcases D.sink_cover u huPos hsink with hA | hB | hC | hD
+  · exact hAC_impossible (Or.inl hA)
+  · apply terminal13_not_sinkB D N R (by omega)
+    constructor <;> omega
+  · exact hAC_impossible (Or.inr hC)
+  · exact terminal13_sinkD_impossible D N R hN hR hNy hRy u hu0 hu1 hu2 hD
+
 end P21.Nonsymmetric.ColorCap
