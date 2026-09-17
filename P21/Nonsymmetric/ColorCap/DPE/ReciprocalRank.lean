@@ -2,6 +2,25 @@ import P21.Nonsymmetric.ColorCap.DPE.Canonical
 
 namespace P21.Nonsymmetric.ColorCap
 
+/-- If an actual prefix has one further row-zero firing, its shifted first
+coordinate lies in the strict dual range. -/
+theorem continued_zero_shift_bound (D : BoxInput)
+    {l p : List (Fin 3)} {endpoint : Point}
+    (ht : FiringTrace D.upper D.rows D.x l endpoint)
+    (hnext : p ++ [0] <+: l)
+    (V : ℤ) (hstate0 : execute D.rows p D.x 0 = D.x 0 + V) :
+    V ≤ D.y 0 - D.x 0 - 1 := by
+  obtain ⟨next, hn⟩ := ht.prefix_trace hnext
+  have hnextEq : next = fire D.rows 0 (execute D.rows p D.x) := by
+    rw [← hn.execute_eq]
+    simp [execute_append]
+  have hb := hn.endpoint_inBox 0
+  rw [hnextEq] at hb
+  simp only [fire] at hb
+  rw [hstate0] at hb
+  simp [BoxInput.rows, BoxInput.upper] at hb
+  omega
+
 /-- `K < Q`: the shifted original count pair is an actual prefix before the
 `K`-th successful crossing.  The `K = 1` branch uses the initial row-zero run
 and never asks for a crossing numbered zero. -/
@@ -16,6 +35,7 @@ theorem actual_shifted_before_crossing
     (hupperN : (Ns : ℤ) < P.N K)
     (hlowerN : K = 1 ∨ P.N (K - 1) < (Ns : ℤ)) :
     ∃ p state, FiringTrace upper C start p state ∧
+      p <+: l ∧
       p.count 0 = Ns - 1 ∧ p.count r = K - 1 ∧ ∃ a, p = a ++ [0] := by
   obtain ⟨source, tail, hsplit, hsourceR, hsource0⟩ := hactual K hK hKq
   have hsourcePrefix : source <+: l := by
@@ -53,7 +73,7 @@ theorem actual_shifted_before_crossing
   obtain ⟨p, hp, hp0, hpR, a, ha⟩ := shifted_prefix_actual l r K (Ns - 1) hK
     source hsourcePrefix hsourceR (by omega) htargetUpper hlower
   obtain ⟨state, hstate⟩ := ht.prefix_trace hp
-  exact ⟨p, state, hstate, hp0, hpR, a, ha⟩
+  exact ⟨p, state, hstate, hp, hp0, hpR, a, ha⟩
 
 /-- `K = Q`: the shifted state lies on the current terminal row-zero run.
 For `Q = 1` this again uses the initial run directly. -/
@@ -69,6 +89,7 @@ theorem actual_shifted_terminal
     (hNs : 2 ≤ Ns) (hNsN : Ns < N)
     (hlowerN : Q = 1 ∨ P.N (Q - 1) < (Ns : ℤ)) :
     ∃ p state, FiringTrace upper C start p state ∧
+      p <+: l ∧
       p.count 0 = Ns - 1 ∧ p.count r = Q - 1 ∧ ∃ a, p = a ++ [0] := by
   have htargetUpper : Ns - 1 ≤ l.count 0 := by omega
   have hlower : Q = 1 ∨ ∃ lower, lower <+: l ∧
@@ -98,7 +119,7 @@ theorem actual_shifted_terminal
   obtain ⟨p, hp, hp0, hpR, a, ha⟩ := shifted_prefix_actual l r Q (Ns - 1)
     (by omega) l (by rfl) hcountR (by omega) htargetUpper hlower
   obtain ⟨state, hstate⟩ := ht.prefix_trace hp
-  exact ⟨p, state, hstate, hp0, hpR, a, ha⟩
+  exact ⟨p, state, hstate, hp, hp0, hpR, a, ha⟩
 
 /-- Appendix B.2.4.2 in path form.  A dual residue `(s,K)` is sent back to
 the original count pair `(s+K-1,K-1)` and an actual chronological state.
@@ -118,6 +139,7 @@ theorem reciprocal_residue_actual
     (V : ℤ) (hV : V = (s : ℤ) * x - ((K : ℤ) - 1) * (A - x))
     (hV0 : 1 ≤ V) (hVd : V ≤ A - x - 1) :
     ∃ p state, FiringTrace upper C start p state ∧
+      p <+: l ∧
       p.count 0 = s + K - 1 ∧ p.count r = K - 1 ∧ ∃ a, p = a ++ [0] := by
   have hNs : 2 ≤ s + K := by omega
   by_cases hKQlt : K < Q
@@ -328,5 +350,18 @@ theorem dual_rank {a B d x b : ℤ} {q H : ℕ}
         omega)
       (le_rfl) hcover'
     omega
+
+/-- DR applied to the algebraically exact next dual residue. -/
+theorem dual_next_residue_rank {a B d x b E V : ℤ} {H Q : ℕ}
+    (hH : 1 ≤ H)
+    (P : SuccessfulPrefix a B d x 0 b (H - 1))
+    (hE : E = (Q : ℤ) * a - (H : ℤ) * B)
+    (hV : V = (H : ℤ) * x - ((Q : ℤ) - 1) * d)
+    (hE0 : 1 ≤ E) (hEa : E ≤ a - 1)
+    (hV0 : 1 ≤ V) (hVd : V ≤ d - b) :
+    (H : ℤ) + E + V ≤ a + d - b := by
+  have hHm : H = (H - 1) + 1 := by omega
+  have hcover := P.cover_by_next_residue hHm hE hV
+  exact P.dual_rank hHm hE0 hEa hV0 hVd hcover
 
 end P21.Nonsymmetric.ColorCap.SuccessfulPrefix

@@ -2,6 +2,9 @@ import P21.Nonsymmetric.ColorCap.DPE.ReciprocalRank
 
 open P21.Nonsymmetric.ColorCap
 
+#check continued_zero_shift_bound
+#check SuccessfulPrefix.dual_next_residue_rank
+
 example {x A B v b c : ℤ} {q H Q : ℕ}
     (P : SuccessfulPrefix x A B v b c q)
     (ha : 0 < v - B) (hd : 0 < A - x) (hQ : Q = q + 1)

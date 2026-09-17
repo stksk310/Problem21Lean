@@ -124,6 +124,30 @@ theorem U_slot_count {x A B v b c : ℤ} {q : ℕ}
   have hz : (q : ℤ) ≤ ((B - c - 1).toNat : ℤ) := by exact_mod_cast hq
   rwa [hcast] at hz
 
+/-- PREFIX forces every earlier residue to lie above a proposed next
+residue in at least one coordinate. -/
+theorem cover_by_next_residue {x A B v b c E U K : ℤ} {q H : ℕ}
+    (P : SuccessfulPrefix x A B v b c q) (hH : H = q + 1)
+    (hE : E = K * x - (H : ℤ) * A)
+    (hU : U = (H : ℤ) * v - (K - 1) * B) :
+    ∀ i : ℕ, 1 ≤ i → i ≤ q → E < P.E i ∨ U < P.U i := by
+  intro i hi hiq
+  by_contra hn
+  push Not at hn
+  have hiH : i < H := by omega
+  have hsub : ((H - i : ℕ) : ℤ) = (H : ℤ) - (i : ℤ) := by
+    rw [Nat.cast_sub (by omega)]
+  apply P.separator (H - i) (by omega) (by omega)
+  refine ⟨K - P.N i, ?_, ?_⟩
+  · have hEdef : P.E i = P.N i * x - (i : ℤ) * A := rfl
+    rw [hEdef] at hn
+    rw [hsub]
+    nlinarith [hE]
+  · have hUdef : P.U i = (i : ℤ) * v - (P.N i - 1) * B := rfl
+    rw [hUdef] at hn
+    rw [hsub]
+    nlinarith [hU]
+
 /-- LR: finite slot counting against the last successful crossing. -/
 theorem last_rank {x A B v b c : ℤ} {q : ℕ}
     (P : SuccessfulPrefix x A B v b c q) (hq : 1 ≤ q) :

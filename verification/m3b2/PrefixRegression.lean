@@ -5,6 +5,7 @@ open P21.Nonsymmetric.ColorCap
 
 #check SuccessfulPrefix.E_slot_count
 #check SuccessfulPrefix.U_slot_count
+#check SuccessfulPrefix.cover_by_next_residue
 
 -- LR follows from the successful prefix; it is not an additional hypothesis.
 example {x A B v b c : ℤ} {q : ℕ}
