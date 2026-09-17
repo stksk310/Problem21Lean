@@ -6,6 +6,34 @@ def X12 (D : BoxInput) (N Q : ℤ) : ℤ := Q * D.y 0 - N * D.x 0
 def Y12 (D : BoxInput) (N Q : ℤ) : ℤ :=
   N * (D.y 1 + D.b 1) - Q * D.x 1 - D.b 1
 
+theorem terminal12_count_bounds (D : BoxInput)
+    {l : List (Fin 3)} {u : Point}
+    (ht : FiringTrace D.upper D.rows D.x l u)
+    (hp : ProperNonzeroPredecessors l) (hno2 : l.count 2 = 0)
+    (hstart : D.x 0 < D.y 0) :
+    ((l.count 0 + 1 : ℕ) : ℤ) ≤ D.y 0 ∧
+      ((l.count 1 + 1 : ℕ) : ℤ) ≤ D.x 0 ∧
+      ((l.count 1 + 1 : ℕ) : ℤ) ≤ D.y 1 := by
+  let q := l.count 1
+  let P := trace_successfulPrefix12 D ht hp hno2 (q := q) le_rfl
+  have hqx := P.E_slot_count (by have := D.x_pos 0; omega)
+  have hqy := P.U_slot_count (by have := D.y_pos 1; omega)
+  have hu0 := ht.endpoint_eq_sub_sum 0
+  have hu0box := ht.endpoint_inBox 0
+  simp [BoxInput.rows, Fin.sum_univ_succ, hno2] at hu0
+  dsimp [BoxInput.upper] at hu0box
+  have hNy : ((l.count 0 + 1 : ℕ) : ℤ) ≤ D.y 0 := by
+    by_contra hn
+    push Not at hn
+    push_cast at hn
+    have hqX : (l.count 1 : ℤ) ≤ D.x 0 - 1 := by simpa [q, P] using hqx
+    have huUpper := hu0box.2
+    push_cast at hu0
+    nlinarith
+  refine ⟨hNy, ?_, ?_⟩
+  · simpa [q, P] using (show (q : ℤ) + 1 ≤ D.x 0 by omega)
+  · simpa [q, P] using (show (q : ℤ) + 1 ≤ D.y 1 by omega)
+
 theorem terminal12_not_sinkA (D : BoxInput) (N Q : ℤ) (hN : 0 < N)
     (hA : 0 ≤ X12 D N Q ∧ -D.b 1 ≤ Y12 D N Q) : False := by
   exact D.two_color12_not_sinkA N Q hN (by simpa [X12, Y12] using hA)
@@ -346,5 +374,88 @@ theorem terminal12_nonnegativeD_count_bound (D : BoxInput)
     lt_trans hleftB (lt_trans hcorrQ hQvX)
   have hpos := mul_pos hx hB
   nlinarith
+
+/-- B.17.2 reciprocal rank, including the closed boundary `X=0`. -/
+theorem terminal12_reciprocal_rank (D : BoxInput)
+    (q Q H N : ℕ)
+    (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1)
+      (D.x 1) 0 (D.b 1) q)
+    (hQ : Q = q + 1) (hN : N = H + Q) (hH : 1 ≤ H)
+    (hstart : D.x 0 < D.y 0)
+    (hX : 0 ≤ X12 D N Q)
+    (hE0 : 1 ≤ -(Y12 D N Q + D.b 1))
+    (hEa : -(Y12 D N Q + D.b 1) ≤ D.x 1 - (D.y 1 + D.b 1) - 1)
+    (hV0 : 1 ≤ (D.y 0 - D.x 0) - X12 D N Q) :
+    (H : ℤ) + (-(Y12 D N Q + D.b 1)) +
+      ((D.y 0 - D.x 0) - X12 D N Q) ≤
+      (D.x 1 - (D.y 1 + D.b 1)) + (D.y 0 - D.x 0) := by
+  let a := D.x 1 - (D.y 1 + D.b 1)
+  let d := D.y 0 - D.x 0
+  have hd : 0 < d := by dsimp [d]; omega
+  have ha : 0 < a := by
+    dsimp [a]
+    have hx := D.x_pos 0
+    have hB := P.B_pos
+    nlinarith [P.corridor]
+  have hNcast : (N : ℤ) = (H : ℤ) + (Q : ℤ) := by exact_mod_cast hN
+  have hbracket : (H : ℤ) * D.x 0 ≤ (Q : ℤ) * d := by
+    have hXN : (N : ℤ) * D.x 0 ≤ (Q : ℤ) * D.y 0 := by
+      simpa [X12] using hX
+    dsimp [d]
+    calc
+      (H : ℤ) * D.x 0 = (N : ℤ) * D.x 0 - (Q : ℤ) * D.x 0 := by
+        rw [hNcast]
+        ring
+      _ ≤ (Q : ℤ) * D.y 0 - (Q : ℤ) * D.x 0 := sub_le_sub_right hXN _
+      _ = (Q : ℤ) * (D.y 0 - D.x 0) := by ring
+  have hstrict : ∀ s : ℕ, 1 ≤ s → s ≤ H - 1 →
+      let K := ((s : ℤ) * (D.y 1 + D.b 1)) / a + 1
+      (s : ℤ) * D.x 0 - (K - 1) * d ≤ d - 1 := by
+    intro s hs hsH
+    dsimp
+    let qz : ℤ := ((s : ℤ) * (D.y 1 + D.b 1)) / a
+    have hsB : 0 < (s : ℤ) * (D.y 1 + D.b 1) :=
+      mul_pos (by exact_mod_cast hs) P.B_pos
+    have ha0 : a ≠ 0 := ne_of_gt ha
+    have hdecomp := Int.ediv_mul_add_emod ((s : ℤ) * (D.y 1 + D.b 1)) a
+    have hrem0 := Int.emod_nonneg ((s : ℤ) * (D.y 1 + D.b 1)) ha0
+    have hrema := Int.emod_lt_of_pos ((s : ℤ) * (D.y 1 + D.b 1)) ha
+    have hq0 : 0 ≤ qz := Int.ediv_nonneg hsB.le ha.le
+    have hKpos : 1 ≤ qz + 1 := by omega
+    let k : ℕ := (qz + 1).toNat
+    have hkcast : (k : ℤ) = qz + 1 := by
+      simp [k, Int.toNat_of_nonneg (by omega : 0 ≤ qz + 1)]
+    have hkz : (1 : ℤ) ≤ (k : ℤ) := by rw [hkcast]; exact hKpos
+    have hk : 1 ≤ k := by exact_mod_cast hkz
+    have hfirst : (s : ℤ) * (D.y 1 + D.b 1) ≤ (k : ℤ) * a := by
+      rw [hkcast]
+      dsimp [qz]
+      nlinarith
+    by_contra hn
+    push Not at hn
+    have hsecond : (k : ℤ) * d ≤ (s : ℤ) * D.x 0 := by
+      rw [hkcast]
+      dsimp [qz] at hn ⊢
+      nlinarith
+    exact (P.reciprocal_separator ha hd hQ hbracket s k hs (by omega) hk)
+      ⟨hfirst, hsecond⟩
+  let DP := P.dual_prefix_of_actuality ha hd hQ hbracket (by
+    simpa [a, d] using hstrict)
+  have hEnext : -(Y12 D N Q + D.b 1) =
+      (Q : ℤ) * a - (H : ℤ) * (D.y 1 + D.b 1) := by
+    simp [Y12, a]
+    rw [hNcast]
+    ring
+  have hVnext : (D.y 0 - D.x 0) - X12 D N Q =
+      (H : ℤ) * D.x 0 - ((Q : ℤ) - 1) * d := by
+    simp [X12, d]
+    rw [hNcast]
+    ring
+  have hVd : (D.y 0 - D.x 0) - X12 D N Q ≤ d := by
+    dsimp [d]
+    omega
+  simpa [a, d] using
+    DP.dual_next_residue_rank hH hEnext hVnext hE0 (by simpa [a] using hEa)
+      hV0 (by simpa [d] using hVd)
 
 end P21.Nonsymmetric.ColorCap

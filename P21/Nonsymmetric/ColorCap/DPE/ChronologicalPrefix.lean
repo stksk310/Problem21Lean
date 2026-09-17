@@ -6,6 +6,53 @@ namespace P21.Nonsymmetric.ColorCap
 def ProperNonzeroPredecessors (l : List (Fin 3)) : Prop :=
   ∀ a i b, l = a ++ i :: b → i ≠ 0 → ∃ p, a = p ++ [0]
 
+theorem ProperNonzeroPredecessors.prefix {l p : List (Fin 3)}
+    (hp : ProperNonzeroPredecessors l) (hpl : p <+: l) :
+    ProperNonzeroPredecessors p := by
+  intro a i b hs hi
+  obtain ⟨tail, ht⟩ := hpl
+  apply hp a i (b ++ tail) _ hi
+  rw [← ht, hs]
+  simp [List.append_assoc]
+
+theorem ProperNonzeroPredecessors.count_le_zero {l : List (Fin 3)}
+    (hp : ProperNonzeroPredecessors l) (r : Fin 3) (hr : r ≠ 0) :
+    l.count r ≤ l.count 0 := by
+  induction hn : l.length using Nat.strong_induction_on generalizing l with
+  | h n ih =>
+    cases l using List.reverseRecOn with
+    | nil => simp
+    | append_singleton a i =>
+      have hpa : ProperNonzeroPredecessors a := hp.prefix (by simp)
+      have halen : a.length < n := by simp at hn; omega
+      by_cases hi : i = 0
+      · subst i
+        have hle := ih a.length halen hpa rfl
+        simp [List.count_append, Ne.symm hr]
+        omega
+      · by_cases hir : i = r
+        · subst i
+          obtain ⟨p, ha⟩ := hp a r [] (by simp) hr
+          have hpp : ProperNonzeroPredecessors p := hpa.prefix (by rw [ha]; simp)
+          have hplen : p.length < n := by simp [ha] at hn; omega
+          have hle := ih p.length hplen hpp rfl
+          rw [ha]
+          simp [List.count_append, Ne.symm hr]
+          omega
+        · have hle := ih a.length halen hpa rfl
+          simp [List.count_append, hi, hir]
+          exact hle
+
+theorem ProperNonzeroPredecessors.count_lt_zero_of_last_zero
+    {l a : List (Fin 3)} (hp : ProperNonzeroPredecessors l)
+    (hlast : l = a ++ [0]) (r : Fin 3) (hr : r ≠ 0) :
+    l.count r < l.count 0 := by
+  have hpa : ProperNonzeroPredecessors a := hp.prefix ⟨[0], hlast.symm⟩
+  have hle := hpa.count_le_zero r hr
+  rw [hlast]
+  simp [List.count_append, Ne.symm hr]
+  omega
+
 /-- Provenance for the arithmetic count attached to the `h`-th actual
 nonzero firing.  `source` is the genuine chronological state immediately
 before that firing; `N` is its row-zero count plus one. -/
@@ -14,6 +61,36 @@ def CrossingWitness (l : List (Fin 3)) (r : Fin 3) (h : ℕ) (N : ℤ) : Prop :=
     l = source ++ r :: tail ∧
     source.count r = h - 1 ∧
     N = (source.count 0 : ℤ) + 1
+
+theorem CrossingWitness.at_last {l : List (Fin 3)} {r : Fin 3} {N : ℤ}
+    (hw : CrossingWitness l r (l.count r) N) (hr : r ≠ 0)
+    {a : List (Fin 3)} (hlast : l = a ++ [r]) :
+    N = (l.count 0 : ℤ) + 1 := by
+  obtain ⟨source, tail, hsplit, hcount, hN⟩ := hw
+  have htailCount : tail.count r = 0 := by
+    have hc := congrArg (fun z : List (Fin 3) => z.count r) hsplit
+    simp at hc
+    omega
+  have htail : tail = [] := by
+    by_contra hn
+    have hg := congrArg List.getLast? (hsplit.symm.trans hlast)
+    have ht : (r :: tail).getLast? = some r := by
+      simpa [List.getLast?_append] using hg
+    rw [List.getLast?_eq_some_iff] at ht
+    obtain ⟨ys, hys⟩ := ht
+    cases ys with
+    | nil =>
+        simp at hys
+        exact hn hys
+    | cons z zs =>
+        simp at hys
+        have hm : r ∈ tail := by rw [hys.2]; simp
+        rw [List.count_eq_zero] at htailCount
+        exact htailCount hm
+  subst tail
+  rw [hsplit]
+  simp [hr] at hN ⊢
+  exact hN
 
 /-- The `h`-th occurrence is split from the original list, preserving its exact prefix. -/
 theorem nth_occurrence_split {α : Type*} [DecidableEq α] (r : α) :

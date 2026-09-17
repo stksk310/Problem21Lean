@@ -6,6 +6,9 @@ open P21.Nonsymmetric.ColorCap
 #check SuccessfulPrefix.E_slot_count
 #check SuccessfulPrefix.U_slot_count
 #check SuccessfulPrefix.cover_by_next_residue
+#check ProperNonzeroPredecessors.count_le_zero
+#check ProperNonzeroPredecessors.count_lt_zero_of_last_zero
+#check CrossingWitness.at_last
 
 -- LR follows from the successful prefix; it is not an additional hypothesis.
 example {x A B v b c : ℤ} {q : ℕ}

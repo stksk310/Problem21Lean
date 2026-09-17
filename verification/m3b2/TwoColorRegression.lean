@@ -3,6 +3,7 @@ import P21.Nonsymmetric.ColorCap.DPE.TwoColor12
 open P21.Nonsymmetric.ColorCap
 
 #check terminal12_not_sinkA
+#check terminal12_count_bounds
 #check terminal12_sinkD_impossible
 #check terminal12_last_row1_impossible
 #check terminal12_last_row1_of_prefix
@@ -12,3 +13,4 @@ open P21.Nonsymmetric.ColorCap
 #check terminal12_sinkC_ELR_bound
 #check terminal12_negativeD_predecessor_bound
 #check terminal12_nonnegativeD_count_bound
+#check terminal12_reciprocal_rank
