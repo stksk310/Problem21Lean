@@ -1,0 +1,12 @@
+import P21.Nonsymmetric.ColorCap.FullColorCap
+
+#check P21.Nonsymmetric.ColorCap.minimum_one_proved
+#check P21.Nonsymmetric.ColorCap.box_positive_exit_proved
+#check P21.Nonsymmetric.ColorCap.three_arms_impossible
+#check P21.Nonsymmetric.actual_three_A_excluded_residual_free
+#check P21.Nonsymmetric.actual_three_B_excluded_residual_free
+#check P21.Nonsymmetric.actual_labels_compatible_residual_free
+#check P21.Nonsymmetric.actual_labels_terminal_residual_free
+#check P21.Nonsymmetric.selected_four_terminal
+#check P21.Nonsymmetric.nonsymmetric_selected_four
+#check P21.Nonsymmetric.nonsymmetric_Q_ge_four
