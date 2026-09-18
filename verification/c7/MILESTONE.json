@@ -1,0 +1,9 @@
+{
+  "milestone": "C7 CHAIN CORE-ROOT",
+  "branch": "c7-chain-core-root",
+  "frozen_base": "6a1e395736e442bcda33c0da282220c98a444c76",
+  "primary_interface": "P21.Nonsymmetric.ChainCore",
+  "terminal_frontier": "C8 SECTION 8",
+  "candidate_name": "P21_LEAN_C7_CHAIN_CORE_ROOT_CANDIDATE_20260918.zip",
+  "evidence_artifact": "P21_C7_TRUE_AUDIT_EVIDENCE"
+}

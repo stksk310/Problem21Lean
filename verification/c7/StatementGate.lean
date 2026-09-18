@@ -1,0 +1,23 @@
+import P21.Nonsymmetric.Chain
+
+#check P21.Nonsymmetric.ChainInput.pfiber_exists
+#check P21.Nonsymmetric.ChainInput.max_i_exists
+#check P21.Nonsymmetric.ChainInput.RootSeed.root
+#check P21.Nonsymmetric.ChainInput.RootSeed.strict
+#check P21.Nonsymmetric.ChainInput.reverseChain
+#check P21.Nonsymmetric.ChainInput.to_oriented_core
+#check P21.Nonsymmetric.ChainCore.returns
+#check P21.Nonsymmetric.ChainCore.caps
+#check P21.Nonsymmetric.ChainCore.slopes
+#check P21.Nonsymmetric.ChainCore.orientIntrinsic
+#check P21.Nonsymmetric.ChainCore.compact_actual
+#check P21.Nonsymmetric.ChainCore.I_levels
+#check P21.Nonsymmetric.ChainCore.Lj_level
+#check P21.Nonsymmetric.ChainCore.Lj_rigidity
+#check P21.Nonsymmetric.ChainCore.Lk_strict_level
+#check P21.Nonsymmetric.ChainCore.sum_notch
+#check P21.Nonsymmetric.ChainCore.shift_new
+#check P21.Nonsymmetric.ChainCore.shift_new_coefficients
+#check P21.Nonsymmetric.ChainCore.Uj_tau_cap
+#check P21.Nonsymmetric.ChainCore.Vj_tau_cap
+#check P21.Nonsymmetric.ChainCore.FK_strong

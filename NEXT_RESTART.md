@@ -1,4 +1,17 @@
-# Post-T6 restart point
+# Post-C7 restart point
+
+Branch: `c7-chain-core-root`. Immutable mathematical base:
+`6a1e395736e442bcda33c0da282220c98a444c76`.
+
+Publication Section 7 is exposed by `P21.Nonsymmetric.Chain`.  The final gates
+are `ChainCore.shift_new`, `Uj_tau_cap`, `Vj_tau_cap`, and strict-region
+`FK_strong`.  Actual-return provenance and signed/nonnegative separation are
+retained throughout.  CHAIN remains open.  Begin only C8 boundary elimination
+and packet-window work; do not reconstruct Section 7 or modify frozen source.
+
+---
+
+# Post-T6 restart point (historical)
 
 Branch: `t6-typeii-exclusion`. Immutable mathematical base:
 `707d9386037e8bcdec9c9bfb02f95731c9ce2597`.
