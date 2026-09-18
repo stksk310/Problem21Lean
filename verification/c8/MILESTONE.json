@@ -1,0 +1,9 @@
+{
+  "milestone": "C8 CHAIN BOUNDARY/WINDOW",
+  "branch": "c8-chain-boundary-window",
+  "frozen_base": "80b36191937b2e2f0dc251ac6006d63f088e03b2",
+  "primary_interface": "P21.Nonsymmetric.ChainCore.FirstFit.c8_handoff",
+  "terminal_frontier": "C9 SECTION 9",
+  "candidate_name": "P21_LEAN_C8_CHAIN_BOUNDARY_WINDOW_CANDIDATE_20260919.zip",
+  "evidence_artifact": "P21_C8_TRUE_AUDIT_EVIDENCE"
+}
