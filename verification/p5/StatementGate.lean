@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Central
+import P21.Nonsymmetric.Path.Packets
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -33,3 +33,6 @@ import P21.Nonsymmetric.Path.Central
 -- P5.1 starts from these two named actual H-factorizations.
 #check P21.Nonsymmetric.PathInput.CentralReturns
 #check P21.Nonsymmetric.PathInput.central_returns
+#check P21.Nonsymmetric.replacePacketCopies
+#check P21.Nonsymmetric.reduceCriticalCoordinate
+#check P21.Nonsymmetric.reduceCriticalCoordinate_lt
