@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.RootNormalization
+import P21.Nonsymmetric.Path.EndpointLevel
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -68,3 +68,6 @@ import P21.Nonsymmetric.Path.RootNormalization
 #check P21.Nonsymmetric.PathInput.WeakRoot.step
 #check P21.Nonsymmetric.PathInput.WeakRoot.step_measure
 #check P21.Nonsymmetric.PathInput.WeakRoot.normalize
+#check P21.Nonsymmetric.PathInput.NormalizedRoot.endpoint_level_two
+#check P21.Nonsymmetric.PathInput.NormalizedRoot.F_absorption
+#check P21.Nonsymmetric.PathInput.WeakRoot.impossible
