@@ -27,7 +27,7 @@ FROZEN_SOURCE_INTEGRITY.txt ROOT_BUILD_LOG.txt M3B2_BUILD_LOG.txt M3B2_MODULE_LI
 M3B2_VERIFICATION_LOG.txt PROOF_DEBT_REPORT_M3B2.txt AXIOM_REPORT_M3B2.txt AXIOM_SUMMARY.json
 STATEMENT_INSPECTION.txt DEPENDENCY_DAG_CHECK.txt CIRCULARITY_CHECK.txt SCANNER_TEST_LOG.txt
 M1_ORIGINAL_SUITE.txt M2A_ORIGINAL_SUITE.txt M2B_ORIGINAL_SUITE.txt M3A_ORIGINAL_SUITE.txt
-M3B1_ORIGINAL_SUITE.txt VERIFIED_SOURCE_SHA256.json RESULTS.json""".split()
+M3B1_ORIGINAL_SUITE.txt VERIFIED_SOURCE_SHA256.json CANDIDATE_ZIP_SHA256.txt RESULTS.json""".split()
 
 
 def git(*args): return subprocess.check_output(["git", *args], cwd=ROOT)
@@ -35,8 +35,9 @@ def git(*args): return subprocess.check_output(["git", *args], cwd=ROOT)
 
 def init():
     EVIDENCE.mkdir(parents=True, exist_ok=True)
-    for name in REQUIRED: V.write(name, "NOT RUN\n")
-    V.write("RESULTS.json", "{}\n")
+    for name in REQUIRED:
+        if not (EVIDENCE / name).exists(): V.write(name, "NOT RUN\n")
+    if not (EVIDENCE / "RESULTS.json").exists(): V.write("RESULTS.json", "{}\n")
     head = git("rev-parse", "HEAD").decode().strip()
     if os.environ.get("GITHUB_SHA", head) != head: raise ValueError("Event/HEAD mismatch")
     V.write("COMMIT_SHA.txt", head + "\n")
@@ -94,7 +95,7 @@ def archive(path, receipt):
     return OLD.archive_data(path, digest)
 
 
-def suite():
+def suite(selected=None):
     windows_environment()
     sys.path.insert(0, str(ROOT / "ci"))
     m1 = load("m3b2_m1_archive", ROOT / "ci/audit.py")
@@ -108,11 +109,19 @@ def suite():
       ("M3B1", archive(ROOT / "ci/candidate/P21_LEAN_M3B1_MINBOX_WHITE_CANDIDATE_20260917.zip",
                        ROOT / "ci/M3B1_CANDIDATE_SHA256.txt"), "verification/m3b1/verify.py")]
     for label, data, script in archives:
+        if selected is not None and label != selected: continue
         with tempfile.TemporaryDirectory(prefix="isolated-" + label + "-", dir=EVIDENCE) as temp:
-            scratch = Path(temp).resolve()
-            if not scratch.is_relative_to(EVIDENCE.resolve()): raise ValueError("Invalid scratch path")
-            for name, blob in data.items():
-                p = scratch / name; p.parent.mkdir(parents=True, exist_ok=True); p.write_bytes(blob)
+            container = Path(temp).resolve()
+            if not container.is_relative_to(EVIDENCE.resolve()): raise ValueError("Invalid scratch path")
+            worktree_added = label == "M3B1"
+            if worktree_added:
+                scratch = container / "checkout"
+                subprocess.run(["git", "worktree", "add", "--detach", str(scratch),
+                                "9c9a1b6f76f78a2927b12bf8a0663dfdc29ea7a1"], cwd=ROOT, check=True)
+            else:
+                scratch = container
+                for name, blob in data.items():
+                    p = scratch / name; p.parent.mkdir(parents=True, exist_ok=True); p.write_bytes(blob)
             (scratch / ".lake").mkdir(); link = scratch / ".lake/packages"; deps = (ROOT / ".lake/packages").resolve()
             if os.name == "nt":
                 command = "New-Item -ItemType Junction -Path '" + str(link).replace("'", "''") + "' -Target '" + str(deps).replace("'", "''") + "' | Out-Null"
@@ -125,10 +134,33 @@ def suite():
             finally:
                 if os.name == "nt": os.rmdir(link)
                 else: link.unlink()
+                if worktree_added:
+                    subprocess.run(["git", "worktree", "remove", "--force", str(scratch)], cwd=ROOT, check=True)
         V.record("original_" + label.lower() + "_suite", 0)
 
 
 def integrity(): V.integrity()
+
+
+def candidate():
+    name = "P21_LEAN_M3B2_DPE_BOX_POSITIVE_EXIT_CANDIDATE_20260917.zip"
+    path = ROOT / "ci/candidate" / name
+    receipt = ROOT / "ci/M3B2_CANDIDATE_SHA256.txt"
+    fields = receipt.read_text(encoding="utf-8").split()
+    if len(fields) < 2 or fields[1] != name or not re.fullmatch(r"[0-9a-f]{64}", fields[0]):
+        raise ValueError("Malformed M3B2 candidate receipt")
+    digest = V.sha(path.read_bytes())
+    if digest != fields[0]: raise ValueError("M3B2 candidate SHA mismatch")
+    with zipfile.ZipFile(path) as zf:
+        names = set(zf.namelist())
+        required = {"README_M3B2.md", "SOURCE_OF_TRUTH_M3B2.md", "M3B2_STATEMENT_MAP.md",
+                    "M3B2_PROOF_ROUTE.md", "M3B2_DEPENDENCY_DAG.md", "NEXT_RESTART.md",
+                    "P21/Nonsymmetric/ColorCap/DPE/Exhaustion.lean",
+                    "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+                    "verification/m3b2/local-evidence/RESULTS.json"}
+        if not required <= names: raise ValueError("Candidate archive missing required files")
+    V.write("CANDIDATE_ZIP_SHA256.txt", digest + "  " + name + "\n")
+    V.record("candidate_zip_sha256", digest)
 
 
 def complete():
@@ -156,4 +188,5 @@ def complete():
 if __name__ == "__main__":
     {"init": init, "environment": environment, "dependencies": dependencies,
      "cache-modules": cache_modules, "verify": verify, "suite": suite,
-     "integrity": integrity, "complete": complete}[sys.argv[1]]()
+     "suite-m3b1": lambda: suite("M3B1"),
+     "integrity": integrity, "candidate": candidate, "complete": complete}[sys.argv[1]]()
