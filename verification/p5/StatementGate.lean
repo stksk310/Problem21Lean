@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Split
+import P21.Nonsymmetric.Path.WeakRoot
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -54,3 +54,10 @@ import P21.Nonsymmetric.Path.Split
 #check P21.Nonsymmetric.PathInput.NoPairNormalization.reverse
 #check P21.Nonsymmetric.PathInput.NoPairNormalization.middle_ne
 #check P21.Nonsymmetric.PathInput.pair_or_pfree_or_dual
+#check P21.Nonsymmetric.PathInput.WeakRoot
+#check P21.Nonsymmetric.PathInput.Pair.root_identity
+#check P21.Nonsymmetric.PathInput.Pair.t0_bounds
+#check P21.Nonsymmetric.PathInput.Pair.strong_port
+#check P21.Nonsymmetric.PathInput.Pair.weak_root_of_left
+#check P21.Nonsymmetric.PathInput.Pair.reverse
+#check P21.Nonsymmetric.PathInput.Pair.weak_root_or_dual
