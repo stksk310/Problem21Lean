@@ -1,22 +1,17 @@
-# Post-P5 restart point
+# Post-T6 restart point
 
-Branch: `p5-path-exclusion`. Immutable mathematical base:
-`fd4ea0c7cbc57df6e935790a1387242bcf9e0087`.
+Branch: `t6-typeii-exclusion`. Immutable mathematical base:
+`707d9386037e8bcdec9c9bfb02f95731c9ce2597`.
 
-Independent review has frozen the nonsymmetric selected-four classification
-(FULL G4), including MINBOX, DPE, THREE-ARM, COLOR-CAP, and the residual-free
-selected-four terminal extraction. Do not reopen those milestones.
+Section 6 TYPE II exclusion is proved by
+`P21.Nonsymmetric.TypeIIInput.impossible`. The proof uses the two actual
+singleton returns, endpoint caps, exhaustive uniform direction-0 caps, and the
+three return-level orderings. No return of `B_j` is assumed.
 
-Section 5 PATH exclusion is proved by
-`P21.Nonsymmetric.PathInput.impossible`. The proof closes PAIR, PFREE, and the
-formally transported dual PFREE branch. `TerminalInputAfterPath` retains the
-same selected four values and both frozen orientations while leaving only
-TYPE II or CHAIN.
-
-The next mathematical frontier is exactly Section 6 TYPE II exclusion. Do not
-reopen PATH, the frozen selected-four theorem, MINBOX, DPE, THREE-ARM, or
-COLOR-CAP. Start from the post-PATH wrappers in
-`P21/Nonsymmetric/Path/Integration.lean`.
+`TerminalInputAfterTypeII` preserves the same selected four values and both
+frozen orientations while leaving CHAIN only. The next mathematical frontier
+is exactly Sections 7–10 CHAIN. Do not reopen PATH, TYPE II, the frozen
+selected-four theorem, MINBOX, DPE, THREE-ARM, or COLOR-CAP.
 
 ---
 
@@ -34,8 +29,8 @@ selected-four terminal extraction wrappers. Do not restart Appendix B.16--B.20,
 MINBOX, or White.
 
 This record predates the independent M3B2/FULL G4 freeze. Its former frontier
-language is retained only as milestone history; the active frontier is PATH
-exclusion as stated above.
+language is retained only as milestone history; the active frontier is
+Sections 7--10 CHAIN as stated above.
 
 ---
 
