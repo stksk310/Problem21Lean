@@ -11,7 +11,7 @@ permissions:
 jobs:
   audit:
     # M2B preserves the frozen sources and reruns the original M2A verifier in its own job.
-    if: github.ref_name != 'm2b-std-sym-glue' && github.head_ref != 'm2b-std-sym-glue' && github.ref_name != 'm3-nonsym-g4' && github.head_ref != 'm3-nonsym-g4' && github.ref_name != 'm3b1-minbox-white' && github.head_ref != 'm3b1-minbox-white'
+    if: github.ref_name != 'm2b-std-sym-glue' && github.head_ref != 'm2b-std-sym-glue' && github.ref_name != 'm3-nonsym-g4' && github.head_ref != 'm3-nonsym-g4' && github.ref_name != 'm3b1-minbox-white' && github.head_ref != 'm3b1-minbox-white' && github.ref_name != 'c8-chain-boundary-window' && github.head_ref != 'c8-chain-boundary-window'
     name: Exact M2A candidate / fresh Linux verification
     runs-on: ubuntu-latest
     timeout-minutes: 90
