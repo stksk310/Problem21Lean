@@ -53,10 +53,10 @@
 - Create: `P21/Nonsymmetric/Chain/C9/MultiplicityMaster.lean`
 - Test: `verification/c9/DSetupGate.lean`
 
-- [ ] Derive only Section-9-valid D data from `RegionD`, intrinsic data, SHIFT-NEW, SUM-NOTCH, FK-STRONG, Caps and Slopes.
-- [ ] Prove the last crossing is an h-step and FIRST-CAPS plus NV/ZV identities.
-- [ ] Retain a positive common multiplicity scale and prove the exact M-MASTER identity with coefficientwise sign lemmas.
-- [ ] Build and commit.
+- [x] Derive only Section-9-valid D data from `RegionD`, intrinsic data, SHIFT-NEW, SUM-NOTCH, FK-STRONG, Caps and Slopes.
+- [x] Prove the last crossing is an h-step and FIRST-CAPS plus NV/ZV identities.
+- [x] Retain a positive common multiplicity scale and prove the exact M-MASTER identity with coefficientwise sign lemmas.
+- [x] Build and commit.
 
 ### Task 4: Close high-q and nonlinear-first branches
 
