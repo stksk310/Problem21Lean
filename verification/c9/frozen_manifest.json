@@ -1,0 +1,702 @@
+{
+  "base_commit": "7769545a357c0c4d24520ec7a9fc8994f3f664e7",
+  "policy": "All mathematical Lean files present at the base commit are frozen.",
+  "files": [
+    {
+      "path": "P21/Apery.lean",
+      "sha256": "2d0b92a7796ec41f35b5cf11e4e60367ecabfa393b5db16c697f7e051ebf66ac"
+    },
+    {
+      "path": "P21/Basic.lean",
+      "sha256": "5624df7fa23e1d1e32df6287a256b5013e802e213f12c23f2a06b01911e99263"
+    },
+    {
+      "path": "P21/CanonicalReduction.lean",
+      "sha256": "150f599c25321c2812d6ab31d15a4e37a41b2538786a0f798bf0afa7296d0aa1"
+    },
+    {
+      "path": "P21/External/SymmetricThreeGenerator.lean",
+      "sha256": "67a80b76857d97f3f34fbe4ac7417d4dbc6e2faad9bfe970fcdd6ea5e5409706"
+    },
+    {
+      "path": "P21/External/SymmetricThreeGeneratorProof.lean",
+      "sha256": "2541fc3f03f75b45ca9b64e0ccb7d091bca5cb4c5b53efaa5d9540d5bc744476"
+    },
+    {
+      "path": "P21/Factorization.lean",
+      "sha256": "827412f636a31df805e836dc07242fbfd731dbc39822e166c20135d50c9f2309"
+    },
+    {
+      "path": "P21/Nonsymmetric/ActualClassification.lean",
+      "sha256": "7435033c706198c26f3dc7324f4caa3772c754b91350a310fd1ffb5f3d82f485"
+    },
+    {
+      "path": "P21/Nonsymmetric/ActualLabels.lean",
+      "sha256": "db79fab61d8f68287f1b43ea5389677ad34f052b4a9dd15b0506bd497c6c8e9c"
+    },
+    {
+      "path": "P21/Nonsymmetric/ActualMixed.lean",
+      "sha256": "1bba941c517f27081ae9036633141c8b99a8f04125fe14f54df846dba54a7fe1"
+    },
+    {
+      "path": "P21/Nonsymmetric/Arms.lean",
+      "sha256": "c0fa5b5895fbfffd2ecae14cb711b680480b363f54a776459eae80bb27ae8aa6"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain.lean",
+      "sha256": "3e055e849aa6f97d16f98ffbf4ec50e641fd3d03277b23a053924db8c74c64fa"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8.lean",
+      "sha256": "b2426c3227cd147d4666e34798b6f6356d3dc4c7f4ec0b4a32679e126ac13752"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/BoundaryClosed.lean",
+      "sha256": "46ce01e8d8c7dfc0d880f7d8c9fd31fc679abf01a39aed35ff6b5d680aa0b810"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/BoundaryFullSync.lean",
+      "sha256": "0e9c477558298c96f93043db2507459262ece0450d533652ca0aa5f422a3e9fc"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/BoundaryMultiplicity.lean",
+      "sha256": "7e5b30720dfa6bd4c4e6d771dfe53116b592e684566a9cdf58bdeefce9ba6575"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/BoundarySync.lean",
+      "sha256": "5e3437862694b1230e626b687686412a456d79ab5442fcce53280f9760f09ee2"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/BoundaryTriangle.lean",
+      "sha256": "10f00bda96c88a469a155de4ca50210bd67bb53f32670436953ecca692810a15"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/CrossProductScale.lean",
+      "sha256": "f533079fc74cc99e17b1f0c34838b0ff5457b8e1bc3bda2dc1d5c64104ea4f88"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/DetOne.lean",
+      "sha256": "bdda43abe5b4b86907b3b0f1bbfbe9cceb9e9dbbc0d31cdfd8d9e4ba73c98077"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/FirstFit.lean",
+      "sha256": "4b22e0f62fda12fba6b675006077c1c10738d136e307baeeb7d539189ab05f90"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/Handoff.lean",
+      "sha256": "7fd5a6303419589ef4b0fb4024fa6e67eea5b7b44a53ce256bcd40b5c4df4a46"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/KCeiling.lean",
+      "sha256": "c27e31fa0f06bc70308819dc2744f7004f3fa0017427e66a68f1a59b28cb025a"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/KernelOne.lean",
+      "sha256": "3c12c93fe297a4d8f10903b0fe532bc74d237a1310653d12ef44da7a00a4c561"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/Packet.lean",
+      "sha256": "2a6a071c8476944071a744a09ada38e82cbbf5c3dc7a06d04f474a30c40209a4"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/Parameters.lean",
+      "sha256": "6a18e070a8eba44a6ab8542c0b0a7d1154bc36493c3d822ad07e6fc8de3f0335"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/PositiveCoefficients.lean",
+      "sha256": "2a53cecab3ccf48b0c4205d114a38a782e993e6a566c06a7b0c289cb6aac8900"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictDbase.lean",
+      "sha256": "34696d835a784129fb20cc0a0861ea93b3b8ad7846d935c3fc0003ed82fd3ae9"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictExceptions.lean",
+      "sha256": "210e90eb1256d0777e152995a6d78517aafd523ca9e72e2137beb3d8bd4d781d"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictIdentities.lean",
+      "sha256": "4469c4a425066bfce7c9460036ec76619bca93d531c0309c4820cc2a596cffa5"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictPositivity.lean",
+      "sha256": "c2db06680d9459a213812c3b4d40558a34b993142af1d7fa3f4a7a995f469470"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictRegions.lean",
+      "sha256": "bd2d193e1ae8d60ac95da8bee59b57861bf19e5be8b1209ea21753d46d24c3d1"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/StrictWindow.lean",
+      "sha256": "60ee02056792fc30c24042f39d62271dc1a35870a71cd4cf1ab69f9c893d2eb4"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/Triangle.lean",
+      "sha256": "27d01d0f060091f4c9beba511cbcd5b558b353244fd1386f8eb62634942d95ad"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/TriangleEmpty.lean",
+      "sha256": "16e5ee45004fb3ac90314774dd14800453bcd74500ecd38df639425a14ba3e57"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/UnitFirstPoint.lean",
+      "sha256": "a1b3a461d0b9c8d1225a1e52120df01c43015a40b70c0dcdce9c340d343d5f24"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/UnitMultiplicity.lean",
+      "sha256": "7e5e5c27cb29b1aa8ddf87bf8f1bcf7db604d455a4d67237bd57fb2bdccf77f7"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/UnitParameters.lean",
+      "sha256": "a5f0e1d67ab003bc68295edc0df3a4bdc9950fb87e05e070a8b9e08f401ca0b3"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/C8/UnitTransport.lean",
+      "sha256": "133163f530225bc54e9a9781e3bbdf5a21d6fb0e209abb388f89767808db7612"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Caps.lean",
+      "sha256": "39cad577369f273593f0c9d8a8ec83ef49bb04ce0c1310af278884e4c2072ca2"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/ColorReversal.lean",
+      "sha256": "2d35f6dc3664fff7ced5c39dcd32773f53fb409a5094ac75fd33f619b882caf7"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Compact.lean",
+      "sha256": "f0aa74943943b9a53f1b26575428b89f1659115670862d0e22acc786cbab5870"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Core.lean",
+      "sha256": "98e8a0c8672939573ac8a3d2dba570719c1465b2a8653f52209c9002653b7988"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Extremal.lean",
+      "sha256": "0bf4d373c7c1993b306fea0e7b87d3e1d6ae9a84ff00de92bec11eca77e09c5a"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Intrinsic.lean",
+      "sha256": "34a80c134af4de4bf1048593432f9de961a884f9f0b959d0a210550767bf56c8"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Orientation.lean",
+      "sha256": "36aeb11e7f120c97871f0e2f3cd567811f7cd41ffba3ef1e19f25c9fa5953107"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/PFiber.lean",
+      "sha256": "d175ef4171b1b8cfbfcefd1c2a739bd981f5744659748a8554647eafc7b972fc"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/ReturnLevels.lean",
+      "sha256": "740ea977ee8222380deaa16f419441874516b435361524691e0c67c0459a5383"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Returns.lean",
+      "sha256": "fc4257278d1bfddcc6b607901432afbfe7e9448069316689cc63a8d60f6c7a17"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Root.lean",
+      "sha256": "db1c6770fb0c9721f5dcc712f4d08e4e9d599391a1ab8cdb6e4d61b3aa666050"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Setup.lean",
+      "sha256": "0184f10ca68918b8e952d16d23037441cd9f5323dbf6f9837be81e2768472fb4"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/ShiftNew.lean",
+      "sha256": "1a4d8721a9c3028a05af928c28a71ec22a17dae68665eeeac129f247ca06003f"
+    },
+    {
+      "path": "P21/Nonsymmetric/Chain/Slopes.lean",
+      "sha256": "a7a24dca511f09bd506b202bbe52349d0d860b0feb707ce3364b7d70aee56ede"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/ActualMinimum.lean",
+      "sha256": "ea811698e330b0aef23bb4dd4b92d6a160b2ad37a7b165f121edf4b0bb6a95ed"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/BoxInput.lean",
+      "sha256": "61ff8ee131fd8e844105f457456eb1a0fa74366c53658f54d3ab088e92d67db8"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/BoxPaths.lean",
+      "sha256": "5d552372027a3ba826d196568081b1cf9ac4a3da0496b8225101c3be90fd23d6"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/CompanionBounds.lean",
+      "sha256": "23c9ffd93919237b8f9a4cb7696826bdd8dde273f7de0faaa0b08cb8078c8eb2"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/Canonical.lean",
+      "sha256": "4c1bea26d9034a42ddd992263c60862cf3b489cfc41193836ea177212ebf30b2"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean",
+      "sha256": "d9fdf306d3d965ae0d2662e64d20c08067f152f1027d83f103d5f369c24f22be"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/Exhaustion.lean",
+      "sha256": "77f0ae8caab81c6cd4fdada2c544c6faa882a32e1bac479cdcab16e89941dcde"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean",
+      "sha256": "c7f00e66777abed948d7ad4fc721e8026093adc512eed04da93f132fd2535873"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/PathShape.lean",
+      "sha256": "867e3b23e7f1b7520b29af9142cc8dfc89b50155b3c6160dc0b3550364763af5"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean",
+      "sha256": "ed77b26a77227330b1061c28aae6cfa898c806ce86a50d2ec6d0c269c43944cb"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/Rotation.lean",
+      "sha256": "a88e71f291ddc91a5b0d2d3e9c023a31e21eb4c6208094ff98b9b776453d03a7"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean",
+      "sha256": "6fd79deab671045b9bccdf66c3dab34b48de38caeed88db79fe1cfbb86b7651d"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean",
+      "sha256": "659d45b4e4e60f69f936e2cfcabed3db38544a01ff6975d3a4c6b658fa505361"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/Trace.lean",
+      "sha256": "9acfc35a74e0ac41a0309446d0f5e13c220e5b2cb71203ac006228d9800cf8b6"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean",
+      "sha256": "f8044aede1136ad40a172d0f8dc237addb0ffd407478a1f0de05bb845df53d53"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean",
+      "sha256": "f8c059579ec9701a4abb6aad00edee4ea6831c285828fffea59d1353a8aef1c6"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean",
+      "sha256": "05143bd71d0f09a93dab3187d33f93317410fd04fa0ca1491b1b7633c322beee"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/DPEOneColor.lean",
+      "sha256": "2b5f13ba0a76f7cddd52aa0608a429d54dc11f1b46bb2af5be18ae80c979d105"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/FullColorCap.lean",
+      "sha256": "25e20dfb0fc860b7bca4cbafbf1ea3e13a5762a91a0e71662d255f8f52f55815"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/ClassArithmetic.lean",
+      "sha256": "bc986ce7e4eda95516a0b4261838b198ca4a8602b56b3862fe825cf84c1b9ec6"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorA.lean",
+      "sha256": "8cf016b810d2668d9f2b83daa2a0512066c9d6a2d4f8209eb13b3963283fd8ab"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/ColorB.lean",
+      "sha256": "3176d5f17a7a6b42865080291a2e81085717d1281ca7e7bfb05e5bf7b41c7faa"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/CyclicInput.lean",
+      "sha256": "80ebb18e1a1a6eb40c6461f8c1e1c739fcdc3a2f08c10d8d7d3b0b76e9e9d25c"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/CyclicReduction.lean",
+      "sha256": "4e3b9e0f48b706f3f4fb2dc0cdc19c6a57f1625ebb98e5a022ab4c4ce72e7b99"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/EmptyTetrahedron.lean",
+      "sha256": "231ff301c64cd5785aa7aa3a2954158931824db22a511e1c5e69dcfa6ca0f6ef"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/RotationClosure.lean",
+      "sha256": "74df2073b65da84d0747d730139ab22b88c1353c637574e374f72029c27b0a3a"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/Setup.lean",
+      "sha256": "82757296f5637766e628a9d92d5c969a82bc861263694458c3e09a4c7ea1676f"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOne/SocleSimplex.lean",
+      "sha256": "2bf4215ae7c563988ea49ac4ee81da753bf85b9d2ac08a92a87da7d1efb8c60d"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/MinimumOneProof.lean",
+      "sha256": "1cdb75be1e19a9b275f88a7f62f24fe72bc22147f1e08122becc3efce3443038"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/PositiveMinors.lean",
+      "sha256": "4a40ec07522433671438e90919770923c3a486ff3a59f399b4f81a04e933a550"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/PrefixArithmetic.lean",
+      "sha256": "a1b1b68a37d02b8f7433e42e3cfa875c689ce6a14e4a7804ce3f6350586c7cbb"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/RelativeLattice.lean",
+      "sha256": "af9a84fa2173c592eb70f07efe69315ed20263ec9d2a91b24ac14aaec2aeaf99"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/Residuals.lean",
+      "sha256": "a74ff340f44a6d739af3988559a5f13d3a3c9de50c843ffcd2ce3ead16953ab6"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/ThreeArms.lean",
+      "sha256": "74dede7c764c8d8fbafade9ac05fbc72ef6a5319c752d317510ab5b5ff3e516c"
+    },
+    {
+      "path": "P21/Nonsymmetric/ColorCap/WhiteCertificates.lean",
+      "sha256": "40cd71d13a6a20cbe84779756697d2eac95c649ca8127e73e44d56e3128d4313"
+    },
+    {
+      "path": "P21/Nonsymmetric/ComplementGeometry.lean",
+      "sha256": "07f1e55082dc25ab5e54cf3ab11f37ffa0fe1a7ed398d7648e7e042929035a79"
+    },
+    {
+      "path": "P21/Nonsymmetric/Corners.lean",
+      "sha256": "fcbd1936fb8ba20c58df706d9f9c72efdcd26cabf83d02f85fd7c2e321785216"
+    },
+    {
+      "path": "P21/Nonsymmetric/CriticalBox.lean",
+      "sha256": "d6ea10b351bf570986b4b56d308dfc661bd059ad95141f38e9c3df180028a8f0"
+    },
+    {
+      "path": "P21/Nonsymmetric/Extraction.lean",
+      "sha256": "66075bc3d38a31974f9a76e8fc74249576266bc85829444042e97f635ec1d912"
+    },
+    {
+      "path": "P21/Nonsymmetric/FourRowCombinatorics.lean",
+      "sha256": "7c4877f6981df505e88d899e701664183e6e985bf7f54b98515283f31b0106c8"
+    },
+    {
+      "path": "P21/Nonsymmetric/Herzog/PseudoFrobenius.lean",
+      "sha256": "f7e1dcc7b7de4a57b45961f791719127e6eeff9f7b68b852435341d964236ed5"
+    },
+    {
+      "path": "P21/Nonsymmetric/HerzogClassification.lean",
+      "sha256": "54c817f7ea96756757bb1c21ecf356b250d30a1933a16e39da20c59696341772"
+    },
+    {
+      "path": "P21/Nonsymmetric/HerzogCoordinates.lean",
+      "sha256": "b7ea440ac929285134313c610fa7301f7e8b8ebd5ef4a724d5e396821328a5ea"
+    },
+    {
+      "path": "P21/Nonsymmetric/HerzogData.lean",
+      "sha256": "743876b994d7493bb0a56d1b1570a5643bba5d277597ac478ad61d6e732b881c"
+    },
+    {
+      "path": "P21/Nonsymmetric/Kernel.lean",
+      "sha256": "680818ff8de8b7b40b5000122fc855aa180b018875f586202e53419c19d042ab"
+    },
+    {
+      "path": "P21/Nonsymmetric/MatchedPair.lean",
+      "sha256": "d8ba9dfe3cfd8cfe47756120bb916fd53c42c35cc4d783333d83f2e6009dc7d1"
+    },
+    {
+      "path": "P21/Nonsymmetric/MixedColor.lean",
+      "sha256": "369540eb15cf8f58c8482edc343f458b8e2c7f7d7a09bd571026dfbdf21a70c1"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Central.lean",
+      "sha256": "371fb6565658201d0eced4bd0f4e275b51f0478d32910be2e92ab75a985521bf"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Comparison.lean",
+      "sha256": "19c6cd0822323168a1a7cd7947fac512f29f9664e3521d357254c739ef649a9e"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Dual.lean",
+      "sha256": "eeef7398b019456b514cfef7368db35cbc3c4d2980ad4097e524e4ff5324af48"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/EndpointLevel.lean",
+      "sha256": "3c897439e4bc520e3475a36b62cf103534fc8866fa4ad55e5aa7e8392340a049"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Exclusion.lean",
+      "sha256": "42ffbc3a312a5f8d1e9e090483ab5ed907c344184c1588f4a2483edff6162f8b"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Integration.lean",
+      "sha256": "28f1fda1e9b40f28c2c32c47c3fbf70c800fcb0125ecf56d5857c1da50927418"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Normalization.lean",
+      "sha256": "04bacf8dbfd8c2d9ee1951d762cd6db8a55e62535b751172c72e8ccaacc2dabf"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Packets.lean",
+      "sha256": "269e47c6d8ea60c74cbf70dbe948f65a54f5300cb40b17cdf7b2ad79c0ce167b"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Pair.lean",
+      "sha256": "30f8c3583c7f8978ebbd76b83ea8f9650e80c05c048bb1e37217d967fd18a520"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PairExclusion.lean",
+      "sha256": "cd1a328f38724e1cf53d4afae4d92fc9b992d39002bd74935a8ff2f681fa757e"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFree.lean",
+      "sha256": "c72b3af32eb11baa07ead4caeeb544f6c4415f8373414570b3283512f417ae5f"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFreeAbsorption.lean",
+      "sha256": "a44f3fa3357a6699c3aa1e57345568462aeed932bb2a3c1c737285d542469f4c"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFreeCoordinates.lean",
+      "sha256": "7b0d580d6f899b3049a213b33527e0d28b5c13a66e200496d2139c0841ef679b"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFreeExclusion.lean",
+      "sha256": "307ba57a468283593aedf54b676c79aeabed1e16644b5ea29d7fa457291930d3"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFreeFix.lean",
+      "sha256": "6e55203da5b548c0ebb28b8520eceb1ba334fe3eb49b8babfb693935e0803887"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/PFreeSign.lean",
+      "sha256": "aa79125483f70d6b81c81c61a976860850b08020bd63fd6c8adc54e6287e08d2"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Returns.lean",
+      "sha256": "036be465e6252644f126b357bd970fdce963a1971a7e7ba5454bdb2be10062ba"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/RootNormalization.lean",
+      "sha256": "8221d7e567c8d63e728469864f077009ca936cb28cd19666fd7ed46ee085098a"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/RootWalls.lean",
+      "sha256": "007958dec32bcd037cd6093916aadb328104016641ebbaa9497e899247e25983"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Seam.lean",
+      "sha256": "a80a14f56b511ad2a12919197db5a88bbe2f738b803b92f6799b5920b2376d86"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Setup.lean",
+      "sha256": "dcbbe103d8a9f1ca2c1ac9692ff67937740640330e3d929fa7169a9aca34c499"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/Split.lean",
+      "sha256": "2e7c41803276642eb686011b8dd24c76333d4cda4d2a7f94ea6e5e32185404bb"
+    },
+    {
+      "path": "P21/Nonsymmetric/Path/WeakRoot.lean",
+      "sha256": "ba4892218e96d9543a6b320b7784a6ae3b6e4425ca0c358b90f8f886968b812a"
+    },
+    {
+      "path": "P21/Nonsymmetric/PrimitiveGenerators.lean",
+      "sha256": "a440dadb6fbaf9ad610fd3cbbba95d1097eeeb98cd3cbf3a9707177098926ddb"
+    },
+    {
+      "path": "P21/Nonsymmetric/Relabel.lean",
+      "sha256": "d1dde0aa078ce012b847ec4a1d02978f536e5c4b989fa16bfd7c733415d15777"
+    },
+    {
+      "path": "P21/Nonsymmetric/ReturnLevels.lean",
+      "sha256": "954dad935228a55caab1590078798fc41050066820a5e194996592097ec110c2"
+    },
+    {
+      "path": "P21/Nonsymmetric/RowAtlas.lean",
+      "sha256": "26cf6521a9b1e4d0fd7c037c68315b5ebda80a79153001a483b6ae2d33a91713"
+    },
+    {
+      "path": "P21/Nonsymmetric/Rows.lean",
+      "sha256": "e21f0b7d1045686eeae4a83f77f438a96346adc0299342454d72667fd6620860"
+    },
+    {
+      "path": "P21/Nonsymmetric/SameColor.lean",
+      "sha256": "22c76851374eedccba7741fb1fd0094442bcd665a9e758b94f6e5e7668ff8e98"
+    },
+    {
+      "path": "P21/Nonsymmetric/Saturation.lean",
+      "sha256": "1d018e8a23667936924045dec401e189276c4bcf7e1f55dac2f720712f5010f8"
+    },
+    {
+      "path": "P21/Nonsymmetric/SelectedExtraction.lean",
+      "sha256": "b373014bf915729deb3e050d2e4fc6ffa3122588e8bc35202c6a2bad175fbbef"
+    },
+    {
+      "path": "P21/Nonsymmetric/Singletons.lean",
+      "sha256": "7353321622358113c4cde24a3476cd65ea6095ce46737b4babdfe33a9db4a2ef"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII.lean",
+      "sha256": "381152ab6c072aac291d7858ddb7c07f8d167442a5af316c529bc58750282925"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/EndpointCaps.lean",
+      "sha256": "da06c831adf1d72ae63f3c61312e6683e5886dbd693f4c8dfbc3e6a200bccbf2"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/Exclusion.lean",
+      "sha256": "2ba48088c5f85a3fd4d264f0b8325b5df11ae318f936f673cb0cfd7e636862a1"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/Integration.lean",
+      "sha256": "d2c66e57c5c72fae4f7401ff53c5e4aeaae3f4f8fca98cb2206cd64476aea20a"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/LevelExhaustion.lean",
+      "sha256": "2c4574deeb0a3a5c981003f4b5fbc81cdc6dca31738b06c7994696626f3e1841"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/Returns.lean",
+      "sha256": "676fe16754b5c3f20cf70c2714414af222242ec9df90809da11b10df9ec50b15"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/Setup.lean",
+      "sha256": "ab38a1c46498eb1ba3957341f3fe96ff7a06c838dd0822c4bc7ef2383d4e360e"
+    },
+    {
+      "path": "P21/Nonsymmetric/TypeII/UniformCap.lean",
+      "sha256": "a091b471425710b9ff1d1c0dc908eeb6c74d6ff43e43e36e8c5baeeda926da7d"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/ClassData.lean",
+      "sha256": "7b938856e7e4874bd53d9756d71ab9d5ebc34b567461d72c64f4b9648b2992c1"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/ClassReconstruction.lean",
+      "sha256": "463d1622e1546a453b3075289141c4b2e1a673f48da484d5ec4f76c93083cdd3"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/CyclicClasses.lean",
+      "sha256": "2bd303e38e717968d61941c2632cf0e41604c9e189de96aed288c3085c6e062e"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/RelativeIndex.lean",
+      "sha256": "7ed0d96134b1b30c588d011bf9e1d305659125889fdcc3defdcf512e5d803408"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/WidthOne.lean",
+      "sha256": "662aff345b53949b94ae14b7d2571f4cde2a932cc2a3fd2d984c8882e3189b27"
+    },
+    {
+      "path": "P21/Nonsymmetric/White/WidthOneBeatty.lean",
+      "sha256": "2c9bcdf14cc93521d1afc40c24d52edd891bd94c3320047de81c46096a1ab218"
+    },
+    {
+      "path": "P21/NumericalSemigroup.lean",
+      "sha256": "997e3dcb6ff170b788ec5a24ec105df3585bed0f0e6bcea81cf6f141bae420a5"
+    },
+    {
+      "path": "P21/PseudoFrobenius.lean",
+      "sha256": "3d6f594ed3052f77237dd7cd5e6ecc31bec652005ceb1c9860f14c492da1baca"
+    },
+    {
+      "path": "P21/Selection.lean",
+      "sha256": "a05c3f87cef51c40020c848230c4b2042d13ce14aea53fe962cc3c6fda6290b5"
+    },
+    {
+      "path": "P21/Semantics.lean",
+      "sha256": "707e774481d9921be142ad392cce75c737f80b76049e4145efaf0222b32c06c9"
+    },
+    {
+      "path": "P21/Symmetric/BranchI.lean",
+      "sha256": "a88491cb19a437872915e7183992bd547221f8c3b42c86ff7f445692853f9a2f"
+    },
+    {
+      "path": "P21/Symmetric/BranchIActual.lean",
+      "sha256": "3f670059a142a501ec52505ee732fbfc4a0002a82061ff522178b6af92264116"
+    },
+    {
+      "path": "P21/Symmetric/BranchII.lean",
+      "sha256": "ac751d78a1a5bae8dbae1802a8a88ce1d1d6f091934175f8b47649789e1ec480"
+    },
+    {
+      "path": "P21/Symmetric/BranchIIActual.lean",
+      "sha256": "cfc4d962f0071cfde7da00446c10ff829b5da7ee3ef214221fb4d41e725c20d5"
+    },
+    {
+      "path": "P21/Symmetric/Classification/AperyCardinality.lean",
+      "sha256": "06f6995fecc1eb74c0c9872bff0a08b946eff59f96dd9a334f9f96630494a8aa"
+    },
+    {
+      "path": "P21/Symmetric/Classification/CriticalRelations.lean",
+      "sha256": "c9a6a255df8f99585014dd86b412a1eba07180cb43dc42de1aa93d7b477e8e68"
+    },
+    {
+      "path": "P21/Symmetric/Classification/GcdDecomposition.lean",
+      "sha256": "8d87c72c4507b674764ca0d5c41669932908f52d23d521e9bca93d8e2533f6d5"
+    },
+    {
+      "path": "P21/Symmetric/Classification/GlueExistence.lean",
+      "sha256": "8baa261b9f3b5b26c97ee09359262c08fc4d46df860ab483b66eadd3c837d4a3"
+    },
+    {
+      "path": "P21/Symmetric/Classification/SymmetricRigidity.lean",
+      "sha256": "eef712a7c7a5e4dc3a979a875c471037cd40da99167ae4562c47807dacf946eb"
+    },
+    {
+      "path": "P21/Symmetric/Classification/TailNumericalSemigroup.lean",
+      "sha256": "b917c58f4a3ce63aadc83590cc5a1e047c9054c6d59d8403576858bfc6ddc101"
+    },
+    {
+      "path": "P21/Symmetric/Classification/TopFactorization.lean",
+      "sha256": "80a77141badf2fc31ed6e2990858a1fde1e57949a07517367d52e33f596b6328"
+    },
+    {
+      "path": "P21/Symmetric/Classification/UniqueTop.lean",
+      "sha256": "e6c2cc2db173aefb9ddffd108fa44c30df23298e110b263186af80a5815c2c5a"
+    },
+    {
+      "path": "P21/Symmetric/Closure.lean",
+      "sha256": "07e0d319ec247db324fd04600012b2e28c0edd845d4675794fc4603b9afe84b4"
+    },
+    {
+      "path": "P21/Symmetric/CrossLayer.lean",
+      "sha256": "04e2e5f834035ea4566e4669b8e6299408611455373a9a01227b0c9dfda20ec3"
+    },
+    {
+      "path": "P21/Symmetric/FullClosure.lean",
+      "sha256": "1fb7a182dd8476ebc4819a66360b75927e584bbdb2f186adf7bf602a77f28025"
+    },
+    {
+      "path": "P21/Symmetric/GlueNormalForm.lean",
+      "sha256": "5d7679cf4888db494c87104fb468f71a332b40ee409c20162e6928a4994b62ee"
+    },
+    {
+      "path": "P21/Symmetric/Raw4.lean",
+      "sha256": "fe1c30207db4d4421903d2285b9b36e9f8a82e7fa1640eacc5aedd99250ee679"
+    },
+    {
+      "path": "P21/Symmetric/Raw4Consequences.lean",
+      "sha256": "50a1e4d0cc541e6b76761069a8b03761f256188a98b360cabb011503f04a53c3"
+    },
+    {
+      "path": "P21/Symmetric/RawRows.lean",
+      "sha256": "fa39b70a611b3330bd8ec4b77b78e0d6c5e82009f76dfab89dd9cfaca833967e"
+    },
+    {
+      "path": "P21/Symmetric/Reduction.lean",
+      "sha256": "772349fa05192540f7cfc36097aa7df03ff49f1b0035ed001d3e66b408cb5075"
+    },
+    {
+      "path": "P21/Symmetric/StableCore.lean",
+      "sha256": "361eb9e4c12e49f3984ab5aa431b13eda1494a94fb5e4668a6faf612f795302d"
+    },
+    {
+      "path": "P21/Symmetric/TwoGenerator.lean",
+      "sha256": "8cbd210b1c8721f6b8626ff5a43b28e45497b3db4742e6391b54314eaea59f18"
+    },
+    {
+      "path": "P21/Symmetric/TwoGeneratorIdeal.lean",
+      "sha256": "60ac4925c9ebca457b8f902963670cbc2895b503062aaf2bef27bb091894a8da"
+    },
+    {
+      "path": "P21/Symmetric/TypeBridge.lean",
+      "sha256": "58e13282b378f9487f77ee7e5885c251c7057ce05cddf69641d554c09d7ac06f"
+    },
+    {
+      "path": "P21/Tail.lean",
+      "sha256": "5f65d6adbbbb57bef5ca783e0ab6b0d4582156e39092058ac6e894619b7812f1"
+    }
+  ]
+}
