@@ -19,7 +19,7 @@ structure WeakRoot (P : PathInput s F D) where
 
 /-- Convert an explicitly coefficientwise nonnegative four-generator
 identity into genuine semigroup membership. -/
-private theorem gamma_of_coordinates (g : Generators) (x k a b c : ℤ)
+theorem gamma_of_coordinates (g : Generators) (x k a b c : ℤ)
     (hk : 0 ≤ k) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
     (he : x = k * g.m + a * g.n 0 + b * g.n 1 + c * g.n 2) :
     x ∈ g.Gamma := by

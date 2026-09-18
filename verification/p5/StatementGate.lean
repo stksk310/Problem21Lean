@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.WeakRoot
+import P21.Nonsymmetric.Path.RootWalls
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -61,3 +61,6 @@ import P21.Nonsymmetric.Path.WeakRoot
 #check P21.Nonsymmetric.PathInput.Pair.weak_root_of_left
 #check P21.Nonsymmetric.PathInput.Pair.reverse
 #check P21.Nonsymmetric.PathInput.Pair.weak_root_or_dual
+#check P21.Nonsymmetric.PathInput.WeakRoot.qA_identity
+#check P21.Nonsymmetric.PathInput.WeakRoot.F_identity
+#check P21.Nonsymmetric.PathInput.WeakRoot.walls
