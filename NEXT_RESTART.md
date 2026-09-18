@@ -1,3 +1,22 @@
+# P5 restart point
+
+Branch: `p5-path-exclusion`. Immutable mathematical base:
+`fd4ea0c7cbc57df6e935790a1387242bcf9e0087`.
+
+Independent review has frozen the nonsymmetric selected-four classification
+(FULL G4), including MINBOX, DPE, THREE-ARM, COLOR-CAP, and the residual-free
+selected-four terminal extraction. Do not reopen those milestones.
+
+The current mathematical frontier is exactly Section 5 PATH exclusion. Prove
+the unchanged `PathInput` impossible in new `P21/Nonsymmetric/Path/` modules,
+then add only a new wrapper reducing the same selected terminal input to
+`TypeIIInput ∨ ChainInput`. Section 6 TYPE II exclusion is the next frontier
+after P5 and must not begin in this milestone.
+
+---
+
+## Previous M3B2 restart record (historical)
+
 # M3B2 restart point
 
 Branch: `m3b2-dpe-box-positive-exit`. Immutable base:
@@ -9,11 +28,9 @@ and `FullColorCap.lean` provides residual-free THREE-ARM, COLOR-CAP, and
 selected-four terminal extraction wrappers. Do not restart Appendix B.16--B.20,
 MINBOX, or White.
 
-The next mathematical frontier is the later terminal branch exclusion needed
-to turn the selected-four terminal input into FULL G4. FULL G4, PATH, TYPE II,
-CHAIN, and the final Problem 21 theorem remain open. Read `README_M3B2.md`,
-`M3B2_STATEMENT_MAP.md`, `M3B2_PROOF_ROUTE.md`, and
-`M3B2_DEPENDENCY_DAG.md` before continuing.
+This record predates the independent M3B2/FULL G4 freeze. Its former frontier
+language is retained only as milestone history; the active frontier is PATH
+exclusion as stated above.
 
 ---
 

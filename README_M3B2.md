@@ -16,7 +16,9 @@ color orientations, and cyclic normalization of the actual first firing.
 `FullColorCap.lean` composes this theorem with the frozen
 `minimum_one_proved`. Its THREE-ARM, actual COLOR-CAP, and selected-four
 terminal extraction wrappers no longer take MINBOX or DPE hypotheses. This
-does not prove FULL G4 or the later terminal branch exclusions.
+is the implementation used by the subsequently frozen nonsymmetric
+selected-four classification (FULL G4). Section 5 PATH exclusion remains the
+next mathematical frontier.
 
 All 87 mathematical Lean files present at base
 `9c9a1b6f76f78a2927b12bf8a0663dfdc29ea7a1` are byte protected. M3B2 adds 14
