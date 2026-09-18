@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.PFreeCoordinates
+import P21.Nonsymmetric.Path.Integration
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -75,3 +75,16 @@ import P21.Nonsymmetric.Path.PFreeCoordinates
 #check P21.Nonsymmetric.PathInput.PFreeI.Mplus
 #check P21.Nonsymmetric.PathInput.PFreeI.Mminus
 #check P21.Nonsymmetric.PathInput.PFreeI.C0_add_F0
+#check P21.Nonsymmetric.PathInput.PFreeI.F0_pos
+#check P21.Nonsymmetric.PathInput.PFreeI.left_j_level_one
+#check P21.Nonsymmetric.PathInput.PFreeI.fix_j
+#check P21.Nonsymmetric.PathInput.PFreeI.left_k_level_one
+#check P21.Nonsymmetric.PathInput.PFreeI.pin
+#check P21.Nonsymmetric.PathInput.PFreeI.roots
+#check P21.Nonsymmetric.PathInput.PFreeI.impossible
+#check P21.Nonsymmetric.PathInput.impossible
+#check P21.Nonsymmetric.SelectedTerminalAfterPath
+#check P21.Nonsymmetric.TerminalInputAfterPath
+#check P21.Nonsymmetric.terminal_input_after_path
+#check P21.Nonsymmetric.nonsymmetric_selected_four_after_path
+#check P21.Nonsymmetric.nonsymmetric_Q_ge_four_after_path
