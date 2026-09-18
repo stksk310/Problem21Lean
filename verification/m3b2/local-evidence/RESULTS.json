@@ -1,0 +1,21 @@
+{
+  "frozen_source_integrity": "87/87",
+  "source_changed": false,
+  "m3b2_module_count": 14,
+  "m3b2_declaration_count": 111,
+  "proof_debt_tokens": 0,
+  "dependency_dag": "PASS",
+  "dpe_circularity": "PASS",
+  "m3b2_verification_exit_code": 0,
+  "fresh_root_build": true,
+  "project_specific_axioms": 0,
+  "axiom_roots": 111,
+  "verified_source_integrity": "PASS",
+  "pinned_dependencies": 9,
+  "original_m1_suite": 0,
+  "original_m2a_suite": 0,
+  "original_m2b_suite": 0,
+  "original_m3a_suite": 0,
+  "original_m3b1_suite": 0,
+  "all_required_checks_passed": true
+}

@@ -1,0 +1,478 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification/m3b2/GeneratedStatementCheck.lean
+P21.Nonsymmetric.ColorCap.FiringTrace.head_zero (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hne : l ≠ []) (hfirst : P21.Nonsymmetric.ColorCap.InBox D.upper (P21.Nonsymmetric.ColorCap.fire D.rows 0 D.x)) :
+  ∃ b, l = 0 :: b
+P21.Nonsymmetric.ColorCap.one_color_trace_sink_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hne : l ≠ []) (hno1 : List.count 1 l = 0) (hno2 : List.count 2 l = 0)
+  (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j) : False
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors (l : List (Fin 3)) : Prop
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.prefix {l p : List (Fin 3)}
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hpl : p <+: l) :
+  P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors p
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_le_zero {l : List (Fin 3)}
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (r : Fin 3) (hr : r ≠ 0) :
+  List.count r l ≤ List.count 0 l
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_lt_zero_of_last_zero {l a : List (Fin 3)}
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hlast : l = a ++ [0]) (r : Fin 3) (hr : r ≠ 0) :
+  List.count r l < List.count 0 l
+P21.Nonsymmetric.ColorCap.CrossingWitness (l : List (Fin 3)) (r : Fin 3) (h : ℕ) (N : ℤ) : Prop
+P21.Nonsymmetric.ColorCap.CrossingWitness.at_last {l : List (Fin 3)} {r : Fin 3} {N : ℤ}
+  (hw : P21.Nonsymmetric.ColorCap.CrossingWitness l r (List.count r l) N) (hr : r ≠ 0) {a : List (Fin 3)}
+  (hlast : l = a ++ [r]) : N = ↑(List.count 0 l) + 1
+P21.Nonsymmetric.ColorCap.nth_occurrence_split.{u_1} {α : Type u_1} [DecidableEq α] (r : α) (l : List α) (h : ℕ) :
+  1 ≤ h → h ≤ List.count r l → ∃ a b, l = a ++ r :: b ∧ List.count r a = h - 1
+P21.Nonsymmetric.ColorCap.occurrence_source_ends_zero (l : List (Fin 3)) (r : Fin 3)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hr : r ≠ 0) {h : ℕ} (hh : 1 ≤ h)
+  (hc : h ≤ List.count r l) : ∃ p b, l = p ++ [0] ++ r :: b ∧ List.count r (p ++ [0]) = h - 1
+P21.Nonsymmetric.ColorCap.count_eq_zero_of_members {l : List (Fin 3)} {a b c : Fin 3} (hmem : ∀ i ∈ l, i = a ∨ i = b)
+  (hc : c ≠ a) (hc' : c ≠ b) : List.count c l = 0
+P21.Nonsymmetric.ColorCap.prefix_at_zero_count (l : List (Fin 3)) (k : ℕ) (hk : 1 ≤ k) (hkl : k ≤ List.count 0 l) :
+  ∃ p, p <+: l ∧ List.count 0 p = k ∧ ∃ a, p = a ++ [0]
+P21.Nonsymmetric.ColorCap.shifted_prefix_actual (l : List (Fin 3)) (r : Fin 3) (K target : ℕ) (hK : 1 ≤ K)
+  (upper : List (Fin 3)) (hupper : upper <+: l) (hupperR : List.count r upper = K - 1) (htarget0 : 1 ≤ target)
+  (htargetUpper : target ≤ List.count 0 upper)
+  (hlower : K = 1 ∨ ∃ lower, lower <+: l ∧ List.count r lower = K - 1 ∧ List.count 0 lower < target) :
+  ∃ p, p <+: l ∧ List.count 0 p = target ∧ List.count r p = K - 1 ∧ ∃ a, p = a ++ [0]
+P21.Nonsymmetric.ColorCap.prefix_continues_zero {l p upper : List (Fin 3)} {r : Fin 3} (hp : p <+: upper)
+  (hupper : upper <+: l) (hcolors : ∀ i ∈ l, i = 0 ∨ i = r) (hr : r ≠ 0) (hcountR : List.count r p = List.count r upper)
+  (hcount0 : List.count 0 p < List.count 0 upper) : p ++ [0] <+: l
+P21.Nonsymmetric.ColorCap.canonical_trace_sink_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hne : l ≠ []) (hstart : D.x 0 < D.y 0) (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l)
+  (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j) : False
+P21.Nonsymmetric.ColorCap.box_positive_exit_proved : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement
+P21.Nonsymmetric.ColorCap.first_nonzero_occurrence_actual (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (k : Fin 3) (hk : k ≠ 0) (hoccurs : 1 ≤ List.count k l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ k :: tail ∧
+      List.count k (p ++ [0]) = 0 ∧
+        P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0] ++ [k]) current ∧
+            current = P21.Nonsymmetric.ColorCap.fire D.rows k source
+P21.Nonsymmetric.ColorCap.first_row2_after_01_actual (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hoccurs : 1 ≤ List.count 2 l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ 2 :: tail ∧
+      List.count 2 (p ++ [0]) = 0 ∧
+        P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0] ++ [2]) current ∧
+            current = P21.Nonsymmetric.ColorCap.fire D.rows 2 source
+P21.Nonsymmetric.ColorCap.first_row1_after_02_actual (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hoccurs : 1 ≤ List.count 1 l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ 1 :: tail ∧
+      List.count 1 (p ++ [0]) = 0 ∧
+        P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x (p ++ [0] ++ [1]) current ∧
+            current = P21.Nonsymmetric.ColorCap.fire D.rows 1 source
+P21.Nonsymmetric.ColorCap.first_third_12_to_3_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q E Delta : ℤ)
+  (hN : 1 ≤ N) (hQ : 1 ≤ Q) (hNE : N + E ≤ D.y 0) (hQD : Q ≤ D.y 1 + Delta) (source : P21.Nonsymmetric.ColorCap.Point)
+  (hsource2 : source 2 ≤ D.y 2 - 1) (hsource : source 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2))
+  (hE : E = N * D.x 0 - Q * D.y 0) (hDelta : Delta = N * (D.y 1 + D.b 1) - Q * D.x 1) : False
+P21.Nonsymmetric.ColorCap.first_third_13_to_2_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R P W : ℤ)
+  (hN : 1 ≤ N) (hR : 1 ≤ R) (hNP : N + P ≤ D.y 0) (hRW : R + W ≤ D.y 2) (source : P21.Nonsymmetric.ColorCap.Point)
+  (hsource1 : source 1 ≤ D.y 1 - 1) (hP : P = D.b 0 - P21.Nonsymmetric.ColorCap.X13 D N R)
+  (hW : W = -D.b 2 - P21.Nonsymmetric.ColorCap.Y13 D N R)
+  (hsource : source 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1) : False
+P21.Nonsymmetric.ColorCap.first_third_12_rank (D : P21.Nonsymmetric.ColorCap.BoxInput) (q Q : ℕ) (N E Delta : ℤ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q)
+  (hQ : Q = q + 1) (hstart : D.x 0 < D.y 0) (hE : E = N * D.x 0 - ↑Q * D.y 0)
+  (hDelta : Delta = N * (D.y 1 + D.b 1) - ↑Q * D.x 1) (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1)
+  (hDeltaUpper : Delta ≤ D.b 1 - 1) : N + E ≤ D.y 0 ∧ ↑Q ≤ D.y 1 + Delta
+P21.Nonsymmetric.ColorCap.first_third_12_to_3_actual_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  {l : List (Fin 3)} {u : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0)
+  (hprior1 :
+    ∀ (p tail : List (Fin 3)), l = p ++ [0] ++ 2 :: tail → List.count 2 (p ++ [0]) = 0 → 1 ≤ List.count 1 (p ++ [0])) :
+  False
+P21.Nonsymmetric.ColorCap.first_third_13_rank (D : P21.Nonsymmetric.ColorCap.BoxInput) (q R : ℕ) (N X Y P0 W : ℤ)
+  (SP : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hq : 1 ≤ q)
+  (hR : R = q + 1) (hstart : D.x 0 < D.y 0) (hX : X = ↑R * (D.y 0 + D.b 0) - N * D.x 0)
+  (hY : Y = N * D.y 2 - ↑R * D.x 2) (hP : P0 = D.b 0 - X) (hW : W = -D.b 2 - Y) (hP0 : 1 ≤ P0) (hW0 : 1 ≤ W) :
+  N + P0 ≤ D.y 0 ∧ ↑R + W ≤ D.y 2
+P21.Nonsymmetric.ColorCap.first_third_13_to_2_actual_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  {l : List (Fin 3)} {u : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hcount1 : 1 ≤ List.count 1 l) (hstart : D.x 0 < D.y 0)
+  (hprior2 :
+    ∀ (p tail : List (Fin 3)), l = p ++ [0] ++ 1 :: tail → List.count 1 (p ++ [0]) = 0 → 1 ≤ List.count 2 (p ++ [0])) :
+  False
+P21.Nonsymmetric.ColorCap.first_nonzero_color_order (l : List (Fin 3)) (h1 : 1 ≤ List.count 1 l)
+  (h2 : 1 ≤ List.count 2 l) :
+  (∀ (p tail : List (Fin 3)), l = p ++ 2 :: tail → List.count 2 p = 0 → 1 ≤ List.count 1 p) ∨
+    ∀ (p tail : List (Fin 3)), l = p ++ 1 :: tail → List.count 1 p = 0 → 1 ≤ List.count 2 p
+P21.Nonsymmetric.ColorCap.first_third_color_actual_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  {l : List (Fin 3)} {u : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hcount1 : 1 ≤ List.count 1 l)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0) : False
+P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_inBox {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {l : List (Fin 3)} {x u : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C x l u) : P21.Nonsymmetric.ColorCap.InBox upper u
+P21.Nonsymmetric.ColorCap.FiringTrace.nonzero_followed_by_zero (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  {l : List (Fin 3)} {u : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u) (hstart : D.x 0 < D.y 0) (p : List (Fin 3))
+  (i j : Fin 3) (b : List (Fin 3)) : l = p ++ i :: j :: b → i ≠ 0 → j = 0
+P21.Nonsymmetric.ColorCap.FiringTrace.properNonzeroPredecessors (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  {l : List (Fin 3)} {u : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u) (hstart : D.x 0 < D.y 0)
+  (hhead : l = [] ∨ ∃ b, l = 0 :: b) : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l
+P21.Nonsymmetric.ColorCap.continued_zero_shift_bound (D : P21.Nonsymmetric.ColorCap.BoxInput) {l p : List (Fin 3)}
+  {endpoint : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l endpoint) (hnext : p ++ [0] <+: l) (V : ℤ)
+  (hstate0 : P21.Nonsymmetric.ColorCap.execute D.rows p D.x 0 = D.x 0 + V) : V ≤ D.y 0 - D.x 0 - 1
+P21.Nonsymmetric.ColorCap.actual_shifted_before_crossing {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) {l : List (Fin 3)}
+  {upper : P21.Nonsymmetric.ColorCap.Point} {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point}
+  {start endpoint : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace upper C start l endpoint) (r : Fin 3) (hr : r ≠ 0)
+  (hactual : ∀ (h : ℕ), 1 ≤ h → h ≤ q → P21.Nonsymmetric.ColorCap.CrossingWitness l r h (P.N h)) (K Ns : ℕ) (hK : 1 ≤ K)
+  (hKq : K ≤ q) (hNs : 2 ≤ Ns) (hupperN : ↑Ns < P.N K) (hlowerN : K = 1 ∨ P.N (K - 1) < ↑Ns) :
+  ∃ p state,
+    P21.Nonsymmetric.ColorCap.FiringTrace upper C start p state ∧
+      p <+: l ∧ List.count 0 p = Ns - 1 ∧ List.count r p = K - 1 ∧ ∃ a, p = a ++ [0]
+P21.Nonsymmetric.ColorCap.actual_shifted_terminal {x A B v b c : ℤ} {q Q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) {l : List (Fin 3)}
+  {upper : P21.Nonsymmetric.ColorCap.Point} {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point}
+  {start endpoint : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace upper C start l endpoint) (r : Fin 3) (hr : r ≠ 0)
+  (hactual : ∀ (h : ℕ), 1 ≤ h → h ≤ q → P21.Nonsymmetric.ColorCap.CrossingWitness l r h (P.N h)) (hQ : Q = q + 1)
+  (N Ns : ℕ) (hcountR : List.count r l = Q - 1) (hcount0 : List.count 0 l = N - 1) (hNs : 2 ≤ Ns) (hNsN : Ns < N)
+  (hlowerN : Q = 1 ∨ P.N (Q - 1) < ↑Ns) :
+  ∃ p state,
+    P21.Nonsymmetric.ColorCap.FiringTrace upper C start p state ∧
+      p <+: l ∧ List.count 0 p = Ns - 1 ∧ List.count r p = Q - 1 ∧ ∃ a, p = a ++ [0]
+P21.Nonsymmetric.ColorCap.reciprocal_residue_actual {x A B v b c : ℤ} {q Q H N : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) {l : List (Fin 3)}
+  {upper : P21.Nonsymmetric.ColorCap.Point} {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point}
+  {start endpoint : P21.Nonsymmetric.ColorCap.Point}
+  (ht : P21.Nonsymmetric.ColorCap.FiringTrace upper C start l endpoint) (r : Fin 3) (hr : r ≠ 0)
+  (hactual : ∀ (h : ℕ), 1 ≤ h → h ≤ q → P21.Nonsymmetric.ColorCap.CrossingWitness l r h (P.N h)) (hQ : Q = q + 1)
+  (hN : N = H + Q) (hcountR : List.count r l = Q - 1) (hcount0 : List.count 0 l = N - 1) (s K : ℕ) (hs : 1 ≤ s)
+  (hsH : s < H) (hK : 1 ≤ K) (hKQ : K ≤ Q) (V : ℤ) (hV : V = ↑s * x - (↑K - 1) * (A - x)) (hV0 : 1 ≤ V)
+  (hVd : V ≤ A - x - 1) :
+  ∃ p state,
+    P21.Nonsymmetric.ColorCap.FiringTrace upper C start p state ∧
+      p <+: l ∧ List.count 0 p = s + K - 1 ∧ List.count r p = K - 1 ∧ ∃ a, p = a ++ [0]
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_prefix_of_actuality {x A B v b c : ℤ} {q H Q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (ha : 0 < v - B) (hd : 0 < A - x) (hQ : Q = q + 1)
+  (hbracket : ↑H * x ≤ ↑Q * (A - x))
+  (hactualV :
+    ∀ (s : ℕ),
+      1 ≤ s →
+        s ≤ H - 1 →
+          have K := ↑s * B / (v - B) + 1;
+          ↑s * x - (K - 1) * (A - x) ≤ A - x - b - 1) :
+  P21.Nonsymmetric.ColorCap.SuccessfulPrefix (v - B) B (A - x) x 0 b (H - 1)
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.reciprocal_separator {x A B v b c : ℤ} {q H Q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (ha : 0 < v - B) (hd : 0 < A - x) (hQ : Q = q + 1)
+  (hbracket : ↑H * x ≤ ↑Q * (A - x)) (s k : ℕ) :
+  1 ≤ s → s < H → 1 ≤ k → ¬(↑s * B ≤ ↑k * (v - B) ∧ ↑k * (A - x) ≤ ↑s * x)
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_rank {a B d x b : ℤ} {q H : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix a B d x 0 b q) (hH : H = q + 1) {E V : ℤ} (hE0 : 1 ≤ E)
+  (hEa : E ≤ a - 1) (hV0 : 1 ≤ V) (hVd : V ≤ d - b) (hcover : ∀ (i : ℕ), 1 ≤ i → i ≤ q → E < P.E i ∨ V < P.U i) :
+  ↑H + E + V ≤ a + d - b
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_next_residue_rank {a B d x b E V : ℤ} {H Q : ℕ} (hH : 1 ≤ H)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix a B d x 0 b (H - 1)) (hE : E = ↑Q * a - ↑H * B)
+  (hV : V = ↑H * x - (↑Q - 1) * d) (hE0 : 1 ≤ E) (hEa : E ≤ a - 1) (hV0 : 1 ≤ V) (hVd : V ≤ d - b) :
+  ↑H + E + V ≤ a + d - b
+P21.Nonsymmetric.ColorCap.permutePoint (e : Equiv.Perm (Fin 3)) (u : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.BoxInput.rotate (D : P21.Nonsymmetric.ColorCap.BoxInput) (i : Fin 3) :
+  P21.Nonsymmetric.ColorCap.BoxInput
+P21.Nonsymmetric.ColorCap.BoxInput.rotate_rows (D : P21.Nonsymmetric.ColorCap.BoxInput) (i j k : Fin 3) :
+  (D.rotate i).rows j k = D.rows ((P21.Nonsymmetric.rotatePerm i) j) ((P21.Nonsymmetric.rotatePerm i) k)
+P21.Nonsymmetric.ColorCap.BoxInput.start_of_row0 (D : P21.Nonsymmetric.ColorCap.BoxInput)
+  (h : P21.Nonsymmetric.ColorCap.InBox D.upper (P21.Nonsymmetric.ColorCap.fire D.rows 0 D.x)) :
+  D.x 0 < D.y 0 ∧ D.y 1 + D.b 1 < D.x 1 ∧ D.y 2 < D.x 2
+P21.Nonsymmetric.ColorCap.permutePoint_fire (D : P21.Nonsymmetric.ColorCap.BoxInput) (i k : Fin 3)
+  (u : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) (P21.Nonsymmetric.ColorCap.fire D.rows k u) =
+    P21.Nonsymmetric.ColorCap.fire (D.rotate i).rows ((Equiv.symm (P21.Nonsymmetric.rotatePerm i)) k)
+      (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) u)
+P21.Nonsymmetric.ColorCap.inBox_permute_iff (D : P21.Nonsymmetric.ColorCap.BoxInput) (i : Fin 3)
+  (u : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.InBox (D.rotate i).upper
+      (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) u) ↔
+    P21.Nonsymmetric.ColorCap.InBox D.upper u
+P21.Nonsymmetric.ColorCap.BoxPath.rotateGeneral (D : P21.Nonsymmetric.ColorCap.BoxInput) (i : Fin 3) {t : ℕ}
+  {p u : P21.Nonsymmetric.ColorCap.Point} (h : P21.Nonsymmetric.ColorCap.BoxPath D.upper D.rows t p u) :
+  P21.Nonsymmetric.ColorCap.BoxPath (D.rotate i).upper (D.rotate i).rows t
+    (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) p)
+    (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) u)
+P21.Nonsymmetric.ColorCap.BoxPath.rotate (D : P21.Nonsymmetric.ColorCap.BoxInput) (i : Fin 3) {t : ℕ}
+  {u : P21.Nonsymmetric.ColorCap.Point} (h : P21.Nonsymmetric.ColorCap.BoxPath D.upper D.rows t D.x u) :
+  P21.Nonsymmetric.ColorCap.BoxPath (D.rotate i).upper (D.rotate i).rows t
+    (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) D.x)
+    (P21.Nonsymmetric.ColorCap.permutePoint (P21.Nonsymmetric.rotatePerm i) u)
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix (x A B v b c : ℤ) (q : ℕ) : Type
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (h : ℕ) : ℤ
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (h : ℕ) : ℤ
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.separator {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (h : ℕ) :
+  1 ≤ h → h ≤ q → ¬∃ k, ↑h * A ≤ k * x ∧ k * B ≤ ↑h * v
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinate_injective {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) {i j : ℕ} (hi : 1 ≤ i) (hiq : i ≤ q) (hj : 1 ≤ j)
+  (hjq : j ≤ q) (he : P.E i = P.E j) : i = j
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinateU_injective {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) {i j : ℕ} (hi : 1 ≤ i) (hiq : i ≤ q) (hj : 1 ≤ j)
+  (hjq : j ≤ q) (he : P.U i = P.U j) : i = j
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E_slot_count {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (hrange : 0 ≤ x - b - 1) : ↑q ≤ x - b - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U_slot_count {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (hrange : 0 ≤ B - c - 1) : ↑q ≤ B - c - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.cover_by_next_residue {x A B v b c E U K : ℤ} {q H : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (hH : H = q + 1) (hE : E = K * x - ↑H * A)
+  (hU : U = ↑H * v - (K - 1) * B) (i : ℕ) : 1 ≤ i → i ≤ q → E < P.E i ∨ U < P.U i
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.last_rank {x A B v b c : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (hq : 1 ≤ q) : ↑q + P.E q + P.U q ≤ x - b + (B - c) - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.terminal_rank {x A B v b c E U : ℤ} {q : ℕ}
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix x A B v b c q) (hE0 : 1 ≤ E) (hEx : E ≤ x - b - 1) (hU0 : 1 ≤ U)
+  (hUB : U ≤ B - c - 1) (hcover : ∀ (i : ℕ), 1 ≤ i → i ≤ q → E < P.E i ∨ U < P.U i) :
+  ↑q ≤ x - b - 1 - E + (B - c - 1 - U)
+P21.Nonsymmetric.ColorCap.terminal12Point (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℕ) :
+  P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.terminal13Point (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℕ) :
+  P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.trace_terminal12 (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hno2 : List.count 2 l = 0) :
+  u = P21.Nonsymmetric.ColorCap.terminal12Point D (List.count 0 l + 1) (List.count 1 l + 1)
+P21.Nonsymmetric.ColorCap.trace_terminal13 (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hno1 : List.count 1 l = 0) :
+  u = P21.Nonsymmetric.ColorCap.terminal13Point D (List.count 0 l + 1) (List.count 2 l + 1)
+P21.Nonsymmetric.ColorCap.terminal12Point_coordinates (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℕ) :
+  P21.Nonsymmetric.ColorCap.terminal12Point D N Q 0 = D.y 0 - (↑Q * D.y 0 - ↑N * D.x 0) ∧
+    P21.Nonsymmetric.ColorCap.terminal12Point D N Q 1 = D.y 1 - (↑N * (D.y 1 + D.b 1) - ↑Q * D.x 1 - D.b 1) ∧
+      P21.Nonsymmetric.ColorCap.terminal12Point D N Q 2 = D.x 2 - (↑N - 1) * D.y 2 - (↑Q - 1) * (D.y 2 + D.b 2)
+P21.Nonsymmetric.ColorCap.terminal13Point_coordinates (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℕ) :
+  P21.Nonsymmetric.ColorCap.terminal13Point D N R 0 = D.y 0 + D.b 0 - (↑R * (D.y 0 + D.b 0) - ↑N * D.x 0) ∧
+    P21.Nonsymmetric.ColorCap.terminal13Point D N R 1 = D.x 1 - (↑N - 1) * (D.y 1 + D.b 1) - (↑R - 1) * D.y 1 ∧
+      P21.Nonsymmetric.ColorCap.terminal13Point D N R 2 = D.y 2 - (↑N * D.y 2 - ↑R * D.x 2)
+P21.Nonsymmetric.ColorCap.execute (C : Fin 3 → P21.Nonsymmetric.ColorCap.Point) :
+  List (Fin 3) → P21.Nonsymmetric.ColorCap.Point → P21.Nonsymmetric.ColorCap.Point
+P21.Nonsymmetric.ColorCap.execute_append (C : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (l r : List (Fin 3))
+  (u : P21.Nonsymmetric.ColorCap.Point) :
+  P21.Nonsymmetric.ColorCap.execute C (l ++ r) u =
+    P21.Nonsymmetric.ColorCap.execute C r (P21.Nonsymmetric.ColorCap.execute C l u)
+P21.Nonsymmetric.ColorCap.FiringTrace (upper : P21.Nonsymmetric.ColorCap.Point)
+  (C : Fin 3 → P21.Nonsymmetric.ColorCap.Point) (start : P21.Nonsymmetric.ColorCap.Point) :
+  List (Fin 3) → P21.Nonsymmetric.ColorCap.Point → Prop
+P21.Nonsymmetric.ColorCap.BoxPath.exists_trace {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {t : ℕ} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.BoxPath upper C t u v) :
+  ∃ l, l.length = t ∧ P21.Nonsymmetric.ColorCap.FiringTrace upper C u l v
+P21.Nonsymmetric.ColorCap.FiringTrace.execute_eq {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {l : List (Fin 3)} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C u l v) : P21.Nonsymmetric.ColorCap.execute C l u = v
+P21.Nonsymmetric.ColorCap.FiringTrace.toBoxPath {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {l : List (Fin 3)} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C u l v) : P21.Nonsymmetric.ColorCap.BoxPath upper C l.length u v
+P21.Nonsymmetric.ColorCap.FiringTrace.prefix_trace {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {full : List (Fin 3)} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C u full v) {l : List (Fin 3)} (hl : l <+: full) :
+  ∃ w, P21.Nonsymmetric.ColorCap.FiringTrace upper C u l w
+P21.Nonsymmetric.ColorCap.FiringTrace.prefix_path {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {full : List (Fin 3)} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C u full v) {l : List (Fin 3)} (hl : l <+: full) :
+  ∃ w, P21.Nonsymmetric.ColorCap.BoxPath upper C l.length u w ∧ P21.Nonsymmetric.ColorCap.execute C l u = w
+P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_eq_sub_sum {upper : P21.Nonsymmetric.ColorCap.Point}
+  {C : Fin 3 → P21.Nonsymmetric.ColorCap.Point} {l : List (Fin 3)} {u v : P21.Nonsymmetric.ColorCap.Point}
+  (h : P21.Nonsymmetric.ColorCap.FiringTrace upper C u l v) (j : Fin 3) : v j = u j - ∑ i, ↑(List.count i l) * C i j
+P21.Nonsymmetric.ColorCap.trace_successfulPrefix12 (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} {q : ℕ} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0) (hq : q ≤ List.count 1 l) :
+  P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q
+P21.Nonsymmetric.ColorCap.trace_successfulPrefix12_actual (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} {q : ℕ} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0) (hq : q ≤ List.count 1 l)
+  (h : ℕ) :
+  1 ≤ h →
+    h ≤ q →
+      P21.Nonsymmetric.ColorCap.CrossingWitness l 1 h
+        ((P21.Nonsymmetric.ColorCap.trace_successfulPrefix12 D ht hp hno2 hq).N h)
+P21.Nonsymmetric.ColorCap.trace_successfulPrefix13 (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} {q : ℕ} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0) (hq : q ≤ List.count 2 l) :
+  P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q
+P21.Nonsymmetric.ColorCap.trace_successfulPrefix13_actual (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} {q : ℕ} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0) (hq : q ≤ List.count 2 l)
+  (h : ℕ) :
+  1 ≤ h →
+    h ≤ q →
+      P21.Nonsymmetric.ColorCap.CrossingWitness l 2 h
+        ((P21.Nonsymmetric.ColorCap.trace_successfulPrefix13 D ht hp hno1 hq).N h)
+P21.Nonsymmetric.ColorCap.X12 (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ) : ℤ
+P21.Nonsymmetric.ColorCap.Y12 (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ) : ℤ
+P21.Nonsymmetric.ColorCap.terminal12_count_bounds (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0) (hstart : D.x 0 < D.y 0) :
+  ↑(List.count 0 l + 1) ≤ D.y 0 ∧ ↑(List.count 1 l + 1) ≤ D.x 0 ∧ ↑(List.count 1 l + 1) ≤ D.y 1
+P21.Nonsymmetric.ColorCap.terminal12_not_sinkA (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ) (hN : 0 < N)
+  (hA : 0 ≤ P21.Nonsymmetric.ColorCap.X12 D N Q ∧ -D.b 1 ≤ P21.Nonsymmetric.ColorCap.Y12 D N Q) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkD_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ) (hN : 1 ≤ N)
+  (hQ : 1 ≤ Q) (hNy : N ≤ D.y 0) (hQy : Q ≤ D.y 1) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu : u = ![D.y 0 - P21.Nonsymmetric.ColorCap.X12 D N Q, D.y 1 - P21.Nonsymmetric.ColorCap.Y12 D N Q, u 2])
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2))
+  (hD : u 0 ≤ D.y 0 + D.b 0 ∧ u 1 ≤ D.y 1 + D.b 1 ∧ u 2 ≤ D.y 2 + D.b 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_last_row1_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) (q : ℕ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q)
+  (hqX : ↑q < D.x 0) (hqY : ↑q < D.y 1) (hstart : D.x 0 < D.y 0) (N : ℤ) (hN : N = P.N q)
+  (u : P21.Nonsymmetric.ColorCap.Point) (hu0 : u 0 = P.E q) (_hu1 : u 1 = D.x 1 + P.U q)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - ↑q * (D.y 2 + D.b 2)) (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_last_row1_of_prefix (D : P21.Nonsymmetric.ColorCap.BoxInput) (q : ℕ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q)
+  (hstart : D.x 0 < D.y 0) (N : ℤ) (hN : N = P.N q) (u : P21.Nonsymmetric.ColorCap.Point) (hu0 : u 0 = P.E q)
+  (hu1 : u 1 = D.x 1 + P.U q) (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - ↑q * (D.y 2 + D.b 2))
+  (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkB_nonnegativeX_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ)
+  (hN : 1 ≤ N) (hQ : 1 ≤ Q) (hQy : Q ≤ D.y 1) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2)) (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2)
+  (hX : 0 ≤ P21.Nonsymmetric.ColorCap.X12 D N Q) (hYbox : 1 ≤ D.x 1 + P21.Nonsymmetric.ColorCap.Y12 D N Q)
+  (hrank :
+    N - Q + -(P21.Nonsymmetric.ColorCap.Y12 D N Q + D.b 1) + (D.y 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X12 D N Q) ≤
+      D.x 1 - (D.y 1 + D.b 1) + (D.y 0 - D.x 0)) :
+  False
+P21.Nonsymmetric.ColorCap.terminal12_sinkB_negativeX_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ)
+  (hN : 1 ≤ N) (hQ : 1 ≤ Q) (hQy : Q ≤ D.y 1) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2)) (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2)
+  (hcoef0 : 0 ≤ D.b 0 + P21.Nonsymmetric.ColorCap.X12 D N Q)
+  (hsecond : 0 ≤ D.x 1 - N + (P21.Nonsymmetric.ColorCap.Y12 D N Q + D.b 1)) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N Q : ℤ) (hN : 1 ≤ N)
+  (hQ : 1 ≤ Q) (hNy : N ≤ D.y 0) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu1 : u 1 = D.y 1 - P21.Nonsymmetric.ColorCap.Y12 D N Q)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2)) (hC : u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2)
+  (hcoef0 : 0 ≤ D.x 0 + D.y 0 + D.b 0 + P21.Nonsymmetric.ColorCap.X12 D N Q)
+  (hELR : Q ≤ D.x 0 + P21.Nonsymmetric.ColorCap.X12 D N Q + P21.Nonsymmetric.ColorCap.Y12 D N Q) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_bound (D : P21.Nonsymmetric.ColorCap.BoxInput) (q Q : ℕ) (N E U : ℤ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1)
+  (hE : E = N * D.x 0 - ↑Q * D.y 0) (hU : U = ↑Q * D.x 1 - (N - 1) * (D.y 1 + D.b 1)) (hE0 : 1 ≤ E)
+  (hEx : E ≤ D.x 0 - 1) (hU0 : 1 ≤ U) (hUy : U ≤ D.y 1 - 1) : ↑Q ≤ D.x 0 - E + (D.y 1 - U)
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_extended (D : P21.Nonsymmetric.ColorCap.BoxInput) (q Q : ℕ) (N E U Y : ℤ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1)
+  (hE : E = N * D.x 0 - ↑Q * D.y 0) (hU : U = ↑Q * D.x 1 - (N - 1) * (D.y 1 + D.b 1)) (hUY : U = D.y 1 - Y) (hY : 0 ≤ Y)
+  (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hU0 : 1 ≤ U) : ↑Q ≤ D.x 0 - E + Y
+P21.Nonsymmetric.ColorCap.terminal12_negativeD_predecessor_bound (D : P21.Nonsymmetric.ColorCap.BoxInput) (q Q : ℕ)
+  (N E W : ℤ) (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q)
+  (hq : 1 ≤ q) (hQ : Q = q + 1) (hstart : D.x 0 < D.y 0) (hE : E = N * D.x 0 - ↑Q * D.y 0)
+  (hW : W = ↑Q * D.x 1 - N * (D.y 1 + D.b 1)) (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hW0 : 1 ≤ W) : 0 ≤ D.x 1 - N - W
+P21.Nonsymmetric.ColorCap.terminal12_nonnegativeD_count_bound (D : P21.Nonsymmetric.ColorCap.BoxInput) {q : ℕ} (Q : ℕ)
+  (N E : ℤ) (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q)
+  (hQ : 1 ≤ Q) (hQy : ↑Q ≤ D.y 1) (hE : E = N * D.x 0 - ↑Q * D.y 0) (hEx : E ≤ D.x 0 - 1) : N ≤ D.x 1
+P21.Nonsymmetric.ColorCap.terminal12_reciprocal_rank (D : P21.Nonsymmetric.ColorCap.BoxInput) (q Q H N : ℕ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1)
+  (hN : N = H + Q) (hH : 1 ≤ H) (hstart : D.x 0 < D.y 0) (hX : 0 ≤ P21.Nonsymmetric.ColorCap.X12 D ↑N ↑Q)
+  (hE0 : 1 ≤ -(P21.Nonsymmetric.ColorCap.Y12 D ↑N ↑Q + D.b 1))
+  (hEa : -(P21.Nonsymmetric.ColorCap.Y12 D ↑N ↑Q + D.b 1) ≤ D.x 1 - (D.y 1 + D.b 1) - 1)
+  (hV0 : 1 ≤ D.y 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X12 D ↑N ↑Q) :
+  ↑H + -(P21.Nonsymmetric.ColorCap.Y12 D ↑N ↑Q + D.b 1) + (D.y 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X12 D ↑N ↑Q) ≤
+    D.x 1 - (D.y 1 + D.b 1) + (D.y 0 - D.x 0)
+P21.Nonsymmetric.ColorCap.two_color12_trace_sink_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0)
+  (hcount1 : 1 ≤ List.count 1 l) (hstart : D.x 0 < D.y 0)
+  (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j) : False
+P21.Nonsymmetric.ColorCap.X13 (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) : ℤ
+P21.Nonsymmetric.ColorCap.Y13 (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) : ℤ
+P21.Nonsymmetric.ColorCap.terminal13_count_bounds (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0) :
+  ↑(List.count 0 l + 1) ≤ D.y 0 ∧ ↑(List.count 2 l + 1) ≤ D.x 0 - D.b 0 ∧ ↑(List.count 2 l + 1) ≤ D.y 2
+P21.Nonsymmetric.ColorCap.terminal13_not_sinkB (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) (hN : 0 < N)
+  (hB : 0 ≤ P21.Nonsymmetric.ColorCap.X13 D N R ∧ 0 ≤ P21.Nonsymmetric.ColorCap.Y13 D N R) : False
+P21.Nonsymmetric.ColorCap.terminal13_sinkD_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) (hN : 1 ≤ N)
+  (hR : 1 ≤ R) (hNy : N ≤ D.y 0) (hRy : R ≤ D.y 2) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu0 : u 0 = D.y 0 + D.b 0 - P21.Nonsymmetric.ColorCap.X13 D N R)
+  (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1)
+  (hu2 : u 2 = D.y 2 - P21.Nonsymmetric.ColorCap.Y13 D N R)
+  (hD : u 0 ≤ D.y 0 + D.b 0 ∧ u 1 ≤ D.y 1 + D.b 1 ∧ u 2 ≤ D.y 2 + D.b 2) : False
+P21.Nonsymmetric.ColorCap.terminal13_last_row2_of_prefix (D : P21.Nonsymmetric.ColorCap.BoxInput) (q : ℕ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hq : 1 ≤ q)
+  (hstart : D.x 0 < D.y 0 + D.b 0) (N : ℤ) (hN : N = P.N q) (u : P21.Nonsymmetric.ColorCap.Point) (hu0 : u 0 = P.E q)
+  (hu2 : u 2 = D.x 2 + P.U q) (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - ↑q * D.y 1)
+  (hA : u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1) : False
+P21.Nonsymmetric.ColorCap.terminal13_sinkA_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) (hN : 1 ≤ N)
+  (hR : 1 ≤ R) (hRy : R ≤ D.y 2) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1) (hA : u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1)
+  (hX : D.b 0 ≤ P21.Nonsymmetric.ColorCap.X13 D N R)
+  (hcoef2 : 0 ≤ D.x 2 + D.y 2 + D.b 2 + P21.Nonsymmetric.ColorCap.Y13 D N R)
+  (hrank :
+    N - R + -P21.Nonsymmetric.ColorCap.Y13 D N R + (D.y 0 + D.b 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X13 D N R) ≤
+      D.x 2 - D.y 2 + (D.y 0 + D.b 0 - D.x 0) - D.b 0) :
+  False
+P21.Nonsymmetric.ColorCap.terminal13_sinkC_certificate (D : P21.Nonsymmetric.ColorCap.BoxInput) (N R : ℤ) (hN : 1 ≤ N)
+  (hR : 1 ≤ R) (hNy : N ≤ D.y 0) (u : P21.Nonsymmetric.ColorCap.Point)
+  (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1) (hC : u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2)
+  (hcoef0 : 0 ≤ D.x 0 + D.y 0 + P21.Nonsymmetric.ColorCap.X13 D N R) (hY : -D.b 2 ≤ P21.Nonsymmetric.ColorCap.Y13 D N R)
+  (hELR : 0 ≤ D.x 0 + P21.Nonsymmetric.ColorCap.X13 D N R + D.b 2 + P21.Nonsymmetric.ColorCap.Y13 D N R - R) : False
+P21.Nonsymmetric.ColorCap.terminal13_sinkC_ELR_bound (D : P21.Nonsymmetric.ColorCap.BoxInput) (q R : ℕ) (N : ℤ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hR : R = q + 1)
+  (hX : P21.Nonsymmetric.ColorCap.X13 D N ↑R = ↑R * (D.y 0 + D.b 0) - N * D.x 0)
+  (hY : P21.Nonsymmetric.ColorCap.Y13 D N ↑R = N * D.y 2 - ↑R * D.x 2)
+  (hpred : D.b 0 + 1 ≤ D.x 0 + P21.Nonsymmetric.ColorCap.X13 D N ↑R)
+  (hYlower : -D.b 2 ≤ P21.Nonsymmetric.ColorCap.Y13 D N ↑R) :
+  0 ≤ D.x 0 + P21.Nonsymmetric.ColorCap.X13 D N ↑R + D.b 2 + P21.Nonsymmetric.ColorCap.Y13 D N ↑R - ↑R
+P21.Nonsymmetric.ColorCap.terminal13_reciprocal_rank (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0) (q R H N : ℕ)
+  (P : P21.Nonsymmetric.ColorCap.SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q)
+  (hactual : ∀ (h : ℕ), 1 ≤ h → h ≤ q → P21.Nonsymmetric.ColorCap.CrossingWitness l 2 h (P.N h)) (hR : R = q + 1)
+  (hN : N = H + R) (hH : 1 ≤ H) (hstart : D.x 0 < D.y 0) (hcount2 : List.count 2 l = R - 1)
+  (hcount0 : List.count 0 l = N - 1) (hX : D.b 0 ≤ P21.Nonsymmetric.ColorCap.X13 D ↑N ↑R)
+  (hE0 : 1 ≤ -P21.Nonsymmetric.ColorCap.Y13 D ↑N ↑R) (hEa : -P21.Nonsymmetric.ColorCap.Y13 D ↑N ↑R ≤ D.x 2 - D.y 2 - 1)
+  (hV0 : 1 ≤ D.y 0 + D.b 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X13 D ↑N ↑R) :
+  ↑H + -P21.Nonsymmetric.ColorCap.Y13 D ↑N ↑R + (D.y 0 + D.b 0 - D.x 0 - P21.Nonsymmetric.ColorCap.X13 D ↑N ↑R) ≤
+    D.x 2 - D.y 2 + (D.y 0 + D.b 0 - D.x 0) - D.b 0
+P21.Nonsymmetric.ColorCap.two_color13_trace_sink_impossible (D : P21.Nonsymmetric.ColorCap.BoxInput) {l : List (Fin 3)}
+  {u : P21.Nonsymmetric.ColorCap.Point} (ht : P21.Nonsymmetric.ColorCap.FiringTrace D.upper D.rows D.x l u)
+  (hp : P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0)
+  (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j) : False
+P21.Nonsymmetric.ColorCap.three_arms_impossible (g : P21.Generators) (s : g.Setting)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool)
+  (depth : P21.Nonsymmetric.ColorCap.Point) (hdepth : ∀ (i : Fin 3), 1 ≤ depth i)
+  (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
+  (harms : ∀ (i : Fin 3), (if colorA = true then D.fA else D.fB) - depth i * g.n i ∈ s.semigroup.PF) : False
+P21.Nonsymmetric.actual_three_A_excluded_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmA D.toHerzogCriticalData q i) : False
+P21.Nonsymmetric.actual_three_B_excluded_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmB D.toHerzogCriticalData q i) : False
+P21.Nonsymmetric.actual_labels_compatible_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F)
+  (L : P21.Nonsymmetric.ActualLabeling D.toHerzogCriticalData rows) : P21.Nonsymmetric.RowLabel.Compatible L.labels
+P21.Nonsymmetric.actual_labels_terminal_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F)
+  (L : P21.Nonsymmetric.ActualLabeling D.toHerzogCriticalData rows) : P21.Nonsymmetric.RowLabel.Terminal L.labels
+P21.Nonsymmetric.selected_four_terminal {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) :
+  P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_selected_four {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) :
+  ∃ D, P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : P21.Nonsymmetric.ColorCap.BoxInput) (t : ℕ) (u : P21.Nonsymmetric.ColorCap.Point),
+  P21.Nonsymmetric.ColorCap.BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬P21.Nonsymmetric.ColorCap.InBox D.upper (P21.Nonsymmetric.ColorCap.fire D.rows i u)) →
+      ∃ i, ∀ (j : Fin 3), 1 ≤ P21.Nonsymmetric.ColorCap.fire D.rows i u j
+
+EXIT_CODE=0

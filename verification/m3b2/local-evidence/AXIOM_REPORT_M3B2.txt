@@ -1,0 +1,148 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification/m3b2/GeneratedAxiomCheck.lean
+'P21.Nonsymmetric.ColorCap.FiringTrace.head_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.one_color_trace_sink_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.prefix' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_le_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_lt_zero_of_last_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.CrossingWitness' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.CrossingWitness.at_last' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.nth_occurrence_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.occurrence_source_ends_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.count_eq_zero_of_members' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.prefix_at_zero_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.shifted_prefix_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.prefix_continues_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.canonical_trace_sink_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.box_positive_exit_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_nonzero_occurrence_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_row2_after_01_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_row1_after_02_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_12_to_3_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_13_to_2_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_12_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_12_to_3_actual_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_13_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_13_to_2_actual_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_nonzero_color_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.first_third_color_actual_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_inBox' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.FiringTrace.nonzero_followed_by_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.FiringTrace.properNonzeroPredecessors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.continued_zero_shift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.actual_shifted_before_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.actual_shifted_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.reciprocal_residue_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_prefix_of_actuality' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.reciprocal_separator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_next_residue_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.permutePoint' depends on axioms: [Quot.sound]
+'P21.Nonsymmetric.ColorCap.BoxInput.rotate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.BoxInput.rotate_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.BoxInput.start_of_row0' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.permutePoint_fire' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.inBox_permute_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.BoxPath.rotateGeneral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.BoxPath.rotate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.separator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinate_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinateU_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E_slot_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U_slot_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.cover_by_next_residue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.last_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.SuccessfulPrefix.terminal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12Point' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.terminal13Point' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.trace_terminal12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.trace_terminal13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12Point_coordinates' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13Point_coordinates' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.execute' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.execute_append' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.FiringTrace' does not depend on any axioms
+'P21.Nonsymmetric.ColorCap.BoxPath.exists_trace' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.FiringTrace.execute_eq' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.FiringTrace.toBoxPath' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.FiringTrace.prefix_trace' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.FiringTrace.prefix_path' depends on axioms: [propext, Quot.sound]
+'P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_eq_sub_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.trace_successfulPrefix12' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.trace_successfulPrefix12_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.trace_successfulPrefix13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.trace_successfulPrefix13_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.X12' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.Y12' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.terminal12_count_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_not_sinkA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkD_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_last_row1_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_last_row1_of_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkB_nonnegativeX_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkB_negativeX_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkC_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_extended' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_negativeD_predecessor_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_nonnegativeD_count_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal12_reciprocal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.two_color12_trace_sink_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.X13' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.Y13' depends on axioms: [propext]
+'P21.Nonsymmetric.ColorCap.terminal13_count_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_not_sinkB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_sinkD_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_last_row2_of_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_sinkA_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_sinkC_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_sinkC_ELR_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.terminal13_reciprocal_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.two_color13_trace_sink_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_three_A_excluded_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_three_B_excluded_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_labels_compatible_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_labels_terminal_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.selected_four_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_selected_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_Q_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

@@ -1,0 +1,346 @@
+$ C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe verification/m2b/verify.py
+test_actual_debt_is_not_hidden_by_nearby_comment (test_debt_scan.DebtScannerTest.test_actual_debt_is_not_hidden_by_nearby_comment) ... ok
+test_character_literals_cannot_hide_debt (test_debt_scan.DebtScannerTest.test_character_literals_cannot_hide_debt) ... ok
+test_character_literals_fail_closed (test_debt_scan.DebtScannerTest.test_character_literals_fail_closed) ... ok
+test_every_forbidden_token (test_debt_scan.DebtScannerTest.test_every_forbidden_token) ... ok
+test_interpolated_strings_fail_closed (test_debt_scan.DebtScannerTest.test_interpolated_strings_fail_closed) ... ok
+test_line_comment_and_documentation (test_debt_scan.DebtScannerTest.test_line_comment_and_documentation) ... ok
+test_line_numbers_preserved (test_debt_scan.DebtScannerTest.test_line_numbers_preserved) ... ok
+test_longer_identifiers (test_debt_scan.DebtScannerTest.test_longer_identifiers) ... ok
+test_nested_comments_are_not_declarations (test_debt_scan.DebtScannerTest.test_nested_comments_are_not_declarations) ... ok
+test_raw_string (test_debt_scan.DebtScannerTest.test_raw_string) ... ok
+test_set_image_notation_remains_code (test_debt_scan.DebtScannerTest.test_set_image_notation_remains_code) ... ok
+test_strings_with_comment_markers_and_escaped_quotes (test_debt_scan.DebtScannerTest.test_strings_with_comment_markers_and_escaped_quotes) ... ok
+test_unterminated_comment_and_string_fail_closed (test_debt_scan.DebtScannerTest.test_unterminated_comment_and_string_fail_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
+test_hash_rejected (test_verify.ArchiveTests.test_hash_rejected) ... ok
+test_manifest_coverage_rejected (test_verify.ArchiveTests.test_manifest_coverage_rejected) ... ok
+test_traversal_rejected (test_verify.ArchiveTests.test_traversal_rejected) ... ok
+test_additional_shortcuts_banned (test_verify.InventoryTests.test_additional_shortcuts_banned) ... ok
+test_axiom_coverage (test_verify.InventoryTests.test_axiom_coverage) ... ok
+test_axiom_debt_and_duplicate (test_verify.InventoryTests.test_axiom_debt_and_duplicate) ... ok
+test_comment_not_a_declaration (test_verify.InventoryTests.test_comment_not_a_declaration) ... ok
+test_frozen_file_count (test_verify.InventoryTests.test_frozen_file_count) ... ok
+test_nested_namespace_and_section (test_verify.InventoryTests.test_nested_namespace_and_section) ... ok
+test_primed_name (test_verify.InventoryTests.test_primed_name) ... ok
+test_private_fails_closed (test_verify.InventoryTests.test_private_fails_closed) ... ok
+test_scope_mismatch (test_verify.InventoryTests.test_scope_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.039s
+
+OK
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (10s)
+✔ [1590/1598] Built P21.Basic (9.9s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.7s)
+✔ [1592/1598] Built P21.Apery (9.6s)
+✔ [1593/1598] Built P21.CanonicalReduction (10s)
+✔ [1594/1598] Built P21.Tail (11s)
+✔ [1595/1598] Built P21.Selection (15s)
+✔ [1596/1598] Built P21.Semantics (9.9s)
+✔ [1597/1598] Built P21 (9.6s)
+Build completed successfully (1598 jobs).
+✔ [1601/1616] Built P21.Symmetric.StableCore (13s)
+✔ [1602/1616] Built P21.Symmetric.TwoGenerator (13s)
+✔ [1603/1616] Built P21.Symmetric.TypeBridge (10s)
+✔ [1604/1616] Built P21.Symmetric.RawRows (10s)
+✔ [1605/1616] Built P21.Symmetric.GlueNormalForm (23s)
+✔ [1606/1616] Built P21.Symmetric.TwoGeneratorIdeal (23s)
+✔ [1607/1616] Built P21.Symmetric.BranchI (23s)
+✔ [1608/1616] Built P21.Symmetric.BranchIActual (12s)
+✔ [1609/1616] Built P21.External.SymmetricThreeGenerator (16s)
+✔ [1610/1616] Built P21.Symmetric.Raw4 (16s)
+✔ [1611/1616] Built P21.Symmetric.CrossLayer (16s)
+✔ [1612/1616] Built P21.Symmetric.BranchII (17s)
+✔ [1613/1616] Built P21.Symmetric.Reduction (12s)
+✔ [1614/1616] Built P21.Symmetric.Raw4Consequences (12s)
+✔ [1615/1616] Built P21.Symmetric.BranchIIActual (12s)
+✔ [1616/1616] Built P21.Symmetric.Closure (10s)
+Build completed successfully (1616 jobs).
+✔ [1617/1626] Built P21.Symmetric.Classification.CriticalRelations (13s)
+✔ [1618/1626] Built P21.Symmetric.Classification.GcdDecomposition (13s)
+✔ [1619/1626] Built P21.Symmetric.Classification.TailNumericalSemigroup (13s)
+✔ [1620/1626] Built P21.Symmetric.Classification.SymmetricRigidity (14s)
+✔ [1621/1626] Built P21.Symmetric.Classification.AperyCardinality (10s)
+✔ [1622/1626] Built P21.Symmetric.Classification.TopFactorization (10s)
+✔ [1623/1626] Built P21.Symmetric.Classification.UniqueTop (12s)
+✔ [1624/1626] Built P21.Symmetric.Classification.GlueExistence (9.9s)
+✔ [1625/1626] Built P21.External.SymmetricThreeGeneratorProof (9.3s)
+✔ [1626/1626] Built P21.Symmetric.FullClosure (9.6s)
+Build completed successfully (1626 jobs).
+'P21.Symmetric.symmetric_three_generator_gluing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_le_of_emod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_emod_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_reduce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_rectangle_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.criticalRelation_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.ge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.coeff_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.not_offDirection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.CriticalRelation.below_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_not_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.decomposition_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.special_pair_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.primitive_pair_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangle_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.glue_exists_of_symmetric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.nonneg_mul_mem' depends on axioms: [propext]
+'P21.Symmetric.Classification.primitive_mem_of_lcm_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.boundary_determinant_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_boundary_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_zero_boundary_decomposition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.unique_top_apery_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_rectangle_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.rectangular_boundary_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_generator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_cofinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tailSemigroup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_common_divisor_dvd_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_gcd_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.value_permuted_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_bezout' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetric_frobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.TailApery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_complement_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.symmetry_apery_le_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.apery_actual_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.apery_gap_of_sub_mem' depends on axioms: [propext]
+'P21.Symmetric.Classification.two_representations_sub_lcm_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.two_representations_lcm_apery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.primitive_mem_of_two_representations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.two_top_representations_glue_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Symmetric.Classification.tail_apery_pair_rep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.tail_apery_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_boundary_relations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.Classification.unique_top_glue_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.symmetric_tail_type_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+P21.Symmetric.symmetric_three_generator_gluing : P21.Symmetric.SymmetricThreeGeneratorGluingStatement
+P21.Symmetric.Classification.tail_apery_lower {g : P21.Generators} {i : Fin 3} {a b : ℤ} (ha : a ∈ g.H)
+  (hb : P21.Symmetric.Classification.TailApery g i b) (hd : b - a ∈ g.H) : P21.Symmetric.Classification.TailApery g i a
+P21.Symmetric.Classification.tail_apery_le_of_emod {g : P21.Generators} (s : g.Setting) {i : Fin 3} {a b : ℤ}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (hb : b ∈ g.H) (he : a % g.n i = b % g.n i) : a ≤ b
+P21.Symmetric.Classification.tail_apery_emod_le {g : P21.Generators} (s : g.Setting) {i : Fin 3} {a b : ℤ}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (hb : P21.Symmetric.Classification.TailApery g i b)
+  (he : a % g.n i = b % g.n i) : a ≤ b
+P21.Symmetric.Classification.tail_apery_emod_injective {g : P21.Generators} (s : g.Setting) {i : Fin 3} :
+  Set.InjOn (fun a => a % g.n i) {a | P21.Symmetric.Classification.TailApery g i a}
+P21.Symmetric.Classification.tail_apery_emod_surjective {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {r : ℤ} (hr0 : 0 ≤ r) (hr : r < g.n i) :
+  ∃ a, P21.Symmetric.Classification.TailApery g i a ∧ a % g.n i = r
+P21.Symmetric.Classification.tail_apery_card {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g)
+  (i : Fin 3) : {a | P21.Symmetric.Classification.TailApery g i a}.ncard = (g.n i).toNat
+P21.Symmetric.Classification.tail_apery_reduce {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {w : ℤ} (hw : w ∈ g.H) :
+  ∃ q a, 0 ≤ q ∧ P21.Symmetric.Classification.TailApery g i a ∧ w = q * g.n i + a
+P21.Symmetric.Classification.tail_apery_rectangle_card {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) (y z A B : ℤ) (hA : 0 ≤ A) (hB : 0 ≤ B)
+  (hrep : ∀ (w : ℤ), P21.Symmetric.Classification.TailApery g i w → ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * y + b * z)
+  (hrectangle :
+    ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → (P21.Symmetric.Classification.TailApery g i (a * y + b * z) ↔ a ≤ A ∧ b ≤ B))
+  (hinj :
+    ∀ (a b c d : ℤ),
+      0 ≤ a → a ≤ A → 0 ≤ b → b ≤ B → 0 ≤ c → c ≤ A → 0 ≤ d → d ≤ B → a * y + b * z = c * y + d * z → a = c ∧ b = d) :
+  g.n i = (A + 1) * (B + 1)
+P21.Symmetric.Classification.CriticalRelation (g : P21.Generators) (i : Fin 3) : Type
+P21.Symmetric.Classification.criticalRelation_exists (g : P21.Generators) (hpos : ∀ (i : Fin 3), 0 < g.n i)
+  (i : Fin 3) : Nonempty (P21.Symmetric.Classification.CriticalRelation g i)
+P21.Symmetric.Classification.CriticalRelation.ge_two {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) (hmin : g.TailMinimal) : 2 ≤ r.coeff
+P21.Symmetric.Classification.CriticalRelation.coeff_unique {g : P21.Generators} {i : Fin 3}
+  (r s : P21.Symmetric.Classification.CriticalRelation g i) : r.coeff = s.coeff
+P21.Symmetric.Classification.CriticalRelation.not_offDirection {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) {c : ℕ} (hc : 0 < c) (hlt : c < r.coeff) :
+  ¬g.OffDirection i (↑c * g.n i)
+P21.Symmetric.Classification.CriticalRelation.below_unique {g : P21.Generators} {i : Fin 3}
+  (r : P21.Symmetric.Classification.CriticalRelation g i) (hpos : ∀ (j : Fin 3), 0 < g.n j) {c : ℕ} (hlt : c < r.coeff)
+  (a : Fin 3 → ℕ) (he : P21.value g.n a = ↑c * g.n i) : a i = c
+P21.Symmetric.Classification.tail_not_two (g : P21.Generators) (s : g.Setting) (i j k : Fin 3) (hij : i ≠ j)
+  (hik : i ≠ k) (a b : ℤ) (ha : 0 ≤ a) (hb : 0 ≤ b) : g.n i ≠ a * g.n j + b * g.n k
+P21.Symmetric.Classification.decomposition_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) (d u v : ℤ) (hd : 0 < d)
+  (hx : g.n (p 0) = d * u) (hy : g.n (p 1) = d * v) (huv : u.gcd v = 1)
+  (hmem : ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ g.n (p 2) = a * u + b * v) : Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.special_pair_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3))
+  (hmem :
+    ∃ a b,
+      0 ≤ a ∧
+        0 ≤ b ∧
+          g.n (p 2) =
+            a * (g.n (p 0) / ↑((g.n (p 0)).gcd (g.n (p 1)))) + b * (g.n (p 1) / ↑((g.n (p 0)).gcd (g.n (p 1))))) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.primitive_pair_data (g : P21.Generators) (s : g.Setting) (p : Equiv.Perm (Fin 3)) :
+  ∃ D,
+    D.u = g.n (p 0) / ↑((g.n (p 0)).gcd (g.n (p 1))) ∧
+      D.v = g.n (p 1) / ↑((g.n (p 0)).gcd (g.n (p 1))) ∧
+        g.n (p 0) = ↑((g.n (p 0)).gcd (g.n (p 1))) * D.u ∧ g.n (p 1) = ↑((g.n (p 0)).gcd (g.n (p 1))) * D.v
+P21.Symmetric.Classification.rectangle_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) (L M r q b : ℤ) (hL : 0 < L)
+  (hq : 0 ≤ q) (hb : 0 ≤ b) (hx : g.n (p 0) = L * M) (hz : g.n (p 2) = L * r) (hy : g.n (p 1) = q * M + b * r) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.glue_exists_of_symmetric (g : P21.Generators) (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) : Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.nonneg_mul_mem (H : AddSubmonoid ℤ) {a x : ℤ} (ha : 0 ≤ a) (hx : x ∈ H) : a * x ∈ H
+P21.Symmetric.Classification.primitive_mem_of_lcm_gap (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d x : ℤ} (hd : 1 ≤ d) (hx : x ∈ H) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (hgap : d * D.u * D.v - x ∉ H) : x ∈ D.T
+P21.Symmetric.Classification.boundary_determinant_dvd {x y z L M a b q r : ℤ}
+  (hbezout : ∃ α β γ, α * x + β * y + γ * z = 1) (hy : L * y = q * x + b * z) (hz : M * z = r * x + a * y) :
+  x ∣ L * M - a * b
+P21.Symmetric.Classification.rectangular_boundary_zero {x y z L M a b q r : ℤ} (hL : 0 < L) (hM : 0 < M) (ha : 0 ≤ a)
+  (haL : a < L) (hb : 0 ≤ b) (hbM : b < M) (hcard : x = L * M) (hbezout : ∃ α β γ, α * x + β * y + γ * z = 1)
+  (hy : L * y = q * x + b * z) (hz : M * z = r * x + a * y) : a = 0 ∨ b = 0
+P21.Symmetric.Classification.rectangular_zero_boundary_decomposition {x y z L M b q r : ℤ} (hL : 0 < L) (hM : 0 < M)
+  (hcard : x = L * M) (hy : L * y = q * x + b * z) (hz : M * z = r * x) : z = L * r ∧ y = q * M + b * r
+P21.Symmetric.Classification.unique_top_apery_rectangle (H : AddSubmonoid ℤ) {x y z t A B : ℤ} (hy : y ∈ H) (hz : z ∈ H)
+  (_hA : 0 ≤ A) (_hB : 0 ≤ B) (ht : t = A * y + B * z) (htgap : t - x ∉ H)
+  (hrep : ∀ w ∈ H, w - x ∉ H → ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * y + b * z)
+  (hcomp : ∀ w ∈ H, w - x ∉ H → t - w ∈ H ∧ t - w - x ∉ H)
+  (hunique : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → t = a * y + b * z → a = A ∧ b = B) {a b : ℤ} (ha : 0 ≤ a) (hb : 0 ≤ b) :
+  a * y + b * z ∈ H ∧ a * y + b * z - x ∉ H ↔ a ≤ A ∧ b ≤ B
+P21.Symmetric.Classification.unique_top_rectangle_injective {y z t A B : ℤ} (ht : t = A * y + B * z)
+  (hunique : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → t = a * y + b * z → a = A ∧ b = B) {a b c d : ℤ} (ha : 0 ≤ a) (hb : 0 ≤ b)
+  (_hc : 0 ≤ c) (hcA : c ≤ A) (_hd : 0 ≤ d) (hdB : d ≤ B) (he : a * y + b * z = c * y + d * z) : a = c ∧ b = d
+P21.Symmetric.Classification.rectangular_boundary_relation (H : AddSubmonoid ℤ) {x y z A B : ℤ} (hx : x ∈ H)
+  (hy : y ∈ H) (hz : z ∈ H) (hA : 0 ≤ A) (hB : 0 ≤ B)
+  (hrectangle : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → (a * y + b * z ∈ H ∧ a * y + b * z - x ∉ H ↔ a ≤ A ∧ b ≤ B))
+  (hreduce : ∀ w ∈ H, ∃ q a b, 0 ≤ q ∧ 0 ≤ a ∧ a ≤ A ∧ 0 ≤ b ∧ b ≤ B ∧ w = q * x + a * y + b * z) :
+  ∃ q b, 0 < q ∧ 0 ≤ b ∧ b ≤ B ∧ (A + 1) * y = q * x + b * z
+P21.Symmetric.Classification.tail_generator_pos {g : P21.Generators} (s : g.Setting) (i : Fin 3) : 0 < g.n i
+P21.Symmetric.Classification.tail_nonneg {g : P21.Generators} (s : g.Setting) {x : ℤ} (hx : x ∈ g.H) : 0 ≤ x
+P21.Symmetric.Classification.tail_minimal {g : P21.Generators} (s : g.Setting) : g.TailMinimal
+P21.Symmetric.Classification.tail_cofinite {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g) :
+  ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.Symmetric.Classification.tailSemigroup {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g) :
+  P21.NumericalSemigroup
+P21.Symmetric.Classification.tail_common_divisor_dvd_one {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) {d : ℤ} (hd : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Symmetric.Classification.tail_gcd_eq_one {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) : g.tailGcd = 1
+P21.Symmetric.Classification.value_permuted_three {g : P21.Generators} (p : Equiv.Perm (Fin 3)) (a : Fin 3 → ℕ) :
+  P21.value g.n a = ↑(a (p 0)) * g.n (p 0) + ↑(a (p 1)) * g.n (p 1) + ↑(a (p 2)) * g.n (p 2)
+P21.Symmetric.Classification.tail_bezout {g : P21.Generators} (s : g.Setting) (hsym : P21.Symmetric.SymmetricTail g)
+  (p : Equiv.Perm (Fin 3)) : ∃ α β γ, α * g.n (p 0) + β * g.n (p 1) + γ * g.n (p 2) = 1
+P21.Symmetric.Classification.symmetric_frobenius {g : P21.Generators} (s : g.Setting) {f : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) : (P21.Symmetric.Classification.tailSemigroup s ⋯).IsFrobenius f
+P21.Symmetric.Classification.TailApery (g : P21.Generators) (i : Fin 3) (a : ℤ) : Prop
+P21.Symmetric.Classification.symmetry_apery_top {g : P21.Generators} (s : g.Setting) {f : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) : P21.Symmetric.Classification.TailApery g i (f + g.n i)
+P21.Symmetric.Classification.symmetry_apery_complement {g : P21.Generators} {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) (ha : P21.Symmetric.Classification.TailApery g i a) :
+  P21.Symmetric.Classification.TailApery g i (f + g.n i - a)
+P21.Symmetric.Classification.symmetry_apery_complement_iff {g : P21.Generators} {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (i : Fin 3) :
+  P21.Symmetric.Classification.TailApery g i a ↔ P21.Symmetric.Classification.TailApery g i (f + g.n i - a)
+P21.Symmetric.Classification.symmetry_apery_le_top {g : P21.Generators} (s : g.Setting) {f a : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) {i : Fin 3} (ha : P21.Symmetric.Classification.TailApery g i a) : a ≤ f + g.n i
+P21.Symmetric.Classification.apery_actual_zero {g : P21.Generators} {a : ℤ} {i : Fin 3}
+  (ha : P21.Symmetric.Classification.TailApery g i a) (A : g.ActualFactorization3 a) : A.coeff i = 0
+P21.Symmetric.Classification.apery_gap_of_sub_mem (H : AddSubmonoid ℤ) {top x t : ℤ} (hgap : top - x ∉ H)
+  (hsub : top - t ∈ H) : t - x ∉ H
+P21.Symmetric.Classification.two_representations_sub_lcm_mem (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d top a b c e : ℤ} (hd : 0 < d) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+  (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v)) (hce : top = c * (d * D.u) + e * (d * D.v))
+  (hne : a ≠ c ∨ b ≠ e) : top - d * D.u * D.v ∈ H
+P21.Symmetric.Classification.two_representations_lcm_apery (H : AddSubmonoid ℤ) (D : P21.Symmetric.TwoGeneratorData)
+  {d top x a b c e : ℤ} (hd : 0 < d) (hu : d * D.u ∈ H) (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c)
+  (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v)) (hce : top = c * (d * D.u) + e * (d * D.v))
+  (hne : a ≠ c ∨ b ≠ e) (hgap : top - x ∉ H) : d * D.u * D.v ∈ H ∧ d * D.u * D.v - x ∉ H
+P21.Symmetric.Classification.primitive_mem_of_two_representations (H : AddSubmonoid ℤ)
+  (D : P21.Symmetric.TwoGeneratorData) {d top x a b c e : ℤ} (hd : 0 < d) (hx : x ∈ H) (hu : d * D.u ∈ H)
+  (hv : d * D.v ∈ H) (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (he : 0 ≤ e) (hab : top = a * (d * D.u) + b * (d * D.v))
+  (hce : top = c * (d * D.u) + e * (d * D.v)) (hne : a ≠ c ∨ b ≠ e) (hgap : top - x ∉ H) : x ∈ D.T
+P21.Symmetric.Classification.two_top_representations_glue_data (g : P21.Generators) (s : g.Setting)
+  (hcommon : ∀ (d : ℤ), (∀ (i : Fin 3), d ∣ g.n i) → d ∣ 1) (p : Equiv.Perm (Fin 3)) {f a b c e : ℤ} (hf : f ∉ g.H)
+  (ha : 0 ≤ a) (hb : 0 ≤ b) (hc : 0 ≤ c) (he : 0 ≤ e) (hab : f + g.n (p 2) = a * g.n (p 0) + b * g.n (p 1))
+  (hce : f + g.n (p 2) = c * g.n (p 0) + e * g.n (p 1)) (hne : a ≠ c ∨ b ≠ e) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.Classification.tail_apery_pair_rep {g : P21.Generators} {w : ℤ}
+  (hw : P21.Symmetric.Classification.TailApery g 0 w) : ∃ a b, 0 ≤ a ∧ 0 ≤ b ∧ w = a * g.n 1 + b * g.n 2
+P21.Symmetric.Classification.tail_apery_reduction {g : P21.Generators} (s : g.Setting)
+  (hsym : P21.Symmetric.SymmetricTail g) (i : Fin 3) {w : ℤ} (hw : w ∈ g.H) :
+  ∃ q a, 0 ≤ q ∧ P21.Symmetric.Classification.TailApery g i a ∧ w = q * g.n i + a
+P21.Symmetric.Classification.unique_top_rectangle {g : P21.Generators} (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) {a b : ℤ} (ha : 0 ≤ a)
+  (hb : 0 ≤ b) : P21.Symmetric.Classification.TailApery g 0 (a * g.n 1 + b * g.n 2) ↔ a ≤ A ∧ b ≤ B
+P21.Symmetric.Classification.unique_top_boundary_relations {g : P21.Generators} (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) :
+  ∃ q r a b,
+    0 < q ∧
+      0 < r ∧
+        0 ≤ a ∧
+          a ≤ A ∧ 0 ≤ b ∧ b ≤ B ∧ (A + 1) * g.n 1 = q * g.n 0 + b * g.n 2 ∧ (B + 1) * g.n 2 = r * g.n 0 + a * g.n 1
+P21.Symmetric.Classification.unique_top_glue_data (g : P21.Generators) (s : g.Setting) {f A B : ℤ}
+  (hs : P21.Symmetric.SymmetricAt g.H f) (hA : 0 ≤ A) (hB : 0 ≤ B) (ht : f + g.n 0 = A * g.n 1 + B * g.n 2)
+  (hu : ∀ (a b : ℤ), 0 ≤ a → 0 ≤ b → f + g.n 0 = a * g.n 1 + b * g.n 2 → a = A ∧ b = B) :
+  Nonempty (P21.Symmetric.SymmetricGlueData g)
+P21.Symmetric.symmetric_tail_type_le_four (g : P21.Generators) (setting : g.Setting) (F : ℤ)
+  (hF : setting.semigroup.IsFrobenius F) (hcan : setting.semigroup.Canonical F g.m)
+  (hsym : P21.Symmetric.SymmetricTail g) : setting.semigroup.type ≤ 4
+def P21.Symmetric.SymmetricTail : P21.Generators → Prop :=
+fun g => ∃ f, P21.Symmetric.SymmetricAt g.H f
+structure P21.Symmetric.SymmetricGlueData (g : P21.Generators) : Type
+number of parameters: 1
+fields:
+  P21.Symmetric.SymmetricGlueData.perm : Equiv.Perm (Fin 3)
+  P21.Symmetric.SymmetricGlueData.two : P21.Symmetric.TwoGeneratorData
+  P21.Symmetric.SymmetricGlueData.d : ℤ
+  P21.Symmetric.SymmetricGlueData.w : ℤ
+  P21.Symmetric.SymmetricGlueData.d_ge_two : 2 ≤ self.d
+  P21.Symmetric.SymmetricGlueData.coprime : self.d.gcd self.w = 1
+  P21.Symmetric.SymmetricGlueData.w_mem : self.w ∈ self.two.T
+  P21.Symmetric.SymmetricGlueData.x_eq : g.n (self.perm 0) = self.d * self.two.u
+  P21.Symmetric.SymmetricGlueData.y_eq : g.n (self.perm 1) = self.d * self.two.v
+  P21.Symmetric.SymmetricGlueData.z_eq : g.n (self.perm 2) = self.w
+constructor:
+  P21.Symmetric.SymmetricGlueData.mk {g : P21.Generators} (perm : Equiv.Perm (Fin 3))
+    (two : P21.Symmetric.TwoGeneratorData) (d w : ℤ) (d_ge_two : 2 ≤ d) (coprime : d.gcd w = 1) (w_mem : w ∈ two.T)
+    (x_eq : g.n (perm 0) = d * two.u) (y_eq : g.n (perm 1) = d * two.v) (z_eq : g.n (perm 2) = w) :
+    P21.Symmetric.SymmetricGlueData g
+def P21.Symmetric.SymmetricThreeGeneratorGluingStatement : Prop :=
+∀ (g : P21.Generators), g.Setting → P21.Symmetric.SymmetricTail g → Nonempty (P21.Symmetric.SymmetricGlueData g)
+theorem P21.Symmetric.symmetric_tail_from_glue_data : ∀ (g : P21.Generators) (setting : g.Setting) (F : ℤ),
+  setting.semigroup.IsFrobenius F →
+    setting.semigroup.Canonical F g.m → ∀ (G : P21.Symmetric.SymmetricGlueData g), setting.semigroup.type ≤ 4 :=
+fun g setting F hF hcan G =>
+  Decidable.byContradiction fun htype =>
+    Nonempty.casesOn
+      (P21.Symmetric.SymmetricGlueData.exists_raw4 G setting hF hcan
+        (Decidable.byContradiction fun a => P21.Symmetric.symmetric_tail_from_glue_data._proof_1_1 g setting htype a))
+      fun R =>
+      Exists.casesOn (P21.Symmetric.SymmetricGlueData.normal_form_exists G g.m) fun e h =>
+        Exists.casesOn h fun μ h =>
+          And.casesOn h fun he right =>
+            And.casesOn right fun hed hm =>
+              Or.casesOn (P21.Symmetric.Raw4Data.split R hF hcan hm)
+                (fun hI => P21.Symmetric.Raw4Data.branchI_excluded R hF hcan he hed hm hI) fun hII =>
+                P21.Symmetric.Raw4Data.branchII_excluded R hF hcan he hed hm hII
+M2B local proof gates passed; independent TRUE AUDIT ruling remains external.
+
+EXIT_CODE=0

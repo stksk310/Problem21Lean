@@ -1,0 +1,14 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 build
+✔ [1588/1598] Built P21.Factorization (10s)
+✔ [1589/1598] Built P21.NumericalSemigroup (10s)
+✔ [1590/1598] Built P21.Basic (10s)
+✔ [1591/1598] Built P21.PseudoFrobenius (9.8s)
+✔ [1592/1598] Built P21.Apery (10s)
+✔ [1593/1598] Built P21.CanonicalReduction (10s)
+✔ [1594/1598] Built P21.Tail (10s)
+✔ [1595/1598] Built P21.Selection (13s)
+✔ [1596/1598] Built P21.Semantics (9.7s)
+✔ [1597/1598] Built P21 (9.6s)
+Build completed successfully (1598 jobs).
+
+EXIT_CODE=0

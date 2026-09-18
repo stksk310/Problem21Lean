@@ -1,0 +1,292 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\CanonicalRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\ExhaustionRegression.lean
+P21.Nonsymmetric.ColorCap.canonical_trace_sink_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hne : l ≠ []) (hstart : D.x 0 < D.y 0) (hp : ProperNonzeroPredecessors l)
+  (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j) : False
+P21.Nonsymmetric.ColorCap.box_positive_exit_proved : BoxPositiveExitStatement
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\FirstThirdColorRegression.lean
+P21.Nonsymmetric.ColorCap.first_nonzero_occurrence_actual (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (k : Fin 3) (hk : k ≠ 0)
+  (hoccurs : 1 ≤ List.count k l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ k :: tail ∧
+      List.count k (p ++ [0]) = 0 ∧
+        FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          FiringTrace D.upper D.rows D.x (p ++ [0] ++ [k]) current ∧ current = fire D.rows k source
+P21.Nonsymmetric.ColorCap.first_row2_after_01_actual (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hoccurs : 1 ≤ List.count 2 l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ 2 :: tail ∧
+      List.count 2 (p ++ [0]) = 0 ∧
+        FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          FiringTrace D.upper D.rows D.x (p ++ [0] ++ [2]) current ∧ current = fire D.rows 2 source
+P21.Nonsymmetric.ColorCap.first_row1_after_02_actual (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hoccurs : 1 ≤ List.count 1 l) :
+  ∃ p tail source current,
+    l = p ++ [0] ++ 1 :: tail ∧
+      List.count 1 (p ++ [0]) = 0 ∧
+        FiringTrace D.upper D.rows D.x (p ++ [0]) source ∧
+          FiringTrace D.upper D.rows D.x (p ++ [0] ++ [1]) current ∧ current = fire D.rows 1 source
+P21.Nonsymmetric.ColorCap.first_third_12_to_3_certificate (D : BoxInput) (N Q E Delta : ℤ) (hN : 1 ≤ N) (hQ : 1 ≤ Q)
+  (hNE : N + E ≤ D.y 0) (hQD : Q ≤ D.y 1 + Delta) (source : Point) (hsource2 : source 2 ≤ D.y 2 - 1)
+  (hsource : source 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2)) (hE : E = N * D.x 0 - Q * D.y 0)
+  (hDelta : Delta = N * (D.y 1 + D.b 1) - Q * D.x 1) : False
+P21.Nonsymmetric.ColorCap.first_third_12_rank (D : BoxInput) (q Q : ℕ) (N E Delta : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q) (hQ : Q = q + 1)
+  (hstart : D.x 0 < D.y 0) (hE : E = N * D.x 0 - ↑Q * D.y 0) (hDelta : Delta = N * (D.y 1 + D.b 1) - ↑Q * D.x 1)
+  (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hDeltaUpper : Delta ≤ D.b 1 - 1) : N + E ≤ D.y 0 ∧ ↑Q ≤ D.y 1 + Delta
+P21.Nonsymmetric.ColorCap.first_third_12_to_3_actual_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hcount2 : 1 ≤ List.count 2 l)
+  (hstart : D.x 0 < D.y 0)
+  (hprior1 :
+    ∀ (p tail : List (Fin 3)), l = p ++ [0] ++ 2 :: tail → List.count 2 (p ++ [0]) = 0 → 1 ≤ List.count 1 (p ++ [0])) :
+  False
+P21.Nonsymmetric.ColorCap.first_third_13_to_2_certificate (D : BoxInput) (N R P W : ℤ) (hN : 1 ≤ N) (hR : 1 ≤ R)
+  (hNP : N + P ≤ D.y 0) (hRW : R + W ≤ D.y 2) (source : Point) (hsource1 : source 1 ≤ D.y 1 - 1)
+  (hP : P = D.b 0 - X13 D N R) (hW : W = -D.b 2 - Y13 D N R)
+  (hsource : source 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1) : False
+P21.Nonsymmetric.ColorCap.first_third_13_rank (D : BoxInput) (q R : ℕ) (N X Y P0 W : ℤ)
+  (SP : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hq : 1 ≤ q) (hR : R = q + 1)
+  (hstart : D.x 0 < D.y 0) (hX : X = ↑R * (D.y 0 + D.b 0) - N * D.x 0) (hY : Y = N * D.y 2 - ↑R * D.x 2)
+  (hP : P0 = D.b 0 - X) (hW : W = -D.b 2 - Y) (hP0 : 1 ≤ P0) (hW0 : 1 ≤ W) : N + P0 ≤ D.y 0 ∧ ↑R + W ≤ D.y 2
+P21.Nonsymmetric.ColorCap.first_third_13_to_2_actual_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hcount1 : 1 ≤ List.count 1 l)
+  (hstart : D.x 0 < D.y 0)
+  (hprior2 :
+    ∀ (p tail : List (Fin 3)), l = p ++ [0] ++ 1 :: tail → List.count 1 (p ++ [0]) = 0 → 1 ≤ List.count 2 (p ++ [0])) :
+  False
+P21.Nonsymmetric.ColorCap.first_nonzero_color_order (l : List (Fin 3)) (h1 : 1 ≤ List.count 1 l)
+  (h2 : 1 ≤ List.count 2 l) :
+  (∀ (p tail : List (Fin 3)), l = p ++ 2 :: tail → List.count 2 p = 0 → 1 ≤ List.count 1 p) ∨
+    ∀ (p tail : List (Fin 3)), l = p ++ 1 :: tail → List.count 1 p = 0 → 1 ≤ List.count 2 p
+P21.Nonsymmetric.ColorCap.first_third_color_actual_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hcount1 : 1 ≤ List.count 1 l)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0) : False
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\FullColorCapRegression.lean
+P21.Nonsymmetric.ColorCap.minimum_one_proved : P21.Nonsymmetric.ColorCap.MinimumOneStatement
+P21.Nonsymmetric.ColorCap.box_positive_exit_proved : P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement
+P21.Nonsymmetric.ColorCap.three_arms_impossible (g : P21.Generators) (s : g.Setting)
+  (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) (D : P21.Nonsymmetric.HerzogCriticalData g) (colorA : Bool)
+  (depth : P21.Nonsymmetric.ColorCap.Point) (hdepth : ∀ (i : Fin 3), 1 ≤ depth i)
+  (hcap : ∀ (i : Fin 3), depth i < if colorA = true then ↑(D.a i) else ↑(D.b i))
+  (harms : ∀ (i : Fin 3), (if colorA = true then D.fA else D.fB) - depth i * g.n i ∈ s.semigroup.PF) : False
+P21.Nonsymmetric.actual_three_A_excluded_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmA D.toHerzogCriticalData q i) : False
+P21.Nonsymmetric.actual_three_B_excluded_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (D : P21.Nonsymmetric.NonsymmetricHerzogData g) (hcof : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H)
+  (ha : ∀ (i : Fin 3), ∃ q ∈ s.semigroup.Q F, P21.Nonsymmetric.IsArmB D.toHerzogCriticalData q i) : False
+P21.Nonsymmetric.actual_labels_compatible_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F)
+  (L : P21.Nonsymmetric.ActualLabeling D.toHerzogCriticalData rows) : P21.Nonsymmetric.RowLabel.Compatible L.labels
+P21.Nonsymmetric.actual_labels_terminal_residual_free {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F)
+  (L : P21.Nonsymmetric.ActualLabeling D.toHerzogCriticalData rows) : P21.Nonsymmetric.RowLabel.Terminal L.labels
+P21.Nonsymmetric.selected_four_terminal {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (D : P21.Nonsymmetric.NonsymmetricHerzogData g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) :
+  P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_selected_four {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) :
+  ∃ D, P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, P21.Nonsymmetric.TerminalInputExists s F D.toHerzogCriticalData rows
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\PathShapeRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\PrefixRegression.lean
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E_slot_count {x A B v b c : ℤ} {q : ℕ} (P : SuccessfulPrefix x A B v b c q)
+  (hrange : 0 ≤ x - b - 1) : ↑q ≤ x - b - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U_slot_count {x A B v b c : ℤ} {q : ℕ} (P : SuccessfulPrefix x A B v b c q)
+  (hrange : 0 ≤ B - c - 1) : ↑q ≤ B - c - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.cover_by_next_residue {x A B v b c E U K : ℤ} {q H : ℕ}
+  (P : SuccessfulPrefix x A B v b c q) (hH : H = q + 1) (hE : E = K * x - ↑H * A) (hU : U = ↑H * v - (K - 1) * B)
+  (i : ℕ) : 1 ≤ i → i ≤ q → E < P.E i ∨ U < P.U i
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_le_zero {l : List (Fin 3)} (hp : ProperNonzeroPredecessors l)
+  (r : Fin 3) (hr : r ≠ 0) : List.count r l ≤ List.count 0 l
+P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_lt_zero_of_last_zero {l a : List (Fin 3)}
+  (hp : ProperNonzeroPredecessors l) (hlast : l = a ++ [0]) (r : Fin 3) (hr : r ≠ 0) : List.count r l < List.count 0 l
+P21.Nonsymmetric.ColorCap.CrossingWitness.at_last {l : List (Fin 3)} {r : Fin 3} {N : ℤ}
+  (hw : CrossingWitness l r (List.count r l) N) (hr : r ≠ 0) {a : List (Fin 3)} (hlast : l = a ++ [r]) :
+  N = ↑(List.count 0 l) + 1
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\ReciprocalRegression.lean
+P21.Nonsymmetric.ColorCap.continued_zero_shift_bound (D : BoxInput) {l p : List (Fin 3)} {endpoint : Point}
+  (ht : FiringTrace D.upper D.rows D.x l endpoint) (hnext : p ++ [0] <+: l) (V : ℤ)
+  (hstate0 : execute D.rows p D.x 0 = D.x 0 + V) : V ≤ D.y 0 - D.x 0 - 1
+P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_next_residue_rank {a B d x b E V : ℤ} {H Q : ℕ} (hH : 1 ≤ H)
+  (P : SuccessfulPrefix a B d x 0 b (H - 1)) (hE : E = ↑Q * a - ↑H * B) (hV : V = ↑H * x - (↑Q - 1) * d) (hE0 : 1 ≤ E)
+  (hEa : E ≤ a - 1) (hV0 : 1 ≤ V) (hVd : V ≤ d - b) : ↑H + E + V ≤ a + d - b
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\RotationRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\StatementRegression.lean
+P21.Nonsymmetric.actual_labels_terminal_residual_free {g : Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g)
+  (rows : FourDistinctActualQRows s F) (L : ActualLabeling D.toHerzogCriticalData rows) : RowLabel.Terminal L.labels
+P21.Nonsymmetric.selected_four_terminal {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g) (rows : FourDistinctActualQRows s F) :
+  TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_selected_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (rows : FourDistinctActualQRows s F) :
+  ∃ D, TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, TerminalInputExists s F D.toHerzogCriticalData rows
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+'P21.Nonsymmetric.ColorCap.box_positive_exit_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_labels_terminal_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_Q_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\TerminalCoordinatesRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\TracePrefixRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\TraceRegression.lean
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\TwoColor13Regression.lean
+P21.Nonsymmetric.ColorCap.terminal13_not_sinkB (D : BoxInput) (N R : ℤ) (hN : 0 < N)
+  (hB : 0 ≤ X13 D N R ∧ 0 ≤ Y13 D N R) : False
+P21.Nonsymmetric.ColorCap.terminal13_count_bounds (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0) :
+  ↑(List.count 0 l + 1) ≤ D.y 0 ∧ ↑(List.count 2 l + 1) ≤ D.x 0 - D.b 0 ∧ ↑(List.count 2 l + 1) ≤ D.y 2
+P21.Nonsymmetric.ColorCap.terminal13_sinkD_impossible (D : BoxInput) (N R : ℤ) (hN : 1 ≤ N) (hR : 1 ≤ R)
+  (hNy : N ≤ D.y 0) (hRy : R ≤ D.y 2) (u : Point) (hu0 : u 0 = D.y 0 + D.b 0 - X13 D N R)
+  (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1) (hu2 : u 2 = D.y 2 - Y13 D N R)
+  (hD : u 0 ≤ D.y 0 + D.b 0 ∧ u 1 ≤ D.y 1 + D.b 1 ∧ u 2 ≤ D.y 2 + D.b 2) : False
+P21.Nonsymmetric.ColorCap.terminal13_last_row2_of_prefix (D : BoxInput) (q : ℕ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hq : 1 ≤ q)
+  (hstart : D.x 0 < D.y 0 + D.b 0) (N : ℤ) (hN : N = P.N q) (u : Point) (hu0 : u 0 = P.E q) (hu2 : u 2 = D.x 2 + P.U q)
+  (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - ↑q * D.y 1) (hA : u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1) : False
+P21.Nonsymmetric.ColorCap.terminal13_sinkA_certificate (D : BoxInput) (N R : ℤ) (hN : 1 ≤ N) (hR : 1 ≤ R)
+  (hRy : R ≤ D.y 2) (u : Point) (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1)
+  (hA : u 0 ≤ D.y 0 ∧ u 1 ≤ D.y 1 + D.b 1) (hX : D.b 0 ≤ X13 D N R) (hcoef2 : 0 ≤ D.x 2 + D.y 2 + D.b 2 + Y13 D N R)
+  (hrank : N - R + -Y13 D N R + (D.y 0 + D.b 0 - D.x 0 - X13 D N R) ≤ D.x 2 - D.y 2 + (D.y 0 + D.b 0 - D.x 0) - D.b 0) :
+  False
+P21.Nonsymmetric.ColorCap.terminal13_reciprocal_rank (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0) (q R H N : ℕ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q)
+  (hactual : ∀ (h : ℕ), 1 ≤ h → h ≤ q → CrossingWitness l 2 h (P.N h)) (hR : R = q + 1) (hN : N = H + R) (hH : 1 ≤ H)
+  (hstart : D.x 0 < D.y 0) (hcount2 : List.count 2 l = R - 1) (hcount0 : List.count 0 l = N - 1)
+  (hX : D.b 0 ≤ X13 D ↑N ↑R) (hE0 : 1 ≤ -Y13 D ↑N ↑R) (hEa : -Y13 D ↑N ↑R ≤ D.x 2 - D.y 2 - 1)
+  (hV0 : 1 ≤ D.y 0 + D.b 0 - D.x 0 - X13 D ↑N ↑R) :
+  ↑H + -Y13 D ↑N ↑R + (D.y 0 + D.b 0 - D.x 0 - X13 D ↑N ↑R) ≤ D.x 2 - D.y 2 + (D.y 0 + D.b 0 - D.x 0) - D.b 0
+P21.Nonsymmetric.ColorCap.terminal13_sinkC_certificate (D : BoxInput) (N R : ℤ) (hN : 1 ≤ N) (hR : 1 ≤ R)
+  (hNy : N ≤ D.y 0) (u : Point) (hu1 : u 1 = D.x 1 - (N - 1) * (D.y 1 + D.b 1) - (R - 1) * D.y 1)
+  (hC : u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2) (hcoef0 : 0 ≤ D.x 0 + D.y 0 + X13 D N R) (hY : -D.b 2 ≤ Y13 D N R)
+  (hELR : 0 ≤ D.x 0 + X13 D N R + D.b 2 + Y13 D N R - R) : False
+P21.Nonsymmetric.ColorCap.terminal13_sinkC_ELR_bound (D : BoxInput) (q R : ℕ) (N : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0 + D.b 0) (D.y 2) (D.x 2) (D.b 0) 0 q) (hR : R = q + 1)
+  (hX : X13 D N ↑R = ↑R * (D.y 0 + D.b 0) - N * D.x 0) (hY : Y13 D N ↑R = N * D.y 2 - ↑R * D.x 2)
+  (hpred : D.b 0 + 1 ≤ D.x 0 + X13 D N ↑R) (hYlower : -D.b 2 ≤ Y13 D N ↑R) :
+  0 ≤ D.x 0 + X13 D N ↑R + D.b 2 + Y13 D N ↑R - ↑R
+P21.Nonsymmetric.ColorCap.two_color13_trace_sink_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hno1 : List.count 1 l = 0)
+  (hcount2 : 1 ≤ List.count 2 l) (hstart : D.x 0 < D.y 0) (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j) : False
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification\m3b2\TwoColorRegression.lean
+P21.Nonsymmetric.ColorCap.terminal12_not_sinkA (D : BoxInput) (N Q : ℤ) (hN : 0 < N)
+  (hA : 0 ≤ X12 D N Q ∧ -D.b 1 ≤ Y12 D N Q) : False
+P21.Nonsymmetric.ColorCap.terminal12_count_bounds (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0)
+  (hstart : D.x 0 < D.y 0) :
+  ↑(List.count 0 l + 1) ≤ D.y 0 ∧ ↑(List.count 1 l + 1) ≤ D.x 0 ∧ ↑(List.count 1 l + 1) ≤ D.y 1
+P21.Nonsymmetric.ColorCap.terminal12_sinkD_impossible (D : BoxInput) (N Q : ℤ) (hN : 1 ≤ N) (hQ : 1 ≤ Q)
+  (hNy : N ≤ D.y 0) (hQy : Q ≤ D.y 1) (u : Point) (hu : u = ![D.y 0 - X12 D N Q, D.y 1 - Y12 D N Q, u 2])
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2))
+  (hD : u 0 ≤ D.y 0 + D.b 0 ∧ u 1 ≤ D.y 1 + D.b 1 ∧ u 2 ≤ D.y 2 + D.b 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_last_row1_impossible (D : BoxInput) (q : ℕ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q) (hqX : ↑q < D.x 0)
+  (hqY : ↑q < D.y 1) (hstart : D.x 0 < D.y 0) (N : ℤ) (hN : N = P.N q) (u : Point) (hu0 : u 0 = P.E q)
+  (_hu1 : u 1 = D.x 1 + P.U q) (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - ↑q * (D.y 2 + D.b 2))
+  (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_last_row1_of_prefix (D : BoxInput) (q : ℕ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q) (hstart : D.x 0 < D.y 0)
+  (N : ℤ) (hN : N = P.N q) (u : Point) (hu0 : u 0 = P.E q) (hu1 : u 1 = D.x 1 + P.U q)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - ↑q * (D.y 2 + D.b 2)) (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkB_nonnegativeX_impossible (D : BoxInput) (N Q : ℤ) (hN : 1 ≤ N) (hQ : 1 ≤ Q)
+  (hQy : Q ≤ D.y 1) (u : Point) (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2))
+  (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) (hX : 0 ≤ X12 D N Q) (hYbox : 1 ≤ D.x 1 + Y12 D N Q)
+  (hrank : N - Q + -(Y12 D N Q + D.b 1) + (D.y 0 - D.x 0 - X12 D N Q) ≤ D.x 1 - (D.y 1 + D.b 1) + (D.y 0 - D.x 0)) :
+  False
+P21.Nonsymmetric.ColorCap.terminal12_sinkB_negativeX_certificate (D : BoxInput) (N Q : ℤ) (hN : 1 ≤ N) (hQ : 1 ≤ Q)
+  (hQy : Q ≤ D.y 1) (u : Point) (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2))
+  (hB : u 0 ≤ D.y 0 + D.b 0 ∧ u 2 ≤ D.y 2) (hcoef0 : 0 ≤ D.b 0 + X12 D N Q)
+  (hsecond : 0 ≤ D.x 1 - N + (Y12 D N Q + D.b 1)) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_certificate (D : BoxInput) (N Q : ℤ) (hN : 1 ≤ N) (hQ : 1 ≤ Q)
+  (hNy : N ≤ D.y 0) (u : Point) (hu1 : u 1 = D.y 1 - Y12 D N Q)
+  (hu2 : u 2 = D.x 2 - (N - 1) * D.y 2 - (Q - 1) * (D.y 2 + D.b 2)) (hC : u 1 ≤ D.y 1 ∧ u 2 ≤ D.y 2 + D.b 2)
+  (hcoef0 : 0 ≤ D.x 0 + D.y 0 + D.b 0 + X12 D N Q) (hELR : Q ≤ D.x 0 + X12 D N Q + Y12 D N Q) : False
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_bound (D : BoxInput) (q Q : ℕ) (N E U : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1)
+  (hE : E = N * D.x 0 - ↑Q * D.y 0) (hU : U = ↑Q * D.x 1 - (N - 1) * (D.y 1 + D.b 1)) (hE0 : 1 ≤ E)
+  (hEx : E ≤ D.x 0 - 1) (hU0 : 1 ≤ U) (hUy : U ≤ D.y 1 - 1) : ↑Q ≤ D.x 0 - E + (D.y 1 - U)
+P21.Nonsymmetric.ColorCap.terminal12_negativeD_predecessor_bound (D : BoxInput) (q Q : ℕ) (N E W : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hq : 1 ≤ q) (hQ : Q = q + 1)
+  (hstart : D.x 0 < D.y 0) (hE : E = N * D.x 0 - ↑Q * D.y 0) (hW : W = ↑Q * D.x 1 - N * (D.y 1 + D.b 1)) (hE0 : 1 ≤ E)
+  (hEx : E ≤ D.x 0 - 1) (hW0 : 1 ≤ W) : 0 ≤ D.x 1 - N - W
+P21.Nonsymmetric.ColorCap.terminal12_nonnegativeD_count_bound (D : BoxInput) {q : ℕ} (Q : ℕ) (N E : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : 1 ≤ Q) (hQy : ↑Q ≤ D.y 1)
+  (hE : E = N * D.x 0 - ↑Q * D.y 0) (hEx : E ≤ D.x 0 - 1) : N ≤ D.x 1
+P21.Nonsymmetric.ColorCap.terminal12_reciprocal_rank (D : BoxInput) (q Q H N : ℕ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1) (hN : N = H + Q)
+  (hH : 1 ≤ H) (hstart : D.x 0 < D.y 0) (hX : 0 ≤ X12 D ↑N ↑Q) (hE0 : 1 ≤ -(Y12 D ↑N ↑Q + D.b 1))
+  (hEa : -(Y12 D ↑N ↑Q + D.b 1) ≤ D.x 1 - (D.y 1 + D.b 1) - 1) (hV0 : 1 ≤ D.y 0 - D.x 0 - X12 D ↑N ↑Q) :
+  ↑H + -(Y12 D ↑N ↑Q + D.b 1) + (D.y 0 - D.x 0 - X12 D ↑N ↑Q) ≤ D.x 1 - (D.y 1 + D.b 1) + (D.y 0 - D.x 0)
+P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_extended (D : BoxInput) (q Q : ℕ) (N E U Y : ℤ)
+  (P : SuccessfulPrefix (D.x 0) (D.y 0) (D.y 1 + D.b 1) (D.x 1) 0 (D.b 1) q) (hQ : Q = q + 1)
+  (hE : E = N * D.x 0 - ↑Q * D.y 0) (hU : U = ↑Q * D.x 1 - (N - 1) * (D.y 1 + D.b 1)) (hUY : U = D.y 1 - Y) (hY : 0 ≤ Y)
+  (hE0 : 1 ≤ E) (hEx : E ≤ D.x 0 - 1) (hU0 : 1 ≤ U) : ↑Q ≤ D.x 0 - E + Y
+P21.Nonsymmetric.ColorCap.two_color12_trace_sink_impossible (D : BoxInput) {l : List (Fin 3)} {u : Point}
+  (ht : FiringTrace D.upper D.rows D.x l u) (hp : ProperNonzeroPredecessors l) (hno2 : List.count 2 l = 0)
+  (hcount1 : 1 ≤ List.count 1 l) (hstart : D.x 0 < D.y 0) (hsink : ¬∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j) : False
+
+EXIT_CODE=0
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 env lean verification/m3b2/StatementRegression.lean
+P21.Nonsymmetric.actual_labels_terminal_residual_free {g : Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g)
+  (rows : FourDistinctActualQRows s F) (L : ActualLabeling D.toHerzogCriticalData rows) : RowLabel.Terminal L.labels
+P21.Nonsymmetric.selected_four_terminal {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g) (rows : FourDistinctActualQRows s F) :
+  TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_selected_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (rows : FourDistinctActualQRows s F) :
+  ∃ D, TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, TerminalInputExists s F D.toHerzogCriticalData rows
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+'P21.Nonsymmetric.ColorCap.box_positive_exit_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_labels_terminal_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_Q_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EXIT_CODE=0

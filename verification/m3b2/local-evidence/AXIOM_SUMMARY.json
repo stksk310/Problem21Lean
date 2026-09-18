@@ -1,0 +1,505 @@
+{
+  "checked_declarations": 111,
+  "project_specific_axioms": 0,
+  "declarations": {
+    "P21.Nonsymmetric.ColorCap.FiringTrace.head_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.one_color_trace_sink_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.prefix": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_le_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.ProperNonzeroPredecessors.count_lt_zero_of_last_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.CrossingWitness": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.CrossingWitness.at_last": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.nth_occurrence_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.occurrence_source_ends_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.count_eq_zero_of_members": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_at_zero_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.shifted_prefix_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.prefix_continues_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.canonical_trace_sink_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.box_positive_exit_proved": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_nonzero_occurrence_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_row2_after_01_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_row1_after_02_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_12_to_3_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_13_to_2_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_12_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_12_to_3_actual_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_13_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_13_to_2_actual_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_nonzero_color_order": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.first_third_color_actual_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_inBox": [],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.nonzero_followed_by_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.properNonzeroPredecessors": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.continued_zero_shift_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.actual_shifted_before_crossing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.actual_shifted_terminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.reciprocal_residue_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_prefix_of_actuality": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.reciprocal_separator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.dual_next_residue_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.permutePoint": [
+      "Quot.sound"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rotate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.rotate_rows": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxInput.start_of_row0": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.permutePoint_fire": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.inBox_permute_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxPath.rotateGeneral": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.BoxPath.rotate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix": [],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E": [],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U": [],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.separator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinate_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.coordinateU_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.E_slot_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.U_slot_count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.cover_by_next_residue": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.last_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.SuccessfulPrefix.terminal_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12Point": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13Point": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_terminal12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_terminal13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12Point_coordinates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13Point_coordinates": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.execute": [],
+    "P21.Nonsymmetric.ColorCap.execute_append": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace": [],
+    "P21.Nonsymmetric.ColorCap.BoxPath.exists_trace": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.execute_eq": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.toBoxPath": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.prefix_trace": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.prefix_path": [
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.FiringTrace.endpoint_eq_sub_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_successfulPrefix12": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_successfulPrefix12_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_successfulPrefix13": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.trace_successfulPrefix13_actual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.X12": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.Y12": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_count_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_not_sinkA": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkD_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_last_row1_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_last_row1_of_prefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkB_nonnegativeX_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkB_negativeX_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkC_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_sinkC_ELR_extended": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_negativeD_predecessor_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_nonnegativeD_count_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal12_reciprocal_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.two_color12_trace_sink_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.X13": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.Y13": [
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_count_bounds": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_not_sinkB": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_sinkD_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_last_row2_of_prefix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_sinkA_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_sinkC_certificate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_sinkC_ELR_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.terminal13_reciprocal_rank": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.two_color13_trace_sink_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.ColorCap.three_arms_impossible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_A_excluded_residual_free": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_three_B_excluded_residual_free": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labels_compatible_residual_free": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.actual_labels_terminal_residual_free": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.selected_four_terminal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_selected_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "P21.Nonsymmetric.nonsymmetric_Q_ge_four": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

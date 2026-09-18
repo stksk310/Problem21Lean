@@ -1,0 +1,334 @@
+$ pwsh -NoProfile -File C:\LeanProjects\Problem21Lean\m3b2-dpe-box-positive-exit\verification\lake.ps1 build P21.Nonsymmetric.ColorCap.DPE.Canonical P21.Nonsymmetric.ColorCap.DPE.ChronologicalPrefix P21.Nonsymmetric.ColorCap.DPE.Exhaustion P21.Nonsymmetric.ColorCap.DPE.FirstThirdColor P21.Nonsymmetric.ColorCap.DPE.PathShape P21.Nonsymmetric.ColorCap.DPE.ReciprocalRank P21.Nonsymmetric.ColorCap.DPE.Rotation P21.Nonsymmetric.ColorCap.DPE.SuccessfulPrefix P21.Nonsymmetric.ColorCap.DPE.TerminalCoordinates P21.Nonsymmetric.ColorCap.DPE.Trace P21.Nonsymmetric.ColorCap.DPE.TraceSuccessfulPrefix P21.Nonsymmetric.ColorCap.DPE.TwoColor12 P21.Nonsymmetric.ColorCap.DPE.TwoColor13 P21.Nonsymmetric.ColorCap.FullColorCap
+✔ [1686/1756] Built P21.Nonsymmetric.ColorCap.ActualMinimum (13s)
+✔ [1687/1756] Built P21.Symmetric.Classification.CriticalRelations (13s)
+✔ [1688/1756] Built P21.Symmetric.StableCore (14s)
+✔ [1689/1756] Built P21.Symmetric.TwoGenerator (14s)
+✔ [1690/1756] Built P21.Nonsymmetric.ColorCap.BoxPaths (10s)
+✔ [1691/1756] Built P21.Symmetric.GlueNormalForm (11s)
+✔ [1692/1756] Built P21.External.SymmetricThreeGenerator (10s)
+✔ [1693/1756] Built P21.Symmetric.Classification.GcdDecomposition (10s)
+✔ [1694/1756] Built P21.Nonsymmetric.ColorCap.PrefixArithmetic (12s)
+✔ [1695/1756] Built P21.Nonsymmetric.ColorCap.RelativeLattice (12s)
+✔ [1696/1756] Built P21.Nonsymmetric.ColorCap.BoxInput (12s)
+⚠ [1697/1756] Built P21.Nonsymmetric.CriticalBox (27s)
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:71:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:75:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: P21/Nonsymmetric/CriticalBox.lean:76:77: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [1698/1756] Built P21.Nonsymmetric.HerzogData (11s)
+✔ [1699/1756] Built P21.Nonsymmetric.Rows (12s)
+✔ [1700/1756] Built P21.Nonsymmetric.White.ClassData (15s)
+✔ [1701/1756] Built P21.Nonsymmetric.ColorCap.DPE.Trace (17s)
+⚠ [1702/1756] Built P21.Nonsymmetric.White.CyclicClasses (17s)
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:49:48: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:89:22: This simp argument is unused:
+  Int.mul_emod
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.sub_emod, Int.emod_eq_of_lt hj hjk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:162:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:175:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:176:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+warning: P21/Nonsymmetric/White/CyclicClasses.lean:177:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+✔ [1703/1756] Built P21.Nonsymmetric.White.WidthOne (17s)
+✔ [1704/1756] Built P21.Nonsymmetric.Singletons (11s)
+✔ [1705/1756] Built P21.Nonsymmetric.HerzogCoordinates (13s)
+✔ [1706/1756] Built P21.Nonsymmetric.ColorCap.DPEOneColor (24s)
+✔ [1707/1756] Built P21.Nonsymmetric.Kernel (14s)
+✔ [1708/1756] Built P21.Nonsymmetric.ColorCap.PositiveMinors (25s)
+✔ [1709/1756] Built P21.Nonsymmetric.ColorCap.WhiteCertificates (25s)
+✔ [1710/1756] Built P21.Nonsymmetric.HerzogClassification (19s)
+✔ [1711/1756] Built P21.Nonsymmetric.White.WidthOneBeatty (13s)
+✔ [1712/1756] Built P21.Nonsymmetric.ComplementGeometry (10s)
+ℹ [1713/1756] Built P21.Nonsymmetric.Arms (10s)
+info: P21/Nonsymmetric/Arms.lean:46:61: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:155:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+info: P21/Nonsymmetric/Arms.lean:183:24: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+✔ [1714/1756] Built P21.Nonsymmetric.Herzog.PseudoFrobenius (10s)
+✔ [1715/1756] Built P21.Nonsymmetric.White.ClassReconstruction (19s)
+✔ [1716/1756] Built P21.Nonsymmetric.FourRowCombinatorics (19s)
+✔ [1717/1756] Built P21.Nonsymmetric.ColorCap.CompanionBounds (18s)
+⚠ [1718/1756] Built P21.Nonsymmetric.MatchedPair (24s)
+warning: P21/Nonsymmetric/MatchedPair.lean:65:26: Variable name `hz'` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hz'
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [1719/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.ClassArithmetic (9.1s)
+✔ [1720/1756] Built P21.Nonsymmetric.RowAtlas (12s)
+✔ [1721/1756] Built P21.Nonsymmetric.ColorCap.ThreeArms (12s)
+✔ [1722/1756] Built P21.Nonsymmetric.ColorCap.Residuals (12s)
+✔ [1723/1756] Built P21.Nonsymmetric.PrimitiveGenerators (26s)
+✔ [1724/1756] Built P21.Nonsymmetric.SameColor (26s)
+✔ [1725/1756] Built P21.Nonsymmetric.Corners (15s)
+✔ [1726/1756] Built P21.Nonsymmetric.ActualLabels (20s)
+⚠ [1727/1756] Built P21.Nonsymmetric.Relabel (20s)
+warning: P21/Nonsymmetric/Relabel.lean:52:0: Definition `relabelSetting` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+warning: P21/Nonsymmetric/Relabel.lean:270:4: Unused tactic linter: `change q.q ∈ (relabelSetting s e).semigroup.Q F` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [1728/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorB (27s)
+✔ [1729/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.Setup (14s)
+✔ [1730/1756] Built P21.Nonsymmetric.White.RelativeIndex (14s)
+✔ [1731/1756] Built P21.Nonsymmetric.ColorCap.DPE.Rotation (11s)
+✔ [1732/1756] Built P21.Nonsymmetric.Saturation (63s)
+⚠ [1733/1756] Built P21.Nonsymmetric.ReturnLevels (40s)
+warning: P21/Nonsymmetric/ReturnLevels.lean:15:10: This simp argument is unused:
+  nsmul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Int.toNat_of_nonneg hl, add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ReturnLevels.lean:14:40: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [1734/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.SocleSimplex (9.6s)
+✔ [1735/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.ColorA (41s)
+⚠ [1736/1756] Built P21.Nonsymmetric.ColorCap.DPE.SuccessfulPrefix (8.5s)
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:41:15: Variable name `hi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:41:42: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:52:15: Variable name `hi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:52:42: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:195:5: Variable name `hE0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean:196:5: Variable name `hU0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hU0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [1737/1756] Built P21.Nonsymmetric.MixedColor (30s)
+✔ [1738/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicInput (10s)
+⚠ [1739/1756] Built P21.Nonsymmetric.ColorCap.DPE.ChronologicalPrefix (9.4s)
+warning: P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean:155:20: Variable name `hK` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hK
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean:184:5: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [1740/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.RotationClosure (10s)
+✔ [1741/1756] Built P21.Nonsymmetric.ActualMixed (8.9s)
+✔ [1742/1756] Built P21.Nonsymmetric.Extraction (12s)
+✔ [1743/1756] Built P21.Nonsymmetric.ColorCap.MinimumOne.CyclicReduction (8.6s)
+⚠ [1744/1756] Built P21.Nonsymmetric.ColorCap.DPE.PathShape (10s)
+warning: P21/Nonsymmetric/ColorCap/DPE/PathShape.lean:21:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: P21/Nonsymmetric/ColorCap/DPE/PathShape.lean:24:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: P21/Nonsymmetric/ColorCap/DPE/PathShape.lean:27:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [1745/1756] Built P21.Nonsymmetric.ActualClassification (9.2s)
+✔ [1746/1756] Built P21.Nonsymmetric.ColorCap.MinimumOneProof (8.5s)
+✔ [1747/1756] Built P21.Nonsymmetric.ColorCap.DPE.TraceSuccessfulPrefix (9.9s)
+✔ [1748/1756] Built P21.Nonsymmetric.SelectedExtraction (8.8s)
+✔ [1749/1756] Built P21.Nonsymmetric.ColorCap.DPE.Canonical (11s)
+⚠ [1750/1756] Built P21.Nonsymmetric.ColorCap.DPE.ReciprocalRank (27s)
+warning: P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean:65:29: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lower, hprevR]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean:110:34: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lower, hprevR, hqm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean:228:19: Unused tactic linter: `change B * (A - x) < (v - B) * x` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean:301:5: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [1751/1756] Built P21.Nonsymmetric.ColorCap.DPE.TerminalCoordinates (11s)
+warning: P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean:24:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean:33:4: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean:45:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean:57:41: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [1752/1756] Built P21.Nonsymmetric.ColorCap.DPE.TwoColor12 (22s)
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:13:5: Variable name `hstart` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hstart
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:31:4: Unused tactic linter: `push_cast at hu0` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:550:22: `List.getLast?_eq_getLast` has been deprecated: Use `List.getLast?_eq_some_getLast` instead
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:658:10: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:664:10: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:675:10: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean:681:10: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [1753/1756] Built P21.Nonsymmetric.ColorCap.DPE.TwoColor13 (99s)
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:90:25: Variable name `hu2` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hu2
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:279:17: This simp argument is unused:
+  Int.toNat_of_nonneg hdE
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [s, E, U, Int.toNat_of_nonneg hdU, hb0cast] at hcZ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:279:42: This simp argument is unused:
+  Int.toNat_of_nonneg hdU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [s, E, U, Int.toNat_of_nonneg hdE, hb0cast] at hcZ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:280:4: This simp argument is unused:
+  hb0cast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [s, E, U, Int.toNat_of_nonneg hdE, Int.toNat_of_nonneg hdU] at hcZ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:288:5: Variable name `hp` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hp
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:294:5: Variable name `hstart` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hstart
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:452:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:511:22: `List.getLast?_eq_getLast` has been deprecated: Use `List.getLast?_eq_some_getLast` instead
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:569:28: This simp argument is unused:
+  R
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [X13, N, Nn, Rn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:569:58: This simp argument is unused:
+  R
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Y13, N, Nn, Rn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:587:8: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean:593:8: Unused tactic linter: `push_cast` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [1754/1756] Built P21.Nonsymmetric.ColorCap.DPE.FirstThirdColor (23s)
+warning: P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean:223:15: This simp argument is unused:
+  Int.toNat_of_nonneg hdU
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [s] at hcUZ
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [1755/1756] Built P21.Nonsymmetric.ColorCap.DPE.Exhaustion (5.7s)
+✔ [1756/1756] Built P21.Nonsymmetric.ColorCap.FullColorCap (5.7s)
+Build completed successfully (1756 jobs).
+
+EXIT_CODE=0

@@ -1,0 +1,14 @@
+P21.Nonsymmetric.ColorCap.DPE.Canonical
+P21.Nonsymmetric.ColorCap.DPE.ChronologicalPrefix
+P21.Nonsymmetric.ColorCap.DPE.Exhaustion
+P21.Nonsymmetric.ColorCap.DPE.FirstThirdColor
+P21.Nonsymmetric.ColorCap.DPE.PathShape
+P21.Nonsymmetric.ColorCap.DPE.ReciprocalRank
+P21.Nonsymmetric.ColorCap.DPE.Rotation
+P21.Nonsymmetric.ColorCap.DPE.SuccessfulPrefix
+P21.Nonsymmetric.ColorCap.DPE.TerminalCoordinates
+P21.Nonsymmetric.ColorCap.DPE.Trace
+P21.Nonsymmetric.ColorCap.DPE.TraceSuccessfulPrefix
+P21.Nonsymmetric.ColorCap.DPE.TwoColor12
+P21.Nonsymmetric.ColorCap.DPE.TwoColor13
+P21.Nonsymmetric.ColorCap.FullColorCap

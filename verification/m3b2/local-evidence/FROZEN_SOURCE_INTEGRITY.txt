@@ -1,0 +1,19 @@
+Base: 9c9a1b6f76f78a2927b12bf8a0663dfdc29ea7a1
+Protected mathematical Lean source: 87
+FROZEN SOURCE INTEGRITY: 87/87
+SOURCE_CHANGED: NO
+New M3B2 mathematical modules:
+P21/Nonsymmetric/ColorCap/DPE/Canonical.lean
+P21/Nonsymmetric/ColorCap/DPE/ChronologicalPrefix.lean
+P21/Nonsymmetric/ColorCap/DPE/Exhaustion.lean
+P21/Nonsymmetric/ColorCap/DPE/FirstThirdColor.lean
+P21/Nonsymmetric/ColorCap/DPE/PathShape.lean
+P21/Nonsymmetric/ColorCap/DPE/ReciprocalRank.lean
+P21/Nonsymmetric/ColorCap/DPE/Rotation.lean
+P21/Nonsymmetric/ColorCap/DPE/SuccessfulPrefix.lean
+P21/Nonsymmetric/ColorCap/DPE/TerminalCoordinates.lean
+P21/Nonsymmetric/ColorCap/DPE/Trace.lean
+P21/Nonsymmetric/ColorCap/DPE/TraceSuccessfulPrefix.lean
+P21/Nonsymmetric/ColorCap/DPE/TwoColor12.lean
+P21/Nonsymmetric/ColorCap/DPE/TwoColor13.lean
+P21/Nonsymmetric/ColorCap/FullColorCap.lean
