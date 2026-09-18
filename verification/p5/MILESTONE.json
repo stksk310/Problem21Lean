@@ -1,0 +1,13 @@
+{
+  "base": "fd4ea0c7cbc57df6e935790a1387242bcf9e0087",
+  "required_theorems": [
+    "P21.Nonsymmetric.PathInput.PFreeI.F0_pos",
+    "P21.Nonsymmetric.PathInput.PFreeI.fix_j",
+    "P21.Nonsymmetric.PathInput.PFreeI.pin",
+    "P21.Nonsymmetric.PathInput.PFreeI.impossible",
+    "P21.Nonsymmetric.PathInput.impossible",
+    "P21.Nonsymmetric.terminal_input_after_path",
+    "P21.Nonsymmetric.nonsymmetric_selected_four_after_path",
+    "P21.Nonsymmetric.nonsymmetric_Q_ge_four_after_path"
+  ]
+}
