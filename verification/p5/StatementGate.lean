@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.PFree
+import P21.Nonsymmetric.Path.Split
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -51,3 +51,6 @@ import P21.Nonsymmetric.Path.PFree
 #check P21.Nonsymmetric.path_seam_rigidity
 #check P21.Nonsymmetric.PathInput.PFreeI
 #check P21.Nonsymmetric.PathInput.pfree_of_middle_lt
+#check P21.Nonsymmetric.PathInput.NoPairNormalization.reverse
+#check P21.Nonsymmetric.PathInput.NoPairNormalization.middle_ne
+#check P21.Nonsymmetric.PathInput.pair_or_pfree_or_dual
