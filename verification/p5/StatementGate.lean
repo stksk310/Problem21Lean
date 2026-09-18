@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Pair
+import P21.Nonsymmetric.Path.Normalization
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -42,3 +42,5 @@ import P21.Nonsymmetric.Path.Pair
 #check P21.Nonsymmetric.PathInput.pair_of_B_large
 #check P21.Nonsymmetric.PathInput.NoPair.A_k_lt
 #check P21.Nonsymmetric.PathInput.NoPair.B_i_lt
+#check P21.Nonsymmetric.PathInput.NoPairNormalization
+#check P21.Nonsymmetric.PathInput.no_pair_normalization

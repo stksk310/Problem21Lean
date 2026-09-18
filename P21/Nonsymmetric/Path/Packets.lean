@@ -46,6 +46,19 @@ theorem replacePacketCopies_self_coeff (D : HerzogCriticalData g) {x : ℤ}
   rw [Int.toNat_sub_of_le (by exact_mod_cast hcontained)]
   rw [Nat.cast_sub hcontained]
 
+theorem replacePacketCopies_off_coeff (D : HerzogCriticalData g) {x : ℤ}
+    (a : g.ActualFactorization3 x) (i j : Fin 3) (k : ℕ)
+    (hcontained : k * D.rho i ≤ a.coeff i) (hji : j ≠ i) :
+    (replacePacketCopies D a i k hcontained).coeff j =
+      a.coeff j + k * D.relationCoeff i j := by
+  simp only [replacePacketCopies, replaceWithinActualFactorization,
+    packetSource, packetTarget]
+  simp only [if_neg hji, Nat.cast_zero, sub_zero]
+  apply Nat.cast_injective (R := ℤ)
+  rw [Int.toNat_of_nonneg (by positivity)]
+  push_cast
+  rfl
+
 /-- Normalize one coordinate by replacing the maximum number of whole
 critical packets. -/
 def reduceCriticalCoordinate (D : HerzogCriticalData g) {x : ℤ}
