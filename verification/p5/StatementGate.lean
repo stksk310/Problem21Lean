@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.RootWalls
+import P21.Nonsymmetric.Path.RootNormalization
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -64,3 +64,7 @@ import P21.Nonsymmetric.Path.RootWalls
 #check P21.Nonsymmetric.PathInput.WeakRoot.qA_identity
 #check P21.Nonsymmetric.PathInput.WeakRoot.F_identity
 #check P21.Nonsymmetric.PathInput.WeakRoot.walls
+#check P21.Nonsymmetric.PathInput.NormalizedRoot
+#check P21.Nonsymmetric.PathInput.WeakRoot.step
+#check P21.Nonsymmetric.PathInput.WeakRoot.step_measure
+#check P21.Nonsymmetric.PathInput.WeakRoot.normalize
