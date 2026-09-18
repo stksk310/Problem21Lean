@@ -13,6 +13,21 @@ then add only a new wrapper reducing the same selected terminal input to
 `TypeIIInput ∨ ChainInput`. Section 6 TYPE II exclusion is the next frontier
 after P5 and must not begin in this milestone.
 
+Current implementation checkpoint: `22e90a3d0986cbed54540392c988447182404de1`.
+Completed new modules are `Path/Setup`, `Path/Returns`, `Path/Dual`,
+`Path/Central`, `Path/Packets`, and `Path/Pair`.  They establish the P5.0
+coordinates, four actual endpoint returns, the full 0↔2 PATH transport, the
+two actual central C2 returns, same-factorization packet normalization, PAIR
+construction, and the universal no-PAIR bounds `k < α` and `i < β`.
+
+Resume at P5.1 by normalizing `CentralReturns.atA` first in coordinate 1 and
+then, under `NoPair`, proving coordinate 0 is already below `rho 0`; normalize
+`atB` first in coordinate 1 and prove coordinate 2 is below `rho 2`.  Package
+the six bounds in one `NoPairNormalization` structure and compare the two
+exact equations in the `H0 < J0`, `H0 = J0`, and `H0 > J0` cases.  Use
+`PathInput.reverse` for the last case.  Do not reconstruct endpoint returns:
+reuse the four `ActualReturn` witnesses already proved.
+
 ---
 
 ## Previous M3B2 restart record (historical)
