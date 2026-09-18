@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Comparison
+import P21.Nonsymmetric.Path.Seam
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -48,3 +48,4 @@ import P21.Nonsymmetric.Path.Comparison
 #check P21.Nonsymmetric.PathInput.NoPairNormalization.Bc
 #check P21.Nonsymmetric.PathInput.NoPairNormalization.central_relation
 #check P21.Nonsymmetric.PathInput.NoPairNormalization.middle_trichotomy
+#check P21.Nonsymmetric.path_seam_rigidity
