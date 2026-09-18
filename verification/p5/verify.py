@@ -88,6 +88,11 @@ def regressions():
       "M3B1_ORIGINAL_SUITE.txt":["verification/m3b1/StatementRegression.lean"],
       "M3B2_ORIGINAL_SUITE.txt":[str(p.relative_to(ROOT)).replace('\\','/') for p in sorted((ROOT/'verification/m3b2').glob('*Regression.lean'))]
     }
+    imports=[]
+    for files in groups.values():
+        for f in files:
+            imports += re.findall(r"^import\s+([\w.]+)", (ROOT/f).read_text(encoding="utf-8-sig"), re.M)
+    run(lake()+["build",*sorted(set(imports))],"OLD_SUITE_BUILD_LOG.txt")
     for log,files in groups.items():
         for i,f in enumerate(files): run(lake()+["env","lean",f],log,append=i>0)
 
