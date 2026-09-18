@@ -1,4 +1,18 @@
-# Post-C7 restart point
+# Post-C9 restart point
+
+Branch: `c9-chain-two-packets`. Frozen base:
+`7769545a357c0c4d24520ec7a9fc8994f3f664e7`.
+
+C8 is frozen and C9 exposes `P21.Nonsymmetric.ChainCore.c9_handoff`, producing
+a first-fit-free `EuclideanSeed` with two genuine packets, positive matrix
+entries, determinant one, `L>M`, positive packet determinant, and exact rho
+identities. CHAIN remains open. The only active frontier is C10 Section 10:
+Euclidean descent, source containment, and CHAIN closure. Do not reconstruct
+C8/C9 or modify frozen mathematical source.
+
+---
+
+# Post-C7 restart point (historical)
 
 Branch: `c7-chain-core-root`. Immutable mathematical base:
 `6a1e395736e442bcda33c0da282220c98a444c76`.

@@ -1,0 +1,41 @@
+name: P21 Lean C9 Audit
+on:
+  push:
+    branches: [c9-chain-two-packets]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with: {fetch-depth: 0, persist-credentials: false}
+      - name: Install Lean
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(tr -d '\r\n' < lean-toolchain)"
+      - name: Install frozen verifier dependency
+        run: python3 -m pip install --disable-pip-version-check sympy==1.14.0
+      - name: Dependency cache
+        run: lake exe cache get || true
+      - name: Verify candidate digest
+        run: sha256sum --check ci/C9_CANDIDATE_SHA256.txt
+      - name: Fresh C9, certificate, and frozen regressions
+        run: python3 verification/c9/verify.py
+      - name: Verify evidence manifest
+        run: python3 verification/c9/verify_evidence.py audit-evidence/c9
+      - name: Upload TRUE AUDIT evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P21_C9_TRUE_AUDIT_EVIDENCE
+          path: audit-evidence/c9/
+          if-no-files-found: error
+          retention-days: 90
