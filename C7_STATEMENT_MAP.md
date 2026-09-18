@@ -10,8 +10,8 @@
 | oriented CORE | `ChainCore`, `ChainInput.to_oriented_core` |
 | actual returns | `ChainCore.Returns`, `returns`, `Returns.levels_pos` |
 | FI/FJ and root caps | `FI_A`, `FI_B`, `FJ`, `Caps`, `caps` |
-| slopes | `slope_j`, `slope_k`, `slopes` |
-| intrinsic candidates | `Euclidean`, `completed_F`, `two_candidate`, `rho_gap_nonneg` |
+| slopes | `ChainCore.Slopes`, `ChainCore.slopes` |
+| intrinsic candidates | `ChainCore.Euclidean`, `ChainCore.completed_F`, `ChainCore.Successful`, `ChainCore.successful_ge_q0`, `ChainCore.rho_gap_nonneg`, `ChainCore.second_coordinates`, `ChainCore.second_deficient` |
 | orientation / COMPACT | `orientIntrinsic`, `compact_data`, `compact_actual` |
 | return levels | `I_levels`, `Lj_level`, `Lj_rigidity`, `Lk_strict_level`, `sum_notch` |
 | SHIFT-NEW | `shift_new`, `shift_new_coefficients` |
