@@ -131,10 +131,10 @@
 - Update: `NEXT_RESTART.md`
 - Create: `verification/c9/verify.py`, generated gates/reports, and `.github/workflows/c9-audit.yml`
 
-- [ ] Reconstruct C8 documentation from frozen declarations without changing C8 mathematics.
-- [ ] Document exact C9 statements, sources, proof route, dependency DAG, and open C10 frontier.
-- [ ] Implement fresh-source, proof-debt, axiom, dependency, circularity, frozen-integrity, certificate, and full regression checks.
-- [ ] Run fresh root/C9 builds and M1/M2A/M2B/M3A/M3B1/M3B2/P5/T6/C7/C8 regressions; commit.
+- [x] Reconstruct C8 documentation from frozen declarations without changing C8 mathematics.
+- [x] Document exact C9 statements, sources, proof route, dependency DAG, and open C10 frontier.
+- [x] Implement fresh-source, proof-debt, axiom, dependency, circularity, frozen-integrity, certificate, and full regression checks.
+- [x] Run fresh root/C9 builds and M1/M2A/M2B/M3A/M3B1/M3B2/P5/T6/C7/C8 regressions; commit.
 
 ### Task 10: Candidate, GitHub CI, and evidence artifact
 
