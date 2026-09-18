@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.PairExclusion
+import P21.Nonsymmetric.Path.PFreeCoordinates
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -72,3 +72,6 @@ import P21.Nonsymmetric.Path.PairExclusion
 #check P21.Nonsymmetric.PathInput.NormalizedRoot.F_absorption
 #check P21.Nonsymmetric.PathInput.WeakRoot.impossible
 #check P21.Nonsymmetric.PathInput.Pair.impossible
+#check P21.Nonsymmetric.PathInput.PFreeI.Mplus
+#check P21.Nonsymmetric.PathInput.PFreeI.Mminus
+#check P21.Nonsymmetric.PathInput.PFreeI.C0_add_F0
