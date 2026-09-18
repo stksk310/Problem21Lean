@@ -14,5 +14,5 @@ OUT.parent.mkdir(parents=True,exist_ok=True)
 with zipfile.ZipFile(OUT,"w",zipfile.ZIP_DEFLATED,compresslevel=9) as z:
   for n in files:z.write(ROOT/n,n)
   z.writestr("P5_CANDIDATE_SOURCE_SHA256.json",json.dumps(manifest,indent=2)+"\n")
-digest=sha(OUT.read_bytes());RECEIPT.write_text(f"{digest}  {NAME}\n",encoding="utf-8")
+digest=sha(OUT.read_bytes());RECEIPT.write_text(f"{digest}  ci/candidate/{NAME}\n",encoding="utf-8")
 print(OUT);print(digest)
