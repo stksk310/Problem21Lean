@@ -35,9 +35,12 @@ def git(*args): return subprocess.check_output(["git", *args], cwd=ROOT)
 
 def init():
     EVIDENCE.mkdir(parents=True, exist_ok=True)
-    for name in REQUIRED:
-        if not (EVIDENCE / name).exists(): V.write(name, "NOT RUN\n")
+    # RESULTS.json is shared mutable state for every audit stage, so it must be
+    # valid JSON even on a completely clean runner.
     if not (EVIDENCE / "RESULTS.json").exists(): V.write("RESULTS.json", "{}\n")
+    for name in REQUIRED:
+        if name == "RESULTS.json": continue
+        if not (EVIDENCE / name).exists(): V.write(name, "NOT RUN\n")
     head = git("rev-parse", "HEAD").decode().strip()
     if os.environ.get("GITHUB_SHA", head) != head: raise ValueError("Event/HEAD mismatch")
     V.write("COMMIT_SHA.txt", head + "\n")
