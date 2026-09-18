@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Packets
+import P21.Nonsymmetric.Path.Pair
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -36,3 +36,9 @@ import P21.Nonsymmetric.Path.Packets
 #check P21.Nonsymmetric.replacePacketCopies
 #check P21.Nonsymmetric.reduceCriticalCoordinate
 #check P21.Nonsymmetric.reduceCriticalCoordinate_lt
+#check P21.Nonsymmetric.PathInput.Pair
+#check P21.Nonsymmetric.PathInput.NoPair
+#check P21.Nonsymmetric.PathInput.pair_of_A_large
+#check P21.Nonsymmetric.PathInput.pair_of_B_large
+#check P21.Nonsymmetric.PathInput.NoPair.A_k_lt
+#check P21.Nonsymmetric.PathInput.NoPair.B_i_lt
