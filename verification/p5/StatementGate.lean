@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Returns
+import P21.Nonsymmetric.Path.Dual
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -22,3 +22,10 @@ import P21.Nonsymmetric.Path.Returns
 #check P21.Nonsymmetric.PathInput.qL_n2_return
 #check P21.Nonsymmetric.PathInput.qR_n0_return
 #check P21.Nonsymmetric.PathInput.qR_n1_return
+
+-- P5.2 full PATH left-right transport (0 <-> 2, 1 fixed).
+#check P21.Nonsymmetric.pathReversePerm
+#check P21.Nonsymmetric.pathReverseHerzog
+#check P21.Nonsymmetric.pathReverseHerzog_fA
+#check P21.Nonsymmetric.pathReverseHerzog_fB
+#check P21.Nonsymmetric.PathInput.reverse
