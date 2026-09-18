@@ -78,10 +78,10 @@
 - Create: `P21/Nonsymmetric/Chain/C9/PacketDeterminant.lean`
 - Test: `verification/c9/LinearGate.lean`
 
-- [ ] Derive the exact `k,Q,upsilon,G,E,b,c,B,a` parameterization and all positivity/range fields.
-- [ ] Prove D-LINEAR and INTRINSIC-LINEAR as genuine nonnegative packet equalities with actual provenance.
-- [ ] Prove DSCR directly from strict multiplicity and its exact decomposition.
-- [ ] Build and commit.
+- [x] Derive the exact `k,Q,upsilon,G,E,b,c,B,a` parameterization and all positivity/range fields.
+- [x] Prove D-LINEAR and INTRINSIC-LINEAR as genuine nonnegative packet equalities with actual provenance.
+- [x] Prove DSCR directly from strict multiplicity and its exact decomposition.
+- [x] Build and commit.
 
 ### Task 6: Lean-kernel 715-term certificate and I-FIT
 
