@@ -91,10 +91,10 @@
 - Create: `P21/Nonsymmetric/Chain/C9/IFit.lean`
 - Test: `verification/c9/CertificateGate.lean`
 
-- [ ] Commit deterministic proof data generated from the exact frozen table.
-- [ ] Prove in Lean the exact 715-term polynomial identity and positivity from shifted nonnegative variables.
-- [ ] Prove derivative monotonicity and the exact I-FIT inequality; keep the threshold as an evaluation point only.
-- [ ] Regenerate, byte-compare, build, and commit.
+- [x] Commit deterministic proof data generated from the exact frozen table.
+- [x] Prove in Lean the exact 715-term polynomial identity and positivity from shifted nonnegative variables.
+- [x] Prove derivative monotonicity and the exact I-FIT inequality; keep the threshold as an evaluation point only.
+- [x] Regenerate, byte-compare, build, and commit.
 
 ### Task 7: J-shortage, complementary packet, and determinant-one embedding
 
@@ -104,10 +104,10 @@
 - Create: `P21/Nonsymmetric/Chain/C9/MatrixEmbedding.lean`
 - Test: `verification/c9/PacketGate.lean`
 
-- [ ] Perform `f+1` replacements inside the exact actual upper element and exclude `theta ≥ upsilon+1`.
-- [ ] Produce the zero-j actual representation for `1≤theta≤upsilon`.
-- [ ] Prove COMPLEMENTARY as a genuine packet and the positive-entry determinant-one matrix, `L>M`, exact row identities, and positive packet determinant.
-- [ ] Build and commit.
+- [x] Perform `f+1` replacements inside the exact actual upper element and exclude `theta ≥ upsilon+1`.
+- [x] Produce the zero-j actual representation for `1≤theta≤upsilon`.
+- [x] Prove COMPLEMENTARY as a genuine packet and the positive-entry determinant-one matrix, `L>M`, exact row identities, and positive packet determinant.
+- [x] Build and commit.
 
 ### Task 8: Abstract Euclidean seed and full C9 handoff
 
@@ -118,10 +118,10 @@
 - Test: `verification/c9/StatementGate.lean`
 - Test: `verification/c9/Regression.lean`
 
-- [ ] Define `EuclideanSeed` using only exact Section 10 abstract inputs, excluding FirstFit, RegionD, zhat/N/I/J/q0/ROOT/PF-row baggage.
-- [ ] Construct `RegionD.toEuclideanSeed` from the completed linear branch.
-- [ ] Combine frozen `c8_handoff`, `RegionU.impossible`, and Region D conversion into `ChainCore.c9_handoff`.
-- [ ] Add structural regression checks for all requested scope and packet invariants; build and commit.
+- [x] Define `EuclideanSeed` using only exact Section 10 abstract inputs, excluding FirstFit, RegionD, zhat/N/I/J/q0/ROOT/PF-row baggage.
+- [x] Construct `RegionD.toEuclideanSeed` from the completed linear branch.
+- [x] Combine frozen `c8_handoff`, `RegionU.impossible`, and Region D conversion into `ChainCore.c9_handoff`.
+- [x] Add structural regression checks for all requested scope and packet invariants; build and commit.
 
 ### Task 9: Documentation, verification harness, and CI
 
