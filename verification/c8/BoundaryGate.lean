@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Chain.C8.BoundaryClosed
+import P21.Nonsymmetric.Chain.C8.StrictWindow
 
 #check P21.Nonsymmetric.ChainCore.FirstFit.EBKernel
 #check P21.Nonsymmetric.ChainCore.FirstFit.ebKernel
@@ -21,6 +21,13 @@ import P21.Nonsymmetric.Chain.C8.BoundaryClosed
 #check P21.Nonsymmetric.ChainCore.FirstFit.OneData.CA_CB_pos
 #check P21.Nonsymmetric.ChainCore.FirstFit.OneData.boundary_ne
 #check P21.Nonsymmetric.ChainCore.FirstFit.OneData.Croot_gt_alpha
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.Ea_negative_exceptions
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.strict_j
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.strict_k
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.DbaseA_EX1
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.DbaseA_EX2
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.DbaseA_EX3
+#check P21.Nonsymmetric.ChainCore.FirstFit.OneData.strict_window
 
 #print axioms P21.Nonsymmetric.ChainCore.FirstFit.EBKernel.y_eq_one
 #print axioms P21.Nonsymmetric.ChainCore.FirstFit.OneData.boundary_eb_one
@@ -33,3 +40,4 @@ import P21.Nonsymmetric.Chain.C8.BoundaryClosed
 #print axioms P21.Nonsymmetric.ChainCore.FirstFit.OneData.CA_CB_pos
 #print axioms P21.Nonsymmetric.ChainCore.FirstFit.OneData.boundary_ne
 #print axioms P21.Nonsymmetric.ChainCore.FirstFit.OneData.Croot_gt_alpha
+#print axioms P21.Nonsymmetric.ChainCore.FirstFit.OneData.strict_window
