@@ -65,10 +65,10 @@
 - Create: `P21/Nonsymmetric/Chain/C9/NonlinearFirst.lean`
 - Test: `verification/c9/ReductionGate.lean`
 
-- [ ] Prove all HIGH-Q lower decompositions and exclude `q0 ≥ 3` by strict multiplicity.
-- [ ] For `q0 = 2`, prove the predecessor/PREFIX minimality argument, SMALL-R bounds, and nonlinear-first lower decompositions.
-- [ ] Exclude `N ≥ z+2` and expose exactly `q0=2 ∧ N=z+1` for survivors.
-- [ ] Build and commit.
+- [x] Prove all HIGH-Q lower decompositions and exclude `q0 ≥ 3` by strict multiplicity.
+- [x] For `q0 = 2`, prove the predecessor/PREFIX minimality argument, SMALL-R bounds, and nonlinear-first lower decompositions.
+- [x] Exclude `N ≥ z+2` and expose exactly `q0=2 ∧ N=z+1` for survivors.
+- [x] Build and commit.
 
 ### Task 5: Linear-first parameterization and the first two packet identities
 
