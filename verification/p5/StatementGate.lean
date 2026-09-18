@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.EndpointLevel
+import P21.Nonsymmetric.Path.PairExclusion
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -71,3 +71,4 @@ import P21.Nonsymmetric.Path.EndpointLevel
 #check P21.Nonsymmetric.PathInput.NormalizedRoot.endpoint_level_two
 #check P21.Nonsymmetric.PathInput.NormalizedRoot.F_absorption
 #check P21.Nonsymmetric.PathInput.WeakRoot.impossible
+#check P21.Nonsymmetric.PathInput.Pair.impossible
