@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Dual
+import P21.Nonsymmetric.Path.Central
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -29,3 +29,7 @@ import P21.Nonsymmetric.Path.Dual
 #check P21.Nonsymmetric.pathReverseHerzog_fA
 #check P21.Nonsymmetric.pathReverseHerzog_fB
 #check P21.Nonsymmetric.PathInput.reverse
+
+-- P5.1 starts from these two named actual H-factorizations.
+#check P21.Nonsymmetric.PathInput.CentralReturns
+#check P21.Nonsymmetric.PathInput.central_returns
