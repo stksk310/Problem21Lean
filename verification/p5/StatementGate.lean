@@ -1,4 +1,4 @@
-import P21.Nonsymmetric.Path.Setup
+import P21.Nonsymmetric.Path.Returns
 
 #check P21.Nonsymmetric.PathInput.beta
 #check P21.Nonsymmetric.PathInput.alpha
@@ -14,3 +14,11 @@ import P21.Nonsymmetric.Path.Setup
 #check P21.Nonsymmetric.PathInput.qA_eq
 #check P21.Nonsymmetric.PathInput.qB_eq
 #check P21.Nonsymmetric.PathInput.qR_eq
+
+-- P5.1 actual-return gate: each witness retains its original full
+-- nonnegative factorization and records the missing tail coordinate.
+#check P21.Nonsymmetric.PathInput.ActualReturn
+#check P21.Nonsymmetric.PathInput.qL_n1_return
+#check P21.Nonsymmetric.PathInput.qL_n2_return
+#check P21.Nonsymmetric.PathInput.qR_n0_return
+#check P21.Nonsymmetric.PathInput.qR_n1_return
