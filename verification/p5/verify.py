@@ -110,6 +110,7 @@ def main():
     write("AXIOM_SUMMARY.json",json.dumps({"allowed":sorted(ALLOWED_AXIOMS),"observed":sorted(roots),"project_specific_axioms":len(bad)},indent=2)+"\n")
     if bad: raise RuntimeError("unexpected axioms "+repr(bad))
     run(lake()+["env","lean","verification/p5/StatementGate.lean"],"P5_VERIFICATION_LOG.txt")
+    run(lake()+["env","lean","verification/p5/Regression.lean"],"P5_VERIFICATION_LOG.txt",append=True)
     regressions(); integrity(); debt(); dag()
     tracked=[x for x in git("ls-files").splitlines() if (ROOT/x).is_file()]
     write("VERIFIED_SOURCE_SHA256.json",json.dumps({x:sha((ROOT/x).read_bytes()) for x in tracked},indent=2)+"\n")
