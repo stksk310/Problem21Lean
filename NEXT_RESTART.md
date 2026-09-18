@@ -1,4 +1,4 @@
-# P5 restart point
+# Post-P5 restart point
 
 Branch: `p5-path-exclusion`. Immutable mathematical base:
 `fd4ea0c7cbc57df6e935790a1387242bcf9e0087`.
@@ -7,26 +7,16 @@ Independent review has frozen the nonsymmetric selected-four classification
 (FULL G4), including MINBOX, DPE, THREE-ARM, COLOR-CAP, and the residual-free
 selected-four terminal extraction. Do not reopen those milestones.
 
-The current mathematical frontier is exactly Section 5 PATH exclusion. Prove
-the unchanged `PathInput` impossible in new `P21/Nonsymmetric/Path/` modules,
-then add only a new wrapper reducing the same selected terminal input to
-`TypeIIInput ∨ ChainInput`. Section 6 TYPE II exclusion is the next frontier
-after P5 and must not begin in this milestone.
+Section 5 PATH exclusion is proved by
+`P21.Nonsymmetric.PathInput.impossible`. The proof closes PAIR, PFREE, and the
+formally transported dual PFREE branch. `TerminalInputAfterPath` retains the
+same selected four values and both frozen orientations while leaving only
+TYPE II or CHAIN.
 
-Current implementation checkpoint: `22e90a3d0986cbed54540392c988447182404de1`.
-Completed new modules are `Path/Setup`, `Path/Returns`, `Path/Dual`,
-`Path/Central`, `Path/Packets`, and `Path/Pair`.  They establish the P5.0
-coordinates, four actual endpoint returns, the full 0↔2 PATH transport, the
-two actual central C2 returns, same-factorization packet normalization, PAIR
-construction, and the universal no-PAIR bounds `k < α` and `i < β`.
-
-Resume at P5.1 by normalizing `CentralReturns.atA` first in coordinate 1 and
-then, under `NoPair`, proving coordinate 0 is already below `rho 0`; normalize
-`atB` first in coordinate 1 and prove coordinate 2 is below `rho 2`.  Package
-the six bounds in one `NoPairNormalization` structure and compare the two
-exact equations in the `H0 < J0`, `H0 = J0`, and `H0 > J0` cases.  Use
-`PathInput.reverse` for the last case.  Do not reconstruct endpoint returns:
-reuse the four `ActualReturn` witnesses already proved.
+The next mathematical frontier is exactly Section 6 TYPE II exclusion. Do not
+reopen PATH, the frozen selected-four theorem, MINBOX, DPE, THREE-ARM, or
+COLOR-CAP. Start from the post-PATH wrappers in
+`P21/Nonsymmetric/Path/Integration.lean`.
 
 ---
 
