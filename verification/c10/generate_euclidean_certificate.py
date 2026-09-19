@@ -105,13 +105,47 @@ def load_and_validate(supplement: Path) -> dict:
     return data
 
 
+def horner_tree(terms: list[dict], variable_index: int = 0):
+    """Factor a nonnegative coefficient table into a compact multivariate Horner tree."""
+    if variable_index == len(VARIABLES):
+        return ("const", sum(term["coefficient"] for term in terms))
+    grouped: dict[int, list[dict]] = {}
+    for term in terms:
+        grouped.setdefault(term["exponents"][variable_index], []).append(term)
+    exponents = sorted(grouped, reverse=True)
+    previous = exponents[0]
+    accumulator = horner_tree(grouped[previous], variable_index + 1)
+    for exponent in exponents[1:]:
+        accumulator = (
+            "add",
+            horner_tree(grouped[exponent], variable_index + 1),
+            ("mul", VARIABLES[variable_index], previous - exponent, accumulator),
+        )
+        previous = exponent
+    if previous:
+        accumulator = ("mul", VARIABLES[variable_index], previous, accumulator)
+    return accumulator
+
+
+def render_horner(tree, indent: str = "") -> str:
+    tag = tree[0]
+    if tag == "const":
+        return f".const {tree[1]}"
+    if tag == "mul":
+        body = render_horner(tree[3], indent + "  ")
+        return f".mulPow .{tree[1]} {tree[2]} ({body})"
+    left = render_horner(tree[1], indent + "  ")
+    right = render_horner(tree[2], indent + "  ")
+    return f".add ({left}) ({right})"
+
+
 def render(data: dict, output_dir: Path) -> dict[Path, bytes]:
     all_terms = data["terms"]
     constant = next(term for term in all_terms if not any(term["exponents"]))
     terms = [term for term in all_terms if any(term["exponents"])]
     exponent_fields = [f"e_{variable}" for variable in VARIABLES]
     namespace = "P21.Nonsymmetric.Chain.C10.TerminalCertificateData"
-    nonnegative_product = "Int.ofNat_nonneg term.coefficient"
+    nonnegative_product = "Int.natCast_nonneg term.coefficient"
     for variable, field in zip(VARIABLES, exponent_fields, strict=True):
         nonnegative_product = (
             f"mul_nonneg ({nonnegative_product}) "
@@ -120,7 +154,7 @@ def render(data: dict, output_dir: Path) -> dict[Path, bytes]:
 
     types = [
         "/- Generated from the frozen 3234-monomial Section 10 table. -/",
-        "import Mathlib",
+        "import P21.Nonsymmetric.Chain.C10.State",
         "",
         f"namespace {namespace}",
         "",
@@ -131,6 +165,32 @@ def render(data: dict, output_dir: Path) -> dict[Path, bytes]:
         "",
         "structure Variables where",
         *[f"  {variable} : ℤ" for variable in VARIABLES],
+        "",
+        "inductive Variable where",
+        *[f"  | {variable}" for variable in VARIABLES],
+        "  deriving DecidableEq",
+        "",
+        "def Variables.get (y : Variables) : Variable → ℤ",
+        *[f"  | .{variable} => y.{variable}" for variable in VARIABLES],
+        "",
+        "inductive HExpr where",
+        "  | const (coefficient : Nat)",
+        "  | add (left right : HExpr)",
+        "  | mulPow (index : Variable) (exponent : Nat) (body : HExpr)",
+        "",
+        "def HExpr.eval (y : Variables) : HExpr → ℤ",
+        "  | .const coefficient => coefficient",
+        "  | .add left right => eval y left + eval y right",
+        "  | .mulPow index exponent body => y.get index ^ exponent * eval y body",
+        "",
+        "theorem HExpr.eval_nonneg (y : Variables) (hy : ∀ index, 0 ≤ y.get index) :",
+        "    ∀ expression, 0 ≤ eval y expression := by",
+        "  intro expression",
+        "  induction expression with",
+        "  | const coefficient => exact Int.natCast_nonneg coefficient",
+        "  | add left right hleft hright => exact add_nonneg hleft hright",
+        "  | mulPow index exponent body hbody =>",
+        "      exact mul_nonneg (pow_nonneg (hy index) exponent) hbody",
         "",
         "structure Term where",
         "  coefficient : Nat",
@@ -184,6 +244,7 @@ def render(data: dict, output_dir: Path) -> dict[Path, bytes]:
     ]
     concatenation = " ++ ".join(f"terms{index}" for index in range(len(chunks)))
     hypotheses = " ".join(f"h_{variable}" for variable in VARIABLES)
+    tree = render_horner(horner_tree(terms))
     aggregate = [
         "/- Generated frozen Section 10 certificate aggregation and positivity theorem. -/",
         *imports,
@@ -191,17 +252,16 @@ def render(data: dict, output_dir: Path) -> dict[Path, bytes]:
         f"namespace {namespace}",
         "",
         f"def terms : List Term := {concatenation}",
-        f"def polynomial (y : Variables) : ℤ := {CONSTANT} + (terms.map (evalTerm y)).sum",
+        f"def positiveRest : HExpr := {tree}",
+        f"def polynomial (y : Variables) : ℤ := {CONSTANT} + HExpr.eval y positiveRest",
         "",
         "theorem polynomial_pos (y : Variables)",
         *[f"    (h_{variable} : 0 ≤ y.{variable})" for variable in VARIABLES],
         "    : 0 < polynomial y := by",
-        "  have hsum : 0 ≤ (terms.map (evalTerm y)).sum := by",
-        "    apply List.sum_nonneg",
-        "    intro value hvalue",
-        "    simp only [List.mem_map] at hvalue",
-        "    rcases hvalue with ⟨term, _, rfl⟩",
-        f"    exact evalTerm_nonneg y {hypotheses} term",
+        "  have hy : ∀ index, 0 ≤ y.get index := by",
+        "    intro index",
+        "    cases index <;> simp only [Variables.get] <;> assumption",
+        "  have hrest : 0 ≤ HExpr.eval y positiveRest := HExpr.eval_nonneg y hy positiveRest",
         "  simp only [polynomial]",
         "  omega",
         "",

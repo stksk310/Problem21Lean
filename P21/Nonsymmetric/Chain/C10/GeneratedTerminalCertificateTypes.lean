@@ -1,5 +1,5 @@
 /- Generated from the frozen 3234-monomial Section 10 table. -/
-import Mathlib
+import P21.Nonsymmetric.Chain.C10.State
 
 namespace P21.Nonsymmetric.Chain.C10.TerminalCertificateData
 
@@ -25,6 +25,62 @@ structure Variables where
   z0 : ℤ
   x0 : ℤ
   w0 : ℤ
+
+inductive Variable where
+  | p0
+  | q0
+  | s0
+  | t0
+  | r0
+  | delta0
+  | beta0
+  | aj0
+  | g0
+  | alpha0
+  | bk0
+  | nu0
+  | h0
+  | z0
+  | x0
+  | w0
+  deriving DecidableEq
+
+def Variables.get (y : Variables) : Variable → ℤ
+  | .p0 => y.p0
+  | .q0 => y.q0
+  | .s0 => y.s0
+  | .t0 => y.t0
+  | .r0 => y.r0
+  | .delta0 => y.delta0
+  | .beta0 => y.beta0
+  | .aj0 => y.aj0
+  | .g0 => y.g0
+  | .alpha0 => y.alpha0
+  | .bk0 => y.bk0
+  | .nu0 => y.nu0
+  | .h0 => y.h0
+  | .z0 => y.z0
+  | .x0 => y.x0
+  | .w0 => y.w0
+
+inductive HExpr where
+  | const (coefficient : Nat)
+  | add (left right : HExpr)
+  | mulPow (index : Variable) (exponent : Nat) (body : HExpr)
+
+def HExpr.eval (y : Variables) : HExpr → ℤ
+  | .const coefficient => coefficient
+  | .add left right => eval y left + eval y right
+  | .mulPow index exponent body => y.get index ^ exponent * eval y body
+
+theorem HExpr.eval_nonneg (y : Variables) (hy : ∀ index, 0 ≤ y.get index) :
+    ∀ expression, 0 ≤ eval y expression := by
+  intro expression
+  induction expression with
+  | const coefficient => exact Int.natCast_nonneg coefficient
+  | add left right hleft hright => exact add_nonneg hleft hright
+  | mulPow index exponent body hbody =>
+      exact mul_nonneg (pow_nonneg (hy index) exponent) hbody
 
 structure Term where
   coefficient : Nat
@@ -66,6 +122,6 @@ theorem evalTerm_nonneg (y : Variables)
     (h_x0 : 0 ≤ y.x0)
     (h_w0 : 0 ≤ y.w0)
     (term : Term) : 0 ≤ evalTerm y term := by
-  exact mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (Int.ofNat_nonneg term.coefficient) (pow_nonneg h_p0 term.e_p0)) (pow_nonneg h_q0 term.e_q0)) (pow_nonneg h_s0 term.e_s0)) (pow_nonneg h_t0 term.e_t0)) (pow_nonneg h_r0 term.e_r0)) (pow_nonneg h_delta0 term.e_delta0)) (pow_nonneg h_beta0 term.e_beta0)) (pow_nonneg h_aj0 term.e_aj0)) (pow_nonneg h_g0 term.e_g0)) (pow_nonneg h_alpha0 term.e_alpha0)) (pow_nonneg h_bk0 term.e_bk0)) (pow_nonneg h_nu0 term.e_nu0)) (pow_nonneg h_h0 term.e_h0)) (pow_nonneg h_z0 term.e_z0)) (pow_nonneg h_x0 term.e_x0)) (pow_nonneg h_w0 term.e_w0)
+  exact mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (mul_nonneg (Int.natCast_nonneg term.coefficient) (pow_nonneg h_p0 term.e_p0)) (pow_nonneg h_q0 term.e_q0)) (pow_nonneg h_s0 term.e_s0)) (pow_nonneg h_t0 term.e_t0)) (pow_nonneg h_r0 term.e_r0)) (pow_nonneg h_delta0 term.e_delta0)) (pow_nonneg h_beta0 term.e_beta0)) (pow_nonneg h_aj0 term.e_aj0)) (pow_nonneg h_g0 term.e_g0)) (pow_nonneg h_alpha0 term.e_alpha0)) (pow_nonneg h_bk0 term.e_bk0)) (pow_nonneg h_nu0 term.e_nu0)) (pow_nonneg h_h0 term.e_h0)) (pow_nonneg h_z0 term.e_z0)) (pow_nonneg h_x0 term.e_x0)) (pow_nonneg h_w0 term.e_w0)
 
 end P21.Nonsymmetric.Chain.C10.TerminalCertificateData

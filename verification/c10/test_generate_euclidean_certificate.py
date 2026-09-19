@@ -65,9 +65,9 @@ class EuclideanCertificateGeneratorTest(unittest.TestCase):
             )
             types = output_dir / "GeneratedTerminalCertificateTypes.lean"
             aggregate = output_dir / "GeneratedTerminalCertificate.lean"
-            self.assertIn("def termCount : Nat := 3234", types.read_text())
-            self.assertIn("def constantTerm : Nat := 63", types.read_text())
-            self.assertIn("theorem polynomial_pos", aggregate.read_text())
+            self.assertIn("def termCount : Nat := 3234", types.read_text(encoding="utf-8"))
+            self.assertIn("def constantTerm : Nat := 63", types.read_text(encoding="utf-8"))
+            self.assertIn("theorem polynomial_pos", aggregate.read_text(encoding="utf-8"))
 
             before = tree_digest(output_dir)
             second = self.run_generator(SUPPLEMENT, output_dir)
