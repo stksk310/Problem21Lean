@@ -1,0 +1,542 @@
+SOURCE INTEGRITY PASS (202 files)
+== certificate unit tests ==
+== certificate byte check ==
+{"status":"PASS","identities":35,"terms":3234,"degree":7,"constant":63,"variables":["p0","q0","s0","t0","r0","delta0","beta0","aj0","g0","alpha0","bk0","nu0","h0","z0","x0","w0"],"table_sha256":"495504b4bcb8427db04b242cf09b83fbe7bde1188f9324b7e977036a5a4db9b3","output_sha256":"d8e0085cf2e3c4f3b0bb821ecac8f90e102130d0f8fe021a2d02d4ddb44a04eb","files":38}
+PROOF DEBT / DEPENDENCY PASS
+== root build ==
+Build completed successfully (1598 jobs).
+== verification/c10/CanonicalFreeGate.lean ==
+verification/c10/CanonicalFreeGate.lean:8:33: warning: Variable name `X` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _X
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+P21.Nonsymmetric.EuclideanState.Ical {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.Jcal {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.Kcal {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.Dp {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.I0 {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.J0 {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.M0 {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.K0 {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.mhat {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.Phi {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) (Px : ℤ) : ℤ
+P21.Nonsymmetric.EuclideanState.measureZ {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℤ
+P21.Nonsymmetric.EuclideanState.measureNat {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (X : EuclideanState s F D) : ℕ
+== verification/c10/AlgebraGate.lean ==
+== verification/c10/TerminalCertificateGate.lean ==
+== verification/c10/TerminalActualityGate.lean ==
+verification/c10/TerminalActualityGate.lean:13:36: warning: Variable name `hterminal` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hterminal
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+== verification/c10/ExchangeGate.lean ==
+== verification/c10/DescentGate.lean ==
+== verification/c10/IntegrationGate.lean ==
+== verification/c10/audit_axioms.lean ==
+'P21.Nonsymmetric.EuclideanState.terminal_f_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.EuclideanState.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.EuclideanState.f_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.EuclideanSeed.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ChainCore.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ChainInput.impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.selected_terminal_after_chain_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.terminal_input_after_chain_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_selected_four_impossible_after_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_Q_ge_four_impossible_after_chain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AXIOM AUDIT PASS
+== verification/StatementCheck.lean ==
+P21.NumericalSemigroup.apery_le (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hw : w ∈ S.Apery m) :
+  w ≤ F + m
+P21.NumericalSemigroup.apery_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) : (S.Apery m).Finite
+P21.NumericalSemigroup.zero_mem_apery (S : P21.NumericalSemigroup) {m : ℤ} (hm : 0 < m) : 0 ∈ S.Apery m
+P21.NumericalSemigroup.W_mem_apery (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m) :
+  F + m ∈ S.Apery m
+P21.NumericalSemigroup.pf_add_m_mem_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0)
+  (hq : q ∈ S.PF) : q + m ∈ S.Apery m
+P21.NumericalSemigroup.apery_lower (S : P21.NumericalSemigroup) {m x y : ℤ} (hx : x ∈ S.carrier) (hy : y ∈ S.Apery m)
+  (hxy : S.Le x y) : x ∈ S.Apery m
+P21.NumericalSemigroup.pf_iff_maximal_apery (S : P21.NumericalSemigroup) {m q : ℤ} (hm : m ∈ S.carrier) (hm0 : m ≠ 0) :
+  q ∈ S.PF ↔ S.Maximal (S.Apery m) (q + m)
+P21.NumericalSemigroup.A0 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.A1 (S : P21.NumericalSemigroup) (F m : ℤ) : Set ℤ
+P21.NumericalSemigroup.iota (_S : P21.NumericalSemigroup) (F m w : ℤ) : ℤ
+P21.NumericalSemigroup.complement_mem_apery (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hw : w ∈ S.Apery m) (hb : F + m - w ∈ S.carrier) : F + m - w ∈ S.Apery m
+P21.NumericalSemigroup.exact_two_layers (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.Apery m) :
+  F + m - w ∈ S.Apery m ∧ S.iota F m w ∉ S.Apery m ∨ F + m - w ∉ S.Apery m ∧ S.iota F m w ∈ S.Apery m
+P21.NumericalSemigroup.a0_lower (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.Apery m)
+  (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.a1_upper (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F) (hx : x ∈ S.A1 F m)
+  (hy : y ∈ S.Apery m) (hxy : S.Le x y) : y ∈ S.A1 F m
+P21.NumericalSemigroup.iota_involutive (S : P21.NumericalSemigroup) (F m w : ℤ) : S.iota F m (S.iota F m w) = w
+P21.NumericalSemigroup.iota_order_reverse (S : P21.NumericalSemigroup) (F m x y : ℤ) :
+  S.Le (S.iota F m y) (S.iota F m x) ↔ S.Le x y
+P21.NumericalSemigroup.iota_mem_a1 (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F) (hm : 0 < m)
+  (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) (hw : w ∈ S.A1 F m) : S.iota F m w ∈ S.A1 F m
+P21.NumericalSemigroup.pf_add_m_mem_a1 (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) (hq : q ∈ S.Q F) : q + m ∈ S.A1 F m
+P21.NumericalSemigroup.complement_of_q_mem_apery (S : P21.NumericalSemigroup) {F m q : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (hq : q ∈ S.Q F) : F + m - q ∈ S.Apery m
+P21.NumericalSemigroup.maximal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) : S.Maximal (S.A1 F m) w ↔ w - m ∈ S.Q F
+P21.NumericalSemigroup.minimal_iff_iota_maximal (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ S.Maximal (S.A1 F m) (S.iota F m w)
+P21.NumericalSemigroup.minimal_a1_iff (S : P21.NumericalSemigroup) {F m w : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  S.Minimal (S.A1 F m) w ↔ F + m - w ∈ S.Q F
+P21.NumericalSemigroup.maximal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) : {w | S.Maximal (S.A1 F m) w} = (fun q => q + m) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_set (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w} = (fun q => F + m - q) '' S.Q F
+P21.NumericalSemigroup.minimal_a1_card (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = (S.Q F).ncard ∧ (S.Q F).ncard + 1 = S.type
+P21.Generators : Type
+P21.Generators.all (g : P21.Generators) : Fin 4 → ℤ
+P21.Generators.Gamma (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.H (g : P21.Generators) : AddSubmonoid ℤ
+P21.Generators.ActualFactorization4 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.ActualFactorization3 (g : P21.Generators) (x : ℤ) : Type
+P21.Generators.Minimal (g : P21.Generators) : Prop
+P21.Generators.TailMinimal (g : P21.Generators) : Prop
+P21.Generators.OffDirection (g : P21.Generators) (i : Fin 3) (x : ℤ) : Prop
+P21.Generators.D (g : P21.Generators) (c : ℤ) : Set (Fin 3)
+P21.Generators.SH (g : P21.Generators) (q : ℤ) : Set (Fin 3)
+P21.Generators.tailGcd (g : P21.Generators) : ℕ
+P21.Generators.value_cons (g : P21.Generators) (a : ℕ) (b : Fin 3 → ℕ) :
+  P21.value g.all (Fin.cons a b) = ↑a * g.m + P21.value g.n b
+P21.Generators.h_subset_gamma (g : P21.Generators) : g.H ≤ g.Gamma
+P21.Generators.m_mem (g : P21.Generators) : g.m ∈ g.Gamma
+P21.Generators.n_mem (g : P21.Generators) (i : Fin 3) : g.n i ∈ g.Gamma
+P21.Generators.tail_minimal (g : P21.Generators) (hg : g.Minimal) : g.TailMinimal
+P21.Generators.Setting (g : P21.Generators) : Prop
+P21.Generators.Setting.semigroup {g : P21.Generators} (s : g.Setting) : P21.NumericalSemigroup
+P21.Generators.minimal_injective (g : P21.Generators) (hg : g.Minimal) : Function.Injective g.all
+P21.Generators.minimal_four_distinct (g : P21.Generators) (hg : g.Minimal) : (Set.range g.all).ncard = 4
+P21.P21MainStatement : Prop
+P21.Generators.Setting.apery_m_coordinate_zero {g : P21.Generators} (s : g.Setting) {x : ℤ}
+  (hx : x ∈ s.semigroup.Apery g.m) (a : g.ActualFactorization4 x) : a.coeff 0 = 0
+P21.Generators.Setting.apery_in_tail {g : P21.Generators} (s : g.Setting) {x : ℤ} (hx : x ∈ s.semigroup.Apery g.m) :
+  x ∈ g.H
+P21.Generators.Setting.a0_tail_iff {g : P21.Generators} (s : g.Setting) {F w : ℤ} (hF : s.semigroup.IsFrobenius F) :
+  w ∈ s.semigroup.A0 F g.m ↔ w ∈ g.H ∧ F + g.m - w ∈ g.H
+P21.Generators.Setting.key_return_apery {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : q + g.n i ∈ s.semigroup.Apery g.m
+P21.Generators.Setting.return_coordinate_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hq : q ∈ s.semigroup.Q F)
+  (i : Fin 3) (a : g.ActualFactorization3 (q + g.n i)) : a.coeff i = 0
+P21.Generators.Setting.key_support_zero {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) (i : Fin 3) (hs : F + g.m - q - g.n i ∈ g.H) : g.OffDirection i (q + g.n i)
+P21.Generators.Setting.support_nonempty {g : P21.Generators} {c : ℤ} (hc : c ∈ g.H) (hcpos : 0 < c) : (g.D c).Nonempty
+P21.Generators.Setting.key_support_inclusion {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) :
+  (g.D (F + g.m - q)).Nonempty ∧ g.D (F + g.m - q) ⊆ g.SH q
+P21.Generators.Setting.supported_rectangle {g : P21.Generators} (s : g.Setting) {F q : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hq : q ∈ s.semigroup.Q F) (i : Fin 3)
+  (hi : i ∈ g.D (F + g.m - q)) :
+  (q + g.m ∈ s.semigroup.Apery g.m ∧ q + g.m ∈ g.H) ∧
+    (F + g.m - q ∈ s.semigroup.Apery g.m ∧ F + g.m - q ∈ g.H) ∧
+      (F + g.m - q - g.n i ∈ s.semigroup.Apery g.m ∧ F + g.m - q - g.n i ∈ g.H) ∧
+        (q + g.n i ∈ s.semigroup.Apery g.m ∧ q + g.n i ∈ g.H) ∧
+          q + g.m + (F + g.m - q) = F + g.m + g.m ∧ F + g.m - q - g.n i + (q + g.n i) = F + g.m
+P21.value {k : ℕ} (g : Fin k → ℤ) (a : Fin k → ℕ) : ℤ
+P21.ActualFactorization {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.generated {k : ℕ} (g : Fin k → ℤ) : AddSubmonoid ℤ
+P21.actual_iff_mem {k : ℕ} {g : Fin k → ℤ} {x : ℤ} : Nonempty (P21.ActualFactorization g x) ↔ x ∈ P21.generated g
+P21.generator_mem {k : ℕ} (g : Fin k → ℤ) (i : Fin k) : g i ∈ P21.generated g
+P21.generated_nonneg {k : ℕ} {g : Fin k → ℤ} (hg : ∀ (i : Fin k), 0 ≤ g i) {x : ℤ} (hx : x ∈ P21.generated g) : 0 ≤ x
+P21.replaceWithinActualFactorization {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x)
+  (source target : Fin k → ℕ) (contained : ∀ (i : Fin k), source i ≤ a.coeff i)
+  (replacement : P21.value g source = P21.value g target) : P21.ActualFactorization g x
+P21.removeOne {k : ℕ} {g : Fin k → ℤ} {x : ℤ} (a : P21.ActualFactorization g x) (i : Fin k) (hi : 0 < a.coeff i) :
+  P21.ActualFactorization g (x - g i)
+P21.SignedRepresentation {k : ℕ} (g : Fin k → ℤ) (x : ℤ) : Type
+P21.SignedRelation3 (n : Fin 3 → ℤ) : Type
+P21.NumericalSemigroup : Type
+P21.NumericalSemigroup.Gap (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.IsFrobenius (S : P21.NumericalSemigroup) (F : ℤ) : Prop
+P21.NumericalSemigroup.PF (S : P21.NumericalSemigroup) : Set ℤ
+P21.NumericalSemigroup.type (S : P21.NumericalSemigroup) : ℕ
+P21.NumericalSemigroup.Apery (S : P21.NumericalSemigroup) (m : ℤ) : Set ℤ
+P21.NumericalSemigroup.Le (S : P21.NumericalSemigroup) (x y : ℤ) : Prop
+P21.NumericalSemigroup.Canonical (S : P21.NumericalSemigroup) (F m : ℤ) : Prop
+P21.NumericalSemigroup.Q (S : P21.NumericalSemigroup) (F : ℤ) : Set ℤ
+P21.NumericalSemigroup.Maximal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.Minimal (S : P21.NumericalSemigroup) (A : Set ℤ) (x : ℤ) : Prop
+P21.NumericalSemigroup.le_refl (S : P21.NumericalSemigroup) (x : ℤ) : S.Le x x
+P21.NumericalSemigroup.le_trans (S : P21.NumericalSemigroup) {x y z : ℤ} (hxy : S.Le x y) (hyz : S.Le y z) : S.Le x z
+P21.NumericalSemigroup.le_antisymm (S : P21.NumericalSemigroup) {x y : ℤ} (hxy : S.Le x y) (hyx : S.Le y x) : x = y
+P21.NumericalSemigroup.exists_frobenius (S : P21.NumericalSemigroup) : ∃ F, S.IsFrobenius F
+P21.NumericalSemigroup.frobenius_mem_pf (S : P21.NumericalSemigroup) {F : ℤ} (hF : S.IsFrobenius F) : F ∈ S.PF
+P21.NumericalSemigroup.mem_of_gt_frobenius (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : F < x) :
+  x ∈ S.carrier
+P21.NumericalSemigroup.pf_finite (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F) (hm : m ∈ S.carrier)
+  (hm0 : m ≠ 0) : S.PF.Finite
+P21.NumericalSemigroup.q_lt_frobenius (S : P21.NumericalSemigroup) {F q : ℤ} (hF : S.IsFrobenius F) (hq : q ∈ S.Q F) :
+  q < F
+P21.NumericalSemigroup.type_eq_q_card_add_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hm0 : m ≠ 0) : S.type = (S.Q F).ncard + 1
+P21.NumericalSemigroup.translated_gaps_finite (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) :
+  {q | q ∉ S.carrier ∧ q - x ∈ S.carrier}.Finite
+P21.NumericalSemigroup.gap_below_pf (S : P21.NumericalSemigroup) {F x : ℤ} (hF : S.IsFrobenius F) (hx : x ∉ S.carrier) :
+  ∃ q ∈ S.PF, q - x ∈ S.carrier
+P21.NumericalSemigroup.canonical_all_nonnegative_gaps (S : P21.NumericalSemigroup) {F m x : ℤ} (hF : S.IsFrobenius F)
+  (hc : S.Canonical F m) (_hx0 : 0 ≤ x) (hx : x ∉ S.carrier) : F + m - x ∈ S.carrier
+P21.Generators.offDirection_iff_pair {g : P21.Generators} {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k)
+  (x : ℤ) : g.OffDirection i x ↔ ∃ a b, x = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.key_pair_return {g : P21.Generators} (s : g.Setting) {F q : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hq : q ∈ s.semigroup.Q F) {i j k : Fin 3} (hij : i ≠ j) (hik : i ≠ k) (hjk : j ≠ k) (hi : i ∈ g.D (F + g.m - q)) :
+  ∃ a b, q + g.n i = ↑a * g.n j + ↑b * g.n k
+P21.Generators.Setting.RowFacts {g : P21.Generators} (s : g.Setting) (F q : ℤ) : Prop
+P21.Generators.Setting.all_q_row_facts {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (q : ℤ) : q ∈ s.semigroup.Q F → s.RowFacts F q
+P21.Generators.Setting.select_four_rows {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ rows, Function.Injective rows ∧ ∀ (r : Fin 4), s.RowFacts F (rows r)
+P21.Generators.Setting.tail_minimal_and_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) :
+  g.TailMinimal ∧ g.tailGcd = 1 ∧ ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.W (F m : ℤ) : ℤ
+P21.complement (F m q : ℤ) : ℤ
+P21.cofinite_iff_finite_nonnegative_gaps (G : AddSubmonoid ℤ) :
+  (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ G) ↔ {x | 0 ≤ x ∧ x ∉ G}.Finite
+P21.NumericalSemigroup.all_pf_finite (S : P21.NumericalSemigroup) : S.PF.Finite
+P21.NumericalSemigroup.q_finite (S : P21.NumericalSemigroup) (F : ℤ) : (S.Q F).Finite
+P21.NumericalSemigroup.a0_lower_in_semigroup (S : P21.NumericalSemigroup) {F m x y : ℤ} (hF : S.IsFrobenius F)
+  (hx : x ∈ S.carrier) (hy : y ∈ S.A0 F m) (hxy : S.Le x y) : x ∈ S.A0 F m
+P21.NumericalSemigroup.minimal_a1_card_eq_type_sub_one (S : P21.NumericalSemigroup) {F m : ℤ} (hF : S.IsFrobenius F)
+  (hm : m ∈ S.carrier) (hmpos : 0 < m) (hmin : ∀ x ∈ S.carrier, x ≠ 0 → m ≤ x) (hc : S.Canonical F m) :
+  {w | S.Minimal (S.A1 F m) w}.ncard = S.type - 1
+P21.divisor_of_generated {k : ℕ} {n : Fin k → ℤ} {d x : ℤ} (hd : ∀ (i : Fin k), d ∣ n i) (hx : x ∈ P21.generated n) :
+  d ∣ x
+P21.generated_eq_closure {k : ℕ} (n : Fin k → ℤ) : P21.generated n = AddSubmonoid.closure (Set.range n)
+P21.signed_mem_group {k : ℕ} {n : Fin k → ℤ} {x : ℤ} (a : P21.SignedRepresentation n x) :
+  x ∈ AddSubgroup.closure (Set.range n)
+P21.Generators.Setting.tail_signed_m {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : Nonempty (P21.SignedRepresentation g.n g.m)
+P21.Generators.Setting.m_mem_tail_group {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.m ∈ AddSubgroup.closure (Set.range g.n)
+P21.Generators.Setting.common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {d : ℤ} (hm : d ∣ g.m)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_common_divisor_dvd_one {g : P21.Generators} (s : g.Setting) {F d : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty)
+  (hn : ∀ (i : Fin 3), d ∣ g.n i) : d ∣ 1
+P21.Generators.Setting.tail_gcd_eq_one {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : g.tailGcd = 1
+P21.Generators.Setting.natural_closure_to_tail {g : P21.Generators} (s : g.Setting) {x : ℕ}
+  (hx : x ∈ AddSubmonoid.closure (Set.range fun i => (g.n i).toNat)) : ↑x ∈ g.H
+P21.Generators.Setting.tail_cofinite {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H
+P21.Generators.Setting.tailSemigroup {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hQ : (s.semigroup.Q F).Nonempty) : P21.NumericalSemigroup
+def P21.P21MainStatement : Prop :=
+∀ (g : P21.Generators) (s : g.Setting) (F : ℤ),
+  s.semigroup.IsFrobenius F → s.semigroup.Canonical F g.m → s.semigroup.type ≤ 4
+structure P21.Generators.Setting (g : P21.Generators) : Prop
+number of parameters: 1
+fields:
+  P21.Generators.Setting.m_pos : 0 < g.m
+  P21.Generators.Setting.n_gt : ∀ (i : Fin 3), g.m < g.n i
+  P21.Generators.Setting.minimal : g.Minimal
+  P21.Generators.Setting.multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x
+  P21.Generators.Setting.cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma
+constructor:
+  P21.Generators.Setting.mk {g : P21.Generators} (m_pos : 0 < g.m) (n_gt : ∀ (i : Fin 3), g.m < g.n i)
+    (minimal : g.Minimal) (multiplicity : ∀ x ∈ g.Gamma, x ≠ 0 → g.m ≤ x)
+    (cofinite : ∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.Gamma) : g.Setting
+def P21.Generators.Minimal : P21.Generators → Prop :=
+fun g => ∀ (i : Fin 4) (a : Fin 4 → ℕ), a i = 0 → P21.value g.all a ≠ g.all i
+def P21.NumericalSemigroup.PF : P21.NumericalSemigroup → Set ℤ :=
+fun S => {q | q ∉ S.carrier ∧ ∀ s ∈ S.carrier, s ≠ 0 → q + s ∈ S.carrier}
+def P21.NumericalSemigroup.IsFrobenius : P21.NumericalSemigroup → ℤ → Prop :=
+fun S F => IsGreatest S.Gap F
+== verification/m2/GlueRegression.lean ==
+'P21.Symmetric.SymmetricGlueData.represented_eq_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.normal_form_mem_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.symmetry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Symmetric.SymmetricGlueData.isFrobenius' depends on axioms: [propext, Classical.choice, Quot.sound]
+== verification/m2b/Regression.lean ==
+== verification/m3/M3Regression.lean ==
+== verification/m3b1/StatementRegression.lean ==
+'P21.Nonsymmetric.ColorCap.minimum_one_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible_of_dpe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.White.cyclic_white_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+def P21.Nonsymmetric.ColorCap.MinimumOneStatement : Prop :=
+∀ (g : Generators),
+  g.Setting →
+    (∃ B, ∀ (x : ℤ), B ≤ x → x ∈ g.H) →
+      ∀ (D : HerzogCriticalData g) (colorA : Bool) (k : ℕ) (p : Point),
+        0 < k →
+          (∀ (i : Fin 3), 1 ≤ p i ∧ p i < if colorA = true then ↑(D.a i) else ↑(D.b i)) →
+            (if colorA = true then D.fA else D.fB) = ↑k * g.m + ∑ i, (p i - 1) * g.n i →
+              (∀ (k' : ℕ) (x' : Fin 3 → ℕ),
+                  (if colorA = true then D.fA else D.fB) = ↑k' * g.m + value g.n x' → k ≤ k') →
+                k = 1
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+== verification/m3b2/StatementRegression.lean ==
+P21.Nonsymmetric.actual_labels_terminal_residual_free {g : Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g)
+  (rows : FourDistinctActualQRows s F) (L : ActualLabeling D.toHerzogCriticalData rows) : RowLabel.Terminal L.labels
+P21.Nonsymmetric.selected_four_terminal {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (D : NonsymmetricHerzogData g) (rows : FourDistinctActualQRows s F) :
+  TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_selected_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (rows : FourDistinctActualQRows s F) :
+  ∃ D, TerminalInputExists s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g) (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, TerminalInputExists s F D.toHerzogCriticalData rows
+def P21.Nonsymmetric.ColorCap.BoxPositiveExitStatement : Prop :=
+∀ (D : BoxInput) (t : ℕ) (u : Point),
+  BoxPath D.upper D.rows t D.x u →
+    (∀ (i : Fin 3), ¬InBox D.upper (fire D.rows i u)) → ∃ i, ∀ (j : Fin 3), 1 ≤ fire D.rows i u j
+'P21.Nonsymmetric.ColorCap.box_positive_exit_proved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.ColorCap.three_arms_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.actual_labels_terminal_residual_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P21.Nonsymmetric.nonsymmetric_Q_ge_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+== verification/p5/Regression.lean ==
+P21.Nonsymmetric.PathInput {g : P21.Generators} (s : g.Setting) (F : ℤ) (D : P21.Nonsymmetric.HerzogCriticalData g) :
+  Type
+P21.Nonsymmetric.PathInput.ActualReturn.factorization {g : P21.Generators} {q : ℤ} {i : Fin 3}
+  (self : P21.Nonsymmetric.PathInput.ActualReturn g q i) : g.ActualFactorization4 (q + g.n i)
+P21.Nonsymmetric.PathInput.Pair.equationA {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} {P : P21.Nonsymmetric.PathInput s F D} (self : P.Pair) :
+  P.qA + g.m = P21.value g.n ![self.X, self.H0, self.Z + P.alpha.toNat]
+P21.Nonsymmetric.PathInput.Pair.equationB {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} {P : P21.Nonsymmetric.PathInput s F D} (self : P.Pair) :
+  P.qB + g.m = P21.value g.n ![self.X + P.beta.toNat, self.H0, self.Z]
+P21.Nonsymmetric.PathInput.no_pair_normalization {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hnp : P.NoPair)
+  (C : P.CentralReturns) : Nonempty P.NoPairNormalization
+P21.Nonsymmetric.PathInput.reverse {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) :
+  P21.Nonsymmetric.PathInput ⋯ F (P21.Nonsymmetric.pathReverseHerzog D)
+P21.Nonsymmetric.PathInput.WeakRoot.equation {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} {P : P21.Nonsymmetric.PathInput s F D} (self : P.WeakRoot) :
+  g.m = -self.d * g.n 0 + self.S * g.n 1 + self.e * g.n 2
+P21.Nonsymmetric.PathInput.WeakRoot.step {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (w : P.WeakRoot)
+  (hK : ↑(D.rho 2) ≤ w.e - P.alpha) (hd : 1 ≤ w.d - ↑(D.b 0)) : P.WeakRoot
+P21.Nonsymmetric.PathInput.WeakRoot.step_measure {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (w : P.WeakRoot)
+  (hK : ↑(D.rho 2) ≤ w.e - P.alpha) (hd : 1 ≤ w.d - ↑(D.b 0)) :
+  (P21.Nonsymmetric.PathInput.WeakRoot.step P w hK hd).e - P.alpha = w.e - P.alpha - ↑(D.rho 2)
+P21.Nonsymmetric.PathInput.WeakRoot.normalize {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (LK : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 2) (w : P.WeakRoot) : Nonempty P.NormalizedRoot
+P21.Nonsymmetric.PathInput.NormalizedRoot.endpoint_level_two {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (N : P.NormalizedRoot) (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1) : 2 ≤ LJ.factorization.coeff 0
+P21.Nonsymmetric.PathInput.NormalizedRoot.F_absorption {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (N : P.NormalizedRoot)
+  (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1) :
+  F =
+    (↑(LJ.factorization.coeff 0) - 2) * g.m + (P.P0 + ↑(LJ.factorization.coeff 1) - N.d) * g.n 0 + (N.S - 1) * g.n 1 +
+      (↑(LJ.factorization.coeff 3) + N.K + P.alpha) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.right_i_equation {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D)
+  (RI : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 0) :
+  ↑(RI.factorization.coeff 0) * g.m + ↑(RI.factorization.coeff 2) * g.n 1 + ↑(RI.factorization.coeff 3) * g.n 2 =
+    P.qR + g.n 0
+P21.Nonsymmetric.PathInput.PFreeI.right_j_equation {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D)
+  (RJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 1) :
+  ↑(RJ.factorization.coeff 0) * g.m + ↑(RJ.factorization.coeff 1) * g.n 0 + ↑(RJ.factorization.coeff 3) * g.n 2 =
+    P.qR + g.n 1
+P21.Nonsymmetric.PathInput.PFreeI.i_fabs {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (p : P.PFreeI)
+  (RI : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 0) :
+  F =
+    (↑(RI.factorization.coeff 0) - 2) * g.m + (P21.Nonsymmetric.PathInput.PFreeI.A0 P p - 1) * g.n 0 +
+        (↑(RI.factorization.coeff 2) + ↑p.H0 + 1) * g.n 1 +
+      (P.T + ↑(RI.factorization.coeff 3) - P21.Nonsymmetric.PathInput.PFreeI.C0 P p) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.j_fabs {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (p : P.PFreeI)
+  (RJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 1) :
+  F =
+    (↑(RJ.factorization.coeff 0) - 2) * g.m +
+          (↑(RJ.factorization.coeff 1) + P21.Nonsymmetric.PathInput.PFreeI.A0 P p) * g.n 0 +
+        ↑p.H0 * g.n 1 +
+      (P.T + ↑(RJ.factorization.coeff 3) - P21.Nonsymmetric.PathInput.PFreeI.C0 P p) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.u_cert {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (p : P.PFreeI)
+  (RI : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 0) :
+  F =
+    (↑(RI.factorization.coeff 0) - 1) * g.m + (↑(D.rho 0) - 1) * g.n 0 +
+        (↑(RI.factorization.coeff 2) - ↑(D.b 1)) * g.n 1 +
+      (P.T + ↑(RI.factorization.coeff 3) - ↑(D.a 2)) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.x_cert {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (p : P.PFreeI)
+  (RJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qR 1) :
+  F =
+    (↑(RJ.factorization.coeff 0) - 1) * g.m + (↑(RJ.factorization.coeff 1) - ↑(D.a 0)) * g.n 0 +
+        (↑(D.rho 1) - 1) * g.n 1 +
+      (P.T + ↑(RJ.factorization.coeff 3) - ↑(D.b 2)) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.F0_pos {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) : 1 ≤ P21.Nonsymmetric.PathInput.PFreeI.F0 D P p
+P21.Nonsymmetric.PathInput.PFreeI.left_j_caps {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) (hF0 : 1 ≤ P21.Nonsymmetric.PathInput.PFreeI.F0 D P p)
+  (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1) :
+  ↑(LJ.factorization.coeff 3) ≤ ↑(D.b 2) - 1 ∧
+    ↑(LJ.factorization.coeff 1) ≤ P21.Nonsymmetric.PathInput.PFreeI.D0 P p - 1
+P21.Nonsymmetric.PathInput.PFreeI.fix_j {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1) :
+  ↑p.H0 = P.R - ↑(D.b 1) - 1 ∧
+    ↑(LJ.factorization.coeff 1) = P21.Nonsymmetric.PathInput.PFreeI.D0 P p - 1 ∧
+      ↑(LJ.factorization.coeff 3) = P.T - ↑p.K - P21.Nonsymmetric.PathInput.PFreeI.eta D P p - 2
+P21.Nonsymmetric.PathInput.PFreeI.unit_eq {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (p : P.PFreeI)
+  (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1) (LK : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 2)
+  (hj : LJ.factorization.coeff 0 = 1) (hk : LK.factorization.coeff 0 = 1) :
+  (↑(LK.factorization.coeff 1) - ↑(LJ.factorization.coeff 1)) * g.n 0 + (↑(LK.factorization.coeff 2) + 1) * g.n 1 =
+    (↑(LJ.factorization.coeff 3) + 1) * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.pin {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1)
+  (LK : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 2) :
+  ↑(LK.factorization.coeff 1) = ↑(LJ.factorization.coeff 1) - ↑(D.a 0) ∧
+    ↑(LK.factorization.coeff 2) = ↑(D.rho 1) - 1 ∧ ↑(LJ.factorization.coeff 3) = ↑(D.b 2) - 1
+P21.Nonsymmetric.PathInput.PFreeI.roots {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) (LJ : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 1)
+  (LK : P21.Nonsymmetric.PathInput.ActualReturn g P.qL 2) :
+  P21.Nonsymmetric.PathInput.PFreeI.F0 D P p = P.alpha ∧
+    P21.Nonsymmetric.PathInput.PFreeI.C0 P p = P.nu ∧
+      g.m = P21.Nonsymmetric.PathInput.PFreeI.A0 P p * g.n 0 + (↑p.H0 + 1) * g.n 1 - P.nu * g.n 2 ∧
+        g.m = -(↑(LK.factorization.coeff 1) + 1) * g.n 0 - (↑(D.rho 1) - P.R) * g.n 1 + P.T * g.n 2
+P21.Nonsymmetric.PathInput.PFreeI.impossible {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F)
+  (p : P.PFreeI) : False
+P21.Nonsymmetric.PathInput.pair_or_pfree_or_dual {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) :
+  Nonempty P.Pair ∨ Nonempty P.PFreeI ∨ Nonempty P.reverse.PFreeI
+P21.Nonsymmetric.PathInput.impossible {g : P21.Generators} {s : g.Setting} {F : ℤ}
+  {D : P21.Nonsymmetric.HerzogCriticalData g} (P : P21.Nonsymmetric.PathInput s F D) (hF : s.semigroup.IsFrobenius F) :
+  False
+P21.Nonsymmetric.SelectedTerminalAfterPath {g : P21.Generators} (s : g.Setting) (F : ℤ)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) : Prop
+P21.Nonsymmetric.TerminalInputAfterPath {g : P21.Generators} (s : g.Setting) (F : ℤ)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) : Prop
+P21.Nonsymmetric.terminal_input_after_path {g : P21.Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (D : P21.Nonsymmetric.HerzogCriticalData g) (rows : P21.Nonsymmetric.FourDistinctActualQRows s F)
+  (h : P21.Nonsymmetric.TerminalInputExists s F D rows) : P21.Nonsymmetric.TerminalInputAfterPath s F D rows
+P21.Nonsymmetric.nonsymmetric_selected_four_after_path {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g)
+  (rows : P21.Nonsymmetric.FourDistinctActualQRows s F) :
+  ∃ D, P21.Nonsymmetric.TerminalInputAfterPath s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four_after_path {g : P21.Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬P21.Symmetric.SymmetricTail g)
+  (hcard : 4 ≤ (s.semigroup.Q F).ncard) :
+  ∃ D rows, P21.Nonsymmetric.TerminalInputAfterPath s F D.toHerzogCriticalData rows
+== verification/t6/Regression.lean ==
+P21.Nonsymmetric.PathInput.ActualReturn.factorization {g : Generators} {q : ℤ} {i : Fin 3}
+  (self : PathInput.ActualReturn g q i) : g.ActualFactorization4 (q + g.n i)
+P21.Nonsymmetric.PathInput.ActualReturn.direction_zero {g : Generators} {q : ℤ} {i : Fin 3}
+  (self : PathInput.ActualReturn g q i) : self.factorization.coeff i.succ = 0
+P21.Nonsymmetric.PathInput.ActualReturn.level_pos {g : Generators} {q : ℤ} {i : Fin 3}
+  (self : PathInput.ActualReturn g q i) : 0 < self.factorization.coeff 0
+P21.Nonsymmetric.TypeIIInput.singleton_n1_return {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) : Nonempty (TypeIIInput.ActualReturn g T.qS 1)
+P21.Nonsymmetric.TypeIIInput.singleton_n2_return {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) : Nonempty (TypeIIInput.ActualReturn g T.qS 2)
+P21.Nonsymmetric.TypeIIInput.JR {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) :
+  ↑(SJ.factorization.coeff 0) * g.m =
+    -(↑(SJ.factorization.coeff 1) + 1) * g.n 0 + T.R * g.n 1 + (T.T0 - 1 - ↑(SJ.factorization.coeff 3)) * g.n 2
+P21.Nonsymmetric.TypeIIInput.KR {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SK : TypeIIInput.ActualReturn g T.qS 2) :
+  ↑(SK.factorization.coeff 0) * g.m =
+    -(↑(SK.factorization.coeff 1) + 1) * g.n 0 + (T.R - 1 - ↑(SK.factorization.coeff 2)) * g.n 1 + T.T0 * g.n 2
+P21.Nonsymmetric.TypeIIInput.actual_of_coordinates (g : Generators) (x k a b c : ℤ) (hk : 0 ≤ k) (ha : 0 ≤ a)
+  (hb : 0 ≤ b) (hc : 0 ≤ c) (he : x = k * g.m + a * g.n 0 + b * g.n 1 + c * g.n 2) : x ∈ g.Gamma
+P21.Nonsymmetric.TypeIIInput.cap_of_eta_pos {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2)
+  (heta : 1 ≤ T.eta) : ↑(SJ.factorization.coeff 1) ≤ T.lambda - 1 ∧ ↑(SK.factorization.coeff 1) ≤ T.lambda - 1
+P21.Nonsymmetric.TypeIIInput.cap_of_theta_pos {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2)
+  (htheta : 1 ≤ T.theta) : ↑(SJ.factorization.coeff 1) ≤ ↑(D.b 0) - 1 ∧ ↑(SK.factorization.coeff 1) ≤ ↑(D.b 0) - 1
+P21.Nonsymmetric.TypeIIInput.cap_zero_zero {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2)
+  (heta : T.eta = 0) (htheta : T.theta = 0) :
+  ↑(SJ.factorization.coeff 1) ≤ ↑(D.b 0) - 1 ∧ ↑(SK.factorization.coeff 1) ≤ ↑(D.b 0) - 1
+P21.Nonsymmetric.TypeIIInput.impossible_eta_zero_theta_neg {g : Generators} {s : g.Setting} {F : ℤ}
+  {D : HerzogCriticalData g} (T : TypeIIInput s F D) (heta : T.eta = 0) (htheta : T.theta ≤ -1) : False
+P21.Nonsymmetric.TypeIIInput.impossible_theta_zero_eta_neg {g : Generators} {s : g.Setting} {F : ℤ}
+  {D : HerzogCriticalData g} (T : TypeIIInput s F D) (htheta : T.theta = 0) (heta : T.eta ≤ -1) : False
+P21.Nonsymmetric.TypeIIInput.impossible_eta_theta_neg {g : Generators} {s : g.Setting} {F : ℤ}
+  {D : HerzogCriticalData g} (T : TypeIIInput s F D) (heta : T.eta ≤ -1) (htheta : T.theta ≤ -1) : False
+P21.Nonsymmetric.TypeIIInput.uniform_i_cap {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2) :
+  ↑(SJ.factorization.coeff 1) ≤ ↑(D.b 0) - 1 ∧ ↑(SK.factorization.coeff 1) ≤ ↑(D.b 0) - 1
+P21.Nonsymmetric.TypeIIInput.equal_level_relation {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2)
+  (heq : SJ.factorization.coeff 0 = SK.factorization.coeff 0) :
+  (↑(SK.factorization.coeff 1) - ↑(SJ.factorization.coeff 1)) * g.n 0 + (↑(SK.factorization.coeff 2) + 1) * g.n 1 =
+    (↑(SJ.factorization.coeff 3) + 1) * g.n 2
+P21.Nonsymmetric.TypeIIInput.impossible_equal_levels {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (hF : s.semigroup.IsFrobenius F) (SJ : TypeIIInput.ActualReturn g T.qS 1)
+  (SK : TypeIIInput.ActualReturn g T.qS 2) (heq : SJ.factorization.coeff 0 = SK.factorization.coeff 0) : False
+P21.Nonsymmetric.TypeIIInput.ABS_L {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2) :
+  F =
+    (↑(SJ.factorization.coeff 0) - ↑(SK.factorization.coeff 0) - 1) * g.m +
+          (T.P0 + ↑(SJ.factorization.coeff 1) - ↑(SK.factorization.coeff 1) - 1) * g.n 0 +
+        (T.R - 2 - ↑(SK.factorization.coeff 2)) * g.n 1 +
+      (↑(SJ.factorization.coeff 3) + T.T0) * g.n 2
+P21.Nonsymmetric.TypeIIInput.ABS_R {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (T : TypeIIInput s F D) (SJ : TypeIIInput.ActualReturn g T.qS 1) (SK : TypeIIInput.ActualReturn g T.qS 2) :
+  F =
+    (↑(SK.factorization.coeff 0) - ↑(SJ.factorization.coeff 0) - 1) * g.m +
+          (T.P0 + ↑(SK.factorization.coeff 1) - ↑(SJ.factorization.coeff 1) - 1) * g.n 0 +
+        (↑(SK.factorization.coeff 2) + T.R) * g.n 1 +
+      (T.T0 - 2 - ↑(SJ.factorization.coeff 3)) * g.n 2
+P21.Nonsymmetric.terminal_input_after_typeII {g : Generators} (s : g.Setting) {F : ℤ} (hF : s.semigroup.IsFrobenius F)
+  (D : HerzogCriticalData g) (rows : FourDistinctActualQRows s F) (h : TerminalInputAfterPath s F D rows) :
+  TerminalInputAfterTypeII s F D rows
+P21.Nonsymmetric.nonsymmetric_selected_four_after_typeII {g : Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g)
+  (rows : FourDistinctActualQRows s F) : ∃ D, TerminalInputAfterTypeII s F D.toHerzogCriticalData rows
+P21.Nonsymmetric.nonsymmetric_Q_ge_four_after_typeII {g : Generators} (s : g.Setting) {F : ℤ}
+  (hF : s.semigroup.IsFrobenius F) (hc : s.semigroup.Canonical F g.m) (hns : ¬Symmetric.SymmetricTail g)
+  (hcard : 4 ≤ (s.semigroup.Q F).ncard) : ∃ D rows, TerminalInputAfterTypeII s F D.toHerzogCriticalData rows
+== verification/c7/Regression.lean ==
+P21.Nonsymmetric.ChainCore.FK_strong {g : Generators} {s : g.Setting} {F : ℤ} {D : HerzogCriticalData g}
+  (K : ChainCore s F D) (E : K.Returns) (hF : s.semigroup.IsFrobenius F) (C : K.Caps E) (hJ : K.J0 < 0)
+  (hstrict : K.chain.alpha < K.Croot) : 0 ≤ E.Bk ∧ E.Bk ≤ K.tau0 - K.chain.R - 1 ∧ K.chain.R + 1 ≤ K.tau0
+== verification/c8/Regression.lean ==
+verification/c8/Regression.lean:15:5: warning: Variable name `O` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _O
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+== verification/c9/Regression.lean ==
+C10 FULL LOCAL VERIFICATION PASS
