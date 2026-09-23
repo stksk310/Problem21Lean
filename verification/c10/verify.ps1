@@ -51,6 +51,7 @@ if ($reverse) { throw 'reverse dependency into C10 detected' }
 Write-Output 'PROOF DEBT / DEPENDENCY PASS'
 
 Invoke-Checked 'root build' { & $lake build }
+Invoke-Checked 'C10 library build' { & $lake build P21.Nonsymmetric.Chain.C10 }
 $gates = @(
   'verification/c10/CanonicalFreeGate.lean',
   'verification/c10/AlgebraGate.lean',
