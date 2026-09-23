@@ -37,8 +37,8 @@ if ($LASTEXITCODE -ne 0) { throw 'Unable to resolve HEAD' }
   Set-Content -Encoding UTF8 (Join-Path $evidence 'ENVIRONMENT.txt')
 
 Invoke-Logged 'FROZEN_SOURCE_REPORT.txt' { & $python verification/final/check_frozen_sources.py }
-Invoke-Logged 'PROOF_DEBT_REPORT.txt' { & powershell -NoProfile -ExecutionPolicy Bypass -File verification/final/ProofDebtGate.ps1 }
-Invoke-Logged 'DEPENDENCY_REPORT.txt' { & powershell -NoProfile -ExecutionPolicy Bypass -File verification/final/DependencyGate.ps1 }
+Invoke-Logged 'PROOF_DEBT_REPORT.txt' { & ./verification/final/ProofDebtGate.ps1 }
+Invoke-Logged 'DEPENDENCY_REPORT.txt' { & ./verification/final/DependencyGate.ps1 }
 Invoke-Logged 'ROOT_BUILD_LOG.txt' { & $lake build }
 Invoke-Logged 'FINAL_BUILD_LOG.txt' { & $lake build P21.MainTheorem }
 Invoke-Logged 'FINAL_STATEMENT_LOG.txt' { & $lake env lean verification/final/MainStatementGate.lean }
@@ -54,7 +54,7 @@ $found = [regex]::Matches(($axiomOutput -join "`n"), 'depends on axioms:\s*\[([^
 $unexpected = @($found | Where-Object { $_ -notin $allowed })
 if ($unexpected.Count -or ($axiomOutput -join "`n") -match 'sorryAx') { throw "Unexpected axioms: $($unexpected -join ', ')" }
 
-Invoke-Logged 'C10_FULL_VERIFICATION_LOG.txt' { & powershell -NoProfile -ExecutionPolicy Bypass -File verification/c10/verify.ps1 }
+Invoke-Logged 'C10_FULL_VERIFICATION_LOG.txt' { & ./verification/c10/verify.ps1 }
 
 $groups = [ordered]@{
   'M1_REGRESSION_LOG.txt' = @('verification/StatementCheck.lean')
