@@ -1,7 +1,10 @@
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 Set-Location $root
-$env:ELAN_HOME = "$env:USERPROFILE\.elan"
+$userHome = if ($env:USERPROFILE) { $env:USERPROFILE } elseif ($env:HOME) {
+  $env:HOME
+} else { [Environment]::GetFolderPath('UserProfile') }
+$env:ELAN_HOME = Join-Path $userHome '.elan'
 $lakeCommand = Get-Command lake -ErrorAction SilentlyContinue
 $lake = if ($lakeCommand) { $lakeCommand.Source } else { 'C:\Users\stksk\.elan\bin\lake.exe' }
 $bundledPython = 'C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
@@ -90,5 +93,11 @@ $regressions = @(
   'verification/c8/Regression.lean',
   'verification/c9/Regression.lean'
 )
+$regressionTargets = $regressions |
+  ForEach-Object { Select-String -Path $_ -Pattern '^import\s+(.+)$' -AllMatches } |
+  ForEach-Object { $_.Matches } |
+  ForEach-Object { $_.Groups[1].Value.Trim() } |
+  Sort-Object -Unique
+Invoke-Checked 'regression dependency build' { & $lake build @regressionTargets }
 foreach ($gate in $regressions) { Invoke-Checked $gate { & $lake env lean $gate } }
 Write-Output 'C10 FULL LOCAL VERIFICATION PASS'
