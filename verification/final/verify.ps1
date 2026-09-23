@@ -29,9 +29,9 @@ $sha = git -c "safe.directory=$($root.Replace('\','/'))" rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Unable to resolve HEAD' }
 [IO.File]::WriteAllText((Join-Path $evidence 'COMMIT_SHA.txt'), "$sha`n", [Text.UTF8Encoding]::new($false))
 @{ branch = (git branch --show-current); commit = $sha; utc = [DateTime]::UtcNow.ToString('o'); workflow = 'final-main-theorem-audit' } |
-  ConvertTo-Json | Set-Content -Encoding utf8NoBOM (Join-Path $evidence 'RUN_CONTEXT.json')
+  ConvertTo-Json | Set-Content -Encoding UTF8 (Join-Path $evidence 'RUN_CONTEXT.json')
 @("OS=$([Environment]::OSVersion)", "PowerShell=$($PSVersionTable.PSVersion)", "LeanToolchain=$((Get-Content lean-toolchain -Raw).Trim())", "Python=$(& $python --version 2>&1)") |
-  Set-Content -Encoding utf8NoBOM (Join-Path $evidence 'ENVIRONMENT.txt')
+  Set-Content -Encoding UTF8 (Join-Path $evidence 'ENVIRONMENT.txt')
 
 Invoke-Logged 'FROZEN_SOURCE_REPORT.txt' { & $python verification/final/check_frozen_sources.py }
 Invoke-Logged 'PROOF_DEBT_REPORT.txt' { & powershell -NoProfile -ExecutionPolicy Bypass -File verification/final/ProofDebtGate.ps1 }
@@ -43,7 +43,7 @@ Invoke-Logged 'FINAL_STATEMENT_LOG.txt' { & $lake env lean verification/final/Ma
 $axiomOutput = @(& $lake env lean verification/final/audit_axioms.lean 2>&1)
 $axiomCode = $LASTEXITCODE
 @($axiomOutput | ForEach-Object { $_.ToString() }) + "EXIT=$axiomCode" |
-  Set-Content -Encoding utf8NoBOM (Join-Path $evidence 'AXIOM_REPORT.txt')
+  Set-Content -Encoding UTF8 (Join-Path $evidence 'AXIOM_REPORT.txt')
 if ($axiomCode -ne 0) { throw 'Final axiom audit failed' }
 $allowed = @('propext', 'Classical.choice', 'Quot.sound')
 $found = [regex]::Matches(($axiomOutput -join "`n"), 'depends on axioms:\s*\[([^\]]*)\]') |
@@ -86,8 +86,8 @@ try { Invoke-Logged 'SYMBOLIC_VERIFIERS_LOG.txt' { & $python verification/final/
 finally { $env:PYTHONPATH = $oldPythonPath }
 
 Copy-Item FINAL_SECTION11_STATEMENT_MAP.md (Join-Path $evidence 'FINAL_SECTION11_STATEMENT_MAP.md')
-'Source and evidence manifests are generated after every other evidence file.' | Set-Content -Encoding utf8NoBOM (Join-Path $evidence 'SOURCE_MANIFEST_BUILD_LOG.txt')
-'Manifest verification is the final evidence gate.' | Set-Content -Encoding utf8NoBOM (Join-Path $evidence 'MANIFEST_VERIFICATION_LOG.txt')
+'Source and evidence manifests are generated after every other evidence file.' | Set-Content -Encoding UTF8 (Join-Path $evidence 'SOURCE_MANIFEST_BUILD_LOG.txt')
+'Manifest verification is the final evidence gate.' | Set-Content -Encoding UTF8 (Join-Path $evidence 'MANIFEST_VERIFICATION_LOG.txt')
 & $python verification/final/make_manifests.py
 if ($LASTEXITCODE -ne 0) { throw 'Manifest generation failed' }
 & $python verification/final/make_manifests.py --verify
