@@ -45,4 +45,5 @@ try {
   & $lake env lean verification/final/MainStatementGate.lean
   if ($LASTEXITCODE -ne 0) { throw 'Extracted final statement gate failed' }
 } finally { Pop-Location }
-Write-Output "FRESH EXTRACTION PASS ($($manifest.PSObject.Properties.Count) source files)"
+$manifestCount = @($manifest.PSObject.Properties).Count
+Write-Output "FRESH EXTRACTION PASS ($manifestCount source files)"
