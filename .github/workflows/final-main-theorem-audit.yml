@@ -1,0 +1,53 @@
+name: P21 Lean Final Main Theorem Audit
+on:
+  push:
+    branches: [final-main-theorem]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with: {fetch-depth: 0, persist-credentials: false}
+      - name: Install Lean
+        run: |
+          curl --fail --location --retry 3 https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --no-modify-path --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(tr -d '\r\n' < lean-toolchain)"
+      - name: Dependency cache
+        run: lake exe cache get || true
+      - name: Pin SymPy 1.14.0
+        run: python3 -m pip install --disable-pip-version-check --no-compile --target verification/final/.pydeps sympy==1.14.0
+      - name: Full Section 11 verification, package, and fresh extraction
+        shell: pwsh
+        run: ./verification/final/release.ps1
+      - name: Bind evidence to exact HEAD
+        shell: pwsh
+        run: |
+          $expected = (git rev-parse HEAD).Trim()
+          $actual = (Get-Content delivery/P21_FINAL_TRUE_AUDIT_EVIDENCE/COMMIT_SHA.txt -Raw).Trim()
+          if ($expected -ne $actual) { throw "Evidence commit mismatch: $actual != $expected" }
+          python3 verification/final/make_manifests.py --verify
+      - name: Upload final TRUE AUDIT evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P21_FINAL_TRUE_AUDIT_EVIDENCE
+          path: delivery/P21_FINAL_TRUE_AUDIT_EVIDENCE
+          if-no-files-found: error
+          retention-days: 90
+      - name: Upload final candidate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: P21_LEAN_FINAL_MAIN_THEOREM_CANDIDATE_20260923
+          path: |
+            delivery/P21_LEAN_FINAL_MAIN_THEOREM_CANDIDATE_20260923.zip
+            delivery/FINAL_CANDIDATE_SHA256.txt
+          if-no-files-found: error
+          retention-days: 90

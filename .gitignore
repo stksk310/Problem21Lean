@@ -3,5 +3,6 @@ __pycache__/
 *.pyc
 audit-evidence/
 delivery/
+verification/final/.pydeps/
 verification/m3/*-progress.log
 verification/m3b1/*-progress.log

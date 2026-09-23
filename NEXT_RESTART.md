@@ -1,4 +1,16 @@
-# Post-C9 restart point
+# Final Section 11 restart point
+
+FINAL SECTION 11 candidate complete.
+P21MainStatement has a Lean theorem.
+
+Pending:
+independent TRUE AUDIT of final assembly.
+
+No mathematical branch remains open.
+
+---
+
+# Post-C9 restart point (historical)
 
 Branch: `c9-chain-two-packets`. Frozen base:
 `7769545a357c0c4d24520ec7a9fc8994f3f664e7`.
