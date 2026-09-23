@@ -30,7 +30,9 @@ $env:ELAN_HOME = Join-Path $userHome '.elan'
 $env:GIT_CONFIG_COUNT = '1'; $env:GIT_CONFIG_KEY_0 = 'safe.directory'; $env:GIT_CONFIG_VALUE_0 = '*'
 $lake = (Get-Command lake -ErrorAction SilentlyContinue).Source
 if (-not $lake) { $lake = Join-Path $env:ELAN_HOME 'bin/lake.exe' }
-$python = if (Get-Command python3 -ErrorAction SilentlyContinue) { (Get-Command python3).Source } else { 'python' }
+$bundledPython = 'C:\Users\stksk\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$python3 = Get-Command python3 -ErrorAction SilentlyContinue
+$python = if (Test-Path -LiteralPath $bundledPython) { $bundledPython } elseif ($python3) { $python3.Source } else { 'python' }
 
 Push-Location $extract
 try {
