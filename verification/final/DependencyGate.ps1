@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path (Join-Path $PSScriptRoot '../..')).Path
 Set-Location $root
 
-$oldLean = git ls-tree -r --name-only e4799d8044fd524a94b960ab19c333b08a8c93bb -- '*.lean'
+$oldLean = @(git ls-tree -r --name-only e4799d8044fd524a94b960ab19c333b08a8c93bb | Where-Object { $_ -like '*.lean' })
 if ($LASTEXITCODE -ne 0) { throw 'Unable to enumerate frozen Lean sources.' }
 
 $reverse = @()
@@ -26,4 +26,3 @@ if ($source -match 'ncard\s*=\s*4|4\s*=\s*\([^\r\n]*Q') {
   throw 'Cardinality firewall failed: equality-to-four assumption detected.'
 }
 Write-Output "DEPENDENCY PASS ($($oldLean.Count) frozen Lean sources; no reverse import)"
-

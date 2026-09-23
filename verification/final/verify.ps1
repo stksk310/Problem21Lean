@@ -16,8 +16,11 @@ $python = if (Test-Path -LiteralPath $bundledPython) { $bundledPython } elseif (
 
 function Invoke-Logged([string]$name, [scriptblock]$command) {
   $path = Join-Path $evidence $name
+  $previousErrorAction = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
   $output = @(& $command 2>&1)
   $code = $LASTEXITCODE
+  $ErrorActionPreference = $previousErrorAction
   $text = @($output | ForEach-Object { $_.ToString() })
   $text += "EXIT=$code"
   [IO.File]::WriteAllLines($path, $text, [Text.UTF8Encoding]::new($false))
