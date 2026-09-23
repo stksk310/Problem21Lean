@@ -20,7 +20,12 @@ def sha(path: Path) -> str:
 def source_files() -> list[Path]:
     paths = list((ROOT / "P21").rglob("*.lean"))
     paths += [ROOT / "P21.lean", ROOT / "P21Final.lean"]
-    paths += [p for p in (ROOT / "verification").rglob("*") if p.is_file() and p.suffix in {".lean", ".py", ".ps1", ".json"}]
+    paths += [
+        p for p in (ROOT / "verification").rglob("*")
+        if p.is_file()
+        and p.suffix in {".lean", ".py", ".ps1", ".json"}
+        and not any(part in {".pydeps", "__pycache__"} for part in p.relative_to(ROOT).parts)
+    ]
     paths += [p for p in (ROOT / ".github/workflows").glob("*.yml") if p.is_file()]
     return sorted(set(paths))
 
@@ -57,4 +62,3 @@ if __name__ == "__main__":
     parser.add_argument("--verify", action="store_true")
     args = parser.parse_args()
     verify() if args.verify else write()
-
