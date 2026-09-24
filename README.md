@@ -57,6 +57,34 @@ The release candidate SHA-256 is:
 3341da0f47da0b91d01cd76ca1ec6d786d66fb31c487420d8ad48776aed4d14e
 ```
 
+## Permanent archive and DOI
+
+The independently audited frozen formalization is permanently archived on
+Zenodo.
+
+- **Exact v1.0.0 DOI:** [10.5281/zenodo.22928464](https://doi.org/10.5281/zenodo.22928464)
+- **All-versions DOI:** [10.5281/zenodo.22928463](https://doi.org/10.5281/zenodo.22928463)
+
+The exact v1.0.0 DOI refers to the frozen archival snapshot corresponding to:
+
+```text
+Git tag:
+v1.0.0
+
+Audited commit:
+13026bdd4ac72dc892415c456fb8e780c3ec62dc
+
+Permanent archive SHA-256:
+1bf73c94faf5c60607cd70e20fc1adbff18dd861634b3d71a7546f52dbc8dabd
+```
+
+For reproducible citation of the frozen formal proof, cite the exact v1.0.0
+DOI:
+
+```text
+10.5281/zenodo.22928464
+```
+
 ## Pinned environment
 
 ```text

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite the archived v1.0.0 release."
+title: "P21 Lean v1.0.0: Formalization of Numerical Semigroup Problem 21"
+type: software
+authors:
+  - family-names: "Sato"
+    given-names: "Keisuke"
+    orcid: "https://orcid.org/0009-0005-4230-0268"
+    affiliation: "Independent Researcher, Japan"
+version: "1.0.0"
+date-released: "2026-09-24"
+doi: "10.5281/zenodo.22928464"
+repository-code: "https://github.com/stksk310/Problem21Lean"
+url: "https://doi.org/10.5281/zenodo.22928464"
+keywords:
+  - "numerical semigroups"
+  - "Lean 4"
+  - "formal verification"
+  - "theorem proving"
+  - "commutative algebra"
+  - "Frobenius number"
