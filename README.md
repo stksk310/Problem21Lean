@@ -1,91 +1,118 @@
-# P21 Lean M2A — Internal symmetric closure
+# P21 Lean
 
-STATUS: M2A INTERNAL SYMMETRIC CLOSURE CANDIDATE FOR TRUE AUDIT
+**Formalization status: COMPLETE**
 
-STD_SYM_GLUE OPEN
-FULL S3 OPEN
+This repository contains the Lean 4 formalization of Numerical Semigroup
+Problem 21. The symmetric and nonsymmetric branches, including PATH, TYPE II,
+and CHAIN, are closed. No mathematical branches remain open.
 
-This project proves the complete internal symmetric-tail argument in publication
-Section 3 and Appendix A, conditional only on the explicitly supplied standard
-gluing normal form. It builds on the unchanged M1 input at commit
-`9464b9cd3b6b070f9fa6d1c212f27065d1eb84b3`.
-
-The final theorem is:
+The final API is:
 
 ```lean
-theorem P21.Symmetric.symmetric_tail_from_glue_data
-    (g : P21.Generators) (setting : g.Setting) (F : ℤ)
-    (hF : setting.semigroup.IsFrobenius F)
-    (hcan : setting.semigroup.Canonical F g.m)
-    (G : P21.Symmetric.SymmetricGlueData g) :
-    setting.semigroup.type ≤ 4
+P21.q_ge_four_impossible
+P21.q_card_le_three
+P21.type_le_four
+P21.main_theorem : P21MainStatement
 ```
 
-The data supplies a permutation, x=du, y=dv, z=w, d,u,v≥2,
-gcd(u,v)=gcd(d,w)=1 and an actual nonnegative representation of w in <u,v>.
-The theorem that produces this data from symmetry alone is not yet proved.
-See `STD_SYM_GLUE_OPEN.md` for its exact statement and next proof obligation.
+The main statement is:
 
-## Proved scope
+```lean
+def P21MainStatement : Prop :=
+  ∀ (g : Generators) (s : g.Setting) (F : ℤ),
+    s.semigroup.IsFrobenius F →
+    s.semigroup.Canonical F g.m →
+    s.semigroup.type ≤ 4
+```
 
-- Integer two-generator normal form, representation difference, symmetry, all
-  subcritical coefficient facts, and exact 2GI.
-- Stable core with every natural index (including zero), GAP-K, FS, the ideal
-  property, PF correspondence, BRIDGE and exact TYPE-BRIDGE.
-- Gluing normal form and Frobenius formula from explicit data; two-generator
-  ideal classification; RAW4 extraction from type at least five.
-- Cross-layer rigidity, actual PF provenance, ALL-AP, QM and non-exclusive SPLIT.
-- Branch I: same-walk four-hit necessity, the N=1 predecessor exception,
-  X-only/Y-only/XY exclusions, and positivity of E=w-L.
-- Branch II: k0=1 reduction to the independently proved Branch I; k0=0,e=0;
-  and the complete positive-e cross-core argument with the actual predecessor.
-- The resulting type bound from explicit glue data.
+It formalizes the type bound
 
-All 13 protected M1 files, the toolchain and dependencies included, retain their
-original bytes. All new mathematics is under `P21/Symmetric` and `P21/External`.
-`P21.lean` remains the frozen M1 umbrella, so default `lake build` alone does not
-build M2. Run the explicit M2 target or the complete verifier below.
+```text
+canonical minimally four-generated numerical semigroup
+→ type ≤ 4
+```
+
+## Frozen release
+
+The permanent audited snapshot is
+[v1.0.0](https://github.com/stksk310/Problem21Lean/releases/tag/v1.0.0),
+whose annotated tag peels to the exact commit:
+
+```text
+13026bdd4ac72dc892415c456fb8e780c3ec62dc
+```
+
+Release assets:
+
+- [Final candidate ZIP](https://github.com/stksk310/Problem21Lean/releases/download/v1.0.0/P21_LEAN_FINAL_MAIN_THEOREM_CANDIDATE_20260923.zip)
+- [Final TRUE-audit evidence](https://github.com/stksk310/Problem21Lean/releases/download/v1.0.0/P21_FINAL_TRUE_AUDIT_EVIDENCE.zip)
+- [SHA-256 checksums](https://github.com/stksk310/Problem21Lean/releases/download/v1.0.0/SHA256SUMS.txt)
+- [Release provenance](https://github.com/stksk310/Problem21Lean/releases/download/v1.0.0/RELEASE_PROVENANCE.txt)
+
+The final audit is bound to
+[GitHub Actions run 35892930280](https://github.com/stksk310/Problem21Lean/actions/runs/35892930280).
+The release candidate SHA-256 is:
+
+```text
+3341da0f47da0b91d01cd76ca1ec6d786d66fb31c487420d8ad48776aed4d14e
+```
+
+## Pinned environment
+
+```text
+Lean         v4.34.0-rc1
+Lean commit  3447a668783dbce1a8fdb97101dd067687b2b418
+mathlib      de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11
+Lake         5.0.0
+SymPy        1.14.0
+```
 
 ## Reproduction
 
-Lean: `leanprover/lean4:v4.34.0-rc1`.
-mathlib: `de5ce8a9a66a4aa68a9bdbb35b63a06d34d9ca11`, with all other revisions in the
-unchanged `lake-manifest.json`.
+With the pinned Lean toolchain and dependencies available:
 
-```text
+```bash
 lake build
-lake build P21.Symmetric.Closure
-python3 verification/m2/verify.py
+lake build P21.MainTheorem
+lake env lean verification/final/MainStatementGate.lean
 ```
 
-The Python verifier uses only the standard library. On Windows it uses the
-preserved local `verification/lake.ps1` path adapter; on other platforms it uses
-`lake` on PATH. Adapt a copy of that Windows path adapter to your own installed
-Lean location if needed; do not alter the pinned toolchain or dependency files.
-The published legacy M1 GitHub workflow checks its original M1 ZIP; it is not an
-M2 audit job and is omitted from this source distribution. No M2 GitHub CI claim
-is made here.
+Inspect the final theorem and its axioms in Lean:
 
-The verifier explicitly builds every M2 module, checks every theorem/definition
-root for permitted axioms, runs compile-time regressions, scans all project-owned
-Lean code lexically for proof debt, and rechecks M1 integrity. See `BUILD_LOG.txt`,
-`AXIOM_REPORT.txt`, `PROOF_DEBT_REPORT.txt`, `M1_FROZEN_INTEGRITY_REPORT.txt`, and
-`verification/m2/` for evidence. The distribution contains no project build cache.
+```lean
+#print P21.main_theorem
+#print axioms P21.main_theorem
+```
 
-## Remaining scope
+The final theorem depends only on Lean/mathlib's standard axioms:
 
-OPEN: STD_SYM_GLUE and therefore full S3; nonsymmetric classification; PATH;
-TYPE II; CHAIN; other external structure theorems; Euclidean descent;
-715-term certificate; 3234-term certificate; the main theorem proof.
+```text
+propext
+Classical.choice
+Quot.sound
+```
 
-This is a candidate for independent review. `M2_STATEMENT_MAP.md` maps all new
-declarations to the publication. `M2_DEPENDENCY_DAG.md` records proof dependencies.
+There are no project-specific axioms and no `sorry`, `admit`, or `sorryAx`
+proof debt in the final theorem assembly.
 
-## External CI reproducibility gate (M2A)
+## Generated certificates
 
-The GitHub branch now includes `.github/workflows/m2a-audit.yml` and the exact
-authoritative candidate ZIP. See `ci/M2A_CI.md` for the immutable-source gates,
-explicit M2 build, original verifier execution and downloadable evidence.
-The source audit was reported clean by the user; external CI evidence is pending
-until a successful run is bound to its commit and artifact in the handoff receipt.
-STD_SYM_GLUE OPEN. FULL S3 OPEN. No audit ruling or main merge is made here.
+The nonsymmetric closure includes two generated certificate families:
+
+```text
+C9 LINEAR
+28 identities
+715 positive monomials
+constant 35
+
+C10 EUCLIDEAN
+35 identities
+3234 positive monomials
+constant 63
+```
+
+Their Python verifiers are auxiliary consistency checks. The Lean kernel proof
+is authoritative.
+
+The `v1.0.0` tag is immutable. Any future mathematical Lean-source change
+requires a new version and a new independent audit.
